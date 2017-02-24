@@ -18,5 +18,27 @@
       "email": "sander.geenen@district01.be"
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.7.5",
+    "connect": "^3.6.0",
+    "connect-livereload": "^0.6.0",
+    "cssnano": "^3.10.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-livereload": "^3.8.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-nunjucks": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-watch": "^4.3.11",
+    "opn": "^4.0.2",
+    "run-sequence": "^1.2.2",
+    "serve-index": "^1.8.0",
+    "serve-static": "^1.11.2"
+  }
 }
