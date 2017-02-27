@@ -4,11 +4,17 @@
  * QUARKS
  * -------------------------------------------------------------------
  */
+
+@import 'quarks/variables';
 @import 'quarks/colors';
+@import 'quarks/mixins';
+@import 'quarks/fonts';
+@import 'quarks/typography';
 
 
 /**
  * UTILITIES
  * -------------------------------------------------------------------
  */
+
 @import 'utilities/normalize';

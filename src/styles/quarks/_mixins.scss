@@ -1,0 +1,25 @@
+/**
+ * MIXINS
+ * -------------------------------------------------------------------
+ * Collection of custom mixins
+ */
+
+
+/**
+ * FONT FACE
+ * -------------------------------------------------------------------
+ */
+
+@mixin font-face($_name, $_url, $_weight: normal, $_style: normal) {
+
+  @font-face {
+    font-family: $_name;
+    src: url($_url + ".eot");
+    src: url($_url + ".eot?#iefix") format("embedded-opentype"),
+         url($_url + ".woff") format("woff"),
+         url($_url + ".ttf") format("truetype"),
+         url($_url + ".svg#icon") format("svg");
+    font-weight: $_weight;
+    font-style: $_style;
+  }
+}
