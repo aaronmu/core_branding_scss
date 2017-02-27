@@ -22,6 +22,7 @@ html {
    * Enable smooth fonts
    * Support for this is not consistent and differences in rendering are noticable
    */
+  font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
@@ -73,6 +74,7 @@ section {
  * Remove glowing outline when receiving focus
  */
 button {
+  background-image: none;
   cursor: pointer;
   font: inherit;
   outline: 0;
@@ -142,8 +144,8 @@ textarea {
  * with other button and input types
  */
 select,
-input[type="submit"],
-input[type="reset"] {
+input[type='submit'],
+input[type='reset'] {
   cursor: pointer;
 }
 
@@ -153,8 +155,8 @@ input[type="reset"] {
  * Address box sizing set to content-box in IE 8/9/10
  * Remove excess padding in IE 8/9/10
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }

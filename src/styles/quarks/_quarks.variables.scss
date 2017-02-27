@@ -9,8 +9,8 @@
  * -------------------------------------------------------------------
  */
 
-$font-family-base:            'Sun Antwerpen Regular';
-$font-family-headings:        'Antwerpen Regular';
+$font-family-base:            'Sun Antwerpen Regular' !default;
+$font-family-headings:        'Antwerpen Regular' !default;
 
 
 /**
@@ -18,7 +18,7 @@ $font-family-headings:        'Antwerpen Regular';
  * -------------------------------------------------------------------
  */
 
-$light:                   300;
-$normal:                  500;
-$bold:                    700;
-$extra-bold:              800;
+$light:                   300 !default;
+$normal:                  500 !default;
+$bold:                    700 !default;
+$extra-bold:              800 !default;
