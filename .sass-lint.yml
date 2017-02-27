@@ -1,63 +1,60 @@
 files:
-  include: development/sass/**/*.scss
+  include: src/styles/**/*.scss
 options:
   formatter: table
   merge-default-rules: false
 rules:
   bem-depth:
-    - 0
+    - 1
     - max-depth: 1
   border-zero:
     - 1
     - convention: none
   brace-style:
     - 1
-    - allow-single-line: true
+    - allow-single-line: false
   class-name-format:
-    - 0
-    - convention: hyphenatedlowercase
+    - 1
+    - convention: hyphenatedbem
   clean-import-paths:
-    - 0
+    - 1
     - filename-extension: false
-      leading-underscore: true
+      leading-underscore: false
+  declarations-before-nesting: 1
+  empty-args: 1
   empty-line-between-blocks:
     - 1
-    - ignore-single-line-rulesets: true
+    - ignore-single-line-rulesets: false
   extends-before-declarations: 1
   extends-before-mixins: 1
-  final-newline:
-    - 0
-    - include: true
-  force-attribute-nesting: 0
-  force-element-nesting: 0
-  force-pseudo-nesting: 0
+  final-newline: 1
   function-name-format:
-    - 0
+    - 1
     - allow-leading-underscore: true
-      convention: hyphenatedlowercase
+      convention: hyphenatedbem
   hex-length:
     - 1
-    - style: long
+    - style: short
   hex-notation:
     - 1
-    - style: uppercase
+    - style: lowercase
   id-name-format:
-    - 0
-    - convention: hyphenatedlowercase
+    - 1
+    - convention: hyphenatedbem
   indentation:
     - 1
     - size: 2
   leading-zero:
     - 1
-    - include: true
+    - include: false
   mixin-name-format:
     - 0
     - allow-leading-underscore: true
-      convention: hyphenatedlowercase
-  mixins-before-declarations: 0
+      convention: hyphenatedbem
+  mixins-before-declarations: 1
   nesting-depth:
     - 1
-    - max-depth: 4
+    - max-depth: 3
   no-color-keywords: 1
   no-color-literals:
     - 1
@@ -70,7 +67,7 @@ rules:
   no-ids: 1
   no-important: 0
   no-invalid-hex: 1
-  no-mergeable-selectors: 0
+  no-mergeable-selectors: 1
   no-misspelled-properties:
     - 1
     - extra-properties: [
@@ -83,19 +80,20 @@ rules:
       allow-element-with-id: false
   no-trailing-zero: 1
   no-trailing-whitespace: 1
-  no-transition-all: 0
+  no-transition-all: 1
   no-url-protocols: 1
   no-vendor-prefixes:
-    - 0
+    - 1
     - additional-identifiers: []
       excluded-identifiers:
         - selection
+  one-declaration-per-line: 1
   placeholder-in-extend: 1
   placeholder-name-format:
-    - 0
-    - convention: hyphenatedlowercase
+    - 1
+    - convention: hyphenatedbem
   property-sort-order:
-    - 0
+    - 1
     - ignore-custom-properties: false
   property-units:
     - 1
@@ -129,8 +127,8 @@ rules:
         - '%'
       per-property: {}
   quotes:
-    - 0
-    - style: double
+    - 1
+    - style: single
   shorthand-values:
     - 1
     - allowed-shorthands:
