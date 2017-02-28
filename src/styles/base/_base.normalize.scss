@@ -92,6 +92,27 @@ button {
 
 
 /**
+ * MARGINS
+ * -------------------------------------------------------------------
+ * If a margin/padding is set somewhere, remove it from below
+ * Keep it DRY and prevent overwrites
+ */
+
+h1,
+h2,
+h3,
+h4,
+p,
+h5,
+h6,
+ul,
+ol,
+body {
+  margin: 0;
+}
+
+
+/**
  * FORMS
  * -------------------------------------------------------------------
  */

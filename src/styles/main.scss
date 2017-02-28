@@ -5,16 +5,19 @@
  * -------------------------------------------------------------------
  */
 
-@import 'quarks/quarks.variables';
-@import 'quarks/quarks.colors';
 @import 'quarks/quarks.mixins';
+@import 'quarks/quarks.functions';
+
+@import 'quarks/quarks.colors';
+@import 'quarks/quarks.variables';
+
 @import 'quarks/quarks.fonts';
-@import 'quarks/quarks.typography';
 
 
 /**
- * UTILITIES
+ * BASE
  * -------------------------------------------------------------------
  */
 
-@import 'utilities/utilities.normalize';
+@import 'base/base.normalize';
+@import 'base/base.typography';

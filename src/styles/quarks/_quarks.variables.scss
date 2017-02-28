@@ -9,8 +9,33 @@
  * -------------------------------------------------------------------
  */
 
-$font-family-base:            'Sun Antwerpen Regular' !default;
-$font-family-headings:        'Antwerpen Regular' !default;
+$font-family-base:        'Sun Antwerpen Regular' !default;
+$font-family-headings:    'Antwerpen Regular' !default;
+
+
+/**
+ * FONT SIZES
+ * -------------------------------------------------------------------
+ */
+
+$font-size-base:          16px !default;
+$font-size-ratio:         1.2 !default;
+
+$font-size-h1:            $font-size-base * power($font-size-ratio, 6) !default; // ±48px
+$font-size-h2:            $font-size-base * power($font-size-ratio, 5) !default; // ±40px
+$font-size-h3:            $font-size-base * power($font-size-ratio, 4) !default; // ±33px
+$font-size-h4:            $font-size-base * power($font-size-ratio, 3) !default; // ±28px
+$font-size-h5:            $font-size-base * power($font-size-ratio, 2) !default; // ±23px
+$font-size-h6:            $font-size-base * power($font-size-ratio, 1) !default; // ±19px
+
+
+/**
+ * LINE HEIGHTS
+ * -------------------------------------------------------------------
+ */
+
+$line-height-base:        1 !default;
+$line-height-headings:    1.44 !default;
 
 
 /**
@@ -22,3 +47,11 @@ $light:                   300 !default;
 $normal:                  500 !default;
 $bold:                    700 !default;
 $extra-bold:              800 !default;
+
+
+/**
+ * FONT COLOR
+ * -------------------------------------------------------------------
+ */
+
+$font-color:              $black !default;

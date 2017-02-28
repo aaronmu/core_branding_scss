@@ -9,9 +9,9 @@
  * -------------------------------------------------------------------
  */
 
-@include font-face('Antwerpen Small', '../../fonts/', $normal, normal);
-@include font-face('Antwerpen Regular', '../../fonts/', $normal, normal);
-@include font-face('Antwerpen Tall', '../../fonts/', $normal, normal);
+@include font-face('Antwerpen Small', '../../fonts/Antwerpen_Small', $normal, normal);
+@include font-face('Antwerpen Regular', '../../fonts/Antwerpen_Regular', $normal, normal);
+@include font-face('Antwerpen Tall', '../../fonts/Antwerpen_Tall', $normal, normal);
 
 
 /**
