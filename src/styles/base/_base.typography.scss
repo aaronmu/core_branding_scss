@@ -10,7 +10,7 @@
  */
 
 body {
-  color: $font-color;
+  color: $text-color;
   font-family: $font-family-base;
   font-size: rem($font-size-base);
   line-height: $line-height-base;
@@ -34,7 +34,6 @@ h6,
 .h4,
 .h5,
 .h6 {
-  color: $font-color;
   font-family: $font-family-headings;
   line-height: $line-height-headings;
 }

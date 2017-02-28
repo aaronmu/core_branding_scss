@@ -5,6 +5,31 @@
 
 
 /**
+ * SPECIFIC COLOR PALETTE
+ * -------------------------------------------------------------------
+ */
+
+$brand-primary:           $endeavour !default;
+$brand-secondary:         $monza !default;
+
+$state-success:           $apple !default;
+$state-info:              $endeavour !default;
+$state-warning:           $sun !default;
+$state-danger:            $alizarin-crimson !default;
+$state-disabled:          $grey-lighter !default;
+
+$text-color:              $black !default;
+$text-color-light:        $grey-dark !default;
+$text-color-xlight:       $white !default;
+
+$background-color:        $grey-light !default;
+$background-color-light:  $grey-lighter !default;
+
+$border-color:            $grey-dark !default;
+$border-color-light:      $grey !default;
+
+
+/**
  * FONT FAMILIES
  * -------------------------------------------------------------------
  */
@@ -47,11 +72,3 @@ $light:                   300 !default;
 $normal:                  500 !default;
 $bold:                    700 !default;
 $extra-bold:              800 !default;
-
-
-/**
- * FONT COLOR
- * -------------------------------------------------------------------
- */
-
-$font-color:              $black !default;
