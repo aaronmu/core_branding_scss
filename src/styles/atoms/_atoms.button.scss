@@ -1,0 +1,144 @@
+/**
+ * BUTTONS
+ * -------------------------------------------------------------------
+ * Buttons are normalized in _base.normalize.scss
+ */
+
+
+/**
+ * BUTTON PLACEHOLDER
+ * -------------------------------------------------------------------
+ */
+
+%a-button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $bold;
+  line-height: $spacer-lg;
+  min-height: $spacer-lg;
+  padding: 0 $spacer;
+  text-align: center;
+  text-decoration: none;
+  transition: all $animation-normal;
+  user-select: none;
+  vertical-align: middle;
+}
+
+.a-button,
+.a-button-negative,
+.a-button-outline {
+  @extend %a-button;
+}
+
+
+/**
+ * BUTTON COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-button {
+  @include a-button();
+
+  &.a-button--secondary {
+    @include a-button($btn-secondary-color, $btn-secondary-bg);
+  }
+
+  &.a-button--success {
+    @include a-button($btn-success-color, $btn-success-bg);
+  }
+
+  &.a-button--warning {
+    @include a-button($btn-warning-color, $btn-warning-bg);
+  }
+
+  &.a-button--danger {
+    @include a-button($btn-danger-color, $btn-danger-bg);
+  }
+
+  &.a-button--transparent {
+    @include a-button($btn-transparent-color, $btn-transparent-bg);
+    text-decoration: underline;
+  }
+}
+
+
+/**
+ * BUTTON NEGATIVE COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-button-negative {
+  @include a-button($btn-primary-bg, $btn-primary-color);
+
+  &.a-button--secondary {
+    @include a-button($btn-secondary-bg, $btn-secondary-color);
+  }
+
+  &.a-button--success {
+    @include a-button($btn-success-bg, $btn-success-color);
+  }
+
+  &.a-button--warning {
+    @include a-button($btn-warning-bg, $btn-warning-color);
+  }
+
+  &.a-button--danger {
+    @include a-button($btn-danger-bg, $btn-danger-color);
+  }
+}
+
+
+/**
+ * BUTTON OUTLINE COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-button-outline {
+  @include a-button-outline();
+
+  &.a-button--secondary {
+    @include a-button-outline($btn-outline-secondary-color);
+  }
+
+  &.a-button--success {
+    @include a-button-outline($btn-outline-success-color);
+  }
+
+  &.a-button--warning {
+    @include a-button-outline($btn-outline-warning-color);
+  }
+
+  &.a-button--danger {
+    @include a-button-outline($btn-outline-danger-color);
+  }
+}
+
+
+/**
+ * BUTTON SIZES
+ * -------------------------------------------------------------------
+ */
+
+.a-button,
+.a-button-negative,
+.a-button-outline {
+
+  &.a-button--tiny {
+    font-size: rem($font-size-ti);
+    line-height: $spacer;
+    min-height: $spacer;
+    padding: 0 $spacer-ti;
+  }
+
+  &.a-button--small {
+    font-size: rem($font-size-sm);
+    line-height: $spacer-md;
+    min-height: $spacer-md;
+  }
+
+  &.a-button--large {
+    font-size: rem($font-size-lg);
+    min-height: $spacer-xl;
+  }
+}

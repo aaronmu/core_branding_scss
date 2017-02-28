@@ -23,3 +23,46 @@
     font-style: $_style;
   }
 }
+
+
+/**
+ * BUTTON MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-button($_color: $btn-primary-color, $_background: $btn-primary-bg) {
+  background-color: $_background;
+  color: $_color;
+
+  &:not([disabled]):hover,
+  &:not([disabled]):active {
+    background-color: mix($_background, $black, 85%);
+  }
+
+  &[disabled] {
+    background-color: $state-disabled;
+  }
+}
+
+
+/**
+ * BUTTON OUTLINE MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-button-outline($_color: $btn-outline-primary-color, $_background: $btn-outline-bg) {
+  background-color: transparent;
+  border: 1px solid $_color;
+  color: $_color;
+
+  &:not([disabled]):hover,
+  &:not([disabled]):active {
+    border-color: mix($_color, $black, 85%);
+    color: mix($_color, $black, 85%);
+  }
+
+  &[disabled] {
+    border-color: $state-disabled;
+    color: $state-disabled;
+  }
+}
