@@ -34,8 +34,14 @@ $border-color-light:      $grey !default;
  * -------------------------------------------------------------------
  */
 
-$spacer:                  1.5rem !default;
-$spacer-small:            1rem !default;
+$spacer:                  1.5rem !default; // 24px
+
+$spacer-xl:               $spacer * 2.5 !default; // 60px
+$spacer-lg:               $spacer * 2 !default; // 48px
+$spacer-md:               $spacer * 1.5 !default; // 36px
+$spacer-sm:               $spacer * 0.75 !default; // 18px
+$spacer-xs:               $spacer * 0.6666666667 !default; // 16px
+$spacer-ti:               $spacer * 0.5 !default; // 12px
 
 
 /**
