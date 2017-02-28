@@ -58,7 +58,11 @@ $font-family-headings:    'Antwerpen Regular' !default;
  * -------------------------------------------------------------------
  */
 
+$font-size-ti:            13px !default;
+$font-size-sm:            14px !default;
 $font-size-base:          16px !default;
+$font-size-lg:            18px !default;
+
 $font-size-ratio:         1.2 !default;
 
 $font-size-h1:            $font-size-base * power($font-size-ratio, 6) !default; // ±48px
@@ -98,3 +102,37 @@ $animation-duration:      250ms;
 $animation-easing:        ease-in-out;
 
 $animation-normal:        $animation-duration $animation-easing;
+
+
+/**
+ * BUTTONS
+ * -------------------------------------------------------------------
+ * Define text, background and border color for each button
+ */
+
+$btn-font-weight:         $bold !default;
+
+$btn-primary-color:       $white !default;
+$btn-primary-bg:          $brand-primary !default;
+
+$btn-secondary-color:     $white !default;
+$btn-secondary-bg:        $brand-secondary !default;
+
+$btn-success-color:       $white !default;
+$btn-success-bg:          $state-success !default;
+
+$btn-warning-color:       $white !default;
+$btn-warning-bg:          $state-warning !default;
+
+$btn-danger-color:        $white !default;
+$btn-danger-bg:           $state-danger !default;
+
+$btn-transparent-color:   $brand-primary !default;
+$btn-transparent-bg:      transparent !default;
+
+$btn-outline-bg:                  transparent !default;
+$btn-outline-primary-color:       $brand-primary !default;
+$btn-outline-secondary-color:     $brand-secondary !default;
+$btn-outline-success-color:      $state-success !default;
+$btn-outline-warning-color:       $state-warning !default;
+$btn-outline-danger-color:        $state-danger !default;
