@@ -30,6 +30,15 @@ $border-color-light:      $grey !default;
 
 
 /**
+ * SPACERS
+ * -------------------------------------------------------------------
+ */
+
+$spacer:                  1.5rem !default;
+$spacer-small:            1rem !default;
+
+
+/**
  * FONT FAMILIES
  * -------------------------------------------------------------------
  */
@@ -72,3 +81,14 @@ $light:                   300 !default;
 $normal:                  500 !default;
 $bold:                    700 !default;
 $extra-bold:              800 !default;
+
+
+/**
+ * ANIMATIONS
+ * -------------------------------------------------------------------
+ */
+
+$animation-duration:      250ms;
+$animation-easing:        ease-in-out;
+
+$animation-normal:        $animation-duration $animation-easing;
