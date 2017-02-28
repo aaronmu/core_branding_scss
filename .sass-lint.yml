@@ -59,7 +59,7 @@ rules:
   no-color-literals:
     - 1
     - allow-rgba: 1
-  no-css-comments: 1
+  no-css-comments: 0
   no-debug: 1
   no-duplicate-properties: 1
   no-empty-rulesets: 1

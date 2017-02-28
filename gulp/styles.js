@@ -55,7 +55,9 @@ var sassLint = require('gulp-sass-lint');
 gulp.task('sass-lint', function () {
 
     return gulp.src([
-            'src/styles/**/*.scss'
+            'src/styles/**/*.scss',
+            '!src/styles/quarks/_quarks.mixins.scss',
+            '!src/styles/base/_base.normalize.scss'
         ])
         .pipe(sassLint({
             configFile: ".sass_lint.yml",
