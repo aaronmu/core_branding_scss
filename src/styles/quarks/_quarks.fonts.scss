@@ -30,3 +30,11 @@
 
 @include font-face('Sun Antwerpen ExtraBold', '../../fonts/SunAntwerpen_ExtraBold', $extra-bold, normal);
 @include font-face('Sun Antwerpen ExtraBold Italic', '../../fonts/SunAntwerpen_ExtraBold_Italic', $extra-bold, italic);
+
+
+/**
+ * FONT AWESOME
+ * -------------------------------------------------------------------
+ */
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
