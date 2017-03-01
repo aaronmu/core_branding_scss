@@ -116,6 +116,16 @@ $icon-size-lg:            28px !default;
 
 
 /**
+ * LINKS
+ * -------------------------------------------------------------------
+ * Define text and hover color for each hyperlink
+ */
+
+$link-color:              $brand-primary !default;
+$link-hover-color:        mix($link-color, $black, 85%) !default;
+
+
+/**
  * BUTTONS
  * -------------------------------------------------------------------
  * Define text, background and border color for each button

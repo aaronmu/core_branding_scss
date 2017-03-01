@@ -67,3 +67,26 @@ h6,
 .h6 {
   font-size: rem($font-size-h6);
 }
+
+
+/**
+ * LINKS
+ * -------------------------------------------------------------------
+ */
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
