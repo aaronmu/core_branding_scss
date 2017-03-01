@@ -23,6 +23,10 @@
   transition: all $animation-normal;
   user-select: none;
   vertical-align: middle;
+
+  .fa {
+    font-size: $icon-size-base;
+  }
 }
 
 .a-button,
@@ -129,17 +133,29 @@
     line-height: $spacer;
     min-height: $spacer;
     padding: 0 $spacer-ti;
+
+    .fa {
+      font-size: $icon-size-ti;
+    }
   }
 
   &.a-button--small {
     font-size: rem($font-size-sm);
     line-height: $spacer-md;
     min-height: $spacer-md;
+
+    .fa {
+      font-size: $icon-size-sm;
+    }
   }
 
   &.a-button--large {
     font-size: rem($font-size-lg);
     min-height: $spacer-xl;
+
+    .fa {
+      font-size: $icon-size-lg;
+    }
   }
 }
 
@@ -228,4 +244,40 @@
   &.has-icon-right {
     padding-right: $spacer-xl;
   }
+}
+
+
+/**
+ * BUTTON ICONS
+ * -------------------------------------------------------------------
+ */
+
+.a-button,
+.a-button-negative,
+.a-button-outline {
+
+  &.has-icon {
+    padding: 0;
+    position: relative;
+    width: $spacer-lg;
+
+    .fa {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+.a-button--tiny.has-icon {
+  width: $spacer;
+}
+
+.a-button--small.has-icon {
+  width: $spacer-md;
+}
+
+.a-button--large.has-icon {
+  width: $spacer-xl;
 }
