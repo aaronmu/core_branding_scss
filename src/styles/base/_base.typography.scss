@@ -70,6 +70,35 @@ h6,
 
 
 /**
+ * BLOCKQUOTE
+ * -------------------------------------------------------------------
+ */
+
+blockquote {
+  border-left: 1px solid $border-color;
+  margin: 0;
+  padding: $spacer-ti 0 $spacer-ti $spacer;
+
+  p {
+    display: inline;
+    font-family: $font-family-headings;
+    line-height: $line-height-headings;
+  }
+
+  cite {
+    color: $cite-color;
+    display: inline-block;
+    font-style: normal;
+    line-height: $line-height-headings;
+
+    &:before {
+      content: '— ';
+    }
+  }
+}
+
+
+/**
  * LINKS
  * -------------------------------------------------------------------
  */

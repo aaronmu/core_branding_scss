@@ -154,6 +154,14 @@ $btn-transparent-bg:      transparent !default;
 $btn-outline-bg:                  transparent !default;
 $btn-outline-primary-color:       $brand-primary !default;
 $btn-outline-secondary-color:     $brand-secondary !default;
-$btn-outline-success-color:      $state-success !default;
+$btn-outline-success-color:       $state-success !default;
 $btn-outline-warning-color:       $state-warning !default;
 $btn-outline-danger-color:        $state-danger !default;
+
+
+/**
+ * CITE
+ * -------------------------------------------------------------------
+ */
+
+ $cite-color:             $brand-secondary;
