@@ -142,3 +142,90 @@
     min-height: $spacer-xl;
   }
 }
+
+
+/**
+ * BUTTON WITH ICON LEFT OR RIGHT
+ * -------------------------------------------------------------------
+ */
+
+.a-button,
+.a-button-negative,
+.a-button-outline {
+
+  &.has-icon-left,
+  &.has-icon-right {
+    position: relative;
+
+    .fa {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: $spacer-lg;
+    }
+  }
+
+  &.has-icon-left {
+    padding-left: $spacer-lg;
+
+    .fa {
+      left: 0;
+    }
+  }
+
+  &.has-icon-right {
+    padding-right: $spacer-lg;
+
+    .fa {
+      right: 0;
+    }
+  }
+}
+
+.a-button--tiny {
+
+  &.has-icon-left .fa,
+  &.has-icon-right .fa {
+    width: $spacer;
+  }
+
+  &.has-icon-left {
+    padding-left: $spacer;
+  }
+
+  &.has-icon-right {
+    padding-right: $spacer;
+  }
+}
+
+.a-button--small {
+
+  &.has-icon-left .fa,
+  &.has-icon-right .fa {
+      width: $spacer-md;
+  }
+
+  &.has-icon-left {
+    padding-left: $spacer-md;
+  }
+
+  &.has-icon-right {
+    padding-right: $spacer-md;
+  }
+}
+
+.a-button--large {
+
+  &.has-icon-left .fa,
+  &.has-icon-right .fa {
+    width: $spacer-xl;
+  }
+
+  &.has-icon-left {
+    padding-left: $spacer-xl;
+  }
+
+  &.has-icon-right {
+    padding-right: $spacer-xl;
+  }
+}
