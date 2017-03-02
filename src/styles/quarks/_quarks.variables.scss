@@ -160,6 +160,34 @@ $btn-outline-danger-color:        $state-danger !default;
 
 
 /**
+ * FORMS
+ * -------------------------------------------------------------------
+ * Define text, background, border and placeholder color for each input
+ */
+
+$input-color:             $text-color !default;
+$input-bg:                $white !default;
+$input-border:            $border-color !default;
+$input-border-focus:      mix($input-border, $white, 25%) !default;
+$input-disabled:          $state-disabled !default;
+$input-placeholder:       $state-disabled !default;
+$input-icon:              $grey-dark !default;
+$input-required:          $state-danger !default;
+
+$input-success-border:            $state-success !default;
+$input-success-border-focus:      mix($input-success-border, $white, 25%) !default;
+$input-success-icon:              $state-success !default;
+
+$input-warning-border:            $state-warning !default;
+$input-warning-border-focus:      mix($input-warning-border, $white, 25%) !default;
+$input-warning-icon:              $state-warning !default;
+
+$input-danger-border:             $state-danger !default;
+$input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
+$input-danger-icon:               $state-danger !default;
+
+
+/**
  * CITE
  * -------------------------------------------------------------------
  */

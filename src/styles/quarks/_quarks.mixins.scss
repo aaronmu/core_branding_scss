@@ -66,3 +66,71 @@
     color: $state-disabled;
   }
 }
+
+
+/**
+ * INPUT MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-input($_color: $input-color, $_background: $input-bg, $_border: $input-border, $_border-focus: $input-border-focus) {
+
+  input,
+  select,
+  textarea {
+    background-color: $_background;
+    border: 1px solid $_border;
+    color: $_color;
+
+    @include a-input-placeholder() {
+      color: $input-placeholder;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px $_border-focus;
+    }
+
+    &[disabled] {
+      border-color: $input-disabled;
+      color: $input-disabled;
+      cursor: not-allowed;
+    }
+  }
+}
+
+
+/**
+ * INPUT PLACEHOLDER MIXIN
+ * -------------------------------------------------------------------
+ * Change base styling for placeholder text on input fields
+ * Note: Styling the placeholder text is not supported on older
+ * browsers, use a html5-placeholder ployfill for that
+ *
+ * Background info:
+ * - http://davidwalsh.name/html5-placeholder
+ * - http://davidwalsh.name/placeholder-overflow
+ * - http://jamesallardice.github.io/Placeholders.js
+ */
+
+@mixin a-input-placeholder() {
+  &::-webkit-input-placeholder {
+    @content;
+    text-overflow: ellipsis;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+    text-overflow: ellipsis;
+  }
+
+  &::-moz-placeholder {
+    @content;
+    text-overflow: ellipsis;
+  }
+
+  &:-moz-placeholder {
+    @content;
+    text-overflow: ellipsis;
+  }
+}
+
