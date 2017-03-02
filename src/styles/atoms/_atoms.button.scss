@@ -20,7 +20,9 @@
   padding: 0 $spacer;
   text-align: center;
   text-decoration: none;
-  transition: all $animation-normal;
+  transition-duration: $animation-duration;
+  transition-property: color, background, border;
+  transition-timing-function: $animation-easing;
   user-select: none;
   vertical-align: middle;
 
@@ -42,7 +44,7 @@
  */
 
 .a-button {
-  @include a-button();
+  @include a-button;
 
   &.a-button--secondary {
     @include a-button($btn-secondary-color, $btn-secondary-bg);
@@ -99,7 +101,7 @@
  */
 
 .a-button-outline {
-  @include a-button-outline();
+  @include a-button-outline;
 
   &.a-button--secondary {
     @include a-button-outline($btn-outline-secondary-color);
@@ -218,7 +220,7 @@
 
   &.has-icon-left .fa,
   &.has-icon-right .fa {
-      width: $spacer-md;
+    width: $spacer-md;
   }
 
   &.has-icon-left {

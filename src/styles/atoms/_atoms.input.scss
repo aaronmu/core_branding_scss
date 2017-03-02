@@ -52,7 +52,7 @@
  */
 
 .a-input {
-  @include a-input();
+  @include a-input;
 }
 
 
@@ -83,7 +83,7 @@
 
     .a-input__wrapper:before {
       color: $input-success-icon;
-      content: "\f00c";
+      content: '\f00c';
     }
   }
 
@@ -92,7 +92,7 @@
 
     .a-input__wrapper:before {
       color: $input-warning-icon;
-      content: "\f071";
+      content: '\f071';
     }
   }
 
@@ -101,7 +101,7 @@
 
     .a-input__wrapper:before {
       color: $input-danger-icon;
-      content: "\f071";
+      content: '\f071';
     }
   }
 
@@ -110,7 +110,7 @@
   &.has-error {
 
     .a-input__wrapper:before {
-      font-family: "FontAwesome";
+      font-family: 'FontAwesome';
       font-size: 1.25rem;
       height: $spacer-lg;
       line-height: $spacer-lg;
@@ -132,9 +132,9 @@
   }
 
   &.is-required > label:after {
-		content: " *";
-		color: $input-required;
-	}
+    color: $input-required;
+    content: ' *';
+  }
 }
 
 
