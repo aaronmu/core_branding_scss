@@ -60,7 +60,7 @@ gulp.task('sass-lint', function () {
             '!src/styles/base/_base.normalize.scss'
         ])
         .pipe(sassLint({
-            configFile: ".sass_lint.yml",
+            configFile: "./.sass-lint.yml",
             options: {
                 'merge-default-rules': true
             }
