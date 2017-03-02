@@ -75,7 +75,7 @@
 
 @mixin a-input($_color: $input-color, $_background: $input-bg, $_border: $input-border, $_border-focus: $input-border-focus) {
 
-  input,
+  input:not([class*='a-button'], [type='checkbox'], [type='radio']),
   select,
   textarea {
     background-color: $_background;
