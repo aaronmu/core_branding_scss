@@ -9,14 +9,8 @@
   .a-input__checkbox {
     display: block;
 
-    margin: $spacer 0 0;
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
+    &:not(:last-child) {
+      margin-bottom: $spacer;
     }
   }
 }

@@ -16,6 +16,12 @@
     display: block;
     margin-bottom: $spacer-ti / 2;
     text-align: left;
+
+    + .a-switch,
+    + .a-input__checkbox,
+    + .a-input__radio {
+      margin-top: $spacer-xs;
+    }
   }
 
   small {

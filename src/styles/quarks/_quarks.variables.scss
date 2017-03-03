@@ -186,6 +186,12 @@ $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
+
+/**
+ * RADIO BUTTONS & CHECKBOXES
+ * -------------------------------------------------------------------
+ */
+
 $radio-checkbox-color:    $white !default;
 $radio-checkbox-bg:       $brand-primary !default;
 
