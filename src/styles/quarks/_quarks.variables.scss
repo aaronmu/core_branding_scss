@@ -126,6 +126,26 @@ $link-hover-color:        mix($link-color, $black, 85%) !default;
 
 
 /**
+ * TABLES
+ * -------------------------------------------------------------------
+ * Define background and border color for each table
+ */
+
+$table-bg:                $white !default;
+$table-border:            $border-color !default;
+
+$table-head-bg:           $background-color-light !default;
+
+$table-primary-head-color:    $white !default;
+$table-primary-head-bg:       $brand-primary !default;
+
+$table-secondary-head-color:  $white !default;
+$table-secondary-head-bg:     $brand-secondary !default;
+
+$table-striped-bg:        $background-color-light !default;
+
+
+/**
  * BUTTONS
  * -------------------------------------------------------------------
  * Define text, background and border color for each button
