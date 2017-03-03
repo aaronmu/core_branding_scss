@@ -10,6 +10,14 @@ $switch-handle-width: ($switch-width - .5rem) / 2;
 
 .a-switch {
   display: flex;
+
+  + .a-switch {
+    margin-top: $spacer;
+  }
+
+  &.is-disabled .a-switch__label {
+    color: $switch-disabled;
+  }
 }
 
 .a-switch__label {
@@ -27,6 +35,27 @@ $switch-handle-width: ($switch-width - .5rem) / 2;
     max-width: 0;
     opacity: 0;
     position: absolute;
+
+    &:checked + label {
+
+      &:before {
+        width: $switch-width;
+      }
+
+      &:after {
+        background-color: $switch-handle-bg-active;
+        left: $switch-width / 2;
+      }
+    }
+
+    &[disabled] + label {
+      box-shadow: inset 0 0 0 1px $switch-disabled;
+      cursor: not-allowed;
+
+      &:after {
+        background-color: $switch-disabled;
+      }
+    }
   }
 
   label {
@@ -62,15 +91,6 @@ $switch-handle-width: ($switch-width - .5rem) / 2;
       transition-timing-function: $animation-easing;
       width: $switch-handle-width;
     }
-  }
-
-  input[type='checkbox']:checked + label:before {
-    width: $switch-width;
-  }
-
-  input[type='checkbox']:checked + label:after {
-    background-color: $switch-handle-bg-active;
-    left: $switch-width / 2;
   }
 
   + .a-switch__label {
