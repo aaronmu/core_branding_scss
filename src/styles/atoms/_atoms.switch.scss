@@ -1,0 +1,79 @@
+/**
+ * SWITCH
+ * -------------------------------------------------------------------
+ */
+
+$switch-width: $spacer-lg;
+$switch-height: $switch-width / 2 + .25rem;
+
+$switch-handle-width: ($switch-width - .5rem) / 2;
+
+.a-switch {
+  display: flex;
+}
+
+.a-switch__label {
+  line-height: $switch-height;
+  margin-right: $spacer-ti;
+}
+
+.a-switch__toggle {
+  height: $switch-height;
+  position: relative;
+  width: $switch-width;
+
+  input[type='checkbox'] {
+    max-height: 0;
+    max-width: 0;
+    opacity: 0;
+    position: absolute;
+  }
+
+  label {
+    background-color: $switch-bg;
+    box-shadow: inset 0 0 0 1px $switch-border;
+    cursor: pointer;
+    display: inline-block;
+    height: $switch-height;
+    position: relative;
+    user-select: none;
+    width: $switch-width;
+
+    &:before {
+      content: '';
+      display: block;
+      height: $switch-height;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: $switch-height;
+    }
+
+    &:after {
+      background-color: $switch-handle-bg;
+      content: '';
+      display: block;
+      height: $switch-handle-width;
+      left: .25rem;
+      position: absolute;
+      top: .25rem;
+      transition-duration: $animation-duration;
+      transition-property: background, left;
+      transition-timing-function: $animation-easing;
+      width: $switch-handle-width;
+    }
+  }
+
+  input[type='checkbox']:checked + label:before {
+    width: $switch-width;
+  }
+
+  input[type='checkbox']:checked + label:after {
+    background-color: $switch-handle-bg-active;
+    left: $switch-width / 2;
+  }
+
+  + .a-switch__label {
+    margin: 0 0 0 $spacer-ti;
+  }
+}
