@@ -37,6 +37,17 @@
 
 
 /**
+ * TABLE SIZES
+ * -------------------------------------------------------------------
+ */
+
+.a-table.a-table--small tr {
+  border-bottom: 1px solid $table-border;
+  height: $spacer-md;
+}
+
+
+/**
  * TABLE SCHEMES
  * -------------------------------------------------------------------
  */
