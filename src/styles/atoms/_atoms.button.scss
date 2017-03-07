@@ -33,7 +33,8 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline {
+.a-button-outline,
+.a-button-transparent {
   @extend %a-button;
 }
 
@@ -122,13 +123,40 @@
 
 
 /**
+ * BUTTON ICON TRANSPARENT COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-button-transparent.has-icon {
+  @include a-button-outline($btn-outline-primary-color, transparent, false);
+
+  &.a-button--secondary {
+    @include a-button-outline($btn-outline-secondary-color, transparent, false);
+  }
+
+  &.a-button--success {
+    @include a-button-outline($btn-outline-success-color, transparent, false);
+  }
+
+  &.a-button--warning {
+    @include a-button-outline($btn-outline-warning-color, transparent, false);
+  }
+
+  &.a-button--danger {
+    @include a-button-outline($btn-outline-danger-color, transparent, false);
+  }
+}
+
+
+/**
  * BUTTON SIZES
  * -------------------------------------------------------------------
  */
 
 .a-button,
 .a-button-negative,
-.a-button-outline {
+.a-button-outline,
+.a-button-transparent {
 
   &.a-button--tiny {
     font-size: rem($font-size-ti);
@@ -256,7 +284,8 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline {
+.a-button-outline,
+.a-button-transparent {
 
   &.has-icon {
     padding: 0;

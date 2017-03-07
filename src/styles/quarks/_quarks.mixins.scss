@@ -50,10 +50,14 @@
  * -------------------------------------------------------------------
  */
 
-@mixin a-button-outline($_color: $btn-outline-primary-color, $_background: $btn-outline-bg) {
-  background-color: transparent;
-  border: 1px solid $_color;
+
+@mixin a-button-outline($_color: $btn-outline-primary-color, $_background: $btn-outline-bg, $_border: true) {
+  background-color: $_background;
   color: $_color;
+
+  @if $_border {
+    border: 1px solid $_color;
+  }
 
   &:not([disabled]):hover,
   &:not([disabled]):active {
