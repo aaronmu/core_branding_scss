@@ -153,6 +153,17 @@
 
 
 /**
+ * BADGE MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-badge($_color: $badge-default-color, $_background: $badge-default-bg) {
+  background-color: $_background;
+  color: $_color;
+}
+
+
+/**
  * CLEARFIX
  * -------------------------------------------------------------------
  */
