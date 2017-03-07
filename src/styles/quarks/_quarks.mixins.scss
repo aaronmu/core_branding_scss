@@ -41,6 +41,7 @@
 
   &[disabled] {
     background-color: $state-disabled;
+    cursor: not-allowed;
   }
 }
 
@@ -68,6 +69,7 @@
   &[disabled] {
     border-color: $state-disabled;
     color: $state-disabled;
+    cursor: not-allowed;
   }
 }
 
