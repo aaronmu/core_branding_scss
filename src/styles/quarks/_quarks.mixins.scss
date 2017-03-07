@@ -164,6 +164,18 @@
 
 
 /**
+ * LABEL MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-label($_color: $label-default-color, $_border: $label-default-border) {
+  background-color: transparent;
+  border: 1px solid $_border;
+  color: $_color;
+}
+
+
+/**
  * CLEARFIX
  * -------------------------------------------------------------------
  */

@@ -298,3 +298,28 @@ $badge-danger-bg:         $state-danger !default;
  */
 
 $breadcrumb-arrow-color:  $grey !default;
+
+
+/**
+ * LABELS
+ * -------------------------------------------------------------------
+ */
+
+$label-default-color:     $black-pearl !default;
+$label-default-border:    $grey !default;
+
+$label-primary-color:     $brand-primary !default;
+$label-primary-border:    $label-primary-color !default;
+
+$label-secondary-color:   $brand-secondary !default;
+$label-secondary-border:  $label-secondary-color !default;
+
+$label-success-color:     $state-success !default;
+$label-success-border:    $label-success-color !default;
+
+$label-warning-color:     $state-warning !default;
+$label-warning-border:    $label-warning-color !default;
+
+$label-danger-color:      $state-danger !default;
+$label-danger-border:     $label-danger-color !default;
+
