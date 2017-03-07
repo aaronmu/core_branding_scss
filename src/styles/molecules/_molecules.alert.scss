@@ -1,0 +1,67 @@
+/**
+ * ALERTS
+ * -------------------------------------------------------------------
+ */
+
+.m-alert {
+  padding: $spacer;
+  position: relative;
+
+  .m-alert__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+.m-alert__header {
+  padding-right: $spacer-lg;
+}
+
+.m-alert__body {
+  margin-top: $spacer-xs;
+}
+
+.m-alert__actions {
+  margin-bottom: -$spacer;
+  margin-top: $spacer-sm;
+  text-align: right;
+
+  @include at($screen-xs) {
+    margin-bottom: 0;
+  }
+
+  [class*='a-button'] {
+    margin-bottom: $spacer;
+
+    @include at($screen-xs) {
+      margin-bottom: 0;
+
+      &:not(:first-child) {
+        margin-left: $spacer;
+      }
+    }
+  }
+}
+
+
+/**
+ * ALERTS COLORS
+ * -------------------------------------------------------------------
+ */
+
+.m-alert {
+  @include m-alert;
+
+  &.m-alert--success {
+    @include m-alert($alert-success);
+  }
+
+  &.m-alert--warning {
+    @include m-alert($alert-warning);
+  }
+
+  &.m-alert--danger {
+    @include m-alert($alert-danger);
+  }
+}

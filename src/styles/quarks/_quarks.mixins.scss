@@ -142,6 +142,17 @@
 
 
 /**
+ * ALERT MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin m-alert($_background: $alert-default) {
+  background-color: mix($_background, $white, 10%);
+  border: 1px solid $_background;
+}
+
+
+/**
  * MEDIA QUERIES MIXIN
  * -------------------------------------------------------------------
  */

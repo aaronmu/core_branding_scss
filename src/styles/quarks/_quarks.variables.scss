@@ -240,3 +240,14 @@ $switch-handle-bg-active: $brand-primary !default;
  */
 
 $cite-color:             $brand-secondary;
+
+
+/**
+ * ALERTS
+ * -------------------------------------------------------------------
+ */
+
+$alert-default:           $brand-primary !default;
+$alert-success:           $state-success !default;
+$alert-warning:           $state-warning !default;
+$alert-danger:            $state-danger !default;
