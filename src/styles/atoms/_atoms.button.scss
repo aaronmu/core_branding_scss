@@ -13,7 +13,7 @@
 %a-button {
   border: none;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-weight: $bold;
   line-height: $spacer-lg;
   min-height: $spacer-lg;
@@ -24,7 +24,13 @@
   transition-property: color, background, border-color;
   transition-timing-function: $animation-easing;
   user-select: none;
-  vertical-align: middle;
+  width: 100%;
+
+  @include at($screen-xs) {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
 
   .fa {
     font-size: $icon-size-base;
@@ -288,8 +294,10 @@
 .a-button-transparent {
 
   &.has-icon {
+    display: inline-block;
     padding: 0;
     position: relative;
+    vertical-align: middle;
     width: $spacer-lg;
 
     .fa {
