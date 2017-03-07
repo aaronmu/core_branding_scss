@@ -30,3 +30,6 @@ gulp.task('default', ['server'], function () {
     require('opn')('http://localhost:9000');
 });
 
+gulp.task('build', ['clean-dist', 'sass-dist'], function () {
+
+});
