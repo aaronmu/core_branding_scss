@@ -1,0 +1,237 @@
+/**
+ * GLOBAL VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * SPECIFIC COLOR PALETTE
+ * -------------------------------------------------------------------
+ */
+
+$brand-primary:           $endeavour !default;
+$brand-secondary:         $monza !default;
+
+$state-success:           $apple !default;
+$state-info:              $endeavour !default;
+$state-warning:           $sun !default;
+$state-danger:            $alizarin-crimson !default;
+$state-disabled:          $grey-light !default;
+
+$text-color:              $black-pearl !default;
+$text-color-light:        $grey-dark !default;
+$text-color-xlight:       $white !default;
+
+$background-color:        $grey-light !default;
+$background-color-light:  $grey-lighter !default;
+
+$border-color:            $grey !default;
+$border-color-light:      $grey-light !default;
+
+
+/**
+ * SPACERS
+ * -------------------------------------------------------------------
+ */
+
+$spacer:                  1.5rem !default; // 24px
+
+$spacer-xl:               $spacer * 2.5 !default; // 60px
+$spacer-lg:               $spacer * 2 !default; // 48px
+$spacer-md:               $spacer * 1.5 !default; // 36px
+$spacer-sm:               $spacer * .75 !default; // 18px
+$spacer-xs:               $spacer * .6666666667 !default; // 16px
+$spacer-ti:               $spacer * .5 !default; // 12px
+
+
+/**
+ * FONT FAMILIES
+ * -------------------------------------------------------------------
+ */
+
+$font-family-base:        'Sun Antwerpen Regular' !default;
+$font-family-headings:    'Antwerpen Regular' !default;
+
+
+/**
+ * FONT SIZES
+ * -------------------------------------------------------------------
+ */
+
+$font-size-ti:            13px !default;
+$font-size-sm:            14px !default;
+$font-size-base:          16px !default;
+$font-size-lg:            18px !default;
+
+$font-size-ratio:         1.2 !default;
+
+$font-size-h1:            $font-size-base * power($font-size-ratio, 6) !default; // ±48px
+$font-size-h2:            $font-size-base * power($font-size-ratio, 5) !default; // ±40px
+$font-size-h3:            $font-size-base * power($font-size-ratio, 4) !default; // ±33px
+$font-size-h4:            $font-size-base * power($font-size-ratio, 3) !default; // ±28px
+$font-size-h5:            $font-size-base * power($font-size-ratio, 2) !default; // ±23px
+$font-size-h6:            $font-size-base * power($font-size-ratio, 1) !default; // ±19px
+
+
+/**
+ * LINE HEIGHTS
+ * -------------------------------------------------------------------
+ */
+
+$line-height-base:        1 !default;
+$line-height-headings:    1.44 !default;
+
+
+/**
+ * FONT WEIGHTS
+ * -------------------------------------------------------------------
+ */
+
+$light:                   300 !default;
+$normal:                  500 !default;
+$bold:                    700 !default;
+$extra-bold:              800 !default;
+
+
+/**
+ * ANIMATIONS
+ * -------------------------------------------------------------------
+ */
+
+$animation-duration:      250ms;
+$animation-easing:        ease-in-out;
+
+$animation-normal:        $animation-duration $animation-easing;
+
+
+/**
+ * ICON SIZES
+ * -------------------------------------------------------------------
+ */
+
+$icon-size-ti:            12px !default;
+$icon-size-sm:            16px !default;
+$icon-size-base:          22px !default;
+$icon-size-lg:            28px !default;
+
+
+/**
+ * LINKS
+ * -------------------------------------------------------------------
+ * Define text and hover color for each hyperlink
+ */
+
+$link-color:              $brand-primary !default;
+$link-hover-color:        mix($link-color, $black, 85%) !default;
+
+
+/**
+ * TABLES
+ * -------------------------------------------------------------------
+ * Define background and border color for each table
+ */
+
+$table-bg:                $white !default;
+$table-border:            $border-color !default;
+
+$table-head-bg:           $background-color-light !default;
+
+$table-primary-head-color:    $white !default;
+$table-primary-head-bg:       $brand-primary !default;
+
+$table-secondary-head-color:  $white !default;
+$table-secondary-head-bg:     $brand-secondary !default;
+
+$table-striped-bg:        $background-color-light !default;
+
+
+/**
+ * BUTTONS
+ * -------------------------------------------------------------------
+ * Define text, background and border color for each button
+ */
+
+$btn-font-weight:         $bold !default;
+
+$btn-primary-color:       $white !default;
+$btn-primary-bg:          $brand-primary !default;
+
+$btn-secondary-color:     $white !default;
+$btn-secondary-bg:        $brand-secondary !default;
+
+$btn-success-color:       $white !default;
+$btn-success-bg:          $state-success !default;
+
+$btn-warning-color:       $white !default;
+$btn-warning-bg:          $state-warning !default;
+
+$btn-danger-color:        $white !default;
+$btn-danger-bg:           $state-danger !default;
+
+$btn-transparent-color:   $brand-primary !default;
+$btn-transparent-bg:      transparent !default;
+
+$btn-outline-bg:                  transparent !default;
+$btn-outline-primary-color:       $brand-primary !default;
+$btn-outline-secondary-color:     $brand-secondary !default;
+$btn-outline-success-color:       $state-success !default;
+$btn-outline-warning-color:       $state-warning !default;
+$btn-outline-danger-color:        $state-danger !default;
+
+
+/**
+ * FORMS
+ * -------------------------------------------------------------------
+ * Define text, background, border and placeholder color for each input
+ */
+
+$input-color:             $text-color !default;
+$input-bg:                $white !default;
+$input-border:            $border-color !default;
+$input-border-focus:      mix($input-border, $white, 25%) !default;
+$input-disabled:          $state-disabled !default;
+$input-placeholder:       $state-disabled !default;
+$input-icon:              $grey-dark !default;
+$input-required:          $state-danger !default;
+
+$input-success-border:            $state-success !default;
+$input-success-border-focus:      mix($input-success-border, $white, 25%) !default;
+$input-success-icon:              $state-success !default;
+
+$input-warning-border:            $state-warning !default;
+$input-warning-border-focus:      mix($input-warning-border, $white, 25%) !default;
+$input-warning-icon:              $state-warning !default;
+
+$input-danger-border:             $state-danger !default;
+$input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
+$input-danger-icon:               $state-danger !default;
+
+
+/**
+ * RADIO BUTTONS & CHECKBOXES
+ * -------------------------------------------------------------------
+ */
+
+$radio-checkbox-color:    $white !default;
+$radio-checkbox-bg:       $brand-primary !default;
+
+
+/**
+ * SWITCHES
+ * -------------------------------------------------------------------
+ */
+
+$switch-bg:               $input-bg !default;
+$switch-border:           $input-border !default;
+$switch-disabled:         $state-disabled !default;
+
+$switch-handle-bg:        $grey !default;
+$switch-handle-bg-active: $brand-primary !default;
+
+
+/**
+ * CITE
+ * -------------------------------------------------------------------
+ */
+
+$cite-color:             $brand-secondary;

@@ -8,6 +8,7 @@
 // - https://www.npmjs.com/package/gulp-postcss
 // - https://www.npmjs.com/package/autoprefixer
 // - https://www.npmjs.com/package/cssnano
+// - https://www.npmjs.com/package/gulp-css-url-adjuster
 
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
@@ -18,19 +19,24 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var cssnano = require("cssnano");
 var rename = require('gulp-rename');
+var cssUrlAdjuster = require('gulp-css-url-adjuster');
 
-var postcssConfig = [
-    autoprefixer({ browsers: ["last 3 versions"] }),
+var cssNano = [
     cssnano()
 ];
 
-var postcssConfigWithoutNano = [
+var autoPrefixer = [
     autoprefixer({ browsers: ["last 3 versions"] })
 ];
 
+var sassOptions = {
+    outputStyle: 'expanded',
+    sourceComments: false
+}
+
 var sourcemapOptions = {
     includeContent: false,
-    sourceRoot: "../../styles"
+    // sourceRoot: "dist"
 };
 
 gulp.task('sass', function () {
@@ -38,12 +44,9 @@ gulp.task('sass', function () {
     return gulp.src('src/styles/**/*.scss')
         .pipe(plumber())
         .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'expanded',
-            sourceComments: false
-        }).on('error', sass.logError))
+        .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(mergeMediaQueries({ use_external: true }))
-        .pipe(postcss(postcssConfigWithoutNano))
+        .pipe(postcss(autoPrefixer))
         .pipe(gulp.dest('.tmp/css'));
 });
 
@@ -51,25 +54,20 @@ gulp.task('sass', function () {
 // -------------------------------------------------------------------
 // :: SASS DIST
 // -------------------------------------------------------------------
-// - https://www.npmjs.org/package/gulp-sass-lint
 
 gulp.task('sass-dist', function(){
 
     return gulp.src('src/styles/**/*.scss')
         .pipe(plumber())
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'expanded',
-            sourceComments: false
-        }).on('error', sass.logError))
-        .pipe(postcss(postcssConfigWithoutNano))
-        .pipe(gulp.dest('dist'))
-        .pipe(sass({
-            outputStyle: 'expanded',
-            sourceComments: false
-        }).on('error', sass.logError))
+        .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(mergeMediaQueries({ use_external: true }))
-        .pipe(postcss(postcssConfig))
+        .pipe(postcss(autoPrefixer))
+        .pipe(cssUrlAdjuster({
+            replace:  ['../../fonts','assets/fonts'],
+        }))
+        .pipe(gulp.dest('dist'))
+        .pipe(sourcemaps.init())
+        .pipe(postcss(cssNano))
         .pipe(rename({extname: '.min.css'}))
         .pipe(sourcemaps.write("./", sourcemapOptions))
         .pipe(gulp.dest('dist'));
