@@ -52,7 +52,7 @@
  */
 
 
-@mixin a-button-outline($_color: $btn-outline-primary-color, $_background: $btn-outline-bg, $_border: true) {
+@mixin a-button-outline($_color: $btn-primary-bg, $_background: $btn-transparent-bg, $_border: true) {
   background-color: $_background;
   color: $_color;
 
