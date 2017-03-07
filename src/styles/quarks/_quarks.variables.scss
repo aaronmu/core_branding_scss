@@ -172,11 +172,11 @@ $btn-transparent-color:   $brand-primary !default;
 $btn-transparent-bg:      transparent !default;
 
 $btn-outline-bg:                  transparent !default;
-$btn-outline-primary-color:       $brand-primary !default;
-$btn-outline-secondary-color:     $brand-secondary !default;
-$btn-outline-success-color:       $state-success !default;
-$btn-outline-warning-color:       $state-warning !default;
-$btn-outline-danger-color:        $state-danger !default;
+$btn-outline-primary-color:       $btn-primary-bg !default;
+$btn-outline-secondary-color:     $btn-secondary-bg !default;
+$btn-outline-success-color:       $btn-success-bg !default;
+$btn-outline-warning-color:       $btn-warning-bg !default;
+$btn-outline-danger-color:        $btn-danger-bg !default;
 
 
 /**
