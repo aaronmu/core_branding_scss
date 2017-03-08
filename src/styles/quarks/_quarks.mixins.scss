@@ -34,8 +34,8 @@
   background-color: $_background;
   color: $_color;
 
-  &:not([disabled]):hover,
-  &:not([disabled]):active {
+  &:hover,
+  &:active {
     background-color: mix($_background, $black, 85%);
   }
 
