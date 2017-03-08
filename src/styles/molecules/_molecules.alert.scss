@@ -20,9 +20,10 @@
 
 .m-alert__actions {
   margin-bottom: -$spacer-xs;
-  text-align: right;
 
   @include at($screen-xs) {
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: 0;
   }
 
