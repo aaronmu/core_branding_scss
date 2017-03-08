@@ -42,7 +42,6 @@
   &[disabled] {
     background-color: $state-disabled;
     cursor: not-allowed;
-    pointer-events: none;
   }
 }
 
@@ -74,7 +73,6 @@
     box-shadow: 0 0 0 1px $state-disabled inset;
     color: $state-disabled;
     cursor: not-allowed;
-    pointer-events: none;
   }
 }
 
