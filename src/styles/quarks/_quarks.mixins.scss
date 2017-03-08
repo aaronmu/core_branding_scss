@@ -42,6 +42,7 @@
   &[disabled] {
     background-color: $state-disabled;
     cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
@@ -57,17 +58,17 @@
   color: $_color;
 
   @if $_border {
-    border: 1px solid $_color;
+    box-shadow: 0 0 0 1px $_color inset;
   }
 
   &:hover,
   &:active {
-    border-color: mix($_color, $black, 85%);
+    box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset;
     color: mix($_color, $black, 85%);
   }
 
   &[disabled] {
-    border-color: $state-disabled;
+    box-shadow: 0 0 0 1px $state-disabled inset;
     color: $state-disabled;
     cursor: not-allowed;
     pointer-events: none;
