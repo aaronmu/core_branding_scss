@@ -1,0 +1,40 @@
+/**
+ * TAGS
+ * -------------------------------------------------------------------
+ */
+
+.m-tag {
+  background: $background-color-light;
+  box-shadow: 0 0 0 1px $border-color inset;
+  color: $text-color;
+  display: inline-block;
+  height: $spacer-md;
+  line-height: $spacer-md;
+
+  > * {
+    float: left;
+  }
+}
+
+.m-tag__label {
+  @extend %u-text-truncate;
+  display: block;
+  font-weight: $bold;
+  max-width: $spacer * 10;
+  padding: 0 $spacer-xs;
+}
+
+.m-tag__input {
+  @include a-input-placeholder {
+    color: $grey;
+  }
+
+  background-color: transparent;
+  border: none;
+  min-height: $spacer-md;
+  padding: 0 $spacer-xs;
+
+  &:focus {
+    box-shadow: 0 0 0 2px $input-border-focus;
+  }
+}
