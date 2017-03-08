@@ -11,34 +11,30 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    + * {
+      margin-right: $spacer-md;
+    }
   }
 }
 
-.m-alert__header {
-  padding-right: $spacer-lg;
-}
-
-.m-alert__body {
-  margin-top: $spacer-xs;
-}
-
 .m-alert__actions {
-  margin-bottom: -$spacer;
-  margin-top: $spacer-sm;
-  text-align: right;
+  margin-bottom: -$spacer-xs;
 
   @include at($screen-xs) {
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: 0;
   }
 
   [class*='a-button'] {
-    margin-bottom: $spacer;
+    margin-bottom: $spacer-xs;
 
     @include at($screen-xs) {
       margin-bottom: 0;
 
       &:not(:first-child) {
-        margin-left: $spacer;
+        margin-left: $spacer-xs;
       }
     }
   }
