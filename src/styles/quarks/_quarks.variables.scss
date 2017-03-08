@@ -129,6 +129,14 @@ $icon-size-lg:            28px !default;
 
 
 /**
+ * BOX SHADOWS
+ * -------------------------------------------------------------------
+ */
+
+$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1);
+
+
+/**
  * LINKS
  * -------------------------------------------------------------------
  * Define text and hover color for each hyperlink
@@ -211,6 +219,8 @@ $input-warning-icon:              $state-warning !default;
 $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
+
+$autocomplete-hover:      $grey-lighter !default;
 
 
 /**
