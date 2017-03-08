@@ -63,8 +63,11 @@
 
   &:hover,
   &:active {
-    box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset;
     color: mix($_color, $black, 85%);
+
+    @if $_border {
+      box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset;
+    }
   }
 
   &[disabled] {
