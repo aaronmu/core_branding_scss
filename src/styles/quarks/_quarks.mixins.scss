@@ -34,14 +34,15 @@
   background-color: $_background;
   color: $_color;
 
-  &:not([disabled]):hover,
-  &:not([disabled]):active {
+  &:hover,
+  &:active {
     background-color: mix($_background, $black, 85%);
   }
 
   &[disabled] {
     background-color: $state-disabled;
     cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
@@ -57,19 +58,23 @@
   color: $_color;
 
   @if $_border {
-    border: 1px solid $_color;
+    box-shadow: 0 0 0 1px $_color inset;
   }
 
-  &:not([disabled]):hover,
-  &:not([disabled]):active {
-    border-color: mix($_color, $black, 85%);
+  &:hover,
+  &:active {
     color: mix($_color, $black, 85%);
+
+    @if $_border {
+      box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset;
+    }
   }
 
   &[disabled] {
-    border-color: $state-disabled;
+    box-shadow: 0 0 0 1px $state-disabled inset;
     color: $state-disabled;
     cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
@@ -181,14 +186,10 @@
  */
 
 @mixin clearfix {
-  &:before,
   &:after {
-      content: ' ';
-      display: table;
-  }
-
-  &:after {
-      clear: both;
+    content: '';
+    display: block;
+    clear: both;
   }
 }
 
