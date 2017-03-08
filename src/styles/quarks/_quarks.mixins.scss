@@ -70,6 +70,7 @@
     border-color: $state-disabled;
     color: $state-disabled;
     cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
