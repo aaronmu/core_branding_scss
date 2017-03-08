@@ -21,10 +21,10 @@ a {
   }
 
   &.has-icon-left .fa {
-    padding-right: $spacer-ti / 2;
+    padding-right: $spacer / 3;
   }
 
   &.has-icon-right .fa {
-    padding-left: $spacer-ti / 2;
+    padding-left: $spacer / 3;
   }
 }

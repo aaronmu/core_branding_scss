@@ -22,7 +22,7 @@ $switch-handle-width: ($switch-width - .5rem) / 2;
 
 .a-switch__label {
   line-height: $switch-height;
-  margin-right: $spacer-ti;
+  margin-right: $spacer-xs;
 }
 
 .a-switch__toggle {
@@ -92,6 +92,6 @@ $switch-handle-width: ($switch-width - .5rem) / 2;
   }
 
   + .a-switch__label {
-    margin: 0 0 0 $spacer-ti;
+    margin: 0 0 0 $spacer-xs;
   }
 }

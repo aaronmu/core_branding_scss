@@ -34,13 +34,15 @@
   background-color: $_background;
   color: $_color;
 
-  &:not([disabled]):hover,
-  &:not([disabled]):active {
+  &:hover,
+  &:active {
     background-color: mix($_background, $black, 85%);
   }
 
   &[disabled] {
     background-color: $state-disabled;
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
@@ -50,20 +52,29 @@
  * -------------------------------------------------------------------
  */
 
-@mixin a-button-outline($_color: $btn-outline-primary-color, $_background: $btn-outline-bg) {
-  background-color: transparent;
-  border: 1px solid $_color;
+
+@mixin a-button-outline($_color: $btn-primary-bg, $_background: $btn-transparent-bg, $_border: true) {
+  background-color: $_background;
   color: $_color;
 
-  &:not([disabled]):hover,
-  &:not([disabled]):active {
-    border-color: mix($_color, $black, 85%);
+  @if $_border {
+    box-shadow: 0 0 0 1px $_color inset;
+  }
+
+  &:hover,
+  &:active {
     color: mix($_color, $black, 85%);
+
+    @if $_border {
+      box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset;
+    }
   }
 
   &[disabled] {
-    border-color: $state-disabled;
+    box-shadow: 0 0 0 1px $state-disabled inset;
     color: $state-disabled;
+    cursor: not-allowed;
+    pointer-events: none;
   }
 }
 
@@ -131,6 +142,51 @@
   &:-moz-placeholder {
     @content;
     text-overflow: ellipsis;
+  }
+}
+
+
+/**
+ * ALERT MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin m-alert($_background: $alert-default) {
+  background-color: mix($_background, $white, 10%);
+  border: 1px solid $_background;
+}
+
+
+/**
+ * CLEARFIX
+ * -------------------------------------------------------------------
+ */
+
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+/**
+ * MEDIA QUERIES MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin at($_min-width) {
+
+  @media screen and (min-width: $_min-width) {
+    @content;
+  }
+}
+
+@mixin to($_max-width) {
+
+  @media screen and (max-width: $_max-width) {
+    @content;
   }
 }
 
