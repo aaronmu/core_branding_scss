@@ -4,9 +4,9 @@
  */
 
 .m-tag {
-  background: $background-color-light;
-  box-shadow: 0 0 0 1px $border-color inset;
-  color: $text-color;
+  background: $tag-bg;
+  box-shadow: 0 0 0 1px $tag-border inset;
+  color: $tag-color;
   display: inline-block;
   height: $spacer-md;
   line-height: $spacer-md;
@@ -26,7 +26,7 @@
 
 .m-tag__input {
   @include a-input-placeholder {
-    color: $grey;
+    color: $tag-placeholder;
   }
 
   background-color: transparent;
@@ -35,6 +35,6 @@
   padding: 0 $spacer-xs;
 
   &:focus {
-    box-shadow: 0 0 0 2px $input-border-focus;
+    box-shadow: 0 0 0 2px $tag-border-focus;
   }
 }

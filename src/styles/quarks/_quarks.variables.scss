@@ -336,3 +336,14 @@ $label-warning-border:    $label-warning-color !default;
 $label-danger-color:      $state-danger !default;
 $label-danger-border:     $label-danger-color !default;
 
+
+/**
+ * TAGS
+ * -------------------------------------------------------------------
+ */
+
+$tag-color:               $text-color !default;
+$tag-bg:                  $background-color-light !default;
+$tag-border:              $border-color !default;
+$tag-border-focus:        $input-border-focus;
+$tag-placeholder:         $grey !default;
