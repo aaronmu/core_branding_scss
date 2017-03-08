@@ -13,7 +13,7 @@
 %a-button {
   border: none;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   font-weight: $bold;
   line-height: $spacer-lg;
   min-height: $spacer-lg;
@@ -21,10 +21,16 @@
   text-align: center;
   text-decoration: none;
   transition-duration: $animation-duration;
-  transition-property: color, background, border-color;
+  transition-property: color, background, box-shadow;
   transition-timing-function: $animation-easing;
   user-select: none;
-  vertical-align: middle;
+  width: 100%;
+
+  @include at($screen-xs) {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
 
   .fa {
     font-size: $icon-size-base;
@@ -33,7 +39,8 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline {
+.a-button-outline,
+.a-button-transparent {
   @extend %a-button;
 }
 
@@ -104,19 +111,45 @@
   @include a-button-outline;
 
   &.a-button--secondary {
-    @include a-button-outline($btn-outline-secondary-color);
+    @include a-button-outline($btn-secondary-bg);
   }
 
   &.a-button--success {
-    @include a-button-outline($btn-outline-success-color);
+    @include a-button-outline($btn-success-bg);
   }
 
   &.a-button--warning {
-    @include a-button-outline($btn-outline-warning-color);
+    @include a-button-outline($btn-warning-bg);
   }
 
   &.a-button--danger {
-    @include a-button-outline($btn-outline-danger-color);
+    @include a-button-outline($btn-danger-bg);
+  }
+}
+
+
+/**
+ * BUTTON ICON TRANSPARENT COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-button-transparent.has-icon {
+  @include a-button-outline($btn-primary-bg, transparent, false);
+
+  &.a-button--secondary {
+    @include a-button-outline($btn-secondary-bg, transparent, false);
+  }
+
+  &.a-button--success {
+    @include a-button-outline($btn-success-bg, transparent, false);
+  }
+
+  &.a-button--warning {
+    @include a-button-outline($btn-warning-bg, transparent, false);
+  }
+
+  &.a-button--danger {
+    @include a-button-outline($btn-danger-bg, transparent, false);
   }
 }
 
@@ -128,13 +161,14 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline {
+.a-button-outline,
+.a-button-transparent {
 
   &.a-button--tiny {
     font-size: rem($font-size-ti);
     line-height: $spacer;
     min-height: $spacer;
-    padding: 0 $spacer-ti;
+    padding: 0 $spacer-xs;
 
     .fa {
       font-size: $icon-size-ti;
@@ -256,11 +290,14 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline {
+.a-button-outline,
+.a-button-transparent {
 
   &.has-icon {
+    display: inline-block;
     padding: 0;
     position: relative;
+    vertical-align: middle;
     width: $spacer-lg;
 
     .fa {

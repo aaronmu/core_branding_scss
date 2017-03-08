@@ -14,19 +14,19 @@
 
   > label {
     display: block;
-    margin-bottom: $spacer-ti / 2;
+    margin-bottom: $spacer-sm / 2;
     text-align: left;
 
     + .a-switch,
     + .a-input__checkbox,
     + .a-input__radio {
-      margin-top: $spacer-xs;
+      margin-top: $spacer-sm;
     }
   }
 
   small {
     display: block;
-    margin: $spacer-ti / 2 0;
+    margin: $spacer-sm / 2 0;
     text-align: left;
   }
 
@@ -43,7 +43,7 @@
 
   textarea {
     min-height: 12rem;
-    padding: $spacer-xs $spacer;
+    padding: $spacer-sm $spacer;
   }
 }
 
