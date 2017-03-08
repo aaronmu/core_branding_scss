@@ -11,20 +11,15 @@
     position: absolute;
     right: 0;
     top: 0;
+
+    + * {
+      margin-right: $spacer-md;
+    }
   }
-}
-
-.m-alert__header {
-  padding-right: $spacer-lg;
-}
-
-.m-alert__body {
-  margin-top: $spacer-xs;
 }
 
 .m-alert__actions {
   margin-bottom: -$spacer-xs;
-  margin-top: $spacer-sm;
   text-align: right;
 
   @include at($screen-xs) {
