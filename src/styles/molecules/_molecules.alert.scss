@@ -23,7 +23,7 @@
 }
 
 .m-alert__actions {
-  margin-bottom: -$spacer;
+  margin-bottom: -$spacer-xs;
   margin-top: $spacer-sm;
   text-align: right;
 
@@ -32,7 +32,7 @@
   }
 
   [class*='a-button'] {
-    margin-bottom: $spacer;
+    margin-bottom: $spacer-xs;
 
     @include at($screen-xs) {
       margin-bottom: 0;
