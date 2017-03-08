@@ -93,7 +93,7 @@
     border: 1px solid $_border;
     color: $_color;
 
-    @include a-input-placeholder() {
+    @include a-input-placeholder {
       color: $input-placeholder;
     }
 

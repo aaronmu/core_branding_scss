@@ -72,7 +72,7 @@
 }
 
 .u-text-secondary {
-  color: $brand-secondary
+  color: $brand-secondary;
 }
 
 .u-text-success {
@@ -102,9 +102,9 @@
  */
 
 %u-text-truncate {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .u-text-truncate {
