@@ -60,8 +60,8 @@
     border: 1px solid $_color;
   }
 
-  &:not([disabled]):hover,
-  &:not([disabled]):active {
+  &:hover,
+  &:active {
     border-color: mix($_color, $black, 85%);
     color: mix($_color, $black, 85%);
   }
