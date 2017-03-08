@@ -38,7 +38,7 @@
       margin-bottom: 0;
 
       &:not(:first-child) {
-        margin-left: $spacer;
+        margin-left: $spacer-xs;
       }
     }
   }
