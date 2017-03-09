@@ -174,6 +174,16 @@ $table-striped-bg:        $background-color-light !default;
 
 $btn-font-weight:         $bold !default;
 
+$btn-font-size-ti:        $font-size-xs !default;
+$btn-font-size-sm:        $font-size-sm !default;
+$btn-font-size:           $font-size-base !default;
+$btn-font-size-lg:        $font-size-lg !default;
+
+$btn-icon-size-ti:        $icon-size-ti !default;
+$btn-icon-size-sm:        $icon-size-sm !default;
+$btn-icon-size:           $icon-size-base !default;
+$btn-icon-size-lg:        $icon-size-lg !default;
+
 $btn-default-color:       $white !default;
 $btn-default-bg:          $grey !default;
 
@@ -286,22 +296,27 @@ $avatar-lg:               $spacer * 4 !default; // 96px
  * -------------------------------------------------------------------
  */
 
+$badge-font-size:         $font-size-ti !default;
+$badge-font-weight:       $bold !default;
+$badge-height:            $spacer-sm !default;
+$badge-line-height:       $badge-height !default;
+
 $badge-default-color:     $black-pearl !default;
 $badge-default-bg:        $grey-light !default;
 
 $badge-primary-color:     $white !default;
 $badge-primary-bg:        $brand-primary !default;
 
-$badge-secondary-color:   $white !default;
+$badge-secondary-color:   $badge-primary-color !default;
 $badge-secondary-bg:      $brand-secondary !default;
 
-$badge-success-color:     $white !default;
+$badge-success-color:     $badge-primary-color !default;
 $badge-success-bg:        $state-success !default;
 
-$badge-warning-color:     $white !default;
+$badge-warning-color:     $badge-primary-color !default;
 $badge-warning-bg:        $state-warning !default;
 
-$badge-danger-color:      $white !default;
+$badge-danger-color:      $badge-primary-color !default;
 $badge-danger-bg:         $state-danger !default;
 
 

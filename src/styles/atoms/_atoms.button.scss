@@ -14,7 +14,8 @@
   border: none;
   cursor: pointer;
   display: block;
-  font-weight: $bold;
+  font-size: rem($btn-font-size);
+  font-weight: $btn-font-weight;
   line-height: $spacer-lg;
   min-height: $spacer-lg;
   padding: 0 $spacer;
@@ -33,7 +34,7 @@
   }
 
   .fa {
-    font-size: $icon-size-base;
+    font-size: rem($btn-icon-size);
   }
 }
 
@@ -173,32 +174,32 @@
 .a-button-transparent {
 
   &.a-button--tiny {
-    font-size: rem($font-size-xs);
+    font-size: rem($btn-font-size-ti);
     line-height: $spacer;
     min-height: $spacer;
     padding: 0 $spacer-xs;
 
     .fa {
-      font-size: $icon-size-ti;
+      font-size: rem($btn-icon-size-ti);
     }
   }
 
   &.a-button--small {
-    font-size: rem($font-size-sm);
+    font-size: rem($btn-font-size-sm);
     line-height: $spacer-md;
     min-height: $spacer-md;
 
     .fa {
-      font-size: $icon-size-sm;
+      font-size: rem($btn-icon-size-sm);
     }
   }
 
   &.a-button--large {
-    font-size: rem($font-size-lg);
+    font-size: rem($btn-font-size-lg);
     min-height: $spacer-xl;
 
     .fa {
-      font-size: $icon-size-lg;
+      font-size: rem($btn-icon-size-lg);
     }
   }
 }
