@@ -69,7 +69,8 @@ $font-family-headings:    'Antwerpen Regular' !default;
  * -------------------------------------------------------------------
  */
 
-$font-size-ti:            13px !default;
+$font-size-ti:            12px !default;
+$font-size-xs:            13px !default;
 $font-size-sm:            14px !default;
 $font-size-base:          16px !default;
 $font-size-lg:            18px !default;
@@ -164,6 +165,16 @@ $table-striped-bg:        $background-color-light !default;
  */
 
 $btn-font-weight:         $bold !default;
+
+$btn-font-size-ti:        $font-size-xs !default;
+$btn-font-size-sm:        $font-size-sm !default;
+$btn-font-size:           $font-size-base !default;
+$btn-font-size-lg:        $font-size-lg !default;
+
+$btn-icon-size-ti:        $icon-size-ti !default;
+$btn-icon-size-sm:        $icon-size-sm !default;
+$btn-icon-size:           $icon-size-base !default;
+$btn-icon-size-lg:        $icon-size-lg !default;
 
 $btn-primary-color:       $white !default;
 $btn-primary-bg:          $brand-primary !default;
@@ -265,3 +276,32 @@ $avatar-sm:               $spacer * 1.5 !default; // 36px
 $avatar:                  $spacer * 2 !default; // 48px
 $avatar-md:               $spacer * 3 !default; // 72px
 $avatar-lg:               $spacer * 4 !default; // 96px
+
+
+/**
+ * BADGES
+ * -------------------------------------------------------------------
+ */
+
+$badge-font-size:         $font-size-ti !default;
+$badge-font-weight:       $bold !default;
+$badge-height:            $spacer-sm !default;
+$badge-line-height:       $badge-height !default;
+
+$badge-default-color:     $black-pearl !default;
+$badge-default-bg:        $grey-light !default;
+
+$badge-primary-color:     $white !default;
+$badge-primary-bg:        $brand-primary !default;
+
+$badge-secondary-color:   $badge-primary-color !default;
+$badge-secondary-bg:      $brand-secondary !default;
+
+$badge-success-color:     $badge-primary-color !default;
+$badge-success-bg:        $state-success !default;
+
+$badge-warning-color:     $badge-primary-color !default;
+$badge-warning-bg:        $state-warning !default;
+
+$badge-danger-color:      $badge-primary-color !default;
+$badge-danger-bg:         $state-danger !default;
