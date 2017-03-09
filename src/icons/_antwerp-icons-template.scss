@@ -4,11 +4,11 @@
 // Created with the 'gulp iconfont'-task, the source-template
 // of this file can be found in fonts/icon-sources/_template.scss
 
-@include get-font("<%= fontName %>", "<%= fontPath %>/<%= fontName %>");
+@include get-font('<%= fontName %>', '<%= fontPath %>/<%= fontName %>');
 
-%___FLOW-icon {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+%icon-template {
+  -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
   font-family: '<%= fontName %>';
   font-style: normal;
   font-variant: normal;
@@ -26,6 +26,12 @@
 // Note: Use single quotes ('') for content in pseudo-selectors
 // as double quotes ("") are not supported in <IE9
 <% _.each(glyphs, function(glyph) { %>
-%<%= className %>-<%= glyph.name %> { @extend %___FLOW-icon; content: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>"; }
-.<%= className %>-<%= glyph.name %>:before { @extend %<%= className %>-<%= glyph.name %>; }
+%<%= className %>-<%= glyph.name %> {
+  @extend %icon-template;
+  content: '\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>';
+}
+
+.<%= className %>-<%= glyph.name %>:before {
+  @extend %<%= className %>-<%= glyph.name %>;
+}
 <% }); %>

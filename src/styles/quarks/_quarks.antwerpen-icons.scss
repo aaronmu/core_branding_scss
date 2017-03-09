@@ -4,11 +4,11 @@
 // Created with the 'gulp iconfont'-task, the source-template
 // of this file can be found in fonts/icon-sources/_template.scss
 
-@include get-font("Antwerpen_Icons", "../../fonts/Antwerpen_Icons");
+@include get-font('Antwerpen_Icons', '../../fonts/Antwerpen_Icons');
 
-%___FLOW-icon {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+%icon-template {
+  -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
   font-family: 'Antwerpen_Icons';
   font-style: normal;
   font-variant: normal;
@@ -26,155 +26,461 @@
 // Note: Use single quotes ('') for content in pseudo-selectors
 // as double quotes ("") are not supported in <IE9
 
-%icon-a-card { @extend %___FLOW-icon; content: "\EA01"; }
-.icon-a-card:before { @extend %icon-a-card; }
+%icon-a-card {
+  @extend %icon-template;
+  content: '\EA01';
+}
 
-%icon-akaart-outline { @extend %___FLOW-icon; content: "\EA02"; }
-.icon-akaart-outline:before { @extend %icon-akaart-outline; }
+.icon-a-card:before {
+  @extend %icon-a-card;
+}
 
-%icon-akaart-zuilen { @extend %___FLOW-icon; content: "\EA03"; }
-.icon-akaart-zuilen:before { @extend %icon-akaart-zuilen; }
+%icon-akaart-outline {
+  @extend %icon-template;
+  content: '\EA02';
+}
 
-%icon-antwerp { @extend %___FLOW-icon; content: "\EA04"; }
-.icon-antwerp:before { @extend %icon-antwerp; }
+.icon-akaart-outline:before {
+  @extend %icon-akaart-outline;
+}
 
-%icon-calendar { @extend %___FLOW-icon; content: "\EA05"; }
-.icon-calendar:before { @extend %icon-calendar; }
+%icon-akaart-zuilen {
+  @extend %icon-template;
+  content: '\EA03';
+}
 
-%icon-career { @extend %___FLOW-icon; content: "\EA06"; }
-.icon-career:before { @extend %icon-career; }
+.icon-akaart-zuilen:before {
+  @extend %icon-akaart-zuilen;
+}
 
-%icon-channels { @extend %___FLOW-icon; content: "\EA07"; }
-.icon-channels:before { @extend %icon-channels; }
+%icon-antwerp {
+  @extend %icon-template;
+  content: '\EA04';
+}
 
-%icon-communication { @extend %___FLOW-icon; content: "\EA08"; }
-.icon-communication:before { @extend %icon-communication; }
+.icon-antwerp:before {
+  @extend %icon-antwerp;
+}
 
-%icon-contact { @extend %___FLOW-icon; content: "\EA09"; }
-.icon-contact:before { @extend %icon-contact; }
+%icon-calendar {
+  @extend %icon-template;
+  content: '\EA05';
+}
 
-%icon-contactbook { @extend %___FLOW-icon; content: "\EA0A"; }
-.icon-contactbook:before { @extend %icon-contactbook; }
+.icon-calendar:before {
+  @extend %icon-calendar;
+}
 
-%icon-culture { @extend %___FLOW-icon; content: "\EA0B"; }
-.icon-culture:before { @extend %icon-culture; }
+%icon-career {
+  @extend %icon-template;
+  content: '\EA06';
+}
 
-%icon-digital-work { @extend %___FLOW-icon; content: "\EA0C"; }
-.icon-digital-work:before { @extend %icon-digital-work; }
+.icon-career:before {
+  @extend %icon-career;
+}
 
-%icon-districts { @extend %___FLOW-icon; content: "\EA0D"; }
-.icon-districts:before { @extend %icon-districts; }
+%icon-channels {
+  @extend %icon-template;
+  content: '\EA07';
+}
 
-%icon-diversity { @extend %___FLOW-icon; content: "\EA0E"; }
-.icon-diversity:before { @extend %icon-diversity; }
+.icon-channels:before {
+  @extend %icon-channels;
+}
 
-%icon-education { @extend %___FLOW-icon; content: "\EA0F"; }
-.icon-education:before { @extend %icon-education; }
+%icon-communication {
+  @extend %icon-template;
+  content: '\EA08';
+}
 
-%icon-ewindow-small { @extend %___FLOW-icon; content: "\EA10"; }
-.icon-ewindow-small:before { @extend %icon-ewindow-small; }
+.icon-communication:before {
+  @extend %icon-communication;
+}
 
-%icon-ewindow { @extend %___FLOW-icon; content: "\EA11"; }
-.icon-ewindow:before { @extend %icon-ewindow; }
+%icon-contact {
+  @extend %icon-template;
+  content: '\EA09';
+}
 
-%icon-finance { @extend %___FLOW-icon; content: "\EA12"; }
-.icon-finance:before { @extend %icon-finance; }
+.icon-contact:before {
+  @extend %icon-contact;
+}
 
-%icon-folder { @extend %___FLOW-icon; content: "\EA13"; }
-.icon-folder:before { @extend %icon-folder; }
+%icon-contactbook {
+  @extend %icon-template;
+  content: '\EA0A';
+}
 
-%icon-helpcenter { @extend %___FLOW-icon; content: "\EA14"; }
-.icon-helpcenter:before { @extend %icon-helpcenter; }
+.icon-contactbook:before {
+  @extend %icon-contactbook;
+}
 
-%icon-ict { @extend %___FLOW-icon; content: "\EA15"; }
-.icon-ict:before { @extend %icon-ict; }
+%icon-culture {
+  @extend %icon-template;
+  content: '\EA0B';
+}
 
-%icon-jobs { @extend %___FLOW-icon; content: "\EA16"; }
-.icon-jobs:before { @extend %icon-jobs; }
+.icon-culture:before {
+  @extend %icon-culture;
+}
 
-%icon-leisure { @extend %___FLOW-icon; content: "\EA17"; }
-.icon-leisure:before { @extend %icon-leisure; }
+%icon-digital-work {
+  @extend %icon-template;
+  content: '\EA0C';
+}
 
-%icon-link { @extend %___FLOW-icon; content: "\EA18"; }
-.icon-link:before { @extend %icon-link; }
+.icon-digital-work:before {
+  @extend %icon-digital-work;
+}
 
-%icon-map-small { @extend %___FLOW-icon; content: "\EA19"; }
-.icon-map-small:before { @extend %icon-map-small; }
+%icon-districts {
+  @extend %icon-template;
+  content: '\EA0D';
+}
 
-%icon-map { @extend %___FLOW-icon; content: "\EA1A"; }
-.icon-map:before { @extend %icon-map; }
+.icon-districts:before {
+  @extend %icon-districts;
+}
 
-%icon-media { @extend %___FLOW-icon; content: "\EA1B"; }
-.icon-media:before { @extend %icon-media; }
+%icon-diversity {
+  @extend %icon-template;
+  content: '\EA0E';
+}
 
-%icon-mobility { @extend %___FLOW-icon; content: "\EA1C"; }
-.icon-mobility:before { @extend %icon-mobility; }
+.icon-diversity:before {
+  @extend %icon-diversity;
+}
 
-%icon-my-time { @extend %___FLOW-icon; content: "\EA1D"; }
-.icon-my-time:before { @extend %icon-my-time; }
+%icon-education {
+  @extend %icon-template;
+  content: '\EA0F';
+}
 
-%icon-news-small { @extend %___FLOW-icon; content: "\EA1E"; }
-.icon-news-small:before { @extend %icon-news-small; }
+.icon-education:before {
+  @extend %icon-education;
+}
 
-%icon-news { @extend %___FLOW-icon; content: "\EA1F"; }
-.icon-news:before { @extend %icon-news; }
+%icon-ewindow-small {
+  @extend %icon-template;
+  content: '\EA10';
+}
 
-%icon-ocmw-intranet { @extend %___FLOW-icon; content: "\EA20"; }
-.icon-ocmw-intranet:before { @extend %icon-ocmw-intranet; }
+.icon-ewindow-small:before {
+  @extend %icon-ewindow-small;
+}
 
-%icon-ocmw-medewerkers { @extend %___FLOW-icon; content: "\EA21"; }
-.icon-ocmw-medewerkers:before { @extend %icon-ocmw-medewerkers; }
+%icon-ewindow {
+  @extend %icon-template;
+  content: '\EA11';
+}
 
-%icon-personal-news { @extend %___FLOW-icon; content: "\EA22"; }
-.icon-personal-news:before { @extend %icon-personal-news; }
+.icon-ewindow:before {
+  @extend %icon-ewindow;
+}
 
-%icon-play { @extend %___FLOW-icon; content: "\EA23"; }
-.icon-play:before { @extend %icon-play; }
+%icon-finance {
+  @extend %icon-template;
+  content: '\EA12';
+}
 
-%icon-report { @extend %___FLOW-icon; content: "\EA24"; }
-.icon-report:before { @extend %icon-report; }
+.icon-finance:before {
+  @extend %icon-finance;
+}
 
-%icon-reside { @extend %___FLOW-icon; content: "\EA25"; }
-.icon-reside:before { @extend %icon-reside; }
+%icon-folder {
+  @extend %icon-template;
+  content: '\EA13';
+}
 
-%icon-sanitation { @extend %___FLOW-icon; content: "\EA26"; }
-.icon-sanitation:before { @extend %icon-sanitation; }
+.icon-folder:before {
+  @extend %icon-folder;
+}
 
-%icon-search-standard { @extend %___FLOW-icon; content: "\EA27"; }
-.icon-search-standard:before { @extend %icon-search-standard; }
+%icon-helpcenter {
+  @extend %icon-template;
+  content: '\EA14';
+}
 
-%icon-so-intranet { @extend %___FLOW-icon; content: "\EA28"; }
-.icon-so-intranet:before { @extend %icon-so-intranet; }
+.icon-helpcenter:before {
+  @extend %icon-helpcenter;
+}
 
-%icon-social-affairs { @extend %___FLOW-icon; content: "\EA29"; }
-.icon-social-affairs:before { @extend %icon-social-affairs; }
+%icon-ict {
+  @extend %icon-template;
+  content: '\EA15';
+}
 
-%icon-sports { @extend %___FLOW-icon; content: "\EA2A"; }
-.icon-sports:before { @extend %icon-sports; }
+.icon-ict:before {
+  @extend %icon-ict;
+}
 
-%icon-staff { @extend %___FLOW-icon; content: "\EA2B"; }
-.icon-staff:before { @extend %icon-staff; }
+%icon-jobs {
+  @extend %icon-template;
+  content: '\EA16';
+}
 
-%icon-time { @extend %___FLOW-icon; content: "\EA2C"; }
-.icon-time:before { @extend %icon-time; }
+.icon-jobs:before {
+  @extend %icon-jobs;
+}
 
-%icon-traffic { @extend %___FLOW-icon; content: "\EA2D"; }
-.icon-traffic:before { @extend %icon-traffic; }
+%icon-leisure {
+  @extend %icon-template;
+  content: '\EA17';
+}
 
-%icon-uit-vlieg { @extend %___FLOW-icon; content: "\EA2E"; }
-.icon-uit-vlieg:before { @extend %icon-uit-vlieg; }
+.icon-leisure:before {
+  @extend %icon-leisure;
+}
 
-%icon-uit { @extend %___FLOW-icon; content: "\EA2F"; }
-.icon-uit:before { @extend %icon-uit; }
+%icon-link {
+  @extend %icon-template;
+  content: '\EA18';
+}
 
-%icon-webmail { @extend %___FLOW-icon; content: "\EA30"; }
-.icon-webmail:before { @extend %icon-webmail; }
+.icon-link:before {
+  @extend %icon-link;
+}
 
-%icon-welfare { @extend %___FLOW-icon; content: "\EA31"; }
-.icon-welfare:before { @extend %icon-welfare; }
+%icon-map-small {
+  @extend %icon-template;
+  content: '\EA19';
+}
 
-%icon-wiki { @extend %___FLOW-icon; content: "\EA32"; }
-.icon-wiki:before { @extend %icon-wiki; }
+.icon-map-small:before {
+  @extend %icon-map-small;
+}
 
-%icon-yammer { @extend %___FLOW-icon; content: "\EA33"; }
-.icon-yammer:before { @extend %icon-yammer; }
+%icon-map {
+  @extend %icon-template;
+  content: '\EA1A';
+}
+
+.icon-map:before {
+  @extend %icon-map;
+}
+
+%icon-media {
+  @extend %icon-template;
+  content: '\EA1B';
+}
+
+.icon-media:before {
+  @extend %icon-media;
+}
+
+%icon-mobility {
+  @extend %icon-template;
+  content: '\EA1C';
+}
+
+.icon-mobility:before {
+  @extend %icon-mobility;
+}
+
+%icon-my-time {
+  @extend %icon-template;
+  content: '\EA1D';
+}
+
+.icon-my-time:before {
+  @extend %icon-my-time;
+}
+
+%icon-news-small {
+  @extend %icon-template;
+  content: '\EA1E';
+}
+
+.icon-news-small:before {
+  @extend %icon-news-small;
+}
+
+%icon-news {
+  @extend %icon-template;
+  content: '\EA1F';
+}
+
+.icon-news:before {
+  @extend %icon-news;
+}
+
+%icon-ocmw-intranet {
+  @extend %icon-template;
+  content: '\EA20';
+}
+
+.icon-ocmw-intranet:before {
+  @extend %icon-ocmw-intranet;
+}
+
+%icon-ocmw-medewerkers {
+  @extend %icon-template;
+  content: '\EA21';
+}
+
+.icon-ocmw-medewerkers:before {
+  @extend %icon-ocmw-medewerkers;
+}
+
+%icon-personal-news {
+  @extend %icon-template;
+  content: '\EA22';
+}
+
+.icon-personal-news:before {
+  @extend %icon-personal-news;
+}
+
+%icon-play {
+  @extend %icon-template;
+  content: '\EA23';
+}
+
+.icon-play:before {
+  @extend %icon-play;
+}
+
+%icon-report {
+  @extend %icon-template;
+  content: '\EA24';
+}
+
+.icon-report:before {
+  @extend %icon-report;
+}
+
+%icon-reside {
+  @extend %icon-template;
+  content: '\EA25';
+}
+
+.icon-reside:before {
+  @extend %icon-reside;
+}
+
+%icon-sanitation {
+  @extend %icon-template;
+  content: '\EA26';
+}
+
+.icon-sanitation:before {
+  @extend %icon-sanitation;
+}
+
+%icon-search-standard {
+  @extend %icon-template;
+  content: '\EA27';
+}
+
+.icon-search-standard:before {
+  @extend %icon-search-standard;
+}
+
+%icon-so-intranet {
+  @extend %icon-template;
+  content: '\EA28';
+}
+
+.icon-so-intranet:before {
+  @extend %icon-so-intranet;
+}
+
+%icon-social-affairs {
+  @extend %icon-template;
+  content: '\EA29';
+}
+
+.icon-social-affairs:before {
+  @extend %icon-social-affairs;
+}
+
+%icon-sports {
+  @extend %icon-template;
+  content: '\EA2A';
+}
+
+.icon-sports:before {
+  @extend %icon-sports;
+}
+
+%icon-staff {
+  @extend %icon-template;
+  content: '\EA2B';
+}
+
+.icon-staff:before {
+  @extend %icon-staff;
+}
+
+%icon-time {
+  @extend %icon-template;
+  content: '\EA2C';
+}
+
+.icon-time:before {
+  @extend %icon-time;
+}
+
+%icon-traffic {
+  @extend %icon-template;
+  content: '\EA2D';
+}
+
+.icon-traffic:before {
+  @extend %icon-traffic;
+}
+
+%icon-uit-vlieg {
+  @extend %icon-template;
+  content: '\EA2E';
+}
+
+.icon-uit-vlieg:before {
+  @extend %icon-uit-vlieg;
+}
+
+%icon-uit {
+  @extend %icon-template;
+  content: '\EA2F';
+}
+
+.icon-uit:before {
+  @extend %icon-uit;
+}
+
+%icon-webmail {
+  @extend %icon-template;
+  content: '\EA30';
+}
+
+.icon-webmail:before {
+  @extend %icon-webmail;
+}
+
+%icon-welfare {
+  @extend %icon-template;
+  content: '\EA31';
+}
+
+.icon-welfare:before {
+  @extend %icon-welfare;
+}
+
+%icon-wiki {
+  @extend %icon-template;
+  content: '\EA32';
+}
+
+.icon-wiki:before {
+  @extend %icon-wiki;
+}
+
+%icon-yammer {
+  @extend %icon-template;
+  content: '\EA33';
+}
+
+.icon-yammer:before {
+  @extend %icon-yammer;
+}
