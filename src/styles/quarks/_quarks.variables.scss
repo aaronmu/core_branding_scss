@@ -111,10 +111,10 @@ $extra-bold:              800 !default;
  * -------------------------------------------------------------------
  */
 
-$animation-duration:      250ms;
-$animation-easing:        ease-in-out;
+$animation-duration:      250ms !default;
+$animation-easing:        ease-in-out !default;
 
-$animation-normal:        $animation-duration $animation-easing;
+$animation-normal:        $animation-duration $animation-easing !default;
 
 
 /**
@@ -126,6 +126,14 @@ $icon-size-ti:            12px !default;
 $icon-size-sm:            16px !default;
 $icon-size-base:          22px !default;
 $icon-size-lg:            28px !default;
+
+
+/**
+ * BOX SHADOWS
+ * -------------------------------------------------------------------
+ */
+
+$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 
 
 /**
@@ -176,19 +184,22 @@ $btn-icon-size-sm:        $icon-size-sm !default;
 $btn-icon-size:           $icon-size-base !default;
 $btn-icon-size-lg:        $icon-size-lg !default;
 
-$btn-primary-color:       $white !default;
+$btn-default-color:       $white !default;
+$btn-default-bg:          $grey !default;
+
+$btn-primary-color:       $btn-default-color !default;
 $btn-primary-bg:          $brand-primary !default;
 
-$btn-secondary-color:     $white !default;
+$btn-secondary-color:     $btn-default-color !default;
 $btn-secondary-bg:        $brand-secondary !default;
 
-$btn-success-color:       $white !default;
+$btn-success-color:       $btn-default-color !default;
 $btn-success-bg:          $state-success !default;
 
-$btn-warning-color:       $white !default;
+$btn-warning-color:       $btn-default-color !default;
 $btn-warning-bg:          $state-warning !default;
 
-$btn-danger-color:        $white !default;
+$btn-danger-color:        $btn-default-color !default;
 $btn-danger-bg:           $state-danger !default;
 
 $btn-transparent-color:   $brand-primary !default;
@@ -222,6 +233,8 @@ $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
+$autocomplete-hover:      $grey-lighter !default;
+
 
 /**
  * RADIO BUTTONS & CHECKBOXES
@@ -250,7 +263,7 @@ $switch-handle-bg-active: $brand-primary !default;
  * -------------------------------------------------------------------
  */
 
-$cite-color:             $brand-secondary;
+$cite-color:             $brand-secondary !default;
 
 
 /**
@@ -343,3 +356,14 @@ $label-warning-border:    $label-warning-color !default;
 $label-danger-color:      $state-danger !default;
 $label-danger-border:     $label-danger-color !default;
 
+
+/**
+ * TAGS
+ * -------------------------------------------------------------------
+ */
+
+$tag-color:               $text-color !default;
+$tag-bg:                  $background-color-light !default;
+$tag-border:              $border-color !default;
+$tag-border-focus:        $input-border-focus !default;
+$tag-placeholder:         $grey !default;
