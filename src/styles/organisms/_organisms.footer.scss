@@ -1,0 +1,35 @@
+/**
+ * FOOTER
+ * -------------------------------------------------------------------
+ */
+
+.o-footer {
+  background-color: $footer-bg;
+  height: $footer-height;
+  padding: $spacer / 3 0;
+  position: relative;
+
+  .o-footer__button {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.o-footer__label {
+  color: $footer-color;
+  font-size: rem($footer-font-size-sm);
+  left: 50%;
+  line-height: $footer-line-height;
+  padding: 0 $spacer-xl;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  @include at($screen-sm) {
+    font-size: rem($footer-font-size-lg);
+  }
+}
+
