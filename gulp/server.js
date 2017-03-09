@@ -13,9 +13,10 @@ var run = require('run-sequence');
 
 gulp.task('server', function(callback) {
 
-    return run('clean', ['sass', 'render-templates', 'sass-lint'], function () {
+    return run('clean', ['icon-font', 'sass', 'render-templates', 'sass-lint'], function () {
         livereload.listen();
         gulp.start('connect');
+        gulp.watch('src/icons/*.svg', ['icon-font']);
         gulp.watch('src/styles/**/*.scss', ['sass', 'sass-lint']);
         gulp.watch('src/index.njk', ['render-templates']);
         gulp.watch([

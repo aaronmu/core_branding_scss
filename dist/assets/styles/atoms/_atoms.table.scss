@@ -26,13 +26,24 @@
 
   th,
   td {
-    padding: 0 $spacer-ti;
+    padding: 0 $spacer-xs;
     text-align: left;
   }
 }
 
 .a-table {
   @extend %a-table;
+}
+
+
+/**
+ * TABLE SIZES
+ * -------------------------------------------------------------------
+ */
+
+.a-table.a-table--small tr {
+  border-bottom: 1px solid $table-border;
+  height: $spacer-md;
 }
 
 
