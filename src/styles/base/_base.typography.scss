@@ -139,6 +139,7 @@ hr {
 a {
   color: $link-color;
   text-decoration: none;
+  transition: color $animation-duration $animation-easing;
 
   &:hover,
   &:focus {

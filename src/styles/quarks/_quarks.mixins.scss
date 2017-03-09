@@ -42,7 +42,6 @@
   &[disabled] {
     background-color: $state-disabled;
     cursor: not-allowed;
-    pointer-events: none;
   }
 }
 
@@ -74,7 +73,6 @@
     box-shadow: 0 0 0 1px $state-disabled inset;
     color: $state-disabled;
     cursor: not-allowed;
-    pointer-events: none;
   }
 }
 
@@ -93,7 +91,7 @@
     border: 1px solid $_border;
     color: $_color;
 
-    @include a-input-placeholder() {
+    @include a-input-placeholder {
       color: $input-placeholder;
     }
 
@@ -164,6 +162,18 @@
 
 @mixin a-badge($_color: $badge-default-color, $_background: $badge-default-bg) {
   background-color: $_background;
+  color: $_color;
+}
+
+
+/**
+ * LABEL MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-label($_color: $label-default-color, $_border: $label-default-border) {
+  background-color: transparent;
+  border: 1px solid $_border;
   color: $_color;
 }
 
