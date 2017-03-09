@@ -45,7 +45,7 @@ gulp.task('sass', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(mergeMediaQueries({ use_external: true }))
+        .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
         .pipe(gulp.dest('.tmp/css'));
 });
@@ -60,7 +60,7 @@ gulp.task('sass-dist', function(){
     return gulp.src('src/styles/**/*.scss')
         .pipe(plumber())
         .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(mergeMediaQueries({ use_external: true }))
+        .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
         .pipe(cssUrlAdjuster({
             replace:  ['../../fonts','assets/fonts'],
