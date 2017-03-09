@@ -1,0 +1,19 @@
+/**
+ * TAG LIST
+ * -------------------------------------------------------------------
+ */
+
+.o-tag-list {
+  @extend %a-list--reset;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -$spacer-xs;
+
+  .m-tag {
+    margin-bottom: $spacer-xs;
+
+    &:not(:last-child) {
+      margin-right: $spacer-xs;
+    }
+  }
+}
