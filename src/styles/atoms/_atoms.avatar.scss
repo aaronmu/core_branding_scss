@@ -1,0 +1,48 @@
+/**
+ * AVATARS
+ * -------------------------------------------------------------------
+ */
+
+.a-avatar {
+  background-color: $avatar-bg;
+  color: $avatar-color;
+  display: inline-block;
+  font-size: $avatar / 2;
+  height: $avatar;
+  line-height: $avatar;
+  overflow: hidden;
+  text-align: center;
+  width: $avatar;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+
+/**
+ * AVATAR SIZES
+ * -------------------------------------------------------------------
+ */
+
+.a-avatar--small {
+  font-size: $avatar-sm / 2;
+  height: $avatar-sm;
+  line-height: $avatar-sm;
+  width: $avatar-sm;
+}
+
+.a-avatar--medium {
+  font-size: $avatar-md / 2;
+  height: $avatar-md;
+  line-height: $avatar-md;
+  width: $avatar-md;
+}
+
+.a-avatar--large {
+  font-size: $avatar-lg / 2;
+  height: $avatar-lg;
+  line-height: $avatar-lg;
+  width: $avatar-lg;
+}
