@@ -5,10 +5,10 @@
 
 .a-badge {
   display: inline-block;
-  font-size: $font-size-ti;
-  font-weight: $bold;
-  line-height: $spacer-sm;
-  min-height: $spacer-sm;
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+  line-height: $badge-line-height;
+  min-height: $badge-height;
   padding: 0 $spacer / 4;
 }
 
