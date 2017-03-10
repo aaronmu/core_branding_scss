@@ -3,10 +3,14 @@
  * -------------------------------------------------------------------
  */
 
+.m-accordion.has-margins .m-accordion__tab:not(:first-child) {
+  margin-top: $spacer-xs;
+}
+
 .m-accordion__tab {
 
-  &:not(:last-child) {
-    margin-bottom: $spacer-xs;
+  &:not(:first-child) {
+    margin-top: -1px;
   }
 
   &.is-open {
