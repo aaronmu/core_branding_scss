@@ -267,6 +267,19 @@ $cite-color:             $brand-secondary !default;
 
 
 /**
+ * ACCORDION
+ * -------------------------------------------------------------------
+ */
+
+$accordion-border:            $border-color !default;
+$accordion-header-bg:         $white !default;
+$accordion-header-bg-hover:   $background-color-light !default;
+$accordion-content-bg:        $background-color-light !default;
+$accordion-icon-color:        $brand-primary !default;
+$accordion-icon-size:         $font-size-lg !default;
+
+
+/**
  * ALERTS
  * -------------------------------------------------------------------
  */
