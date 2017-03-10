@@ -4,10 +4,13 @@
  */
 
 .o-footer {
+  align-items: center;
   background-color: $footer-bg;
+  display: flex;
   height: $footer-height;
-  padding: $spacer / 3 0;
+  justify-content: center;
   position: relative;
+  text-align: center;
 
   .o-footer__button {
     bottom: 0;
@@ -19,17 +22,10 @@
 .o-footer__label {
   color: $footer-color;
   font-size: rem($footer-font-size-sm);
-  left: 50%;
   line-height: $footer-line-height;
   padding: 0 $spacer-xl;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
 
   @include at($screen-sm) {
     font-size: rem($footer-font-size-lg);
   }
 }
-
