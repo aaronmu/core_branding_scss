@@ -81,6 +81,60 @@
   @include a-button($btn-default-color, $btn-default-bg);
 }
 
+/**
+ * SOCIAL BUTTON COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-button.has-icon {
+
+  &.a-button--twitter {
+    @include a-button($white, $twitter);
+  }
+
+  &.a-button--linkedin {
+    @include a-button($white, $linkedin);
+  }
+
+  &.a-button--facebook {
+    @include a-button($white, $facebook);
+  }
+
+  &.a-button--google {
+    @include a-button($white, $google);
+  }
+
+  &.a-button--snapchat {
+    @include a-button($white, $snapchat);
+  }
+
+  &.a-button--instagram {
+    @include a-button($white);
+    background: $instagram;
+    position: relative;
+    transition-property: opacity;
+
+    &:before {
+      background-color: $black;
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      transition: opacity $animation-duration $animation-easing;
+      width: 100%;
+    }
+
+    &:hover,
+    &:active {
+      &:before {
+        opacity: 0.15;
+      }
+    }
+  }
+}
 
 /**
  * BUTTON NEGATIVE COLORS
