@@ -367,3 +367,19 @@ $tag-bg:                  $background-color-light !default;
 $tag-border:              $border-color !default;
 $tag-border-focus:        $input-border-focus !default;
 $tag-placeholder:         $grey !default;
+
+
+/**
+ * FOOTER
+ * -------------------------------------------------------------------
+ */
+
+$footer-bg:               $black !default;
+$footer-color:            $white !default;
+
+$footer-height:           $spacer-lg !default;
+
+$footer-font-size-sm:     $font-size-ti !default;
+$footer-font-size-lg:     $font-size-sm !default;
+$footer-line-height:      $line-height-paragraph !default;
+
