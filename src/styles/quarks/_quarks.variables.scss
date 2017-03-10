@@ -409,3 +409,14 @@ $spinner-animation-name:      fa-spin !default;
 $spinner-animation-speed:     2000ms !default;
 $spinner-animation-timing:    linear;
 
+
+/**
+ * ICON LIST
+ * -------------------------------------------------------------------
+ */
+
+$icon-list-color:             $black !default;
+$icon-list-negative-color:    $white !default;
+$icon-list-hover-color:       $brand-secondary !default;
+
+$icon-list-icon-size:         $icon-size-base !default;
