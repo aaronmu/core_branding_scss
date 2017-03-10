@@ -111,11 +111,27 @@
   &.a-button--instagram {
     @include a-button($white);
     background: $instagram;
+    position: relative;
     transition-property: opacity;
+
+    &:before {
+      background-color: $black;
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      transition: opacity $animation-duration $animation-easing;
+      width: 100%;
+    }
 
     &:hover,
     &:active {
-      opacity: .85;
+      &:before {
+        opacity: 0.15;
+      }
     }
   }
 }
