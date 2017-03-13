@@ -26,7 +26,6 @@ gulp.task('icon-font', function() {
 	// Set svg-sources, optimize svg
 	// and start creating the font
 
-	gulp.start('render-templates');
 	return gulp.src('src/icons/*.svg')
 		.pipe(plumber())
 		.pipe(imagemin())

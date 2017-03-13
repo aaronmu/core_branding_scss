@@ -69,7 +69,8 @@ $font-family-headings:    'Antwerpen Regular' !default;
  * -------------------------------------------------------------------
  */
 
-$font-size-ti:            13px !default;
+$font-size-ti:            12px !default;
+$font-size-xs:            13px !default;
 $font-size-sm:            14px !default;
 $font-size-base:          16px !default;
 $font-size-lg:            18px !default;
@@ -110,10 +111,10 @@ $extra-bold:              800 !default;
  * -------------------------------------------------------------------
  */
 
-$animation-duration:      250ms;
-$animation-easing:        ease-in-out;
+$animation-duration:      250ms !default;
+$animation-easing:        ease-in-out !default;
 
-$animation-normal:        $animation-duration $animation-easing;
+$animation-normal:        $animation-duration $animation-easing !default;
 
 
 /**
@@ -125,6 +126,14 @@ $icon-size-ti:            12px !default;
 $icon-size-sm:            16px !default;
 $icon-size-base:          22px !default;
 $icon-size-lg:            28px !default;
+
+
+/**
+ * BOX SHADOWS
+ * -------------------------------------------------------------------
+ */
+
+$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 
 
 /**
@@ -165,19 +174,32 @@ $table-striped-bg:        $background-color-light !default;
 
 $btn-font-weight:         $bold !default;
 
-$btn-primary-color:       $white !default;
+$btn-font-size-ti:        $font-size-xs !default;
+$btn-font-size-sm:        $font-size-sm !default;
+$btn-font-size:           $font-size-base !default;
+$btn-font-size-lg:        $font-size-lg !default;
+
+$btn-icon-size-ti:        $icon-size-ti !default;
+$btn-icon-size-sm:        $icon-size-sm !default;
+$btn-icon-size:           $icon-size-base !default;
+$btn-icon-size-lg:        $icon-size-lg !default;
+
+$btn-default-color:       $white !default;
+$btn-default-bg:          $grey !default;
+
+$btn-primary-color:       $btn-default-color !default;
 $btn-primary-bg:          $brand-primary !default;
 
-$btn-secondary-color:     $white !default;
+$btn-secondary-color:     $btn-default-color !default;
 $btn-secondary-bg:        $brand-secondary !default;
 
-$btn-success-color:       $white !default;
+$btn-success-color:       $btn-default-color !default;
 $btn-success-bg:          $state-success !default;
 
-$btn-warning-color:       $white !default;
+$btn-warning-color:       $btn-default-color !default;
 $btn-warning-bg:          $state-warning !default;
 
-$btn-danger-color:        $white !default;
+$btn-danger-color:        $btn-default-color !default;
 $btn-danger-bg:           $state-danger !default;
 
 $btn-transparent-color:   $brand-primary !default;
@@ -211,6 +233,8 @@ $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
+$autocomplete-hover:      $grey-lighter !default;
+
 
 /**
  * RADIO BUTTONS & CHECKBOXES
@@ -239,7 +263,20 @@ $switch-handle-bg-active: $brand-primary !default;
  * -------------------------------------------------------------------
  */
 
-$cite-color:             $brand-secondary;
+$cite-color:             $brand-secondary !default;
+
+
+/**
+ * ACCORDION
+ * -------------------------------------------------------------------
+ */
+
+$accordion-border:            $border-color !default;
+$accordion-header-bg:         $white !default;
+$accordion-header-bg-hover:   $background-color-light !default;
+$accordion-content-bg:        $background-color-light !default;
+$accordion-icon-color:        $brand-primary !default;
+$accordion-icon-size:         $font-size-lg !default;
 
 
 /**
@@ -251,3 +288,135 @@ $alert-default:           $brand-primary !default;
 $alert-success:           $state-success !default;
 $alert-warning:           $state-warning !default;
 $alert-danger:            $state-danger !default;
+
+
+/**
+ * AVATARS
+ * -------------------------------------------------------------------
+ */
+
+$avatar-bg:               $grey !default;
+$avatar-color:            $white !default;
+
+$avatar-sm:               $spacer * 1.5 !default; // 36px
+$avatar:                  $spacer * 2 !default; // 48px
+$avatar-md:               $spacer * 3 !default; // 72px
+$avatar-lg:               $spacer * 4 !default; // 96px
+
+
+/**
+ * BADGES
+ * -------------------------------------------------------------------
+ */
+
+$badge-font-size:         $font-size-ti !default;
+$badge-font-weight:       $bold !default;
+$badge-height:            $spacer-sm !default;
+$badge-line-height:       $badge-height !default;
+
+$badge-default-color:     $black-pearl !default;
+$badge-default-bg:        $grey-light !default;
+
+$badge-primary-color:     $white !default;
+$badge-primary-bg:        $brand-primary !default;
+
+$badge-secondary-color:   $badge-primary-color !default;
+$badge-secondary-bg:      $brand-secondary !default;
+
+$badge-success-color:     $badge-primary-color !default;
+$badge-success-bg:        $state-success !default;
+
+$badge-warning-color:     $badge-primary-color !default;
+$badge-warning-bg:        $state-warning !default;
+
+$badge-danger-color:      $badge-primary-color !default;
+$badge-danger-bg:         $state-danger !default;
+
+
+/**
+ * BREADCRUMBS
+ * -------------------------------------------------------------------
+ */
+
+$breadcrumb-arrow-color:  $grey !default;
+
+
+/**
+ * LABELS
+ * -------------------------------------------------------------------
+ */
+
+$label-font-size:         $font-size-ti !default;
+$label-font-weight:       $bold !default;
+$label-height:            $spacer-sm !default;
+$label-line-height:       $label-height !default;
+
+$label-default-color:     $black-pearl !default;
+$label-default-border:    $grey !default;
+
+$label-primary-color:     $brand-primary !default;
+$label-primary-border:    $label-primary-color !default;
+
+$label-secondary-color:   $brand-secondary !default;
+$label-secondary-border:  $label-secondary-color !default;
+
+$label-success-color:     $state-success !default;
+$label-success-border:    $label-success-color !default;
+
+$label-warning-color:     $state-warning !default;
+$label-warning-border:    $label-warning-color !default;
+
+$label-danger-color:      $state-danger !default;
+$label-danger-border:     $label-danger-color !default;
+
+
+/**
+ * TAGS
+ * -------------------------------------------------------------------
+ */
+
+$tag-color:               $text-color !default;
+$tag-bg:                  $background-color-light !default;
+$tag-border:              $border-color !default;
+$tag-border-focus:        $input-border-focus !default;
+$tag-placeholder:         $grey !default;
+
+
+/**
+ * FOOTER
+ * -------------------------------------------------------------------
+ */
+
+$footer-bg:               $black !default;
+$footer-color:            $white !default;
+
+$footer-height:           $spacer-lg !default;
+
+$footer-font-size-sm:     $font-size-ti !default;
+$footer-font-size-lg:     $font-size-sm !default;
+$footer-line-height:      $line-height-paragraph !default;
+
+
+/**
+ * SPINNER
+ * -------------------------------------------------------------------
+ */
+
+$spinner-color:           $grey !default;
+$spinner-size:            $icon-size-lg !default;
+
+$spinner-animation-name:      fa-spin !default;
+$spinner-animation-speed:     2000ms !default;
+$spinner-animation-timing:    linear;
+
+
+/**
+ * ICON LIST
+ * -------------------------------------------------------------------
+ */
+
+$icon-list-color:             $black !default;
+$icon-list-negative-color:    $white !default;
+$icon-list-hover-color:       $brand-secondary !default;
+
+$icon-list-icon-size:         $icon-size-base !default;

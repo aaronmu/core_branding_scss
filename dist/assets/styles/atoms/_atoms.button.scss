@@ -14,8 +14,10 @@
   border: none;
   cursor: pointer;
   display: block;
-  font-weight: $bold;
+  font-size: rem($btn-font-size);
+  font-weight: $btn-font-weight;
   line-height: $spacer-lg;
+  margin: 0;
   min-height: $spacer-lg;
   padding: 0 $spacer;
   text-align: center;
@@ -33,7 +35,7 @@
   }
 
   .fa {
-    font-size: $icon-size-base;
+    font-size: rem($btn-icon-size);
   }
 }
 
@@ -75,6 +77,64 @@
   }
 }
 
+.a-button.has-icon.a-button--default {
+  @include a-button($btn-default-color, $btn-default-bg);
+}
+
+/**
+ * SOCIAL BUTTON COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-button.has-icon {
+
+  &.a-button--twitter {
+    @include a-button($white, $twitter);
+  }
+
+  &.a-button--linkedin {
+    @include a-button($white, $linkedin);
+  }
+
+  &.a-button--facebook {
+    @include a-button($white, $facebook);
+  }
+
+  &.a-button--google {
+    @include a-button($white, $google);
+  }
+
+  &.a-button--snapchat {
+    @include a-button($white, $snapchat);
+  }
+
+  &.a-button--instagram {
+    @include a-button($white);
+    background: $instagram;
+    position: relative;
+    transition-property: opacity;
+
+    &:before {
+      background-color: $black;
+      content: '';
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 0;
+      transition: opacity $animation-duration $animation-easing;
+      width: 100%;
+    }
+
+    &:hover,
+    &:active {
+      &:before {
+        opacity: 0.15;
+      }
+    }
+  }
+}
 
 /**
  * BUTTON NEGATIVE COLORS
@@ -151,6 +211,10 @@
   &.a-button--danger {
     @include a-button-outline($btn-danger-bg, transparent, false);
   }
+
+  &.a-button--default {
+    @include a-button-outline($btn-default-bg, transparent, false);
+  }
 }
 
 
@@ -165,32 +229,32 @@
 .a-button-transparent {
 
   &.a-button--tiny {
-    font-size: rem($font-size-ti);
+    font-size: rem($btn-font-size-ti);
     line-height: $spacer;
     min-height: $spacer;
     padding: 0 $spacer-xs;
 
     .fa {
-      font-size: $icon-size-ti;
+      font-size: rem($btn-icon-size-ti);
     }
   }
 
   &.a-button--small {
-    font-size: rem($font-size-sm);
+    font-size: rem($btn-font-size-sm);
     line-height: $spacer-md;
     min-height: $spacer-md;
 
     .fa {
-      font-size: $icon-size-sm;
+      font-size: rem($btn-icon-size-sm);
     }
   }
 
   &.a-button--large {
-    font-size: rem($font-size-lg);
+    font-size: rem($btn-font-size-lg);
     min-height: $spacer-xl;
 
     .fa {
-      font-size: $icon-size-lg;
+      font-size: rem($btn-icon-size-lg);
     }
   }
 }

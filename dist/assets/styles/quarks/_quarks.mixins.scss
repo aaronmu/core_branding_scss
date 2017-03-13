@@ -36,13 +36,16 @@
 
   &:hover,
   &:active {
-    background-color: mix($_background, $black, 85%);
+    @if $_background != transparent and $_background != white {
+      background-color: mix($_background, $black, 85%);
+    } @else {
+      background-color: mix($_color, $white, 20%);
+    }
   }
 
   &[disabled] {
     background-color: $state-disabled;
     cursor: not-allowed;
-    pointer-events: none;
   }
 }
 
@@ -63,6 +66,9 @@
 
   &:hover,
   &:active {
+    @if $_border {
+      background: mix($_color, $white, 15%);
+    }
     color: mix($_color, $black, 85%);
 
     @if $_border {
@@ -71,10 +77,10 @@
   }
 
   &[disabled] {
+    background: transparent;
     box-shadow: 0 0 0 1px $state-disabled inset;
     color: $state-disabled;
     cursor: not-allowed;
-    pointer-events: none;
   }
 }
 
@@ -93,7 +99,7 @@
     border: 1px solid $_border;
     color: $_color;
 
-    @include a-input-placeholder() {
+    @include a-input-placeholder {
       color: $input-placeholder;
     }
 
@@ -158,6 +164,29 @@
 
 
 /**
+ * BADGE MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-badge($_color: $badge-default-color, $_background: $badge-default-bg) {
+  background-color: $_background;
+  color: $_color;
+}
+
+
+/**
+ * LABEL MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-label($_color: $label-default-color, $_border: $label-default-border) {
+  background-color: transparent;
+  border: 1px solid $_border;
+  color: $_color;
+}
+
+
+/**
  * CLEARFIX
  * -------------------------------------------------------------------
  */
@@ -168,6 +197,21 @@
     display: block;
     clear: both;
   }
+}
+
+
+/**
+ * FONT AWESOME
+ * -------------------------------------------------------------------
+ */
+
+@mixin fontawesome {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-size: inherit;
+  font: normal normal normal 14px/1 FontAwesome;
+  text-rendering: auto;
 }
 
 
