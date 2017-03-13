@@ -420,3 +420,17 @@ $icon-list-negative-color:    $white !default;
 $icon-list-hover-color:       $brand-secondary !default;
 
 $icon-list-icon-size:         $icon-size-base !default;
+
+
+/**
+ * TOOLTIP
+ * -------------------------------------------------------------------
+ */
+
+$tooltip-max-width:         $spacer * 12 !default;
+
+$tooltip-primary-color:     $white !default;
+$tooltip-primary-bg:        $brand-primary !default;
+
+$tooltip-secondary-color:   $tooltip-primary-color !default;
+$tooltip-secondary-bg:      $brand-secondary !default;
