@@ -17,6 +17,7 @@ var gulp = require('gulp');
 var clean = require('./gulp/clean'),
 	copy = require('./gulp/copy'),
 	copy = require('./gulp/iconfont'),
+    git = require('./gulp/git'),
     semver = require('./gulp/semver'),
     server = require('./gulp/server'),
     styles = require('./gulp/styles'),
@@ -44,10 +45,9 @@ gulp.task('build', ['clean-dist'], function(callback) {
 gulp.task('release', ['build'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 
-	run(['semver'], function(){
+	run(['semver', 'git-add', 'git-commit'], function(){
 
 		// Log the new version
-
 		var fs = require('fs');
 		var p = JSON.parse(fs.readFileSync('./package.json'));
 		var version = p.version;
@@ -57,4 +57,3 @@ gulp.task('release', ['build'], function(callback) {
 	});
 
 });
-
