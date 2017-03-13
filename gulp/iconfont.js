@@ -36,6 +36,7 @@ gulp.task('icon-font', function() {
 			// CSS codes (eg. content: '\e001')
 
 			fontName: fontName,
+			prependUnicode: true,
 			appendCodePoints: true,
 			formats: ['woff2', 'woff', 'ttf', 'eot', 'svg']
 
