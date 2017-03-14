@@ -20,6 +20,7 @@
  */
 
 @import 'utilities/utilities.background';
+@import 'utilities/utilities.layout';
 @import 'utilities/utilities.spacing';
 @import 'utilities/utilities.typography';
 
@@ -43,6 +44,8 @@
 @import 'atoms/atoms.avatar';
 @import 'atoms/atoms.badge';
 @import 'atoms/atoms.button';
+@import 'atoms/atoms.copyright';
+@import 'atoms/atoms.image';
 @import 'atoms/atoms.input';
 @import 'atoms/atoms.label';
 @import 'atoms/atoms.link';
@@ -51,6 +54,7 @@
 @import 'atoms/atoms.spinner';
 @import 'atoms/atoms.switch';
 @import 'atoms/atoms.table';
+@import 'atoms/atoms.tooltip';
 
 
 /**
@@ -58,11 +62,13 @@
  * -------------------------------------------------------------------
  */
 
-@import 'molecules/molecules.alert';
 @import 'molecules/molecules.accordion';
+@import 'molecules/molecules.alert';
 @import 'molecules/molecules.breadcrumb';
 @import 'molecules/molecules.button-list';
 @import 'molecules/molecules.icon-list';
+@import 'molecules/molecules.modal';
+@import 'molecules/molecules.overlay';
 @import 'molecules/molecules.tag';
 
 

@@ -28,6 +28,8 @@ $background-color-light:  $grey-lighter !default;
 $border-color:            $grey !default;
 $border-color-light:      $grey-light !default;
 
+$overlay-color:           rgba($black, .5) !default;
+
 
 /**
  * SPACERS
@@ -342,6 +344,17 @@ $breadcrumb-arrow-color:  $grey !default;
 
 
 /**
+ * COPYRIGHT
+ * -------------------------------------------------------------------
+ */
+
+$copyright-color:         $white !default;
+$copyright-bg:            $overlay-color !default;
+$copyright-height:        $spacer-md !default;
+$copyright-font-size:     $font-size-sm !default;
+
+
+/**
  * LABELS
  * -------------------------------------------------------------------
  */
@@ -420,3 +433,38 @@ $icon-list-negative-color:    $white !default;
 $icon-list-hover-color:       $brand-secondary !default;
 
 $icon-list-icon-size:         $icon-size-base !default;
+
+
+/**
+ * TOOLTIP
+ * -------------------------------------------------------------------
+ */
+
+$tooltip-max-width:         $spacer * 12 !default;
+
+$tooltip-primary-color:     $white !default;
+$tooltip-primary-bg:        $brand-primary !default;
+
+$tooltip-secondary-color:   $tooltip-primary-color !default;
+$tooltip-secondary-bg:      $brand-secondary !default;
+
+
+/**
+ * OVERLAY
+ * -------------------------------------------------------------------
+ */
+
+$overlay-bg:              $overlay-color !default;
+
+
+/**
+ * MODAL
+ * -------------------------------------------------------------------
+ */
+
+$modal-bg:                $white !default;
+$modal-border:            $border-color !default;
+
+$modal-width:             $spacer * 17 !default;
+$modal-width-large:       $spacer * 25 !default;
+
