@@ -44,11 +44,11 @@
 .a-tooltip {
   @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down');
 
-  &.a-tooltip--down {
+  &.a-tooltip--up {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down');
   }
 
-  &.a-tooltip--up {
+  &.a-tooltip--down {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'up');
   }
 
@@ -64,11 +64,11 @@
 .a-tooltip--secondary {
   @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down');
 
-  &.a-tooltip--down {
+  &.a-tooltip--up {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down');
   }
 
-  &.a-tooltip--up {
+  &.a-tooltip--down {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'up');
   }
 
