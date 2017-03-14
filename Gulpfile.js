@@ -36,7 +36,7 @@ gulp.task('default', ['server'], function () {
 gulp.task('build', ['clean-dist'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 
-	run(['icon-font', 'sass-dist', 'copy'], function(){
+	run(['icon-font', 'sass-dist', 'copy'], function() {
 		callback();
 	});
 });
@@ -44,7 +44,7 @@ gulp.task('build', ['clean-dist'], function(callback) {
 gulp.task('bump', ['build'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 
-	run(['semver'], 'git', function(){
+	run(['semver'], 'git', function() {
 		callback();
 	});
 });
@@ -52,7 +52,7 @@ gulp.task('bump', ['build'], function(callback) {
 gulp.task('release', ['bump'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 
-	run(['git-tag'], function(){
+	run(['git-tag'], function() {
 
 		// Log the new version
 		var fs = require('fs');
