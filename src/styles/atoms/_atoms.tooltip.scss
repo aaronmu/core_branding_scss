@@ -52,11 +52,11 @@
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'up');
   }
 
-  &.a-tooltip--right {
+  &.a-tooltip--left {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'right');
   }
 
-  &.a-tooltip--left {
+  &.a-tooltip--right {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'left');
   }
 }
@@ -72,11 +72,11 @@
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'up');
   }
 
-  &.a-tooltip--right {
+  &.a-tooltip--left {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'right');
   }
 
-  &.a-tooltip--left {
+  &.a-tooltip--right {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'left');
   }
 }
