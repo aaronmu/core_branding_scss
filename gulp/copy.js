@@ -6,6 +6,7 @@
 // - https://www.npmjs.com/package/merge-stream
 
 var gulp = require('gulp');
+var plumber = require('gulp-plumber');
 var rename = require('gulp-rename');
 var merge = require('merge-stream');
 
