@@ -39,21 +39,27 @@ gulp.task('build', ['clean-dist'], function(callback) {
 	run(['icon-font', 'sass-dist', 'copy'], function(){
 		callback();
 	});
-
 });
 
-gulp.task('release', ['build'], function(callback) {
+gulp.task('bump', ['build'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 
 	run(['semver'], 'git', function(){
+		callback();
+	});
+});
+
+gulp.task('release', ['bump'], function(callback) {
+	var run = require('run-sequence').use(gulp);
+
+	run(['git-tag'], function(){
 
 		// Log the new version
 		var fs = require('fs');
 		var p = JSON.parse(fs.readFileSync('./package.json'));
 		var version = p.version;
 
-		console.log('\n----++++ Version ' + version + ' released! ++++----\n');
+		console.log('\n----++++ Version ' + version + ' is ready to be pushed! ++++----\n');
 		callback();
 	});
-
 });
