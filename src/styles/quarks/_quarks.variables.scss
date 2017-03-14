@@ -468,3 +468,16 @@ $modal-border:            $border-color !default;
 $modal-width:             $spacer * 17 !default;
 $modal-width-large:       $spacer * 25 !default;
 
+
+/**
+ * NAVIGATION
+ * -------------------------------------------------------------------
+ */
+
+$nav-font-weight:         $bold !default;
+$nav-border:              $border-color !default;
+$nav-border-hover:        $brand-primary !default;
+$nav-color:               $text-color !default;
+$nav-color-hover:         $brand-primary !default;
+$nav-bg:                  transparent !default;
+$nav-bg-hover:            $nav-color-hover !default;
