@@ -479,5 +479,7 @@ $nav-border:              $border-color !default;
 $nav-border-hover:        $brand-primary !default;
 $nav-color:               $text-color !default;
 $nav-color-hover:         $brand-primary !default;
+$nav-color-active:        $white !default;
 $nav-bg:                  transparent !default;
-$nav-bg-hover:            $nav-color-hover !default;
+$nav-bg-hover:            $grey-lighter !default;
+$nav-bg-active:           $nav-color-hover !default;

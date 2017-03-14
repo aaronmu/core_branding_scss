@@ -5,135 +5,72 @@
 
 .m-nav {
   @extend %a-list--reset;
+  border-top: 1px solid $border-color;
 
-  &:not(.m-nav--horizontal) li {
-    border-top: 1px solid $nav-border;
-
-    &:last-child {
-      border-bottom: 1px solid $nav-border;
-    }
-
-    &:hover,
-    &.is-active {
-      border-color: $nav-border-hover;
-
-      + li {
-        border-top-color: $nav-border-hover;
-      }
-
-      a {
-        background-color: $nav-bg-hover;
-        color: $white;
-      }
-    }
-  }
-
-  &.m-nav--horizontal {
-
-    @include at($screen-sm) {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    li {
-
-      &:hover,
-      &.is-active {
-
-        @include to($screen-sm) {
-          border-color: $nav-border-hover;
-
-          + li {
-            border-top-color: $nav-border-hover;
-          }
-
-          a {
-            background-color: $nav-bg-hover;
-            color: $white;
-          }
-        }
-
-        @include at($screen-sm) {
-          border-color: $nav-border-hover;
-
-          a {
-            color: $nav-color-hover;
-          }
-        }
-      }
-
-      @include to($screen-sm) {
-        border-top: 1px solid $nav-border;
-
-        &:last-child {
-          border-bottom: 1px solid $nav-border;
-        }
-      }
-
-      @include at($screen-sm) {
-        border-bottom: 3px solid transparent;
-        border-top: none;
-        transition: border $animation-normal;
-      }
-    }
-  }
-
-  li {
-    color: $nav-color;
+  > li {
     font-weight: $nav-font-weight;
     line-height: $line-height-paragraph;
     min-height: $spacer-lg;
     text-align: center;
 
-    a {
+    &.is-active {
+      > a,
+      > a:hover,
+      > a:active {
+        background-color: $nav-bg-active;
+        color: $nav-color-active;
+      }
+    }
+
+    > a {
       background-color: $nav-bg;
-      color: inherit;
+      border-bottom: 1px solid $border-color;
+      color: $nav-color;
       display: block;
       padding: $spacer / 3 * 2 $spacer;
       text-decoration: none;
       transition-duration: $animation-duration;
-      transition-property: color, background;
+      transition-property: background, color;
       transition-timing-function: $animation-easing;
+
+      &:hover,
+      &:active {
+        background-color: $nav-bg-hover;
+        color: $nav-color-hover;
+      }
     }
   }
 }
 
+.m-nav--horizontal {
+  @include at($screen-sm) {
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
 
-/**
- * NAVIGATION MODIFIERS
- * -------------------------------------------------------------------
- */
+    > li {
 
-// .m-nav-horizontal {
-//   @extend %a-list--reset;
+      &.is-active {
+        > a,
+        > a:hover,
+        > a:active {
+          background-color: $nav-color-active;
+          border-color: $nav-bg-active;
+          color: $nav-bg-active;
+        }
+      }
 
-//   @include at($screen-sm) {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
+      > a {
+        border-bottom: 3px solid transparent;
+        transition-property: border, color;
 
-//   li {
-//     color: $text-color;
-//     font-weight: $bold;
-//     line-height: $line-height-paragraph;
-//     min-height: $spacer-lg;
-//     text-align: center;
-//     transition: border $animation-normal;
-
-//     a {
-//       color: inherit;
-//       display: block;
-//       padding: $spacer / 3 * 2 $spacer;
-//       text-decoration: none;
-//       transition-duration: $animation-duration;
-//       transition-property: color, background;
-//       transition-timing-function: $animation-easing;
-//     }
-//   }
-
-//   &.m-nav-horizontal--centered {
-//     @include at($screen-sm) {
-//       justify-content: center;
-//     }
-//   }
-// }
+        &:hover,
+        &:active {
+          background-color: transparent;
+          border-color: $nav-bg-active;
+          color: $nav-color;
+        }
+      }
+    }
+  }
+}
