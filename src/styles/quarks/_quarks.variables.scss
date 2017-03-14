@@ -28,6 +28,8 @@ $background-color-light:  $grey-lighter !default;
 $border-color:            $grey !default;
 $border-color-light:      $grey-light !default;
 
+$overlay-color:           rgba($black, .5) !default;
+
 
 /**
  * SPACERS
@@ -339,6 +341,17 @@ $badge-danger-bg:         $state-danger !default;
  */
 
 $breadcrumb-arrow-color:  $grey !default;
+
+
+/**
+ * COPYRIGHT
+ * -------------------------------------------------------------------
+ */
+
+$copyright-color:         $white !default;
+$copyright-bg:            $overlay-color !default;
+$copyright-height:        $spacer-md !default;
+$copyright-font-size:     $font-size-sm !default;
 
 
 /**
