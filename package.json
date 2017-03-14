@@ -32,6 +32,7 @@
     "gulp-clean": "^0.3.2",
     "gulp-consolidate": "^0.2.0",
     "gulp-css-url-adjuster": "^0.2.3",
+    "gulp-git": "^2.0.1",
     "gulp-iconfont": "^8.0.1",
     "gulp-imagemin": "^3.1.1",
     "gulp-livereload": "^3.8.1",
