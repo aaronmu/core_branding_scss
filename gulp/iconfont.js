@@ -21,41 +21,41 @@ var rename = require('gulp-rename');
 
 gulp.task('icon-font', function() {
 
-	var fontName = 'Antwerpen_Icons';
+    var fontName = 'Antwerpen_Icons';
 
-	// Set svg-sources, optimize svg
-	// and start creating the font
+    // Set svg-sources, optimize svg
+    // and start creating the font
 
-	return gulp.src('src/icons/*.svg')
-		.pipe(plumber())
-		.pipe(imagemin())
-		.pipe(iconfont({
+    return gulp.src('src/icons/*.svg')
+        .pipe(plumber())
+        .pipe(imagemin())
+        .pipe(iconfont({
 
-			// Set file-name for the font and append
-			// codepoints so we always have the same
-			// CSS codes (eg. content: '\e001')
+            // Set file-name for the font and append
+            // codepoints so we always have the same
+            // CSS codes (eg. content: '\e001')
 
-			fontName: fontName,
-			appendCodePoints: true,
-			formats: ['woff2', 'woff', 'ttf', 'eot', 'svg']
+            fontName: fontName,
+            appendCodePoints: true,
+            formats: ['woff2', 'woff', 'ttf', 'eot', 'svg']
 
-		})).on('glyphs', function(glyphs, options) {
-			// Create the __icons.scss file based
-			// on the template and inject font-name
-			// path and CSS class-name
+        })).on('glyphs', function(glyphs, options) {
+            // Create the __icons.scss file based
+            // on the template and inject font-name
+            // path and CSS class-name
 
-			gulp.src('src/icons/_antwerp-icons-template.scss')
-				.pipe(consolidate('lodash', {
+            gulp.src('src/icons/_antwerp-icons-template.scss')
+                .pipe(consolidate('lodash', {
 
-					glyphs: glyphs,
-					fontName: fontName,
-					fontPath: '../../fonts',
-					className: 'icon'
+                    glyphs: glyphs,
+                    fontName: fontName,
+                    fontPath: '../../fonts',
+                    className: 'icon'
 
-				}))
-				.pipe(rename('_quarks.antwerpen-icons.scss'))
-				.pipe(gulp.dest('src/styles/quarks'));
+                }))
+                .pipe(rename('_quarks.antwerpen-icons.scss'))
+                .pipe(gulp.dest('src/styles/quarks'));
 
-		})
-		.pipe(gulp.dest('src/fonts'));
+        })
+        .pipe(gulp.dest('src/fonts'));
 });

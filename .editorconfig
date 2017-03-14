@@ -13,9 +13,9 @@ insert_final_newline = true
 [*.{js,scss}]
 charset = utf-8
 
-# 4 tab indentation
+# 4 space indentation
 [*.{njk,js}]
-indent_style = tab
+indent_style = space
 indent_size = 4
 
 # 2 space indentation

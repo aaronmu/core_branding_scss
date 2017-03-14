@@ -12,14 +12,14 @@ var merge = require('merge-stream');
 
 gulp.task('copy', function() {
 
-	var fontsStream = gulp.src('src/fonts/**/*')
-		.pipe(plumber())
-		.pipe(gulp.dest('dist/assets/fonts'));
+    var fontsStream = gulp.src('src/fonts/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/assets/fonts'));
 
-	var stylesStream = gulp.src('src/styles/**/*')
-		.pipe(plumber())
-		.pipe(gulp.dest('dist/assets/styles'));
+    var stylesStream = gulp.src('src/styles/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/assets/styles'));
 
-	return merge(fontsStream, stylesStream);
+    return merge(fontsStream, stylesStream);
 
 });

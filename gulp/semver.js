@@ -11,45 +11,45 @@ var yargs = require('yargs');
 
 gulp.task('semver', function(){
 
-	var argv = yargs.usage('Usage: gulp release --<versionType>')
-		// .example('gulp release --patch', 'updates the version with 1 patch number')
-		.option('patch', {
-			demand: false,
-			describe: 'Patch release',
-			type: 'boolean'
-		})
-		.option('minor', {
-			demand: false,
-			describe: 'Minor release',
-			type: 'boolean'
-		})
-		.option('major', {
-			demand: false,
-			describe: 'Major release',
-			type: 'boolean'
-		})
-		.help('h')
-		.argv;
+    var argv = yargs.usage('Usage: gulp release --<versionType>')
+        // .example('gulp release --patch', 'updates the version with 1 patch number')
+        .option('patch', {
+            demand: false,
+            describe: 'Patch release',
+            type: 'boolean'
+        })
+        .option('minor', {
+            demand: false,
+            describe: 'Minor release',
+            type: 'boolean'
+        })
+        .option('major', {
+            demand: false,
+            describe: 'Major release',
+            type: 'boolean'
+        })
+        .help('h')
+        .argv;
 
-	var fs = require('fs');
-	var p = JSON.parse(fs.readFileSync('./package.json'));
-	var version = p.version;
+    var fs = require('fs');
+    var p = JSON.parse(fs.readFileSync('./package.json'));
+    var version = p.version;
 
-	if (argv.patch) {
-		version = 'patch'
-	} else if (argv.minor) {
-		version = 'minor'
-	} else if (argv.major) {
-		version = 'major'
-	}
+    if (argv.patch) {
+        version = 'patch'
+    } else if (argv.minor) {
+        version = 'minor'
+    } else if (argv.major) {
+        version = 'major'
+    }
 
-	// update the version
+    // update the version
 
-	return gulp.src('./*.json')
-	  .pipe(bump({
-	  	type: version
-	  }))
-	  .pipe(gulp.dest('./'));
+    return gulp.src('./*.json')
+      .pipe(bump({
+          type: version
+      }))
+      .pipe(gulp.dest('./'));
 
 });
 

@@ -17,11 +17,11 @@ var gulp = require('gulp');
 var clean = require('./gulp/clean'),
 	copy = require('./gulp/copy'),
 	copy = require('./gulp/iconfont'),
-    git = require('./gulp/git'),
-    semver = require('./gulp/semver'),
-    server = require('./gulp/server'),
-    styles = require('./gulp/styles'),
-    templates = require('./gulp/templates');
+	git = require('./gulp/git'),
+	semver = require('./gulp/semver'),
+	server = require('./gulp/server'),
+	styles = require('./gulp/styles'),
+	templates = require('./gulp/templates');
 
 
 // -------------------------------------------------------------------
@@ -30,7 +30,7 @@ var clean = require('./gulp/clean'),
 
 // Default task = run server
 gulp.task('default', ['server'], function () {
-    require('opn')('http://localhost:9000');
+	require('opn')('http://localhost:9000');
 });
 
 gulp.task('build', ['clean-dist'], function(callback) {
