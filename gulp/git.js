@@ -6,11 +6,11 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var git = require('gulp-git');
+var fileSystem = require('fs');
 
 gulp.task('git', function() {
-    var fs = require('fs');
-    var p = JSON.parse(fs.readFileSync('./package.json'));
-    var version = p.version;
+    var nodePackageFile = JSON.parse(fileSystem.readFileSync('./package.json'));
+    var version = nodePackageFile.version;
 
     return gulp.src(['./dist/*', './bower.json', './package.json'])
         .pipe(git.add())
@@ -18,9 +18,8 @@ gulp.task('git', function() {
 });
 
 gulp.task('git-tag', function() {
-    var fs = require('fs');
-    var p = JSON.parse(fs.readFileSync('./package.json'));
-    var version = p.version;
+    var nodePackageFile = JSON.parse(fileSystem.readFileSync('./package.json'));
+    var version = nodePackageFile.version;
 
     git.tag('v' + version, 'Release v' + version, function (err) {
         if (err) throw err;

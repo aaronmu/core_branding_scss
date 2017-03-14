@@ -13,6 +13,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var fileSystem = require('fs');
 
 var clean = require('./gulp/clean'),
 	copy = require('./gulp/copy'),
@@ -55,9 +56,8 @@ gulp.task('release', ['bump'], function(callback) {
 	run(['git-tag'], function() {
 
 		// Log the new version
-		var fs = require('fs');
-		var p = JSON.parse(fs.readFileSync('./package.json'));
-		var version = p.version;
+		var nodePackageFile = JSON.parse(fileSystem.readFileSync('./package.json'));
+		var version = nodePackageFile.version;
 
 		console.log('\n----++++ Version ' + version + ' is ready to be pushed! ++++----\n');
 		callback();

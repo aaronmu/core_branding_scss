@@ -8,6 +8,7 @@ var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var bump = require('gulp-bump');
 var yargs = require('yargs');
+var fileSystem = require('fs');
 
 gulp.task('semver', function(){
 
@@ -31,9 +32,8 @@ gulp.task('semver', function(){
         .help('h')
         .argv;
 
-    var fs = require('fs');
-    var p = JSON.parse(fs.readFileSync('./package.json'));
-    var version = p.version;
+    var nodePackageFile = JSON.parse(fileSystem.readFileSync('./package.json'));
+    var version = nodePackageFile.version;
 
     if (argv.patch) {
         version = 'patch'
@@ -52,22 +52,3 @@ gulp.task('semver', function(){
       .pipe(gulp.dest('./'));
 
 });
-
-// inject the version info into distributionfiles:
-
-// var gulpIf = require('gulp-if');
-// // var replace = require('gulp-replace');
-// var insert = require('gulp-insert');
-// var config = require('../gulp/config/config.json');
-
-
-// gulp.task('inject-versioning', function(){
-// 	var versions = require('../'+versionsFilePath);
-
-// 	return gulp.src(['dist/**'])
-// 		.pipe(plumber())
-// 		.pipe(gulpIf('*.css', insert.prepend("/* "+config.PROJECT_TITLE + " v"+versions.current_version + " */\n\n")))
-// 		.pipe(gulpIf('*.js', insert.prepend("/* "+config.PROJECT_TITLE + " v"+versions.current_version + " */\n\n")))
-
-// 		.pipe(gulp.dest(function(file) { return file.base; }),{overwrite: true});
-// });

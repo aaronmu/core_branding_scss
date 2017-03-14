@@ -35,8 +35,7 @@ var sassOptions = {
 }
 
 var sourcemapOptions = {
-    includeContent: false,
-    // sourceRoot: "dist"
+    includeContent: false
 };
 
 gulp.task('sass', function () {
