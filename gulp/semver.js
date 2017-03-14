@@ -35,11 +35,11 @@ gulp.task('semver', function(){
 	var p = JSON.parse(fs.readFileSync('./package.json'));
 	var version = p.version;
 
-	if(argv.patch){
+	if (argv.patch) {
 		version = 'patch'
-	} else if(argv.minor) {
+	} else if (argv.minor) {
 		version = 'minor'
-	} else if(argv.major) {
+	} else if (argv.major) {
 		version = 'major'
 	}
 

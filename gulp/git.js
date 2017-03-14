@@ -7,16 +7,14 @@ var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var git = require('gulp-git');
 
-var fs = require('fs');
-var p = JSON.parse(fs.readFileSync('./package.json'));
-var version = p.version;
+gulp.task('git', function() {
 
-gulp.task('git-add', function(){
-  return gulp.src('./dist/*')
-    .pipe(git.add());
-});
+	var fs = require('fs');
+	var p = JSON.parse(fs.readFileSync('./package.json'));
+	var version = p.version;
+	console.log(version);
 
-gulp.task('git-commit', function(){
-  return gulp.src('./dist/*')
-    .pipe(git.commit('Release v' + version));
+	return gulp.src(['./dist/*', './bower.json', './package.json'])
+		.pipe(git.add())
+		.pipe(git.commit('Release v' + version));
 });

@@ -45,7 +45,7 @@ gulp.task('build', ['clean-dist'], function(callback) {
 gulp.task('release', ['build'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 
-	run(['semver', 'git-add', 'git-commit'], function(){
+	run(['semver'], 'git', function(){
 
 		// Log the new version
 		var fs = require('fs');
