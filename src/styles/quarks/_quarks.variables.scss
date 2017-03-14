@@ -441,3 +441,16 @@ $icon-list-icon-size:         $icon-size-base !default;
  */
 
 $overlay-bg:              $overlay-color !default;
+
+
+/**
+ * MODAL
+ * -------------------------------------------------------------------
+ */
+
+$modal-bg:                $white !default;
+$modal-border:            $border-color !default;
+
+$modal-width:             $spacer * 17 !default;
+$modal-width-large:       $spacer * 25 !default;
+
