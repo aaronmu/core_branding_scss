@@ -9,7 +9,15 @@ var clean = require('gulp-clean');
 gulp.task('clean', function () {
 
     return gulp.src([
-        '.temp'
+        '.tmp'
+    ], { read: false })
+        .pipe(clean());
+});
+
+gulp.task('clean-dist', function () {
+
+    return gulp.src([
+        'dist'
     ], { read: false })
         .pipe(clean());
 });

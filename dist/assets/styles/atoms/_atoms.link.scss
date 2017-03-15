@@ -1,0 +1,30 @@
+/**
+ * LINKS
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * LINK WITH ICON LEFT OR RIGHT
+ * -------------------------------------------------------------------
+ */
+
+a {
+
+  &.has-icon-left,
+  &.has-icon-right {
+    display: inline-block;
+
+    .fa {
+      font-size: .875rem;
+    }
+  }
+
+  &.has-icon-left .fa {
+    padding-right: $spacer / 3;
+  }
+
+  &.has-icon-right .fa {
+    padding-left: $spacer / 3;
+  }
+}

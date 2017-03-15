@@ -28,6 +28,8 @@ $background-color-light:  $grey-lighter !default;
 $border-color:            $grey !default;
 $border-color-light:      $grey-light !default;
 
+$overlay-color:           rgba($black, .5) !default;
+
 
 /**
  * SPACERS
@@ -111,10 +113,10 @@ $extra-bold:              800 !default;
  * -------------------------------------------------------------------
  */
 
-$animation-duration:      250ms;
-$animation-easing:        ease-in-out;
+$animation-duration:      250ms !default;
+$animation-easing:        ease-in-out !default;
 
-$animation-normal:        $animation-duration $animation-easing;
+$animation-normal:        $animation-duration $animation-easing !default;
 
 
 /**
@@ -133,7 +135,7 @@ $icon-size-lg:            28px !default;
  * -------------------------------------------------------------------
  */
 
-$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1);
+$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 
 
 /**
@@ -187,19 +189,19 @@ $btn-icon-size-lg:        $icon-size-lg !default;
 $btn-default-color:       $white !default;
 $btn-default-bg:          $grey !default;
 
-$btn-primary-color:       $white !default;
+$btn-primary-color:       $btn-default-color !default;
 $btn-primary-bg:          $brand-primary !default;
 
-$btn-secondary-color:     $white !default;
+$btn-secondary-color:     $btn-default-color !default;
 $btn-secondary-bg:        $brand-secondary !default;
 
-$btn-success-color:       $white !default;
+$btn-success-color:       $btn-default-color !default;
 $btn-success-bg:          $state-success !default;
 
-$btn-warning-color:       $white !default;
+$btn-warning-color:       $btn-default-color !default;
 $btn-warning-bg:          $state-warning !default;
 
-$btn-danger-color:        $white !default;
+$btn-danger-color:        $btn-default-color !default;
 $btn-danger-bg:           $state-danger !default;
 
 $btn-transparent-color:   $brand-primary !default;
@@ -263,7 +265,20 @@ $switch-handle-bg-active: $brand-primary !default;
  * -------------------------------------------------------------------
  */
 
-$cite-color:             $brand-secondary;
+$cite-color:             $brand-secondary !default;
+
+
+/**
+ * ACCORDION
+ * -------------------------------------------------------------------
+ */
+
+$accordion-border:            $border-color !default;
+$accordion-header-bg:         $white !default;
+$accordion-header-bg-hover:   $background-color-light !default;
+$accordion-content-bg:        $background-color-light !default;
+$accordion-icon-color:        $brand-primary !default;
+$accordion-icon-size:         $font-size-lg !default;
 
 
 /**
@@ -329,9 +344,25 @@ $breadcrumb-arrow-color:  $grey !default;
 
 
 /**
+ * COPYRIGHT
+ * -------------------------------------------------------------------
+ */
+
+$copyright-color:         $white !default;
+$copyright-bg:            $overlay-color !default;
+$copyright-height:        $spacer-md !default;
+$copyright-font-size:     $font-size-sm !default;
+
+
+/**
  * LABELS
  * -------------------------------------------------------------------
  */
+
+$label-font-size:         $font-size-ti !default;
+$label-font-weight:       $bold !default;
+$label-height:            $spacer-sm !default;
+$label-line-height:       $label-height !default;
 
 $label-default-color:     $black-pearl !default;
 $label-default-border:    $grey !default;
@@ -360,5 +391,95 @@ $label-danger-border:     $label-danger-color !default;
 $tag-color:               $text-color !default;
 $tag-bg:                  $background-color-light !default;
 $tag-border:              $border-color !default;
-$tag-border-focus:        $input-border-focus;
+$tag-border-focus:        $input-border-focus !default;
 $tag-placeholder:         $grey !default;
+
+
+/**
+ * FOOTER
+ * -------------------------------------------------------------------
+ */
+
+$footer-bg:               $black !default;
+$footer-color:            $white !default;
+
+$footer-height:           $spacer-lg !default;
+
+$footer-font-size-sm:     $font-size-ti !default;
+$footer-font-size-lg:     $font-size-sm !default;
+$footer-line-height:      $line-height-paragraph !default;
+
+
+/**
+ * SPINNER
+ * -------------------------------------------------------------------
+ */
+
+$spinner-color:           $grey !default;
+$spinner-size:            $icon-size-lg !default;
+
+$spinner-animation-name:      fa-spin !default;
+$spinner-animation-speed:     2000ms !default;
+$spinner-animation-timing:    linear !default;
+
+
+/**
+ * ICON LIST
+ * -------------------------------------------------------------------
+ */
+
+$icon-list-color:             $black !default;
+$icon-list-negative-color:    $white !default;
+$icon-list-hover-color:       $brand-secondary !default;
+
+$icon-list-icon-size:         $icon-size-base !default;
+
+
+/**
+ * TOOLTIP
+ * -------------------------------------------------------------------
+ */
+
+$tooltip-max-width:         $spacer * 12 !default;
+
+$tooltip-primary-color:     $white !default;
+$tooltip-primary-bg:        $brand-primary !default;
+
+$tooltip-secondary-color:   $tooltip-primary-color !default;
+$tooltip-secondary-bg:      $brand-secondary !default;
+
+
+/**
+ * OVERLAY
+ * -------------------------------------------------------------------
+ */
+
+$overlay-bg:              $overlay-color !default;
+
+
+/**
+ * MODAL
+ * -------------------------------------------------------------------
+ */
+
+$modal-bg:                $white !default;
+$modal-border:            $border-color !default;
+
+$modal-width:             $spacer * 17 !default;
+$modal-width-large:       $spacer * 25 !default;
+
+
+/**
+ * NAVIGATION
+ * -------------------------------------------------------------------
+ */
+
+$nav-font-weight:         $bold !default;
+$nav-border:              $border-color !default;
+$nav-border-hover:        $brand-primary !default;
+$nav-color:               $text-color !default;
+$nav-color-hover:         $brand-primary !default;
+$nav-color-active:        $white !default;
+$nav-bg:                  transparent !default;
+$nav-bg-hover:            $grey-lighter !default;
+$nav-bg-active:           $nav-color-hover !default;

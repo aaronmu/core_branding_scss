@@ -1,0 +1,172 @@
+/**
+ * LISTS
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * STANDARD LIST
+ * -------------------------------------------------------------------
+ */
+
+%a-list {
+  padding-left: $spacer;
+
+  ul,
+  ol {
+    margin-top: $spacer / 3;
+    padding-left: $spacer;
+
+    > .a-list__item:last-of-type {
+      margin-bottom: -$spacer / 3;
+    }
+  }
+
+  .a-list__item {
+    padding: $spacer / 3 0;
+  }
+}
+
+.a-list {
+  @extend %a-list;
+}
+
+/**
+ * LIST PLACEHOLDERS
+ * -------------------------------------------------------------------
+ * List without default padding and standard list styling.
+ */
+
+
+/**
+ * List without default padding and standard list styling.
+ */
+%a-list--reset {
+  list-style: none;
+  padding: 0;
+
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+.a-list--reset {
+  @extend %a-list--reset;
+}
+
+
+/**
+ * List without standard list styling.
+ */
+%a-list--unstyled {
+  list-style: none;
+  padding: 0;
+
+  ul,
+  ol {
+    list-style: none;
+  }
+}
+
+.a-list--unstyled {
+  @extend %a-list--unstyled;
+}
+
+
+/**
+ * List without default padding.
+ */
+%a-list--flattened {
+  padding: 0;
+
+  ul,
+  ol {
+    padding: 0;
+  }
+}
+
+.a-list--flattened {
+  @extend %a-list--flattened;
+}
+
+
+/**
+ * List with more padding.
+ */
+%a-list--primary {
+
+  ul,
+  ol {
+    margin-top: $spacer * 2 / 3;
+
+    .a-list__item {
+      margin-left: -$spacer;
+      padding-left: $spacer-lg;
+    }
+
+    .a-list__item:last-of-type {
+      margin-bottom: -($spacer * 2 / 3);
+    }
+  }
+
+  .a-list__item {
+    padding: $spacer * 2 / 3 0 $spacer * 2 / 3 $spacer-xs;
+  }
+}
+
+.a-list--primary {
+  @extend %a-list--primary;
+}
+
+
+/**
+ * LIST MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * List with list items separated by a border.
+ */
+.a-list--lined {
+  @extend %a-list--primary;
+  @extend %a-list--flattened;
+
+  .a-list__item {
+    border-top: 1px solid $border-color;
+    list-style-position: inside;
+
+    &:last-of-type {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  ul,
+  ol {
+
+    > .a-list__item:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+/**
+ * List with list items including an icon.
+ */
+.a-list {
+
+  &.has-icon-left,
+  &.has-icon-right {
+    @extend %a-list--unstyled;
+  }
+
+  &.has-icon-left .a-list__item .fa {
+    margin-right: $spacer-xs;
+  }
+
+  &.has-icon-right .a-list__item .fa {
+    margin-left: $spacer-xs;
+  }
+}

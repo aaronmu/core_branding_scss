@@ -1,0 +1,33 @@
+/**
+ * FUNCTIONS
+ * -------------------------------------------------------------------
+ * Collection of custom functions
+ */
+
+
+/**
+ * CONVERT PX TO REM
+ * -------------------------------------------------------------------
+ */
+
+@function rem($_value) {
+  @return #{$_value / 16px}rem;
+}
+
+
+/**
+ * RAISE NUMBER TO CERTAIN POWER
+ * -------------------------------------------------------------------
+ */
+
+@function power($number, $exponent) {
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  }
+
+  @return $value;
+}

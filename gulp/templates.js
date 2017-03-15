@@ -11,7 +11,7 @@ var rename = require('gulp-rename');
 gulp.task('render-templates', function () {
 
     return gulp.src([
-        'src/index.njk'
+        'src/**/*.njk'
     ])
     .pipe(plumber())
     .pipe(nunjucks.compile())
