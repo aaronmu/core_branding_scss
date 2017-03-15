@@ -252,6 +252,9 @@ $radio-checkbox-bg:       $brand-primary !default;
  * -------------------------------------------------------------------
  */
 
+$switch-width:            $spacer-lg !default;
+$switch-height:           $switch-width / 2 + .25rem !default;
+
 $switch-bg:               $input-bg !default;
 $switch-border:           $input-border !default;
 $switch-disabled:         $state-disabled !default;
