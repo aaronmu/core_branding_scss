@@ -115,12 +115,10 @@
 
   &:hover,
   &:active {
-    @if $_border {
-      background: mix($_color, $white, 15%);
-    }
     color: mix($_color, $black, 85%);
 
     @if $_border {
+      background: mix($_color, $white, 20%);
       box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset;
     }
   }

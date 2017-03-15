@@ -29,6 +29,7 @@ $border-color:            $grey !default;
 $border-color-light:      $grey-light !default;
 
 $overlay-color:           rgba($black, .5) !default;
+$selection-color:         mix($brand-primary, $white, 20%) !default;
 
 
 /**
@@ -146,6 +147,16 @@ $box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 
 $link-color:              $brand-primary !default;
 $link-hover-color:        mix($link-color, $black, 85%) !default;
+
+
+/**
+ * MARK
+ * -------------------------------------------------------------------
+ * Define text and background color for each mark element
+ */
+
+$mark-color:              $white !default;
+$mark-bg:                 $brand-primary !default;
 
 
 /**
@@ -483,6 +494,26 @@ $nav-color-active:        $white !default;
 $nav-bg:                  transparent !default;
 $nav-bg-hover:            $grey-lighter !default;
 $nav-bg-active:           $nav-color-hover !default;
+
+
+/**
+ * PAGINATION
+ * -------------------------------------------------------------------
+ */
+
+$pagination-font-size:    $btn-font-size !default;
+$pagination-size:         $spacer-lg !default;
+
+$pagination-color:        $btn-primary-color !default;
+$pagination-bg:           $btn-primary-bg !default;
+$pagination-bg-hover:     mix($pagination-bg, $black, 85%) !default;
+
+$pagination-outline-color:            $pagination-bg !default;
+$pagination-outline-bg:               $btn-transparent-bg !default;
+$pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
+$pagination-outline-border:           $pagination-outline-color !default;
+$pagination-outline-border-hover:     mix($pagination-outline-border, $black, 85%) !default;
+
 
 
 /**

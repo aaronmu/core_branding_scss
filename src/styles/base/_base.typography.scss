@@ -16,6 +16,10 @@ body {
   line-height: $line-height-base;
 }
 
+::selection {
+  background-color: $selection-color;
+}
+
 
 /**
  * HEADERS
@@ -118,6 +122,17 @@ blockquote {
 small {
   color: $text-color-light;
   font-size: rem($font-size-sm);
+}
+
+
+/**
+ * MARK
+ * -------------------------------------------------------------------
+ */
+
+mark {
+  background-color: $mark-bg;
+  color: $mark-color;
 }
 
 
