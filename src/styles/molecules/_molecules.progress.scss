@@ -55,6 +55,7 @@
   .m-progress__label {
     margin-bottom: 0;
     margin-right: $spacer-xs;
+    min-width: $spacer-md;
   }
 
   .m-progress__inner + .m-progress__label {
