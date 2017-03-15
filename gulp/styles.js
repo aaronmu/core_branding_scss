@@ -8,6 +8,7 @@
 // - https://www.npmjs.com/package/gulp-postcss
 // - https://www.npmjs.com/package/autoprefixer
 // - https://www.npmjs.com/package/cssnano
+// - https://www.npmjs.com/package/gulp-css-url-adjuster
 
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
@@ -17,31 +18,58 @@ var sourcemaps = require('gulp-sourcemaps');
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var cssnano = require("cssnano");
+var rename = require('gulp-rename');
+var cssUrlAdjuster = require('gulp-css-url-adjuster');
+
+var cssNano = [
+    cssnano()
+];
+
+var autoPrefixer = [
+    autoprefixer({ browsers: ["last 3 versions"] })
+];
+
+var sassOptions = {
+    outputStyle: 'expanded',
+    sourceComments: false
+}
+
+var sourcemapOptions = {
+    includeContent: false
+};
 
 gulp.task('sass', function () {
-
-    var sourcemapOptions = {
-        includeContent: false,
-        sourceRoot: "../../styles"
-    };
-
-    var postcssConfig = [
-        autoprefixer({ browsers: ["last 3 versions"] }),
-        cssnano()
-    ];
 
     return gulp.src('src/styles/**/*.scss')
         .pipe(plumber())
         .pipe(sourcemaps.init())
-        .pipe(sass({
-            outputStyle: 'expanded',
-            sourceComments: false
-        }).on('error', sass.logError))
-        .pipe(mergeMediaQueries({ use_external: true }))
-        .pipe(postcss(postcssConfig))
-        .pipe(sourcemaps.write("maps", sourcemapOptions))
+        .pipe(sass(sassOptions).on('error', sass.logError))
+        .pipe(mergeMediaQueries({ use_external: false }))
+        .pipe(postcss(autoPrefixer))
         .pipe(gulp.dest('.tmp/css'));
+});
 
+
+// -------------------------------------------------------------------
+// :: SASS DIST
+// -------------------------------------------------------------------
+
+gulp.task('sass-dist', function(){
+
+    return gulp.src('src/styles/**/*.scss')
+        .pipe(plumber())
+        .pipe(sass(sassOptions).on('error', sass.logError))
+        .pipe(mergeMediaQueries({ use_external: false }))
+        .pipe(postcss(autoPrefixer))
+        .pipe(cssUrlAdjuster({
+            replace:  ['../../fonts','assets/fonts'],
+        }))
+        .pipe(gulp.dest('dist'))
+        .pipe(sourcemaps.init())
+        .pipe(postcss(cssNano))
+        .pipe(rename({extname: '.min.css'}))
+        .pipe(sourcemaps.write("./", sourcemapOptions))
+        .pipe(gulp.dest('dist'));
 });
 
 

@@ -420,7 +420,7 @@ $spinner-size:            $icon-size-lg !default;
 
 $spinner-animation-name:      fa-spin !default;
 $spinner-animation-speed:     2000ms !default;
-$spinner-animation-timing:    linear;
+$spinner-animation-timing:    linear !default;
 
 
 /**
@@ -467,6 +467,22 @@ $modal-border:            $border-color !default;
 
 $modal-width:             $spacer * 17 !default;
 $modal-width-large:       $spacer * 25 !default;
+
+
+/**
+ * NAVIGATION
+ * -------------------------------------------------------------------
+ */
+
+$nav-font-weight:         $bold !default;
+$nav-border:              $border-color !default;
+$nav-border-hover:        $brand-primary !default;
+$nav-color:               $text-color !default;
+$nav-color-hover:         $brand-primary !default;
+$nav-color-active:        $white !default;
+$nav-bg:                  transparent !default;
+$nav-bg-hover:            $grey-lighter !default;
+$nav-bg-active:           $nav-color-hover !default;
 
 
 /**
