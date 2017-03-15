@@ -93,7 +93,8 @@
   }
 
   &[disabled] {
-    background-color: $state-disabled;
+    background-color: $btn-disabled-bg;
+    color: $btn-disabled-color;
     cursor: not-allowed;
   }
 }
@@ -125,8 +126,8 @@
 
   &[disabled] {
     background: transparent;
-    box-shadow: 0 0 0 1px $state-disabled inset;
-    color: $state-disabled;
+    box-shadow: 0 0 0 1px $btn-disabled-bg inset;
+    color: $btn-disabled-bg;
     cursor: not-allowed;
   }
 }
