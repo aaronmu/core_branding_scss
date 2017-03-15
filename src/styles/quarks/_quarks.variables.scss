@@ -265,6 +265,20 @@ $switch-handle-bg:          $grey !default;
 $switch-handle-bg-active:   $brand-primary !default;
 
 
+/**
+ * PROGRESS
+ * -------------------------------------------------------------------
+ */
+
+$progress-height:         $spacer-lg / 2 + .25rem !default;
+
+$progress-bg:             $input-bg !default;
+$progress-border:         $input-border !default;
+
+$progress-bar-height:     $progress-height - .5rem !default;
+
+$progress-bar-bg:         $brand-primary !default;
+
 
 /**
  * CITE
