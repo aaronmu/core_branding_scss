@@ -149,6 +149,16 @@ $link-hover-color:        mix($link-color, $black, 85%) !default;
 
 
 /**
+ * MARK
+ * -------------------------------------------------------------------
+ * Define text and background color for each mark element
+ */
+
+$mark-color:              $white !default;
+$mark-bg:                 $brand-primary !default;
+
+
+/**
  * TABLES
  * -------------------------------------------------------------------
  * Define background and border color for each table
