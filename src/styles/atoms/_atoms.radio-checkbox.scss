@@ -38,7 +38,7 @@
       }
 
       &:after {
-        font-family: 'FontAwesome';
+        @include fontawesome;
       }
     }
 
