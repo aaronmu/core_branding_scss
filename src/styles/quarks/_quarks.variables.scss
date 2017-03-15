@@ -506,9 +506,9 @@ $pagination-size:         $spacer-lg !default;
 
 $pagination-color:        $btn-primary-color !default;
 $pagination-bg:           $btn-primary-bg !default;
-$pagination-bg-hover:     mix($btn-primary-bg, $black, 85%) !default;
+$pagination-bg-hover:     mix($pagination-bg, $black, 85%) !default;
 
-$pagination-outline-color:            $btn-primary-bg !default;
+$pagination-outline-color:            $pagination-bg !default;
 $pagination-outline-bg:               $btn-transparent-bg !default;
 $pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
 $pagination-outline-border:           $pagination-outline-color !default;

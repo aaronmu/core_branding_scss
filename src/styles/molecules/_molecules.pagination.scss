@@ -50,7 +50,7 @@
   }
 
   .m-pagination__prev {
-    border-right: 1px solid mix($btn-primary-bg, $black, 85%);
+    border-right: 1px solid $pagination-bg-hover;
 
     + .m-pagination__next {
       border-left: none;
@@ -58,7 +58,7 @@
   }
 
   .m-pagination__next {
-    border-left: 1px solid mix($btn-primary-bg, $black, 85%);
+    border-left: 1px solid $pagination-bg-hover;
   }
 }
 
@@ -70,8 +70,8 @@
     color: $pagination-outline-color;
 
     &.is-active {
-      background-color: $brand-primary;
-      color: $white;
+      background-color: $pagination-bg;
+      color: $pagination-color;
     }
 
     > a:hover,
