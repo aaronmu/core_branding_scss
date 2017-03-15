@@ -6,32 +6,31 @@
 .m-step-indicator {
   @extend %a-list--reset;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 
   li {
     counter-increment: steps;
+    flex: 0 1 25%;
     position: relative;
-    // width: 25%;
+    text-align: center;
 
-    // &:first-child {
+    // On smaller devices there's no max-width of 25% when there are less than 4 steps
+    &:first-child:nth-last-child(1),
+    &:first-child:nth-last-child(2),
+    &:first-child:nth-last-child(2) ~ li,
+    &:first-child:nth-last-child(3),
+    &:first-child:nth-last-child(3) ~ li {
+      flex: 1 1 0;
+    }
 
-    //   &:after {
-    //     left: 50%;
-    //     width: 50%;
-    //   }
-    // }
+    // On larger devices there's no max-width of 25%
+    @include at($screen-sm) {
+      flex: 1 1 0;
+    }
 
-    // &:last-child {
-
-    //   &:after {
-    //     left: 0;
-    //     width: 50%;
-    //   }
-    // }
-
+    // The square
     &:before {
-      background-color: $white;
+      background-color: $background-color;
       border: 1px solid $border-color;
       color: $text-color;
       content: counter(steps);
@@ -40,30 +39,60 @@
       font-weight: $bold;
       height: $spacer-md;
       line-height: $spacer-md;
-      margin: 0 auto;
+      margin: 0 auto $spacer;
       text-align: center;
       width: $spacer-md;
+
+      @include at($screen-sm) {
+        margin: 0 auto $spacer-xs;
+      }
     }
 
+    // The connection line
     &:after {
-      background: $border-color;
+      background-color: $border-color;
       content: '';
       height: 1px;
-      left: 0;
-      margin: 0;
       position: absolute;
-      top: $spacer-md / 2;
-      width: 100%;
+      right: calc(50% + #{$spacer-md / 4 * 3});
+      top: calc(#{$spacer-md / 2} - .5px);
+      width: calc(100% - #{$spacer-md * 3 / 2});
+    }
+
+    // On smaller devices …
+    @include to($screen-sm) {
+
+      // … hide the text label
+      .m-step-indicator__label {
+        display: none;
+      }
+
+      // … hide the connection line on every (4th+1) step (e.g.: step 1, 5, 9, 13, …)
+      &:nth-child(4n+1):after {
+        content: none;
+      }
+
+      // … reset the margin for the last row of steps
+      &:nth-last-child(-n+4):before {
+        margin-bottom: 0;
+      }
+    }
+
+    &:first-child:after {
+      content: none;
     }
 
     &.is-active {
+      font-weight: $bold;
 
       &:before {
-        background-color: $background-color;
+        background-color: $white;
       }
     }
 
     &.is-completed {
+      color: $state-success;
+      font-weight: $bold;
 
       &:before {
         @include fontawesome;
@@ -71,6 +100,12 @@
         border-color: $state-success;
         color: $white;
         content: '\f00c';
+      }
+
+      &:after {
+        background-color: $state-success;
+        height: 2px;
+        top: calc(#{$spacer-md / 2} - 1px);
       }
     }
   }
