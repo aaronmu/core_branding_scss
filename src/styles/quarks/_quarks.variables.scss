@@ -29,6 +29,7 @@ $border-color:            $grey !default;
 $border-color-light:      $grey-light !default;
 
 $overlay-color:           rgba($black, .5) !default;
+$selection-color:         mix($brand-primary, $white, 20%) !default;
 
 
 /**
