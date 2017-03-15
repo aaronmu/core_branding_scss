@@ -9,6 +9,7 @@
   flex-wrap: wrap;
 
   li {
+    color: $step-indicator-label-color;
     counter-increment: steps;
     flex: 0 1 25%;
     position: relative;
@@ -30,18 +31,18 @@
 
     // The square
     &:before {
-      background-color: $background-color;
-      border: 1px solid $border-color;
-      color: $text-color;
+      background-color: $step-indicator-bg;
+      border: 1px solid $step-indicator-border;
+      color: $step-indicator-color;
       content: counter(steps);
       display: block;
       font-size: $font-size-h6;
       font-weight: $bold;
-      height: $spacer-md;
-      line-height: $spacer-md;
+      height: $step-indicator-square-size;
+      line-height: $step-indicator-square-size;
       margin: 0 auto $spacer;
       text-align: center;
-      width: $spacer-md;
+      width: $step-indicator-square-size;
 
       @include at($screen-sm) {
         margin: 0 auto $spacer-xs;
@@ -50,13 +51,13 @@
 
     // The connection line
     &:after {
-      background-color: $border-color;
+      background-color: $step-indicator-border;
       content: '';
       height: 1px;
       position: absolute;
-      right: calc(50% + #{$spacer-md / 4 * 3});
-      top: calc(#{$spacer-md / 2} - .5px);
-      width: calc(100% - #{$spacer-md * 3 / 2});
+      right: calc(50% + #{$step-indicator-square-size / 4 * 3});
+      top: calc(#{$step-indicator-square-size / 2} - .5px);
+      width: calc(100% - #{$step-indicator-square-size * 3 / 2});
     }
 
     // On smaller devices …
@@ -83,29 +84,32 @@
     }
 
     &.is-active {
+      color: $step-indicator-label-color-active;
       font-weight: $bold;
 
       &:before {
-        background-color: $white;
+        background-color: $step-indicator-bg-active;
+        border-color: $step-indicator-border-active;
+        color: $step-indicator-color-active;
       }
     }
 
     &.is-completed {
-      color: $state-success;
+      color: $step-indicator-label-color-success;
       font-weight: $bold;
 
       &:before {
         @include fontawesome;
-        background-color: $state-success;
-        border-color: $state-success;
-        color: $white;
+        background-color: $step-indicator-bg-success;
+        border-color: $step-indicator-border-success;
+        color: $step-indicator-color-success;
         content: '\f00c';
       }
 
       &:after {
-        background-color: $state-success;
+        background-color: $step-indicator-border-success;
         height: 2px;
-        top: calc(#{$spacer-md / 2} - 1px);
+        top: calc(#{$step-indicator-square-size / 2} - 1px);
       }
     }
   }
