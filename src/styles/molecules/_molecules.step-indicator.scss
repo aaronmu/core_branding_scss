@@ -1,0 +1,77 @@
+/**
+ * STEP INDICATOR
+ * -------------------------------------------------------------------
+ */
+
+.m-step-indicator {
+  @extend %a-list--reset;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  li {
+    counter-increment: steps;
+    position: relative;
+    // width: 25%;
+
+    // &:first-child {
+
+    //   &:after {
+    //     left: 50%;
+    //     width: 50%;
+    //   }
+    // }
+
+    // &:last-child {
+
+    //   &:after {
+    //     left: 0;
+    //     width: 50%;
+    //   }
+    // }
+
+    &:before {
+      background-color: $white;
+      border: 1px solid $border-color;
+      color: $text-color;
+      content: counter(steps);
+      display: block;
+      font-size: $font-size-h6;
+      font-weight: $bold;
+      height: $spacer-md;
+      line-height: $spacer-md;
+      margin: 0 auto;
+      text-align: center;
+      width: $spacer-md;
+    }
+
+    &:after {
+      background: $border-color;
+      content: '';
+      height: 1px;
+      left: 0;
+      margin: 0;
+      position: absolute;
+      top: $spacer-md / 2;
+      width: 100%;
+    }
+
+    &.is-active {
+
+      &:before {
+        background-color: $background-color;
+      }
+    }
+
+    &.is-completed {
+
+      &:before {
+        @include fontawesome;
+        background-color: $state-success;
+        border-color: $state-success;
+        color: $white;
+        content: '\f00c';
+      }
+    }
+  }
+}
