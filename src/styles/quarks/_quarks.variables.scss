@@ -259,8 +259,11 @@ $switch-bg:               $input-bg !default;
 $switch-border:           $input-border !default;
 $switch-disabled:         $state-disabled !default;
 
-$switch-handle-bg:        $grey !default;
-$switch-handle-bg-active: $brand-primary !default;
+$switch-handle-width:     ($switch-width - .5rem) / 2 !default;
+
+$switch-handle-bg:          $grey !default;
+$switch-handle-bg-active:   $brand-primary !default;
+
 
 
 /**
