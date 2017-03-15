@@ -85,7 +85,11 @@
 
   &:hover,
   &:active {
-    background-color: mix($_background, $black, 85%);
+    @if $_background != transparent and $_background != white {
+      background-color: mix($_background, $black, 85%);
+    } @else {
+      background-color: mix($_color, $white, 20%);
+    }
   }
 
   &[disabled] {
@@ -111,6 +115,9 @@
 
   &:hover,
   &:active {
+    @if $_border {
+      background: mix($_color, $white, 15%);
+    }
     color: mix($_color, $black, 85%);
 
     @if $_border {
@@ -119,6 +126,7 @@
   }
 
   &[disabled] {
+    background: transparent;
     box-shadow: 0 0 0 1px $state-disabled inset;
     color: $state-disabled;
     cursor: not-allowed;
