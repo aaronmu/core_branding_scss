@@ -24,9 +24,8 @@
       flex: 1 1 0;
     }
 
-    // On larger devices there's no max-width of 25%
-    @include at($screen-sm) {
-      flex: 1 1 0;
+    &:first-child:after {
+      content: none;
     }
 
     // The square
@@ -60,29 +59,6 @@
       width: calc(100% - #{$step-indicator-square-size * 3 / 2});
     }
 
-    // On smaller devices …
-    @include to($screen-sm) {
-
-      // … hide the text label
-      .m-step-indicator__label {
-        display: none;
-      }
-
-      // … hide the connection line on every (4th+1) step (e.g.: step 1, 5, 9, 13, …)
-      &:nth-child(4n+1):after {
-        content: none;
-      }
-
-      // … reset the margin for the last row of steps
-      &:nth-last-child(-n+4):before {
-        margin-bottom: 0;
-      }
-    }
-
-    &:first-child:after {
-      content: none;
-    }
-
     &.is-active {
       color: $step-indicator-label-color-active;
       font-weight: $bold;
@@ -111,6 +87,30 @@
         height: 2px;
         top: calc(#{$step-indicator-square-size / 2} - 1px);
       }
+    }
+
+    // On smaller devices …
+    @include to($screen-sm) {
+
+      // … hide the text label
+      .m-step-indicator__label {
+        display: none;
+      }
+
+      // … hide the connection line on every (4th+1) step (e.g.: step 1, 5, 9, 13, …)
+      &:nth-child(4n+1):after {
+        content: none;
+      }
+
+      // … reset the margin for the last row of steps
+      &:nth-last-child(-n+4):before {
+        margin-bottom: 0;
+      }
+    }
+
+    // On larger devices there's no max-width of 25%
+    @include at($screen-sm) {
+      flex: 1 1 0;
     }
   }
 }
