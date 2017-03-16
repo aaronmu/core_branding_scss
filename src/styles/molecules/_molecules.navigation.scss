@@ -42,7 +42,13 @@
   }
 }
 
-.m-nav--horizontal {
+
+/**
+ * NAVIGATION MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-nav--tabs {
   @include at($screen-sm) {
     border-top: none;
     display: flex;
@@ -73,4 +79,12 @@
       }
     }
   }
+}
+
+.m-nav--centered {
+  justify-content: center;
+}
+
+.m-nav--right {
+  justify-content: flex-end;
 }
