@@ -303,9 +303,8 @@
 @mixin fontawesome {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  display: inline-block;
   font-size: inherit;
-  font: normal normal normal 14px/1 FontAwesome;
+  font-family: FontAwesome;
   text-rendering: auto;
 }
 

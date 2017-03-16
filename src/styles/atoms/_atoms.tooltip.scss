@@ -12,7 +12,7 @@
   display: inline-block;
   max-width: $tooltip-max-width;
   min-height: $spacer-md;
-  padding: $spacer / 3 $spacer-sm;
+  padding: $spacer / 3 $spacer-xs;
   position: relative;
 
   a {
@@ -44,11 +44,11 @@
 .a-tooltip {
   @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down');
 
-  &.a-tooltip--up {
+  &.a-tooltip--top {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down');
   }
 
-  &.a-tooltip--down {
+  &.a-tooltip--bottom {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'up');
   }
 
@@ -64,11 +64,11 @@
 .a-tooltip--secondary {
   @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down');
 
-  &.a-tooltip--up {
+  &.a-tooltip--top {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down');
   }
 
-  &.a-tooltip--down {
+  &.a-tooltip--bottom {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'up');
   }
 
