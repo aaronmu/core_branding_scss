@@ -4,7 +4,7 @@
 // Created with the 'gulp iconfont'-task, the source-template
 // of this file can be found in fonts/icon-sources/_template.scss
 
-@include get-font('<%= fontName %>', '<%= fontPath %>/<%= fontName %>');
+@include font-face('<%= fontName %>', '<%= fontPath %>/<%= fontName %>');
 
 %icon-template {
   -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
