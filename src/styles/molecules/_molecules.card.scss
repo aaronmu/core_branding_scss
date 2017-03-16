@@ -1,0 +1,28 @@
+/**
+ * CARD
+ * -------------------------------------------------------------------
+ */
+
+.m-card {
+  background-color: $white;
+  border: 1px solid $border-color;
+}
+
+
+/**
+ * CARD ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.m-card__header {
+  padding: $spacer-xs;
+}
+
+.m-card__image img {
+  display: block;
+  width: 100%;
+}
+
+.m-card__body {
+  padding: $spacer;
+}

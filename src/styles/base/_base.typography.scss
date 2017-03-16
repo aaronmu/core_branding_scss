@@ -119,9 +119,11 @@ blockquote {
  * -------------------------------------------------------------------
  */
 
-small {
+small,
+.small {
   color: $text-color-light;
   font-size: rem($font-size-sm);
+  font-weight: $bold;
 }
 
 
