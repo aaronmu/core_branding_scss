@@ -11,13 +11,9 @@
 
 a {
 
-  &.has-icon-left,
-  &.has-icon-right {
-    display: inline-block;
-
-    .fa {
-      font-size: .875rem;
-    }
+  &.has-icon-left .fa,
+  &.has-icon-right .fa {
+    font-size: .875rem;
   }
 
   &.has-icon-left .fa {
