@@ -1,0 +1,65 @@
+/**
+ * TOGGLE
+ * -------------------------------------------------------------------
+ */
+
+.a-toggle {
+  display: block;
+  height: $spacer-lg;
+  overflow: hidden;
+
+  @include at($screen-xs) {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+
+  &.has-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+/**
+ * TOGGLE ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.a-toggle__checkbox {
+  display: none;
+
+  &:checked + .a-toggle__labels {
+    transform: translateY(-50%);
+  }
+}
+
+.a-toggle__labels {
+  transition: transform $animation-normal;
+
+  [class*='a-button'] {
+    display: block;
+  }
+}
+
+
+/**
+ * TOGGLE MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-toggle {
+
+  &.a-toggle--tiny {
+    height: $spacer;
+  }
+
+  &.a-toggle--small {
+    height: $spacer-md;
+  }
+
+  &.a-toggle--large {
+    height: $spacer-xl;
+  }
+}
+
