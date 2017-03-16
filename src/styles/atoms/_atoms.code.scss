@@ -71,8 +71,10 @@ pre {
  * -------------------------------------------------------------------
  */
 
-
 /**
- *
+ * Scrollable code block
  */
 
+.a-pre--scrollable {
+  overflow-y: scroll;
+}
