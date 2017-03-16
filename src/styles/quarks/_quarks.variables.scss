@@ -554,3 +554,22 @@ $step-indicator-bg-success:             $state-success !default;
 $step-indicator-border-success:         $step-indicator-bg-success !default;
 $step-indicator-label-color-success:    $step-indicator-bg-success !default;
 $step-indicator-square-size:            $spacer-md !default;
+
+
+/**
+ * UPLOAD
+ * -------------------------------------------------------------------
+ */
+
+$upload-height:           $spacer * 5 !default;
+
+$upload-color:            $text-color !default;
+$upload-bg:               $white !default;
+$upload-bg-hover:         mix($brand-primary, $white, 20%) !default;
+$upload-border:           $brand-primary !default;
+
+$upload-file-color:           $text-color !default;
+$upload-file-bg:              $background-color-light !default;
+$upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
+$upload-file-color-danger:    $state-danger !default;
+
