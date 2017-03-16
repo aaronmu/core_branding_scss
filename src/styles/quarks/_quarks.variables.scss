@@ -65,6 +65,7 @@ $screen-lg:               75rem !default; // 1200px
 
 $font-family-base:        'Sun Antwerpen Regular' !default;
 $font-family-headings:    'Antwerpen Regular' !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 
 
 /**
@@ -110,6 +111,14 @@ $extra-bold:              800 !default;
 
 
 /**
+ * OTHER TYPOGRAPHY
+ * -------------------------------------------------------------------
+ */
+
+$readable-content-width:  45rem !default;
+
+
+/**
  * ANIMATIONS
  * -------------------------------------------------------------------
  */
@@ -147,6 +156,32 @@ $box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 
 $link-color:              $brand-primary !default;
 $link-hover-color:        mix($link-color, $black, 85%) !default;
+
+
+/**
+ * PRE
+ * -------------------------------------------------------------------
+ * Define text and background color for each code element
+ */
+
+$pre-color:               $text-color !default;
+$pre-bg:                  $background-color-light !default;
+$pre-font-size:           1rem !default;
+
+
+/**
+ * CODE
+ * -------------------------------------------------------------------
+ * Define text and background color for each code element
+ */
+
+$code-color:              $text-color !default;
+$code-bg:                 $background-color-light !default;
+$code-font-size:          .875rem !default;
+
+$kbd-color:               $white !default;
+$kbd-bg:                  $grey !default;
+$kbd-font-size:          .875rem !default;
 
 
 /**
