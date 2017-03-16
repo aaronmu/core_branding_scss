@@ -85,12 +85,12 @@
       top: 50%;
       transform: translateY(-50%);
     }
+  }
 
-    [class*='a-button'] {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+  .m-upload__delete {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
