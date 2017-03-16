@@ -38,5 +38,5 @@
 }
 
 .u-screen-reader-only {
-  @include %u-screen-reader-only;
+  @extend %u-screen-reader-only;
 }
