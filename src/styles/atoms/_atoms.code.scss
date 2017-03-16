@@ -52,7 +52,7 @@ kbd {
  * CODE BLOCK
  */
 
-pre {
+%a-pre {
   background: $pre-bg;
   color: $pre-color;
   display: block;
@@ -64,6 +64,10 @@ pre {
     padding: 0;
     background-color: transparent;
   }
+}
+
+.a-pre {
+  @extend %a-pre;
 }
 
 /**
