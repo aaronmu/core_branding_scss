@@ -35,11 +35,22 @@
 }
 
 .a-toggle__labels {
+  display: flex;
+  flex-direction: column;
+
   transition: transform $animation-normal;
 
   [class*='a-button'] {
     display: block;
   }
+}
+
+.a-toggle__on {
+  order: 1;
+}
+
+.a-toggle__off {
+  order: 2;
 }
 
 
