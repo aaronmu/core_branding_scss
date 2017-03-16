@@ -293,6 +293,9 @@ $progress-bar-height:     $progress-height - .5rem !default;
 
 $progress-bar-bg:         $brand-primary !default;
 
+$progress-tooltip-top:        -3.375rem !default;
+$progress-tooltip-bottom:     $progress-height + 0.625rem !default;
+
 
 /**
  * CITE
@@ -536,7 +539,6 @@ $pagination-outline-bg:               $btn-transparent-bg !default;
 $pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
 $pagination-outline-border:           $pagination-outline-color !default;
 $pagination-outline-border-hover:     mix($pagination-outline-border, $black, 85%) !default;
-
 
 
 /**

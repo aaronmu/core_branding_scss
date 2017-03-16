@@ -27,12 +27,12 @@
     display: block;
     float: right;
     position: relative;
-    top: -54px;
+    top: $progress-tooltip-top;
     transform: translateX(50%);
   }
 
   .a-tooltip--bottom {
-    top: 38px;
+    top: $progress-tooltip-bottom;
   }
 }
 
