@@ -592,3 +592,14 @@ $step-indicator-bg-success:             $state-success !default;
 $step-indicator-border-success:         $step-indicator-bg-success !default;
 $step-indicator-label-color-success:    $step-indicator-bg-success !default;
 $step-indicator-square-size:            $spacer-md !default;
+
+
+/**
+ * GALLERY
+ * -------------------------------------------------------------------
+ */
+
+$gallery-gutter-col:          $spacer !default;
+$gallery-gutter-row:          $gallery-gutter-col !default;
+
+$gallery-item-size:           100% / 3;
