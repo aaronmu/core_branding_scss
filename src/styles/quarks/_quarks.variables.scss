@@ -195,6 +195,14 @@ $mark-bg:                 $brand-primary !default;
 
 
 /**
+ * CITE
+ * -------------------------------------------------------------------
+ */
+
+$cite-color:                  $brand-secondary !default;
+
+
+/**
  * TABLES
  * -------------------------------------------------------------------
  * Define background and border color for each table
@@ -315,26 +323,33 @@ $switch-handle-bg-active: $brand-primary !default;
 
 
 /**
+ * TOOLTIP
+ * -------------------------------------------------------------------
+ */
+
+$tooltip-max-width:         $spacer * 12 !default;
+$tooltip-min-height:        $spacer-md !default;
+
+$tooltip-primary-color:     $white !default;
+$tooltip-primary-bg:        $brand-primary !default;
+
+$tooltip-secondary-color:   $tooltip-primary-color !default;
+$tooltip-secondary-bg:      $brand-secondary !default;
+
+
+/**
  * PROGRESS
  * -------------------------------------------------------------------
  */
 
-$progress-height:         $spacer-lg / 2 + .25rem !default;
+$progress-height:             $spacer-lg / 2 + .25rem !default;
+$progress-bar-padding:        $spacer / 6 !default;
+$progress-tooltip-offset:     .625rem !default;
 
-$progress-bg:             $input-bg !default;
-$progress-border:         $input-border !default;
+$progress-bg:                 $input-bg !default;
+$progress-border:             $input-border !default;
 
-$progress-bar-height:     $progress-height - .5rem !default;
-
-$progress-bar-bg:         $brand-primary !default;
-
-
-/**
- * CITE
- * -------------------------------------------------------------------
- */
-
-$cite-color:             $brand-secondary !default;
+$progress-bar-bg:             $brand-primary !default;
 
 
 /**
@@ -505,20 +520,6 @@ $icon-list-icon-size:         $icon-size-base !default;
 
 
 /**
- * TOOLTIP
- * -------------------------------------------------------------------
- */
-
-$tooltip-max-width:         $spacer * 12 !default;
-
-$tooltip-primary-color:     $white !default;
-$tooltip-primary-bg:        $brand-primary !default;
-
-$tooltip-secondary-color:   $tooltip-primary-color !default;
-$tooltip-secondary-bg:      $brand-secondary !default;
-
-
-/**
  * OVERLAY
  * -------------------------------------------------------------------
  */
@@ -573,7 +574,6 @@ $pagination-outline-border:           $pagination-outline-color !default;
 $pagination-outline-border-hover:     mix($pagination-outline-border, $black, 85%) !default;
 
 
-
 /**
  * STEP INDICATOR
  * -------------------------------------------------------------------
@@ -592,3 +592,22 @@ $step-indicator-bg-success:             $state-success !default;
 $step-indicator-border-success:         $step-indicator-bg-success !default;
 $step-indicator-label-color-success:    $step-indicator-bg-success !default;
 $step-indicator-square-size:            $spacer-md !default;
+
+
+/**
+ * UPLOAD
+ * -------------------------------------------------------------------
+ */
+
+$upload-height:           $spacer * 5 !default;
+
+$upload-color:            $text-color !default;
+$upload-bg:               $white !default;
+$upload-bg-hover:         mix($brand-primary, $white, 20%) !default;
+$upload-border:           $brand-primary !default;
+
+$upload-file-color:           $text-color !default;
+$upload-file-bg:              $background-color-light !default;
+$upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
+$upload-file-color-danger:    $state-danger !default;
+
