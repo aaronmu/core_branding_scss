@@ -23,6 +23,7 @@
   text-align: center;
   transition: background $animation-normal;
 
+  &:active,
   &:hover,
   &:focus {
     background-color: $upload-bg-hover;
