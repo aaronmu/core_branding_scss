@@ -1,0 +1,18 @@
+/**
+ * TIMEPICKER
+ * -------------------------------------------------------------------
+ */
+
+.a-timepicker {
+  align-items: flex-end;
+  display: flex;
+  position: relative;
+
+  .a-input {
+    width: 100%;
+  }
+}
+
+.a-timepicker__separator {
+  margin: 0 $spacer-xs $spacer-sm;
+}
