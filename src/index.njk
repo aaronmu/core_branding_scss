@@ -80,7 +80,7 @@
 
     <br><br><br>
 
-    Inside a paragraph, there is <code>a line of code</code> that you need to see. And here is <a href="#">a link with <code>some code</code> in too</a>. Use <kbd>Cmd-C</kbd> to copy this code.
+    <p>Inside a paragraph, there is <code>a line of code</code> that you need to see. And here is <a href="#">a link with <code>some code</code> in too</a>. Use <kbd>Cmd-C</kbd> to copy this code.</p>
 
     <br><br>
 
@@ -621,9 +621,9 @@
     <br><br><br>
 
     <div class="a-input">
-        <label for="input-addon">Input met autocomplete</label>
+        <label for="input-autocomplete">Input met autocomplete</label>
         <div class="a-input__wrapper">
-            <input type="text" name="input-addon" id="input-addon" placeholder="Placeholder" />
+            <input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" />
         </div>
         <ul class="a-autocomplete is-open">
             <li>
@@ -713,6 +713,46 @@
             </div>
 
             <label class="a-switch__label">Uit</label>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="a-timepicker">
+        <div class="a-input has-icon-right">
+            <label for="input-hours">Uren</label>
+
+            <div class="a-input__wrapper">
+                <select name="input-hours" id="input-houres">
+                    <option value="" disabled selected>uu</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <span class="fa fa-angle-down"></span>
+            </div>
+        </div>
+
+        <span class="a-timepicker__separator">:</span>
+
+        <div class="a-input has-icon-right">
+            <label for="input-minutes">Minuten</label>
+
+            <div class="a-input__wrapper">
+                <select name="input-minutes" id="input-minutes">
+                    <option value="" disabled selected>mm</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                </select>
+
+                <span class="fa fa-angle-down"></span>
+            </div>
         </div>
     </div>
 
