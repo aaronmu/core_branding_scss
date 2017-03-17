@@ -170,3 +170,23 @@
     margin-left: $spacer-xs;
   }
 }
+
+
+/**
+ * DEFINITION LIST
+ * -------------------------------------------------------------------
+ */
+
+.a-definition-list {
+  margin: 0;
+
+  dt {
+    font-weight: $bold;
+    padding-top: $spacer / 4;
+  }
+
+  dd {
+    margin-left: 0;
+    padding-bottom: $spacer / 4;
+  }
+}
