@@ -611,3 +611,13 @@ $upload-file-bg:              $background-color-light !default;
 $upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
 $upload-file-color-danger:    $state-danger !default;
 
+
+/**
+ * GALLERY
+ * -------------------------------------------------------------------
+ */
+
+$gallery-gutter-col:          $spacer !default;
+$gallery-gutter-row:          $gallery-gutter-col !default;
+
+$gallery-item-size:           100% / 3 !default;
