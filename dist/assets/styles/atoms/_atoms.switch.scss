@@ -3,11 +3,6 @@
  * -------------------------------------------------------------------
  */
 
-$switch-width: $spacer-lg;
-$switch-height: $switch-width / 2 + .25rem;
-
-$switch-handle-width: ($switch-width - .5rem) / 2;
-
 .a-switch {
   display: flex;
 

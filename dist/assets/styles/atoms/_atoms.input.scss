@@ -117,7 +117,7 @@
   &.has-error {
 
     .a-input__wrapper:before {
-      font-family: 'FontAwesome';
+      @include fontawesome;
       font-size: 1.25rem;
       height: $spacer-lg;
       line-height: $spacer-lg;

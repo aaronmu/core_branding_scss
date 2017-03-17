@@ -102,7 +102,7 @@
     margin-top: $spacer * 2 / 3;
 
     .a-list__item {
-      margin-left: -$spacer;
+      margin-left: -$spacer-xs;
       padding-left: $spacer-lg;
     }
 
@@ -168,5 +168,25 @@
 
   &.has-icon-right .a-list__item .fa {
     margin-left: $spacer-xs;
+  }
+}
+
+
+/**
+ * DEFINITION LIST
+ * -------------------------------------------------------------------
+ */
+
+.a-definition-list {
+  margin: 0;
+
+  dt {
+    font-weight: $bold;
+    padding-top: $spacer / 4;
+  }
+
+  dd {
+    margin-left: 0;
+    padding-bottom: $spacer / 4;
   }
 }

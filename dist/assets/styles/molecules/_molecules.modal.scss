@@ -1,0 +1,84 @@
+/**
+ * MODAL
+ * -------------------------------------------------------------------
+ */
+
+.m-modal {
+  background-color: $modal-bg;
+  border: 1px solid $modal-border;
+  width: 100%;
+
+  @include at($screen-xs) {
+    max-width: $modal-width;
+  }
+
+  .m-modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    + * {
+      margin-right: $spacer-md;
+    }
+  }
+}
+
+/**
+ * MODAL MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-modal--fixed {
+  left: 0;
+  max-height: calc(100% - 96px);
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
+
+  @include at($screen-xs) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.m-modal--large {
+
+  @include at($screen-xs) {
+    max-width: $modal-width-large;
+  }
+}
+
+
+/**
+ * MODAL ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.m-modal__content {
+  padding: $spacer;
+  position: relative;
+}
+
+.m-modal__footer {
+  margin-bottom: -$spacer-xs;
+
+  @include at($screen-xs) {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  [class*='a-button'] {
+    margin-bottom: $spacer-xs;
+
+    @include at($screen-xs) {
+      margin-bottom: 0;
+
+      &:not(:first-child) {
+        margin-left: $spacer-xs;
+      }
+    }
+  }
+}

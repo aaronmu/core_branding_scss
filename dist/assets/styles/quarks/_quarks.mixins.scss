@@ -26,6 +26,55 @@
 
 
 /**
+ * TRIANGLE
+ * -------------------------------------------------------------------
+ * .triangle {
+ *    @include triangle("up", 1.5rem, #F00);
+ *    @include triangle("right", 1rem, #F00, true);
+ * }
+ */
+
+@mixin triangle($_direction, $_size, $_color: null, $_eq: false) {
+  content: '';
+
+  // Set triangle base for regular
+  // and equilateral triangles
+  $_eq-size: $_size;
+  @if $_eq { $_eq-size: $_size * 2 * 0.866; }
+
+  // Set triangle directions
+  // and base styles
+  @if $_direction == "up" {
+    border-bottom: $_eq-size solid $_color !important;;
+    border-left: $_size solid transparent !important;
+    border-right: $_size solid transparent  !important;
+    border-top: none !important;
+  }
+
+  @if $_direction == "down" {
+    border-bottom: none !important;
+    border-left: $_size solid transparent !important;
+    border-right: $_size solid transparent !important;
+    border-top: $_eq-size solid $_color !important;;
+  }
+
+  @if $_direction == "left" {
+    border-bottom: $_size solid transparent !important;
+    border-left: none !important;
+    border-right: $_eq-size solid $_color !important;;
+    border-top: $_size solid transparent !important;
+  }
+
+  @if $_direction == "right" {
+    border-bottom: $_size solid transparent !important;
+    border-left: $_eq-size solid $_color !important;;
+    border-right: none !important;
+    border-top: $_size solid transparent !important;
+  }
+}
+
+
+/**
  * BUTTON MIXIN
  * -------------------------------------------------------------------
  */
@@ -39,12 +88,13 @@
     @if $_background != transparent and $_background != white {
       background-color: mix($_background, $black, 85%);
     } @else {
-      background-color: mix($_color, $white, 15%);
+      background-color: mix($_color, $white, 20%);
     }
   }
 
   &[disabled] {
-    background-color: $state-disabled;
+    background-color: $btn-disabled-bg;
+    color: $btn-disabled-color;
     cursor: not-allowed;
   }
 }
@@ -66,20 +116,18 @@
 
   &:hover,
   &:active {
-    @if $_border {
-      background: mix($_color, $white, 15%);
-    }
     color: mix($_color, $black, 85%);
 
     @if $_border {
+      background: mix($_color, $white, 20%);
       box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset;
     }
   }
 
   &[disabled] {
     background: transparent;
-    box-shadow: 0 0 0 1px $state-disabled inset;
-    color: $state-disabled;
+    box-shadow: 0 0 0 1px $btn-disabled-bg inset;
+    color: $btn-disabled-bg;
     cursor: not-allowed;
   }
 }
@@ -187,6 +235,53 @@
 
 
 /**
+ * TOOLTIP MIXIN
+ * -------------------------------------------------------------------
+ */
+
+@mixin a-tooltip($_color: $white, $_background: $brand-primary, $_direction: 'down') {
+  color: $_color;
+  background: $_background;
+
+  &:before {
+    @include triangle($_direction, $spacer / 4, $_background);
+
+    @if $_direction == 'up' {
+      bottom: auto;
+      left: 50%;
+      right: auto;
+      top: 0;
+      transform: translate(-50%, -100%);
+    }
+
+    @if $_direction == 'down' {
+      bottom: 0;
+      left: 50%;
+      right: auto;
+      top: auto;
+      transform: translate(-50%, 100%);
+    }
+
+    @if $_direction == 'left' {
+      bottom: auto;
+      left: 0%;
+      right: auto;
+      top: 50%;
+      transform: translate(-100%, -50%);
+    }
+
+    @if $_direction == 'right' {
+      bottom: auto;
+      left: auto;
+      right: 0%;
+      top: 50%;
+      transform: translate(100%, -50%);
+    }
+  }
+}
+
+
+/**
  * CLEARFIX
  * -------------------------------------------------------------------
  */
@@ -208,9 +303,8 @@
 @mixin fontawesome {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  display: inline-block;
   font-size: inherit;
-  font: normal normal normal 14px/1 FontAwesome;
+  font-family: FontAwesome;
   text-rendering: auto;
 }
 

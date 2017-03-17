@@ -28,6 +28,9 @@ $background-color-light:  $grey-lighter !default;
 $border-color:            $grey !default;
 $border-color-light:      $grey-light !default;
 
+$overlay-color:           rgba($black, .5) !default;
+$selection-color:         mix($brand-primary, $white, 20%) !default;
+
 
 /**
  * SPACERS
@@ -62,6 +65,7 @@ $screen-lg:               75rem !default; // 1200px
 
 $font-family-base:        'Sun Antwerpen Regular' !default;
 $font-family-headings:    'Antwerpen Regular' !default;
+$font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 
 
 /**
@@ -107,6 +111,14 @@ $extra-bold:              800 !default;
 
 
 /**
+ * OTHER TYPOGRAPHY
+ * -------------------------------------------------------------------
+ */
+
+$readable-content-width:  45rem !default;
+
+
+/**
  * ANIMATIONS
  * -------------------------------------------------------------------
  */
@@ -144,6 +156,50 @@ $box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 
 $link-color:              $brand-primary !default;
 $link-hover-color:        mix($link-color, $black, 85%) !default;
+
+
+/**
+ * PRE
+ * -------------------------------------------------------------------
+ * Define text and background color for each code element
+ */
+
+$pre-color:               $text-color !default;
+$pre-bg:                  $background-color-light !default;
+$pre-font-size:           1rem !default;
+
+
+/**
+ * CODE
+ * -------------------------------------------------------------------
+ * Define text and background color for each code element
+ */
+
+$code-color:              $text-color !default;
+$code-bg:                 $background-color-light !default;
+$code-font-size:          .875rem !default;
+
+$kbd-color:               $white !default;
+$kbd-bg:                  $grey !default;
+$kbd-font-size:          .875rem !default;
+
+
+/**
+ * MARK
+ * -------------------------------------------------------------------
+ * Define text and background color for each mark element
+ */
+
+$mark-color:              $white !default;
+$mark-bg:                 $brand-primary !default;
+
+
+/**
+ * CITE
+ * -------------------------------------------------------------------
+ */
+
+$cite-color:                  $brand-secondary !default;
 
 
 /**
@@ -202,6 +258,9 @@ $btn-warning-bg:          $state-warning !default;
 $btn-danger-color:        $btn-default-color !default;
 $btn-danger-bg:           $state-danger !default;
 
+$btn-disabled-color:      $white !default;
+$btn-disabled-bg:         $state-disabled !default;
+
 $btn-transparent-color:   $brand-primary !default;
 $btn-transparent-bg:      transparent !default;
 
@@ -250,20 +309,47 @@ $radio-checkbox-bg:       $brand-primary !default;
  * -------------------------------------------------------------------
  */
 
+$switch-width:            $spacer-lg !default;
+$switch-height:           $switch-width / 2 + .25rem !default;
+
 $switch-bg:               $input-bg !default;
 $switch-border:           $input-border !default;
 $switch-disabled:         $state-disabled !default;
+
+$switch-handle-width:     ($switch-width - .5rem) / 2 !default;
 
 $switch-handle-bg:        $grey !default;
 $switch-handle-bg-active: $brand-primary !default;
 
 
 /**
- * CITE
+ * TOOLTIP
  * -------------------------------------------------------------------
  */
 
-$cite-color:             $brand-secondary !default;
+$tooltip-max-width:         $spacer * 12 !default;
+$tooltip-min-height:        $spacer-md !default;
+
+$tooltip-primary-color:     $white !default;
+$tooltip-primary-bg:        $brand-primary !default;
+
+$tooltip-secondary-color:   $tooltip-primary-color !default;
+$tooltip-secondary-bg:      $brand-secondary !default;
+
+
+/**
+ * PROGRESS
+ * -------------------------------------------------------------------
+ */
+
+$progress-height:             $spacer-lg / 2 + .25rem !default;
+$progress-bar-padding:        $spacer / 6 !default;
+$progress-tooltip-offset:     .625rem !default;
+
+$progress-bg:                 $input-bg !default;
+$progress-border:             $input-border !default;
+
+$progress-bar-bg:             $brand-primary !default;
 
 
 /**
@@ -342,6 +428,17 @@ $breadcrumb-arrow-color:  $grey !default;
 
 
 /**
+ * COPYRIGHT
+ * -------------------------------------------------------------------
+ */
+
+$copyright-color:         $white !default;
+$copyright-bg:            $overlay-color !default;
+$copyright-height:        $spacer-md !default;
+$copyright-font-size:     $font-size-sm !default;
+
+
+/**
  * LABELS
  * -------------------------------------------------------------------
  */
@@ -407,7 +504,7 @@ $spinner-size:            $icon-size-lg !default;
 
 $spinner-animation-name:      fa-spin !default;
 $spinner-animation-speed:     2000ms !default;
-$spinner-animation-timing:    linear;
+$spinner-animation-timing:    linear !default;
 
 
 /**
@@ -420,3 +517,97 @@ $icon-list-negative-color:    $white !default;
 $icon-list-hover-color:       $brand-secondary !default;
 
 $icon-list-icon-size:         $icon-size-base !default;
+
+
+/**
+ * OVERLAY
+ * -------------------------------------------------------------------
+ */
+
+$overlay-bg:              $overlay-color !default;
+
+
+/**
+ * MODAL
+ * -------------------------------------------------------------------
+ */
+
+$modal-bg:                $white !default;
+$modal-border:            $border-color !default;
+
+$modal-width:             $spacer * 17 !default;
+$modal-width-large:       $spacer * 25 !default;
+
+
+/**
+ * NAVIGATION
+ * -------------------------------------------------------------------
+ */
+
+$nav-font-weight:         $bold !default;
+$nav-border:              $border-color !default;
+$nav-border-hover:        $brand-primary !default;
+$nav-color:               $text-color !default;
+$nav-color-hover:         $brand-primary !default;
+$nav-color-active:        $white !default;
+$nav-bg:                  transparent !default;
+$nav-bg-hover:            $grey-lighter !default;
+$nav-bg-active:           $nav-color-hover !default;
+
+
+/**
+ * PAGINATION
+ * -------------------------------------------------------------------
+ */
+
+$pagination-font-size:    $btn-font-size !default;
+$pagination-size:         $spacer-lg !default;
+
+$pagination-color:        $btn-primary-color !default;
+$pagination-bg:           $btn-primary-bg !default;
+$pagination-bg-hover:     mix($pagination-bg, $black, 85%) !default;
+
+$pagination-outline-color:            $pagination-bg !default;
+$pagination-outline-bg:               $btn-transparent-bg !default;
+$pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
+$pagination-outline-border:           $pagination-outline-color !default;
+$pagination-outline-border-hover:     mix($pagination-outline-border, $black, 85%) !default;
+
+
+/**
+ * STEP INDICATOR
+ * -------------------------------------------------------------------
+ */
+
+$step-indicator-color:                  $text-color !default;
+$step-indicator-bg:                     $background-color !default;
+$step-indicator-border:                 $border-color !default;
+$step-indicator-label-color:            $step-indicator-color !default;
+$step-indicator-color-active:           $text-color !default;
+$step-indicator-bg-active:              $white !default;
+$step-indicator-border-active:          $step-indicator-border !default;
+$step-indicator-label-color-active:     $step-indicator-color-active !default;
+$step-indicator-color-success:          $white !default;
+$step-indicator-bg-success:             $state-success !default;
+$step-indicator-border-success:         $step-indicator-bg-success !default;
+$step-indicator-label-color-success:    $step-indicator-bg-success !default;
+$step-indicator-square-size:            $spacer-md !default;
+
+
+/**
+ * UPLOAD
+ * -------------------------------------------------------------------
+ */
+
+$upload-height:           $spacer * 5 !default;
+
+$upload-color:            $text-color !default;
+$upload-bg:               $white !default;
+$upload-bg-hover:         mix($brand-primary, $white, 20%) !default;
+$upload-border:           $brand-primary !default;
+
+$upload-file-color:           $text-color !default;
+$upload-file-bg:              $background-color-light !default;
+$upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
+$upload-file-color-danger:    $state-danger !default;
+

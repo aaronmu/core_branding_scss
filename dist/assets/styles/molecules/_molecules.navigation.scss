@@ -1,0 +1,90 @@
+/**
+ * NAVIGATION
+ * -------------------------------------------------------------------
+ */
+
+.m-nav {
+  @extend %a-list--reset;
+  border-top: 1px solid $border-color;
+
+  > li {
+    font-weight: $nav-font-weight;
+    line-height: $line-height-paragraph;
+    min-height: $spacer-lg;
+    text-align: center;
+
+    &.is-active {
+      > a,
+      > a:hover,
+      > a:active {
+        background-color: $nav-bg-active;
+        color: $nav-color-active;
+      }
+    }
+
+    > a {
+      background-color: $nav-bg;
+      border-bottom: 1px solid $border-color;
+      color: $nav-color;
+      display: block;
+      padding: $spacer / 3 * 2 $spacer;
+      text-decoration: none;
+      transition-duration: $animation-duration;
+      transition-property: background, color;
+      transition-timing-function: $animation-easing;
+
+      &:hover,
+      &:active {
+        background-color: $nav-bg-hover;
+        color: $nav-color-hover;
+      }
+    }
+  }
+}
+
+
+/**
+ * NAVIGATION MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-nav--tabs {
+  @include at($screen-sm) {
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    > li {
+
+      &.is-active {
+        > a,
+        > a:hover,
+        > a:active {
+          background-color: $nav-color-active;
+          border-color: $nav-bg-active;
+          color: $nav-bg-active;
+        }
+      }
+
+      > a {
+        border-bottom: 3px solid transparent;
+        transition-property: border, color;
+
+        &:hover,
+        &:active {
+          background-color: transparent;
+          border-color: $nav-bg-active;
+          color: $nav-color;
+        }
+      }
+    }
+  }
+}
+
+.m-nav--centered {
+  justify-content: center;
+}
+
+.m-nav--right {
+  justify-content: flex-end;
+}

@@ -1,0 +1,82 @@
+/**
+ * TOOLTIP
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * TOOLTIP PLACEHOLDER
+ * -------------------------------------------------------------------
+ */
+
+%a-tooltip {
+  display: inline-block;
+  max-width: $tooltip-max-width;
+  min-height: $tooltip-min-height;
+  padding: $spacer / 3 $spacer-xs;
+  position: relative;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+.a-tooltip {
+  @extend %a-tooltip;
+}
+
+
+/**
+ * TOOLTIP MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-tooltip {
+  @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down');
+
+  &.a-tooltip--top {
+    @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down');
+  }
+
+  &.a-tooltip--bottom {
+    @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'up');
+  }
+
+  &.a-tooltip--left {
+    @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'right');
+  }
+
+  &.a-tooltip--right {
+    @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'left');
+  }
+}
+
+.a-tooltip--secondary {
+  @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down');
+
+  &.a-tooltip--top {
+    @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down');
+  }
+
+  &.a-tooltip--bottom {
+    @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'up');
+  }
+
+  &.a-tooltip--left {
+    @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'right');
+  }
+
+  &.a-tooltip--right {
+    @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'left');
+  }
+}

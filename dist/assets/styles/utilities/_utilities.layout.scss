@@ -1,0 +1,42 @@
+/**
+ * LAYOUT HELPERS
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * LAYOUT SCROLLING
+ * -------------------------------------------------------------------
+ */
+
+.u-no-overflow {
+  overflow: hidden;
+}
+
+
+/**
+ * LAYOUT CLEARANCE
+ * -------------------------------------------------------------------
+ */
+
+.u-clearfix {
+  @include clearfix;
+}
+
+
+/**
+ * ACCESSIBILITY CLASSES
+ * -------------------------------------------------------------------
+ */
+
+%u-screen-reader-only {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  width: 1px;
+}
+
+.u-screen-reader-only {
+  @extend %u-screen-reader-only;
+}
