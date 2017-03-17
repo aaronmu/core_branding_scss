@@ -5,6 +5,14 @@
 
 
 /**
+ * VARIABLES
+ * -------------------------------------------------------------------
+ */
+$progress-tooltip-top:        -$tooltip-min-height - $progress-tooltip-offset - ($progress-bar-padding * 2);
+$progress-tooltip-bottom:     $progress-height + $progress-tooltip-offset;
+
+
+/**
  * PROGRESS ELEMENTS
  * -------------------------------------------------------------------
  */
@@ -19,7 +27,7 @@
   background-color: $progress-bg;
   box-shadow: inset 0 0 0 1px $progress-border;
   height: $progress-height;
-  padding: $spacer / 6;
+  padding: $progress-bar-padding;
   position: relative;
   width: 100%;
 
@@ -38,7 +46,7 @@
 
 .m-progress__bar {
   background-color: $brand-primary;
-  height: $progress-bar-height;
+  height: $progress-height - ($progress-bar-padding * 2);
 }
 
 
