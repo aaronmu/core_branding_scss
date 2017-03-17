@@ -110,3 +110,13 @@
 .u-text-truncate {
   @extend %u-text-truncate;
 }
+
+
+/**
+ * TEXT ACCESSIBILITY CLASSES
+ * -------------------------------------------------------------------
+ */
+
+.u-text-readable {
+  max-width: $readable-content-width;
+}

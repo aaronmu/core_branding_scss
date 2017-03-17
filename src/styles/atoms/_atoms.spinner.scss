@@ -8,6 +8,7 @@
   animation: $spinner-animation-name $spinner-animation-speed infinite $spinner-animation-timing;
   color: $spinner-color;
   content: '\f1ce';
+  display: inline-block;
   font-size: rem($spinner-size);
 }
 

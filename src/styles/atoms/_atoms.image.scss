@@ -3,7 +3,22 @@
  * -------------------------------------------------------------------
  */
 
+img {
+  vertical-align: middle;
+}
+
 .a-image {
   overflow: hidden;
   position: relative;
+}
+
+
+/**
+ * IMAGE MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-image--responsive {
+  height: auto;
+  max-width: 100%;
 }
