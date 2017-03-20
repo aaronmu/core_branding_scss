@@ -1,0 +1,18 @@
+/**
+ * BUTTON GROUP
+ * -------------------------------------------------------------------
+ */
+
+.m-button-group {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+
+  > .a-button {
+    width: auto;
+
+    &:not(:last-child) {
+      border-right: 1px solid mix($pagination-bg, $black, 85%);
+    }
+  }
+}
