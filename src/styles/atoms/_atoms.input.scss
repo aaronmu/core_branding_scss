@@ -13,18 +13,6 @@
 %a-input {
   position: relative;
 
-  > label {
-    display: block;
-    margin-bottom: $spacer-sm / 2;
-    text-align: left;
-
-    + .a-switch,
-    + .a-input__checkbox,
-    + .a-input__radio {
-      margin-top: $spacer-sm;
-    }
-  }
-
   small {
     display: block;
     margin: $spacer-sm / 2 0;
@@ -76,6 +64,35 @@
     user-select: none;
   }
 }
+
+
+/**
+ * INPUT LABEL
+ * -------------------------------------------------------------------
+ */
+
+.a-input__label {
+  display: inline-block;
+  margin-bottom: $spacer-sm / 2;
+  text-align: left;
+
+  + .a-switch,
+  + .a-input__checkbox,
+  + .a-input__radio {
+    margin-top: $spacer-sm / 2;
+  }
+}
+
+/**
+ * LABEL MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-input__label--inline {
+  margin-right: $spacer-xs;
+  margin-top: calc(#{$line-height-base * $font-size-base} - 1px);
+}
+
 
 
 /**
