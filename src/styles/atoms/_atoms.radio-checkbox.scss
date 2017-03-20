@@ -101,7 +101,7 @@
 .a-input__radio {
   input[type='radio']:checked + label:before {
     background: $white;
-    box-shadow: 0 0 0 5px $radio-checkbox-bg inset;
+    box-shadow: 0 0 0 rem(5px) $radio-checkbox-bg inset;
   }
 
   label:before {
