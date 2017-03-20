@@ -134,6 +134,7 @@ small,
 mark {
   background-color: $mark-bg;
   color: $mark-color;
+  padding: 0 .125rem;
 }
 
 
@@ -143,7 +144,9 @@ mark {
  */
 
 hr {
+  border: 0;
   border-top: 1px solid $border-color;
+  height: 1px;
   margin: $spacer 0;
 }
 

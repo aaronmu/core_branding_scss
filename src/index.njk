@@ -448,7 +448,7 @@
     <br><br><br>
 
     <div class="a-input">
-        <label for="input-text">Teksveld met beschrijving</label>
+        <label class="a-input__label" for="input-text">Teksveld met beschrijving</label>
         <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
         <small>Beschrijvende tekst van het tekstveld</small>
     </div>
@@ -456,7 +456,21 @@
     <br><br><br>
 
     <div class="a-input">
-        <label for="input-text">Textarea</label>
+        <div style="display:flex">
+            <div>
+                <label class="a-input__label a-input__label--inline" for="input-text">Teksveld met beschrijving</label>
+            </div>
+            <div>
+                <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
+                <small>Beschrijvende tekst van het tekstveld</small>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <div class="a-input">
+        <label class="a-input__label" for="input-text">Textarea</label>
         <textarea name="input-textarea" id="input-textarea" cols="30" rows="5" placeholder="Uw bericht"></textarea>
         <small>Beschrijvende tekst van het tekstveld</small>
     </div>
@@ -464,7 +478,7 @@
     <br><br><br>
 
     <div class="a-input has-icon-right">
-        <label for="input-text">Selectbox</label>
+        <label class="a-input__label" for="input-text">Selectbox</label>
         <div class="a-input__wrapper">
             <select name="input-selected" id="input-select">
                 <option disabled selected>Maak uw keuze...</option>
@@ -483,7 +497,7 @@
     <br><br><br>
 
     <div class="a-input has-icon-left">
-        <label for="input-text">Teksveld met beschrijving</label>
+        <label class="a-input__label" for="input-text">Teksveld met beschrijving</label>
         <div class="a-input__wrapper">
             <span class="fa fa-user"></span>
             <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
@@ -494,7 +508,7 @@
     <br><br><br>
 
     <div class="a-input has-icon-right is-required">
-        <label for="input-text">Teksveld met beschrijving</label>
+        <label class="a-input__label" for="input-text">Teksveld met beschrijving</label>
         <div class="a-input__wrapper">
             <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
             <span class="fa fa-eye"></span>
@@ -505,7 +519,7 @@
     <br><br><br>
 
     <div class="a-input has-success">
-        <label for="input-text">Teksveld met beschrijving</label>
+        <label class="a-input__label" for="input-text">Teksveld met beschrijving</label>
         <div class="a-input__wrapper">
             <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
         </div>
@@ -515,7 +529,7 @@
     <br><br><br>
 
     <div class="a-input has-icon-left has-warning">
-        <label for="input-text">Teksveld met beschrijving</label>
+        <label class="a-input__label" for="input-text">Teksveld met beschrijving</label>
         <div class="a-input__wrapper">
             <span class="fa fa-user"></span>
             <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
@@ -526,7 +540,7 @@
     <br><br><br>
 
     <div class="a-input has-icon-right has-error">
-        <label for="input-text">Teksveld met beschrijving</label>
+        <label class="a-input__label" for="input-text">Teksveld met beschrijving</label>
         <div class="a-input__wrapper">
             <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
             <span class="fa fa-eye"></span>
@@ -536,8 +550,74 @@
 
     <br><br><br>
 
+    <fieldset>
+        <div class="a-form">
+            <div class="a-input">
+                <label class="a-input__label" for="input-text-01">Input text</label>
+                <input type="text" name="input-text-01" id="input-text-01" placeholder="Input text" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-email">Input email</label>
+                <input type="email" name="input-email-01" id="input-email-01" placeholder="Input email" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-password">Input password</label>
+                <input type="password" name="input-password-01" id="input-password-01" placeholder="Input password" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-tel">Input tel</label>
+                <input type="tel" name="input-tel-01" id="input-tel-01" placeholder="Input tel" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-url">Input url</label>
+                <input type="url" name="input-url-01" id="input-url-01" placeholder="Input url" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-number">Input number</label>
+                <input type="number" name="input-number-01" id="input-number-01" placeholder="Input number" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-color">Input color</label>
+                <input type="color" name="input-color-01" id="input-color-01" placeholder="Input color" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-date">Input date</label>
+                <input type="date" name="input-date-01" id="input-date-01" placeholder="Input date" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-datetime-local">Input datetime local</label>
+                <input type="datetime-local" name="input-datetime-local-01" id="input-datetime-local-01" placeholder="Input datetime local" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-month">Input month</label>
+                <input type="month" name="input-month-01" id="input-month-01" placeholder="Input month" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-search">Input search</label>
+                <input type="search" name="input-search-01" id="input-search-01" placeholder="Input search" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-time">Input time</label>
+                <input type="time" name="input-time-01" id="input-time-01" placeholder="Input time" />
+            </div>
+            <div class="a-input">
+                <label class="a-input__label" for="input-week">Input week</label>
+                <input type="week" name="input-week-01" id="input-week-01" placeholder="Input week" />
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <div class="a-input">
+            <label class="a-input__label" for="input-text">Input text</label>
+            <input type="text" name="input-text-01" id="input-text-01" placeholder="Input text" />
+        </div>
+    </fieldset>
+
+    <br><br><br>
+
     <div class="a-input">
-        <label for="input-text">Teksveld met beschrijving</label>
+        <label class="a-input__label" for="input-text">Teksveld met beschrijving</label>
 
         <div class="a-input__checkbox">
             <input type="checkbox" id="checkbox1" name="checkbox1" checked="">
@@ -558,7 +638,7 @@
     <br><br><br>
 
     <div class="a-input">
-        <label for="input-text">Teksveld met beschrijving</label>
+        <label class="a-input__label" for="input-text">Teksveld met beschrijving</label>
 
         <div class="a-input__radio">
             <input type="radio" id="radio1" name="radio" checked="">
@@ -579,7 +659,7 @@
     <br><br><br>
 
     <div class="a-input has-addon">
-        <label for="input-addon">Input met addon</label>
+        <label class="a-input__label" for="input-addon">Input met addon</label>
         <div class="a-input__wrapper">
             <div class="a-input__addon">&euro;</div>
             <input type="text" name="input-addon" id="input-addon" placeholder="Placeholder" />
@@ -589,7 +669,7 @@
     <br><br><br>
 
     <div class="a-input has-addon">
-        <label for="input-addon">Input met addon</label>
+        <label class="a-input__label" for="input-addon">Input met addon</label>
         <div class="a-input__wrapper">
             <input type="text" name="input-addon" id="input-addon" placeholder="Placeholder" />
             <div class="a-input__addon">km</div>
@@ -599,7 +679,7 @@
     <br><br><br>
 
     <div class="a-input has-icon-left has-addon">
-        <label for="input-addon">Input met addon</label>
+        <label class="a-input__label" for="input-addon">Input met addon</label>
         <div class="a-input__wrapper">
             <span class="fa fa-thermometer"></span>
             <input type="text" name="input-addon" id="input-addon" placeholder="Placeholder" />
@@ -610,7 +690,7 @@
     <br><br><br>
 
     <div class="a-input has-icon-right has-addon">
-        <label for="input-addon">Input met addon</label>
+        <label class="a-input__label" for="input-addon">Input met addon</label>
         <div class="a-input__wrapper">
             <div class="a-input__addon">€</div>
             <input type="text" name="input-addon" id="input-addon" placeholder="Placeholder" />
@@ -621,7 +701,7 @@
     <br><br><br>
 
     <div class="a-input">
-        <label for="input-autocomplete">Input met autocomplete</label>
+        <label class="a-input__label" for="input-autocomplete">Input met autocomplete</label>
         <div class="a-input__wrapper">
             <input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" />
         </div>
@@ -691,7 +771,7 @@
     <br><br><br>
 
     <div class="a-input">
-        <label>Switch met label</label>
+        <label class="a-input__label">Switch met label</label>
 
         <div class="a-switch">
             <label class="a-switch__label">Aan</label>
