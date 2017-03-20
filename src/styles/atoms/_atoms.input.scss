@@ -83,8 +83,9 @@
   }
 }
 
+
 /**
- * LABEL MODIFIERS
+ * INPUT LABEL MODIFIERS
  * -------------------------------------------------------------------
  */
 
@@ -92,7 +93,6 @@
   margin-right: $spacer-xs;
   margin-top: calc(#{$line-height-base * $font-size-base} - 1px);
 }
-
 
 
 /**
@@ -155,7 +155,7 @@
     }
   }
 
-  &.is-required > label:after {
+  &.is-required .a-input__label:after {
     color: $input-required;
     content: ' *';
   }
@@ -214,6 +214,7 @@
  */
 
 .a-input--inline {
+
   input:not([class*='a-button'], [type='checkbox'], [type='radio']),
   select,
   textarea {

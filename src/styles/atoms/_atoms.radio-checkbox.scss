@@ -92,13 +92,12 @@
   }
 }
 
-.a-input__checkbox {
-  input[type='checkbox']:checked + label:after {
-    content: '\f00c';
-  }
+.a-input__checkbox input[type='checkbox']:checked + label:after {
+  content: '\f00c';
 }
 
 .a-input__radio {
+
   input[type='radio']:checked + label:before {
     background: $white;
     box-shadow: 0 0 0 rem(5px) $radio-checkbox-bg inset;

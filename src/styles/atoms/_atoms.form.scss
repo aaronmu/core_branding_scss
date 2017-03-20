@@ -1,4 +1,14 @@
 /**
+ * FORM ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.a-form .a-input:not(:last-child) {
+  margin-bottom: $spacer;
+}
+
+
+/**
  * FIELDSET
  * -------------------------------------------------------------------
  */
@@ -13,14 +23,5 @@ fieldset {
 
   + fieldset {
     margin-top: -1px;
-  }
-}
-
-
-.a-form {
-  .a-input {
-    &:not(:last-child) {
-      margin-bottom: $spacer;
-    }
   }
 }
