@@ -65,7 +65,7 @@
 
     &.is-today {
       background-color: $datepicker-today-bg;
-      box-shadow: 0 0 0 1px $datepicker-today-border inset;
+      box-shadow: 0 0 0 1px $datepicker-today-border;
       color: $datepicker-today-color;
       font-weight: $datepicker-today-font-weight;
 
@@ -77,6 +77,7 @@
 
     &.is-selected {
       background-color: $datepicker-selected-bg;
+      box-shadow: 0 0 0 1px $datepicker-selected-bg;
       color: $datepicker-selected-color;
       font-weight: $datepicker-selected-font-weight;
 
