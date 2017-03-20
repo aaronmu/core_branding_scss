@@ -385,7 +385,7 @@ $datepicker-unavailable-bg:        $datepicker-bg !default;
 $accordion-border:            $border-color !default;
 $accordion-header-bg:         $white !default;
 $accordion-header-bg-hover:   $background-color-light !default;
-$accordion-content-bg:        $background-color-light !default;
+$accordion-content-bg:        $accordion-header-bg !default;
 $accordion-icon-color:        $brand-primary !default;
 $accordion-icon-size:         $font-size-lg !default;
 
