@@ -353,6 +353,31 @@ $progress-bar-bg:             $brand-primary !default;
 
 
 /**
+ * DATEPICKER
+ * -------------------------------------------------------------------
+ */
+
+$datepicker-border:       $border-color !default;
+$datepicker-bg:           $white !default;
+$datepicker-bg-hover:      mix($brand-primary, $white, 20%) !default;
+
+$datepicker-today-color:          $brand-primary !default;
+$datepicker-today-bg:             mix($datepicker-today-color, $white, 20%) !default;
+$datepicker-today-border:         $datepicker-today-color !default;
+$datepicker-today-font-weight:    $extra-bold !default;
+
+$datepicker-selected-color:          $white !default;
+$datepicker-selected-bg:             $datepicker-today-color !default;
+$datepicker-selected-font-weight:    $datepicker-today-font-weight !default;
+
+$datepicker-disabled-color:     $text-color !default;
+$datepicker-disabled-bg:        $background-color !default;
+
+$datepicker-unavailable-color:     $state-disabled !default;
+$datepicker-unavailable-bg:        $datepicker-bg !default;
+
+
+/**
  * ACCORDION
  * -------------------------------------------------------------------
  */
