@@ -155,7 +155,7 @@ button {
 
 .a-button-official {
   @include a-button($btn-official-color, $btn-official-bg);
-  padding-left: $spacer-xl;
+  padding-left: $spacer * 3;
   position: relative;
 
   &:before {
@@ -164,7 +164,7 @@ button {
     content: '';
     display: block;
     height: rem(21px);
-    left: $spacer-xs;
+    left: $spacer-sm;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
