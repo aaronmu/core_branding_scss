@@ -9,30 +9,29 @@
   vertical-align: middle;
 
   > .a-button {
-    width: auto;
 
     &:not(:last-child) {
       border-right: 1px solid mix($btn-primary-bg, $black, 85%);
-    }
 
-    &.a-button--secondary {
-      border-right: 1px solid mix($btn-secondary-bg, $black, 85%);
-    }
+      &.a-button--secondary {
+        border-color: mix($btn-secondary-bg, $black, 85%);
+      }
 
-    &.a-button--success {
-      border-right: 1px solid mix($btn-success-bg, $black, 85%);
-    }
+      &.a-button--success {
+        border-color: mix($btn-success-bg, $black, 85%);
+      }
 
-    &.a-button--warning {
-      border-right: 1px solid mix($btn-warning-bg, $black, 85%);
-    }
+      &.a-button--warning {
+        border-color: mix($btn-warning-bg, $black, 85%);
+      }
 
-    &.a-button--danger {
-      border-right: 1px solid mix($btn-danger-bg, $black, 85%);
-    }
+      &.a-button--danger {
+        border-color: mix($btn-danger-bg, $black, 85%);
+      }
 
-    &.a-button--transparent {
-      border-right: none;
+      &.a-button--transparent {
+        border-right: none;
+      }
     }
   }
 
@@ -47,7 +46,13 @@
     }
   }
 
-  > *[disabled] {
-    z-index: -1;
+  > [class*='a-button'] {
+    &:not(.has-icon) {
+      width: auto;
+    }
+
+    &[disabled] {
+      z-index: -1;
+    }
   }
 }
