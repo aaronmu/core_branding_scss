@@ -58,11 +58,6 @@
 
 .a-input__wrapper {
   position: relative;
-
-  .fa {
-    pointer-events: none;
-    user-select: none;
-  }
 }
 
 
@@ -175,11 +170,23 @@
     font-size: 1.25rem;
     height: $spacer-lg;
     line-height: $spacer-lg;
+    pointer-events: none;
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
     width: $spacer-lg;
+    user-select: none;
+
+    &.is-clickable {
+      cursor: pointer;
+      pointer-events: initial;
+      transition: color $animation-normal;
+
+      &:hover {
+        color: $input-icon-hover;
+      }
+    }
   }
 
   &.has-icon-left .a-input__wrapper {
