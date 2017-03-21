@@ -72,3 +72,35 @@
     background-color: $table-striped-bg;
   }
 }
+
+
+/**
+ * TABLE RESPONSIVE WRAPPER
+ * -------------------------------------------------------------------
+ */
+
+.a-table__wrapper-responsive {
+  -ms-overflow-style: scrollbar;
+  -webkit-overflow-scrolling: touch;
+  background-color: $table-bg;
+  border: 1px solid $table-border;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+
+  > table {
+    border: none;
+    margin-bottom: -1px;
+
+    > thead,
+    > tbody,
+    > tfoot {
+      > tr {
+        > td,
+        > th {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
