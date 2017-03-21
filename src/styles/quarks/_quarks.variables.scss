@@ -292,8 +292,6 @@ $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
-$autocomplete-hover:      $grey-lighter !default;
-
 
 /**
  * RADIO BUTTONS & CHECKBOXES
@@ -350,6 +348,14 @@ $progress-bg:                 $input-bg !default;
 $progress-border:             $input-border !default;
 
 $progress-bar-bg:             $brand-primary !default;
+
+
+/**
+ * AUTOCOMPLETE
+ * -------------------------------------------------------------------
+ */
+
+$autocomplete-hover:      $grey-lighter !default;
 
 
 /**
