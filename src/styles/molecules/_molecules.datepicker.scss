@@ -5,6 +5,10 @@
 
 .m-datepicker {
   max-width: $spacer * 14;
+  opacity: 0;
+  transform: translateY(-$spacer-lg);
+  transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
+  visibility: hidden;
 
   table {
     border-collapse: collapse;
@@ -14,6 +18,12 @@
     width: 100%;
   }
 }
+
+
+/**
+ * DATEPICKER ELEMENTS
+ * -------------------------------------------------------------------
+ */
 
 .m-datepicker__nav {
   display: flex;
@@ -110,12 +120,30 @@
   }
 }
 
-.a-input {
 
-  .m-datepicker {
-    display: block;
-    position: absolute;
-    top: 3rem;
-    z-index: 1;
-  }
+/**
+ * DATEPICKER MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-datepicker.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.m-datepicker--fixed {
+  box-shadow: $box-shadow;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+}
+
+.m-datepicker--left {
+  left: 0;
+}
+
+.m-datepicker--right {
+  right: 0;
 }
