@@ -83,11 +83,11 @@ $facebook:                rgb(59, 89, 152) !default;
 $google:                  rgb(220, 78, 65) !default;
 $snapchat:                rgb(255, 252, 0) !default;
 
-$instagram-yellow-light: rgb(255, 225, 125);
-$instagram-yellow-dark:  rgb(255, 205, 105);
-$instagram-orange:       rgb(250, 145, 55);
-$instagram-red:          rgb(235, 65, 65);
-$instagram-blue:         rgb(35, 75, 215);
-$instagram-purple:       rgb(195, 60, 190);
+$instagram-yellow-light:  rgb(255, 225, 125);
+$instagram-yellow-dark:   rgb(255, 205, 105);
+$instagram-orange:        rgb(250, 145, 55);
+$instagram-red:           rgb(235, 65, 65);
+$instagram-blue:          rgb(35, 75, 215);
+$instagram-purple:        rgb(195, 60, 190);
 
 $instagram:               radial-gradient(circle farthest-corner at 32% 106%, $instagram-yellow-light 0%, $instagram-yellow-dark 10%, $instagram-orange 28%, $instagram-red 42%, transparent 82%), linear-gradient(135deg, $instagram-blue 12%, $instagram-purple 58%) !default;
