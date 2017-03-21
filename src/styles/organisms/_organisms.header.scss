@@ -1,0 +1,31 @@
+/**
+ * HEADER
+ * -------------------------------------------------------------------
+ */
+
+.o-header {
+  background-color: $header-bg;
+  border-bottom: 1px solid $header-border;
+  height: $header-height;
+
+  &.o-header--fixed {
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.o-header__logo {
+  position: absolute;
+  top: $header-height;
+
+  img {
+    height: $spacer * 3;
+
+    @include at($screen-md) {
+      height: $spacer-xx;
+    }
+  }
+}
