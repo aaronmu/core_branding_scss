@@ -20,6 +20,10 @@ gulp.task('copy', function() {
         .pipe(plumber())
         .pipe(gulp.dest('dist/assets/styles'));
 
-    return merge(fontsStream, stylesStream);
+    var imagesStream = gulp.src('src/images/**/*')
+        .pipe(plumber())
+        .pipe(gulp.dest('dist/assets/images'));
+
+    return merge(fontsStream, stylesStream, imagesStream);
 
 });
