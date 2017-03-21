@@ -72,11 +72,13 @@ section {
  * Address overflow set to hidden in IE 8/9/10/11
  * Remove Mobile Firefox button gradient - http://davidwalsh.name/remove-mobile-firefox-button-gradient
  * Remove glowing outline when receiving focus
+ * Remove default margin on Safari
  */
 button {
   background-image: none;
   cursor: pointer;
   font: inherit;
+  margin: 0;
   outline: 0;
   overflow: visible;
 }
