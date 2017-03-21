@@ -12,7 +12,42 @@
     width: auto;
 
     &:not(:last-child) {
-      border-right: 1px solid mix($pagination-bg, $black, 85%);
+      border-right: 1px solid mix($btn-primary-bg, $black, 85%);
     }
+
+    &.a-button--secondary {
+      border-right: 1px solid mix($btn-secondary-bg, $black, 85%);
+    }
+
+    &.a-button--success {
+      border-right: 1px solid mix($btn-success-bg, $black, 85%);
+    }
+
+    &.a-button--warning {
+      border-right: 1px solid mix($btn-warning-bg, $black, 85%);
+    }
+
+    &.a-button--danger {
+      border-right: 1px solid mix($btn-danger-bg, $black, 85%);
+    }
+
+    &.a-button--transparent {
+      border-right: none;
+    }
+  }
+
+  > .a-button-outline {
+    &:not(:last-child) {
+      margin-right: -1px;
+    }
+
+    &:hover,
+    &:active {
+      z-index: 1;
+    }
+  }
+
+  > *[disabled] {
+    z-index: -1;
   }
 }
