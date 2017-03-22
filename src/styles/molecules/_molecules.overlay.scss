@@ -16,6 +16,37 @@
   z-index: 10;
 
   &.is-active {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+}
+
+
+/**
+ * OVERLAY ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.m-overlay__button {
+  background: none;
+  border: none;
+  color: $overlay-button-color;
+  cursor: pointer;
+  font-size: rem($overlay-button-size);
+  padding: $spacer-xs;
+  position: absolute;
+  right: $spacer-xs;
+  top: $spacer-xs;
+  transition: color $animation-normal;
+
+  &:hover {
+    color: $overlay-button-color-hover;
+  }
+}
+
+.m-overlay__inner {
+  max-height: calc(100vh - 8.75rem);
+  overflow: auto;
+  overflow-y: scroll;
 }
