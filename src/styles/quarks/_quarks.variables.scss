@@ -131,6 +131,21 @@ $animation-normal:        $animation-duration $animation-easing !default;
 
 
 /**
+ * Z-INDEXES
+ * -------------------------------------------------------------------
+ */
+
+$z-indexes: (
+  'overlay':     5,
+  'header':      4,
+  'tooltip':     3,
+  'datepicker':  2,
+  'base':        1,
+  'auto':        0,
+  'cellar':     -1
+);
+
+/**
  * ICON SIZES
  * -------------------------------------------------------------------
  */
