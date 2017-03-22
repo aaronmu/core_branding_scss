@@ -16,7 +16,9 @@
   z-index: 10;
 
   &.is-active {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -41,4 +43,10 @@
   &:hover {
     color: $overlay-button-color-hover;
   }
+}
+
+.m-overlay__inner {
+  max-height: calc(100vh - 8.75rem);
+  overflow: auto;
+  overflow-y: scroll;
 }
