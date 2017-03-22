@@ -19,3 +19,26 @@
     display: block;
   }
 }
+
+
+/**
+ * OVERLAY ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.m-overlay__button {
+  background: none;
+  border: none;
+  color: $overlay-button-color;
+  cursor: pointer;
+  font-size: rem($overlay-button-size);
+  padding: $spacer-xs;
+  position: absolute;
+  right: $spacer-xs;
+  top: $spacer-xs;
+  transition: color $animation-normal;
+
+  &:hover {
+    color: $overlay-button-color-hover;
+  }
+}
