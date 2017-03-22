@@ -137,9 +137,9 @@ $animation-normal:        $animation-duration $animation-easing !default;
 
 $z-indexes: (
   'overlay':     5,
-  'tooltip':     4,
-  'datepicker':  3,
-  'header':      2,
+  'header':      4,
+  'tooltip':     3,
+  'datepicker':  2,
   'base':        1,
   'auto':        0,
   'cellar':     -1
