@@ -11,14 +11,14 @@
   vertical-align: middle;
 
   > [class*='a-button'] {
-    z-index: 1;
+    z-index: layer('base');
 
     &:not(.has-icon) {
       width: auto;
     }
 
     &[disabled] {
-      z-index: 0;
+      z-index: layer('auto');
     }
   }
 
@@ -60,7 +60,7 @@
 
     &:not([disabled]):hover,
     &:not([disabled]):active {
-      z-index: 1;
+      z-index: layer('base');
     }
   }
 }
