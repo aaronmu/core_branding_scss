@@ -469,23 +469,9 @@
 
             <br><br><br>
 
-            <div class="a-input">
-                <div style="display:flex">
-                    <div>
-                        <label class="a-input__label a-input__label--inline" for="input-text">Teksveld met beschrijving</label>
-                    </div>
-                    <div>
-                        <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
-                        <small>Beschrijvende tekst van het tekstveld</small>
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br>
-
-            <div class="a-input">
-                <label class="a-input__label" for="input-text">Textarea</label>
-                <textarea name="input-textarea" id="input-textarea" cols="30" rows="5" placeholder="Uw bericht"></textarea>
+            <div class="a-input a-input--inline">
+                <label class="a-input__label a-input__label--inline" for="input-text">Teksveld met beschrijving</label>
+                <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
                 <small>Beschrijvende tekst van het tekstveld</small>
             </div>
 
@@ -718,36 +704,38 @@
                 <label class="a-input__label" for="input-autocomplete">Input met autocomplete</label>
                 <div class="a-input__wrapper">
                     <input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" />
+
+                    <ul class="a-autocomplete a-autocomplete--fixed is-open">
+                        <li>
+                            <a href="#">Lorem ipsum</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Lorem ipsum</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="a-autocomplete is-open">
-                    <li>
-                        <a href="#">Lorem ipsum</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Lorem ipsum</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Lorem ipsum</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Lorem ipsum</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Lorem ipsum</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Lorem ipsum</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Lorem ipsum</a>
-                    </li>
-                </ul>
+                <small>Beschrijvende tekst van het tekstveld</small>
             </div>
 
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -812,7 +800,7 @@
 
             <br><br><br>
 
-            <div role="datepicker" class="m-datepicker" aria-hidden="false">
+            <div role="datepicker" class="m-datepicker is-open" aria-hidden="false">
                 <div class="m-datepicker__nav">
                     <button tabindex="-1" type="button" aria-label="vorige maand" class="a-button has-icon">
                         <i class="fa fa-angle-left"></i>
@@ -1066,7 +1054,7 @@
 
             <br><br><br>
 
-            <div role="datepicker" class="m-datepicker" aria-hidden="false">
+            <div role="datepicker" class="m-datepicker is-open" aria-hidden="false">
                 <div class="m-datepicker__nav">
                     <button tabindex="-1" type="button" aria-label="vorige maand" class="a-button has-icon">
                         <i class="fa fa-angle-left"></i>
@@ -1166,7 +1154,7 @@
 
             <br><br><br>
 
-            <div role="datepicker" class="m-datepicker" aria-hidden="false">
+            <div role="datepicker" class="m-datepicker is-open" aria-hidden="false">
                 <div class="m-datepicker__nav">
                     <button tabindex="-1" type="button" aria-label="vorige maand" class="a-button has-icon">
                         <i class="fa fa-angle-left"></i>
@@ -1265,6 +1253,532 @@
             </div>
 
             <br><br><br>
+
+            <div class="a-input has-icon-right">
+                <label class="a-input__label" for="input-datepicker">Teksveld met beschrijving</label>
+                <div class="a-input__wrapper">
+                    <input type="text" name="input-datepicker" id="input-datepicker" placeholder="Placeholder" />
+                    <span class="fa fa-calendar is-clickable"></span>
+
+                    <div role="datepicker" class="m-datepicker is-open m-datepicker--fixed" aria-hidden="false">
+                        <div class="m-datepicker__nav">
+                            <button tabindex="-1" type="button" aria-label="vorige maand" class="a-button has-icon">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+
+                            <button tabindex="0" type="button" class="m-datepicker__title a-button">
+                                Maart 2017
+                            </button>
+
+                            <button tabindex="0" type="button" aria-label="volgende maand" class="a-button has-icon">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr class="m-datepicker__days">
+                                    <th>Ma</th>
+                                    <th>Di</th>
+                                    <th>Wo</th>
+                                    <th>Do</th>
+                                    <th>Vr</th>
+                                    <th>Za</th>
+                                    <th>Zo</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="m-datepicker__calendar">
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-disabled">
+                                            27
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-disabled">
+                                            28
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            1
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            2
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            3
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            4
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            5
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            6
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            7
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            8
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-selected">
+                                            9
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            10
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            11
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            12
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            13
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            14
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            15
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            16
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            17
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            18
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            19
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            20
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-today">
+                                            21
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            22
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            23
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            24
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            25
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            26
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            27
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            28
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            29
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            30
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            31
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-disabled">
+                                            1
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-disabled">
+                                            2
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <small>Beschrijvende tekst van het tekstveld</small>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br>
+
+            <div class="a-input has-icon-right">
+                <label class="a-input__label" for="input-datepicker">Teksveld met beschrijving</label>
+                <div class="a-input__wrapper">
+                    <input type="text" name="input-datepicker" id="input-datepicker" placeholder="Placeholder" />
+                    <span class="fa fa-calendar is-clickable"></span>
+
+                    <div role="datepicker" class="m-datepicker is-open m-datepicker--fixed m-datepicker--left" aria-hidden="false">
+                        <div class="m-datepicker__nav">
+                            <button tabindex="-1" type="button" aria-label="vorige maand" class="a-button has-icon">
+                                <i class="fa fa-angle-left"></i>
+                            </button>
+
+                            <button tabindex="0" type="button" class="m-datepicker__title a-button">
+                                Maart 2017
+                            </button>
+
+                            <button tabindex="0" type="button" aria-label="volgende maand" class="a-button has-icon">
+                                <i class="fa fa-angle-right"></i>
+                            </button>
+                        </div>
+
+                        <table>
+                            <thead>
+                                <tr class="m-datepicker__days">
+                                    <th>Ma</th>
+                                    <th>Di</th>
+                                    <th>Wo</th>
+                                    <th>Do</th>
+                                    <th>Vr</th>
+                                    <th>Za</th>
+                                    <th>Zo</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="m-datepicker__calendar">
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-disabled">
+                                            27
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-disabled">
+                                            28
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            1
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            2
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            3
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            4
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            5
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            6
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            7
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            8
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-selected">
+                                            9
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            10
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            11
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            12
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            13
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            14
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            15
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            16
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            17
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            18
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            19
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            20
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-today">
+                                            21
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            22
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            23
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            24
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            25
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-unavailable">
+                                            26
+                                        </button>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            27
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            28
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            29
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            30
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button">
+                                            31
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-disabled">
+                                            1
+                                        </button>
+                                    </td>
+
+                                    <td>
+                                        <button tabindex="0" type="button" class="is-disabled">
+                                            2
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <small>Beschrijvende tekst van het tekstveld</small>
+            </div>
+
+            <br><br><br><br><br><br><br><br><br>
 
             <div class="a-timepicker">
                 <div class="a-input has-icon-right">

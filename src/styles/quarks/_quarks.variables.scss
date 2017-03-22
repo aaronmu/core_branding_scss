@@ -282,6 +282,7 @@ $input-border-focus:      mix($input-border, $white, 25%) !default;
 $input-disabled:          $state-disabled !default;
 $input-placeholder:       $state-disabled !default;
 $input-icon:              $grey-dark !default;
+$input-icon-hover:        $black-pearl !default;
 $input-required:          $state-danger !default;
 
 $input-success-border:            $state-success !default;
@@ -295,8 +296,6 @@ $input-warning-icon:              $state-warning !default;
 $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
-
-$autocomplete-hover:      $grey-lighter !default;
 
 
 /**
@@ -354,6 +353,14 @@ $progress-bg:                 $input-bg !default;
 $progress-border:             $input-border !default;
 
 $progress-bar-bg:             $brand-primary !default;
+
+
+/**
+ * AUTOCOMPLETE
+ * -------------------------------------------------------------------
+ */
+
+$autocomplete-hover:      $grey-lighter !default;
 
 
 /**

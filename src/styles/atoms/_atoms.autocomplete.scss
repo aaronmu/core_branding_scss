@@ -19,13 +19,6 @@
   visibility: hidden;
   width: 100%;
 
-  &.is-open {
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0s;
-    visibility: visible;
-  }
-
   li {
     transition: background $animation-duration $animation-easing;
 
@@ -51,7 +44,20 @@
   }
 }
 
-.a-input .a-autocomplete {
+
+/**
+ * AUTOCOMPLETE MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-autocomplete.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.a-autocomplete--fixed {
   left: 0;
   position: absolute;
   top: 100%;
