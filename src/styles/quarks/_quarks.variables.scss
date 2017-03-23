@@ -347,7 +347,7 @@ $tooltip-arrow-height:      $spacer / 4 !default;
  * -------------------------------------------------------------------
  */
 
-$progress-height:             $spacer-lg / 2 + .25rem !default;
+$progress-height:             $switch-height !default;
 $progress-bar-padding:        $spacer / 6 !default;
 $progress-tooltip-offset:     .625rem !default;
 
