@@ -12,17 +12,15 @@
 %a-list {
   padding-left: $spacer;
 
-  ul,
-  ol {
+  .a-list {
     margin-top: $spacer / 3;
-    padding-left: $spacer;
 
-    > .a-list__item:last-of-type {
+    > li:last-of-type {
       margin-bottom: -$spacer / 3;
     }
   }
 
-  .a-list__item {
+  > li {
     padding: $spacer / 3 0;
   }
 }
@@ -97,21 +95,20 @@
  */
 %a-list--primary {
 
-  ul,
-  ol {
+  .a-list {
     margin-top: $spacer * 2 / 3;
 
-    .a-list__item {
+    > li {
       margin-left: -$spacer-xs;
       padding-left: $spacer-lg;
-    }
 
-    .a-list__item:last-of-type {
-      margin-bottom: -($spacer * 2 / 3);
+      &:last-of-type {
+        margin-bottom: -($spacer * 2 / 3);
+      }
     }
   }
 
-  .a-list__item {
+  > li {
     padding: $spacer * 2 / 3 0 $spacer * 2 / 3 $spacer-xs;
   }
 }
@@ -134,7 +131,7 @@
   @extend %a-list--primary;
   @extend %a-list--flattened;
 
-  .a-list__item {
+  > li {
     border-top: 1px solid $border-color;
     list-style-position: inside;
 
@@ -143,10 +140,9 @@
     }
   }
 
-  ul,
-  ol {
+  .a-list--lined {
 
-    > .a-list__item:last-of-type {
+    > li:last-of-type {
       border-bottom: none;
     }
   }
@@ -162,11 +158,11 @@
     @extend %a-list--unstyled;
   }
 
-  &.has-icon-left .a-list__item .fa {
+  &.has-icon-left > li .fa {
     margin-right: $spacer-xs;
   }
 
-  &.has-icon-right .a-list__item .fa {
+  &.has-icon-right > li .fa {
     margin-left: $spacer-xs;
   }
 }

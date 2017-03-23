@@ -23,34 +23,6 @@
   }
 }
 
-/**
- * MODAL MODIFIERS
- * -------------------------------------------------------------------
- */
-
-.m-modal--fixed {
-  left: 0;
-  max-height: calc(100% - 96px);
-  overflow: auto;
-  overflow-y: scroll;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 11;
-
-  @include at($screen-xs) {
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.m-modal--large {
-
-  @include at($screen-xs) {
-    max-width: $modal-width-large;
-  }
-}
-
 
 /**
  * MODAL ELEMENTS
@@ -80,5 +52,18 @@
         margin-left: $spacer-xs;
       }
     }
+  }
+}
+
+
+/**
+ * MODAL MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-modal--large {
+
+  @include at($screen-xs) {
+    max-width: $modal-width-large;
   }
 }

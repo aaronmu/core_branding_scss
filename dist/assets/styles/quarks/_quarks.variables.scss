@@ -56,6 +56,7 @@ $screen-xs:               30rem !default; // 480px
 $screen-sm:               48rem !default; // 768px
 $screen-md:               62rem !default; // 992px
 $screen-lg:               75rem !default; // 1200px
+$screen-xl:               90rem !default; // 1440px
 
 
 /**
@@ -128,6 +129,21 @@ $animation-easing:        ease-in-out !default;
 
 $animation-normal:        $animation-duration $animation-easing !default;
 
+
+/**
+ * Z-INDEXES
+ * -------------------------------------------------------------------
+ */
+
+$z-indexes: (
+  'overlay':     5,
+  'header':      4,
+  'tooltip':     3,
+  'datepicker':  2,
+  'base':        1,
+  'auto':        0,
+  'cellar':     -1
+);
 
 /**
  * ICON SIZES
@@ -264,6 +280,9 @@ $btn-disabled-bg:         $state-disabled !default;
 $btn-transparent-color:   $brand-primary !default;
 $btn-transparent-bg:      transparent !default;
 
+$btn-official-color:      $white !default;
+$btn-official-bg:         $monza !default;
+
 
 /**
  * FORMS
@@ -278,6 +297,7 @@ $input-border-focus:      mix($input-border, $white, 25%) !default;
 $input-disabled:          $state-disabled !default;
 $input-placeholder:       $state-disabled !default;
 $input-icon:              $grey-dark !default;
+$input-icon-hover:        $black-pearl !default;
 $input-required:          $state-danger !default;
 
 $input-success-border:            $state-success !default;
@@ -292,8 +312,6 @@ $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
-$autocomplete-hover:      $grey-lighter !default;
-
 
 /**
  * RADIO BUTTONS & CHECKBOXES
@@ -307,6 +325,9 @@ $radio-checkbox-bg:       $brand-primary !default;
 /**
  * SWITCHES
  * -------------------------------------------------------------------
+ * WATCH OUT
+ * $progress-height and $range-slider-height are equal to $switch-height
+ * In this way, changing the height of the switch will also affect the height of the progress bar and range slider
  */
 
 $switch-width:            $spacer-lg !default;
@@ -336,13 +357,18 @@ $tooltip-primary-bg:        $brand-primary !default;
 $tooltip-secondary-color:   $tooltip-primary-color !default;
 $tooltip-secondary-bg:      $brand-secondary !default;
 
+$tooltip-arrow-height:      $spacer / 4 !default;
+
 
 /**
  * PROGRESS
  * -------------------------------------------------------------------
+ * WATCH OUT
+ * $range-slider-offset is equal to $tooltip-offset
+ * In this way, changing the offset of the progress bar will also affect the offset of the range slider
  */
 
-$progress-height:             $spacer-lg / 2 + .25rem !default;
+$progress-height:             $switch-height !default;
 $progress-bar-padding:        $spacer / 6 !default;
 $progress-tooltip-offset:     .625rem !default;
 
@@ -353,6 +379,55 @@ $progress-bar-bg:             $brand-primary !default;
 
 
 /**
+ * RANGE SLIDER
+ * -------------------------------------------------------------------
+ */
+
+$range-slider-height:             $switch-height !default;
+$range-slider-padding:            $spacer / 6 !default;
+$range-slider-offset:             $progress-tooltip-offset !default;
+
+$range-slider-bg:                 $input-bg !default;
+$range-slider-border:             $input-border !default;
+
+$range-slider-bar-bg:             $background-color !default;
+$range-slider-handle-bg:          $brand-primary !default;
+
+
+/**
+ * AUTOCOMPLETE
+ * -------------------------------------------------------------------
+ */
+
+$autocomplete-hover:      $grey-lighter !default;
+
+
+/**
+ * DATEPICKER
+ * -------------------------------------------------------------------
+ */
+
+$datepicker-border:       $border-color !default;
+$datepicker-bg:           $white !default;
+$datepicker-bg-hover:      mix($brand-primary, $white, 20%) !default;
+
+$datepicker-today-color:          $brand-primary !default;
+$datepicker-today-bg:             mix($datepicker-today-color, $white, 20%) !default;
+$datepicker-today-border:         $datepicker-today-color !default;
+$datepicker-today-font-weight:    $extra-bold !default;
+
+$datepicker-selected-color:          $white !default;
+$datepicker-selected-bg:             $datepicker-today-color !default;
+$datepicker-selected-font-weight:    $datepicker-today-font-weight !default;
+
+$datepicker-disabled-color:     $text-color !default;
+$datepicker-disabled-bg:        $background-color !default;
+
+$datepicker-unavailable-color:     $state-disabled !default;
+$datepicker-unavailable-bg:        $datepicker-bg !default;
+
+
+/**
  * ACCORDION
  * -------------------------------------------------------------------
  */
@@ -360,7 +435,7 @@ $progress-bar-bg:             $brand-primary !default;
 $accordion-border:            $border-color !default;
 $accordion-header-bg:         $white !default;
 $accordion-header-bg-hover:   $background-color-light !default;
-$accordion-content-bg:        $background-color-light !default;
+$accordion-content-bg:        $accordion-header-bg !default;
 $accordion-icon-color:        $brand-primary !default;
 $accordion-icon-size:         $font-size-lg !default;
 
@@ -495,6 +570,17 @@ $footer-line-height:      $line-height-paragraph !default;
 
 
 /**
+ * FOOTER
+ * -------------------------------------------------------------------
+ */
+
+$header-height:           $spacer-lg !default;
+
+$header-bg:               $white !default;
+$header-border:           $border-color !default;
+
+
+/**
  * SPINNER
  * -------------------------------------------------------------------
  */
@@ -525,6 +611,10 @@ $icon-list-icon-size:         $icon-size-base !default;
  */
 
 $overlay-bg:              $overlay-color !default;
+
+$overlay-button-size:             $icon-size-lg !default;
+$overlay-button-color:            $white !default;
+$overlay-button-color-hover:      $grey-light !default;
 
 
 /**
@@ -611,3 +701,13 @@ $upload-file-bg:              $background-color-light !default;
 $upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
 $upload-file-color-danger:    $state-danger !default;
 
+
+/**
+ * GALLERY
+ * -------------------------------------------------------------------
+ */
+
+$gallery-gutter-col:          $spacer !default;
+$gallery-gutter-row:          $gallery-gutter-col !default;
+
+$gallery-item-size:           100% / 3 !default;
