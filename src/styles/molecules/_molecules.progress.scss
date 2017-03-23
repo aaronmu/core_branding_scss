@@ -5,9 +5,10 @@
 
 
 /**
- * VARIABLES
+ * PROGRESS VARIABLES
  * -------------------------------------------------------------------
  */
+
 $progress-tooltip-top:        -$tooltip-min-height - $progress-tooltip-offset - ($progress-bar-padding * 2);
 $progress-tooltip-bottom:     $progress-height + $progress-tooltip-offset;
 

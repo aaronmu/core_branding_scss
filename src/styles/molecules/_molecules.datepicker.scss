@@ -135,9 +135,9 @@
 .m-datepicker--fixed {
   box-shadow: $box-shadow;
   position: absolute;
+  right: 0;
   top: 100%;
   z-index: 1;
-  right: 0;
 }
 
 .m-datepicker--left {
