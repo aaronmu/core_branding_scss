@@ -11,8 +11,9 @@ $range-slider-bar-height:       $range-slider-inner-height;
 $range-slider-handle-size:      $range-slider-inner-height;
 $range-slider-handle-padding:   $range-slider-handle-size / 2;
 
-$range-slider-tooltip-top:      (($range-slider-handle-size * 2 - $range-slider-height) / 2) - ($tooltip-min-height + $tooltip-arrow-height + $range-slider-tooltip-offset);
-$range-slider-value-top:        (($range-slider-handle-size * 2 - $range-slider-height) / 2) - ($range-slider-value-height + $range-slider-tooltip-offset);
+$range-slider-tooltip-top:      (($range-slider-handle-size * 2 - $range-slider-height) / 2) - ($tooltip-min-height + $tooltip-arrow-height + $range-slider-offset);
+$range-slider-value-top:        (($range-slider-handle-size * 2 - $range-slider-height) / 2) - ($range-slider-value-height + $range-slider-offset);
+$range-slider-value-height:     rem($font-size-base);
 
 
 /**
