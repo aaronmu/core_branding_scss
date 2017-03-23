@@ -358,6 +358,23 @@ $progress-bar-bg:             $brand-primary !default;
 
 
 /**
+ * RANGE SLIDER
+ * -------------------------------------------------------------------
+ */
+
+$range-slider-height:             $switch-height !default;
+$range-slider-padding:            $spacer / 6 !default;
+$range-slider-tooltip-offset:     .625rem !default;
+$range-slider-value-height:       rem($font-size-base) !default;
+
+$range-slider-bg:                 $input-bg !default;
+$range-slider-border:             $input-border !default;
+
+$range-slider-bar-bg:             $background-color !default;
+$range-slider-handle-bg:          $brand-primary !default;
+
+
+/**
  * AUTOCOMPLETE
  * -------------------------------------------------------------------
  */
