@@ -1,15 +1,16 @@
 /**
- * PROGRESS
+ * PROGRESS VARIABLES
  * -------------------------------------------------------------------
  */
+
+$progress-tooltip-top:      -($tooltip-min-height + $tooltip-arrow-height + $progress-tooltip-offset + $progress-bar-padding);
+$progress-tooltip-bottom:   $progress-height - $progress-bar-padding + $tooltip-arrow-height + $progress-tooltip-offset;
 
 
 /**
- * VARIABLES
+ * PROGRESS
  * -------------------------------------------------------------------
  */
-$progress-tooltip-top:        -$tooltip-min-height - $progress-tooltip-offset - ($progress-bar-padding * 2);
-$progress-tooltip-bottom:     $progress-height + $progress-tooltip-offset;
 
 
 /**

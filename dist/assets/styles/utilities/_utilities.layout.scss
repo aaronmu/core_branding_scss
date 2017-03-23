@@ -5,6 +5,33 @@
 
 
 /**
+ * LAYOUT CONTAINERS
+ * -------------------------------------------------------------------
+ */
+
+.u-wrapper {
+  @include at($screen-xs) {
+    padding-left: $spacer * 3;
+  }
+
+  @include at($screen-md) {
+    padding-left: $spacer-xx;
+  }
+
+  @include at($screen-xl) {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.u-container {
+  margin: 0 auto;
+  max-width: $screen-lg;
+  padding: 0 $spacer;
+}
+
+
+/**
  * LAYOUT SCROLLING
  * -------------------------------------------------------------------
  */

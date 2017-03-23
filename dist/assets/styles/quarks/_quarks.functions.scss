@@ -6,12 +6,26 @@
 
 
 /**
+ * STRIP UNIT FROM VALUE
+ * -------------------------------------------------------------------
+ */
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+
+/**
  * CONVERT PX TO REM
  * -------------------------------------------------------------------
  */
 
 @function rem($_value) {
-  @return #{$_value / 16px}rem;
+  @return strip-unit($_value) / 16 * 1rem;
 }
 
 
@@ -30,4 +44,18 @@
   }
 
   @return $value;
+}
+
+
+/**
+ * HANDLING Z-INDEX LAYERS
+ * -------------------------------------------------------------------
+ */
+
+@function layer($layer) {
+  @if not map-has-key($z-indexes, $layer) {
+    @warn 'De laag `#{$layer}` zit niet in de $z-indexes map.';
+  }
+
+  @return map-get($z-indexes, $layer);
 }
