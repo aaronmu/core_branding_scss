@@ -45,3 +45,17 @@
 
   @return $value;
 }
+
+
+/**
+ * HANDLING Z-INDEX LAYERS
+ * -------------------------------------------------------------------
+ */
+
+@function layer($layer) {
+  @if not map-has-key($z-indexes, $layer) {
+    @warn 'De laag `#{$layer}` zit niet in de $z-indexes map.';
+  }
+
+  @return map-get($z-indexes, $layer);
+}
