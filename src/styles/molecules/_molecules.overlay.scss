@@ -16,8 +16,8 @@
   z-index: layer('overlay');
 
   &.is-active {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
   }
 }

@@ -244,7 +244,7 @@
   background: $_background;
 
   &:before {
-    @include triangle($_direction, $spacer / 4, $_background);
+    @include triangle($_direction, $tooltip-arrow-height, $_background);
 
     @if $_direction == 'up' {
       bottom: auto;

@@ -175,8 +175,8 @@
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    width: $spacer-lg;
     user-select: none;
+    width: $spacer-lg;
 
     &.is-clickable {
       cursor: pointer;

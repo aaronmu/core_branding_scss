@@ -325,6 +325,9 @@ $radio-checkbox-bg:       $brand-primary !default;
 /**
  * SWITCHES
  * -------------------------------------------------------------------
+ * WATCH OUT
+ * $progress-height and $range-slider-height are equal to $switch-height
+ * In this way, changing the height of the switch will also affect the height of the progress bar and range slider
  */
 
 $switch-width:            $spacer-lg !default;
@@ -354,13 +357,18 @@ $tooltip-primary-bg:        $brand-primary !default;
 $tooltip-secondary-color:   $tooltip-primary-color !default;
 $tooltip-secondary-bg:      $brand-secondary !default;
 
+$tooltip-arrow-height:      $spacer / 4 !default;
+
 
 /**
  * PROGRESS
  * -------------------------------------------------------------------
+ * WATCH OUT
+ * $range-slider-offset is equal to $tooltip-offset
+ * In this way, changing the offset of the progress bar will also affect the offset of the range slider
  */
 
-$progress-height:             $spacer-lg / 2 + .25rem !default;
+$progress-height:             $switch-height !default;
 $progress-bar-padding:        $spacer / 6 !default;
 $progress-tooltip-offset:     .625rem !default;
 
@@ -368,6 +376,22 @@ $progress-bg:                 $input-bg !default;
 $progress-border:             $input-border !default;
 
 $progress-bar-bg:             $brand-primary !default;
+
+
+/**
+ * RANGE SLIDER
+ * -------------------------------------------------------------------
+ */
+
+$range-slider-height:             $switch-height !default;
+$range-slider-padding:            $spacer / 6 !default;
+$range-slider-offset:             $progress-tooltip-offset !default;
+
+$range-slider-bg:                 $input-bg !default;
+$range-slider-border:             $input-border !default;
+
+$range-slider-bar-bg:             $background-color !default;
+$range-slider-handle-bg:          $brand-primary !default;
 
 
 /**
