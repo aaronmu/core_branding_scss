@@ -44,10 +44,8 @@ $range-slider-value-top:        (($range-slider-handle-size * 2 - $range-slider-
 
 .m-range-slider__bar {
   background-color: $range-slider-bar-bg;
-  display: block;
   height: 100%;
   position: absolute;
-  width: $range-slider-bar-height;
 
   &:before,
   &:after {
