@@ -35,4 +35,9 @@
     font-size: rem($footer-font-size-lg);
     padding: 0 $spacer-xl;
   }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
