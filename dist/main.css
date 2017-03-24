@@ -1,5 +1,12 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
+@import url(normalize-css/normalize.css);
+
+/**
+ * CORE BRANDING STYLES
+ * -------------------------------------------------------------------
+ */
+
 /**
  * QUARKS
  * -------------------------------------------------------------------
@@ -1362,6 +1369,7 @@ h6,
   font-family: "Antwerpen Regular";
   font-weight: 500;
   line-height: 1.1;
+  margin: 0;
 }
 
 h1,
@@ -1402,6 +1410,7 @@ h6,
 p {
   font-size: 1rem;
   line-height: 1.3;
+  margin: 0;
 }
 
 /**
@@ -1732,7 +1741,10 @@ a:focus {
 }
 
 .a-button:hover,
-.a-button:active {
+.a-button:active,
+.a-button:focus {
+  color: white;
+  text-decoration: none;
   background-color: #005599;
 }
 
@@ -1748,7 +1760,10 @@ a:focus {
 }
 
 .a-button.a-button--secondary:hover,
-.a-button.a-button--secondary:active {
+.a-button.a-button--secondary:active,
+.a-button.a-button--secondary:focus {
+  color: white;
+  text-decoration: none;
   background-color: #b00030;
 }
 
@@ -1764,7 +1779,10 @@ a:focus {
 }
 
 .a-button.a-button--success:hover,
-.a-button.a-button--success:active {
+.a-button.a-button--success:active,
+.a-button.a-button--success:focus {
+  color: white;
+  text-decoration: none;
   background-color: #3f8b25;
 }
 
@@ -1780,7 +1798,10 @@ a:focus {
 }
 
 .a-button.a-button--warning:hover,
-.a-button.a-button--warning:active {
+.a-button.a-button--warning:active,
+.a-button.a-button--warning:focus {
+  color: white;
+  text-decoration: none;
   background-color: #d4961a;
 }
 
@@ -1796,7 +1817,10 @@ a:focus {
 }
 
 .a-button.a-button--danger:hover,
-.a-button.a-button--danger:active {
+.a-button.a-button--danger:active,
+.a-button.a-button--danger:focus {
+  color: white;
+  text-decoration: none;
   background-color: #b92318;
 }
 
@@ -1813,7 +1837,10 @@ a:focus {
 }
 
 .a-button.a-button--transparent:hover,
-.a-button.a-button--transparent:active {
+.a-button.a-button--transparent:active,
+.a-button.a-button--transparent:focus {
+  color: #0064b4;
+  text-decoration: none;
   background-color: #cce0f0;
 }
 
@@ -1829,7 +1856,10 @@ a:focus {
 }
 
 .a-button.has-icon.a-button--default:hover,
-.a-button.has-icon.a-button--default:active {
+.a-button.has-icon.a-button--default:active,
+.a-button.has-icon.a-button--default:focus {
+  color: white;
+  text-decoration: none;
   background-color: #969696;
 }
 
@@ -1850,7 +1880,10 @@ a:focus {
 }
 
 .a-button.has-icon.a-button--twitter:hover,
-.a-button.has-icon.a-button--twitter:active {
+.a-button.has-icon.a-button--twitter:active,
+.a-button.has-icon.a-button--twitter:focus {
+  color: white;
+  text-decoration: none;
   background-color: #0092c9;
 }
 
@@ -1866,7 +1899,10 @@ a:focus {
 }
 
 .a-button.has-icon.a-button--linkedin:hover,
-.a-button.has-icon.a-button--linkedin:active {
+.a-button.has-icon.a-button--linkedin:active,
+.a-button.has-icon.a-button--linkedin:focus {
+  color: white;
+  text-decoration: none;
   background-color: #00659a;
 }
 
@@ -1882,7 +1918,10 @@ a:focus {
 }
 
 .a-button.has-icon.a-button--facebook:hover,
-.a-button.has-icon.a-button--facebook:active {
+.a-button.has-icon.a-button--facebook:active,
+.a-button.has-icon.a-button--facebook:focus {
+  color: white;
+  text-decoration: none;
   background-color: #324c81;
 }
 
@@ -1898,7 +1937,10 @@ a:focus {
 }
 
 .a-button.has-icon.a-button--google:hover,
-.a-button.has-icon.a-button--google:active {
+.a-button.has-icon.a-button--google:active,
+.a-button.has-icon.a-button--google:focus {
+  color: white;
+  text-decoration: none;
   background-color: #bb4237;
 }
 
@@ -1914,7 +1956,10 @@ a:focus {
 }
 
 .a-button.has-icon.a-button--snapchat:hover,
-.a-button.has-icon.a-button--snapchat:active {
+.a-button.has-icon.a-button--snapchat:active,
+.a-button.has-icon.a-button--snapchat:focus {
+  color: white;
+  text-decoration: none;
   background-color: #d9d600;
 }
 
@@ -1933,7 +1978,10 @@ a:focus {
 }
 
 .a-button.has-icon.a-button--instagram:hover,
-.a-button.has-icon.a-button--instagram:active {
+.a-button.has-icon.a-button--instagram:active,
+.a-button.has-icon.a-button--instagram:focus {
+  color: white;
+  text-decoration: none;
   background-color: #005599;
 }
 
@@ -1971,10 +2019,14 @@ a:focus {
   color: white;
   padding-left: 4.5rem;
   position: relative;
+  white-space: nowrap;
 }
 
 .a-button-official:hover,
-.a-button-official:active {
+.a-button-official:active,
+.a-button-official:focus {
+  color: white;
+  text-decoration: none;
   background-color: #b00030;
 }
 
@@ -2009,7 +2061,10 @@ a:focus {
 }
 
 .a-button-negative:hover,
-.a-button-negative:active {
+.a-button-negative:active,
+.a-button-negative:focus {
+  color: #0064b4;
+  text-decoration: none;
   background-color: #cce0f0;
 }
 
@@ -2025,7 +2080,10 @@ a:focus {
 }
 
 .a-button-negative.a-button--secondary:hover,
-.a-button-negative.a-button--secondary:active {
+.a-button-negative.a-button--secondary:active,
+.a-button-negative.a-button--secondary:focus {
+  color: #cf0039;
+  text-decoration: none;
   background-color: #f5ccd7;
 }
 
@@ -2041,7 +2099,10 @@ a:focus {
 }
 
 .a-button-negative.a-button--success:hover,
-.a-button-negative.a-button--success:active {
+.a-button-negative.a-button--success:active,
+.a-button-negative.a-button--success:focus {
+  color: #4aa32c;
+  text-decoration: none;
   background-color: #dbedd5;
 }
 
@@ -2057,7 +2118,10 @@ a:focus {
 }
 
 .a-button-negative.a-button--warning:hover,
-.a-button-negative.a-button--warning:active {
+.a-button-negative.a-button--warning:active,
+.a-button-negative.a-button--warning:focus {
+  color: #f9b01e;
+  text-decoration: none;
   background-color: #feefd2;
 }
 
@@ -2073,7 +2137,10 @@ a:focus {
 }
 
 .a-button-negative.a-button--danger:hover,
-.a-button-negative.a-button--danger:active {
+.a-button-negative.a-button--danger:active,
+.a-button-negative.a-button--danger:focus {
+  color: #da291c;
+  text-decoration: none;
   background-color: #f8d4d2;
 }
 
@@ -2095,8 +2162,10 @@ a:focus {
 }
 
 .a-button-outline:hover,
-.a-button-outline:active {
+.a-button-outline:active,
+.a-button-outline:focus {
   color: #005599;
+  text-decoration: none;
   background: #cce0f0;
   box-shadow: 0 0 0 1px #005599 inset;
 }
@@ -2115,8 +2184,10 @@ a:focus {
 }
 
 .a-button-outline.a-button--secondary:hover,
-.a-button-outline.a-button--secondary:active {
+.a-button-outline.a-button--secondary:active,
+.a-button-outline.a-button--secondary:focus {
   color: #b00030;
+  text-decoration: none;
   background: #f5ccd7;
   box-shadow: 0 0 0 1px #b00030 inset;
 }
@@ -2135,8 +2206,10 @@ a:focus {
 }
 
 .a-button-outline.a-button--success:hover,
-.a-button-outline.a-button--success:active {
+.a-button-outline.a-button--success:active,
+.a-button-outline.a-button--success:focus {
   color: #3f8b25;
+  text-decoration: none;
   background: #dbedd5;
   box-shadow: 0 0 0 1px #3f8b25 inset;
 }
@@ -2155,8 +2228,10 @@ a:focus {
 }
 
 .a-button-outline.a-button--warning:hover,
-.a-button-outline.a-button--warning:active {
+.a-button-outline.a-button--warning:active,
+.a-button-outline.a-button--warning:focus {
   color: #d4961a;
+  text-decoration: none;
   background: #feefd2;
   box-shadow: 0 0 0 1px #d4961a inset;
 }
@@ -2175,8 +2250,10 @@ a:focus {
 }
 
 .a-button-outline.a-button--danger:hover,
-.a-button-outline.a-button--danger:active {
+.a-button-outline.a-button--danger:active,
+.a-button-outline.a-button--danger:focus {
   color: #b92318;
+  text-decoration: none;
   background: #f8d4d2;
   box-shadow: 0 0 0 1px #b92318 inset;
 }
@@ -2199,8 +2276,10 @@ a:focus {
 }
 
 .a-button-transparent.has-icon:hover,
-.a-button-transparent.has-icon:active {
+.a-button-transparent.has-icon:active,
+.a-button-transparent.has-icon:focus {
   color: #005599;
+  text-decoration: none;
 }
 
 .a-button-transparent.has-icon[disabled] {
@@ -2216,8 +2295,10 @@ a:focus {
 }
 
 .a-button-transparent.has-icon.a-button--secondary:hover,
-.a-button-transparent.has-icon.a-button--secondary:active {
+.a-button-transparent.has-icon.a-button--secondary:active,
+.a-button-transparent.has-icon.a-button--secondary:focus {
   color: #b00030;
+  text-decoration: none;
 }
 
 .a-button-transparent.has-icon.a-button--secondary[disabled] {
@@ -2233,8 +2314,10 @@ a:focus {
 }
 
 .a-button-transparent.has-icon.a-button--success:hover,
-.a-button-transparent.has-icon.a-button--success:active {
+.a-button-transparent.has-icon.a-button--success:active,
+.a-button-transparent.has-icon.a-button--success:focus {
   color: #3f8b25;
+  text-decoration: none;
 }
 
 .a-button-transparent.has-icon.a-button--success[disabled] {
@@ -2250,8 +2333,10 @@ a:focus {
 }
 
 .a-button-transparent.has-icon.a-button--warning:hover,
-.a-button-transparent.has-icon.a-button--warning:active {
+.a-button-transparent.has-icon.a-button--warning:active,
+.a-button-transparent.has-icon.a-button--warning:focus {
   color: #d4961a;
+  text-decoration: none;
 }
 
 .a-button-transparent.has-icon.a-button--warning[disabled] {
@@ -2267,8 +2352,10 @@ a:focus {
 }
 
 .a-button-transparent.has-icon.a-button--danger:hover,
-.a-button-transparent.has-icon.a-button--danger:active {
+.a-button-transparent.has-icon.a-button--danger:active,
+.a-button-transparent.has-icon.a-button--danger:focus {
   color: #b92318;
+  text-decoration: none;
 }
 
 .a-button-transparent.has-icon.a-button--danger[disabled] {
@@ -2284,8 +2371,10 @@ a:focus {
 }
 
 .a-button-transparent.has-icon.a-button--default:hover,
-.a-button-transparent.has-icon.a-button--default:active {
+.a-button-transparent.has-icon.a-button--default:active,
+.a-button-transparent.has-icon.a-button--default:focus {
   color: #969696;
+  text-decoration: none;
 }
 
 .a-button-transparent.has-icon.a-button--default[disabled] {
@@ -2666,6 +2755,23 @@ img {
  * -------------------------------------------------------------------
  * Input fields are normalized in _base.normalize.scss
  */
+
+/**
+ * INPUT FONT-FAMILY
+ * -------------------------------------------------------------------
+ */
+
+button,
+input,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+}
 
 /**
  * INPUT PLACEHOLDER
@@ -3145,6 +3251,12 @@ a.has-icon-right .fa {
  * -------------------------------------------------------------------
  */
 
+ul,
+ol,
+dl {
+  line-height: 1.3;
+}
+
 /**
  * STANDARD LIST
  * -------------------------------------------------------------------
@@ -3187,7 +3299,9 @@ a.has-icon-right .fa {
 .m-step-indicator,
 .m-upload__files,
 .o-tag-list {
+  line-height: 1;
   list-style: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -3259,6 +3373,7 @@ a.has-icon-right .fa {
 
 .a-list--primary .a-list,
 .a-list--lined .a-list {
+  line-height: 1;
   margin-top: 1rem;
 }
 
@@ -5220,6 +5335,11 @@ a.has-icon-right .fa {
   font-size: 0.75rem;
   line-height: 1.3;
   padding: 0 0.75rem;
+}
+
+.o-footer__label a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /**

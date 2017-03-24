@@ -1,12 +1,12 @@
 @charset 'utf-8';
 
-
 /**
  * CORE BRANDING STYLES
  * -------------------------------------------------------------------
  */
 
 @import 'quarks';
+@import 'normalize-css/normalize.css';
 @import 'utilities';
 @import 'base';
 @import 'atoms';
