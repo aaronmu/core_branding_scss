@@ -711,3 +711,14 @@ $gallery-gutter-col:          $spacer !default;
 $gallery-gutter-row:          $gallery-gutter-col !default;
 
 $gallery-item-size:           100% / 3 !default;
+
+
+/**
+ * SLIDESHOW
+ * -------------------------------------------------------------------
+ */
+
+$slideshow-bg:                    $black !default;
+$slideshow-footer-color:          $text-color !default;
+$slideshow-footer-color-light:    $white !default;
+$slideshow-arrow-color:           $white !default;
