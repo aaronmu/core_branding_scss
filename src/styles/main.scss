@@ -20,6 +20,13 @@
  * -------------------------------------------------------------------
  */
 
+@import 'normalize-css/normalize.css';
+
+/**
+ * UTILITIES
+ * -------------------------------------------------------------------
+ */
+
 @import 'utilities/utilities.background';
 @import 'utilities/utilities.layout';
 @import 'utilities/utilities.spacing';
@@ -31,8 +38,7 @@
  * -------------------------------------------------------------------
  */
 
-// @import 'base/base.normalize';
-@import 'normalize-css/normalize.css';
+@import 'base/base.layout';
 @import 'base/base.typography';
 
 

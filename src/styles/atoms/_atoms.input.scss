@@ -10,8 +10,14 @@
  * -------------------------------------------------------------------
  */
 
-input, select, textarea, button {
-  font-family: inherit;
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  font: inherit;
+  margin: 0;
+  outline: 0;
 }
 
 
