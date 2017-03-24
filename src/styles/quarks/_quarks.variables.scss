@@ -28,7 +28,7 @@ $background-color-light:  $grey-lighter !default;
 $border-color:            $grey !default;
 $border-color-light:      $grey-light !default;
 
-$overlay-color:           rgba($black, .5) !default;
+$overlay-color:           rgba($black, .75) !default;
 $selection-color:         mix($brand-primary, $white, 20%) !default;
 
 
@@ -53,10 +53,9 @@ $spacer-xs:               $spacer * .5 !default; // 12px
  */
 
 $screen-xs:               30rem !default; // 480px
-$screen-sm:               48rem !default; // 768px
+$screen-sm:               45rem !default; // 720px
 $screen-md:               62rem !default; // 992px
 $screen-lg:               75rem !default; // 1200px
-$screen-xl:               90rem !default; // 1440px
 
 
 /**
@@ -570,7 +569,7 @@ $footer-line-height:      $line-height-paragraph !default;
 
 
 /**
- * FOOTER
+ * HEADER
  * -------------------------------------------------------------------
  */
 
@@ -711,3 +710,15 @@ $gallery-gutter-col:          $spacer !default;
 $gallery-gutter-row:          $gallery-gutter-col !default;
 
 $gallery-item-size:           100% / 3 !default;
+
+
+/**
+ * SLIDESHOW
+ * -------------------------------------------------------------------
+ */
+
+$slideshow-max-height:            37.5rem !default;
+$slideshow-bg:                    $black !default;
+$slideshow-footer-color:          $text-color !default;
+$slideshow-footer-color-light:    $white !default;
+$slideshow-arrow-color:           $white !default;

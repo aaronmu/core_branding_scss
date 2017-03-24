@@ -10,18 +10,13 @@
   font-size: rem($copyright-font-size);
   height: $copyright-height;
   transition: transform $animation-duration * 2 $animation-easing;
-
-  .a-image & {
-    bottom: 0;
-    position: absolute;
-    right: 0;
-    transform: translateX(calc(100% - #{$copyright-height}));
-
-    &:hover {
-      transform: translateX(0);
-    }
-  }
 }
+
+
+/**
+ * COPYRIGHT ELEMENTS
+ * -------------------------------------------------------------------
+ */
 
 .a-copyright__sign,
 .a-copyright__label {
