@@ -6,6 +6,23 @@
 
 
 /**
+ * INPUT FONT-FAMILY
+ * -------------------------------------------------------------------
+ */
+
+button,
+input,
+select,
+textarea {
+  appearance: none;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+}
+
+
+
+/**
  * INPUT PLACEHOLDER
  * -------------------------------------------------------------------
  */
