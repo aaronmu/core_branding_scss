@@ -41,6 +41,7 @@ h6,
   font-family: $font-family-headings;
   font-weight: $normal;
   line-height: $line-height-headings;
+  margin: 0;
 }
 
 h1,
@@ -82,6 +83,7 @@ h6,
 p {
   font-size: rem($font-size-base);
   line-height: $line-height-paragraph;
+  margin: 0;
 }
 
 
