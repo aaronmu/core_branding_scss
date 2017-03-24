@@ -90,6 +90,8 @@
     } @else {
       background-color: mix($_color, $white, 20%);
     }
+    color: $_color;
+    text-decoration: none;
   }
 
   &[disabled] {
