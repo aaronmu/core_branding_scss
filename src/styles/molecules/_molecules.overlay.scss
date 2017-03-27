@@ -51,13 +51,13 @@
   overflow-y: scroll;
 }
 
-.m-overlay__slideshow.m-slideshow {
+.m-overlay__slideshow.o-slideshow {
   margin: 0 auto;
   max-height: 80vh;
   max-width: 105vh;
   width: 100%;
 
-  .m-slideshow__footer {
+  .o-slideshow__footer {
     color: $slideshow-footer-color-light;
   }
 }
