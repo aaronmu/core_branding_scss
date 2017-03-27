@@ -245,7 +245,7 @@
  * -------------------------------------------------------------------
  */
 
-@mixin a-tooltip($_color: $white, $_background: $brand-primary, $_direction: 'down') {
+@mixin a-tooltip($_color: $white, $_background: $brand-primary, $_direction: 'down', $_position: 'center') {
   color: $_color;
   background: $_background;
 
@@ -258,6 +258,18 @@
       right: auto;
       top: 0;
       transform: translate(-50%, -100%);
+
+      @if $_position == 'left' {
+        left: $spacer-xs;
+        right: auto;
+        transform: translate(0, -100%);
+      }
+
+      @if $_position == 'right' {
+        left: auto;
+        right: $spacer-xs;
+        transform: translate(0, -100%);
+      }
     }
 
     @if $_direction == 'down' {
@@ -266,6 +278,18 @@
       right: auto;
       top: auto;
       transform: translate(-50%, 100%);
+
+      @if $_position == 'left' {
+        left: $spacer-xs;
+        right: auto;
+        transform: translate(0, 100%);
+      }
+
+      @if $_position == 'right' {
+        left: auto;
+        right: $spacer-xs;
+        transform: translate(0, 100%);
+      }
     }
 
     @if $_direction == 'left' {
@@ -274,6 +298,18 @@
       right: auto;
       top: 50%;
       transform: translate(-100%, -50%);
+
+      @if $_position == 'top' {
+        top: $spacer-xs;
+        bottom: auto;
+        transform: translate(-100%, 0);
+      }
+
+      @if $_position == 'bottom' {
+        bottom: $spacer-xs;
+        top: auto;
+        transform: translate(-100%, 0);
+      }
     }
 
     @if $_direction == 'right' {
@@ -282,6 +318,18 @@
       right: 0%;
       top: 50%;
       transform: translate(100%, -50%);
+
+      @if $_position == 'top' {
+        top: $spacer-xs;
+        bottom: auto;
+        transform: translate(100%, 0);
+      }
+
+      @if $_position == 'bottom' {
+        bottom: $spacer-xs;
+        top: auto;
+        transform: translate(100%, 0);
+      }
     }
   }
 }

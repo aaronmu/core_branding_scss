@@ -42,22 +42,106 @@
  */
 
 .a-tooltip {
+  @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'down');
+
+  &.a-tooltip--top {
+    @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'down');
+
+    &-right {
+      @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'down', 'left');
+    }
+
+    &-left {
+      @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'down', 'right');
+    }
+  }
+
+  &.a-tooltip--bottom {
+    @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'up');
+
+    &-right {
+      @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'up', 'left');
+    }
+
+    &-left {
+      @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'up', 'right');
+    }
+  }
+
+  &.a-tooltip--left {
+    @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'right');
+
+    &-bottom {
+      @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'right', 'top');
+    }
+
+    &-top {
+      @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'right', 'bottom');
+    }
+  }
+
+  &.a-tooltip--right {
+    @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'left');
+
+    &-bottom {
+      @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'left', 'top');
+    }
+
+    &-top {
+      @include a-tooltip($tooltip-default-color, $tooltip-default-bg, 'left', 'bottom');
+    }
+  }
+}
+
+.a-tooltip--primary {
   @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down');
 
   &.a-tooltip--top {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down');
+
+    &-right {
+      @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down', 'left');
+    }
+
+    &-left {
+      @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'down', 'right');
+    }
   }
 
   &.a-tooltip--bottom {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'up');
+
+    &-right {
+      @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'up', 'left');
+    }
+
+    &-left {
+      @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'up', 'right');
+    }
   }
 
   &.a-tooltip--left {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'right');
+
+    &-bottom {
+      @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'right', 'top');
+    }
+
+    &-top {
+      @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'right', 'bottom');
+    }
   }
 
   &.a-tooltip--right {
     @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'left');
+
+    &-bottom {
+      @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'left', 'top');
+    }
+
+    &-top {
+      @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg, 'left', 'bottom');
+    }
   }
 }
 
@@ -66,17 +150,49 @@
 
   &.a-tooltip--top {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down');
+
+    &-right {
+      @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down', 'left');
+    }
+
+    &-left {
+      @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'down', 'right');
+    }
   }
 
   &.a-tooltip--bottom {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'up');
+
+    &-right {
+      @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'up', 'left');
+    }
+
+    &-left {
+      @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'up', 'right');
+    }
   }
 
   &.a-tooltip--left {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'right');
+
+    &-bottom {
+      @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'right', 'top');
+    }
+
+    &-top {
+      @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'right', 'bottom');
+    }
   }
 
   &.a-tooltip--right {
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'left');
+
+    &-bottom {
+      @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'left', 'top');
+    }
+
+    &-top {
+      @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg, 'left', 'bottom');
+    }
   }
 }
