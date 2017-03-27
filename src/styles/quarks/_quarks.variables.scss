@@ -419,9 +419,9 @@ $datepicker-selected-color:          $white !default;
 $datepicker-selected-bg:             $datepicker-today-color !default;
 $datepicker-selected-font-weight:    $datepicker-today-font-weight !default;
 
-$datepicker-disabled-color:          $grey-dark !default;
-$datepicker-disabled-bg:             mix($white, $background-color, 50%) !default;
-$datepicker-disabled-bg-hover:       $background-color !default;
+$datepicker-faded-color:          $grey-dark !default;
+$datepicker-faded-bg:             $background-color-light !default;
+$datepicker-faded-bg-hover:       $background-color !default;
 
 $datepicker-unavailable-color:     $state-disabled !default;
 $datepicker-unavailable-bg:        $datepicker-bg !default;
