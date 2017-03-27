@@ -28,7 +28,7 @@ $background-color-light:  $grey-lighter !default;
 $border-color:            $grey !default;
 $border-color-light:      $grey-light !default;
 
-$overlay-color:           rgba($black, .5) !default;
+$overlay-color:           rgba($black, .75) !default;
 $selection-color:         mix($brand-primary, $white, 20%) !default;
 
 
@@ -53,10 +53,9 @@ $spacer-xs:               $spacer * .5 !default; // 12px
  */
 
 $screen-xs:               30rem !default; // 480px
-$screen-sm:               48rem !default; // 768px
+$screen-sm:               45rem !default; // 720px
 $screen-md:               62rem !default; // 992px
 $screen-lg:               75rem !default; // 1200px
-$screen-xl:               90rem !default; // 1440px
 
 
 /**
@@ -351,6 +350,9 @@ $switch-handle-bg-active: $brand-primary !default;
 $tooltip-max-width:         $spacer * 12 !default;
 $tooltip-min-height:        $spacer-md !default;
 
+$tooltip-default-color:     $text-color !default;
+$tooltip-default-bg:        $background-color !default;
+
 $tooltip-primary-color:     $white !default;
 $tooltip-primary-bg:        $brand-primary !default;
 
@@ -420,8 +422,9 @@ $datepicker-selected-color:          $white !default;
 $datepicker-selected-bg:             $datepicker-today-color !default;
 $datepicker-selected-font-weight:    $datepicker-today-font-weight !default;
 
-$datepicker-disabled-color:     $text-color !default;
-$datepicker-disabled-bg:        $background-color !default;
+$datepicker-faded-color:          $grey-dark !default;
+$datepicker-faded-bg:             $background-color-light !default;
+$datepicker-faded-bg-hover:       $background-color !default;
 
 $datepicker-unavailable-color:     $state-disabled !default;
 $datepicker-unavailable-bg:        $datepicker-bg !default;
@@ -570,7 +573,7 @@ $footer-line-height:      $line-height-paragraph !default;
 
 
 /**
- * FOOTER
+ * HEADER
  * -------------------------------------------------------------------
  */
 
@@ -589,7 +592,7 @@ $spinner-color:           $grey !default;
 $spinner-size:            $icon-size-lg !default;
 
 $spinner-animation-name:      fa-spin !default;
-$spinner-animation-speed:     2000ms !default;
+$spinner-animation-speed:     1500ms !default;
 $spinner-animation-timing:    linear !default;
 
 
@@ -635,14 +638,15 @@ $modal-width-large:       $spacer * 25 !default;
  */
 
 $nav-font-weight:         $bold !default;
+$nav-icon-size:           1.25rem !default;
 $nav-border:              $border-color !default;
 $nav-border-hover:        $brand-primary !default;
 $nav-color:               $text-color !default;
 $nav-color-hover:         $brand-primary !default;
-$nav-color-active:        $white !default;
+$nav-color-active:        $nav-color-hover !default;
 $nav-bg:                  transparent !default;
 $nav-bg-hover:            $grey-lighter !default;
-$nav-bg-active:           $nav-color-hover !default;
+$nav-bg-active:           $nav-bg !default;
 
 
 /**
@@ -711,3 +715,15 @@ $gallery-gutter-col:          $spacer !default;
 $gallery-gutter-row:          $gallery-gutter-col !default;
 
 $gallery-item-size:           100% / 3 !default;
+
+
+/**
+ * SLIDESHOW
+ * -------------------------------------------------------------------
+ */
+
+$slideshow-max-height:            37.5rem !default;
+$slideshow-bg:                    $black !default;
+$slideshow-footer-color:          $text-color !default;
+$slideshow-footer-color-light:    $white !default;
+$slideshow-arrow-color:           $white !default;
