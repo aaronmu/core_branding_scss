@@ -19,6 +19,7 @@
       > a:active {
         background-color: $nav-bg-active;
         color: $nav-color-active;
+        text-decoration: underline;
       }
     }
 
@@ -37,6 +38,13 @@
       &:active {
         background-color: $nav-bg-hover;
         color: $nav-color-hover;
+      }
+
+      > .fa {
+        font-size: $nav-icon-size;
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: $spacer-xs;
       }
     }
   }
@@ -60,9 +68,10 @@
         > a,
         > a:hover,
         > a:active {
-          background-color: $nav-color-active;
-          border-color: $nav-bg-active;
-          color: $nav-bg-active;
+          background-color: $nav-bg-active;
+          border-color: $nav-color-active;
+          color: $nav-color-active;
+          text-decoration: none;
         }
       }
 
@@ -73,7 +82,7 @@
         &:hover,
         &:active {
           background-color: transparent;
-          border-color: $nav-bg-active;
+          border-color: $nav-color-active;
           color: $nav-color;
         }
       }

@@ -634,14 +634,15 @@ $modal-width-large:       $spacer * 25 !default;
  */
 
 $nav-font-weight:         $bold !default;
+$nav-icon-size:           1.25rem !default;
 $nav-border:              $border-color !default;
 $nav-border-hover:        $brand-primary !default;
 $nav-color:               $text-color !default;
 $nav-color-hover:         $brand-primary !default;
-$nav-color-active:        $white !default;
+$nav-color-active:        $nav-color-hover !default;
 $nav-bg:                  transparent !default;
 $nav-bg-hover:            $grey-lighter !default;
-$nav-bg-active:           $nav-color-hover !default;
+$nav-bg-active:           $nav-bg !default;
 
 
 /**
