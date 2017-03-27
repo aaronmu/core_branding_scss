@@ -41,10 +41,10 @@
       }
 
       > .fa {
-        font-size: $nav-icon-size;
         display: inline-block;
-        vertical-align: bottom;
+        font-size: $nav-icon-size;
         margin-right: $spacer-xs;
+        vertical-align: bottom;
       }
     }
   }
