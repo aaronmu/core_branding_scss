@@ -9,7 +9,18 @@ var gulp = require('gulp');
 var watch = require('gulp-watch');
 var plumber = require('gulp-plumber');
 var livereload = require('gulp-livereload');
+var browserSync = require('browser-sync').create();
 var run = require('run-sequence');
+
+gulp.task('browser-sync', ['build'], () => {
+    browserSync.init({
+        notify: false,
+        port: 9000,
+        server: {
+            baseDir: ['dist']
+        }
+    });
+});
 
 gulp.task('server', function(callback) {
 

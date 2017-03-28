@@ -25,6 +25,7 @@
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^6.7.5",
+    "browser-sync": "^2.18.8",
     "connect": "^3.6.0",
     "connect-livereload": "^0.6.0",
     "cssnano": "^3.10.0",
