@@ -47,6 +47,11 @@ textarea {
     width: 100%;
   }
 
+  select {
+    padding-bottom: $spacer-xs;
+    padding-top: $spacer-xs;
+  }
+
   textarea {
     min-height: 12rem;
     padding: $spacer-sm $spacer;
