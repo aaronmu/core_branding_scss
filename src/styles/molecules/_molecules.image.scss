@@ -53,7 +53,7 @@ figcaption {
   bottom: 0;
   position: absolute;
   right: 0;
-  transform: translateX(calc(100% - #{$copyright-height}));
+  transform: translateX(100%) translateX(-$copyright-height);
 
   &:hover {
     transform: translateX(0);
