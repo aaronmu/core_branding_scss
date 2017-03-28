@@ -1,4 +1,9 @@
-@charset 'utf-8';
+/**
+ * NORMALIZE
+ * -------------------------------------------------------------------
+ */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css');
 
 
 /**
@@ -6,5 +11,5 @@
  * -------------------------------------------------------------------
  */
 
-@import 'base/base.normalize';
+@import 'base/base.layout';
 @import 'base/base.typography';

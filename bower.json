@@ -16,8 +16,5 @@
     "node_modules",
     "bower_components",
     "src"
-  ],
-  "dependencies": {
-    "normalize-css": "^5.0.0"
-  }
+  ]
 }
