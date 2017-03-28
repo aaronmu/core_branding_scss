@@ -3,7 +3,13 @@
  * -------------------------------------------------------------------
  */
 
-.m-nav {
+
+/**
+ * NAVIGATION LIST
+ * -------------------------------------------------------------------
+ */
+
+%m-nav-list {
   @extend %a-list--reset;
   border-top: 1px solid $border-color;
 
@@ -19,6 +25,7 @@
       > a:active {
         background-color: $nav-bg-active;
         color: $nav-color-active;
+        text-decoration: underline;
       }
     }
 
@@ -38,21 +45,45 @@
         background-color: $nav-bg-hover;
         color: $nav-color-hover;
       }
+
+      > .fa {
+        display: inline-block;
+        font-size: $nav-icon-size;
+        margin-right: $spacer-xs;
+        vertical-align: bottom;
+      }
     }
   }
 }
 
+.m-nav-list {
+  @extend %m-nav-list;
+}
+
 
 /**
- * NAVIGATION MODIFIERS
+ * NAVIGATION LIST MODIFIERS
  * -------------------------------------------------------------------
  */
 
-.m-nav--tabs {
+.m-nav-list--left > li {
+  text-align: left;
+}
+
+
+/**
+ * NAVIGATION TABS
+ * -------------------------------------------------------------------
+ */
+
+.m-nav-tabs {
+  @extend %m-nav-list;
+
   @include at($screen-sm) {
     border-top: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     > li {
 
@@ -60,9 +91,10 @@
         > a,
         > a:hover,
         > a:active {
-          background-color: $nav-color-active;
-          border-color: $nav-bg-active;
-          color: $nav-bg-active;
+          background-color: $nav-bg-active;
+          border-color: $nav-color-active;
+          color: $nav-color-active;
+          text-decoration: none;
         }
       }
 
@@ -73,7 +105,7 @@
         &:hover,
         &:active {
           background-color: transparent;
-          border-color: $nav-bg-active;
+          border-color: $nav-color-active;
           color: $nav-color;
         }
       }
@@ -81,10 +113,20 @@
   }
 }
 
-.m-nav--centered {
-  justify-content: center;
+
+/**
+ * NAVIGATION LIST MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-nav-tabs--left {
+  @include at($screen-sm) {
+    justify-content: flex-start;
+  }
 }
 
-.m-nav--right {
-  justify-content: flex-end;
+.m-nav-tabs--right {
+  @include at($screen-sm) {
+    justify-content: flex-end;
+  }
 }

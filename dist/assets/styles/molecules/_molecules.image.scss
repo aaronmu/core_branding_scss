@@ -1,0 +1,61 @@
+/**
+ * IMAGES
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * BASE STYLING
+ * -------------------------------------------------------------------
+ */
+
+img {
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: rem($font-size-base);
+  line-height: $line-height-paragraph;
+  padding: $spacer-xs;
+
+  @include at($screen-sm) {
+    padding: $spacer / 3 * 2 $spacer-xs;
+  }
+}
+
+
+/**
+ * IMAGE
+ * -------------------------------------------------------------------
+ */
+
+.m-image {
+  overflow: hidden;
+  position: relative;
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+
+/**
+ * IMAGE ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.m-image__copyright {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  transform: translateX(calc(100% - #{$copyright-height}));
+
+  &:hover {
+    transform: translateX(0);
+  }
+}
