@@ -1,7 +1,6 @@
 // -------------------------------------------------------------------
 // :: GULP CONFIGURATION
 // -------------------------------------------------------------------
-// - https://www.npmjs.org/package/opn
 
 
 // -------------------------------------------------------------------
@@ -30,9 +29,7 @@ var clean = require('./gulp/clean'),
 // -------------------------------------------------------------------
 
 // Default task = run server
-gulp.task('default', ['server'], function () {
-	require('opn')('http://localhost:9000');
-});
+gulp.task('default', ['server']);
 
 gulp.task('build', ['clean-dist'], function(callback) {
 	var run = require('run-sequence').use(gulp);
