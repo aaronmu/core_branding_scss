@@ -153,7 +153,6 @@ textarea {
     .a-input__wrapper:before {
       @include fontawesome;
       font-size: 1.25rem;
-      height: $spacer-lg;
       line-height: $spacer-lg;
       position: absolute;
       right: 0;
