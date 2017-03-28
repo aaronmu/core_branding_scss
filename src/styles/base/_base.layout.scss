@@ -41,3 +41,13 @@ html {
 ::-ms-expand {
   display: none;
 }
+
+/**
+ * Hide clear button in input fields for Windows
+ * https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx
+ */
+::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
