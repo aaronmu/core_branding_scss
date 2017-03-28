@@ -3,11 +3,15 @@
  * -------------------------------------------------------------------
  */
 
-
 /**
  * UPLOAD ELEMENTS
  * -------------------------------------------------------------------
  */
+
+.m-upload__inner {
+  display: flex;
+  flex-direction: row;
+}
 
 .m-upload__dropzone {
   align-items: center;
@@ -22,6 +26,7 @@
   position: relative;
   text-align: center;
   transition: background $animation-normal;
+  width: 100%;
 
   &:active,
   &:hover,
@@ -42,7 +47,7 @@
   width: 100%;
 }
 
-.m-upload__inner {
+.m-upload__content {
   max-width: $spacer * 15;
   width: 100%;
 }
