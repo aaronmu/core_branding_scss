@@ -51,6 +51,7 @@ figcaption {
 
 .m-image__copyright {
   bottom: 0;
+  color: $copyright-color;
   position: absolute;
   right: 0;
   transform: translateX(100%) translateX(-$copyright-height);
@@ -58,6 +59,7 @@ figcaption {
   &:hover,
   &:active,
   &:focus {
+    color: $copyright-color;
     transform: translateX(0);
   }
 }
