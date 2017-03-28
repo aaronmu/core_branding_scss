@@ -201,7 +201,7 @@ textarea {
 
     &.is-clickable {
       cursor: pointer;
-      pointer-events: initial;
+      pointer-events: auto;
       transition: color $animation-normal;
 
       &:hover {
