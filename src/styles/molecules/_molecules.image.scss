@@ -55,7 +55,9 @@ figcaption {
   right: 0;
   transform: translateX(100%) translateX(-$copyright-height);
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     transform: translateX(0);
   }
 }
