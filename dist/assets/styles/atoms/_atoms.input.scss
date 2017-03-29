@@ -12,6 +12,7 @@
 
 button,
 input,
+input[type="search"],
 select,
 textarea {
   appearance: none;
@@ -41,15 +42,20 @@ textarea {
   textarea {
     border-radius: 0;
     min-height: $spacer-lg;
-    padding: 0 $spacer;
+    padding: $input-padding;
     resize: vertical;
     transition: border-color $animation-normal;
     width: 100%;
   }
 
+  select {
+    padding-bottom: $spacer-xs;
+    padding-top: $spacer-xs;
+  }
+
   textarea {
     min-height: 12rem;
-    padding: $spacer-sm $spacer;
+    padding: $textarea-padding;
   }
 }
 
@@ -148,7 +154,6 @@ textarea {
     .a-input__wrapper:before {
       @include fontawesome;
       font-size: 1.25rem;
-      height: $spacer-lg;
       line-height: $spacer-lg;
       position: absolute;
       right: 0;
@@ -197,7 +202,7 @@ textarea {
 
     &.is-clickable {
       cursor: pointer;
-      pointer-events: initial;
+      pointer-events: auto;
       transition: color $animation-normal;
 
       &:hover {

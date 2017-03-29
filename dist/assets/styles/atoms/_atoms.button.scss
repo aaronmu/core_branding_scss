@@ -19,7 +19,7 @@
   line-height: $spacer-lg;
   margin: 0;
   min-height: $spacer-lg;
-  padding: 0 $spacer;
+  padding: $btn-padding;
   text-align: center;
   text-decoration: none;
   transition-duration: $animation-duration;
@@ -394,22 +394,38 @@
     width: $spacer-lg;
 
     .fa {
-      left: 50%;
+      left: 0;
+      line-height: $spacer-lg;
       position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
+      top: 0;
+      width: $spacer-lg;
     }
   }
 }
 
 .a-button--tiny.has-icon {
   width: $spacer;
+
+  .fa {
+    line-height: $spacer;
+    width: $spacer;
+  }
 }
 
 .a-button--small.has-icon {
   width: $spacer-md;
+
+  .fa {
+    line-height: $spacer-md;
+    width: $spacer-md;
+  }
 }
 
 .a-button--large.has-icon {
   width: $spacer-xl;
+
+  .fa {
+    line-height: $spacer-xl;
+    width: $spacer-xl;
+  }
 }

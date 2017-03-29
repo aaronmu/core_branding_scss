@@ -9,7 +9,7 @@
   font-weight: $label-font-weight;
   line-height: $label-line-height;
   min-height: $label-height;
-  padding: 0 $spacer / 4;
+  padding: $label-padding;
   text-transform: uppercase;
 }
 

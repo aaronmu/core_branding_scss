@@ -31,7 +31,7 @@
   cursor: pointer;
   display: block;
   min-height: $spacer-lg;
-  padding: $spacer-xs $spacer-lg $spacer-xs $spacer-xs;
+  padding: $accordion-header-padding;
   position: relative;
   text-align: left;
   transition: background $animation-normal;
@@ -59,5 +59,5 @@
   border-left: 1px solid $accordion-border;
   border-right: 1px solid $accordion-border;
   display: none;
-  padding: $spacer;
+  padding: $accordion-content-padding;
 }
