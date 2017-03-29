@@ -7,6 +7,11 @@
   position: relative;
 }
 
+/**
+ * FLYOUT ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
 .m-flyout__content {
   background-color: $flyout-bg;
   border: 1px solid $flyout-border;
@@ -22,13 +27,19 @@
   z-index: layer('flyout');
 }
 
+
 /**
  * FLYOUT MODIFIERS
  * -------------------------------------------------------------------
  */
 
-.m-flyout-inline {
+.m-flyout--inline {
   display: inline-block;
+}
+
+.m-flyout--limited .m-flyout__content {
+  max-height: $flyout-max-height;
+  overflow-y: scroll;
 }
 
 .m-flyout.is-open .m-flyout__content {
@@ -51,6 +62,7 @@
  * FLYOUT FIX AFTER FORM ELEMENT
  * -------------------------------------------------------------------
  */
+
 .a-input + .m-flyout__content {
   margin-top: -1px;
 }
