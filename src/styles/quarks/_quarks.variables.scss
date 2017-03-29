@@ -427,13 +427,12 @@ $range-slider-handle-bg:          $brand-primary !default;
 
 
 /**
- * AUTOCOMPLETE
+ * LINK LIST
  * -------------------------------------------------------------------
  */
 
-$autocomplete-hover:           $grey-lighter !default;
-$autocomplete-max-height:      calc(#{$spacer * 10 - $spacer / 2} - 5px) !default; // 5 rows - half a row (for clarity) - 5 borders of 1px
-$autocomplete-list-padding:    $spacer / 3 * 2 $spacer !default;
+$link-list-item-padding:    $spacer / 3 * 2 $spacer !default;
+$link-list-hover:           $grey-lighter !default;
 
 
 /**
