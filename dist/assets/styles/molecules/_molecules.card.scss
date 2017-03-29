@@ -15,7 +15,7 @@
  */
 
 .m-card__header {
-  padding: $spacer-xs;
+  padding: $card-header-padding;
 }
 
 .m-card__image img {
@@ -24,5 +24,5 @@
 }
 
 .m-card__body {
-  padding: $spacer;
+  padding: $card-content-padding;
 }

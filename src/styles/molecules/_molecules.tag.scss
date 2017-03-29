@@ -8,8 +8,8 @@
   box-shadow: 0 0 0 1px $tag-border inset;
   color: $tag-color;
   display: inline-block;
-  height: $spacer-md;
-  line-height: $spacer-md;
+  height: $tag-height;
+  line-height: $tag-height;
 
   > * {
     float: left;
@@ -32,7 +32,7 @@
   background-color: transparent;
   border: none;
   border-radius: 0;
-  min-height: $spacer-md;
+  min-height: $tag-height;
   padding: 0 $spacer-xs;
 
   &:focus {

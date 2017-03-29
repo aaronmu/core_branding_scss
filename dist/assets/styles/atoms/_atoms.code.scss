@@ -24,7 +24,7 @@ code {
   background-color: $code-bg;
   color: $code-color;
   font-size: $code-font-size;
-  padding: $spacer-xs / 6 $spacer-xs / 2;
+  padding: $code-padding;
 
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {
@@ -42,7 +42,7 @@ kbd {
   background-color: $kbd-bg;
   color: $kbd-color;
   font-size: $kbd-font-size;
-  padding: $spacer-xs / 6 $spacer-xs / 2;
+  padding: $kbd-padding;
 
   kbd {
     font-size: 100%;
@@ -62,7 +62,7 @@ kbd {
   display: block;
   font-size: $pre-font-size;
   margin-top: 0;
-  padding: $spacer-xs;
+  padding: $pre-padding;
 
   code {
     background-color: transparent;

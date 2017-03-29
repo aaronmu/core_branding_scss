@@ -5,19 +5,8 @@
 
 .a-autocomplete {
   @extend %a-list--reset;
-  background-color: $input-bg;
-  border-bottom: 1px solid $input-border;
-  border-left: 1px solid $input-border;
-  border-right: 1px solid $input-border;
-  box-shadow: $box-shadow;
-  max-height: calc(#{$spacer * 10 - $spacer / 2} - 5px); // 5 rows - half a row (for clarity) - 5 borders of 1px
-  opacity: 0;
+  max-height: $autocomplete-max-height;
   overflow-y: scroll;
-  text-align: left;
-  transform: translateY(-$spacer-lg);
-  transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
-  visibility: hidden;
-  width: 100%;
 
   li {
     transition: background $animation-duration $animation-easing;
@@ -25,7 +14,7 @@
     > a {
       color: $input-color;
       display: block;
-      padding: $spacer / 3 * 2 $spacer;
+      padding: $autocomplete-list-padding;
       transition: color $animation-duration $animation-easing;
     }
 
@@ -43,24 +32,3 @@
     }
   }
 }
-
-
-/**
- * AUTOCOMPLETE MODIFIERS
- * -------------------------------------------------------------------
- */
-
-.a-autocomplete.is-open {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0s;
-  visibility: visible;
-}
-
-.a-autocomplete--fixed {
-  left: 0;
-  position: absolute;
-  top: 100%;
-  z-index: layer('base');
-}
-

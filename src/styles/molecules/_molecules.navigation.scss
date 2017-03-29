@@ -34,7 +34,7 @@
       border-bottom: 1px solid $border-color;
       color: $nav-color;
       display: block;
-      padding: $spacer / 3 * 2 $spacer;
+      padding: $nav-padding;
       text-decoration: none;
       transition-duration: $animation-duration;
       transition-property: background, color;

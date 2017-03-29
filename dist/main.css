@@ -1,6 +1,6 @@
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
 
-@import url(normalize-css/normalize.css);
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
 /**
  * CORE BRANDING STYLES
@@ -232,6 +232,11 @@
  */
 
 /**
+ * FIGCAPTION
+ * -------------------------------------------------------------------
+ */
+
+/**
  * TABLES
  * -------------------------------------------------------------------
  * Define background and border color for each table
@@ -260,6 +265,11 @@
  * WATCH OUT
  * $progress-height and $range-slider-height are equal to $switch-height
  * In this way, changing the height of the switch will also affect the height of the progress bar and range slider
+ */
+
+/**
+ * FIELDSET
+ * -------------------------------------------------------------------
  */
 
 /**
@@ -316,6 +326,11 @@
  */
 
 /**
+ * CARDS
+ * -------------------------------------------------------------------
+ */
+
+/**
  * COPYRIGHT
  * -------------------------------------------------------------------
  */
@@ -327,6 +342,11 @@
 
 /**
  * TAGS
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * FLYOUT
  * -------------------------------------------------------------------
  */
 
@@ -387,6 +407,16 @@
 
 /**
  * SLIDESHOW
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * NORMALIZE
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * BASE
  * -------------------------------------------------------------------
  */
 
@@ -774,6 +804,260 @@
 }
 
 /**
+ * LAYOUT
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * HTML styling
+ * -------------------------------------------------------------------
+ */
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * Remove inner padding and
+ * border in Firefox 4+
+ */
+
+::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+
+/**
+ * Hide OS controls for Windows
+ * http://msdn.microsoft.com/en-us/library/windows/apps/hh465742.aspx
+ */
+
+::-ms-expand {
+  display: none;
+}
+
+/**
+ * Hide clear button in input fields for Windows
+ * https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx
+ */
+
+::-ms-clear {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/**
+ * MEDIA
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * BASE STYLING
+ * -------------------------------------------------------------------
+ */
+
+img {
+  vertical-align: middle;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1rem;
+  line-height: 1.3;
+  padding: 0.75rem;
+}
+
+/**
+ * TYPOGRAPHY
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * BASE
+ * -------------------------------------------------------------------
+ */
+
+body {
+  color: #081f2c;
+  font-family: "Sun Antwerpen Regular";
+  font-size: 1rem;
+  line-height: 1;
+}
+
+::-moz-selection {
+  background-color: #cce0f0;
+}
+
+::selection {
+  background-color: #cce0f0;
+}
+
+/**
+ * HEADERS
+ * -------------------------------------------------------------------
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Antwerpen Regular";
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1,
+.h1 {
+  font-size: 2.98598rem;
+}
+
+h2,
+.h2 {
+  font-size: 2.48832rem;
+}
+
+h3,
+.h3 {
+  font-size: 2.0736rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.728rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.44rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.2rem;
+}
+
+/**
+ * PARAGRAPHS
+ * -------------------------------------------------------------------
+ */
+
+p {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/**
+ * BLOCKQUOTES
+ * -------------------------------------------------------------------
+ */
+
+blockquote {
+  border-left: 1px solid #b0b0b0;
+  margin: 0;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+}
+
+blockquote p {
+  display: inline;
+  font-family: "Antwerpen Regular";
+}
+
+blockquote cite {
+  color: #cf0039;
+  display: inline-block;
+  font-style: normal;
+  line-height: 1.1;
+}
+
+blockquote cite:before {
+  content: '— ';
+}
+
+/**
+ * SMALL
+ * -------------------------------------------------------------------
+ */
+
+small,
+.small {
+  color: #7d7d7d;
+  font-size: 0.875rem;
+}
+
+/**
+ * MARK
+ * -------------------------------------------------------------------
+ */
+
+mark {
+  background-color: #0064b4;
+  color: white;
+  padding: 0 .125rem;
+}
+
+/**
+ * HORIZONTAL RULES
+ * -------------------------------------------------------------------
+ */
+
+hr {
+  border: none;
+  border-top: 1px solid #b0b0b0;
+  height: 1px;
+  margin: 1.5rem 0;
+}
+
+/**
+ * LINKS
+ * -------------------------------------------------------------------
+ */
+
+a {
+  color: #0064b4;
+  text-decoration: none;
+  transition: color 250ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #005599;
+  text-decoration: underline;
+}
+
+a:hover,
+a:active,
+a:focus {
+  outline: none;
+}
+
+/**
  * UTILITIES
  * -------------------------------------------------------------------
  */
@@ -1121,387 +1405,6 @@
 }
 
 /**
- * BASE
- * -------------------------------------------------------------------
- */
-
-/**
- * NORMALIZE.CSS
- * -------------------------------------------------------------------
- * Adopting a component-driven archtitecture (atomic design)
- * so we use a (custom) minimal version of the normalize.css
- *
- * Background & inspiration:
- * - http://bradfrostweb.com/blog/post/atomic-web-design
- * - https://github.com/necolas/normalize.css
- * - https://github.com/railsware/applepie
- */
-
-html {
-  /**
-   * Remove gray highlight when users
-   * tap on a link in Mobile Safari (IOS)
-   * http://css-tricks.com/snippets/css/remove-gray-highlight-when-tapping-links-in-mobile-safari
-   */
-  -webkit-tap-highlight-color: transparent;
-  /**
-   * Enable smooth fonts
-   * Support for this is not consistent and differences in rendering are noticable
-   */
-  font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  /**
-   * Fix broken box-model (1/2)
-   * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
-   */
-  box-sizing: border-box;
-  /**
-   * Prevent text size adjust after orientation change
-   * without disabling zoom (with the viewport meta-tag)
-   */
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  text-size-adjust: 100%;
-}
-
-/**
- * Fix broken box-model (2/2)
- */
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-/**
- * Correct 'block' display not defined in IE 8/9
- */
-
-article,
-aside,
-footer,
-header,
-main,
-nav,
-section {
-  display: block;
-}
-
-/**
- * BUTTONS
- * -------------------------------------------------------------------
- */
-
-/**
- * Correct font properties not being inherited
- * Address overflow set to hidden in IE 8/9/10/11
- * Remove Mobile Firefox button gradient - http://davidwalsh.name/remove-mobile-firefox-button-gradient
- * Remove glowing outline when receiving focus
- * Remove default margin on Safari
- */
-
-button {
-  background-image: none;
-  cursor: pointer;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-  overflow: visible;
-}
-
-/**
- * Remove inner padding and
- * border in Firefox 4+
- */
-
-::-moz-focus-inner {
-  border: none;
-  padding: 0;
-}
-
-/**
- * MARGINS
- * -------------------------------------------------------------------
- * If a margin/padding is set somewhere, remove it from below
- * Keep it DRY and prevent overwrites
- */
-
-h1,
-h2,
-h3,
-h4,
-p,
-h5,
-h6,
-ul,
-ol,
-body {
-  margin: 0;
-}
-
-/**
- * FORMS
- * -------------------------------------------------------------------
- */
-
-/**
- * Address Firefox 4+ setting line-height
- * using !important in the UA stylesheet
- */
-
-input {
-  line-height: normal;
-}
-
-/**
- * Address inconsistent text-transform
- * inheritance in Firefox, IE and Opera
- */
-
-select {
-  text-transform: none;
-}
-
-/**
- * Correct colors not being inherited
- * Known issue: affects color of disabled elements
- * Correct font properties not being inherited
- * Remove glowing outline when receiving focus
- * Address margins set differently in FF 4+, Safari and Chrome
- * Reset input types on IOS
- */
-
-input,
-select,
-textarea {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  color: inherit;
-  font: inherit;
-  margin: 0;
-  outline: 0;
-}
-
-/**
- * Hide OS controls for Windows
- * http://msdn.microsoft.com/en-us/library/windows/apps/hh465742.aspx
- */
-
-::-ms-expand {
-  display: none;
-}
-
-/**
- * Improve usability and consistency
- * with other button and input types
- */
-
-select,
-input[type='submit'],
-input[type='reset'] {
-  cursor: pointer;
-}
-
-/**
- * It's recommended that you don't attempt to style these
- * Firefox doesn't respect box-sizing, padding or width
- * Address box sizing set to content-box in IE 8/9/10
- * Remove excess padding in IE 8/9/10
- */
-
-input[type='checkbox'],
-input[type='radio'] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-/**
- * Remove vertical
- * scrollbar in IE8+
- */
-
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-
-/**
- * TYPOGRAPHY
- * -------------------------------------------------------------------
- */
-
-/**
- * BASE
- * -------------------------------------------------------------------
- */
-
-body {
-  color: #081f2c;
-  font-family: "Sun Antwerpen Regular";
-  font-size: 1rem;
-  line-height: 1;
-}
-
-::-moz-selection {
-  background-color: #cce0f0;
-}
-
-::selection {
-  background-color: #cce0f0;
-}
-
-/**
- * HEADERS
- * -------------------------------------------------------------------
- */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: "Antwerpen Regular";
-  font-weight: 500;
-  line-height: 1.1;
-  margin: 0;
-}
-
-h1,
-.h1 {
-  font-size: 2.98598rem;
-}
-
-h2,
-.h2 {
-  font-size: 2.48832rem;
-}
-
-h3,
-.h3 {
-  font-size: 2.0736rem;
-}
-
-h4,
-.h4 {
-  font-size: 1.728rem;
-}
-
-h5,
-.h5 {
-  font-size: 1.44rem;
-}
-
-h6,
-.h6 {
-  font-size: 1.2rem;
-}
-
-/**
- * PARAGRAPHS
- * -------------------------------------------------------------------
- */
-
-p {
-  font-size: 1rem;
-  line-height: 1.3;
-  margin: 0;
-}
-
-/**
- * BLOCKQUOTES
- * -------------------------------------------------------------------
- */
-
-blockquote {
-  border-left: 1px solid #b0b0b0;
-  margin: 0;
-  padding: 0.75rem 0 0.75rem 1.5rem;
-}
-
-blockquote p {
-  display: inline;
-  font-family: "Antwerpen Regular";
-  line-height: 1.1;
-}
-
-blockquote cite {
-  color: #cf0039;
-  display: inline-block;
-  font-style: normal;
-  line-height: 1.1;
-}
-
-blockquote cite:before {
-  content: '— ';
-}
-
-/**
- * SMALL
- * -------------------------------------------------------------------
- */
-
-small,
-.small {
-  color: #7d7d7d;
-  font-size: 0.875rem;
-}
-
-/**
- * MARK
- * -------------------------------------------------------------------
- */
-
-mark {
-  background-color: #0064b4;
-  color: white;
-  padding: 0 .125rem;
-}
-
-/**
- * HORIZONTAL RULES
- * -------------------------------------------------------------------
- */
-
-hr {
-  border: none;
-  border-top: 1px solid #b0b0b0;
-  height: 1px;
-  margin: 1.5rem 0;
-}
-
-/**
- * LINKS
- * -------------------------------------------------------------------
- */
-
-a {
-  color: #0064b4;
-  text-decoration: none;
-  transition: color 250ms ease-in-out;
-}
-
-a:hover,
-a:focus {
-  color: #005599;
-  text-decoration: underline;
-}
-
-a:hover,
-a:active,
-a:focus {
-  outline: none;
-}
-
-/**
  * ATOMS
  * -------------------------------------------------------------------
  */
@@ -1529,20 +1432,8 @@ a:focus {
  */
 
 .a-autocomplete {
-  background-color: white;
-  border-bottom: 1px solid #b0b0b0;
-  border-left: 1px solid #b0b0b0;
-  border-right: 1px solid #b0b0b0;
-  box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.1);
-  max-height: 15rem;
-  opacity: 0;
+  max-height: calc(14.25rem - 5px);
   overflow-y: scroll;
-  text-align: left;
-  -ms-transform: translateY(-3rem);
-  transform: translateY(-3rem);
-  transition: visibility 0s 250ms ease-in-out, opacity 250ms ease-in-out, transform 250ms ease-in-out;
-  visibility: hidden;
-  width: 100%;
 }
 
 .a-autocomplete li {
@@ -1568,26 +1459,6 @@ a:focus {
 .a-autocomplete li:hover a,
 .a-autocomplete li:focus a {
   color: #0064b4;
-}
-
-/**
- * AUTOCOMPLETE MODIFIERS
- * -------------------------------------------------------------------
- */
-
-.a-autocomplete.is-open {
-  opacity: 1;
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  transition-delay: 0s;
-  visibility: visible;
-}
-
-.a-autocomplete--fixed {
-  left: 0;
-  position: absolute;
-  top: 100%;
-  z-index: 1;
 }
 
 /**
@@ -1868,7 +1739,7 @@ a.a-avatar:active:before {
 .a-button.a-button--transparent:focus {
   color: #0064b4;
   text-decoration: none;
-  background-color: #cce0f0;
+  background-color: transparent;
 }
 
 .a-button.a-button--transparent[disabled] {
@@ -2574,14 +2445,19 @@ a.a-avatar:active:before {
 .a-button-negative.has-icon .fa,
 .a-button-outline.has-icon .fa,
 .a-button-transparent.has-icon .fa {
-  left: 50%;
+  left: 0;
+  line-height: 3rem;
   position: absolute;
-  top: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 0;
+  width: 3rem;
 }
 
 .a-button--tiny.has-icon {
+  width: 1.5rem;
+}
+
+.a-button--tiny.has-icon .fa {
+  line-height: 1.5rem;
   width: 1.5rem;
 }
 
@@ -2589,7 +2465,17 @@ a.a-avatar:active:before {
   width: 2.25rem;
 }
 
+.a-button--small.has-icon .fa {
+  line-height: 2.25rem;
+  width: 2.25rem;
+}
+
 .a-button--large.has-icon {
+  width: 3.75rem;
+}
+
+.a-button--large.has-icon .fa {
+  line-height: 3.75rem;
   width: 3.75rem;
 }
 
@@ -2719,6 +2605,65 @@ kbd kbd {
 }
 
 /**
+ * FLYOUT
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout {
+  position: relative;
+}
+
+.m-flyout__content {
+  background-color: white;
+  border: 1px solid #b0b0b0;
+  box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.1);
+  min-width: 15rem;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  -ms-transform: translateY(-3rem);
+  transform: translateY(-3rem);
+  transition: visibility 0s 250ms ease-in-out, opacity 250ms ease-in-out, transform 250ms ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 3;
+}
+
+/**
+ * FLYOUT MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout-inline {
+  display: inline-block;
+}
+
+.m-flyout.is-open .m-flyout__content {
+  opacity: 1;
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.m-flyout__content.has-padding {
+  padding: 1rem 1.5rem;
+}
+
+.m-flyout__content.is-right-aligned {
+  right: 0;
+}
+
+/**
+ * FLYOUT FIX AFTER FORM ELEMENT
+ * -------------------------------------------------------------------
+ */
+
+.a-input + .m-flyout__content {
+  margin-top: -1px;
+}
+
+/**
  * FORM ELEMENTS
  * -------------------------------------------------------------------
  */
@@ -2758,6 +2703,7 @@ fieldset + fieldset {
 
 button,
 input,
+input[type="search"],
 select,
 textarea {
   -webkit-appearance: none;
@@ -2792,6 +2738,11 @@ textarea {
   resize: vertical;
   transition: border-color 250ms ease-in-out;
   width: 100%;
+}
+
+.a-input select {
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
 }
 
 .a-input textarea {
@@ -3069,7 +3020,6 @@ textarea {
   font-family: FontAwesome;
   text-rendering: auto;
   font-size: 1.25rem;
-  height: 3rem;
   line-height: 3rem;
   position: absolute;
   right: 0;
@@ -3124,7 +3074,7 @@ textarea {
 .a-input.has-icon-left .a-input__wrapper > .fa.is-clickable,
 .a-input.has-icon-right .a-input__wrapper > .fa.is-clickable {
   cursor: pointer;
-  pointer-events: initial;
+  pointer-events: auto;
   transition: color 250ms ease-in-out;
 }
 
@@ -3538,7 +3488,6 @@ dl {
   font-size: 16px;
   height: 1.5rem;
   left: 0;
-  line-height: 1.5rem;
   margin-left: -1.5rem;
   position: absolute;
   text-align: center;
@@ -4408,6 +4357,7 @@ dl {
 .m-datepicker__calendar button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
   height: 100%;
   padding: 0;
   position: absolute;
@@ -4594,25 +4544,6 @@ dl {
  */
 
 /**
- * BASE STYLING
- * -------------------------------------------------------------------
- */
-
-img {
-  vertical-align: middle;
-}
-
-figure {
-  margin: 0;
-}
-
-figcaption {
-  font-size: 1rem;
-  line-height: 1.3;
-  padding: 0.75rem;
-}
-
-/**
  * IMAGE
  * -------------------------------------------------------------------
  */
@@ -4634,13 +4565,17 @@ figcaption {
 
 .m-image__copyright {
   bottom: 0;
+  color: white;
   position: absolute;
   right: 0;
-  -ms-transform: translateX(calc(100% - 2.25rem));
-  transform: translateX(calc(100% - 2.25rem));
+  -ms-transform: translateX(100%) translateX(-2.25rem);
+  transform: translateX(100%) translateX(-2.25rem);
 }
 
-.m-image__copyright:hover {
+.m-image__copyright:hover,
+.m-image__copyright:active,
+.m-image__copyright:focus {
+  color: white;
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
@@ -4786,7 +4721,7 @@ figcaption {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 5;
+  z-index: 6;
 }
 
 .m-overlay.is-active {
@@ -4821,19 +4756,19 @@ figcaption {
 }
 
 .m-overlay__inner {
+  -ms-overflow-style: none;
   max-height: calc(100vh - 8.75rem);
   overflow: auto;
   overflow-y: scroll;
 }
 
-.m-overlay__slideshow.m-slideshow {
-  margin: 0 auto;
+.m-overlay__slideshow.o-slideshow {
   max-height: 80vh;
   max-width: 105vh;
   width: 100%;
 }
 
-.m-overlay__slideshow.m-slideshow .m-slideshow__footer {
+.m-overlay__slideshow.o-slideshow .o-slideshow__footer {
   color: white;
 }
 
@@ -5139,8 +5074,8 @@ figcaption {
   font-size: 19.2px;
   font-weight: 700;
   height: 2.25rem;
-  line-height: 2.25rem;
   margin: 0 auto 1.5rem;
+  padding: 0.5rem 0;
   text-align: center;
   width: 2.25rem;
 }
@@ -5217,6 +5152,7 @@ figcaption {
 .m-tag__input {
   background-color: transparent;
   border: none;
+  border-radius: 0;
   min-height: 2.25rem;
   padding: 0 0.75rem;
 }
@@ -5255,6 +5191,13 @@ figcaption {
  * -------------------------------------------------------------------
  */
 
+.m-upload__inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 .m-upload__dropzone {
   -ms-flex-align: center;
   align-items: center;
@@ -5271,6 +5214,7 @@ figcaption {
   position: relative;
   text-align: center;
   transition: background 250ms ease-in-out;
+  width: 100%;
 }
 
 .m-upload__dropzone:active,
@@ -5291,7 +5235,7 @@ figcaption {
   width: 100%;
 }
 
-.m-upload__inner {
+.m-upload__content {
   max-width: 22.5rem;
   width: 100%;
 }
@@ -5423,7 +5367,7 @@ figcaption {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 4;
+  z-index: 5;
 }
 
 /**

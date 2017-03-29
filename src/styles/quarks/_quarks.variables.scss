@@ -135,14 +135,16 @@ $animation-normal:        $animation-duration $animation-easing !default;
  */
 
 $z-indexes: (
-  'overlay':     5,
-  'header':      4,
-  'tooltip':     3,
+  'overlay':     6,
+  'header':      5,
+  'tooltip':     4,
+  'flyout':      3,
   'datepicker':  2,
   'base':        1,
   'auto':        0,
   'cellar':     -1
 );
+
 
 /**
  * ICON SIZES
@@ -182,6 +184,7 @@ $link-hover-color:        mix($link-color, $black, 85%) !default;
 $pre-color:               $text-color !default;
 $pre-bg:                  $background-color-light !default;
 $pre-font-size:           1rem !default;
+$pre-padding:             $spacer-xs !default;
 
 
 /**
@@ -193,10 +196,12 @@ $pre-font-size:           1rem !default;
 $code-color:              $text-color !default;
 $code-bg:                 $background-color-light !default;
 $code-font-size:          .875rem !default;
+$code-padding:            $spacer-xs / 6 $spacer-xs / 2 !default;
 
 $kbd-color:               $white !default;
 $kbd-bg:                  $grey !default;
 $kbd-font-size:          .875rem !default;
+$kbd-padding:             $code-padding !default;
 
 
 /**
@@ -214,7 +219,15 @@ $mark-bg:                 $brand-primary !default;
  * -------------------------------------------------------------------
  */
 
-$cite-color:                  $brand-secondary !default;
+$cite-color:              $brand-secondary !default;
+
+
+/**
+ * FIGCAPTION
+ * -------------------------------------------------------------------
+ */
+
+$figcaption-padding:      $spacer-xs !default;
 
 
 /**
@@ -236,6 +249,8 @@ $table-secondary-head-bg:     $brand-secondary !default;
 
 $table-striped-bg:        $background-color-light !default;
 
+$table-padding:           0 $spacer-xs !default;
+
 
 /**
  * BUTTONS
@@ -249,6 +264,8 @@ $btn-font-size-ti:        $font-size-xs !default;
 $btn-font-size-sm:        $font-size-sm !default;
 $btn-font-size:           $font-size-base !default;
 $btn-font-size-lg:        $font-size-lg !default;
+
+$btn-padding:             0 $spacer !default;
 
 $btn-icon-size-ti:        $icon-size-ti !default;
 $btn-icon-size-sm:        $icon-size-sm !default;
@@ -311,6 +328,10 @@ $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
+$input-padding:                   0 $spacer !default;
+$textarea-padding:                $spacer-sm $spacer !default;
+
+
 
 /**
  * RADIO BUTTONS & CHECKBOXES
@@ -343,6 +364,14 @@ $switch-handle-bg-active: $brand-primary !default;
 
 
 /**
+ * FIELDSET
+ * -------------------------------------------------------------------
+ */
+
+$fieldset-padding:    $spacer-lg 0 !default;
+
+
+/**
  * TOOLTIP
  * -------------------------------------------------------------------
  */
@@ -359,6 +388,7 @@ $tooltip-primary-bg:        $brand-primary !default;
 $tooltip-secondary-color:   $tooltip-primary-color !default;
 $tooltip-secondary-bg:      $brand-secondary !default;
 
+$tooltip-padding:           $spacer / 3 $spacer-xs !default;
 $tooltip-arrow-height:      $spacer / 4 !default;
 
 
@@ -401,7 +431,9 @@ $range-slider-handle-bg:          $brand-primary !default;
  * -------------------------------------------------------------------
  */
 
-$autocomplete-hover:      $grey-lighter !default;
+$autocomplete-hover:           $grey-lighter !default;
+$autocomplete-max-height:      calc(#{$spacer * 10 - $spacer / 2} - 5px) !default; // 5 rows - half a row (for clarity) - 5 borders of 1px
+$autocomplete-list-padding:    $spacer / 3 * 2 $spacer !default;
 
 
 /**
@@ -441,6 +473,8 @@ $accordion-header-bg-hover:   $background-color-light !default;
 $accordion-content-bg:        $accordion-header-bg !default;
 $accordion-icon-color:        $brand-primary !default;
 $accordion-icon-size:         $font-size-lg !default;
+$accordion-header-padding:    $spacer-xs $spacer-lg $spacer-xs $spacer-xs !default;
+$accordion-content-padding:   $spacer !default;
 
 
 /**
@@ -452,6 +486,7 @@ $alert-default:           $brand-primary !default;
 $alert-success:           $state-success !default;
 $alert-warning:           $state-warning !default;
 $alert-danger:            $state-danger !default;
+$alert-padding:           $spacer !default;
 
 
 /**
@@ -477,6 +512,7 @@ $badge-font-size:         $font-size-ti !default;
 $badge-font-weight:       $bold !default;
 $badge-height:            $spacer-sm !default;
 $badge-line-height:       $badge-height !default;
+$badge-padding:           0 $spacer / 4 !default;
 
 $badge-default-color:     $black-pearl !default;
 $badge-default-bg:        $grey-light !default;
@@ -503,6 +539,15 @@ $badge-danger-bg:         $state-danger !default;
  */
 
 $breadcrumb-arrow-color:  $grey !default;
+
+
+/**
+ * CARDS
+ * -------------------------------------------------------------------
+ */
+
+$card-header-padding:    $spacer-xs !default;
+$card-content-padding:   $spacer !default;
 
 
 /**
@@ -544,6 +589,8 @@ $label-warning-border:    $label-warning-color !default;
 $label-danger-color:      $state-danger !default;
 $label-danger-border:     $label-danger-color !default;
 
+$label-padding:           0 $spacer / 4 !default;
+
 
 /**
  * TAGS
@@ -555,6 +602,18 @@ $tag-bg:                  $background-color-light !default;
 $tag-border:              $border-color !default;
 $tag-border-focus:        $input-border-focus !default;
 $tag-placeholder:         $grey !default;
+$tag-height:              $spacer-md !default;
+
+
+/**
+ * FLYOUT
+ * -------------------------------------------------------------------
+ */
+
+$flyout-bg:               $white !default;
+$flyout-border:           $border-color !default;
+$flyout-min-width:        $spacer * 10 !default;
+$flyout-xxx:               xxx !default;
 
 
 /**
@@ -631,6 +690,8 @@ $modal-border:            $border-color !default;
 $modal-width:             $spacer * 17 !default;
 $modal-width-large:       $spacer * 25 !default;
 
+$modal-padding:           $spacer !default;
+
 
 /**
  * NAVIGATION
@@ -647,6 +708,7 @@ $nav-color-active:        $nav-color-hover !default;
 $nav-bg:                  transparent !default;
 $nav-bg-hover:            $grey-lighter !default;
 $nav-bg-active:           $nav-bg !default;
+$nav-padding:             $spacer / 3 * 2 $spacer !default;
 
 
 /**
@@ -694,6 +756,7 @@ $step-indicator-square-size:            $spacer-md !default;
  */
 
 $upload-height:           $spacer * 5 !default;
+$upload-padding:          $spacer-md $spacer !default;
 
 $upload-color:            $text-color !default;
 $upload-bg:               $white !default;

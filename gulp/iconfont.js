@@ -53,8 +53,8 @@ gulp.task('icon-font', function() {
                     className: 'icon'
 
                 }))
-                .pipe(rename('_quarks.antwerpen-icons.scss'))
-                .pipe(gulp.dest('src/styles/quarks'));
+                .pipe(rename('_base.antwerpen-icons.scss'))
+                .pipe(gulp.dest('src/styles/base'));
 
         })
         .pipe(gulp.dest('src/fonts'));
