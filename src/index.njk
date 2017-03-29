@@ -452,6 +452,43 @@
 
             <br><br><br>
 
+            <script>
+                function toggleFlyout(id) {
+                    var el = document.getElementById(id);
+                    if(el.classList.contains('is-open')) {
+                        el.classList.remove('is-open');
+                    }
+                    else {
+                        el.classList.add('is-open');
+                    }
+                }
+            </script>
+
+            <div class="a-flyout-wrapper is-open">
+                <button class="a-button">
+                    Dropdown Left
+                </button>
+                <div class="a-flyout a-flyout--fixed-left">
+                    <div class="a-flyout-inner">
+                        Dit is een dropdown / flyout.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="a-flyout-wrapper is-open">
+                <button class="a-button">
+                    Dropdown
+                </button>
+                <div class="a-flyout a-flyout--fixed"> 
+                    <div class="a-flyout-inner">
+                        Dit is een dropdown / flyout.
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br>
+            <br><br><br>
+
             <a href="#">
                 Dit is een mooie link
             </a>

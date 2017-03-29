@@ -1,0 +1,54 @@
+/**
+ * FLYOUT
+ * -------------------------------------------------------------------
+ */
+
+.a-flyout-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.a-flyout {
+  background-color: $input-bg;
+  border-top: 1px solid $input-border;
+  border-bottom: 1px solid $input-border;
+  border-left: 1px solid $input-border;
+  border-right: 1px solid $input-border;
+  box-shadow: $box-shadow;
+  max-height: calc(#{$spacer * 10 - $spacer / 2} - 5px); // 5 rows - half a row (for clarity) - 5 borders of 1px
+  opacity: 0;
+  overflow-y: scroll;
+  text-align: left;
+  transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
+  visibility: hidden;
+  width: 100%;
+  min-width: $spacer * 10;
+  
+  .a-flyout-inner {
+    padding: $spacer / 3 * 2 $spacer;
+  }
+}
+
+/**
+ * FLYOUT MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-flyout-wrapper.is-open .a-flyout {
+  opacity: 1;
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.a-flyout--fixed {
+  left: 0;
+  position: absolute;
+  top: 100%;
+  z-index: layer('base');
+}
+
+.a-flyout--fixed-left {
+  @extend .a-flyout--fixed;
+  left: auto;
+  right: 0;
+}
