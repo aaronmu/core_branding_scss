@@ -19,7 +19,7 @@ fieldset {
   border-top: 1px solid $border-color;
   margin: 0;
   min-width: 0;
-  padding: $spacer-lg 0;
+  padding: $fieldset-padding;
 
   + fieldset {
     margin-top: -1px;

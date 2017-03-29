@@ -5,30 +5,6 @@
 
 
 /**
- * BASE STYLING
- * -------------------------------------------------------------------
- */
-
-img {
-  vertical-align: middle;
-}
-
-figure {
-  margin: 0;
-}
-
-figcaption {
-  font-size: rem($font-size-base);
-  line-height: $line-height-paragraph;
-  padding: $spacer-xs;
-
-  @include at($screen-sm) {
-    padding: $spacer / 3 * 2 $spacer-xs;
-  }
-}
-
-
-/**
  * IMAGE
  * -------------------------------------------------------------------
  */
@@ -51,11 +27,15 @@ figcaption {
 
 .m-image__copyright {
   bottom: 0;
+  color: $copyright-color;
   position: absolute;
   right: 0;
-  transform: translateX(calc(100% - #{$copyright-height}));
+  transform: translateX(100%) translateX(-$copyright-height);
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
+    color: $copyright-color;
     transform: translateX(0);
   }
 }

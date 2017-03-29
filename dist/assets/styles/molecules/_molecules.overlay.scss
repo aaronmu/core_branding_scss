@@ -46,18 +46,18 @@
 }
 
 .m-overlay__inner {
+  -ms-overflow-style: none;
   max-height: calc(100vh - 8.75rem);
   overflow: auto;
   overflow-y: scroll;
 }
 
-.m-overlay__slideshow.m-slideshow {
-  margin: 0 auto;
+.m-overlay__slideshow.o-slideshow {
   max-height: 80vh;
   max-width: 105vh;
   width: 100%;
 
-  .m-slideshow__footer {
+  .o-slideshow__footer {
     color: $slideshow-footer-color-light;
   }
 }
