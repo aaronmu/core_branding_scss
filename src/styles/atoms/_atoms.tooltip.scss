@@ -12,7 +12,7 @@
   display: inline-block;
   max-width: $tooltip-max-width;
   min-height: $tooltip-min-height;
-  padding: $spacer / 3 $spacer-xs;
+  padding: $tooltip-padding;
   position: relative;
 
   a {

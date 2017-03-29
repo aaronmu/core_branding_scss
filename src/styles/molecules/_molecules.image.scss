@@ -5,30 +5,6 @@
 
 
 /**
- * BASE STYLING
- * -------------------------------------------------------------------
- */
-
-img {
-  vertical-align: middle;
-}
-
-figure {
-  margin: 0;
-}
-
-figcaption {
-  font-size: rem($font-size-base);
-  line-height: $line-height-paragraph;
-  padding: $spacer-xs;
-
-  @include at($screen-sm) {
-    padding: $spacer / 3 * 2 $spacer-xs;
-  }
-}
-
-
-/**
  * IMAGE
  * -------------------------------------------------------------------
  */

@@ -10,7 +10,7 @@
   border-left: 1px solid $input-border;
   border-right: 1px solid $input-border;
   box-shadow: $box-shadow;
-  max-height: calc(#{$spacer * 10 - $spacer / 2} - 5px); // 5 rows - half a row (for clarity) - 5 borders of 1px
+  max-height: $autocomplete-max-height;
   opacity: 0;
   overflow-y: scroll;
   text-align: left;
@@ -25,7 +25,7 @@
     > a {
       color: $input-color;
       display: block;
-      padding: $spacer / 3 * 2 $spacer;
+      padding: $autocomplete-list-padding;
       transition: color $animation-duration $animation-easing;
     }
 
