@@ -346,6 +346,11 @@
  */
 
 /**
+ * FLYOUT
+ * -------------------------------------------------------------------
+ */
+
+/**
  * FOOTER
  * -------------------------------------------------------------------
  */
@@ -1427,20 +1432,8 @@ a:focus {
  */
 
 .a-autocomplete {
-  background-color: white;
-  border-bottom: 1px solid #b0b0b0;
-  border-left: 1px solid #b0b0b0;
-  border-right: 1px solid #b0b0b0;
-  box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.1);
   max-height: calc(14.25rem - 5px);
-  opacity: 0;
   overflow-y: scroll;
-  text-align: left;
-  -ms-transform: translateY(-3rem);
-  transform: translateY(-3rem);
-  transition: visibility 0s 250ms ease-in-out, opacity 250ms ease-in-out, transform 250ms ease-in-out;
-  visibility: hidden;
-  width: 100%;
 }
 
 .a-autocomplete li {
@@ -1466,26 +1459,6 @@ a:focus {
 .a-autocomplete li:hover a,
 .a-autocomplete li:focus a {
   color: #0064b4;
-}
-
-/**
- * AUTOCOMPLETE MODIFIERS
- * -------------------------------------------------------------------
- */
-
-.a-autocomplete.is-open {
-  opacity: 1;
-  -ms-transform: translateY(0);
-  transform: translateY(0);
-  transition-delay: 0s;
-  visibility: visible;
-}
-
-.a-autocomplete--fixed {
-  left: 0;
-  position: absolute;
-  top: 100%;
-  z-index: 1;
 }
 
 /**
@@ -2629,6 +2602,65 @@ kbd kbd {
 .a-copyright__label {
   line-height: 2.25rem;
   margin-right: 0.75rem;
+}
+
+/**
+ * FLYOUT
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout {
+  position: relative;
+}
+
+.m-flyout__content {
+  background-color: white;
+  border: 1px solid #b0b0b0;
+  box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.1);
+  min-width: 15rem;
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  -ms-transform: translateY(-3rem);
+  transform: translateY(-3rem);
+  transition: visibility 0s 250ms ease-in-out, opacity 250ms ease-in-out, transform 250ms ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 3;
+}
+
+/**
+ * FLYOUT MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout-inline {
+  display: inline-block;
+}
+
+.m-flyout.is-open .m-flyout__content {
+  opacity: 1;
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  transition-delay: 0s;
+  visibility: visible;
+}
+
+.m-flyout__content.has-padding {
+  padding: 1rem 1.5rem;
+}
+
+.m-flyout__content.is-right-aligned {
+  right: 0;
+}
+
+/**
+ * FLYOUT FIX AFTER FORM ELEMENT
+ * -------------------------------------------------------------------
+ */
+
+.a-input + .m-flyout__content {
+  margin-top: -1px;
 }
 
 /**
@@ -4689,7 +4721,7 @@ dl {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 5;
+  z-index: 6;
 }
 
 .m-overlay.is-active {
@@ -5335,7 +5367,7 @@ dl {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 4;
+  z-index: 5;
 }
 
 /**

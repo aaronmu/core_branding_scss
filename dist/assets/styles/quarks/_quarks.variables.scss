@@ -135,14 +135,16 @@ $animation-normal:        $animation-duration $animation-easing !default;
  */
 
 $z-indexes: (
-  'overlay':     5,
-  'header':      4,
-  'tooltip':     3,
+  'overlay':     6,
+  'header':      5,
+  'tooltip':     4,
+  'flyout':      3,
   'datepicker':  2,
   'base':        1,
   'auto':        0,
   'cellar':     -1
 );
+
 
 /**
  * ICON SIZES
@@ -547,6 +549,7 @@ $breadcrumb-arrow-color:  $grey !default;
 $card-header-padding:    $spacer-xs !default;
 $card-content-padding:   $spacer !default;
 
+
 /**
  * COPYRIGHT
  * -------------------------------------------------------------------
@@ -600,6 +603,17 @@ $tag-border:              $border-color !default;
 $tag-border-focus:        $input-border-focus !default;
 $tag-placeholder:         $grey !default;
 $tag-height:              $spacer-md !default;
+
+
+/**
+ * FLYOUT
+ * -------------------------------------------------------------------
+ */
+
+$flyout-bg:               $white !default;
+$flyout-border:           $border-color !default;
+$flyout-min-width:        $spacer * 10 !default;
+$flyout-xxx:               xxx !default;
 
 
 /**
