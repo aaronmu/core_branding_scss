@@ -16,14 +16,12 @@
   background-color: $flyout-bg;
   border: 1px solid $flyout-border;
   box-shadow: $box-shadow;
-  min-width: $flyout-min-width;
   opacity: 0;
   position: absolute;
   text-align: left;
   transform: translateY(-$spacer-lg);
   transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
   visibility: hidden;
-  width: 100%;
   z-index: layer('flyout');
 }
 
@@ -33,14 +31,55 @@
  * -------------------------------------------------------------------
  */
 
+
+/**
+ * FLYOUT POSITIONING
+ * -------------------------------------------------------------------
+ */
+
 .m-flyout--inline {
   display: inline-block;
 }
 
-.m-flyout--limited .m-flyout__content {
+.m-flyout--right .m-flyout__content {
+  right: 0;
+}
+
+
+/**
+ * FLYOUT SIZES
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout--full .m-flyout__content,
+.m-flyout--lg .m-flyout__content,
+.m-flyout--md .m-flyout__content,
+.m-flyout--sm .m-flyout__content {
+  width: 100%;
+}
+
+.m-flyout--lg .m-flyout__content {
+  max-width: $flyout-max-width-lg;
+}
+
+.m-flyout--md .m-flyout__content {
+  max-width: $flyout-max-width-md;
+}
+
+.m-flyout--sm .m-flyout__content {
+  max-width: $flyout-max-width-sm;
+}
+
+.m-flyout--scrollable .m-flyout__content {
   max-height: $flyout-max-height;
   overflow-y: scroll;
 }
+
+
+/**
+ * FLYOUT VISIBILITY
+ * -------------------------------------------------------------------
+ */
 
 .m-flyout.is-open .m-flyout__content {
   opacity: 1;
@@ -51,10 +90,6 @@
 
 .m-flyout__content.has-padding {
   padding: $spacer / 3 * 2 $spacer;
-}
-
-.m-flyout__content--right {
-  right: 0;
 }
 
 
