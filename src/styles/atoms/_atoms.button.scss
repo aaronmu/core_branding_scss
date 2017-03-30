@@ -429,3 +429,16 @@
     width: $spacer-xl;
   }
 }
+
+
+/**
+ * BLOCK BUTTON
+ * -------------------------------------------------------------------
+ */
+
+.a-button--block {
+  @include at($screen-xs) {
+    display: block;
+    width: 100%;
+  }
+}
