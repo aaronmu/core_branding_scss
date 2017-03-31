@@ -18,7 +18,6 @@
   box-shadow: $box-shadow;
   opacity: 0;
   position: absolute;
-  text-align: left;
   transform: translateY(-$spacer-lg);
   transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
   visibility: hidden;

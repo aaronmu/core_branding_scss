@@ -2594,7 +2594,6 @@ kbd kbd {
   box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.1);
   opacity: 0;
   position: absolute;
-  text-align: left;
   -ms-transform: translateY(-3rem);
   transform: translateY(-3rem);
   transition: visibility 0s 250ms ease-in-out, opacity 250ms ease-in-out, transform 250ms ease-in-out;
