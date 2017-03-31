@@ -104,7 +104,8 @@
       }
     }
 
-    &.is-unavailable {
+    &.is-unavailable,
+    &:disabled {
       background-color: $datepicker-unavailable-bg;
       color: $state-disabled;
       cursor: not-allowed;
