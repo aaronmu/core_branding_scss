@@ -291,7 +291,7 @@
  */
 
 /**
- * AUTOCOMPLETE
+ * LINK LIST
  * -------------------------------------------------------------------
  */
 
@@ -1427,41 +1427,6 @@ a:focus {
 }
 
 /**
- * AUTOCOMPLETE
- * -------------------------------------------------------------------
- */
-
-.a-autocomplete {
-  max-height: calc(14.25rem - 5px);
-  overflow-y: scroll;
-}
-
-.a-autocomplete li {
-  transition: background 250ms ease-in-out;
-}
-
-.a-autocomplete li > a {
-  color: #081f2c;
-  display: block;
-  padding: 1rem 1.5rem;
-  transition: color 250ms ease-in-out;
-}
-
-.a-autocomplete li:not(:first-child) {
-  border-top: 1px solid #b0b0b0;
-}
-
-.a-autocomplete li:hover,
-.a-autocomplete li:focus {
-  background-color: #f3f3f3;
-}
-
-.a-autocomplete li:hover a,
-.a-autocomplete li:focus a {
-  color: #0064b4;
-}
-
-/**
  * AVATARS
  * -------------------------------------------------------------------
  */
@@ -2480,6 +2445,11 @@ a.a-avatar:active:before {
 }
 
 /**
+ * BLOCK BUTTON
+ * -------------------------------------------------------------------
+ */
+
+/**
  * CODE
  * -------------------------------------------------------------------
  */
@@ -2613,11 +2583,15 @@ kbd kbd {
   position: relative;
 }
 
+/**
+ * FLYOUT ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
 .m-flyout__content {
   background-color: white;
   border: 1px solid #b0b0b0;
   box-shadow: 0.75rem 0.75rem 0 rgba(0, 0, 0, 0.1);
-  min-width: 15rem;
   opacity: 0;
   position: absolute;
   text-align: left;
@@ -2625,7 +2599,6 @@ kbd kbd {
   transform: translateY(-3rem);
   transition: visibility 0s 250ms ease-in-out, opacity 250ms ease-in-out, transform 250ms ease-in-out;
   visibility: hidden;
-  width: 100%;
   z-index: 3;
 }
 
@@ -2634,9 +2607,52 @@ kbd kbd {
  * -------------------------------------------------------------------
  */
 
-.m-flyout-inline {
+/**
+ * FLYOUT POSITIONING
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout--inline {
   display: inline-block;
 }
+
+.m-flyout--right .m-flyout__content {
+  right: 0;
+}
+
+/**
+ * FLYOUT SIZES
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout--full .m-flyout__content,
+.m-flyout--lg .m-flyout__content,
+.m-flyout--md .m-flyout__content,
+.m-flyout--sm .m-flyout__content {
+  width: 100%;
+}
+
+.m-flyout--lg .m-flyout__content {
+  max-width: 45rem;
+}
+
+.m-flyout--md .m-flyout__content {
+  max-width: 30rem;
+}
+
+.m-flyout--sm .m-flyout__content {
+  max-width: 15rem;
+}
+
+.m-flyout--scrollable .m-flyout__content {
+  max-height: 13.5rem;
+  overflow-y: scroll;
+}
+
+/**
+ * FLYOUT VISIBILITY
+ * -------------------------------------------------------------------
+ */
 
 .m-flyout.is-open .m-flyout__content {
   opacity: 1;
@@ -2648,10 +2664,6 @@ kbd kbd {
 
 .m-flyout__content.has-padding {
   padding: 1rem 1.5rem;
-}
-
-.m-flyout__content.is-right-aligned {
-  right: 0;
 }
 
 /**
@@ -3233,12 +3245,12 @@ dl {
  * List without default padding and standard list styling.
  */
 
-.a-autocomplete,
 .a-list--reset,
 .m-breadcrumbs,
 .m-button-list,
 .m-gallery,
 .m-icon-list,
+.m-link-list,
 .m-nav-list,
 .m-nav-tabs,
 .m-pagination,
@@ -3251,24 +3263,24 @@ dl {
   padding: 0;
 }
 
-.a-autocomplete ul,
 .a-list--reset ul,
 .m-breadcrumbs ul,
 .m-button-list ul,
 .m-gallery ul,
 .m-icon-list ul,
+.m-link-list ul,
 .m-nav-list ul,
 .m-nav-tabs ul,
 .m-pagination ul,
 .m-step-indicator ul,
 .m-upload__files ul,
 .o-tag-list ul,
-.a-autocomplete ol,
 .a-list--reset ol,
 .m-breadcrumbs ol,
 .m-button-list ol,
 .m-gallery ol,
 .m-icon-list ol,
+.m-link-list ol,
 .m-nav-list ol,
 .m-nav-tabs ol,
 .m-pagination ol,
@@ -4403,14 +4415,17 @@ dl {
   background-color: #d8d8d8;
 }
 
-.m-datepicker__calendar button.is-unavailable {
+.m-datepicker__calendar button.is-unavailable,
+.m-datepicker__calendar button:disabled {
   background-color: white;
   color: #d8d8d8;
   cursor: not-allowed;
 }
 
 .m-datepicker__calendar button.is-unavailable:hover,
-.m-datepicker__calendar button.is-unavailable:active {
+.m-datepicker__calendar button.is-unavailable:active,
+.m-datepicker__calendar button:disabled:hover,
+.m-datepicker__calendar button:disabled:active {
   background-color: white;
 }
 
@@ -4578,6 +4593,50 @@ dl {
   color: white;
   -ms-transform: translateX(0);
   transform: translateX(0);
+}
+
+/**
+ * LINK LIST
+ * -------------------------------------------------------------------
+ */
+
+.m-link-list li {
+  border-top: 1px solid #b0b0b0;
+  transition: background 250ms ease-in-out;
+}
+
+.m-link-list li > a {
+  color: #081f2c;
+  display: block;
+  padding: 1rem 1.5rem;
+  transition: color 250ms ease-in-out;
+}
+
+.m-link-list li:last-child {
+  border-bottom: 1px solid #b0b0b0;
+}
+
+.m-link-list li:hover,
+.m-link-list li:focus {
+  background-color: #f3f3f3;
+}
+
+.m-link-list li:hover a,
+.m-link-list li:focus a {
+  color: #0064b4;
+}
+
+/**
+ * LINK LIST MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-link-list--no-border li:first-child {
+  border-top: none;
+}
+
+.m-link-list--no-border li:last-child {
+  border-bottom: none;
 }
 
 /**
@@ -5530,6 +5589,11 @@ dl {
     display: inline-block;
     vertical-align: middle;
     width: auto;
+  }
+
+  .a-button--block {
+    display: block;
+    width: 100%;
   }
 
   .a-toggle {
