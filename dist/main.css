@@ -3249,10 +3249,10 @@ dl {
 .m-button-list,
 .m-gallery,
 .m-icon-list,
-.m-link-list,
 .m-nav-list,
 .m-nav-tabs,
 .m-pagination,
+.m-selectable-list,
 .m-step-indicator,
 .m-upload__files,
 .o-tag-list {
@@ -3267,10 +3267,10 @@ dl {
 .m-button-list ul,
 .m-gallery ul,
 .m-icon-list ul,
-.m-link-list ul,
 .m-nav-list ul,
 .m-nav-tabs ul,
 .m-pagination ul,
+.m-selectable-list ul,
 .m-step-indicator ul,
 .m-upload__files ul,
 .o-tag-list ul,
@@ -3279,10 +3279,10 @@ dl {
 .m-button-list ol,
 .m-gallery ol,
 .m-icon-list ol,
-.m-link-list ol,
 .m-nav-list ol,
 .m-nav-tabs ol,
 .m-pagination ol,
+.m-selectable-list ol,
 .m-step-indicator ol,
 .m-upload__files ol,
 .o-tag-list ol {
@@ -4595,50 +4595,6 @@ dl {
 }
 
 /**
- * LINK LIST
- * -------------------------------------------------------------------
- */
-
-.m-link-list li {
-  border-top: 1px solid #b0b0b0;
-  transition: background 250ms ease-in-out;
-}
-
-.m-link-list li > a {
-  color: #081f2c;
-  display: block;
-  padding: 1rem 1.5rem;
-  transition: color 250ms ease-in-out;
-}
-
-.m-link-list li:last-child {
-  border-bottom: 1px solid #b0b0b0;
-}
-
-.m-link-list li:hover,
-.m-link-list li:focus {
-  background-color: #f3f3f3;
-}
-
-.m-link-list li:hover a,
-.m-link-list li:focus a {
-  color: #0064b4;
-}
-
-/**
- * LINK LIST MODIFIERS
- * -------------------------------------------------------------------
- */
-
-.m-link-list--no-border li:first-child {
-  border-top: none;
-}
-
-.m-link-list--no-border li:last-child {
-  border-bottom: none;
-}
-
-/**
  * MODAL
  * -------------------------------------------------------------------
  */
@@ -5087,6 +5043,57 @@ dl {
 
 .m-range-slider__value {
   top: -1.25rem;
+}
+
+/**
+ * SELECTABLE LIST
+ * -------------------------------------------------------------------
+ */
+
+.m-selectable-list li:hover,
+.m-selectable-list li:focus,
+.m-selectable-list__item--active {
+  background-color: #f3f3f3;
+}
+
+.m-selectable-list li:hover a,
+.m-selectable-list li:focus a,
+.m-selectable-list__item--active a {
+  color: #0064b4;
+}
+
+.m-selectable-list li {
+  border-top: 1px solid #b0b0b0;
+  transition: background 250ms ease-in-out;
+}
+
+.m-selectable-list li:last-child {
+  border-bottom: 1px solid #b0b0b0;
+}
+
+/**
+ * SELECTABLE LIST ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.m-selectable-list__item {
+  color: #081f2c;
+  display: block;
+  padding: 1rem 1.5rem;
+  transition: color 250ms ease-in-out;
+}
+
+/**
+ * LINK LIST MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-selectable-list--no-border li:first-child {
+  border-top: none;
+}
+
+.m-selectable-list--no-border li:last-child {
+  border-bottom: none;
 }
 
 /**
