@@ -5,6 +5,7 @@
 
 .m-flyout {
   position: relative;
+  display: inline-block; // Inline-block so our wrapper element is never bigger than our action (button, ...)
 }
 
 /**
@@ -36,10 +37,6 @@
  * -------------------------------------------------------------------
  */
 
-.m-flyout--inline {
-  display: inline-block;
-}
-
 .m-flyout--right .m-flyout__content {
   right: 0;
 }
@@ -54,19 +51,31 @@
 .m-flyout--lg .m-flyout__content,
 .m-flyout--md .m-flyout__content,
 .m-flyout--sm .m-flyout__content {
-  width: 100%;
+  min-width: 100%;
 }
 
 .m-flyout--lg .m-flyout__content {
-  max-width: $flyout-max-width-lg;
+  @media screen and (min-width: $screen-md) {
+    width: $flyout-max-width-lg;
+  }
+
+  @media screen and (min-width: $screen-sm) {
+    width: $flyout-max-width-md;
+  }
+
+   width: $flyout-max-width-sm;
 }
 
 .m-flyout--md .m-flyout__content {
-  max-width: $flyout-max-width-md;
+  @media screen and (min-width: $screen-sm) {
+    width: $flyout-max-width-md;
+  }
+
+   width: $flyout-max-width-sm;
 }
 
 .m-flyout--sm .m-flyout__content {
-  max-width: $flyout-max-width-sm;
+   width: $flyout-max-width-sm;
 }
 
 .m-flyout--scrollable .m-flyout__content {
