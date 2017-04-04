@@ -4560,6 +4560,7 @@ dl {
  */
 
 .m-image {
+  display: inline-block;
   overflow: hidden;
   position: relative;
 }
@@ -5474,11 +5475,15 @@ dl {
 }
 
 .o-slideshow__image {
+  -ms-flex-align: center;
+  align-items: center;
   background-color: black;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
   max-height: inherit;
   position: relative;
 }
