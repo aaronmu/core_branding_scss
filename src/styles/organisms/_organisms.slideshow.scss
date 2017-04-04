@@ -32,13 +32,13 @@
 }
 
 .o-slideshow__image {
+  align-items: center;
   background-color: $slideshow-bg;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   max-height: inherit;
   position: relative;
-  justify-content: center;
-  align-items: center;
 
   .a-image {
     align-self: center;
