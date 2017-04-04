@@ -37,6 +37,8 @@
   flex-direction: column;
   max-height: inherit;
   position: relative;
+  justify-content: center;
+  align-items: center;
 
   .a-image {
     align-self: center;
