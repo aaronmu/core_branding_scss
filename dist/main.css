@@ -3517,6 +3517,31 @@ dl {
 }
 
 /**
+ * FLYOUT MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-input__checkbox--small input:checked + label:after,
+.a-input__radio-small input:checked + label:after {
+  font-size: 0.75rem;
+}
+
+.a-input__checkbox--small label,
+.a-input__radio-small label {
+  line-height: 1rem;
+  min-height: 1rem;
+}
+
+.a-input__checkbox--small label:before,
+.a-input__checkbox--small label:after,
+.a-input__radio-small label:before,
+.a-input__radio-small label:after {
+  height: 1rem;
+  margin-left: -1rem;
+  width: 1rem;
+}
+
+/**
  * SPINNER
  * -------------------------------------------------------------------
  */
