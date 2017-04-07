@@ -4378,14 +4378,14 @@ dl {
   background-color: #cce0f0;
 }
 
-.m-datepicker__calendar button.is-today {
+.m-datepicker__calendar button.is-current {
   background-color: #cce0f0;
   color: #0064b4;
   font-weight: 800;
 }
 
-.m-datepicker__calendar button.is-today:hover,
-.m-datepicker__calendar button.is-today:active {
+.m-datepicker__calendar button.is-current:hover,
+.m-datepicker__calendar button.is-current:active {
   background-color: #cce0f0;
 }
 
@@ -4414,8 +4414,10 @@ dl {
 .m-datepicker__calendar button.is-unavailable,
 .m-datepicker__calendar button:disabled {
   background-color: white;
+  box-shadow: none;
   color: #d8d8d8;
   cursor: not-allowed;
+  font-weight: 500;
 }
 
 .m-datepicker__calendar button.is-unavailable:hover,
