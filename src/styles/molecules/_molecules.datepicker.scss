@@ -107,10 +107,10 @@
     &.is-unavailable,
     &:disabled {
       background-color: $datepicker-unavailable-bg;
+      box-shadow: none;
       color: $state-disabled;
       cursor: not-allowed;
       font-weight: $normal;
-      box-shadow: none;
 
       &:hover,
       &:active {

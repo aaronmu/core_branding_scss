@@ -4414,10 +4414,10 @@ dl {
 .m-datepicker__calendar button.is-unavailable,
 .m-datepicker__calendar button:disabled {
   background-color: white;
+  box-shadow: none;
   color: #d8d8d8;
   cursor: not-allowed;
   font-weight: 500;
-  box-shadow: none;
 }
 
 .m-datepicker__calendar button.is-unavailable:hover,
