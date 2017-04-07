@@ -109,6 +109,8 @@
       background-color: $datepicker-unavailable-bg;
       color: $state-disabled;
       cursor: not-allowed;
+      font-weight: $normal;
+      box-shadow: none;
 
       &:hover,
       &:active {
