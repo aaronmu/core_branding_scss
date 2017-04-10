@@ -71,7 +71,7 @@
       background-color: $datepicker-bg-hover;
     }
 
-    &.is-today {
+    &.is-current {
       background-color: $datepicker-today-bg;
       color: $datepicker-today-color;
       font-weight: $datepicker-today-font-weight;
@@ -107,8 +107,10 @@
     &.is-unavailable,
     &:disabled {
       background-color: $datepicker-unavailable-bg;
+      box-shadow: none;
       color: $state-disabled;
       cursor: not-allowed;
+      font-weight: $normal;
 
       &:hover,
       &:active {
