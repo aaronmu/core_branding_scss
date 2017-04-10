@@ -3722,17 +3722,17 @@ dl {
   width: 100%;
 }
 
-.a-table__wrapper-responsive > table {
+.a-table__wrapper-responsive table {
   border: none;
   margin-bottom: -1px;
 }
 
-.a-table__wrapper-responsive > table > thead > tr > td,
-.a-table__wrapper-responsive > table > thead > tr > th,
-.a-table__wrapper-responsive > table > tbody > tr > td,
-.a-table__wrapper-responsive > table > tbody > tr > th,
-.a-table__wrapper-responsive > table > tfoot > tr > td,
-.a-table__wrapper-responsive > table > tfoot > tr > th {
+.a-table__wrapper-responsive table > thead > tr > td,
+.a-table__wrapper-responsive table > thead > tr > th,
+.a-table__wrapper-responsive table > tbody > tr > td,
+.a-table__wrapper-responsive table > tbody > tr > th,
+.a-table__wrapper-responsive table > tfoot > tr > td,
+.a-table__wrapper-responsive table > tfoot > tr > th {
   white-space: nowrap;
 }
 
