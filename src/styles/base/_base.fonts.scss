@@ -19,17 +19,17 @@
  * -------------------------------------------------------------------
  */
 
-@include font-face('Sun Antwerpen Light', '../../fonts/SunAntwerpen_Light', $light, normal);
-@include font-face('Sun Antwerpen Light Italic', '../../fonts/SunAntwerpen_Light_Italic', $light, italic);
+@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Light', $light, normal);
+@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Light_Italic', $light, italic);
 
-@include font-face('Sun Antwerpen Regular', '../../fonts/SunAntwerpen_Regular', $normal, normal);
-@include font-face('Sun Antwerpen Regular Italic', '../../fonts/SunAntwerpen_Regular_Italic', $normal, italic);
+@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Regular', $normal, normal);
+@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Regular_Italic', $normal, italic);
 
-@include font-face('Sun Antwerpen Bold', '../../fonts/SunAntwerpen_Bold', $bold, normal);
-@include font-face('Sun Antwerpen Bold Italic', '../../fonts/SunAntwerpen_Bold_Italic', $bold, italic);
+@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Bold', $bold, normal);
+@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Bold_Italic', $bold, italic);
 
-@include font-face('Sun Antwerpen ExtraBold', '../../fonts/SunAntwerpen_ExtraBold', $extra-bold, normal);
-@include font-face('Sun Antwerpen ExtraBold Italic', '../../fonts/SunAntwerpen_ExtraBold_Italic', $extra-bold, italic);
+@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_ExtraBold', $extra-bold, normal);
+@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_ExtraBold_Italic', $extra-bold, italic);
 
 
 /**
