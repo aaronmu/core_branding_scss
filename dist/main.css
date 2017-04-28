@@ -460,7 +460,7 @@
  */
 
 @font-face {
-  font-family: "Sun Antwerpen Light";
+  font-family: "Sun Antwerpen";
   src: url("assets/fonts/SunAntwerpen_Light.eot");
   src: url("assets/fonts/SunAntwerpen_Light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SunAntwerpen_Light.woff") format("woff"), url("assets/fonts/SunAntwerpen_Light.ttf") format("truetype"), url("assets/fonts/SunAntwerpen_Light.svg#icon") format("svg");
   font-weight: 300;
@@ -468,7 +468,7 @@
 }
 
 @font-face {
-  font-family: "Sun Antwerpen Light Italic";
+  font-family: "Sun Antwerpen";
   src: url("assets/fonts/SunAntwerpen_Light_Italic.eot");
   src: url("assets/fonts/SunAntwerpen_Light_Italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SunAntwerpen_Light_Italic.woff") format("woff"), url("assets/fonts/SunAntwerpen_Light_Italic.ttf") format("truetype"), url("assets/fonts/SunAntwerpen_Light_Italic.svg#icon") format("svg");
   font-weight: 300;
@@ -476,7 +476,7 @@
 }
 
 @font-face {
-  font-family: "Sun Antwerpen Regular";
+  font-family: "Sun Antwerpen";
   src: url("assets/fonts/SunAntwerpen_Regular.eot");
   src: url("assets/fonts/SunAntwerpen_Regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SunAntwerpen_Regular.woff") format("woff"), url("assets/fonts/SunAntwerpen_Regular.ttf") format("truetype"), url("assets/fonts/SunAntwerpen_Regular.svg#icon") format("svg");
   font-weight: 500;
@@ -484,7 +484,7 @@
 }
 
 @font-face {
-  font-family: "Sun Antwerpen Regular Italic";
+  font-family: "Sun Antwerpen";
   src: url("assets/fonts/SunAntwerpen_Regular_Italic.eot");
   src: url("assets/fonts/SunAntwerpen_Regular_Italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SunAntwerpen_Regular_Italic.woff") format("woff"), url("assets/fonts/SunAntwerpen_Regular_Italic.ttf") format("truetype"), url("assets/fonts/SunAntwerpen_Regular_Italic.svg#icon") format("svg");
   font-weight: 500;
@@ -492,7 +492,7 @@
 }
 
 @font-face {
-  font-family: "Sun Antwerpen Bold";
+  font-family: "Sun Antwerpen";
   src: url("assets/fonts/SunAntwerpen_Bold.eot");
   src: url("assets/fonts/SunAntwerpen_Bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SunAntwerpen_Bold.woff") format("woff"), url("assets/fonts/SunAntwerpen_Bold.ttf") format("truetype"), url("assets/fonts/SunAntwerpen_Bold.svg#icon") format("svg");
   font-weight: 700;
@@ -500,7 +500,7 @@
 }
 
 @font-face {
-  font-family: "Sun Antwerpen Bold Italic";
+  font-family: "Sun Antwerpen";
   src: url("assets/fonts/SunAntwerpen_Bold_Italic.eot");
   src: url("assets/fonts/SunAntwerpen_Bold_Italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SunAntwerpen_Bold_Italic.woff") format("woff"), url("assets/fonts/SunAntwerpen_Bold_Italic.ttf") format("truetype"), url("assets/fonts/SunAntwerpen_Bold_Italic.svg#icon") format("svg");
   font-weight: 700;
@@ -508,7 +508,7 @@
 }
 
 @font-face {
-  font-family: "Sun Antwerpen ExtraBold";
+  font-family: "Sun Antwerpen";
   src: url("assets/fonts/SunAntwerpen_ExtraBold.eot");
   src: url("assets/fonts/SunAntwerpen_ExtraBold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SunAntwerpen_ExtraBold.woff") format("woff"), url("assets/fonts/SunAntwerpen_ExtraBold.ttf") format("truetype"), url("assets/fonts/SunAntwerpen_ExtraBold.svg#icon") format("svg");
   font-weight: 800;
@@ -516,7 +516,7 @@
 }
 
 @font-face {
-  font-family: "Sun Antwerpen ExtraBold Italic";
+  font-family: "Sun Antwerpen";
   src: url("assets/fonts/SunAntwerpen_ExtraBold_Italic.eot");
   src: url("assets/fonts/SunAntwerpen_ExtraBold_Italic.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SunAntwerpen_ExtraBold_Italic.woff") format("woff"), url("assets/fonts/SunAntwerpen_ExtraBold_Italic.ttf") format("truetype"), url("assets/fonts/SunAntwerpen_ExtraBold_Italic.svg#icon") format("svg");
   font-weight: 800;
@@ -896,7 +896,7 @@ figcaption {
 
 body {
   color: #081f2c;
-  font-family: "Sun Antwerpen Regular";
+  font-family: "Sun Antwerpen";
   font-size: 1rem;
   line-height: 1;
 }
@@ -3726,17 +3726,17 @@ dl {
   width: 100%;
 }
 
-.a-table__wrapper-responsive > table {
+.a-table__wrapper-responsive table {
   border: none;
   margin-bottom: -1px;
 }
 
-.a-table__wrapper-responsive > table > thead > tr > td,
-.a-table__wrapper-responsive > table > thead > tr > th,
-.a-table__wrapper-responsive > table > tbody > tr > td,
-.a-table__wrapper-responsive > table > tbody > tr > th,
-.a-table__wrapper-responsive > table > tfoot > tr > td,
-.a-table__wrapper-responsive > table > tfoot > tr > th {
+.a-table__wrapper-responsive table > thead > tr > td,
+.a-table__wrapper-responsive table > thead > tr > th,
+.a-table__wrapper-responsive table > tbody > tr > td,
+.a-table__wrapper-responsive table > tbody > tr > th,
+.a-table__wrapper-responsive table > tfoot > tr > td,
+.a-table__wrapper-responsive table > tfoot > tr > th {
   white-space: nowrap;
 }
 
@@ -4382,14 +4382,14 @@ dl {
   background-color: #cce0f0;
 }
 
-.m-datepicker__calendar button.is-today {
+.m-datepicker__calendar button.is-current {
   background-color: #cce0f0;
   color: #0064b4;
   font-weight: 800;
 }
 
-.m-datepicker__calendar button.is-today:hover,
-.m-datepicker__calendar button.is-today:active {
+.m-datepicker__calendar button.is-current:hover,
+.m-datepicker__calendar button.is-current:active {
   background-color: #cce0f0;
 }
 
@@ -4418,8 +4418,10 @@ dl {
 .m-datepicker__calendar button.is-unavailable,
 .m-datepicker__calendar button:disabled {
   background-color: white;
+  box-shadow: none;
   color: #d8d8d8;
   cursor: not-allowed;
+  font-weight: 500;
 }
 
 .m-datepicker__calendar button.is-unavailable:hover,
