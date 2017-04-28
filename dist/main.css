@@ -2813,6 +2813,10 @@ textarea {
   cursor: not-allowed;
 }
 
+.a-input.ckeditor-editable-body {
+  padding: 1.125rem 1.5rem;
+}
+
 /**
  * INPUT WRAPPER
  * -------------------------------------------------------------------
