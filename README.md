@@ -1,1 +1,2 @@
-# core_branding_scss
+# Core Branding Styling
+
