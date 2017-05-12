@@ -38,7 +38,7 @@ gulp build
 
 To apply your own style to the kit, import it into your project and use the accompanied `.scss` files. You will be able to overwrite our variables (for colors, spacing, etc.) with your own.
 
-> Look for the `_quarks.colors.scss` and `_quarks.variables.scss` to see all variables you can overwrite.
+> Look for the `_quarks.colors.scss` and `_quarks.variables.scss` files to see all variables you can overwrite.
 
 ## Contributing
 
