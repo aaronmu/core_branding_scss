@@ -1,16 +1,17 @@
 {
-  "name": "core_branding_scss",
+  "name": "@a-ui/core",
   "version": "1.0.0",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Redn4s/core_branding_scss.git"
+    "url": "https://github.com/a-ui/core_branding_scss.git"
   },
   "scripts": {
+    "prepublish": "gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
-    "dist/main.css"
+    "dist/**"
   ],
   "contributors": [
     {
