@@ -72,7 +72,7 @@ textarea {
 .a-input {
   @include a-input;
 
-  &.ckeditor-editable-body {
+  &.w-textarea-padding {
     padding: $textarea-padding;
   }
 }
