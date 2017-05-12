@@ -4,6 +4,42 @@
 
 As you probably noticed, this project is just released. More documentation will be released very soon!
 
+## Development
+
+### Prerequisites
+
+In order to run this project and see all available components, you'll need to have [NodeJS](https://nodejs.org) and [Gulp](http://gulpjs.com) installed.
+
+### Installing
+
+Go to the root of this project and run the following command in your command line:
+
+```
+npm install
+```
+
+### Local development
+
+Run the following command in your command line:
+
+```
+gulp server
+```
+
+### Building
+
+Run the following command in your command line:
+
+```
+gulp build
+```
+
+### Creating your own customized build
+
+To apply your own style to the kit, import it into your project and use the accompanied `.scss` files. You will be able to overwrite our variables (for colors, spacing, etc.) with your own.
+
+> Look for the `_quarks.colors.scss` and `_quarks.variables.scss` to see all variables you can overwrite.
+
 ## Contributing
 
 For now, contact us via [branding@stad.antwerpen.be](mailto:branding@stad.antwerpen.be).
