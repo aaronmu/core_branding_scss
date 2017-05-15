@@ -71,6 +71,10 @@ textarea {
 
 .a-input {
   @include a-input;
+
+  &.w-textarea-padding {
+    padding: $textarea-padding;
+  }
 }
 
 
