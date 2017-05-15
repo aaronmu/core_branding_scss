@@ -20,7 +20,8 @@
     }
 
     .m-accordion__content {
-      display: block;
+      border-bottom: 1px solid $accordion-border;
+      max-height: 500px;
     }
   }
 }
@@ -55,9 +56,12 @@
 
 .m-accordion__content {
   background-color: $accordion-content-bg;
-  border-bottom: 1px solid $accordion-border;
   border-left: 1px solid $accordion-border;
   border-right: 1px solid $accordion-border;
-  display: none;
-  padding: $accordion-content-padding;
+  display: block;
+  overflow: auto;
+  max-height: 0;
+  transition: max-height .5s ease-out;
+  padding: 0;
+  border-bottom: 0;
 }
