@@ -47,6 +47,14 @@ gulp.task('bump', ['build'], function(callback) {
 	});
 });
 
+gulp.task('docs', ['build'], function(callback) {
+	var run = require('run-sequence').use(gulp);
+
+	run(['copy-docs', 'replace'], function() {
+		callback();
+	});
+});
+
 gulp.task('release', ['bump'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 

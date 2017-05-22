@@ -17,7 +17,8 @@ gulp.task('clean', function () {
 gulp.task('clean-dist', function () {
 
     return gulp.src([
-        'dist'
+        'dist',
+        'docs'
     ], { read: false })
         .pipe(clean());
 });

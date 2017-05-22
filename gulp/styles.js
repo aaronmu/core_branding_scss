@@ -46,7 +46,7 @@ gulp.task('sass', function () {
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
-        .pipe(gulp.dest('.tmp/css'));
+        .pipe(gulp.dest('.tmp/styles'));
 });
 
 
