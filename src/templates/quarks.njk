@@ -127,7 +127,7 @@
         <div class="d">
             <div>
                 <p>An overview of the complete color palette.</p>
-                <ul class="a-list--unstyled d-list__colors">
+                <ul class="a-list--unstyled d-list d-list__colors">
                     {% for name, value  in COLORS %}
                         <li class="d-{{ name | escape }}">
                             <span class="color" style="background: {{ value }}"></span>
@@ -150,7 +150,7 @@
         <div class="d">
             <div>
                 <p>An overview of all variables and their default values. If you are using Sass, you can overwrite these values for creating your own flavor of the branding kit.</p>
-                <ul class="a-list--unstyled d-list__variables">
+                <ul class="a-list--unstyled d-list d-list__variables">
                     {% for name, value  in VARIABLES %}
                         <li class="d-{{ name | escape }}">
                             <code>${{ name }}</code>: {{ value }}</small>

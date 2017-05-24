@@ -63,6 +63,7 @@ kbd {
   font-size: $pre-font-size;
   margin-top: 0;
   padding: $pre-padding;
+  white-space: pre-wrap;
 
   code {
     background-color: transparent;
@@ -85,4 +86,5 @@ kbd {
  */
 .a-pre--scrollable {
   overflow-y: scroll;
+  white-space: pre;
 }

@@ -15,7 +15,11 @@
  */
 
 pre {
-    margin-bottom: 0;
+    margin-bottom: $spacer / 2;
+
+    + pre {
+        margin-bottom: 0;
+    }
 }
 
 .d {
@@ -30,6 +34,10 @@ pre {
     > div {
         flex: 1 1 0;
         padding: $spacer / 2 $spacer;
+
+        @include at($screen-sm) {
+            width: 0;
+        }
     }
 }
 
@@ -43,6 +51,10 @@ pre {
 
     @include to($screen-xs) {
         padding-top: $spacer * 4;
+    }
+
+    small {
+        color: $white;
     }
 }
 
@@ -70,34 +82,40 @@ pre {
 }
 
 .d-list {
-    &__colors {
-        display: flex;
-        flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: $spacer * -1;
+    margin-right: $spacer * -1;
 
+    > li {
+        padding: 0 $spacer;
+        width: 100%;
+
+        @include at($screen-sm) {
+            width: 50%;
+        }
+
+        @include at($screen-lg) {
+            width: 100 / 3 * 1%;
+        }
+    }
+
+    &__colors {
         > li {
             margin-top: $spacer / 2;
-            padding: $spacer / 2 0 $spacer / 2 $spacer * 5;
+            padding: $spacer / 2 $spacer $spacer / 2 $spacer * 6;
             position: relative;
-            width: 100%;
 
             &.d-white {
                 .color {
-                    box-shadow: 0 0 0 1px $grey inset;
+                    box-shadow: 0 0 0 1px $grey-light inset;
                 }
-            }
-
-            @include at($screen-sm) {
-                width: 50%;
-            }
-
-            @include at($screen-lg) {
-                width: 100 / 3 * 1%;
             }
 
             .color {
                 bottom: 0;
                 display: block;
-                left: 0;
+                left: $spacer;
                 position: absolute;
                 top: 0;
                 width: $spacer * 4;
@@ -106,23 +124,16 @@ pre {
     }
 
     &__variables {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: $spacer * -1;
-        margin-right: $spacer * -1;
-
         > li {
             margin-top: $spacer / 4;
-            padding: 0 $spacer;
-            width: 100%;
-
-            @include at($screen-sm) {
-                width: 50%;
-            }
-
-            @include at($screen-lg) {
-                width: 100 / 3 * 1%;
-            }
         }
+    }
+}
+
+.d-font {
+    font-size: 1.5em;
+
+    &-lg {
+        font-size: 3em;
     }
 }
