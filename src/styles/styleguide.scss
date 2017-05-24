@@ -14,12 +14,22 @@
  * -------------------------------------------------------------------
  */
 
+pre {
+    margin-bottom: 0;
+}
+
 .d {
     display: flex;
-    margin: $spacer * 2 0;
+    flex-direction: column;
+    margin: $spacer $spacer * -1;
+
+    @include at($screen-sm) {
+        flex-direction: row;
+    }
 
     > div {
         flex: 1 1 0;
+        padding: $spacer / 2 $spacer;
     }
 }
 
@@ -52,4 +62,67 @@
 
 .d-file {
     color: $grey;
+}
+
+.d-alert {
+    margin-top: $spacer / 2;
+    padding: $spacer / 2;
+}
+
+.d-list {
+    &__colors {
+        display: flex;
+        flex-wrap: wrap;
+
+        > li {
+            margin-top: $spacer / 2;
+            padding: $spacer / 2 0 $spacer / 2 $spacer * 5;
+            position: relative;
+            width: 100%;
+
+            &.d-white {
+                .color {
+                    box-shadow: 0 0 0 1px $grey inset;
+                }
+            }
+
+            @include at($screen-sm) {
+                width: 50%;
+            }
+
+            @include at($screen-lg) {
+                width: 100 / 3 * 1%;
+            }
+
+            .color {
+                bottom: 0;
+                display: block;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: $spacer * 4;
+            }
+        }
+    }
+
+    &__variables {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: $spacer * -1;
+        margin-right: $spacer * -1;
+
+        > li {
+            margin-top: $spacer / 4;
+            padding: 0 $spacer;
+            width: 100%;
+
+            @include at($screen-sm) {
+                width: 50%;
+            }
+
+            @include at($screen-lg) {
+                width: 100 / 3 * 1%;
+            }
+        }
+    }
 }

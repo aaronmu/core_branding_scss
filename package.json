@@ -48,6 +48,7 @@
     "gulp-watch": "^4.3.11",
     "lodash": "^4.17.4",
     "merge-stream": "^1.0.1",
-    "run-sequence": "^1.2.2"
+    "run-sequence": "^1.2.2",
+    "sass-vars-to-js": "^0.8.7"
   }
 }

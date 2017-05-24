@@ -57,6 +57,10 @@ $screen-sm:               45rem !default; // 720px
 $screen-md:               62rem !default; // 992px
 $screen-lg:               75rem !default; // 1200px
 
+$screen-xs-max:           calc($screen-sm - 1px); // 719px
+$screen-sm-max:           calc($screen-md - 1px); // 991px
+$screen-md-max:           calc($screen-lg - 1px); // 1199px
+
 
 /**
  * FONT FAMILIES
