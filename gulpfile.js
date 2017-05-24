@@ -68,3 +68,6 @@ gulp.task('release', ['bump'], function(callback) {
 		callback();
 	});
 });
+
+// Alias for build task
+gulp.task('package', ['build']);
