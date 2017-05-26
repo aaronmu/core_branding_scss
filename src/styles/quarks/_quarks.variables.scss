@@ -187,6 +187,7 @@ $link-hover-color:        mix($link-color, $black, 85%) !default;
 
 $pre-color:               $text-color !default;
 $pre-bg:                  $background-color-light !default;
+// $pre-bg:                  rgba($black, .05) !default;
 $pre-font-size:           1rem !default;
 $pre-padding:             $spacer-xs !default;
 
@@ -197,8 +198,8 @@ $pre-padding:             $spacer-xs !default;
  * Define text and background color for each code element
  */
 
-$code-color:              $text-color !default;
-$code-bg:                 $background-color-light !default;
+$code-color:              $pre-color !default;
+$code-bg:                 $pre-bg !default;
 $code-font-size:          .875rem !default;
 $code-padding:            $spacer-xs / 6 $spacer-xs / 2 !default;
 

@@ -28,6 +28,9 @@
         <div class="d">
             <div>
                 <p>Force an element to self-clear its children</p>
+                <div class="m-alert d-alert">
+                    <p>Note that you can also use the <code>.clearfix</code> class.</p>
+                </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>.css {
@@ -50,7 +53,7 @@
                 <p>Responsive mixins</p>
                 <div class="m-alert m-alert--warning d-alert">
                     <p>Note that working mobile first is encouraged, so try to limit the use of the <code>to</code> mixin.</p>
-                </div>
+                </div> 
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>.css {
@@ -130,7 +133,7 @@
                 <ul class="a-list--unstyled d-list d-list__colors">
                     {% for name, value  in COLORS %}
                         <li class="d-{{ name | escape }}">
-                            <span class="color" style="background: {{ value }}"></span>
+                            <span class="d-color" style="background: {{ value }}"></span>
                             <code>${{ name }}</code><br /><span class="u-text-light">{{ value }}</span></small>
                         </li>
                     {% endfor %}
@@ -153,7 +156,7 @@
                 <ul class="a-list--unstyled d-list d-list__variables">
                     {% for name, value  in VARIABLES %}
                         <li class="d-{{ name | escape }}">
-                            <code>${{ name }}</code>: {{ value }}</small>
+                            <code>${{ name }}</code>: {{ value }}
                         </li>
                     {% endfor %}
                 </ul>

@@ -14,6 +14,10 @@
  * -------------------------------------------------------------------
  */
 
+footer {
+    margin-top: $spacer * 4;
+}
+
 pre {
     margin-bottom: $spacer / 2;
 
@@ -69,7 +73,7 @@ pre {
 }
 
 .d-h3 {
-    margin-top: $spacer * 2;
+    margin-top: $spacer * 4;
 }
 
 .d-file {
@@ -107,12 +111,12 @@ pre {
             position: relative;
 
             &.d-white {
-                .color {
+                .d-color {
                     box-shadow: 0 0 0 1px $grey-light inset;
                 }
             }
 
-            .color {
+            .d-color {
                 bottom: 0;
                 display: block;
                 left: $spacer;
@@ -135,5 +139,34 @@ pre {
 
     &-lg {
         font-size: 3em;
+    }
+}
+
+.d-bgutility {
+    padding: $spacer;
+
+    &.d-u-bg-white {
+        box-shadow: 0 0 0 1px $grey-light inset;
+    }
+}
+
+.d-spacingutility {
+    box-shadow: 0 0 0 1px $grey-light inset;
+    display: inline-block;
+    padding: 3px 1px;
+}
+
+.d-textutility {
+    &.d-u-text-xlight {
+        background: $grey-light;
+        padding: $spacer / 4;
+
+        &:after {
+            content: 'The gray background color is for displaying purposes only';
+            display: block;
+            font-style: italic;
+            padding-top: $spacer / 4;
+            text-align: right;
+        }
     }
 }

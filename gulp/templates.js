@@ -6,6 +6,7 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var glob = require('glob');
+var listSelectors = require('list-selectors');
 var nunjucks = require('gulp-nunjucks');
 var rename = require('gulp-rename');
 var sassVars = require('sass-vars-to-js');
@@ -32,16 +33,45 @@ function getTemplateData(){
     data.VARIABLES = stripDefaults(sassVars('src/styles/quarks/_quarks.variables.scss'));
 
     var icons = glob.sync("src/icons/*.svg");
-	for(var i in icons){
+	for(var i in icons) {
 		var filename = icons[i].split('/');
 		filename = filename[filename.length-1];
-        console.log(filename);
 		filename = filename.split('.')[0];
 		data.ICONS.push(filename);
 	}
+
+    listSelectors(['src/styles/utilities/_utilities.background.scss'],
+        { include: ['classes'] },
+        function(bgUtilities) {
+            for(var bgU in bgUtilities['classes']) {
+                bgUtilities['classes'][bgU] = bgUtilities['classes'][bgU].substring(1);
+            }
+            data.BGUTILITIES = bgUtilities['classes'];
+        }
+    );
+
+    listSelectors(['src/styles/utilities/_utilities.spacing.scss'],
+        { include: ['classes'] },
+        function(spacingUtilities) {
+            for(var spU in spacingUtilities['classes']) {
+                spacingUtilities['classes'][spU] = spacingUtilities['classes'][spU].substring(1);
+            }
+            data.SPACINGUTILITIES = spacingUtilities['classes'];
+        }
+    );
+
+    listSelectors(['src/styles/utilities/_utilities.text.scss'],
+        { include: ['classes'] },
+        function(textUtilities) {
+            for(var txtU in textUtilities['classes']) {
+                textUtilities['classes'][txtU] = textUtilities['classes'][txtU].substring(1);
+            }
+            data.TEXTUTILITIES = textUtilities['classes'];
+        }
+    );
+
+    return data;
 	
-    console.log(data);
-	return data;
 }
 
 function stripDefaults(values) {
