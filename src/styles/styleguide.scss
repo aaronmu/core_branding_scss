@@ -160,13 +160,5 @@ pre {
     &.d-u-text-xlight {
         background: $grey-light;
         padding: $spacer / 4;
-
-        &:after {
-            content: 'The gray background color is for displaying purposes only';
-            display: block;
-            font-style: italic;
-            padding-top: $spacer / 4;
-            text-align: right;
-        }
     }
 }

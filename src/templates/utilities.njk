@@ -80,6 +80,9 @@
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="u-clearfix"&gt;
   ...
 &lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>.css {
+  @include clearfix;
+}</code></pre>
             </div>
         </div>
         <div class="d">
@@ -90,9 +93,12 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="u-clearfix"&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="u-screen-reader-only"&gt;
   ...
 &lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>.css {
+  @extend %u-screen-reader-only;
+}</code></pre>
             </div>
         </div>
 
@@ -127,11 +133,25 @@
         <div class="d">
             <div>
                 <div class="d-textutility d-{{value}}">
-                    <div class="{{value}}"><code>.{{value}}</code> Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</div>
+                    <p class="{{value}}">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                 </div>
+                {% if value == 'u-text-truncate' %}
+                <div class="m-alert d-alert">
+                    <p>Note that we offer this also as a Sass placeholder, so you can <code>@extend</code> it in your own class.</p>
+                </div>
+                {% elseif value == 'u-text-xlight' %}
+                <div class="m-alert d-alert">
+                    <p>Note that the gray background color is for displaying purposes only.</p>
+                </div>
+                {% endif %}
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="{{value}}"&gt;.{{value}}&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;p class="{{value}}"&gt;.{{value}}&lt;/p&gt;</code></pre>
+                {% if value == 'u-text-truncate' %}
+                <pre class="a-pre a-pre--scrollable"><code>.css {
+  @extend %u-text-truncate;
+}</code></pre>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
