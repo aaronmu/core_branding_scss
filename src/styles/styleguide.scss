@@ -18,11 +18,11 @@ footer {
     margin-top: $spacer * 4;
 }
 
-pre {
-    margin-bottom: $spacer / 2;
+.a-pre {
+    margin: 0;
 
-    + pre {
-        margin-bottom: 0;
+    + .a-pre {
+        margin-top: $spacer / 4;
     }
 }
 
@@ -37,7 +37,7 @@ pre {
 
     > div {
         flex: 1 1 0;
-        padding: $spacer / 2 $spacer;
+        padding: $spacer / 4 $spacer 0;
 
         @include at($screen-sm) {
             width: 0;
@@ -46,8 +46,9 @@ pre {
 }
 
 .d-h1 {
-    // background: $monza;
-    background: $grey-dark;
+    animation: rainbow 36s linear infinite;
+    background: linear-gradient(90deg, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #e81d1d, #e8b71d);
+    background-size: 1800% 100%;
     color: $white;
     margin-bottom: $spacer * -4;
     padding-bottom: $spacer;
@@ -76,6 +77,10 @@ pre {
     margin-top: $spacer * 4;
 }
 
+.d-h4 {
+    margin-top: $spacer * 2;
+}
+
 .d-file {
     color: $grey;
 }
@@ -97,10 +102,6 @@ pre {
 
         @include at($screen-sm) {
             width: 50%;
-        }
-
-        @include at($screen-lg) {
-            width: 100 / 3 * 1%;
         }
     }
 
@@ -124,12 +125,20 @@ pre {
                 top: 0;
                 width: $spacer * 4;
             }
+
+            @include at($screen-lg) {
+                width: 100 / 3 * 1%;
+            }
         }
     }
 
     &__variables {
         > li {
             margin-top: $spacer / 4;
+
+            @include at($screen-lg) {
+                width: 100 / 3 * 1%;
+            }
         }
     }
 }
@@ -161,4 +170,16 @@ pre {
         background: $grey-light;
         padding: $spacer / 4;
     }
+}
+
+.d-button {
+    margin-bottom: $spacer / 6; // Improves the 'flow' of multiple consecutive buttons
+}
+
+
+
+@keyframes rainbow { 
+    0%{background-position:0% 0%}
+    50%{background-position:46.25% 0%}
+    100%{background-position:92.5% 0%}
 }
