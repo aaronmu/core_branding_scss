@@ -180,6 +180,17 @@ $link-hover-color:        mix($link-color, $black, 85%) !default;
 
 
 /**
+ * LISTS
+ * -------------------------------------------------------------------
+ * Define default paddings for lists
+ */
+
+$list-padding-left:          $spacer !default;
+$list-item-padding-top:      $spacer / 3 !default;
+$list-item-padding-bottom:   $spacer / 3 !default;
+
+
+/**
  * PRE
  * -------------------------------------------------------------------
  * Define text and background color for each code element
@@ -254,7 +265,7 @@ $table-secondary-head-bg:     $brand-secondary !default;
 
 $table-striped-bg:        $background-color-light !default;
 
-$table-padding:           0 $spacer-xs !default;
+$table-padding:           $spacer-xs !default;
 
 
 /**

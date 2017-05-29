@@ -176,6 +176,10 @@ footer {
     margin-bottom: $spacer / 6; // Improves the 'flow' of multiple consecutive buttons
 }
 
+.d-tooltip {
+    margin-bottom: $spacer / 2; // Improves the 'flow' of multiple consecutive tooltips
+}
+
 
 
 @keyframes rainbow { 
