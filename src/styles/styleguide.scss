@@ -75,6 +75,17 @@ footer {
 
 .d-h3 {
     margin-top: $spacer * 4;
+    position: relative;
+
+    &:before {
+        background: $black;
+        content: '';
+        display: block;
+        height: $spacer * 3 / 2;
+        left: $spacer * -2;
+        position: absolute;
+        width: $spacer * 3 / 2;
+    }
 }
 
 .d-h4 {

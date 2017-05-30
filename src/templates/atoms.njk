@@ -844,6 +844,318 @@
         <a name="atoms-input"></a>
         <h3 class="d-h3">Input</h3>
         <span class="d-file">atoms/atoms.input</span>
+        <h4 class="d-h4">Standard input fields</h4>
+        <div class="d">
+            <div>
+                <div class="a-input">
+                    <label class="a-input__label" for="text-field">Text field</label>
+                    <input type="text" name="text-field" id="text-field" placeholder="Placeholder" />
+                    <small>Input description</small>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label" for="text-field"&gt;Text field&lt;/label&gt;
+  &lt;input type="text" name="text-field" id="text-field" placeholder="Placeholder" /&gt;
+  &lt;small&gt;Input description&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-alert d-alert">
+                    <p>Note that all input types are supported and it is encouraged to use them appropriately: <code>text</code>, <code>password</code>, <code>datetime,</code> <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code> and <code>color</code>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input is-required">
+                    <label class="a-input__label" for="required-text-field">Required text field</label>
+                    <input type="text" name="required-text-field" id="required-text-field" placeholder="Placeholder" />
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input is-required"&gt;
+  &lt;label class="a-input__label" for="required-text-field"&gt;Required text field&lt;/label&gt;
+  &lt;input type="text" name="required-text-field" id="required-text-field" placeholder="Placeholder" /&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input a-input--inline">
+                    <label class="a-input__label a-input__label--inline" for="inline-text-field">Inline text field <label>
+                    <input type="text" name="inline-text-field" id="inline-text-field" placeholder="Placeholder" />
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--inline"&gt;
+  &lt;label class="a-input__label a-input__label--inline" for="inline-text-field"&gt;Inline text field &lt;label&gt;
+  &lt;input type="text" name="inline-text-field" id="inline-text-field" placeholder="Placeholder" /&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input">
+                    <label class="a-input__label" for="input-text">Input checkbox</label>
+                    <div class="a-input__checkbox">
+                        <input type="checkbox" id="checkbox1" name="input-checkbox" checked="">
+                        <label for="checkbox1">Option one</label>
+                    </div>
+                    <div class="a-input__checkbox">
+                        <input type="checkbox" id="checkbox2" name="input-checkbox">
+                        <label for="checkbox2">Option two contains a bit more text, so we can test its behaviour on smaller devices.</label>
+                    </div>
+                    <div class="a-input__checkbox">
+                        <input type="checkbox" id="checkbox3" name="input-checkbox" disabled="">
+                        <label for="checkbox3">Option three is disabled</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label" for="input-text"&gt;Input checkbox&lt;/label&gt;
+  &lt;div class="a-input__checkbox"&gt;
+    &lt;input type="checkbox" id="checkbox1" name="input-checkbox" checked=""&gt;
+    &lt;label for="checkbox1"&gt;Option one&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="a-input__checkbox"&gt;
+    &lt;input type="checkbox" id="checkbox2" name="input-checkbox"&gt;
+    &lt;label for="checkbox2"&gt;Option two contains a bit more text, so we can test its behaviour on smaller devices.&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="a-input__checkbox"&gt;
+    &lt;input type="checkbox" id="checkbox3" name="input-checkbox" disabled=""&gt;
+    &lt;label for="checkbox3"&gt;Option three is disabled&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input">
+                    <label class="a-input__label" for="input-text">Input radio button</label>
+                    <div class="a-input__radio">
+                        <input type="radio" id="radio1" name="input-radio" checked="">
+                        <label for="radio1">Option one</label>
+                    </div>
+                    <div class="a-input__radio">
+                        <input type="radio" id="radio2" name="input-radio">
+                        <label for="radio2">Option two contains a bit more text, so we can test its behaviour on smaller devices.</label>
+                    </div>
+                    <div class="a-input__radio">
+                        <input type="radio" id="radio3" name="input-radio" disabled="">
+                        <label for="radio3">Option three is disabled</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label" for="input-text"&gt;Input radio button&lt;/label&gt;
+  &lt;div class="a-input__radio"&gt;
+    &lt;input type="radio" id="radio1" name="input-radio" checked=""&gt;
+    &lt;label for="radio1"&gt;Option one&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="a-input__radio"&gt;
+    &lt;input type="radio" id="radio2" name="input-radio"&gt;
+    &lt;label for="radio2"&gt;Option two contains a bit more text, so we can test its behaviour on smaller devices.&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class="a-input__radio"&gt;
+    &lt;input type="radio" id="radio3" name="input-radio" disabled=""&gt;
+    &lt;label for="radio3"&gt;Option three is disabled&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input">
+                    <label class="a-input__label" for="input-textarea">Text area</label>
+                    <textarea name="input-textarea" id="input-textarea" placeholder="Placeholder"></textarea>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label" for="input-textarea"&gt;Text area&lt;/label&gt;
+  &lt;textarea name="input-textarea" id="input-textarea" placeholder="Placeholder"&gt;&lt;/textarea&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input has-icon-right">
+                    <label class="a-input__label" for="input-select">Select with options</label>
+                    <div class="a-input__wrapper">
+                        <select name="input-select" id="input-select">
+                            <option disabled selected>Make your choice...</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                            <option value="4" disabled>Option 4 disabled</option>
+                            <option value="5">Option 5</option>
+                        </select>
+                        <span class="fa fa-angle-down"></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-icon-right"&gt;
+  &lt;label class="a-input__label" for="input-select"&gt;Select with options&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;select name="input-select" id="input-select"&gt;
+      &lt;option disabled selected&gt;Make your choice...&lt;/option&gt;
+      &lt;option value="1"&gt;Option 1&lt;/option&gt;
+      &lt;option value="2"&gt;Option 2&lt;/option&gt;
+      &lt;option value="3"&gt;Option 3&lt;/option&gt;
+      &lt;option value="4" disabled&gt;Option 4 disabled&lt;/option&gt;
+      &lt;option value="5"&gt;Option 5&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;span class="fa fa-angle-down"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="d-h4">Input icons and addons</h4>
+        <div class="d">
+            <div>
+                <div class="a-input has-icon-left">
+                    <label class="a-input__label" for="text-field-icon-left">Text field with left icon</label>
+                    <div class="a-input__wrapper">
+                        <span class="fa fa-user"></span>
+                        <input type="text" name="text-field-icon-left" id="text-field-icon-left" placeholder="Placeholder" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-icon-left"&gt;
+  &lt;label class="a-input__label" for="text-field-icon-left"&gt;Text field with left icon&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;span class="fa fa-user"&gt;&lt;/span&gt;
+    &lt;input type="text" name="text-field-icon-left" id="text-field-icon-left" placeholder="Placeholder" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input has-icon-right">
+                    <label class="a-input__label" for="text-field-icon-right">Text field with right icon</label>
+                    <div class="a-input__wrapper">
+                        <input type="text" name="text-field-icon-right" id="text-field-icon-right" placeholder="Placeholder" />
+                        <span class="fa fa-eye"></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-icon-right"&gt;
+  &lt;label class="a-input__label" for="text-field-icon-right"&gt;Text field with right icon&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;input type="text" name="text-field-icon-right" id="text-field-icon-right" placeholder="Placeholder" /&gt;
+    &lt;span class="fa fa-eye"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input has-addon">
+                    <label class="a-input__label" for="text-field-addon-left">Text field with left addon</label>
+                    <div class="a-input__wrapper">
+                        <div class="a-input__addon">&euro;</div>
+                        <input type="text" name="text-field-addon-left" id="text-field-addon-left" placeholder="Placeholder" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-addon"&gt;
+  &lt;label class="a-input__label" for="text-field-addon-left"&gt;Text field with left addon&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;div class="a-input__addon"&gt;&amp;euro;&lt;/div&gt;
+    &lt;input type="text" name="text-field-addon-left" id="text-field-addon-left" placeholder="Placeholder" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input has-addon">
+                    <label class="a-input__label" for="text-field-addon-right">Text field with right addon</label>
+                    <div class="a-input__wrapper">
+                        <input type="text" name="text-field-addon-right" id="text-field-addon-right" placeholder="Placeholder" />
+                        <div class="a-input__addon">km</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-addon"&gt;
+  &lt;label class="a-input__label" for="text-field-addon-right"&gt;Text field with right addon&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;input type="text" name="text-field-addon-right" id="text-field-addon-right" placeholder="Placeholder" /&gt;
+    &lt;div class="a-input__addon"&gt;km&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="d-h4">Input states</h4>
+        <div class="d">
+            <div>
+                <div class="a-input has-success">
+                    <label class="a-input__label" for="text-field-success">Success text field</label>
+                    <div class="a-input__wrapper">
+                        <input type="text" name="text-field-success" id="text-field-success" placeholder="Placeholder" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-success"&gt;
+  &lt;label class="a-input__label" for="text-field-success"&gt;Success text field&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;input type="text" name="text-field-success" id="text-field-success" placeholder="Placeholder" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input has-warning">
+                    <label class="a-input__label" for="text-field-warning">Warning text field</label>
+                    <div class="a-input__wrapper">
+                        <input type="text" name="text-field-warning" id="text-field-warning" placeholder="Placeholder" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-warning"&gt;
+  &lt;label class="a-input__label" for="text-field-warning"&gt;Warning text field&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;input type="text" name="text-field-warning" id="text-field-warning" placeholder="Placeholder" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input has-icon-right has-error">
+                    <label class="a-input__label" for="text-field-error">Error text field</label>
+                    <div class="a-input__wrapper">
+                        <input type="text" name="text-field-error" id="text-field-error" placeholder="Placeholder" />
+                        <span class="fa fa-eye"></span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-icon-right has-error"&gt;
+  &lt;label class="a-input__label" for="text-field-error"&gt;Error text field&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;input type="text" name="text-field-error" id="text-field-error" placeholder="Placeholder" /&gt;
+    &lt;span class="fa fa-eye"&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
 
         <a name="atoms-label"></a>
         <h3 class="d-h3">Label</h3>
@@ -1271,7 +1583,7 @@
         </div>
 
         <a name="atoms-radiobutton-checkbox"></a>
-        <h3 class="d-h3">Radiobutton / checkbox</h3>
+        <h3 class="d-h3">Radio button / checkbox</h3>
         <span class="d-file">atoms/atoms.radio-checkbox</span>
         <div class="d">
             <div>
@@ -1296,7 +1608,58 @@
         <span class="d-file">atoms/atoms.switch</span>
         <div class="d">
             <div>
-                See <a href="#atoms-input">input</a>
+                <div class="a-input">
+                    <label class="a-input__label">Switch</label>
+                    <div class="a-switch">
+                        <label class="a-switch__label">On</label>
+                        <div class="a-switch__toggle">
+                            <input type="checkbox" name="switch1" id="switch1">
+                            <label for="switch1"></label>
+                        </div>
+                        <label class="a-switch__label">Off</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label"&gt;Switch&lt;/label&gt;
+  &lt;div class="a-switch"&gt;
+    &lt;label class="a-switch__label"&gt;On&lt;/label&gt;
+    &lt;div class="a-switch__toggle"&gt;
+      &lt;input type="checkbox" name="switch1" id="switch1"&gt;
+      &lt;label for="switch1"&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;label class="a-switch__label"&gt;Off&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input">
+                    <label class="a-input__label">Disabled switch</label>
+                    <div class="a-switch is-disabled">
+                        <label class="a-switch__label">On</label>
+                        <div class="a-switch__toggle">
+                            <input type="checkbox" name="switch2" id="switch2" disabled>
+                            <label for="switch2"></label>
+                        </div>
+                        <label class="a-switch__label">Off</label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label"&gt;Disabled switch&lt;/label&gt;
+  &lt;div class="a-switch"&gt;
+    &lt;label class="a-switch__label"&gt;On&lt;/label&gt;
+    &lt;div class="a-switch__toggle"&gt;
+      &lt;input type="checkbox" name="switch2" id="switch2" disabled&gt;
+      &lt;label for="switch2"&gt;&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;label class="a-switch__label"&gt;Off&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
             </div>
         </div>
 
