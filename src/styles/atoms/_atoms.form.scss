@@ -20,8 +20,18 @@ fieldset {
   margin: 0;
   min-width: 0;
   padding: $fieldset-padding;
+  position: relative;
 
   + fieldset {
     margin-top: -1px;
   }
+}
+
+legend {
+  background: $grey;
+  color: $white;
+  display: block;
+  padding: $legend-padding;
+  position: absolute;
+  top: 0;
 }
