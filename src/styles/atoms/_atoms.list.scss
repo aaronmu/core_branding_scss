@@ -108,8 +108,7 @@ dl {
     margin-top: $spacer * 2 / 3;
 
     > li {
-      margin-left: -$spacer-xs;
-      padding-left: $spacer-lg;
+      padding-left: $spacer-xs;
 
       &:last-of-type {
         margin-bottom: -($spacer * 2 / 3);
