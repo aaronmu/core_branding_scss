@@ -191,11 +191,89 @@ footer {
     margin-bottom: $spacer / 2; // Improves the 'flow' of multiple consecutive tooltips
 }
 
-.d-alert-datepicker {
-    margin-top: 24rem;
+.d-datepicker {
+    margin-bottom: 24rem;
 }
 
+.d-flyout {
+    margin-bottom: 12rem;
 
+    &--sm {
+        margin-bottom: 14rem;
+    }
+
+    &--md {
+        margin-bottom: 14rem;
+
+        @include at($screen-sm) {
+            margin-bottom: 9rem;
+        }
+    }
+
+    &--lg {
+        margin-bottom: 14rem;
+
+        @include at($screen-sm) {
+            margin-bottom: 9rem;
+        }
+
+        @include at($screen-md) {
+            margin-bottom: 8rem;
+        }
+    }
+
+    &--full {
+        margin-bottom: 7rem;
+    }
+
+    &--no-padding {
+        margin-bottom: 3rem;
+    }
+}
+
+.d-icon-list {
+    padding: $spacer;
+}
+
+.d-nav-list {
+    margin-bottom: $spacer * 2;
+}
+
+.d-pagination {
+    margin-bottom: $spacer;
+}
+
+.d-fix-top {
+    margin-top: $spacer * 2;
+
+    &-sm {
+        margin-top: $spacer;
+    }
+}
+
+.d-overlay input:checked ~ .m-overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    label {
+        box-shadow: none;
+        height: auto;
+        width: auto;
+
+        @include to($screen-xs) {
+            margin-bottom: $spacer / 2;
+        }
+
+        &:after {
+            content: none;
+        }
+    }
+
+    .m-modal__footer [class*='a-button'] {
+        margin-bottom: 0;
+    }
+}
 
 @keyframes rainbow { 
     0%{background-position:0% 0%}
