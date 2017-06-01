@@ -56,7 +56,7 @@ gulp.task('sass', function () {
 
 gulp.task('sass-dist', function(){
 
-    return gulp.src('src/styles/**/*.scss')
+    return gulp.src(['src/styles/**/*.scss', '!src/styles/**/styleguide.scss'])
         .pipe(plumber())
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(mergeMediaQueries({ use_external: false }))

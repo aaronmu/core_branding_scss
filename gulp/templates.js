@@ -14,7 +14,7 @@ var sassVars = require('sass-vars-to-js');
 gulp.task('render-templates', function () {
 
     return gulp.src([
-        'src/**/*.njk'
+        'src/**/index.njk'
     ])
     .pipe(plumber())
     .pipe(nunjucks.compile(getTemplateData()))

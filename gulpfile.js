@@ -39,6 +39,14 @@ gulp.task('build', ['clean-dist'], function(callback) {
 	});
 });
 
+gulp.task('build-docs', ['clean-docs'], function(callback) {
+	var run = require('run-sequence').use(gulp);
+
+	run(['icon-font', 'sass-dist', 'copy'], function() {
+		callback();
+	});
+});
+
 gulp.task('bump', ['build'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 
@@ -47,7 +55,7 @@ gulp.task('bump', ['build'], function(callback) {
 	});
 });
 
-gulp.task('docs', ['build'], function(callback) {
+gulp.task('docs', ['build-docs'], function(callback) {
 	var run = require('run-sequence').use(gulp);
 
 	run(['copy-docs', 'replace'], function() {
