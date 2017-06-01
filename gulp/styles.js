@@ -20,6 +20,8 @@ var autoprefixer = require("autoprefixer");
 var cssnano = require("cssnano");
 var rename = require('gulp-rename');
 var cssUrlAdjuster = require('gulp-css-url-adjuster');
+var license = require('gulp-header-license');
+var fs = require('fs');
 
 var cssNano = [
     cssnano()
@@ -67,6 +69,8 @@ gulp.task('sass-dist', function(){
         .pipe(gulp.dest('dist'))
         .pipe(sourcemaps.init())
         .pipe(postcss(cssNano))
+        .pipe(license('/*\n' + fs.readFileSync('LICENSE.md', 'utf8') + '*/'))
+        .pipe(gulp.dest('./dist/'))
         .pipe(rename({extname: '.min.css'}))
         .pipe(sourcemaps.write("./", sourcemapOptions))
         .pipe(gulp.dest('dist'));
