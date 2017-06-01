@@ -251,6 +251,10 @@ footer {
     }
 }
 
+.d-overlay {
+    margin-bottom: $spacer * 2;
+}
+
 .d-overlay input:checked ~ .m-overlay {
     align-items: center;
     display: flex;
@@ -259,6 +263,7 @@ footer {
     label {
         box-shadow: none;
         height: auto;
+        position: static;
         width: auto;
 
         @include to($screen-xs) {

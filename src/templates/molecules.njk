@@ -837,7 +837,7 @@
                     </div>
                 </div>
                 <div class="m-alert d-alert u-margin-bottom">
-                    <p>To make the datepicker visible, just add the <code>.is-open</code> class, as demonstrated in the example.</p>
+                    <p>In order to make the datepicker visible, just add the <code>.is-open</code> class, as demonstrated in the example.</p>
                 </div>
                 <div class="m-alert d-alert u-margin-bottom">
                     <p>In the rare case that you want your datepicker to open on the left side of the input field, just add the <code>.m-datepicker--left</code> class.</p>
@@ -1511,33 +1511,45 @@
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
+        <div class="d">
+            <div>
+                <div class="m-alert d-alert">
+                    <p>Note that on mobile devices <code>.m-nav-tabs</code> has the exact same appearance as <code>.m-nav-list</code>.</p>
+                </div>
+            </div>
+        </div>
 
         <a name="molecules-overlay"></a>
         <h3 class="d-h3">Overlay</h3>
         <span class="d-file">molecules/molecules.overlay</span>
         <div class="d">
-            <div class="a-input d-overlay">
-                <div class="a-switch">
-                    <label class="a-switch__label">Hide overlay</label>
-                    <div class="a-switch__toggle">
-                        <input type="checkbox" name="input-modal" id="input-modal">
-                        <label for="input-modal"></label>
-                        <div class="m-overlay">
-                            <div class="m-overlay__inner">
-                                <div class="m-modal">
-                                    <div class="m-modal__content">
-                                        <div class="m-modal__body u-margin-bottom">
-                                            <p>This simple modal is just one example of what can be put inside an overlay.</p>
-                                        </div>
-                                        <div class="m-modal__footer">
-                                            <label for="input-modal"><a class="a-button">Close overlay</a></label>
+            <div>
+                <div class="a-input d-overlay">
+                    <div class="a-switch">
+                        <label class="a-switch__label">Hide overlay</label>
+                        <div class="a-switch__toggle">
+                            <input type="checkbox" name="input-modal" id="input-modal">
+                            <label for="input-modal"></label>
+                            <div class="m-overlay">
+                                <div class="m-overlay__inner">
+                                    <div class="m-modal">
+                                        <div class="m-modal__content">
+                                            <div class="m-modal__body u-margin-bottom">
+                                                <p>This simple modal is just one example of what can be put inside an overlay.</p>
+                                            </div>
+                                            <div class="m-modal__footer">
+                                                <label for="input-modal"><a class="a-button">Close overlay</a></label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <label class="a-switch__label">Show overlay</label>
                     </div>
-                    <label class="a-switch__label">Show overlay</label>
+                </div>
+                <div class="m-alert d-alert">
+                    <p>In order to make the overlay visible, just add the <code>.is-active</code> class, as demonstrated in the example.</p>
                 </div>
             </div>
             <div>
@@ -1545,6 +1557,9 @@
   &lt;div class="m-overlay__inner"&gt;
     ...
   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="m-overlay is-active"&gt;
+  ...
 &lt;/div&gt;</code></pre>
             </div>
         </div>
