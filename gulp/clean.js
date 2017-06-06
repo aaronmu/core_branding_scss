@@ -21,3 +21,11 @@ gulp.task('clean-dist', function () {
     ], { read: false })
         .pipe(clean());
 });
+
+gulp.task('clean-docs', function () {
+
+    return gulp.src([
+        'docs'
+    ], { read: false })
+        .pipe(clean());
+});

@@ -37,14 +37,12 @@
 
 .m-icon-list--horizontal {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -$spacer-sm;
 
   li {
-    margin-bottom: $spacer-sm;
+    margin: 0;
 
     &:not(:last-child) {
-      margin-right: $spacer;
+      margin: 0 $spacer 0 0;
     }
   }
 }

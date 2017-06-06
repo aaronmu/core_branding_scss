@@ -15,18 +15,18 @@ dl {
  */
 
 %a-list {
-  padding-left: $spacer;
+  padding-left: $list-padding-left;
 
   .a-list {
-    margin-top: $spacer / 3;
+    margin-top: $list-item-padding-top;
 
     > li:last-of-type {
-      margin-bottom: -$spacer / 3;
+      margin-bottom: -$list-item-padding-bottom;
     }
   }
 
   > li {
-    padding: $spacer / 3 0;
+    padding: $list-item-padding-top 0 $list-item-padding-bottom;
   }
 }
 
@@ -108,8 +108,7 @@ dl {
     margin-top: $spacer * 2 / 3;
 
     > li {
-      margin-left: -$spacer-xs;
-      padding-left: $spacer-lg;
+      padding-left: $spacer-xs;
 
       &:last-of-type {
         margin-bottom: -($spacer * 2 / 3);

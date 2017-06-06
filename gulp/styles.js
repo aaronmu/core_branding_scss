@@ -20,6 +20,8 @@ var autoprefixer = require("autoprefixer");
 var cssnano = require("cssnano");
 var rename = require('gulp-rename');
 var cssUrlAdjuster = require('gulp-css-url-adjuster');
+var license = require('gulp-header-license');
+var fs = require('fs');
 
 var cssNano = [
     cssnano()
@@ -46,7 +48,7 @@ gulp.task('sass', function () {
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
-        .pipe(gulp.dest('.tmp/css'));
+        .pipe(gulp.dest('.tmp/styles'));
 });
 
 
@@ -56,7 +58,7 @@ gulp.task('sass', function () {
 
 gulp.task('sass-dist', function(){
 
-    return gulp.src('src/styles/**/*.scss')
+    return gulp.src(['src/styles/**/*.scss', '!src/styles/**/styleguide.scss'])
         .pipe(plumber())
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(mergeMediaQueries({ use_external: false }))
@@ -67,6 +69,8 @@ gulp.task('sass-dist', function(){
         .pipe(gulp.dest('dist'))
         .pipe(sourcemaps.init())
         .pipe(postcss(cssNano))
+        .pipe(license('/*\n' + fs.readFileSync('LICENSE.md', 'utf8') + '*/'))
+        .pipe(gulp.dest('./dist/'))
         .pipe(rename({extname: '.min.css'}))
         .pipe(sourcemaps.write("./", sourcemapOptions))
         .pipe(gulp.dest('dist'));
