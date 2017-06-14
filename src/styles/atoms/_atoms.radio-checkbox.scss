@@ -91,18 +91,33 @@
   }
 }
 
-.a-input__checkbox input[type='checkbox']:checked + label:after {
-  content: '\f00c';
-}
-
-.a-input__radio {
-
-  input[type='radio']:checked + label:before {
-    background: $white;
-    box-shadow: 0 0 0 rem(5px) $radio-checkbox-bg inset;
+.a-input__checkbox input[type='checkbox']:checked {
+  + label:after {
+    content: '\f00c';
   }
 
-  label:before {
+  &:disabled {
+    + label:before {
+      background-color: $input-disabled;
+    }
+  }
+}
+
+.a-input__radio input[type='radio'] {
+  + label:before {
     border-radius: 50%;
+  }
+
+  &:checked {
+    + label:before {
+      background: $white;
+      box-shadow: 0 0 0 rem(5px) $radio-checkbox-bg inset;
+    }
+
+    &:disabled {
+      + label:before {
+        box-shadow: 0 0 0 rem(5px) $input-disabled inset;
+      }
+    }
   }
 }
