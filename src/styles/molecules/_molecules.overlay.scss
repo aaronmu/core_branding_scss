@@ -61,3 +61,8 @@
     color: $slideshow-footer-color-light;
   }
 }
+
+.m-overlay__pane {
+  position: absolute;
+  z-index: layer('pane-overlay');
+}
