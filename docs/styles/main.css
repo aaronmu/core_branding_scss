@@ -190,6 +190,21 @@
 /**
  * Z-INDEXES
  * -------------------------------------------------------------------
+ * http://www.sitepoint.com/better-solution-managing-z-index-sass/
+ *
+ * Use like this:
+ *   z-index: layer("overlay");
+ *     where overlay is a list item of the default list "$z-indexes" (see below)
+ *
+ * The list is also upgradeable in that nesting is permitted, e.g.:
+ * $z-indexes: (
+ *   'modal': (
+ *     'back': 50,
+ *     'front': 60
+ *   ),
+ *   'navigation': 40,
+ *   ...
+ * )
  */
 
 /**
@@ -2296,6 +2311,7 @@ a.a-avatar:active:before {
 .a-button-outline.a-button--large,
 .a-button-transparent.a-button--large {
 	font-size: 1.125rem;
+	line-height: 3.75rem;
 	min-height: 3.75rem;
 }
 
@@ -2316,7 +2332,9 @@ a.a-avatar:active:before {
 .a-button-negative.has-icon-left,
 .a-button-negative.has-icon-right,
 .a-button-outline.has-icon-left,
-.a-button-outline.has-icon-right {
+.a-button-outline.has-icon-right,
+.a-button-transparent.has-icon-left,
+.a-button-transparent.has-icon-right {
 	position: relative;
 }
 
@@ -2325,7 +2343,9 @@ a.a-avatar:active:before {
 .a-button-negative.has-icon-left .fa,
 .a-button-negative.has-icon-right .fa,
 .a-button-outline.has-icon-left .fa,
-.a-button-outline.has-icon-right .fa {
+.a-button-outline.has-icon-right .fa,
+.a-button-transparent.has-icon-left .fa,
+.a-button-transparent.has-icon-right .fa {
 	position: absolute;
 	top: 50%;
 	-ms-transform: translateY(-50%);
@@ -2335,25 +2355,29 @@ a.a-avatar:active:before {
 
 .a-button.has-icon-left,
 .a-button-negative.has-icon-left,
-.a-button-outline.has-icon-left {
+.a-button-outline.has-icon-left,
+.a-button-transparent.has-icon-left {
 	padding-left: 3rem;
 }
 
 .a-button.has-icon-left .fa,
 .a-button-negative.has-icon-left .fa,
-.a-button-outline.has-icon-left .fa {
+.a-button-outline.has-icon-left .fa,
+.a-button-transparent.has-icon-left .fa {
 	left: 0;
 }
 
 .a-button.has-icon-right,
 .a-button-negative.has-icon-right,
-.a-button-outline.has-icon-right {
+.a-button-outline.has-icon-right,
+.a-button-transparent.has-icon-right {
 	padding-right: 3rem;
 }
 
 .a-button.has-icon-right .fa,
 .a-button-negative.has-icon-right .fa,
-.a-button-outline.has-icon-right .fa {
+.a-button-outline.has-icon-right .fa,
+.a-button-transparent.has-icon-right .fa {
 	right: 0;
 }
 
@@ -2632,7 +2656,7 @@ legend {
 
 button,
 input,
-input[type="search"],
+input[type='search'],
 select,
 textarea {
 	-webkit-appearance: none;
@@ -3111,16 +3135,16 @@ textarea {
  * -------------------------------------------------------------------
  */
 
-a.has-icon-left .fa,
-a.has-icon-right .fa {
+a:not(.a-button):not(.a-button-outline):not(.a-button-negative):not(.a-button-transparent).has-icon-left .fa,
+a:not(.a-button):not(.a-button-outline):not(.a-button-negative):not(.a-button-transparent).has-icon-right .fa {
 	font-size: .875rem;
 }
 
-a.has-icon-left .fa {
+a:not(.a-button):not(.a-button-outline):not(.a-button-negative):not(.a-button-transparent).has-icon-left .fa {
 	padding-right: 0.5rem;
 }
 
-a.has-icon-right .fa {
+a:not(.a-button):not(.a-button-outline):not(.a-button-negative):not(.a-button-transparent).has-icon-right .fa {
 	padding-left: 0.5rem;
 }
 
@@ -3362,7 +3386,7 @@ dl {
 .a-input__checkbox input:checked + label:before,
 .a-input__radio input:checked + label:before {
 	background-color: #0064b4;
-	border-color: #0064b4;
+	box-shadow: 0 0 0 1px #0064b4 inset;
 }
 
 .a-input__checkbox input:checked + label:after,
@@ -3382,7 +3406,7 @@ dl {
 
 .a-input__checkbox input:disabled + label:before,
 .a-input__radio input:disabled + label:before {
-	border-color: #d8d8d8;
+	box-shadow: 0 0 0 1px #d8d8d8 inset;
 }
 
 .a-input__checkbox label,
@@ -3400,7 +3424,7 @@ dl {
 .a-input__checkbox label:before,
 .a-input__radio label:before {
 	background-color: white;
-	border: 1px solid #b0b0b0;
+	box-shadow: 0 0 0 1px #b0b0b0 inset;
 	content: '';
 	display: inline-block;
 	height: 1.5rem;
@@ -3408,7 +3432,7 @@ dl {
 	margin-left: -1.5rem;
 	position: absolute;
 	transition-duration: 250ms;
-	transition-property: background, border-color, box-shadow;
+	transition-property: background, box-shadow;
 	transition-timing-function: ease-in-out;
 	width: 1.5rem;
 }
@@ -3431,13 +3455,21 @@ dl {
 	content: '\f00c';
 }
 
-.a-input__radio input[type='radio']:checked + label:before {
-	background: white;
-	box-shadow: 0 0 0 0.3125rem #0064b4 inset;
+.a-input__checkbox input[type='checkbox']:checked:disabled + label:before {
+	background-color: #d8d8d8;
 }
 
-.a-input__radio label:before {
+.a-input__radio input[type='radio'] + label:before {
 	border-radius: 50%;
+}
+
+.a-input__radio input[type='radio']:checked + label:before {
+	background: white;
+	box-shadow: 0 0 0 0.375rem #0064b4 inset;
+}
+
+.a-input__radio input[type='radio']:checked:disabled + label:before {
+	box-shadow: 0 0 0 6px #d8d8d8 inset;
 }
 
 /**
@@ -4383,8 +4415,8 @@ dl {
  */
 
 .m-flyout {
-	position: relative;
 	display: inline-block;
+	position: relative;
 }
 
 /**
@@ -4752,7 +4784,7 @@ dl {
 	position: fixed;
 	right: 0;
 	top: 0;
-	z-index: 6;
+	z-index: 8;
 }
 
 .m-overlay.is-active {
@@ -4801,6 +4833,11 @@ dl {
 
 .m-overlay__slideshow.o-slideshow .o-slideshow__footer {
 	color: white;
+}
+
+.m-overlay__pane {
+	position: absolute;
+	z-index: 5;
 }
 
 /**
@@ -5395,6 +5432,8 @@ dl {
 	background-color: black;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex: 0 0 auto;
+	    flex: 0 0 auto;
 	height: 3rem;
 	-ms-flex-pack: center;
 	    justify-content: center;
@@ -5449,7 +5488,7 @@ dl {
 	position: fixed;
 	right: 0;
 	top: 0;
-	z-index: 5;
+	z-index: 7;
 }
 
 /**

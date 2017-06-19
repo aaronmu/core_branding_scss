@@ -30,10 +30,9 @@
     z-index: layer('base');
 
     &:checked + label {
-
       &:before {
         background-color: $radio-checkbox-bg;
-        border-color: $radio-checkbox-bg;
+        box-shadow: 0 0 0 1px $radio-checkbox-bg inset;
       }
 
       &:after {
@@ -46,7 +45,7 @@
       cursor: not-allowed;
 
       &:before {
-        border-color: $input-disabled;
+        box-shadow: 0 0 0 1px $input-disabled inset;
       }
     }
   }
@@ -63,7 +62,7 @@
 
     &:before {
       background-color: $input-bg;
-      border: 1px solid $input-border;
+      box-shadow: 0 0 0 1px $input-border inset;
       content: '';
       display: inline-block;
       height: $spacer;
@@ -71,7 +70,7 @@
       margin-left: -$spacer;
       position: absolute;
       transition-duration: $animation-duration;
-      transition-property: background, border-color, box-shadow;
+      transition-property: background, box-shadow;
       transition-timing-function: $animation-easing;
       width: $spacer;
     }
@@ -91,18 +90,33 @@
   }
 }
 
-.a-input__checkbox input[type='checkbox']:checked + label:after {
-  content: '\f00c';
-}
-
-.a-input__radio {
-
-  input[type='radio']:checked + label:before {
-    background: $white;
-    box-shadow: 0 0 0 rem(5px) $radio-checkbox-bg inset;
+.a-input__checkbox input[type='checkbox']:checked {
+  + label:after {
+    content: '\f00c';
   }
 
-  label:before {
+  &:disabled {
+    + label:before {
+      background-color: $input-disabled;
+    }
+  }
+}
+
+.a-input__radio input[type='radio'] {
+  + label:before {
     border-radius: 50%;
+  }
+
+  &:checked {
+    + label:before {
+      background: $white;
+      box-shadow: 0 0 0 rem(6px) $radio-checkbox-bg inset;
+    }
+
+    &:disabled {
+      + label:before {
+        box-shadow: 0 0 0 6px $input-disabled inset;
+      }
+    }
   }
 }
