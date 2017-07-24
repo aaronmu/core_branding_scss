@@ -3477,7 +3477,7 @@ dl {
  * -------------------------------------------------------------------
  */
 
-.a-spinner:before {
+.a-spinner::before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-size: inherit;
@@ -3497,6 +3497,10 @@ dl {
 
 .a-spinner--centered {
 	text-align: center;
+}
+
+.a-spinner--sm::before {
+	font-size: 1.375rem;
 }
 
 /**
