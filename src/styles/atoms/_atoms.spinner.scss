@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-.a-spinner::before {
+.a-spinner:before {
   @include fontawesome;
   animation: $spinner-animation-name $spinner-animation-speed infinite $spinner-animation-timing;
   color: $spinner-color;
@@ -21,8 +21,18 @@
   text-align: center;
 }
 
+/**
+ * Spinner sizes
+ */
+
 .a-spinner--sm {
-  &::before {
+  &:before {
     font-size: rem($spinner-size-sm);
+  }
+}
+
+.a-spinner--lg {
+  &:before {
+    font-size: rem($spinner-size-lg);
   }
 }

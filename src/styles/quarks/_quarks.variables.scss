@@ -344,7 +344,7 @@ $input-bg:                $white !default;
 $input-border:            $border-color !default;
 $input-border-focus:      mix($input-border, $white, 25%) !default;
 $input-disabled:          $state-disabled !default;
-$input-placeholder:       $state-disabled !default;
+$input-placeholder:       mix($black, $state-disabled, 20%) !default;
 $input-icon:              $grey-dark !default;
 $input-icon-hover:        $black-pearl !default;
 $input-required:          $state-danger !default;
@@ -686,9 +686,10 @@ $header-border:           $border-color !default;
 $spinner-color:           $grey !default;
 $spinner-size:            $icon-size-lg !default;
 $spinner-size-sm:         $icon-size-base !default;
+$spinner-size-lg:         $spinner-size * 2 !default;
 
 $spinner-animation-name:      fa-spin !default;
-$spinner-animation-speed:     1500ms !default;
+$spinner-animation-speed:     1200ms !default;
 $spinner-animation-timing:    linear !default;
 
 

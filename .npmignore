@@ -1,4 +1,4 @@
 **/.*
+docker-compose.ci.yml
 gulp
 Gulpfile.js
-src
