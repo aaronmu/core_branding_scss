@@ -1,6 +1,6 @@
 {
   "name": "@a-ui/core",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "repository": {
     "type": "git",
@@ -11,9 +11,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build"
   },
-  "files": [
-    "dist/**"
-  ],
   "contributors": [
     {
       "name": "Jasper Van Proeyen",
