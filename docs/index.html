@@ -71,7 +71,7 @@
     <main>
         <div class="u-wrapper d-h1">
             <div class="u-container">
-                <h1>Core Branding Styleguide <small>v1.0.0</small></h1>
+                <h1>Core Branding Styleguide <small>v1.1.0</small></h1>
             </div>
         </div>
 
@@ -942,7 +942,7 @@
                         </li>
                     
                         <li class="d-input-placeholder">
-                            <code>$input-placeholder</code>: $state-disabled
+                            <code>$input-placeholder</code>: mix($black, $state-disabled, 20%)
                         </li>
                     
                         <li class="d-input-icon">
@@ -1545,12 +1545,16 @@
                             <code>$spinner-size-sm</code>: $icon-size-base
                         </li>
                     
+                        <li class="d-spinner-size-lg">
+                            <code>$spinner-size-lg</code>: $spinner-size * 2
+                        </li>
+                    
                         <li class="d-spinner-animation-name">
                             <code>$spinner-animation-name</code>: fa-spin
                         </li>
                     
                         <li class="d-spinner-animation-speed">
-                            <code>$spinner-animation-speed</code>: 1500ms
+                            <code>$spinner-animation-speed</code>: 1200ms
                         </li>
                     
                         <li class="d-spinner-animation-timing">
@@ -4677,6 +4681,17 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-spinner a-spinner--sm"&gt;&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-spinner a-spinner--lg"></div>
+                <div class="m-alert d-alert">
+                    <p>Note that the large spinner can be used only once per page and only for indicating that the complete page is loading.</p>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-spinner a-spinner--lg"&gt;&lt;/div&gt;</code></pre>
             </div>
         </div>
 
