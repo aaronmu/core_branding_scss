@@ -64,14 +64,14 @@
       border-left: none;
       border-right: none;
       color: $nav-color;
+      display: block;
       padding: $nav-padding;
       text-decoration: none;
-      display: block;
-      width: 100%;
-      cursor: pointer;
       transition-duration: $animation-duration;
       transition-property: background, color;
       transition-timing-function: $animation-easing;
+      width: 100%;
+      cursor: pointer;
 
       &:hover,
       &:active {
