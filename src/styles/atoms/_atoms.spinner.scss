@@ -3,10 +3,14 @@
  * -------------------------------------------------------------------
  */
 
+.a-spinner {
+  color: $spinner-color;
+}
+
 .a-spinner:before {
   @include fontawesome;
   animation: $spinner-animation-name $spinner-animation-speed infinite $spinner-animation-timing;
-  color: $spinner-color;
+  color: inherit;
   content: '\f1ce';
   display: inline-block;
   font-size: rem($spinner-size);
