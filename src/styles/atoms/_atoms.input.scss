@@ -87,7 +87,6 @@ textarea {
   position: relative;
 }
 
-
 /**
  * INPUT LABEL
  * -------------------------------------------------------------------
@@ -253,4 +252,8 @@ textarea {
   textarea {
     width: auto;
   }
+}
+
+.a-input__wrapper--inline {
+  display: inline-block;
 }
