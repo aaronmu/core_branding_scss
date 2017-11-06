@@ -87,11 +87,6 @@ textarea {
   position: relative;
 }
 
-.a-input__wrapper--inline {
-  position: relative;
-  display: inline-block;
-}
-
 /**
  * INPUT LABEL
  * -------------------------------------------------------------------
@@ -195,9 +190,7 @@ textarea {
 .a-input {
 
   &.has-icon-left .a-input__wrapper > .fa,
-  &.has-icon-right .a-input__wrapper > .fa,
-  &.has-icon-left .a-input__wrapper--inline > .fa,
-  &.has-icon-right .a-input__wrapper--inline > .fa {
+  &.has-icon-right .a-input__wrapper > .fa {
     color: $input-icon;
     font-size: 1.25rem;
     height: $spacer-lg;
@@ -221,8 +214,7 @@ textarea {
     }
   }
 
-  &.has-icon-left .a-input__wrapper,
-  &.has-icon-left .a-input__wrapper--inline {
+  &.has-icon-left .a-input__wrapper {
 
     input:not([class*='a-button'], [type='checkbox'], [type='radio']),
     select {
@@ -234,8 +226,7 @@ textarea {
     }
   }
 
-  &.has-icon-right .a-input__wrapper,
-  &.has-icon-right .a-input__wrapper--inline {
+  &.has-icon-right .a-input__wrapper {
 
     input:not([class*='a-button'], [type='checkbox'], [type='radio']),
     select {
@@ -261,4 +252,8 @@ textarea {
   textarea {
     width: auto;
   }
+}
+
+.a-input__wrapper--inline {
+  display: inline-block;
 }
