@@ -34,8 +34,9 @@
 
     > a,
     > button {
-      background-color: $nav-bg;
+      border: none;
       border-bottom: 1px solid $border-color;
+      background-color: $nav-bg;
       color: $nav-color;
       display: block;
       padding: $nav-padding;
