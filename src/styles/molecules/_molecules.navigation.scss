@@ -21,17 +21,22 @@
 
     &.is-active {
       > a,
-      > a:hover,
-      > a:active {
-        background-color: $nav-bg-active;
-        color: $nav-color-active;
-        text-decoration: underline;
+      > button {
+        &,
+        &:hover,
+        &:active {
+          background-color: $nav-bg-active;
+          color: $nav-color-active;
+          text-decoration: underline;
+        }
       }
     }
 
-    > a {
-      background-color: $nav-bg;
+    > a,
+    > button {
+      border: none;
       border-bottom: 1px solid $border-color;
+      background-color: $nav-bg;
       color: $nav-color;
       display: block;
       padding: $nav-padding;
@@ -53,6 +58,11 @@
         vertical-align: bottom;
       }
     }
+
+    > button {
+      width: 100%;
+      cursor: pointer;
+    }
   }
 }
 
@@ -70,6 +80,9 @@
   text-align: left;
 }
 
+.m-nav-list--left > li > button {
+  text-align: left;
+}
 
 /**
  * NAVIGATION TABS
