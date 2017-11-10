@@ -10,17 +10,31 @@
  * -------------------------------------------------------------------
  */
 
-@mixin font-face($_name, $_url, $_weight: normal, $_style: normal) {
+@mixin font-face($_name, $_url, $_weight: normal, $_style: normal, $_local: null) {
 
-  @font-face {
-    font-family: $_name;
-    src: url($_url + ".eot");
-    src: url($_url + ".eot?#iefix") format("embedded-opentype"),
-         url($_url + ".woff") format("woff"),
-         url($_url + ".ttf") format("truetype"),
-         url($_url + ".svg#icon") format("svg");
-    font-weight: $_weight;
-    font-style: $_style;
+  @if $_local {
+    @font-face {
+      font-family: $_name;
+      src: url($_url + ".eot");
+      src: $_local,
+           url($_url + ".eot?#iefix") format("embedded-opentype"),
+           url($_url + ".woff") format("woff"),
+           url($_url + ".ttf") format("truetype"),
+           url($_url + ".svg#icon") format("svg");
+      font-weight: $_weight;
+      font-style: $_style;
+    }
+  } @else {
+    @font-face {
+      font-family: $_name;
+      src: url($_url + ".eot");
+      src: url($_url + ".eot?#iefix") format("embedded-opentype"),
+           url($_url + ".woff") format("woff"),
+           url($_url + ".ttf") format("truetype"),
+           url($_url + ".svg#icon") format("svg");
+      font-weight: $_weight;
+      font-style: $_style;
+    }
   }
 }
 

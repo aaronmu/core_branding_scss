@@ -56,12 +56,12 @@
 
 .m-accordion__content {
   background-color: $accordion-content-bg;
+  border-bottom: none;
   border-left: 1px solid $accordion-border;
   border-right: 1px solid $accordion-border;
   display: block;
-  overflow: auto;
   max-height: 0;
-  transition: max-height .5s ease-out;
+  overflow: auto;
   padding: 0;
-  border-bottom: 0;
+  transition: max-height .5s ease-out;
 }

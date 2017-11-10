@@ -32,6 +32,12 @@
  * -------------------------------------------------------------------
  */
 
+.m-flyout.opens-above {
+  .m-flyout__content {
+    box-shadow: $box-shadow-reverse;
+  }
+}
+
 
 /**
  * FLYOUT POSITIONING
@@ -109,4 +115,14 @@
 
 .a-input + .m-flyout__content {
   margin-top: -1px;
+}
+
+
+/**
+ * DATEPICKER IN FLYOUT BORDER FIX
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout__content.m-datepicker {
+  border: none;
 }

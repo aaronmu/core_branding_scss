@@ -3,38 +3,5 @@
  * -------------------------------------------------------------------
  */
 
-
-/**
- * ANTWERPEN
- * -------------------------------------------------------------------
- */
-
-@include font-face('Antwerpen Small', '../../fonts/Antwerpen_Small', $normal, normal);
-@include font-face('Antwerpen Regular', '../../fonts/Antwerpen_Regular', $normal, normal);
-@include font-face('Antwerpen Tall', '../../fonts/Antwerpen_Tall', $normal, normal);
-
-
-/**
- * SUN ANTWERPEN
- * -------------------------------------------------------------------
- */
-
-@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Light', $light, normal);
-@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Light_Italic', $light, italic);
-
-@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Regular', $normal, normal);
-@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Regular_Italic', $normal, italic);
-
-@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Bold', $bold, normal);
-@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_Bold_Italic', $bold, italic);
-
-@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_ExtraBold', $extra-bold, normal);
-@include font-face('Sun Antwerpen', '../../fonts/SunAntwerpen_ExtraBold_Italic', $extra-bold, italic);
-
-
-/**
- * FONT AWESOME
- * -------------------------------------------------------------------
- */
-
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import 'base.fonts.antwerpen';
+@import 'base.fonts.sun-antwerpen';
