@@ -3,7 +3,7 @@
 ## Unreleased
 
 
-## [1.2.0] - 2017-11-10
+## [1.2.0] - 2017-11-13
 ### Added
 - Added the possibility to import custom Antwerp fonts only
 - Added local options for the custom Antwerp fonts
