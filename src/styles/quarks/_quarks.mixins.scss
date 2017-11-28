@@ -163,11 +163,13 @@
 
   &::-moz-placeholder {
     @content;
+    opacity: 1;
     text-overflow: ellipsis;
   }
 
   &:-moz-placeholder {
     @content;
+    opacity: 1;
     text-overflow: ellipsis;
   }
 }
