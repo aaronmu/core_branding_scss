@@ -1,6 +1,9 @@
 # Changelog
 
 ## Unreleased
+
+
+## [1.2.1] - 2017-11-28
 ### Fixed
 - Fixed the color of placeholders that was lighter in Firefox
 
