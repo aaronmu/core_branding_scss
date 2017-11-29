@@ -36,6 +36,7 @@
 - Initial release.
 
 
-[2.0.0]: https://github.com/a-ui/core_branding_scss/tree/v2.0.0
+[1.2.1]: https://github.com/a-ui/core_branding_scss/tree/v1.2.1
+[1.2.0]: https://github.com/a-ui/core_branding_scss/tree/v1.2.0
 [1.1.0]: https://github.com/a-ui/core_branding_scss/tree/v1.1.0
 [1.0.0]: https://github.com/a-ui/core_branding_scss/tree/v1.0.0
