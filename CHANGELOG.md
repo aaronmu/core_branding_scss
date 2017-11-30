@@ -1,8 +1,18 @@
 # Changelog
 
 ## Unreleased
+### Added
+- Added a collapsible list
+- Added table cell padding options
+- Added a hover option for table rows
+- Added an option to use the base font for a heading
+
+### Changed
+- Made `.a-input` less specific for easier overriding
+
 ### Fixed
-- Fixed an issue
+- Fixed the repsonsive 'max' variables
+
 
 ## [1.2.1] - 2017-11-28
 ### Fixed
