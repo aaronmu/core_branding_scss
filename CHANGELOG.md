@@ -1,7 +1,8 @@
 # Changelog
 
 ## Unreleased
-
+### Fixed
+- Prevent nested flyouts from all opening when the highest in order is opened.
 
 ## [1.2.1] - 2017-11-28
 ### Fixed
