@@ -4,13 +4,24 @@
  */
 
 .a-input {
-
   .a-input__radio,
   .a-input__checkbox {
     display: block;
 
     &:not(:last-child) {
       margin-bottom: $spacer-xs;
+    }
+  }
+}
+
+.a-input--inline {
+  .a-input__radio,
+  .a-input__checkbox {
+    display: inline-block;
+
+    + .a-input__radio,
+    + .a-input__checkbox {
+      margin-left: $spacer;
     }
   }
 }

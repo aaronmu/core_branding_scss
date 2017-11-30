@@ -1,7 +1,8 @@
 # Changelog
 
 ## Unreleased
-
+### Fixed
+- Fixed an issue
 
 ## [1.2.1] - 2017-11-28
 ### Fixed

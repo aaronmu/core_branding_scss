@@ -37,7 +37,7 @@ textarea {
     text-align: left;
   }
 
-  input:not([class*='a-button'], [type='checkbox'], [type='radio']),
+  input,
   select,
   textarea {
     border-radius: 0;
@@ -172,7 +172,7 @@ textarea {
       }
 
       .a-input__wrapper {
-        input:not([class*='a-button'], [type='checkbox'], [type='radio']) {
+        input {
           padding-right: $spacer-lg + $spacer-md;
         }
       }
@@ -186,6 +186,20 @@ textarea {
   &.is-required .a-input__label:after {
     color: $input-required;
     content: ' *';
+  }
+}
+
+
+/**
+ * INPUT WITH ICON LEFT OR RIGHT
+ * -------------------------------------------------------------------
+ */
+
+.a-input__checkbox,
+.a-input__radio {
+  input {
+    height: 0;
+    width: 0;
   }
 }
 
@@ -223,8 +237,7 @@ textarea {
   }
 
   &.has-icon-left .a-input__wrapper {
-
-    input:not([class*='a-button'], [type='checkbox'], [type='radio']),
+    input,
     select {
       padding-left: $spacer-lg;
     }
@@ -235,8 +248,7 @@ textarea {
   }
 
   &.has-icon-right .a-input__wrapper {
-
-    input:not([class*='a-button'], [type='checkbox'], [type='radio']),
+    input,
     select {
       padding-right: $spacer-lg;
     }
@@ -255,9 +267,12 @@ textarea {
 
 .a-input--inline {
 
-  input:not([class*='a-button'], [type='checkbox'], [type='radio']),
+  // input:not([class*='a-button'], [type='checkbox'], [type='radio']),
+  input,
   select,
-  textarea {
+  textarea,
+  .a-input__checkbox,
+  .a-input__radio {
     width: auto;
   }
 }

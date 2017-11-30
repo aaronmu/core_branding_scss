@@ -57,9 +57,9 @@ $screen-sm:               45rem !default; // 720px
 $screen-md:               62rem !default; // 992px
 $screen-lg:               75rem !default; // 1200px
 
-$screen-xs-max:           calc($screen-sm - 1px); // 719px
-$screen-sm-max:           calc($screen-md - 1px); // 991px
-$screen-md-max:           calc($screen-lg - 1px); // 1199px
+$screen-xs-max:           44.9375rem !default; // 719px ($screen-sm - 1px)
+$screen-sm-max:           61.9375rem !default; // 991px ($screen-md - 1px)
+$screen-md-max:           74.9375rem !default; // 1199px ($screen-lg - 1px)
 
 
 /**
@@ -112,6 +112,13 @@ $light:                   300 !default;
 $normal:                  500 !default;
 $bold:                    700 !default;
 $extra-bold:              800 !default;
+
+$font-weight-h1:          $normal !default;
+$font-weight-h2:          $normal !default;
+$font-weight-h3:          $normal !default;
+$font-weight-h4:          $normal !default;
+$font-weight-h5:          $normal !default;
+$font-weight-h6:          $normal !default;
 
 
 /**
@@ -194,6 +201,7 @@ $box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($black, .1) !default;
  */
 
 $link-color:              $brand-primary !default;
+$link-background-color:   mix($brand-primary, $white, 10%) !default;
 $link-hover-color:        mix($link-color, $black, 85%) !default;
 
 
