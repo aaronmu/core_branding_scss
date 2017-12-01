@@ -7,6 +7,7 @@
 - Added a hover option for table rows
 - Added an option to use the base font for a heading
 - Added small and large size variants for input fields
+- Added updated versions of the Antwerpen web fonts
 
 ### Changed
 - Made `.a-input` less specific for easier overriding
