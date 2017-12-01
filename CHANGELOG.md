@@ -6,12 +6,16 @@
 - Added table cell padding options
 - Added a hover option for table rows
 - Added an option to use the base font for a heading
+- Added small and large size variants for input fields
 
 ### Changed
 - Made `.a-input` less specific for easier overriding
+- Made input fields more configurable
 
 ### Fixed
 - Fixed the repsonsive 'max' variables
+- Fixed a placeholder rendering issue
+- Fixed an issue where the `.u-container` would collapse
 
 
 ## [1.2.1] - 2017-11-28

@@ -8,8 +8,26 @@
 }
 
 .a-input__addon {
-  line-height: $spacer-lg;
+  line-height: $input-height;
   padding: 0 $spacer-xs;
   text-align: center;
   white-space: nowrap;
+}
+
+
+/**
+ * ADDONS FOR OTHER INPUT SIZES
+ * -------------------------------------------------------------------
+ */
+
+.a-input--small {
+	.a-input__addon {
+		line-height: $input-height-sm;
+	}
+}
+
+.a-input--large {
+	.a-input__addon {
+		line-height: $input-height-lg;
+	}
 }

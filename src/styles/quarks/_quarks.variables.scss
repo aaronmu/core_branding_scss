@@ -370,8 +370,26 @@ $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
+$input-height:                    $spacer-lg !default;
 $input-padding:                   0 $spacer !default;
+$select-height:                   $input-height !default;
+$select-padding:                  $spacer-xs $spacer !default;
+$textarea-height:                 12rem !default;
 $textarea-padding:                $spacer-sm $spacer !default;
+
+$input-height-sm:                 $spacer-md !default;
+$input-padding-sm:                0 $spacer-xs !default;
+$select-height-sm:                $input-height-sm !default;
+$select-padding-sm:               0 $spacer-xs !default;
+$textarea-height-sm:              8rem !default;
+$textarea-padding-sm:             $spacer-xs / 3 * 2 $spacer-xs !default;
+
+$input-height-lg:                 $spacer-xl !default;
+$input-padding-lg:                0 $spacer !default;
+$select-height-lg:                $input-height-lg !default;
+$select-padding-lg:               $spacer-sm $spacer !default;
+$textarea-height-lg:              16rem !default;
+$textarea-padding-lg:             $spacer / 6 * 5 $spacer !default;
 
 
 
