@@ -14,6 +14,7 @@
 - Made input fields more configurable
 
 ### Fixed
+- Fixed nested flyouts from opening all when the highest in order is opened
 - Fixed the repsonsive 'max' variables
 - Fixed a placeholder rendering issue
 - Fixed an issue where the `.u-container` would collapse
