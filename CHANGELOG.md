@@ -1,6 +1,9 @@
 # Changelog
 
 ## Unreleased
+
+
+## [1.3.0] - 2017-12-04
 ### Added
 - Added a collapsible list
 - Added table cell padding options
@@ -53,6 +56,7 @@
 - Initial release.
 
 
+[1.3.0]: https://github.com/a-ui/core_branding_scss/tree/v1.3.0
 [1.2.1]: https://github.com/a-ui/core_branding_scss/tree/v1.2.1
 [1.2.0]: https://github.com/a-ui/core_branding_scss/tree/v1.2.0
 [1.1.0]: https://github.com/a-ui/core_branding_scss/tree/v1.1.0
