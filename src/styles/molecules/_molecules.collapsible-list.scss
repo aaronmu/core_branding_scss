@@ -1,0 +1,58 @@
+/**
+ * COLLAPSIBLE LIST
+ * -------------------------------------------------------------------
+ */
+
+.m-collapsible-list {
+  @extend %a-list;
+  @extend %a-list--unstyled;
+
+  ul {
+    @extend %a-list;
+
+    margin-bottom: -$list-item-padding-top;
+    margin-top: $list-item-padding-top;
+  }
+}
+
+
+/**
+ * COLLAPSIBLE LIST ITEMS
+ * -------------------------------------------------------------------
+ */
+
+.m-collapsible-list__item {
+  &:not(.is-active) {
+    > a {
+      transition: none;
+
+      &:link,
+      &:visited {
+        color: $text-color;
+      }
+
+      &:hover,
+      &:active {
+        color: $link-hover-color;
+      }
+    }
+  }
+}
+
+
+/**
+ * MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-collapsible-list__item {
+  &.is-active {
+    > a {
+      font-weight: $bold;
+    }
+  }
+
+  ul.is-collapsed {
+    display: none;
+  }
+}

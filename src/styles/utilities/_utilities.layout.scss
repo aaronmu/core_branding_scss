@@ -37,6 +37,7 @@ $screen-xl: $screen-lg + $spacer-xx * 2 + $spacer * 2;
   margin: 0 auto;
   max-width: $screen-lg;
   padding: 0 $spacer;
+  width: 100%;
 }
 
 

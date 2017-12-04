@@ -57,9 +57,9 @@ $screen-sm:               45rem !default; // 720px
 $screen-md:               62rem !default; // 992px
 $screen-lg:               75rem !default; // 1200px
 
-$screen-xs-max:           calc($screen-sm - 1px); // 719px
-$screen-sm-max:           calc($screen-md - 1px); // 991px
-$screen-md-max:           calc($screen-lg - 1px); // 1199px
+$screen-xs-max:           44.9375rem !default; // 719px ($screen-sm - 1px)
+$screen-sm-max:           61.9375rem !default; // 991px ($screen-md - 1px)
+$screen-md-max:           74.9375rem !default; // 1199px ($screen-lg - 1px)
 
 
 /**
@@ -112,6 +112,13 @@ $light:                   300 !default;
 $normal:                  500 !default;
 $bold:                    700 !default;
 $extra-bold:              800 !default;
+
+$font-weight-h1:          $normal !default;
+$font-weight-h2:          $normal !default;
+$font-weight-h3:          $normal !default;
+$font-weight-h4:          $normal !default;
+$font-weight-h5:          $normal !default;
+$font-weight-h6:          $normal !default;
 
 
 /**
@@ -194,6 +201,7 @@ $box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($black, .1) !default;
  */
 
 $link-color:              $brand-primary !default;
+$link-background-color:   mix($brand-primary, $white, 10%) !default;
 $link-hover-color:        mix($link-color, $black, 85%) !default;
 
 
@@ -362,8 +370,26 @@ $input-danger-border:             $state-danger !default;
 $input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
+$input-height:                    $spacer-lg !default;
 $input-padding:                   0 $spacer !default;
+$select-height:                   $input-height !default;
+$select-padding:                  $spacer-xs $spacer !default;
+$textarea-height:                 12rem !default;
 $textarea-padding:                $spacer-sm $spacer !default;
+
+$input-height-sm:                 $spacer-md !default;
+$input-padding-sm:                0 $spacer-xs !default;
+$select-height-sm:                $input-height-sm !default;
+$select-padding-sm:               0 $spacer-xs !default;
+$textarea-height-sm:              8rem !default;
+$textarea-padding-sm:             $spacer-xs / 3 * 2 $spacer-xs !default;
+
+$input-height-lg:                 $spacer-xl !default;
+$input-padding-lg:                0 $spacer !default;
+$select-height-lg:                $input-height-lg !default;
+$select-padding-lg:               $spacer-sm $spacer !default;
+$textarea-height-lg:              16rem !default;
+$textarea-padding-lg:             $spacer / 6 * 5 $spacer !default;
 
 
 

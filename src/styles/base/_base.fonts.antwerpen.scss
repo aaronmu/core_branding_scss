@@ -3,6 +3,6 @@
  * -------------------------------------------------------------------
  */
 
-@include font-face('Antwerpen Small', '../../fonts/Antwerpen_Small', $normal, normal, local('Antwerpen SmallCaps'));
-@include font-face('Antwerpen Regular', '../../fonts/Antwerpen_Regular', $normal, normal, local('Antwerpen-Regular'));
-@include font-face('Antwerpen Tall', '../../fonts/Antwerpen_Tall', $normal, normal);
+@include font-face('Antwerpen Small', '../../fonts/AntwerpenSmallCaps-Regulars', $normal, normal, local('Antwerpen SmallCaps'));
+@include font-face('Antwerpen Regular', '../../fonts/Antwerpen-Regulars', $normal, normal, local('Antwerpen-Regular'));
+@include font-face('Antwerpen Tall', '../../fonts/AntwerpenTall-Talls', $normal, normal, local('Antwerpen Tall'));

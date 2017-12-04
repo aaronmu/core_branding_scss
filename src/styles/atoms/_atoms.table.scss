@@ -22,12 +22,29 @@
   tr {
     border-bottom: 1px solid $table-border;
     height: $spacer-lg;
+    transition: background-color $animation-duration $animation-easing;
+
+    &.a-table--clickable,
+    &.has-click-action {
+      &:hover {
+        background-color: $link-background-color;
+        cursor: pointer;
+      }
+    }
   }
 
   th,
   td {
     padding: $table-padding;
     text-align: left;
+
+    &.is-condensed {
+      padding: $table-padding / 2;
+    }
+
+    &.has-no-padding {
+      padding: 0;
+    }
   }
 }
 
@@ -42,7 +59,6 @@
  */
 
 .a-table.a-table--small tr {
-  border-bottom: 1px solid $table-border;
   height: $spacer-md;
 }
 
@@ -66,10 +82,24 @@
 
   tr:nth-child(odd) {
     background-color: $white;
+
+    &.a-table--clickable,
+    &.has-click-action {
+      &:hover {
+        background-color: $link-background-color;
+      }
+    }
   }
 
   tr:nth-child(even) {
     background-color: $table-striped-bg;
+
+    &.a-table--clickable,
+    &.has-click-action {
+      &:hover {
+        background-color: $link-background-color;
+      }
+    }
   }
 }
 

@@ -1,8 +1,24 @@
 # Changelog
 
 ## Unreleased
+### Added
+- Added a collapsible list
+- Added table cell padding options
+- Added a hover option for table rows
+- Added an option to use the base font for a heading
+- Added small and large size variants for input fields
+- Added updated versions of the Antwerpen web fonts
+
+### Changed
+- Made `.a-input` less specific for easier overriding
+- Made input fields more configurable
+
 ### Fixed
-- Prevent nested flyouts from all opening when the highest in order is opened.
+- Fixed nested flyouts from opening all when the highest in order is opened
+- Fixed the repsonsive 'max' variables
+- Fixed a placeholder rendering issue
+- Fixed an issue where the `.u-container` would collapse
+
 
 ## [1.2.1] - 2017-11-28
 ### Fixed
@@ -37,6 +53,7 @@
 - Initial release.
 
 
-[2.0.0]: https://github.com/a-ui/core_branding_scss/tree/v2.0.0
+[1.2.1]: https://github.com/a-ui/core_branding_scss/tree/v1.2.1
+[1.2.0]: https://github.com/a-ui/core_branding_scss/tree/v1.2.0
 [1.1.0]: https://github.com/a-ui/core_branding_scss/tree/v1.1.0
 [1.0.0]: https://github.com/a-ui/core_branding_scss/tree/v1.0.0
