@@ -453,24 +453,24 @@
 
 @font-face {
 	font-family: "Antwerpen Small";
-	src: url("../fonts/Antwerpen_Small.eot");
-	src: local("Antwerpen SmallCaps"), url("../fonts/Antwerpen_Small.eot?#iefix") format("embedded-opentype"), url("../fonts/Antwerpen_Small.woff") format("woff"), url("../fonts/Antwerpen_Small.ttf") format("truetype"), url("../fonts/Antwerpen_Small.svg#icon") format("svg");
+	src: url("../fonts/AntwerpenSmallCaps-Regulars.eot");
+	src: local("Antwerpen SmallCaps"), url("../fonts/AntwerpenSmallCaps-Regulars.eot?#iefix") format("embedded-opentype"), url("../fonts/AntwerpenSmallCaps-Regulars.woff") format("woff"), url("../fonts/AntwerpenSmallCaps-Regulars.ttf") format("truetype"), url("../fonts/AntwerpenSmallCaps-Regulars.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Antwerpen Regular";
-	src: url("../fonts/Antwerpen_Regular.eot");
-	src: local("Antwerpen-Regular"), url("../fonts/Antwerpen_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Antwerpen_Regular.woff") format("woff"), url("../fonts/Antwerpen_Regular.ttf") format("truetype"), url("../fonts/Antwerpen_Regular.svg#icon") format("svg");
+	src: url("../fonts/Antwerpen-Regulars.eot");
+	src: local("Antwerpen-Regular"), url("../fonts/Antwerpen-Regulars.eot?#iefix") format("embedded-opentype"), url("../fonts/Antwerpen-Regulars.woff") format("woff"), url("../fonts/Antwerpen-Regulars.ttf") format("truetype"), url("../fonts/Antwerpen-Regulars.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Antwerpen Tall";
-	src: url("../fonts/Antwerpen_Tall.eot");
-	src: url("../fonts/Antwerpen_Tall.eot?#iefix") format("embedded-opentype"), url("../fonts/Antwerpen_Tall.woff") format("woff"), url("../fonts/Antwerpen_Tall.ttf") format("truetype"), url("../fonts/Antwerpen_Tall.svg#icon") format("svg");
+	src: url("../fonts/AntwerpenTall-Talls.eot");
+	src: local("Antwerpen Tall"), url("../fonts/AntwerpenTall-Talls.eot?#iefix") format("embedded-opentype"), url("../fonts/AntwerpenTall-Talls.woff") format("woff"), url("../fonts/AntwerpenTall-Talls.ttf") format("truetype"), url("../fonts/AntwerpenTall-Talls.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
@@ -482,64 +482,64 @@
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Light.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Light.woff") format("woff"), url("../fonts/SunAntwerpen_Light.ttf") format("truetype"), url("../fonts/SunAntwerpen_Light.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Light.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Light.woff") format("woff"), url("../fonts/SunAntwerpen-Light.ttf") format("truetype"), url("../fonts/SunAntwerpen-Light.svg#icon") format("svg");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Light_Italic.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Light_Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Light_Italic.woff") format("woff"), url("../fonts/SunAntwerpen_Light_Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen_Light_Italic.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Light-Italic.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Light-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Light-Italic.woff") format("woff"), url("../fonts/SunAntwerpen-Light-Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen-Light-Italic.svg#icon") format("svg");
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Regular.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Regular.woff") format("woff"), url("../fonts/SunAntwerpen_Regular.ttf") format("truetype"), url("../fonts/SunAntwerpen_Regular.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Regular.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Regular.woff") format("woff"), url("../fonts/SunAntwerpen-Regular.ttf") format("truetype"), url("../fonts/SunAntwerpen-Regular.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Regular_Italic.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Regular_Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Regular_Italic.woff") format("woff"), url("../fonts/SunAntwerpen_Regular_Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen_Regular_Italic.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Regular-Italic.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Regular-Italic.woff") format("woff"), url("../fonts/SunAntwerpen-Regular-Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen-Regular-Italic.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Bold.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Bold.woff") format("woff"), url("../fonts/SunAntwerpen_Bold.ttf") format("truetype"), url("../fonts/SunAntwerpen_Bold.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Bold.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Bold.woff") format("woff"), url("../fonts/SunAntwerpen-Bold.ttf") format("truetype"), url("../fonts/SunAntwerpen-Bold.svg#icon") format("svg");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Bold_Italic.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Bold_Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Bold_Italic.woff") format("woff"), url("../fonts/SunAntwerpen_Bold_Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen_Bold_Italic.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Bold-Italic.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Bold-Italic.woff") format("woff"), url("../fonts/SunAntwerpen-Bold-Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen-Bold-Italic.svg#icon") format("svg");
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_ExtraBold.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_ExtraBold.woff") format("woff"), url("../fonts/SunAntwerpen_ExtraBold.ttf") format("truetype"), url("../fonts/SunAntwerpen_ExtraBold.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-ExtraBold.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-ExtraBold.woff") format("woff"), url("../fonts/SunAntwerpen-ExtraBold.ttf") format("truetype"), url("../fonts/SunAntwerpen-ExtraBold.svg#icon") format("svg");
 	font-weight: 800;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_ExtraBold_Italic.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_ExtraBold_Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_ExtraBold_Italic.woff") format("woff"), url("../fonts/SunAntwerpen_ExtraBold_Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen_ExtraBold_Italic.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-ExtraBold-Italic.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-ExtraBold-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-ExtraBold-Italic.woff") format("woff"), url("../fonts/SunAntwerpen-ExtraBold-Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen-ExtraBold-Italic.svg#icon") format("svg");
 	font-weight: 800;
 	font-style: italic;
 }
@@ -943,39 +943,59 @@ h6,
 .h5,
 .h6 {
 	font-family: "Antwerpen Regular";
-	font-weight: 500;
 	line-height: 1.1;
 	margin: 0;
+}
+
+h1.has-base-font,
+h2.has-base-font,
+h3.has-base-font,
+h4.has-base-font,
+h5.has-base-font,
+h6.has-base-font,
+.h1.has-base-font,
+.h2.has-base-font,
+.h3.has-base-font,
+.h4.has-base-font,
+.h5.has-base-font,
+.h6.has-base-font {
+	font-family: "Sun Antwerpen";
 }
 
 h1,
 .h1 {
 	font-size: 2.98598rem;
+	font-weight: 500;
 }
 
 h2,
 .h2 {
 	font-size: 2.48832rem;
+	font-weight: 500;
 }
 
 h3,
 .h3 {
 	font-size: 2.0736rem;
+	font-weight: 500;
 }
 
 h4,
 .h4 {
 	font-size: 1.728rem;
+	font-weight: 500;
 }
 
 h5,
 .h5 {
 	font-size: 1.44rem;
+	font-weight: 500;
 }
 
 h6,
 .h6 {
 	font-size: 1.2rem;
+	font-weight: 500;
 }
 
 /**
@@ -1140,6 +1160,7 @@ a:focus {
 	margin: 0 auto;
 	max-width: 75rem;
 	padding: 0 1.5rem;
+	width: 100%;
 }
 
 /**
@@ -1440,6 +1461,19 @@ a:focus {
 	padding: 0 0.75rem;
 	text-align: center;
 	white-space: nowrap;
+}
+
+/**
+ * ADDONS FOR OTHER INPUT SIZES
+ * -------------------------------------------------------------------
+ */
+
+.a-input--small .a-input__addon {
+	line-height: 2.25rem;
+}
+
+.a-input--large .a-input__addon {
+	line-height: 3.75rem;
 }
 
 /**
@@ -2678,20 +2712,24 @@ textarea {
 	text-align: left;
 }
 
-.a-input input:not([class*='a-button']):not([type='checkbox']):not([type='radio']),
+.a-input input,
 .a-input select,
 .a-input textarea {
 	border-radius: 0;
-	min-height: 3rem;
-	padding: 0 1.5rem;
+	line-height: normal;
 	resize: vertical;
 	transition: border-color 250ms ease-in-out;
 	width: 100%;
 }
 
+.a-input input {
+	min-height: 3rem;
+	padding: 0 1.5rem;
+}
+
 .a-input select {
-	padding-bottom: 0.75rem;
-	padding-top: 0.75rem;
+	min-height: 3rem;
+	padding: 0.75rem 1.5rem;
 }
 
 .a-input textarea {
@@ -2730,6 +2768,7 @@ textarea {
 .a-input select::-moz-placeholder,
 .a-input textarea::-moz-placeholder {
 	color: #adadad;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
@@ -2737,6 +2776,7 @@ textarea {
 .a-input select:-moz-placeholder,
 .a-input textarea:-moz-placeholder {
 	color: #adadad;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
@@ -2825,6 +2865,7 @@ textarea {
 .a-input.has-success select::-moz-placeholder,
 .a-input.has-success textarea::-moz-placeholder {
 	color: #adadad;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
@@ -2832,6 +2873,7 @@ textarea {
 .a-input.has-success select:-moz-placeholder,
 .a-input.has-success textarea:-moz-placeholder {
 	color: #adadad;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
@@ -2880,6 +2922,7 @@ textarea {
 .a-input.has-warning select::-moz-placeholder,
 .a-input.has-warning textarea::-moz-placeholder {
 	color: #adadad;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
@@ -2887,6 +2930,7 @@ textarea {
 .a-input.has-warning select:-moz-placeholder,
 .a-input.has-warning textarea:-moz-placeholder {
 	color: #adadad;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
@@ -2935,6 +2979,7 @@ textarea {
 .a-input.has-error select::-moz-placeholder,
 .a-input.has-error textarea::-moz-placeholder {
 	color: #adadad;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
@@ -2942,6 +2987,7 @@ textarea {
 .a-input.has-error select:-moz-placeholder,
 .a-input.has-error textarea:-moz-placeholder {
 	color: #adadad;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
@@ -2983,10 +3029,16 @@ textarea {
 	width: 3rem;
 }
 
-.a-input.has-success.has-icon-right .a-input__wrapper > .fa,
-.a-input.has-warning.has-icon-right .a-input__wrapper > .fa,
-.a-input.has-error.has-icon-right .a-input__wrapper > .fa {
-	display: none;
+.a-input.has-success.has-icon-right .a-input__wrapper:before,
+.a-input.has-warning.has-icon-right .a-input__wrapper:before,
+.a-input.has-error.has-icon-right .a-input__wrapper:before {
+	right: 2.25rem;
+}
+
+.a-input.has-success.has-icon-right .a-input__wrapper input,
+.a-input.has-warning.has-icon-right .a-input__wrapper input,
+.a-input.has-error.has-icon-right .a-input__wrapper input {
+	padding-right: 5.25rem;
 }
 
 .a-input.has-success input,
@@ -2998,6 +3050,17 @@ textarea {
 .a-input.is-required .a-input__label:after {
 	color: #da291c;
 	content: ' *';
+}
+
+/**
+ * INPUT WITH ICON LEFT OR RIGHT
+ * -------------------------------------------------------------------
+ */
+
+.a-input__checkbox input,
+.a-input__radio input {
+	height: 0;
+	width: 0;
 }
 
 /**
@@ -3036,7 +3099,7 @@ textarea {
 	color: #081f2c;
 }
 
-.a-input.has-icon-left .a-input__wrapper input:not([class*='a-button']):not([type='checkbox']):not([type='radio']),
+.a-input.has-icon-left .a-input__wrapper input,
 .a-input.has-icon-left .a-input__wrapper select {
 	padding-left: 3rem;
 }
@@ -3045,7 +3108,7 @@ textarea {
 	left: 0;
 }
 
-.a-input.has-icon-right .a-input__wrapper input:not([class*='a-button']):not([type='checkbox']):not([type='radio']),
+.a-input.has-icon-right .a-input__wrapper input,
 .a-input.has-icon-right .a-input__wrapper select {
 	padding-right: 3rem;
 }
@@ -3059,14 +3122,51 @@ textarea {
  * -------------------------------------------------------------------
  */
 
-.a-input--inline input:not([class*='a-button']):not([type='checkbox']):not([type='radio']),
+.a-input--inline input,
 .a-input--inline select,
-.a-input--inline textarea {
+.a-input--inline textarea,
+.a-input--inline .a-input__checkbox,
+.a-input--inline .a-input__radio {
 	width: auto;
 }
 
 .a-input__wrapper--inline {
 	display: inline-block;
+}
+
+/**
+ * INPUT SIZES
+ * -------------------------------------------------------------------
+ */
+
+.a-input.a-input--small input {
+	min-height: 2.25rem;
+	padding: 0 0.75rem;
+}
+
+.a-input.a-input--small select {
+	min-height: 2.25rem;
+	padding: 0 0.75rem;
+}
+
+.a-input.a-input--small textarea {
+	min-height: 8rem;
+	padding: 0.5rem 0.75rem;
+}
+
+.a-input.a-input--large input {
+	min-height: 3.75rem;
+	padding: 0 1.5rem;
+}
+
+.a-input.a-input--large select {
+	min-height: 3.75rem;
+	padding: 1.125rem 1.5rem;
+}
+
+.a-input.a-input--large textarea {
+	min-height: 16rem;
+	padding: 1.25rem 1.5rem;
 }
 
 /**
@@ -3164,19 +3264,26 @@ dl {
  * -------------------------------------------------------------------
  */
 
-.a-list {
+.a-list,
+.m-collapsible-list,
+.m-collapsible-list ul {
 	padding-left: 1.5rem;
 }
 
-.a-list .a-list {
+.a-list .a-list,
+.m-collapsible-list .a-list {
 	margin-top: 0.5rem;
 }
 
-.a-list .a-list > li:last-of-type {
+.a-list .a-list > li:last-of-type,
+.m-collapsible-list .a-list > li:last-of-type,
+.m-collapsible-list ul .a-list > li:last-of-type {
 	margin-bottom: -0.5rem;
 }
 
-.a-list > li {
+.a-list > li,
+.m-collapsible-list > li,
+.m-collapsible-list ul > li {
 	padding: 0.5rem 0 0.5rem;
 }
 
@@ -3242,7 +3349,8 @@ dl {
 
 .a-list--unstyled,
 .a-list.has-icon-left,
-.a-list.has-icon-right {
+.a-list.has-icon-right,
+.m-collapsible-list {
 	list-style: none;
 	padding: 0;
 }
@@ -3250,9 +3358,11 @@ dl {
 .a-list--unstyled ul,
 .a-list.has-icon-left ul,
 .a-list.has-icon-right ul,
+.m-collapsible-list ul,
 .a-list--unstyled ol,
 .a-list.has-icon-left ol,
-.a-list.has-icon-right ol {
+.a-list.has-icon-right ol,
+.m-collapsible-list ol {
 	list-style: none;
 }
 
@@ -3364,6 +3474,18 @@ dl {
 .a-input .a-input__radio:not(:last-child),
 .a-input .a-input__checkbox:not(:last-child) {
 	margin-bottom: 0.75rem;
+}
+
+.a-input--inline .a-input__radio,
+.a-input--inline .a-input__checkbox {
+	display: inline-block;
+}
+
+.a-input--inline .a-input__radio + .a-input__radio,
+.a-input--inline .a-input__radio + .a-input__checkbox,
+.a-input--inline .a-input__checkbox + .a-input__radio,
+.a-input--inline .a-input__checkbox + .a-input__checkbox {
+	margin-left: 1.5rem;
 }
 
 .a-input__checkbox,
@@ -3638,6 +3760,13 @@ dl {
 .a-table tr {
 	border-bottom: 1px solid #b0b0b0;
 	height: 3rem;
+	transition: background-color 250ms ease-in-out;
+}
+
+.a-table tr.a-table--clickable:hover,
+.a-table tr.has-click-action:hover {
+	background-color: #e6f0f8;
+	cursor: pointer;
 }
 
 .a-table th,
@@ -3646,13 +3775,22 @@ dl {
 	text-align: left;
 }
 
+.a-table th.is-condensed,
+.a-table td.is-condensed {
+	padding: 0.375rem;
+}
+
+.a-table th.has-no-padding,
+.a-table td.has-no-padding {
+	padding: 0;
+}
+
 /**
  * TABLE SIZES
  * -------------------------------------------------------------------
  */
 
 .a-table.a-table--small tr {
-	border-bottom: 1px solid #b0b0b0;
 	height: 2.25rem;
 }
 
@@ -3675,8 +3813,18 @@ dl {
 	background-color: white;
 }
 
+.a-table.a-table--striped tbody tr:nth-child(odd).a-table--clickable:hover,
+.a-table.a-table--striped tbody tr:nth-child(odd).has-click-action:hover {
+	background-color: #e6f0f8;
+}
+
 .a-table.a-table--striped tbody tr:nth-child(even) {
 	background-color: #f3f3f3;
+}
+
+.a-table.a-table--striped tbody tr:nth-child(even).a-table--clickable:hover,
+.a-table.a-table--striped tbody tr:nth-child(even).has-click-action:hover {
+	background-color: #e6f0f8;
 }
 
 /**
@@ -4258,6 +4406,48 @@ dl {
 }
 
 /**
+ * COLLAPSIBLE LIST
+ * -------------------------------------------------------------------
+ */
+
+.m-collapsible-list ul {
+	margin-bottom: -0.5rem;
+	margin-top: 0.5rem;
+}
+
+/**
+ * COLLAPSIBLE LIST ITEMS
+ * -------------------------------------------------------------------
+ */
+
+.m-collapsible-list__item:not(.is-active) > a {
+	transition: none;
+}
+
+.m-collapsible-list__item:not(.is-active) > a:link,
+.m-collapsible-list__item:not(.is-active) > a:visited {
+	color: #081f2c;
+}
+
+.m-collapsible-list__item:not(.is-active) > a:hover,
+.m-collapsible-list__item:not(.is-active) > a:active {
+	color: #005599;
+}
+
+/**
+ * MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.m-collapsible-list__item.is-active > a {
+	font-weight: 700;
+}
+
+.m-collapsible-list__item ul.is-collapsed {
+	display: none;
+}
+
+/**
  * CONTACT
  * -------------------------------------------------------------------
  */
@@ -4505,7 +4695,7 @@ dl {
  * -------------------------------------------------------------------
  */
 
-.m-flyout.is-open .m-flyout__content {
+.m-flyout.is-open > .m-flyout__content {
 	opacity: 1;
 	-ms-transform: translateY(0);
 	    transform: translateY(0);
@@ -5342,11 +5532,13 @@ dl {
 
 .m-tag__input::-moz-placeholder {
 	color: #b0b0b0;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 
 .m-tag__input:-moz-placeholder {
 	color: #b0b0b0;
+	opacity: 1;
 	text-overflow: ellipsis;
 }
 

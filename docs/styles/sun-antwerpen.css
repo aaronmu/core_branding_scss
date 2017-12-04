@@ -434,64 +434,64 @@
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Light.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Light.woff") format("woff"), url("../fonts/SunAntwerpen_Light.ttf") format("truetype"), url("../fonts/SunAntwerpen_Light.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Light.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Light.woff") format("woff"), url("../fonts/SunAntwerpen-Light.ttf") format("truetype"), url("../fonts/SunAntwerpen-Light.svg#icon") format("svg");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Light_Italic.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Light_Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Light_Italic.woff") format("woff"), url("../fonts/SunAntwerpen_Light_Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen_Light_Italic.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Light-Italic.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Light-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Light-Italic.woff") format("woff"), url("../fonts/SunAntwerpen-Light-Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen-Light-Italic.svg#icon") format("svg");
 	font-weight: 300;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Regular.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Regular.woff") format("woff"), url("../fonts/SunAntwerpen_Regular.ttf") format("truetype"), url("../fonts/SunAntwerpen_Regular.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Regular.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Regular.woff") format("woff"), url("../fonts/SunAntwerpen-Regular.ttf") format("truetype"), url("../fonts/SunAntwerpen-Regular.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Regular_Italic.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Regular_Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Regular_Italic.woff") format("woff"), url("../fonts/SunAntwerpen_Regular_Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen_Regular_Italic.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Regular-Italic.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Regular-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Regular-Italic.woff") format("woff"), url("../fonts/SunAntwerpen-Regular-Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen-Regular-Italic.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Bold.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Bold.woff") format("woff"), url("../fonts/SunAntwerpen_Bold.ttf") format("truetype"), url("../fonts/SunAntwerpen_Bold.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Bold.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Bold.woff") format("woff"), url("../fonts/SunAntwerpen-Bold.ttf") format("truetype"), url("../fonts/SunAntwerpen-Bold.svg#icon") format("svg");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_Bold_Italic.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_Bold_Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_Bold_Italic.woff") format("woff"), url("../fonts/SunAntwerpen_Bold_Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen_Bold_Italic.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-Bold-Italic.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-Bold-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-Bold-Italic.woff") format("woff"), url("../fonts/SunAntwerpen-Bold-Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen-Bold-Italic.svg#icon") format("svg");
 	font-weight: 700;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_ExtraBold.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_ExtraBold.woff") format("woff"), url("../fonts/SunAntwerpen_ExtraBold.ttf") format("truetype"), url("../fonts/SunAntwerpen_ExtraBold.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-ExtraBold.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-ExtraBold.woff") format("woff"), url("../fonts/SunAntwerpen-ExtraBold.ttf") format("truetype"), url("../fonts/SunAntwerpen-ExtraBold.svg#icon") format("svg");
 	font-weight: 800;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Sun Antwerpen";
-	src: url("../fonts/SunAntwerpen_ExtraBold_Italic.eot");
-	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen_ExtraBold_Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen_ExtraBold_Italic.woff") format("woff"), url("../fonts/SunAntwerpen_ExtraBold_Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen_ExtraBold_Italic.svg#icon") format("svg");
+	src: url("../fonts/SunAntwerpen-ExtraBold-Italic.eot");
+	src: local("Sun Antwerpen"), url("../fonts/SunAntwerpen-ExtraBold-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/SunAntwerpen-ExtraBold-Italic.woff") format("woff"), url("../fonts/SunAntwerpen-ExtraBold-Italic.ttf") format("truetype"), url("../fonts/SunAntwerpen-ExtraBold-Italic.svg#icon") format("svg");
 	font-weight: 800;
 	font-style: italic;
 }

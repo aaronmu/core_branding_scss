@@ -434,24 +434,24 @@
 
 @font-face {
 	font-family: "Antwerpen Small";
-	src: url("../fonts/Antwerpen_Small.eot");
-	src: local("Antwerpen SmallCaps"), url("../fonts/Antwerpen_Small.eot?#iefix") format("embedded-opentype"), url("../fonts/Antwerpen_Small.woff") format("woff"), url("../fonts/Antwerpen_Small.ttf") format("truetype"), url("../fonts/Antwerpen_Small.svg#icon") format("svg");
+	src: url("../fonts/AntwerpenSmallCaps-Regulars.eot");
+	src: local("Antwerpen SmallCaps"), url("../fonts/AntwerpenSmallCaps-Regulars.eot?#iefix") format("embedded-opentype"), url("../fonts/AntwerpenSmallCaps-Regulars.woff") format("woff"), url("../fonts/AntwerpenSmallCaps-Regulars.ttf") format("truetype"), url("../fonts/AntwerpenSmallCaps-Regulars.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Antwerpen Regular";
-	src: url("../fonts/Antwerpen_Regular.eot");
-	src: local("Antwerpen-Regular"), url("../fonts/Antwerpen_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Antwerpen_Regular.woff") format("woff"), url("../fonts/Antwerpen_Regular.ttf") format("truetype"), url("../fonts/Antwerpen_Regular.svg#icon") format("svg");
+	src: url("../fonts/Antwerpen-Regulars.eot");
+	src: local("Antwerpen-Regular"), url("../fonts/Antwerpen-Regulars.eot?#iefix") format("embedded-opentype"), url("../fonts/Antwerpen-Regulars.woff") format("woff"), url("../fonts/Antwerpen-Regulars.ttf") format("truetype"), url("../fonts/Antwerpen-Regulars.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Antwerpen Tall";
-	src: url("../fonts/Antwerpen_Tall.eot");
-	src: url("../fonts/Antwerpen_Tall.eot?#iefix") format("embedded-opentype"), url("../fonts/Antwerpen_Tall.woff") format("woff"), url("../fonts/Antwerpen_Tall.ttf") format("truetype"), url("../fonts/Antwerpen_Tall.svg#icon") format("svg");
+	src: url("../fonts/AntwerpenTall-Talls.eot");
+	src: local("Antwerpen Tall"), url("../fonts/AntwerpenTall-Talls.eot?#iefix") format("embedded-opentype"), url("../fonts/AntwerpenTall-Talls.woff") format("woff"), url("../fonts/AntwerpenTall-Talls.ttf") format("truetype"), url("../fonts/AntwerpenTall-Talls.svg#icon") format("svg");
 	font-weight: 500;
 	font-style: normal;
 }
