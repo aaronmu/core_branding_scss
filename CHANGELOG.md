@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## [1.3.1] - 2017-12-06
+### Fixed
+- Fixed a typo which prevented the 'Antwerpen' font from loading
+
+
 ## [1.3.0] - 2017-12-04
 ### Added
 - Added a collapsible list
@@ -37,6 +42,7 @@
 - Added an inline version of the select component
 
 ### Fixed
+- Fixed default border radius issue on buttons in Google Chrome (62)
 - Fixed a datepicker layout issue
 - Fixed an issue where the 'uncompressed' version of the core branding was also compressed
 
