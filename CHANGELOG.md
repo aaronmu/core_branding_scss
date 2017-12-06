@@ -42,6 +42,7 @@
 - Added an inline version of the select component
 
 ### Fixed
+- Fixed default border radius issue on buttons in Google Chrome (62)
 - Fixed a datepicker layout issue
 - Fixed an issue where the 'uncompressed' version of the core branding was also compressed
 
