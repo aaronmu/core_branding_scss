@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## [1.3.1] - 2017-12-06
+### Fixed
+- Fixed a typo which prevented the 'Antwerpen' font from loading
+
+
 ## [1.3.0] - 2017-12-04
 ### Added
 - Added a collapsible list
