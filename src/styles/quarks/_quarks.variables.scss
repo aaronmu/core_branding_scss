@@ -784,9 +784,11 @@ $nav-padding:             $spacer / 3 * 2 $spacer !default;
 $pagination-font-size:    $btn-font-size !default;
 $pagination-size:         $spacer-lg !default;
 
-$pagination-color:        $btn-primary-color !default;
-$pagination-bg:           $btn-primary-bg !default;
-$pagination-bg-hover:     mix($pagination-bg, $black, 85%) !default;
+$pagination-color:          $btn-primary-color !default;
+$pagination-color-disabled: $btn-disabled-color !default;
+$pagination-bg:             $btn-primary-bg !default;
+$pagination-bg-disabled:    $btn-disabled-bg !default;
+$pagination-bg-hover:       mix($pagination-bg, $black, 85%) !default;
 
 $pagination-outline-color:            $pagination-bg !default;
 $pagination-outline-bg:               $btn-transparent-bg !default;
