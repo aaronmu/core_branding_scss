@@ -27,6 +27,19 @@
         background-color: inherit;
       }
     }
+    
+    &.is-disabled {
+      background-color: $pagination-bg-disabled;
+      color: $pagination-color-disabled;
+      cursor: not-allowed;
+
+      > a,
+      > a:hover,
+      > a:active {
+        background-color: inherit;
+        cursor: inherit;
+      }
+    }
 
     > a {
       color: inherit;
@@ -71,6 +84,21 @@
     &.is-active {
       background-color: $pagination-bg;
       color: $pagination-color;
+    }
+    
+    &.is-disabled {
+      background-color: transparent;
+      box-shadow: 0 0 0 1px $pagination-bg-disabled inset;
+      color: $pagination-bg-disabled;
+      cursor: not-allowed;
+      
+      > a,
+      > a:hover,
+      > a:active {
+        background-color: inherit;
+        box-shadow: inherit;
+        cursor: inherit;
+      }
     }
 
     > a:hover,

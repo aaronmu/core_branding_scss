@@ -1,7 +1,8 @@
 # Changelog
 
 ## Unreleased
-
+### Added
+- Added disabled state to pagination
 
 ## [1.3.1] - 2017-12-06
 ### Fixed
