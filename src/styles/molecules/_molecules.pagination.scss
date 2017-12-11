@@ -38,7 +38,6 @@
       > a:active {
         background-color: inherit;
         cursor: inherit;
-        pointer-events: none;
       }
     }
 
@@ -97,8 +96,8 @@
       > a:hover,
       > a:active {
         background-color: inherit;
+        box-shadow: inherit;
         cursor: inherit;
-        pointer-events: none;
       }
     }
 
