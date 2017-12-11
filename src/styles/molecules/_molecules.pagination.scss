@@ -33,6 +33,7 @@
       color: $pagination-color-disabled;
       cursor: not-allowed;
 
+      > a,
       > a:hover,
       > a:active {
         background-color: inherit;
@@ -91,6 +92,8 @@
       box-shadow: 0 0 0 1px $pagination-bg-disabled inset;
       color: $pagination-bg-disabled;
       cursor: not-allowed;
+      
+      > a,
       > a:hover,
       > a:active {
         background-color: inherit;
