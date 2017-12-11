@@ -3,6 +3,7 @@
 ## Unreleased
 ### Added
 - Added disabled state to pagination
+- Added disabled state to list navigation
 
 ## [1.3.1] - 2017-12-06
 ### Fixed

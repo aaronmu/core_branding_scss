@@ -774,6 +774,8 @@ $nav-bg:                  transparent !default;
 $nav-bg-hover:            $grey-lighter !default;
 $nav-bg-active:           $nav-bg !default;
 $nav-padding:             $spacer / 3 * 2 $spacer !default;
+$nav-bg-disabled:         $state-disabled !default;
+$nav-color-disabled:      $btn-official-color !default;
 
 
 /**

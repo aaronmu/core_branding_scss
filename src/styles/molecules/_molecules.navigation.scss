@@ -32,6 +32,20 @@
       }
     }
 
+    &.is-disabled {
+      > a,
+      > button {
+        &,
+        &:hover,
+        &:active {
+          background-color: $nav-bg-disabled;
+          color: $nav-color-disabled;
+          cursor: not-allowed;
+          text-decoration: none;
+        }
+      }
+    }
+
     > a,
     > button {
       background-color: $nav-bg;
