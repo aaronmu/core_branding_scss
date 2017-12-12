@@ -4,6 +4,10 @@
 ### Added
 - Added disabled state to pagination
 
+### Changed
+- Changed the markup for avatars [BREAKING]
+
+
 ## [1.3.1] - 2017-12-06
 ### Fixed
 - Fixed a typo which prevented the 'Antwerpen' font from loading
