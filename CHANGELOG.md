@@ -5,6 +5,7 @@
 - Added disabled state to pagination
 
 ### Changed
+- Changed the markup for pagination [BREAKING]
 - Changed the markup for avatars [BREAKING]
 
 
