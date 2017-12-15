@@ -19,25 +19,18 @@
     min-height: $spacer-lg;
     text-align: center;
 
-    &.is-active {
-      > a,
-      > button {
-        &,
-        &:hover,
-        &:active {
+    > a,
+    > button {
+      &,
+      &:hover,
+      &:active {
+        &.is-active {
           background-color: $nav-bg-active;
           color: $nav-color-active;
           text-decoration: underline;
         }
-      }
-    }
-
-    &.is-disabled {
-      > a,
-      > button {
-        &,
-        &:hover,
-        &:active {
+        
+        &.is-disabled {
           background-color: $nav-bg-disabled;
           color: $nav-color-disabled;
           cursor: not-allowed;
