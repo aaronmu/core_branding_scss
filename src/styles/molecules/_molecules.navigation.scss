@@ -107,13 +107,19 @@
 
     > li {
 
-      &.is-active {
-        > a,
-        > a:hover,
-        > a:active {
+      > a,
+      > a:hover,
+      > a:active {
+        &.is-active {
           background-color: $nav-bg-active;
-          border-color: $nav-color-active;
+          border-color: $nav-color-disabled;
           color: $nav-color-active;
+          text-decoration: none;
+        }
+        &.is-disabled {
+          background-color: $nav-bg-disabled-inversed;
+          border-color: $nav-color-disabled-inversed;
+          color: $nav-color-disabled-inversed;
           text-decoration: none;
         }
       }
