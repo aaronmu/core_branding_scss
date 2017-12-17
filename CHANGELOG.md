@@ -2,8 +2,11 @@
 
 ## Unreleased
 ### Added
-- Added disabled state to pagination
-- Added disabled state to list navigation
+- Added disabled state to pagination, list and tab navigation
+
+### Changed
+- Moved the active classes in pagination, list and tab navigation for better semantics
+
 
 ## [1.3.1] - 2017-12-06
 ### Fixed
