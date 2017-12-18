@@ -112,14 +112,14 @@
       > a:active {
         &.is-active {
           background-color: $nav-bg-active;
-          border-color: $nav-color-disabled;
+          border-color: $nav-color-active;
           color: $nav-color-active;
           text-decoration: none;
         }
         &.is-disabled {
-          background-color: $nav-bg-disabled-inversed;
-          border-color: $nav-color-disabled-inversed;
-          color: $nav-color-disabled-inversed;
+          background-color: $nav-bg;
+          border-color: transparent;
+          color: $nav-tab-color-disabled;
           text-decoration: none;
         }
       }
