@@ -21,30 +21,10 @@
 
     > a,
     > button {
-      &,
-      &:hover,
-      &:active {
-        &.is-active {
-          background-color: $nav-bg-active;
-          color: $nav-color-active;
-          text-decoration: underline;
-        }
-        
-        &.is-disabled {
-          background-color: $nav-bg-disabled;
-          color: $nav-color-disabled;
-          cursor: not-allowed;
-          text-decoration: none;
-        }
-      }
-    }
-
-    > a,
-    > button {
       background-color: $nav-bg;
       border: none;
       border-bottom: 1px solid $border-color;
-      color: $nav-color;
+      color: inherit;
       display: block;
       padding: $nav-padding;
       text-decoration: none;
@@ -56,6 +36,27 @@
       &:active {
         background-color: $nav-bg-hover;
         color: $nav-color-hover;
+      }
+
+      &.is-active {
+        &,
+        &:hover,
+        &:active {
+          background-color: $nav-bg-active;
+          color: $nav-color-active;
+          text-decoration: underline;
+        }
+      }
+      
+      &.is-disabled {
+        &,
+        &:hover,
+        &:active {
+          background-color: $nav-bg-disabled;
+          color: $nav-color-disabled;
+          cursor: not-allowed;
+          text-decoration: none;
+        }
       }
 
       > .fa {
@@ -107,25 +108,9 @@
 
     > li {
 
-      > a,
-      > a:hover,
-      > a:active {
-        &.is-active {
-          background-color: $nav-bg-active;
-          border-color: $nav-color-active;
-          color: $nav-color-active;
-          text-decoration: none;
-        }
-        &.is-disabled {
-          background-color: $nav-bg;
-          border-color: transparent;
-          color: $nav-tab-color-disabled;
-          text-decoration: none;
-        }
-      }
-
       > a {
         border-bottom: 3px solid transparent;
+        text-decoration: none;
         transition-property: border, color;
 
         &:hover,
@@ -133,6 +118,28 @@
           background-color: transparent;
           border-color: $nav-color-active;
           color: $nav-color;
+          text-decoration: none;
+        }
+
+        &.is-active {
+          &,
+          &:hover,
+          &:active {
+            background-color: $nav-bg-active;
+            border-color: $nav-color-active;
+            color: $nav-color-active;
+            text-decoration: none;
+          }
+        }
+
+        &.is-disabled {
+          &,
+          &:hover,
+          &:active {
+            background-color: $nav-bg;
+            border-color: transparent;
+            color: $nav-tab-color-disabled;
+          }
         }
       }
     }
