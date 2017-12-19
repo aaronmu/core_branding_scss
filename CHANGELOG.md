@@ -5,7 +5,9 @@
 - Added disabled state to pagination, list and tab navigation
 
 ### Changed
-- [BREAKING] Moved the active classes in pagination, list and tab navigation for better semantics
+- Changed the markup for pagination [BREAKING]
+- Changed the markup for avatars [BREAKING]
+- Changed the markup for list and tab navigation [BREAKING]
 
 
 ## [1.3.1] - 2017-12-06
