@@ -25,7 +25,7 @@
       transition-duration: $animation-duration;
       transition-property: color, background, box-shadow;
       transition-timing-function: $animation-easing;
-      
+
       &:hover,
       &:active {
         background-color: $pagination-bg-hover;
@@ -59,6 +59,7 @@
 
   .m-pagination__next {
     border-left: 1px solid $pagination-bg-hover;
+    z-index: layer('cellar');
   }
 }
 
@@ -81,7 +82,7 @@
           background-color: $pagination-bg;
           color: $pagination-color;
         }
-        
+
         &.is-disabled {
           background-color: transparent;
           box-shadow: 0 0 0 1px $pagination-bg-disabled inset;
