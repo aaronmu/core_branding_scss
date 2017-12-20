@@ -18,31 +18,8 @@
     text-align: center;
     width: $pagination-size;
 
-    &.is-active {
-      background-color: $pagination-bg-hover;
-      font-weight: $bold;
-
-      > a:hover,
-      > a:active {
-        background-color: inherit;
-      }
-    }
-    
-    &.is-disabled {
-      background-color: $pagination-bg-disabled;
-      color: $pagination-color-disabled;
-      cursor: not-allowed;
-
-      > a,
-      > a:hover,
-      > a:active {
-        background-color: inherit;
-        cursor: inherit;
-      }
-    }
-
     > a {
-      color: inherit;
+      color: $pagination-color;
       display: block;
       text-decoration: none;
       transition-duration: $animation-duration;
@@ -52,6 +29,17 @@
       &:hover,
       &:active {
         background-color: $pagination-bg-hover;
+      }
+
+      &.is-active {
+        background-color: $pagination-bg-hover;
+        font-weight: $bold;
+      }
+
+      &.is-disabled {
+        background-color: $pagination-bg-disabled;
+        color: $pagination-color-disabled;
+        cursor: not-allowed;
       }
     }
   }
@@ -71,6 +59,7 @@
 
   .m-pagination__next {
     border-left: 1px solid $pagination-bg-hover;
+    z-index: layer('cellar');
   }
 }
 
@@ -81,25 +70,26 @@
     box-shadow: 0 0 0 1px $pagination-outline-border inset;
     color: $pagination-outline-color;
 
-    &.is-active {
-      background-color: $pagination-bg;
-      color: $pagination-color;
-    }
-    
-    &.is-disabled {
-      background-color: transparent;
-      box-shadow: 0 0 0 1px $pagination-bg-disabled inset;
-      color: $pagination-bg-disabled;
-      cursor: not-allowed;
-      
       > a,
       > a:hover,
       > a:active {
         background-color: inherit;
         box-shadow: inherit;
+        color: inherit;
         cursor: inherit;
+
+        &.is-active {
+          background-color: $pagination-bg;
+          color: $pagination-color;
+        }
+
+        &.is-disabled {
+          background-color: transparent;
+          box-shadow: 0 0 0 1px $pagination-bg-disabled inset;
+          color: $pagination-bg-disabled;
+          cursor: not-allowed;
+        }
       }
-    }
 
     > a:hover,
     > a:active {

@@ -2,11 +2,12 @@
 
 ## Unreleased
 ### Added
-- Added disabled state to pagination
+- Added disabled state to pagination, list and tab navigation
 
 ### Changed
 - Changed the markup for pagination [BREAKING]
 - Changed the markup for avatars [BREAKING]
+- Changed the markup for list and tab navigation [BREAKING]
 
 
 ## [1.3.1] - 2017-12-06
