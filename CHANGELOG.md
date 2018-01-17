@@ -1,13 +1,16 @@
 # Changelog
 
 ## Unreleased
+
+
+## [2.0.0] - 2018-01-17
 ### Added
 - Added disabled state to pagination, list and tab navigation
 
 ### Changed
-- Changed the markup for pagination [BREAKING]
-- Changed the markup for avatars [BREAKING]
-- Changed the markup for list and tab navigation [BREAKING]
+- [BREAKING] Changed the markup for pagination
+- [BREAKING] Changed the markup for avatars
+- [BREAKING] Changed the markup for list and tab navigation
 
 
 ## [1.3.1] - 2017-12-06
@@ -69,6 +72,8 @@
 - Initial release.
 
 
+[2.0.0]: https://github.com/a-ui/core_branding_scss/tree/v2.0.0
+[1.3.1]: https://github.com/a-ui/core_branding_scss/tree/v1.3.1
 [1.3.0]: https://github.com/a-ui/core_branding_scss/tree/v1.3.0
 [1.2.1]: https://github.com/a-ui/core_branding_scss/tree/v1.2.1
 [1.2.0]: https://github.com/a-ui/core_branding_scss/tree/v1.2.0
