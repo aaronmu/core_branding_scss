@@ -3,6 +3,12 @@
 ## Unreleased
 
 
+## [2.0.1] - 2018-01-22
+### Fixed
+- Fixed next link in pagination is now clickable
+- Fixed pagination cursor is now also a pointer in Chrome and Firefox
+
+
 ## [2.0.0] - 2018-01-17
 ### Added
 - Added disabled state to pagination, list and tab navigation
