@@ -5,8 +5,8 @@
 
 ## [2.0.1] - 2018-01-22
 ### Fixed
-- Fixed next link in pagination that wasn't clickable
-- Fixed pointer cursor in pagination
+- Fixed next link in pagination is now clickable
+- Fixed pagination cursor is now also a pointer in Chrome and Firefox
 
 
 ## [2.0.0] - 2018-01-17
