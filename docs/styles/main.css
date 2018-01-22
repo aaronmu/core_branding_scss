@@ -1499,7 +1499,7 @@ a:focus {
 	max-width: 100%;
 }
 
-a.a-avatar:before {
+a .a-avatar:before {
 	background-color: black;
 	content: '';
 	height: 100%;
@@ -1512,13 +1512,13 @@ a.a-avatar:before {
 	width: 100%;
 }
 
-a.a-avatar:hover,
-a.a-avatar:active {
+a .a-avatar:hover,
+a .a-avatar:active {
 	color: white;
 }
 
-a.a-avatar:hover:before,
-a.a-avatar:active:before {
+a .a-avatar:hover:before,
+a .a-avatar:active:before {
 	opacity: .15;
 }
 
@@ -5116,6 +5116,19 @@ dl {
 	background-color: inherit;
 }
 
+.m-pagination > li.is-disabled {
+	background-color: #d8d8d8;
+	color: white;
+	cursor: not-allowed;
+}
+
+.m-pagination > li.is-disabled > a,
+.m-pagination > li.is-disabled > a:hover,
+.m-pagination > li.is-disabled > a:active {
+	background-color: inherit;
+	cursor: inherit;
+}
+
 .m-pagination > li > a {
 	color: inherit;
 	display: block;
@@ -5156,6 +5169,21 @@ dl {
 .m-pagination--outline > li.is-active {
 	background-color: #0064b4;
 	color: white;
+}
+
+.m-pagination--outline > li.is-disabled {
+	background-color: transparent;
+	box-shadow: 0 0 0 1px #d8d8d8 inset;
+	color: #d8d8d8;
+	cursor: not-allowed;
+}
+
+.m-pagination--outline > li.is-disabled > a,
+.m-pagination--outline > li.is-disabled > a:hover,
+.m-pagination--outline > li.is-disabled > a:active {
+	background-color: inherit;
+	box-shadow: inherit;
+	cursor: inherit;
 }
 
 .m-pagination--outline > li > a:hover,

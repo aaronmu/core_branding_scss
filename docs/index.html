@@ -71,7 +71,7 @@
     <main>
         <div class="u-wrapper d-h1">
             <div class="u-container">
-                <h1>Core Branding Styleguide <small>v1.3.0</small></h1>
+                <h1>Core Branding Styleguide <small>v1.3.1</small></h1>
             </div>
         </div>
 
@@ -1461,6 +1461,14 @@
                             <code>$badge-danger-bg</code>: $state-danger
                         </li>
                     
+                        <li class="d-badge-disabled-color">
+                            <code>$badge-disabled-color</code>: $badge-primary-color
+                        </li>
+                    
+                        <li class="d-badge-disabled-bg">
+                            <code>$badge-disabled-bg</code>: $grey
+                        </li>
+                    
                         <li class="d-breadcrumb-arrow-color">
                             <code>$breadcrumb-arrow-color</code>: $grey
                         </li>
@@ -1765,6 +1773,18 @@
                             <code>$nav-padding</code>: $spacer / 3 * 2 $spacer
                         </li>
                     
+                        <li class="d-nav-bg-disabled">
+                            <code>$nav-bg-disabled</code>: $state-disabled
+                        </li>
+                    
+                        <li class="d-nav-color-disabled">
+                            <code>$nav-color-disabled</code>: $btn-official-color
+                        </li>
+                    
+                        <li class="d-nav-tab-color-disabled">
+                            <code>$nav-tab-color-disabled</code>: $nav-bg-disabled
+                        </li>
+                    
                         <li class="d-pagination-font-size">
                             <code>$pagination-font-size</code>: $btn-font-size
                         </li>
@@ -1777,8 +1797,16 @@
                             <code>$pagination-color</code>: $btn-primary-color
                         </li>
                     
+                        <li class="d-pagination-color-disabled">
+                            <code>$pagination-color-disabled</code>: $btn-disabled-color
+                        </li>
+                    
                         <li class="d-pagination-bg">
                             <code>$pagination-bg</code>: $btn-primary-bg
+                        </li>
+                    
+                        <li class="d-pagination-bg-disabled">
+                            <code>$pagination-bg-disabled</code>: $btn-disabled-bg
                         </li>
                     
                         <li class="d-pagination-bg-hover">
@@ -3189,18 +3217,42 @@
                     <img src="https://api.adorable.io/avatars/285/bartdewever@adorable.png" alt="avatar image" />
                 </div>
                 <div>
-                    <a class="a-avatar">
-                        <img src="https://api.adorable.io/avatars/285/bartdewever@adorable.png" alt="avatar image" />
+                    <a href="javascript:void(0);">
+                        <span class="a-avatar">
+                            <img src="https://api.adorable.io/avatars/285/bartdewever@adorable.png" alt="avatar image" />
+                        </span>
                     </a>
+                </div>
+                <div>
+                    <div class="a-avatar">
+                        <span class="a-avatar__icon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="d-avatar">
+                    <div class="a-avatar">
+                        <span class="a-avatar__letter">T</span>
+                    </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-avatar"&gt;
   &lt;img src="..." alt="..." /&gt;
 &lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#" class="a-avatar"&gt;
-  &lt;img src="..." alt="..." /&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#"&gt;
+  &lt;span class="a-avatar"&gt;
+    &lt;img src="..." alt="..." /&gt;
+  &lt;/span&gt;
 &lt;/a&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-avatar"&gt;
+  &lt;span class="a-avatar__icon"&gt;
+    &lt;i class="fa fa-user"&gt;&lt;/i&gt;
+  &lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-avatar"&gt;
+  &lt;span class="a-avatar__letter"&gt;T&lt;/span&gt;
+&lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
@@ -3209,8 +3261,10 @@
                     <img src="https://api.adorable.io/avatars/285/jeroen@adorable.png" alt="avatar image" />
                 </div>
                 <div>
-                    <a class="a-avatar a-avatar--small">
-                        <img src="https://api.adorable.io/avatars/285/jeroen@adorable.png" alt="avatar image" />
+                    <a href="javascript:void(0);">
+                        <span class="a-avatar a-avatar--small">
+                            <img src="https://api.adorable.io/avatars/285/jeroen@adorable.png" alt="avatar image" />
+                        </span>
                     </a>
                 </div>
             </div>
@@ -3218,8 +3272,10 @@
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-avatar a-avatar--small"&gt;
   &lt;img src="..." alt="..." /&gt;
 &lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#" class="a-avatar a-avatar--small"&gt;
-  &lt;img src="..." alt="..." /&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#"&gt;
+  &lt;span class="a-avatar a-avatar--small"&gt;
+    &lt;img src="..." alt="..." /&gt;
+  &lt;/span&gt;
 &lt;/a&gt;</code></pre>
             </div>
         </div>
@@ -3229,8 +3285,10 @@
                     <img src="https://api.adorable.io/avatars/285/sander@adorable.png" alt="avatar image" />
                 </div>
                 <div>
-                    <a class="a-avatar a-avatar--medium">
-                        <img src="https://api.adorable.io/avatars/285/sander@adorable.png" alt="avatar image" />
+                    <a href="javascript:void(0);">
+                        <span class="a-avatar a-avatar--medium">
+                            <img src="https://api.adorable.io/avatars/285/sander@adorable.png" alt="avatar image" />
+                        </span>
                     </a>
                 </div>
             </div>
@@ -3238,8 +3296,10 @@
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-avatar a-avatar--medium"&gt;
   &lt;img src="..." alt="..." /&gt;
 &lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#" class="a-avatar a-avatar--medium"&gt;
-  &lt;img src="..." alt="..." /&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#"&gt;
+  &lt;span class="a-avatar a-avatar--medium"&gt;
+    &lt;img src="..." alt="..." /&gt;
+  &lt;/span&gt;
 &lt;/a&gt;</code></pre>
             </div>
         </div>
@@ -3249,8 +3309,10 @@
                     <img src="https://api.adorable.io/avatars/285/jasper@adorable.png" alt="avatar image" />
                 </div>
                 <div>
-                    <a class="a-avatar a-avatar--large">
-                        <img src="https://api.adorable.io/avatars/285/jasper@adorable.png" alt="avatar image" />
+                    <a href="javascript:void(0);">
+                        <span class="a-avatar a-avatar--large">
+                            <img src="https://api.adorable.io/avatars/285/jasper@adorable.png" alt="avatar image" />
+                        </span>
                     </a>
                 </div>
             </div>
@@ -3258,8 +3320,10 @@
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-avatar a-avatar--large"&gt;
   &lt;img src="..." alt="..." /&gt;
 &lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#" class="a-avatar a-avatar--large"&gt;
-  &lt;img src="..." alt="..." /&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#"&gt;
+  &lt;span class="a-avatar a-avatar--large"&gt;
+    &lt;img src="..." alt="..." /&gt;
+  &lt;/span&gt;
 &lt;/a&gt;</code></pre>
             </div>
         </div>
@@ -7316,26 +7380,26 @@
             <div>
                 <ul class="m-nav-list d-nav-list">
                     <li><a href="javascript:void(0);"><span class="fa fa-lightbulb-o"></span>Thomas Edison</a></li>
-                    <li><a href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
-                    <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" href="javascript:void(0);">Albert Einstein</a></li>
                 </ul>
 
                 <ul class="m-nav-list m-nav-list--left">
                     <li><a href="javascript:void(0);"><span class="fa fa-lightbulb-o"></span>Thomas Edison</a></li>
-                    <li><a href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
-                    <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" href="javascript:void(0);">Albert Einstein</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-list"&gt;
   &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;a href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-list m-nav-list--left"&gt;
   &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;a href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -7356,26 +7420,26 @@
             <div>
                 <ul class="m-nav-list d-nav-list">
                     <li><button><span class="fa fa-lightbulb-o"></span>Thomas Edison</button></li>
-                    <li><button>Leonardo da Vinci <span class="a-badge">67</span></button></li>
-                    <li class="is-active"><button>Albert Einstein</button></li>
+                    <li><button class="is-active">Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li><button class="is-disabled">Albert Einstein</button></li>
                 </ul>
 
                 <ul class="m-nav-list m-nav-list--left d-nav-list">
                     <li><button><span class="fa fa-lightbulb-o"></span>Thomas Edison</button></li>
-                    <li><button>Leonardo da Vinci <span class="a-badge">67</span></button></li>
-                    <li class="is-active"><button>Albert Einstein</button></li>
+                    <li><button class="is-active">Leonardo da Vinci <span class="a-badge">67</span></button></li>
+                    <li><button class="is-disabled">Albert Einstein</button></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-list"&gt;
   &lt;li&gt;&lt;button&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;button&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-active"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-disabled"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-list m-nav-list--left"&gt;
   &lt;li&gt;&lt;button&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;button&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-active"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button class="is-disabled"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -7385,39 +7449,39 @@
             <div>
                 <ul class="m-nav-tabs d-nav-list">
                     <li><a href="javascript:void(0);"><span class="fa fa-lightbulb-o"></span>Thomas Edison</a></li>
-                    <li><a href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
-                    <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" href="javascript:void(0);">Albert Einstein</a></li>
                 </ul>
 
 
                 <ul class="m-nav-tabs m-nav-tabs--left d-nav-list">
                     <li><a href="javascript:void(0);"><span class="fa fa-lightbulb-o"></span>Thomas Edison</a></li>
-                    <li><a href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
-                    <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" href="javascript:void(0);">Albert Einstein</a></li>
                 </ul>
 
 
                 <ul class="m-nav-tabs m-nav-tabs--right d-nav-list">
                     <li><a href="javascript:void(0);"><span class="fa fa-lightbulb-o"></span>Thomas Edison</a></li>
-                    <li><a href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
-                    <li class="is-active"><a href="javascript:void(0);">Albert Einstein</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">Leonardo da Vinci <span class="a-badge">67</span></a></li>
+                    <li><a class="is-disabled" href="javascript:void(0);">Albert Einstein</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-tabs"&gt;
   &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;a href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-tabs m-nav-tabs--left"&gt;
   &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;a href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-nav-tabs m-nav-tabs--right"&gt;
   &lt;li&gt;&lt;a href="#"&gt;&lt;span class="fa fa-lightbulb-o"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;a href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" href="#"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -7484,18 +7548,18 @@
                     <li class="m-pagination__next"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
                 <ul class="m-pagination d-pagination">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
+                    <li class="m-pagination__prev"><a class="is-disabled" href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
                     <li class="m-pagination__label">1 van de 6</li>
                     <li class="m-pagination__next"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
                 <ul class="m-pagination d-pagination">
                     <li class="m-pagination__prev"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
-                    <li><a href="javascript:void(0);">1</a></li>
-                    <li class="is-active"><a href="javascript:void(0);">2</a></li>
+                    <li>...</li>
                     <li><a href="javascript:void(0);">3</a></li>
                     <li><a href="javascript:void(0);">4</a></li>
-                    <li>...</li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">6</a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
             </div>
             <div>
@@ -7504,18 +7568,18 @@
   &lt;li class="m-pagination__next"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-pagination"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;1 van de 6&lt;/li&gt;
   &lt;li class="m-pagination__next"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-pagination"&gt;
   &lt;li class="m-pagination__prev"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;...&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -7526,18 +7590,18 @@
                     <li class="m-pagination__next"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--outline d-pagination">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
+                    <li class="m-pagination__prev"><a class="is-disabled" href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
                     <li class="m-pagination__label">1 van de 6</li>
                     <li class="m-pagination__next"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--outline d-pagination">
                     <li class="m-pagination__prev"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
-                    <li><a href="javascript:void(0);">1</a></li>
-                    <li class="is-active"><a href="javascript:void(0);">2</a></li>
+                    <li>...</li>
                     <li><a href="javascript:void(0);">3</a></li>
                     <li><a href="javascript:void(0);">4</a></li>
-                    <li>...</li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">6</a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
                 </ul>
             </div>
             <div>
@@ -7546,18 +7610,18 @@
   &lt;li class="m-pagination__next"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-pagination m-pagination--outline"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;1 van de 6&lt;/li&gt;
   &lt;li class="m-pagination__next"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-pagination m-pagination--outline"&gt;
   &lt;li class="m-pagination__prev"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="is-active"&gt;&lt;a href="#"&gt;2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;...&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>

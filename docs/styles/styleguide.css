@@ -617,6 +617,10 @@ footer {
 	padding: 1.5rem;
 }
 
+.d-avatar {
+	margin-top: 0.1875rem;
+}
+
 .d-nav-list {
 	margin-bottom: 3rem;
 }
