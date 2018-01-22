@@ -3,6 +3,12 @@
 ## Unreleased
 
 
+## [2.0.1] - 2018-01-22
+### Fixed
+- Fixed next link in pagination that wasn't clickable
+- Fixed pointer cursor in pagination
+
+
 ## [2.0.0] - 2018-01-17
 ### Added
 - Added disabled state to pagination, list and tab navigation

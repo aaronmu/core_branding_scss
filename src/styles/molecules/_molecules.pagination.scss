@@ -17,6 +17,7 @@
     position: relative;
     text-align: center;
     width: $pagination-size;
+    z-index: layer('base');
 
     > a {
       color: $pagination-color;
@@ -59,7 +60,7 @@
 
   .m-pagination__next {
     border-left: 1px solid $pagination-bg-hover;
-    z-index: layer('cellar');
+    z-index: layer('auto');
   }
 }
 
@@ -76,7 +77,6 @@
         background-color: inherit;
         box-shadow: inherit;
         color: inherit;
-        cursor: inherit;
 
         &.is-active {
           background-color: $pagination-bg;
