@@ -3,6 +3,11 @@
 ## Unreleased
 
 
+## [2.0.2] - 2018-03-16
+### Fixed
+- Fixed an issue where alignment classes weren't working in table headings and table cells
+
+
 ## [2.0.1] - 2018-01-22
 ### Fixed
 - Fixed next link in pagination is now clickable
@@ -78,6 +83,8 @@
 - Initial release.
 
 
+[2.0.2]: https://github.com/a-ui/core_branding_scss/tree/v2.0.2
+[2.0.1]: https://github.com/a-ui/core_branding_scss/tree/v2.0.1
 [2.0.0]: https://github.com/a-ui/core_branding_scss/tree/v2.0.0
 [1.3.1]: https://github.com/a-ui/core_branding_scss/tree/v1.3.1
 [1.3.0]: https://github.com/a-ui/core_branding_scss/tree/v1.3.0
