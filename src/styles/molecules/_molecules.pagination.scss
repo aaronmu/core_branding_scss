@@ -71,25 +71,25 @@
     box-shadow: 0 0 0 1px $pagination-outline-border inset;
     color: $pagination-outline-color;
 
-      > a,
-      > a:hover,
-      > a:active {
-        background-color: inherit;
-        box-shadow: inherit;
-        color: inherit;
+    > a,
+    > a:hover,
+    > a:active {
+      background-color: inherit;
+      box-shadow: inherit;
+      color: inherit;
 
-        &.is-active {
-          background-color: $pagination-bg;
-          color: $pagination-color;
-        }
-
-        &.is-disabled {
-          background-color: transparent;
-          box-shadow: 0 0 0 1px $pagination-bg-disabled inset;
-          color: $pagination-bg-disabled;
-          cursor: not-allowed;
-        }
+      &.is-active {
+        background-color: $pagination-bg;
+        color: $pagination-color;
       }
+
+      &.is-disabled {
+        background-color: transparent;
+        box-shadow: 0 0 0 1px $pagination-bg-disabled inset;
+        color: $pagination-bg-disabled;
+        cursor: not-allowed;
+      }
+    }
 
     > a:hover,
     > a:active {
