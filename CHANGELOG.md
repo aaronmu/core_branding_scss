@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Added option to use buttons in navigation tabs instead of anchors
 
 
 ## [2.0.2] - 2018-03-16
