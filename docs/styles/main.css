@@ -6103,11 +6103,6 @@ figcaption {
 	color: #d8d8d8;
 }
 
-.m-nav-tabs > li > button {
-	cursor: pointer;
-	width: 100%;
-}
-
 .m-nav-tabs--left {
 	-ms-flex-pack: start;
 	    justify-content: flex-start;

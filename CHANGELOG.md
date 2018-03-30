@@ -1,7 +1,9 @@
 # Changelog
 
-## Unreleased
-- Added option to use buttons in navigation tabs instead of anchors
+
+## [2.0.3] - 2018-03-30
+### Fixed
+- Added option to also use buttons in navigation tabs instead of only anchors
 
 
 ## [2.0.2] - 2018-03-16
@@ -84,6 +86,7 @@
 - Initial release.
 
 
+[2.0.3]: https://github.com/a-ui/core_branding_scss/tree/v2.0.3
 [2.0.2]: https://github.com/a-ui/core_branding_scss/tree/v2.0.2
 [2.0.1]: https://github.com/a-ui/core_branding_scss/tree/v2.0.1
 [2.0.0]: https://github.com/a-ui/core_branding_scss/tree/v2.0.0
