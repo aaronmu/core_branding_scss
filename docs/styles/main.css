@@ -6063,14 +6063,17 @@ figcaption {
 	    justify-content: center;
 }
 
-.m-nav-tabs > li > a {
+.m-nav-tabs > li > a,
+.m-nav-tabs > li > button {
 	border-bottom: 3px solid transparent;
 	text-decoration: none;
 	transition-property: border, color;
 }
 
 .m-nav-tabs > li > a:hover,
-.m-nav-tabs > li > a:active {
+.m-nav-tabs > li > a:active,
+.m-nav-tabs > li > button:hover,
+.m-nav-tabs > li > button:active {
 	background-color: transparent;
 	border-color: #0064b4;
 	color: #081f2c;
@@ -6079,7 +6082,10 @@ figcaption {
 
 .m-nav-tabs > li > a.is-active,
 .m-nav-tabs > li > a.is-active:hover,
-.m-nav-tabs > li > a.is-active:active {
+.m-nav-tabs > li > a.is-active:active,
+.m-nav-tabs > li > button.is-active,
+.m-nav-tabs > li > button.is-active:hover,
+.m-nav-tabs > li > button.is-active:active {
 	background-color: transparent;
 	border-color: #0064b4;
 	color: #0064b4;
@@ -6088,10 +6094,18 @@ figcaption {
 
 .m-nav-tabs > li > a.is-disabled,
 .m-nav-tabs > li > a.is-disabled:hover,
-.m-nav-tabs > li > a.is-disabled:active {
+.m-nav-tabs > li > a.is-disabled:active,
+.m-nav-tabs > li > button.is-disabled,
+.m-nav-tabs > li > button.is-disabled:hover,
+.m-nav-tabs > li > button.is-disabled:active {
 	background-color: transparent;
 	border-color: transparent;
 	color: #d8d8d8;
+}
+
+.m-nav-tabs > li > button {
+	cursor: pointer;
+	width: 100%;
 }
 
 .m-nav-tabs--left {
