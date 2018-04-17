@@ -5576,13 +5576,16 @@ dl {
 	background: #f3f3f3;
 	box-shadow: 0 0 0 1px #b0b0b0 inset;
 	color: #081f2c;
-	display: inline-block;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
 	height: 2.25rem;
 	line-height: 2.25rem;
+	max-width: 100%;
 }
 
-.m-tag > * {
-	float: left;
+.m-tag > *:not(.m-tag__label):not(.m-tag__input) {
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
 }
 
 .m-tag__label {
@@ -5596,6 +5599,7 @@ dl {
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
+	max-width: 15rem;
 	min-height: 2.25rem;
 	padding: 0 0.75rem;
 }

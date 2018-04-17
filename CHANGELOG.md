@@ -1,8 +1,17 @@
 # Changelog
 
 
-## [2.0.3] - 2018-03-30
+## [2.0.4] - 2018-04-17
 ### Fixed
+- Fixed an issue where tags would display incorrectly in smaller containers
+- Fixed an issue in Firefox where the responsive table wrapper would break out the flexbox setup
+
+### Added
+- Added full width buttons to the docs
+
+
+## [2.0.3] - 2018-03-30
+### Added
 - Added option to also use buttons in navigation tabs instead of only anchors
 
 
