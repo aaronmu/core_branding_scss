@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [2.1.0] - 2018-04-26
+### Fixed
+- Added a missing part of the Antwerp font EULA
+
+### Added
+- Added small and large size variants for pagination
+
+
 ## [2.0.4] - 2018-04-17
 ### Fixed
 - Fixed an issue where tags would display incorrectly in smaller containers

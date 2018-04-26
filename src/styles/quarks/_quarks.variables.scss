@@ -802,6 +802,9 @@ $pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%
 $pagination-outline-border:           $pagination-outline-color !default;
 $pagination-outline-border-hover:     mix($pagination-outline-border, $black, 85%) !default;
 
+$pagination-size-sm: $spacer-md !default;
+$pagination-size-lg: $spacer-xl !default;
+
 
 /**
  * STEP INDICATOR

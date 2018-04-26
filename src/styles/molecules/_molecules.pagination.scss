@@ -107,3 +107,39 @@
     border: none;
   }
 }
+
+
+/**
+ * PAGINATION SIZES
+ * -------------------------------------------------------------------
+ */
+
+.m-pagination {
+  &.m-pagination--small {
+    > li {
+      height: $pagination-size-sm;
+      line-height: $pagination-size-sm;
+      width: $pagination-size-sm;
+    }
+
+    .m-pagination__label {
+      padding: 0 $spacer-xs;
+      width: auto;
+    }
+  }
+}
+
+.m-pagination {
+  &.m-pagination--large {
+    > li {
+      height: $pagination-size-lg;
+      line-height: $pagination-size-lg;
+      width: $pagination-size-lg;
+    }
+
+    .m-pagination__label {
+      padding: 0 $spacer-md;
+      width: auto;
+    }
+  }
+}
