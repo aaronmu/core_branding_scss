@@ -37,7 +37,7 @@
   td {
     padding: $table-padding;
 
-    &:not(.u-text-center, .u-text-right, .u-text-justify) {
+    &:not(.u-text-center):not(.u-text-right):not(.u-text-justify) {
       text-align: left;
     }
 
