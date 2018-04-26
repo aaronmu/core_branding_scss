@@ -71,7 +71,7 @@
     <main>
         <div class="u-wrapper d-h1">
             <div class="u-container">
-                <h1>Core Branding Styleguide <small>v2.0.4</small></h1>
+                <h1>Core Branding Styleguide <small>v2.1.0</small></h1>
             </div>
         </div>
 
@@ -1831,6 +1831,14 @@
                     
                         <li class="d-pagination-outline-border-hover">
                             <code>$pagination-outline-border-hover</code>: mix($pagination-outline-border, $black, 85%)
+                        </li>
+                    
+                        <li class="d-pagination-size-sm">
+                            <code>$pagination-size-sm</code>: $spacer-md
+                        </li>
+                    
+                        <li class="d-pagination-size-lg">
+                            <code>$pagination-size-lg</code>: $spacer-xl
                         </li>
                     
                         <li class="d-step-indicator-color">
@@ -7561,6 +7569,7 @@
         <a name="molecules-pagination"></a>
         <h3 class="d-h3">Pagination</h3>
         <span class="d-file">molecules/molecules.pagination</span>
+        <h4 class="d-h4">Regular pagination</h4>
         <div class="d">
             <div>
                 <ul class="m-pagination d-pagination">
@@ -7603,6 +7612,7 @@
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
+        <h4 class="d-h4">Outline pagination</h4>
         <div class="d">
             <div>
                 <ul class="m-pagination m-pagination--outline d-pagination">
@@ -7645,7 +7655,67 @@
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
-
+        <h4 class="d-h4">Pagination sizes</h4>
+        <div class="d">
+            <div>
+                <ul class="m-pagination m-pagination--small d-pagination">
+                    <li class="m-pagination__prev"><a class="is-disabled" href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
+                    <li class="m-pagination__label">1 van de 6</li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--large d-pagination">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
+                    <li>...</li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">6</a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--outline m-pagination--large d-pagination">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--outline m-pagination--small d-pagination">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i></a></li>
+                    <li>...</li>
+                    <li><a href="javascript:void(0);">3</a></li>
+                    <li><a href="javascript:void(0);">4</a></li>
+                    <li><a href="javascript:void(0);">5</a></li>
+                    <li><a class="is-active" href="javascript:void(0);">6</a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" href="javascript:void(0);"><i class="fa fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-pagination m-pagination--small"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__label"&gt;1 van de 6&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-pagination m-pagination--large"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-pagination m-pagination--outline m-pagination--large"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;ul class="m-pagination m-pagination--outline m-pagination--small"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#"&gt;&lt;i class="fa fa-angle-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;...&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;4&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#"&gt;5&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#"&gt;6&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" href="#"&gt;&lt;i class="fa fa-angle-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
         <a name="molecules-progress"></a>
         <h3 class="d-h3">Progress</h3>
         <span class="d-file">molecules/molecules.progress</span>

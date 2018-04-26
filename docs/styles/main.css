@@ -5254,6 +5254,33 @@ dl {
 }
 
 /**
+ * PAGINATION SIZES
+ * -------------------------------------------------------------------
+ */
+
+.m-pagination.m-pagination--small > li {
+	height: 2.25rem;
+	line-height: 2.25rem;
+	width: 2.25rem;
+}
+
+.m-pagination.m-pagination--small .m-pagination__label {
+	padding: 0 0.75rem;
+	width: auto;
+}
+
+.m-pagination.m-pagination--large > li {
+	height: 3.75rem;
+	line-height: 3.75rem;
+	width: 3.75rem;
+}
+
+.m-pagination.m-pagination--large .m-pagination__label {
+	padding: 0 2.25rem;
+	width: auto;
+}
+
+/**
  * PROGRESS VARIABLES
  * -------------------------------------------------------------------
  */
