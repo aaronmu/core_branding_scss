@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [2.1.1] - 2018-04-26
+### Fixed
+- Fixed an issue where the `:not` selector wasn't rendered correctly
+
+
 ## [2.1.0] - 2018-04-26
 ### Fixed
 - Added a missing part of the Antwerp font EULA
@@ -103,6 +108,9 @@
 - Initial release.
 
 
+[2.1.1]: https://github.com/a-ui/core_branding_scss/tree/v2.1.1
+[2.1.0]: https://github.com/a-ui/core_branding_scss/tree/v2.1.0
+[2.0.4]: https://github.com/a-ui/core_branding_scss/tree/v2.0.4
 [2.0.3]: https://github.com/a-ui/core_branding_scss/tree/v2.0.3
 [2.0.2]: https://github.com/a-ui/core_branding_scss/tree/v2.0.2
 [2.0.1]: https://github.com/a-ui/core_branding_scss/tree/v2.0.1
