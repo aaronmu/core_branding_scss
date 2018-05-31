@@ -61,9 +61,9 @@
     <meta name="format-detection" content="telephone=no" />
 
 </head>
-<body class="has-header">
-    <header class="o-header o-header--fixed">
-        <a href="javascript:void(0);" class="o-header__logo">
+<body>
+    <header class="o-header">
+        <a href="/" class="o-header__logo">
             <img src="images/a-logo.svg" alt="Officieel Logo Antwerpen">
         </a>
     </header>
@@ -75,15 +75,25 @@
             </div>
         </div>
 
-        {% include "templates/quarks.njk" %}
+        <div class="line">
+            {% include "templates/quarks.njk" %}
+        </div>
 
-        {% include "templates/base.njk" %}
+        <div class="line">
+            {% include "templates/base.njk" %}
+        </div>
 
-        {% include "templates/utilities.njk" %}
+        <div class="line">
+            {% include "templates/utilities.njk" %}
+        </div>
 
-        {% include "templates/atoms.njk" %}
+        <div class="line">
+            {% include "templates/atoms.njk" %}
+        </div>
 
-        {% include "templates/molecules.njk" %}
+        <div class="line">
+            {% include "templates/molecules.njk" %}
+        </div>
 
         {% include "templates/organisms.njk" %}
 
