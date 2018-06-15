@@ -75,6 +75,10 @@
             </div>
         </div>
 
+        <div class="line u-bg-light">
+            {% include "templates/toc.njk" %}
+        </div>
+
         <div class="line">
             {% include "templates/quarks.njk" %}
         </div>
@@ -95,7 +99,9 @@
             {% include "templates/molecules.njk" %}
         </div>
 
-        {% include "templates/organisms.njk" %}
+        <div class="line">
+            {% include "templates/organisms.njk" %}
+        </div>
 
         <footer class="o-footer">
             <span class="o-footer__label">© 2017 Stad Antwerpen</span>
