@@ -45,6 +45,16 @@ footer {
   }
 }
 
+.d-intro {
+  > div {
+    flex: 1 1 auto;
+  }
+}
+
+.u-margin-bottom-top-xxs {
+  margin: $spacer-xs / 2 0;
+}
+
 .d-toc {
   display: flex;
   flex-wrap: wrap;
@@ -76,12 +86,18 @@ footer {
 }
 
 .d-h1 {
+  background-color: $grey-dark;
+  color: $grey-lighter;
   padding-bottom: $spacer;
   padding-top: $spacer * 3.5;
 
+  small {
+    color: $grey-light;
+  }
+
   @include at($screen-xs) {
-    padding-bottom: $spacer * 1.5;
-    padding-top: $spacer * 1.5;
+    padding-bottom: $spacer * 2.5;
+    padding-top: $spacer * 2.5;
   }
 }
 
