@@ -1,6 +1,15 @@
 # Changelog
 
 
+## Unreleased
+### Changed
+- Changed the appearance of the disabled button
+
+### Added
+- Added a getting started guide in the documentation
+- Added an easy TOC in the documentation
+
+
 ## [2.1.1] - 2018-04-26
 ### Fixed
 - Fixed an issue where the `:not` selector wasn't rendered correctly
