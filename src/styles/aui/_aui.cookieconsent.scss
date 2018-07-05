@@ -1,0 +1,62 @@
+/**
+ * AUI COOKIE CONSENT
+ * -------------------------------------------------------------------
+ */
+
+.cc-banner {
+  background: $brand-primary;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 5000;
+
+  @include at($screen-xs) {
+    flex-wrap: nowrap;
+  }
+
+  p,
+  .cc-compliance {
+    width: 100%;
+
+    @include at($screen-xs) {
+      width: auto;
+    }
+  }
+
+  p {
+    color: $text-color-xlight;
+    flex: 1;
+    margin: 0;
+    padding: $spacer-xs $spacer;
+
+    a {
+      color: $text-color-xlight;
+      opacity: .8;
+
+      &:hover,
+      &:active,
+      &:visited {
+        opacity: 1;
+      }
+    }
+  }
+
+  .cc-compliance {
+    display: flex;
+  }
+
+  .button {
+    background: $cerulean;
+    margin: 0;
+    min-width: $spacer * 6;
+
+    &:hover,
+    &:active,
+    &:visited {
+      background: palette($brand-primary, 'dark');
+    }
+  }
+}

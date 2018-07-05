@@ -146,7 +146,7 @@ $animation-normal:        $animation-duration $animation-easing !default;
  * http://www.sitepoint.com/better-solution-managing-z-index-sass/
  *
  * Use like this:
- *   z-index: layer("overlay");
+ *   z-index: layer('overlay');
  *     where overlay is a list item of the default list "$z-indexes" (see below)
  *
  * The list is also upgradeable in that nesting is permitted, e.g.:
@@ -161,13 +161,15 @@ $animation-normal:        $animation-duration $animation-easing !default;
  */
 
 $z-indexes: (
-  'overlay':         8,
-  'header':          7,
-  'pane':            6,
-  'pane-overlay':    5,
-  'tooltip':         4,
-  'flyout':          3,
-  'datepicker':      2,
+  'overlay':        10,
+  'header':          9,
+  'statusbar':       8,
+  'pane':            7,
+  'pane-overlay':    6,
+  'tooltip':         5,
+  'flyout':          4,
+  'datepicker':      3,
+  'top':             2,
   'base':            1,
   'auto':            0,
   'cellar':         -1

@@ -61,9 +61,9 @@
     <meta name="format-detection" content="telephone=no" />
 
 </head>
-<body class="has-header">
-    <header class="o-header o-header--fixed">
-        <a href="javascript:void(0);" class="o-header__logo">
+<body>
+    <header class="o-header">
+        <a href="/" class="o-header__logo">
             <img src="images/a-logo.svg" alt="Officieel Logo Antwerpen">
         </a>
     </header>
@@ -71,12 +71,154 @@
     <main>
         <div class="u-wrapper d-h1">
             <div class="u-container">
-                <h1>Core Branding Styleguide <small>v2.1.1</small></h1>
+                <h1>Antwerp branding styleguide <small>v2.1.1</small></h1>
+                <p class="u-margin-top">A collection of building blocks for your next Antwerp-based application.</p>
             </div>
         </div>
 
-        <a name="quarks"></a>
+        <div class="d-intro">
+            <div class="u-wrapper d-h2">
+	<div class="u-container u-margin-top">
+		<h2>Getting started</h2>
+	</div>
+</div>
+<div class="u-wrapper">
+    <div class="u-container u-margin-top d-intro">
+        <div class="u-margin-bottom-lg">
+            <p>In this styleguide you'll find all the necessary info you will need in order to start building digital layouts or apps for the city of Antwerp.</p>
+
+            <h3 class="h5 has-base-font u-text-bold u-margin-top-lg">Basic implementation</h3>
+            <p class="u-margin-top u-margin-bottom-xs">In its simplest form you can just include the following line in the <code>&lt;head&gt;</code> section of your app.</p>
+            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/2.1.1/main.min.css"&gt;</code></pre>
+            <p class="u-margin-top u-margin-bottom-xs">You can even import it directly in your (S)CSS:</p>
+            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/2.1.1/main.min.css");</code></pre>
+            <div class="m-alert d-alert u-margin-top">
+                <p>We adopt semantic versioning. If you want to use another version of the Core Branding you can do so by adjusting the version in the URL address. See the changelog for all available versions.</p>
+            </div>
+            <h3 class="h5 has-base-font u-text-bold u-margin-top-lg">Advanced usage</h3>
+            <p class="u-margin-top u-margin-bottom-xs">Sometimes you want to add functionality which requires more styling as defined in our kit. In order to help with this we provide some simple tools and the ability to import all the kit's Sass variables. See the <a href="#quarks">Quarks</a> section for more info.</p>
+            <p class="u-margin-top u-margin-bottom-xs">It's also possible to only load the Antwerp fonts. Just like you would implement a font from Google. These are the links you can use:</p>
+            <h4 class="h6 has-base-font u-text-bold u-margin-top">Antwerpen</h3>
+            <p class="u-margin-top-xs u-margin-bottom-xs">Available in Small, Regular and Tall.</p>
+            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/2.1.1/antwerpen.min.css"&gt;</code></pre>
+            <p class="u-margin-bottom-top-xxs">or</p>
+            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/2.1.1/antwerpen.min.css");</code></pre>
+            <h4 class="h6 has-base-font u-text-bold u-margin-top">Sun Antwerpen</h3>
+            <p class="u-margin-top-xs u-margin-bottom-xs">Available in Light, Regular, Bold and Extra Bold.</p>
+            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/2.1.1/sun-antwerpen.min.css"&gt;</code></pre>
+            <p class="u-margin-bottom-top-xxs">or</p>
+            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/2.1.1/sun-antwerpen.min.css");</code></pre>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+        <div class="line u-bg-light">
+            <a name="toc"></a>
 <div class="u-wrapper d-h2">
+	<div class="u-container">
+		<h2>Table of contents</h2>
+	</div>
+</div>
+<div class="u-wrapper">
+	<div class="u-container u-margin-top d-toc">
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Quarks</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#quarks-mixins">Mixins</a></li>
+				<li><a href="#quarks-functions">Functions</a></li>
+				<li><a href="#quarks-colors">Colors</a></li>
+				<li><a href="#quarks-variables">Variables</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Base</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#base-fonts">Fonts</a></li>
+				<li><a href="#base-antwerpen-icons">Antwerpen icons</a></li>
+				<li><a href="#base-layout">Layout</a></li>
+				<li><a href="#base-media">Media</a></li>
+				<li><a href="#base-typography">Typography</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Utilities</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#utilities-background">Background</a></li>
+				<li><a href="#utilities-layout">Layout</a></li>
+				<li><a href="#utilities-spacing">Spacing</a></li>
+				<li><a href="#utilities-text">Text</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Atoms</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#atoms-addon">Addon</a></li>
+				<li><a href="#atoms-avatar">Avatar</a></li>
+				<li><a href="#atoms-badge">Badge</a></li>
+				<li><a href="#atoms-button">Button</a></li>
+				<li><a href="#atoms-code">Code</a></li>
+				<li><a href="#atoms-copyright">Copyright</a></li>
+				<li><a href="#atoms-form">Form</a></li>
+				<li><a href="#atoms-input">Input</a></li>
+				<li><a href="#atoms-label">Label</a></li>
+				<li><a href="#atoms-link">Link</a></li>
+				<li><a href="#atoms-list">List</a></li>
+				<li><a href="#atoms-radiobutton-checkbox">Radio button / checkbox</a></li>
+				<li><a href="#atoms-spinner">Spinner</a></li>
+				<li><a href="#atoms-switch">Switch</a></li>
+				<li><a href="#atoms-table">Table</a></li>
+				<li><a href="#atoms-timepicker">Timepicker</a></li>
+				<li><a href="#atoms-toggle">Toggle</a></li>
+				<li><a href="#atoms-tooltip">Tooltip</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Molecules</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#molecules-accordion">Accordion</a></li>
+				<li><a href="#molecules-alert">Alert</a></li>
+				<li><a href="#molecules-breadcrumb">Breadcrumb</a></li>
+				<li><a href="#molecules-button-group">Button group</a></li>
+				<li><a href="#molecules-button-list">Button list</a></li>
+				<li><a href="#molecules-card">Card</a></li>
+				<li><a href="#molecules-collapsible-list">Collapsible list</a></li>
+				<li><a href="#molecules-contact">Contact</a></li>
+				<li><a href="#molecules-datepicker">Datepicker</a></li>
+				<li><a href="#molecules-flyout">Flyout</a></li>
+				<li><a href="#molecules-gallery">Gallery</a></li>
+				<li><a href="#molecules-icon-list">Icon list</a></li>
+				<li><a href="#molecules-image">Image</a></li>
+				<li><a href="#molecules-modal">Modal</a></li>
+				<li><a href="#molecules-navigation">Navigation</a></li>
+				<li><a href="#molecules-overlay">Overlay</a></li>
+				<li><a href="#molecules-pagination">Pagination</a></li>
+				<li><a href="#molecules-progress">Progress</a></li>
+				<li><a href="#molecules-range-slider">Range slider</a></li>
+				<li><a href="#molecules-selectable-list">Selectable list</a></li>
+				<li><a href="#molecules-step-indicator">Step indicator</a></li>
+				<li><a href="#molecules-tag">Tag</a></li>
+				<li><a href="#molecules-upload">Upload</a></li>
+			</ul>
+		</div>
+		<div class="d-toc__cell">
+			<h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Organisms</h3>
+			<ul class="a-list a-list--unstyled a-list__toc">
+				<li><a href="#organisms-footer">Footer</a></li>
+				<li><a href="#organisms-header">Header</a></li>
+				<li><a href="#organisms-slideshow">Slideshow</a></li>
+				<li><a href="#organisms-tag-list">Tag list</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+        </div>
+
+        <div class="line">
+            <a name="quarks"></a>
+<div class="u-wrapper u-margin-top d-h2">
     <div class="u-container">
         <h2>Quarks</h2>
     </div>
@@ -130,7 +272,7 @@
                 <p>Responsive mixins</p>
                 <div class="m-alert d-alert">
                     <p>Note that working mobile first is encouraged, so try to limit the use of the <code>to</code> mixin.</p>
-                </div> 
+                </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>.css {
@@ -942,7 +1084,7 @@
                         </li>
                     
                         <li class="d-btn-disabled-color">
-                            <code>$btn-disabled-color</code>: $white
+                            <code>$btn-disabled-color</code>: $grey-dark
                         </li>
                     
                         <li class="d-btn-disabled-bg">
@@ -1971,8 +2113,10 @@
     </div>
 </div>
 
+        </div>
 
-        <a name="base"></a>
+        <div class="line">
+            <a name="base"></a>
 <div class="u-wrapper d-h2">
     <div class="u-container">
         <h2>Base</h2>
@@ -2464,15 +2608,17 @@
     </div>
 </div>
 
+        </div>
 
-        <div class="u-wrapper d-h2">
+        <div class="line">
+            <div class="u-wrapper d-h2">
     <div class="u-container">
         <h2>Utilities</h2>
     </div>
 </div>
 <div class="u-wrapper">
     <div class="u-container">
-        <a name="utilitites-background"></a>
+        <a name="utilities-background"></a>
         <h3 class="d-h3">Background</h3>
         <span class="d-file">utilities/utilities.background</span>
         <div class="d">
@@ -2563,7 +2709,7 @@
         </div>
         
 
-        <a name="utilitites-layout"></a>
+        <a name="utilities-layout"></a>
         <h3 class="d-h3">Layout</h3>
         <span class="d-file">utilities/utilities.layout</span>
         <div class="d">
@@ -2602,10 +2748,10 @@
         </div>
         <div class="d">
             <div>
-                <p>The <code>.u-no-overflow</code> class will clip content when an element's content is too big to fit in the given area.</p>
+                <p>The <code>.u-no-scroll</code> class will clip content when an element's content is too big to fit in the given area.</p>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="u-no-overflow"&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="u-no-scroll"&gt;
   ...
 &lt;/div&gt;</code></pre>
             </div>
@@ -2643,7 +2789,7 @@
             </div>
         </div>
 
-        <a name="utilitites-spacing"></a>
+        <a name="utilities-spacing"></a>
         <h3 class="d-h3">Spacing</h3>
         <span class="d-file">utilities/utilities.spacing</span>
         <div class="d">
@@ -2928,7 +3074,7 @@
         </div>
         
 
-        <a name="utilitites-text"></a>
+        <a name="utilities-text"></a>
         <h3 class="d-h3">Text</h3>
         <span class="d-file">utilities/utilities.text</span>
         <div class="d">
@@ -3199,8 +3345,10 @@
     </div>
 </div>
 
+        </div>
 
-        <div class="u-wrapper d-h2">
+        <div class="line">
+            <div class="u-wrapper d-h2">
     <div class="u-container">
         <h2>Atoms</h2>
     </div>
@@ -5839,8 +5987,10 @@
     </div>
 </div>
 
+        </div>
 
-        <div class="u-wrapper d-h2">
+        <div class="line">
+            <div class="u-wrapper d-h2">
     <div class="u-container">
         <h2>Molecules</h2>
     </div>
@@ -8173,8 +8323,10 @@
     </div>
 </div>
 
+        </div>
 
-        <div class="u-wrapper d-h2">
+        <div class="line">
+            <div class="u-wrapper d-h2">
     <div class="u-container">
         <h2>Organisms</h2>
     </div>
@@ -8540,6 +8692,7 @@
     </div>
 </div>
 
+        </div>
 
         <footer class="o-footer">
             <span class="o-footer__label">© 2017 Stad Antwerpen</span>
