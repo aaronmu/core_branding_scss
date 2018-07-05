@@ -445,22 +445,27 @@ footer {
 }
 
 .d {
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-direction: column;
-	    flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin: 1.5rem -1.5rem;
 }
 
 .d > div {
-	-ms-flex: 1 1 auto;
-	    flex: 1 1 auto;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
 	padding: 0.375rem 1.5rem 0;
 }
 
 .d-intro > div {
-	-ms-flex: 1 1 auto;
-	    flex: 1 1 auto;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1 1 auto;
+	        flex: 1 1 auto;
 }
 
 .u-margin-bottom-top-xxs {
@@ -468,6 +473,7 @@ footer {
 }
 
 .d-toc {
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
@@ -475,8 +481,9 @@ footer {
 }
 
 .d-toc__cell {
-	-ms-flex: 0 0 50%;
-	    flex: 0 0 50%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 50%;
+	        flex: 0 0 50%;
 }
 
 .a-list__toc {
@@ -525,6 +532,7 @@ footer {
 }
 
 .d-list {
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-wrap: wrap;
@@ -657,12 +665,15 @@ footer {
 }
 
 .d-overlay input:checked ~ .m-overlay {
-	-ms-flex-align: center;
-	    align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-pack: center;
-	    justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .d-overlay input:checked ~ .m-overlay label {
@@ -693,8 +704,10 @@ footer {
 @media screen and (min-width: 45rem) {
 
 .d {
-	-ms-flex-direction: row;
-	    flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 .d > div {
@@ -702,8 +715,9 @@ footer {
 }
 
 .d-toc__cell {
-	-ms-flex: 0 0 33.33333%;
-	    flex: 0 0 33.33333%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 33.33333%;
+	        flex: 0 0 33.33333%;
 }
 
 .d-list > li {
@@ -735,8 +749,9 @@ footer {
 @media screen and (min-width: 75rem) {
 
 .d-toc__cell {
-	-ms-flex: 0 0 16.66667%;
-	    flex: 0 0 16.66667%;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 16.66667%;
+	        flex: 0 0 16.66667%;
 }
 
 .d-list__colors > li {
