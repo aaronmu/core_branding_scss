@@ -3,6 +3,29 @@
  * -------------------------------------------------------------------
  */
 
+ .m-upload {
+  &.is-disabled {
+    .m-upload__dropzone {
+      cursor: not-allowed;
+      border-color: $state-disabled;
+
+      &:active,
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+
+    .m-upload__input {
+      cursor: not-allowed;
+    }
+
+    .m-upload__content {
+      color: $state-disabled;
+    }
+  }
+}
+
 /**
  * UPLOAD ELEMENTS
  * -------------------------------------------------------------------
