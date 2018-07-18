@@ -8,7 +8,6 @@
 ### Added
 - Added a getting started guide in the documentation
 - Added an easy TOC in the documentation
-- Added an easy TOC in the documentation
 - Added breakpoints for XL screens
 
 ## [2.1.1] - 2018-04-26
