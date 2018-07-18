@@ -158,6 +158,13 @@
  */
 
 /**
+ * $screen-xl =
+ *    max-width of u-container
+ *    + width of official logo * 2
+ *    + space between logo and u-container * 2
+ */
+
+/**
  * FONT FAMILIES
  * -------------------------------------------------------------------
  */
@@ -1148,13 +1155,6 @@ a:focus {
 /**
  * LAYOUT CONTAINERS
  * -------------------------------------------------------------------
- */
-
-/**
- * $screen-xl =
- *    max-width of u-container
- *    + width of official logo * 2
- *    + space between logo and u-container * 2
  */
 
 .u-container {
@@ -6134,7 +6134,7 @@ dl {
 	left: 0;
 	position: fixed;
 	right: 0;
-	z-index: 5000;
+	z-index: 10;
 }
 
 .cc-banner p,
