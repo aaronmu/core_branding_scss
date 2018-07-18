@@ -5752,6 +5752,25 @@ dl {
  * -------------------------------------------------------------------
  */
 
+.m-upload.is-disabled .m-upload__dropzone {
+	border-color: #d8d8d8;
+	cursor: not-allowed;
+}
+
+.m-upload.is-disabled .m-upload__dropzone:active,
+.m-upload.is-disabled .m-upload__dropzone:hover,
+.m-upload.is-disabled .m-upload__dropzone:focus {
+	background-color: transparent;
+}
+
+.m-upload.is-disabled .m-upload__input {
+	cursor: not-allowed;
+}
+
+.m-upload.is-disabled .m-upload__content {
+	color: #d8d8d8;
+}
+
 /**
  * UPLOAD ELEMENTS
  * -------------------------------------------------------------------

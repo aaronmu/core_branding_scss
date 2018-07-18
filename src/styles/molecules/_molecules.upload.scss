@@ -3,11 +3,11 @@
  * -------------------------------------------------------------------
  */
 
- .m-upload {
+.m-upload {
   &.is-disabled {
     .m-upload__dropzone {
-      cursor: not-allowed;
       border-color: $state-disabled;
+      cursor: not-allowed;
 
       &:active,
       &:hover,
