@@ -42,13 +42,61 @@ $screen-xl: $screen-lg + $spacer-xx * 2 + $spacer * 2;
 
 
 /**
- * LAYOUT SCROLLING
+ * VIEWPORT HELPERS
+ * -------------------------------------------------------------------
+ */
+.u-viewport-vertical {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/**
+ * SCROLL HELPERS
+ * -------------------------------------------------------------------
+ */
+.u-horizontal-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.u-vertical-scroll {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.u-no-scroll {
+  overflow: hidden;
+}
+
+
+/**
+ * HORIZONTAL & VERTICAL CONTAINERS
  * -------------------------------------------------------------------
  */
 
-.u-no-overflow {
-  overflow: hidden;
+.u-container-horizontal,
+.u-container-vertical {
+  display: flex;
+  height: 100%;
 }
+
+.u-container-vertical {
+  flex-direction: column;
+}
+
+.u-container--filled {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/**
+ * LAYOUT SCROLLING
+ * -------------------------------------------------------------------
+ */
 
 
 /**

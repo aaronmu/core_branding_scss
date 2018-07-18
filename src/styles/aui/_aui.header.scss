@@ -1,0 +1,38 @@
+/**
+ * AUI HEADER
+ * -------------------------------------------------------------------
+ */
+
+.o-header {
+  transition: transform $animation-duration $animation-easing;
+  will-change: transform;
+
+  &.header--pinned {
+    top: 0;
+  }
+
+  &.header--unpinned {
+    transform: translateY(-100%);
+  }
+
+  &.has-logo.header--unpinned {
+    transform: translateY(-300%);
+  }
+
+  &__content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  &__content {
+    flex: 1;
+    height: 100%;
+  }
+
+  &__menu-items {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,34 @@
+/**
+ * AUI SIDEBAR
+ * -------------------------------------------------------------------
+ */
+
+$sidebar-width: 20rem;
+
+/**
+ * PANE
+ * -------------------------------------------------------------------
+ */
+
+.o-sidebar {
+  background-color: $white;
+  height: 100%;
+  overflow: hidden;
+  transition: width $animation-duration $animation-easing;
+  width: 0;
+
+  &__content {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: $sidebar-width;
+
+    &--padding {
+      padding: $spacer-lg;
+    }
+  }
+
+  &.o-sidebar--open {
+    width: $sidebar-width;
+  }
+}

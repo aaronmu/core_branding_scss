@@ -1,0 +1,46 @@
+/**
+ * AUI RANGE SLIDER
+ * -------------------------------------------------------------------
+ */
+
+.m-range-slider {
+  &__handle {
+    z-index: layer('top');
+  }
+
+  &__tooltip {
+    white-space: nowrap;
+  }
+
+  &__steps {
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: $spacer / 6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: layer('base');
+  }
+
+  &__step {
+    background-color: $grey;
+    border-radius: 50%;
+    height: ($range-slider-inner-height - (2 * $range-slider-padding));
+    margin: $range-slider-padding;
+    text-align: center;
+    width: ($range-slider-inner-height - (2 * $range-slider-padding));
+
+    &-labels {
+      display: flex;
+      font-size: $font-size-sm;
+      justify-content: space-between;
+      margin-top: $spacer-sm;
+
+      .m-range-slider__step {
+        width: $spacer;
+      }
+    }
+  }
+}
