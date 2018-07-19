@@ -158,6 +158,13 @@
  */
 
 /**
+ * $screen-xl =
+ *    max-width of u-container
+ *    + width of official logo * 2
+ *    + space between logo and u-container * 2
+ */
+
+/**
  * FONT FAMILIES
  * -------------------------------------------------------------------
  */
@@ -1148,13 +1155,6 @@ a:focus {
 /**
  * LAYOUT CONTAINERS
  * -------------------------------------------------------------------
- */
-
-/**
- * $screen-xl =
- *    max-width of u-container
- *    + width of official logo * 2
- *    + space between logo and u-container * 2
  */
 
 .u-container {
@@ -5752,6 +5752,25 @@ dl {
  * -------------------------------------------------------------------
  */
 
+.m-upload.is-disabled .m-upload__dropzone {
+	border-color: #d8d8d8;
+	cursor: not-allowed;
+}
+
+.m-upload.is-disabled .m-upload__dropzone:active,
+.m-upload.is-disabled .m-upload__dropzone:hover,
+.m-upload.is-disabled .m-upload__dropzone:focus {
+	background-color: transparent;
+}
+
+.m-upload.is-disabled .m-upload__input {
+	cursor: not-allowed;
+}
+
+.m-upload.is-disabled .m-upload__content {
+	color: #d8d8d8;
+}
+
 /**
  * UPLOAD ELEMENTS
  * -------------------------------------------------------------------
@@ -6134,7 +6153,7 @@ dl {
 	left: 0;
 	position: fixed;
 	right: 0;
-	z-index: 5000;
+	z-index: 10;
 }
 
 .cc-banner p,
