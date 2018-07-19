@@ -18,7 +18,7 @@ gulp.task('copy', function() {
         .pipe(plumber())
         .pipe(gulp.dest('dist/assets/fonts'));
 
-    var stylesStream = gulp.src(['src/styles/**/*', '!src/styles/**/styleguide.scss'])
+    var stylesStream = gulp.src(['src/styles/**/*', '!src/styles/**/styleguide.scss', '!src/styles/**/_aui.scss', '!src/styles/**/aui/**/*'])
         .pipe(plumber())
         .pipe(gulp.dest('dist/assets/styles'));
 
