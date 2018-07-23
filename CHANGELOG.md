@@ -1,14 +1,15 @@
 # Changelog
 
 
-## Unreleased
+## [2.2.0] - 2018-07-23
 ### Changed
 - Changed the appearance of the disabled button
 
 ### Added
+- Added breakpoints for XL screens
+- Added a disabled state for the upload molecule
 - Added a getting started guide in the documentation
 - Added an easy TOC in the documentation
-
 
 ## [2.1.1] - 2018-04-26
 ### Fixed
