@@ -4535,7 +4535,6 @@ dl {
 	display: flex;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	overflow: hidden;
 	padding-bottom: 1px;
 	vertical-align: middle;
 }
@@ -4550,6 +4549,10 @@ dl {
 
 .m-button-group > [class*='a-button'][disabled] {
 	z-index: 0;
+}
+
+.m-button-group > [class*='a-button']:focus {
+	z-index: 2;
 }
 
 .m-button-group > .a-button {
