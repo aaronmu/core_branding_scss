@@ -23,6 +23,10 @@
   margin: 0 #{$gallery-gutter-col / 2} #{$gallery-gutter-row};
   width: calc(#{$gallery-item-size} - #{$gallery-gutter-col});
 
+  a {
+    display: block;
+  }
+
   img {
     max-height: 100%;
     max-width: 100%;

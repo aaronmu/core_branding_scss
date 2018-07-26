@@ -18,7 +18,11 @@ textarea {
   appearance: none;
   font: inherit;
   margin: 0;
-  outline: 0;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 0 3px $input-border-focus;
+  }
 }
 
 
@@ -202,8 +206,11 @@ textarea {
 .a-input__checkbox,
 .a-input__radio {
   input {
-    height: 0;
-    width: 0;
+    opacity: 0;
+
+    &:focus + label:after {
+      box-shadow: 0 0 0 3px $input-border-focus;
+    }
   }
 }
 

@@ -63,6 +63,14 @@
     }
   }
 
+  &:focus {
+    @if $_background != transparent and $_background != white {
+      box-shadow: 0 0 0 3px mix($_background, $white, 25%);
+    } @else {
+      box-shadow: 0 0 0 3px $_color;
+    }
+  }
+
   &[disabled] {
     background-color: $btn-disabled-bg;
     color: $btn-disabled-color;
@@ -97,6 +105,14 @@
     }
   }
 
+  &:focus {
+    @if $_border {
+      box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset, 0 0 0 3px mix($_color, $white, 25%);
+    } @else {
+      box-shadow: 0 0 0 3px mix($_color, $white, 20%);
+    }
+  }
+
   &[disabled] {
     background: transparent;
     box-shadow: 0 0 0 1px $btn-disabled-bg inset;
@@ -125,7 +141,8 @@
     }
 
     &:focus {
-      box-shadow: 0 0 0 2px $_border-focus;
+      box-shadow: 0 0 0 3px $_border-focus;
+      // outline: 5px auto $_border-focus;
     }
 
     &[disabled] {

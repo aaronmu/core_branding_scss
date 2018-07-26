@@ -13,7 +13,7 @@
     font-size: rem($pagination-font-size);
     height: $pagination-size;
     line-height: $pagination-size;
-    overflow: hidden;
+    // overflow: hidden;
     position: relative;
     text-align: center;
     width: $pagination-size;
@@ -24,11 +24,12 @@
       display: block;
       text-decoration: none;
       transition-duration: $animation-duration;
-      transition-property: color, background, box-shadow;
+      transition-property: color, background;
       transition-timing-function: $animation-easing;
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         background-color: $pagination-bg-hover;
       }
 
@@ -73,7 +74,8 @@
 
     > a,
     > a:hover,
-    > a:active {
+    > a:active,
+    > a:focus {
       background-color: inherit;
       box-shadow: inherit;
       color: inherit;
@@ -92,9 +94,14 @@
     }
 
     > a:hover,
-    > a:active {
+    > a:active,
+    > a:focus {
       background-color: $pagination-outline-bg-hover;
       box-shadow: 0 0 0 1px $pagination-outline-border-hover inset;
+    }
+
+    > a:focus {
+      box-shadow: 0 0 0 1px $pagination-outline-border-hover inset, 0 0 0 3px $input-border-focus;
     }
 
     + li {

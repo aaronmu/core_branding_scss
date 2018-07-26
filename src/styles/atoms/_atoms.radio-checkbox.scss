@@ -88,6 +88,7 @@
 
     &:after {
       color: $radio-checkbox-color;
+      content: '';
       display: inline-block;
       font-size: $icon-size-sm;
       height: $spacer;
@@ -114,7 +115,8 @@
 }
 
 .a-input__radio input[type='radio'] {
-  + label:before {
+  + label:before,
+  + label:after {
     border-radius: 50%;
   }
 

@@ -172,14 +172,14 @@ a {
   transition: color $animation-duration $animation-easing;
 
   &:hover,
+  &:active,
   &:focus {
     color: $link-hover-color;
     text-decoration: underline;
   }
 
-  &:hover,
-  &:active,
   &:focus {
+    box-shadow: 0 0 0 3px $input-border-focus;
     outline: none;
   }
 }
