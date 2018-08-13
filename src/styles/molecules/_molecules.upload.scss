@@ -68,11 +68,28 @@
   right: 0;
   top: 0;
   width: 100%;
+
+  &:focus {
+    + .m-upload__content:before {
+      content: '';
+    }
+  }
 }
 
 .m-upload__content {
   max-width: $spacer * 15;
   width: 100%;
+
+  &:before {
+    bottom: -2px;
+    box-shadow: 0 0 0 3px $input-border-focus;
+    cursor: pointer;
+    left: -2px;
+    position: absolute;
+    right: -2px;
+    top: -2px;
+    z-index: layer('cellar');
+  }
 }
 
 .m-upload__progress {

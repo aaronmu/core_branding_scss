@@ -1,6 +1,16 @@
 # Changelog
 
 
+## [2.3.0] - 2018-07-26
+### Changed
+- Changed the behaviour of focused elements
+- Changed the overall focus color
+- Changed the input placeholder to be WCAG 2.0 compatible
+
+### Fixed
+- Fixed checkboxes and radio buttons not being focusable
+
+
 ## [2.2.0] - 2018-07-23
 ### Changed
 - Changed the appearance of the disabled button

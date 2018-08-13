@@ -6,7 +6,6 @@
 .m-button-group {
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
   padding-bottom: 1px;
   vertical-align: middle;
 
@@ -19,6 +18,10 @@
 
     &[disabled] {
       z-index: layer('auto');
+    }
+
+    &:focus {
+      z-index: layer('top');
     }
   }
 
