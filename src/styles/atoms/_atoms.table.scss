@@ -113,8 +113,8 @@
  */
 
 .a-table__wrapper-responsive {
-  -ms-overflow-style: scrollbar;
-  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: scrollbar; // sass-lint:disable-line no-vendor-prefixes
+  -webkit-overflow-scrolling: touch; // sass-lint:disable-line no-vendor-prefixes
   background-color: $table-bg;
   border: 1px solid $table-border;
   overflow-x: auto;
@@ -125,14 +125,12 @@
     border: none;
     margin-bottom: -1px;
 
-    > thead,
-    > tbody,
-    > tfoot {
-      > tr {
-        > td,
-        > th {
-          white-space: nowrap;
-        }
+    > thead > tr,
+    > tbody > tr,
+    > tfoot > tr {
+      > td,
+      > th {
+        white-space: nowrap;
       }
     }
   }

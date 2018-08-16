@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [2.3.0] - 2018-07-26
+## [2.3.0] - 2018-08-16
 ### Changed
 - Changed the behaviour of focused elements
 - Changed the overall focus color
