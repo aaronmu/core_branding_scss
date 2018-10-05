@@ -22,25 +22,25 @@
     top: 0;
     width: 100%;
     z-index: layer('base');
+
+    .m-range-slider__step {
+      background-color: $grey;
+      border-radius: 50%;
+      height: ($range-slider-inner-height - (2 * $range-slider-padding));
+      margin: $range-slider-padding;
+      text-align: center;
+      width: ($range-slider-inner-height - (2 * $range-slider-padding));
+    }
   }
 
-  &__step {
-    background-color: $grey;
-    border-radius: 50%;
-    height: ($range-slider-inner-height - (2 * $range-slider-padding));
-    margin: $range-slider-padding;
-    text-align: center;
-    width: ($range-slider-inner-height - (2 * $range-slider-padding));
+  .m-range-slider__step-labels {
+    display: flex;
+    font-size: $font-size-sm;
+    justify-content: space-between;
+    margin-top: $spacer-sm;
 
-    &-labels {
-      display: flex;
-      font-size: $font-size-sm;
-      justify-content: space-between;
-      margin-top: $spacer-sm;
-
-      .m-range-slider__step {
-        width: $spacer;
-      }
+    .m-range-slider__step {
+      width: $spacer;
     }
   }
 }
