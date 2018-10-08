@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [3.0.1] - 2018-10-08
+### Fixed
+- Added the AUI-kit source files to the build folder
+
+
 ## [3.0.0] - 2018-10-08
 ### Changed
 - [BREAKING] Added AUI-kit as part of the core branding
