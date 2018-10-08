@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [3.0.0] - 2018-10-05
+## [3.0.0] - 2018-10-08
 ### Changed
 - [BREAKING] Added AUI-kit as part of the core branding
 
