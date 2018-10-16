@@ -62,7 +62,7 @@
 
   &__clear {
     margin: 0;
-    padding: 0 $spacer-sm $spacer-sm $spacer-sm;
+    padding: 0 $spacer-sm $spacer-sm;
     text-align: center;
   }
 
@@ -109,7 +109,9 @@
 
   .a-list .m-search-filter__results-item {
     padding: 0;
+  }
 
+  .a-list {
     p {
       padding: $spacer-xs;
     }
