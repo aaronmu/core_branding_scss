@@ -12,7 +12,7 @@
     height: $spacer-lg;
     justify-content: center;
     line-height: $spacer-lg;
-    margin: 0 $spacer-xs $spacer-xs 0;
+    margin: 0 $spacer-xs 0 0;
     padding-left: $spacer;
 
     > span:not(.fa) {
@@ -52,7 +52,7 @@
   }
 
   &__input {
-    margin-bottom: $spacer-xs;
+    margin-bottom: 0;
     padding: $spacer-xs;
 
     .a-input__wrapper {
@@ -62,13 +62,13 @@
 
   &__clear {
     margin: 0;
-    padding: $spacer-sm;
+    padding: 0 $spacer-sm $spacer-sm $spacer-sm;
     text-align: center;
   }
 
   &__search {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     max-height: 50vh;
 
     .a-list.a-list--lined.a-list--unstyled {
@@ -109,5 +109,9 @@
 
   .a-list .m-search-filter__results-item {
     padding: 0;
+
+    p {
+      padding: $spacer-xs;
+    }
   }
 }
