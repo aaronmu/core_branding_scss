@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [Unreleased] - yyyy-mm-dd
+### Fixed
+- Stopped the <input> element, in the upload button, breaking out of its boundaries
+
+
 ## [3.0.1] - 2018-10-08
 ### Fixed
 - Added the AUI-kit source files to the build folder
@@ -138,6 +143,7 @@
 - Initial release.
 
 
+[3.0.1]: https://github.com/a-ui/core_branding_scss/tree/v3.0.1
 [3.0.0]: https://github.com/a-ui/core_branding_scss/tree/v3.0.0
 [2.3.0]: https://github.com/a-ui/core_branding_scss/tree/v2.3.0
 [2.2.0]: https://github.com/a-ui/core_branding_scss/tree/v2.2.0
