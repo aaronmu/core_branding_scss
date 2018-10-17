@@ -3,7 +3,7 @@
 
 ## [Unreleased] - yyyy-mm-dd
 ### Fixed
-- Fixed the styling of the upload button
+- Stopped the <input> element, in the upload button, breaking out of its boundaries
 
 
 ## [3.0.1] - 2018-10-08
