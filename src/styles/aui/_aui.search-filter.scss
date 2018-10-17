@@ -87,6 +87,11 @@
 
   &__results-item {
     cursor: pointer;
+    padding: 0;
+    
+    p {
+      padding: $spacer-xs;
+    }
 
     .a-input__checkbox {
       display: flex;
@@ -104,13 +109,6 @@
 
     &:hover {
       background-color: $grey-lighter;
-    }
-  }
-
-  .m-search-filter__results-item {
-    padding: 0;
-    p {
-      padding: $spacer-xs;
     }
   }
 }
