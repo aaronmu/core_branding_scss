@@ -1,9 +1,10 @@
 # Changelog
 
 
-## [Unreleased] - yyyy-mm-dd
+## [3.0.2] - 2018-10-25
 ### Fixed
-- Stopped the <input> element, in the upload button, breaking out of its boundaries
+- Fixed an issue where the upload zone would break out of its boundaries
+- Optimized the layout of the search filter component
 
 
 ## [3.0.1] - 2018-10-08
@@ -143,6 +144,7 @@
 - Initial release.
 
 
+[3.0.2]: https://github.com/a-ui/core_branding_scss/tree/v3.0.2
 [3.0.1]: https://github.com/a-ui/core_branding_scss/tree/v3.0.1
 [3.0.0]: https://github.com/a-ui/core_branding_scss/tree/v3.0.0
 [2.3.0]: https://github.com/a-ui/core_branding_scss/tree/v2.3.0
