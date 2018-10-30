@@ -1,5 +1,8 @@
 # Changelog
 
+## [3.0.3] - 2018-10-30
+### Fixed
+- Fixed an issue for the optimization in the layout of the search filter component
 
 ## [3.0.2] - 2018-10-25
 ### Fixed
