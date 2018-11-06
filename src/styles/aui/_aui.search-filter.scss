@@ -87,11 +87,6 @@
 
   &__results-item {
     cursor: pointer;
-    padding: 0;
-    
-    p {
-      padding: $spacer-xs;
-    }
 
     .a-input__checkbox {
       display: flex;
@@ -111,4 +106,8 @@
       background-color: $grey-lighter;
     }
   }
+
+  .a-list .m-search-filter__results-item {
+		padding: 0;
+	}
 }
