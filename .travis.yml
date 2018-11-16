@@ -16,6 +16,6 @@ deploy:
   bucket: $AWS_BUCKET
   local_dir: dist
   on:
-    branch: master
+    tags: true
   skip_cleanup: true
   upload-dir: $AWS_UPLOAD_DIR
