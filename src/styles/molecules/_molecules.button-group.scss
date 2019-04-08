@@ -26,11 +26,11 @@
   }
 
   > .a-button {
-    border-top: 1px solid mix($btn-primary-bg, $black, 85%);
+    border-right: 1px solid mix($btn-primary-bg, $black, 85%);
     margin-top: -1px;
 
-    &:not(:last-child) {
-      border-right: 1px solid mix($btn-primary-bg, $black, 85%);
+    &:last-child {
+      border-right: none;
     }
 
     &.a-button--secondary {
@@ -56,14 +56,32 @@
 
   > .a-button-outline {
     margin-bottom: -1px;
+    margin-right: -1px;
 
-    &:not(:last-child) {
-      margin-right: -1px;
+    &:last-child {
+      margin-right: 0;
     }
 
     &:not([disabled]):hover,
-    &:not([disabled]):active {
+    &:not([disabled]):active,
+    &:not([disabled]):focus {
       z-index: layer('base');
     }
+  }
+}
+
+.m-button-group--vertical {
+  flex-direction: column;
+
+  > .a-button {
+    border-right: none;
+
+    &:not(:first-child) {
+      border-top: 1px solid mix($btn-primary-bg, $black, 85%);
+    }
+  }
+
+  > .a-button-outline {
+    margin-right: 0;
   }
 }
