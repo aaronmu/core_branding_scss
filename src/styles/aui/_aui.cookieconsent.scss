@@ -17,6 +17,10 @@
     flex-wrap: nowrap;
   }
 
+  &.cc-invisible {
+    visibility: hidden;
+  }
+
   p,
   .cc-compliance {
     width: 100%;
