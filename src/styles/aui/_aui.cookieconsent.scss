@@ -9,8 +9,10 @@
   display: flex;
   flex-wrap: wrap;
   left: 0;
+  opacity: 1;
   position: fixed;
   right: 0;
+  transition: opacity $animation-duration $animation-easing;
   z-index: layer('overlay');
 
   @include at($screen-xs) {
@@ -18,7 +20,7 @@
   }
 
   &.cc-invisible {
-    visibility: hidden;
+    opacity: 0;
   }
 
   p,
