@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "gulp server",
-    "travis": "gulp travis"
+    "travis": "gulp travis",
+    "version": "npm run docs && git add -A docs"
   },
   "contributors": [
     {
