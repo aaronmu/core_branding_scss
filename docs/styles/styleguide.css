@@ -452,22 +452,18 @@ footer {
 }
 
 .d {
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-direction: column;
-	    flex-direction: column;
+	flex-direction: column;
 	margin: 1.5rem -1.5rem;
 }
 
 .d > div {
-	-ms-flex: 1 1 auto;
-	    flex: 1 1 auto;
+	flex: 1 1 auto;
 	padding: 0.375rem 1.5rem 0;
 }
 
 .d-intro > div {
-	-ms-flex: 1 1 auto;
-	    flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 
 .u-margin-bottom-top-xxs {
@@ -475,15 +471,12 @@ footer {
 }
 
 .d-toc {
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .d-toc__cell {
-	-ms-flex: 0 0 50%;
-	    flex: 0 0 50%;
+	flex: 0 0 50%;
 }
 
 .a-list__toc {
@@ -532,10 +525,8 @@ footer {
 }
 
 .d-list {
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-wrap: wrap;
 	margin-left: -1.5rem;
 	margin-right: -1.5rem;
 }
@@ -664,12 +655,9 @@ footer {
 }
 
 .d-overlay input:checked ~ .m-overlay {
-	-ms-flex-align: center;
-	    align-items: center;
-	display: -ms-flexbox;
+	align-items: center;
 	display: flex;
-	-ms-flex-pack: center;
-	    justify-content: center;
+	justify-content: center;
 }
 
 .d-overlay input:checked ~ .m-overlay label {
@@ -700,8 +688,7 @@ footer {
 @media screen and (min-width: 45rem) {
 
 .d {
-	-ms-flex-direction: row;
-	    flex-direction: row;
+	flex-direction: row;
 }
 
 .d > div {
@@ -709,8 +696,7 @@ footer {
 }
 
 .d-toc__cell {
-	-ms-flex: 0 0 33.33333%;
-	    flex: 0 0 33.33333%;
+	flex: 0 0 33.33333%;
 }
 
 .d-list > li {
@@ -742,8 +728,7 @@ footer {
 @media screen and (min-width: 75rem) {
 
 .d-toc__cell {
-	-ms-flex: 0 0 16.66667%;
-	    flex: 0 0 16.66667%;
+	flex: 0 0 16.66667%;
 }
 
 .d-list__colors > li {
