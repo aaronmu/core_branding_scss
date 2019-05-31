@@ -1,6 +1,6 @@
 {
   "name": "@a-ui/core",
-  "version": "3.2.2",
+  "version": "3.2.1",
   "description": "core_branding_scss",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "docs": "gulp docs",
     "start": "gulp server",
     "travis": "gulp travis",
-    "version": "npm run docs && git add -A docs"
+    "version": "npm run docs && git add -A ."
   },
   "contributors": [
     {
