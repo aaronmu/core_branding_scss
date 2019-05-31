@@ -1,6 +1,6 @@
 {
   "name": "@a-ui/core",
-  "version": "3.3.0",
+  "version": "3.2.1",
   "description": "core_branding_scss",
   "repository": {
     "type": "git",
@@ -9,10 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "docs": "gulp docs",
     "start": "gulp server",
     "travis": "gulp travis",
-    "version": "npm run docs && git add -A ."
+    "version": "gulp docs && git add -A ."
   },
   "contributors": [
     {

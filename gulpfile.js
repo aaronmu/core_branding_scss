@@ -17,7 +17,7 @@ gulp.task('server', gulp.series('clean:tmp', gulp.parallel('icon-font', 'sass', 
 gulp.task('build', gulp.series('clean:dist', gulp.parallel('icon-font', 'sass:dist'), 'copy'));
 
 // Build documentation
-gulp.task('docs', gulp.series('clean:docs', gulp.parallel('icon-font', 'sass', 'render-templates'), 'copy:docs', 'replace'));
+gulp.task('docs', gulp.series('clean:docs', gulp.parallel('icon-font', 'sass', 'render-templates', 'readme'), 'copy:docs', 'replace'));
 
 // Run travis task: publish to CDN
 gulp.task('travis', gulp.series('build', 'copy:travis', 'clean:travis', 'cdn'));
