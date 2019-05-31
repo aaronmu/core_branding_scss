@@ -15,25 +15,25 @@
   @if $_local {
     @font-face {
       font-family: $_name;
-      src: url($_url + ".eot");
-      src: $_local,
-           url($_url + ".eot?#iefix") format("embedded-opentype"),
-           url($_url + ".woff") format("woff"),
-           url($_url + ".ttf") format("truetype"),
-           url($_url + ".svg#icon") format("svg");
-      font-weight: $_weight;
       font-style: $_style;
+      font-weight: $_weight;
+      src: url($_url + '.eot');
+      src: $_local, // sass-lint:disable-line no-duplicate-properties
+      url($_url + '.eot?#iefix') format('embedded-opentype'),
+      url($_url + '.woff') format('woff'),
+      url($_url + '.ttf') format('truetype'),
+      url($_url + '.svg#icon') format('svg');
     }
   } @else {
     @font-face {
       font-family: $_name;
-      src: url($_url + ".eot");
-      src: url($_url + ".eot?#iefix") format("embedded-opentype"),
-           url($_url + ".woff") format("woff"),
-           url($_url + ".ttf") format("truetype"),
-           url($_url + ".svg#icon") format("svg");
-      font-weight: $_weight;
       font-style: $_style;
+      font-weight: $_weight;
+      src: url($_url + '.eot');
+      src: url($_url + '.eot?#iefix') format('embedded-opentype'), // sass-lint:disable-line no-duplicate-properties
+      url($_url + '.woff') format('woff'),
+      url($_url + '.ttf') format('truetype'),
+      url($_url + '.svg#icon') format('svg');
     }
   }
 }
@@ -132,17 +132,16 @@
   input:not([class*='a-button']):not([type='checkbox']):not([type='radio']),
   select,
   textarea {
-    background-color: $_background;
-    border: 1px solid $_border;
-    color: $_color;
-
     @include a-input-placeholder {
       color: $input-placeholder;
     }
 
+    background-color: $_background;
+    border: 1px solid $_border;
+    color: $_color;
+
     &:focus {
       box-shadow: 0 0 0 3px $_border-focus;
-      // outline: 5px auto $_border-focus;
     }
 
     &[disabled] {
@@ -167,24 +166,24 @@
  * - http://jamesallardice.github.io/Placeholders.js
  */
 
-@mixin a-input-placeholder() {
-  &::-webkit-input-placeholder {
+@mixin a-input-placeholder {
+  &::-webkit-input-placeholder { // sass-lint:disable-line no-vendor-prefixes
     @content;
     text-overflow: ellipsis;
   }
 
-  &:-ms-input-placeholder {
+  &:-ms-input-placeholder { // sass-lint:disable-line no-vendor-prefixes
     @content;
     text-overflow: ellipsis;
   }
 
-  &::-moz-placeholder {
+  &::-moz-placeholder { // sass-lint:disable-line no-vendor-prefixes
     @content;
     opacity: 1;
     text-overflow: ellipsis;
   }
 
-  &:-moz-placeholder {
+  &:-moz-placeholder { // sass-lint:disable-line no-vendor-prefixes
     @content;
     opacity: 1;
     text-overflow: ellipsis;
@@ -248,9 +247,9 @@
 
 @mixin clearfix {
   &:after {
+    clear: both;
     content: '';
     display: block;
-    clear: both;
   }
 }
 
@@ -261,10 +260,10 @@
  */
 
 @mixin fontawesome {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-size: inherit;
+  -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
+  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
   font-family: FontAwesome;
+  font-size: inherit;
   text-rendering: auto;
 }
 
