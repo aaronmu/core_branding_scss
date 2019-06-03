@@ -1946,7 +1946,7 @@ a .a-avatar:active:before {
 }
 
 .a-button.has-icon.a-button--facebook {
-	background-color: #3b5998;
+	background-color: #1877f2;
 	color: white;
 }
 
@@ -1955,11 +1955,11 @@ a .a-avatar:active:before {
 .a-button.has-icon.a-button--facebook:focus {
 	color: white;
 	text-decoration: none;
-	background-color: #324c81;
+	background-color: #1465ce;
 }
 
 .a-button.has-icon.a-button--facebook:focus {
-	box-shadow: 0 0 0 3px #ced6e5;
+	box-shadow: 0 0 0 3px #c5ddfc;
 }
 
 .a-button.has-icon.a-button--facebook[disabled] {
