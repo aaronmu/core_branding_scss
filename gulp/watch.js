@@ -12,14 +12,13 @@ var watch = require('gulp-watch'),
 gulp.task('watch', function() {
     browserSync.init({
         notify: false,
-        port: 9000,
         server: {
             baseDir: ['.tmp', 'src'],
         },
-        port: 3000
+        port: 9000
     });
     gulp.watch('src/icons/*.*', gulp.series('icon-font'));
-        gulp.watch('src/styles/**/*.scss', gulp.series('sass', 'sass-lint'));
+        gulp.watch('src/styles/**/*.scss', gulp.series('sass', 'render-templates', 'sass-lint'));
         gulp.watch('src/**/*.njk', gulp.series('render-templates'));
         gulp.watch([
             '.tmp/**/*.css',
