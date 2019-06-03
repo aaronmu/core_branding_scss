@@ -116,7 +116,7 @@
     }
 
     .o-leaflet__controls--top-left {
-      left: calc(350px + 2 * $spacer-xs);
+      left: calc(350px + 2 * #{$spacer-xs});
     }
   }
 }
