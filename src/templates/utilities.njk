@@ -6,7 +6,7 @@
 <div class="u-wrapper">
     <div class="u-container">
         <a name="utilities-background"></a>
-        <h3 class="d-h3">Background</h3>
+        <h3 class="u-margin-top-lg">Background</h3>
         <span class="d-file">utilities/utilities.background</span>
         <div class="d">
             <div>
@@ -25,7 +25,7 @@
         {% endfor %}
 
         <a name="utilities-layout"></a>
-        <h3 class="d-h3">Layout</h3>
+        <h3 class="u-margin-top-lg">Layout</h3>
         <span class="d-file">utilities/utilities.layout</span>
         <div class="d">
             <div>
@@ -135,7 +135,7 @@
         </div>
 
         <a name="utilities-spacing"></a>
-        <h3 class="d-h3">Spacing</h3>
+        <h3 class="u-margin-top-lg">Spacing</h3>
         <span class="d-file">utilities/utilities.spacing</span>
         <div class="d">
             <div>
@@ -145,8 +145,8 @@
         {% for value in SPACINGUTILITIES %}
         <div class="d">
             <div>
-                <div class="d-spacingutility">
-                    <div class="{{value}} d-{{value}}"><code>.{{value}}</code></div>
+                <div class="d-spacing-utility">
+                    <div class="{{value}}"><strong class="u-text-xlight">.{{value}}</strong></div>
                 </div>
             </div>
             <div>
@@ -156,11 +156,14 @@
         {% endfor %}
 
         <a name="utilities-text"></a>
-        <h3 class="d-h3">Text</h3>
+        <h3 class="u-margin-top-lg">Text</h3>
         <span class="d-file">utilities/utilities.text</span>
         <div class="d">
             <div>
                 <p>Helper classes for changing the appearance of text.</p>
+                <div class="m-alert d-alert m-alert--wcag">
+                    <p>Make sure there is enough contrast between text and background. See the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 1.4.3 Contrast (Minimum)" class="has-icon-right" target="_blank">contrast success criterion<i class="fa fa-external-link"></i></a>.</p>
+                </div>
             </div>
         </div>
         {% for value in TEXTUTILITIES %}
@@ -172,10 +175,6 @@
                 {% if value == 'u-text-truncate' %}
                 <div class="m-alert d-alert">
                     <p>Note that we offer this also as a Sass placeholder, so you can <code>@extend</code> it in your own class.</p>
-                </div>
-                {% elseif value == 'u-text-xlight' %}
-                <div class="m-alert d-alert">
-                    <p>Note that the grey background color is for displaying purposes only.</p>
                 </div>
                 {% endif %}
             </div>

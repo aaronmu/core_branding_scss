@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.0.0] - 2019-xx-xx
+### Added
+-
+
+### Changed
+- [BREAKING] Changed the appearance and behaviour of the A logo
+- [BREAKING] Changed the behaviour of the `.u-wrapper` class
+
+### Removed
+- [BREAKING] Removed the ability to make the header fixed
+
+
 ## [3.2.2] - 2019-06-03
 ### Changed
 - Updated Facebook color
@@ -171,6 +183,7 @@
 - Initial release.
 
 
+[4.0.0]: https://github.com/a-ui/core_branding_scss/tree/v4.0.0
 [3.2.2]: https://github.com/a-ui/core_branding_scss/tree/v3.2.2
 [3.2.1]: https://github.com/a-ui/core_branding_scss/tree/v3.2.1
 [3.2.0]: https://github.com/a-ui/core_branding_scss/tree/v3.2.0
