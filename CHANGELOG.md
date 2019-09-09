@@ -2,14 +2,23 @@
 
 ## [4.0.0] - 2019-xx-xx
 ### Added
--
+- Added the `$legend-color` and `$legend-size` variables
 
 ### Changed
 - [BREAKING] Changed the appearance and behaviour of the A logo
 - [BREAKING] Changed the behaviour of the `.u-wrapper` class
+- Made `$grey-dark` slightly darker
+- Made the background of avatars darker
+- Made the background of the kbd element darker
+- Changed the appearance of the legend element
+- Changed the appearance of both enabled and disabled form elements
 
 ### Removed
 - [BREAKING] Removed the ability to make the header fixed
+
+#### Deprecated
+- Deprecated `$font-size-ti`
+- Deprecated `$font-size-xs`
 
 
 ## [3.2.2] - 2019-06-03

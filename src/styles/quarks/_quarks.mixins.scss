@@ -114,9 +114,9 @@
   }
 
   &[disabled] {
-    background: transparent;
-    box-shadow: 0 0 0 1px $btn-disabled-bg inset;
-    color: $btn-disabled-bg;
+    background: $btn-disabled-bg;
+    box-shadow: 0 0 0 1px $input-disabled-border inset;
+    color: $btn-disabled-color;
     cursor: not-allowed;
   }
 }
@@ -145,7 +145,8 @@
     }
 
     &[disabled] {
-      border-color: $input-disabled;
+      background: $input-disabled-bg;
+      border-color: $input-disabled-border;
       color: $input-disabled;
       cursor: not-allowed;
     }
