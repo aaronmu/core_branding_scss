@@ -208,8 +208,12 @@
  * -------------------------------------------------------------------
  */
 
-@mixin a-badge($_color: $badge-default-color, $_background: $badge-default-bg) {
-  background-color: $_background;
+@mixin a-badge($_color: $badge-default-color, $_background: $badge-default-bg, $_disabled: false) {
+  @if $_disabled {
+    background-color: mix($white, $_background, 50%);
+  } @else {
+    background-color: $_background;
+  }
   color: $_color;
 }
 

@@ -27,10 +27,11 @@
 }
 
 .m-accordion__header {
+  align-items: center;
   background-color: $accordion-header-bg;
   border: 1px solid $accordion-border;
   cursor: pointer;
-  display: block;
+  display: flex;
   min-height: $spacer-lg;
   padding: $accordion-header-padding;
   position: relative;

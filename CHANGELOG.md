@@ -3,22 +3,29 @@
 ## [4.0.0] - 2019-xx-xx
 ### Added
 - Added the `$legend-color` and `$legend-size` variables
+- Added the `$switch-disabled-border` and `$switch-disabled-bg` variables
+- Added the `$badge-default-disabled-color`, `$badge-primary-disabled-color`, `$badge-secondary-disabled-color`, `$badge-success-disabled-color`, `$badge-warning-disabled-color` and `$badge-danger-disabled-color` variables
 
 ### Changed
+- [BREAKING] Updated the core branding to meet the WCAG 2.1 AA guidelines
 - [BREAKING] Changed the appearance and behaviour of the A logo
 - [BREAKING] Changed the behaviour of the `.u-wrapper` class
+- changed the behaviour of the a element
 - Made `$grey-dark` slightly darker
 - Made the background of avatars darker
 - Made the background of the kbd element darker
 - Changed the appearance of the legend element
 - Changed the appearance of both enabled and disabled form elements
+- Updated the switch component
+- Updated the appearance of the badge component
+- Updated the appearance of the label component
 
 ### Removed
 - [BREAKING] Removed the ability to make the header fixed
 
 #### Deprecated
-- Deprecated `$font-size-ti`
-- Deprecated `$font-size-xs`
+- Deprecated the `$font-size-ti` and `$font-size-xs` variables
+- Deprecated the `$badge-disabled-color` and `$badge-disabled-bg` variables
 
 
 ## [3.2.2] - 2019-06-03

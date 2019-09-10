@@ -426,7 +426,10 @@ $switch-height:           $switch-width / 2 + .25rem !default;
 
 $switch-bg:               $input-bg !default;
 $switch-border:           $input-border !default;
+
 $switch-disabled:         $state-disabled !default;
+$switch-disabled-border:  $grey-light !default;
+$switch-disabled-bg:      $grey-light !default;
 
 $switch-handle-width:     ($switch-width - .5rem) / 2 !default;
 
@@ -581,32 +584,35 @@ $avatar-lg:               $spacer * 4 !default; // 96px
  * -------------------------------------------------------------------
  */
 
-$badge-font-size:         $font-size-sm !default;
-$badge-font-weight:       $bold !default;
-$badge-height:            $spacer-sm !default;
-$badge-line-height:       $badge-height !default;
-$badge-padding:           0 $spacer / 4 !default;
+$badge-font-size:                $font-size-sm !default;
+$badge-font-weight:              $bold !default;
+$badge-height:                   $spacer-sm !default;
+$badge-line-height:              $badge-height !default;
+$badge-padding:                  0 $spacer / 4 !default;
 
-$badge-default-color:     $black-pearl !default;
-$badge-default-bg:        $grey-light !default;
+$badge-default-color:            $black-pearl !default;
+$badge-default-disabled-color:   $black-pearl !default;
+$badge-default-bg:               $grey-light !default;
 
-$badge-primary-color:     $white !default;
-$badge-primary-bg:        $brand-primary !default;
+$badge-primary-color:            $white !default;
+$badge-primary-disabled-color:   $black-pearl !default;
+$badge-primary-bg:               $brand-primary !default;
 
-$badge-secondary-color:   $badge-primary-color !default;
-$badge-secondary-bg:      $brand-secondary !default;
+$badge-secondary-color:          $badge-primary-color !default;
+$badge-secondary-disabled-color: $black-pearl !default;
+$badge-secondary-bg:             $brand-secondary !default;
 
-$badge-success-color:     $badge-primary-color !default;
-$badge-success-bg:        $state-success !default;
+$badge-success-color:            $badge-default-color !default;
+$badge-success-disabled-color:   $black-pearl !default;
+$badge-success-bg:               $state-success !default;
 
-$badge-warning-color:     $badge-primary-color !default;
-$badge-warning-bg:        $state-warning !default;
+$badge-warning-color:            $badge-default-color !default;
+$badge-warning-disabled-color:   $black-pearl !default;
+$badge-warning-bg:               $state-warning !default;
 
-$badge-danger-color:      $badge-primary-color !default;
-$badge-danger-bg:         $state-danger !default;
-
-$badge-disabled-color:    $badge-primary-color !default;
-$badge-disabled-bg:       $grey !default;
+$badge-danger-color:             $badge-primary-color !default;
+$badge-danger-disabled-color:    $black-pearl !default;
+$badge-danger-bg:                $state-danger !default;
 
 
 /**
@@ -650,20 +656,20 @@ $label-line-height:       $label-height !default;
 $label-default-color:     $black-pearl !default;
 $label-default-border:    $grey !default;
 
-$label-primary-color:     $brand-primary !default;
-$label-primary-border:    $label-primary-color !default;
+$label-primary-color:     mix($black, $brand-primary, 40%) !default;
+$label-primary-border:    $brand-primary !default;
 
-$label-secondary-color:   $brand-secondary !default;
-$label-secondary-border:  $label-secondary-color !default;
+$label-secondary-color:   mix($black, $brand-secondary, 40%) !default;
+$label-secondary-border:  $brand-secondary !default;
 
-$label-success-color:     $state-success !default;
-$label-success-border:    $label-success-color !default;
+$label-success-color:     mix($black, $state-success, 40%) !default;
+$label-success-border:    $state-success !default;
 
-$label-warning-color:     $state-warning !default;
-$label-warning-border:    $label-warning-color !default;
+$label-warning-color:     mix($black, $state-warning, 40%) !default;
+$label-warning-border:    $state-warning !default;
 
-$label-danger-color:      $state-danger !default;
-$label-danger-border:     $label-danger-color !default;
+$label-danger-color:      mix($black, $state-danger, 40%) !default;
+$label-danger-border:     $state-danger !default;
 
 $label-padding:           0 $spacer / 4 !default;
 

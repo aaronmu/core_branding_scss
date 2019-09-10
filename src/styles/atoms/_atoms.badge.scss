@@ -50,26 +50,26 @@
 
 .is-disabled {
   .a-badge {
-    @include a-badge($badge-disabled-color, mix($badge-disabled-bg, $nav-bg-disabled, 50%));
+    @include a-badge($badge-default-disabled-color, $badge-default-bg, true);
 
     &.a-badge--primary {
-      @include a-badge($badge-primary-color, mix($badge-primary-bg, $nav-bg-disabled, 50%));
+      @include a-badge($badge-primary-disabled-color, $badge-primary-bg, true);
     }
 
     &.a-badge--secondary {
-      @include a-badge($badge-secondary-color, mix($badge-secondary-bg, $nav-bg-disabled, 50%));
+      @include a-badge($badge-secondary-disabled-color, $badge-secondary-bg, true);
     }
 
     &.a-badge--success {
-      @include a-badge($badge-success-color, mix($badge-success-bg, $nav-bg-disabled, 50%));
+      @include a-badge($badge-success-disabled-color, $badge-success-bg, true);
     }
 
     &.a-badge--warning {
-      @include a-badge($badge-warning-color, mix($badge-warning-bg, $nav-bg-disabled, 50%));
+      @include a-badge($badge-warning-disabled-color, $badge-warning-bg, true);
     }
 
     &.a-badge--danger {
-      @include a-badge($badge-danger-color, mix($badge-danger-bg, $nav-bg-disabled, 50%));
+      @include a-badge($badge-danger-disabled-color, $badge-danger-bg, true);
     }
   }
 }

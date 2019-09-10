@@ -24,6 +24,7 @@
 .m-collapsible-list__item {
   &:not(.is-active) {
     > a {
+      text-decoration: none;
       transition: none;
 
       &:link,
@@ -32,8 +33,10 @@
       }
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         color: $link-hover-color;
+        text-decoration: underline;
       }
     }
   }
