@@ -591,28 +591,25 @@ $badge-line-height:              $badge-height !default;
 $badge-padding:                  0 $spacer / 4 !default;
 
 $badge-default-color:            $black-pearl !default;
-$badge-default-disabled-color:   $black-pearl !default;
-$badge-default-bg:               $grey-light !default;
+$badge-default-bg:               $grey !default;
 
-$badge-primary-color:            $white !default;
-$badge-primary-disabled-color:   $black-pearl !default;
+$badge-primary-color:            $badge-default-color !default;
 $badge-primary-bg:               $brand-primary !default;
 
-$badge-secondary-color:          $badge-primary-color !default;
-$badge-secondary-disabled-color: $black-pearl !default;
+$badge-secondary-color:          $badge-default-color !default;
 $badge-secondary-bg:             $brand-secondary !default;
 
 $badge-success-color:            $badge-default-color !default;
-$badge-success-disabled-color:   $black-pearl !default;
 $badge-success-bg:               $state-success !default;
 
 $badge-warning-color:            $badge-default-color !default;
-$badge-warning-disabled-color:   $black-pearl !default;
 $badge-warning-bg:               $state-warning !default;
 
-$badge-danger-color:             $badge-primary-color !default;
-$badge-danger-disabled-color:    $black-pearl !default;
+$badge-danger-color:             $badge-default-color !default;
 $badge-danger-bg:                $state-danger !default;
+
+$badge-disabled-color:           $grey-dark !default;
+$badge-disabled-bg:              $grey-light !default;
 
 
 /**

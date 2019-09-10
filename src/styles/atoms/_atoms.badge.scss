@@ -50,26 +50,13 @@
 
 .is-disabled {
   .a-badge {
-    @include a-badge($badge-default-disabled-color, $badge-default-bg, true);
-
-    &.a-badge--primary {
-      @include a-badge($badge-primary-disabled-color, $badge-primary-bg, true);
-    }
-
-    &.a-badge--secondary {
-      @include a-badge($badge-secondary-disabled-color, $badge-secondary-bg, true);
-    }
-
-    &.a-badge--success {
-      @include a-badge($badge-success-disabled-color, $badge-success-bg, true);
-    }
-
-    &.a-badge--warning {
-      @include a-badge($badge-warning-disabled-color, $badge-warning-bg, true);
-    }
-
+    &,
+    &.a-badge--primary,
+    &.a-badge--secondary,
+    &.a-badge--success,
+    &.a-badge--warning,
     &.a-badge--danger {
-      @include a-badge($badge-danger-disabled-color, $badge-danger-bg, true);
+      @include a-badge($badge-disabled-color, $badge-disabled-bg);
     }
   }
 }

@@ -4,7 +4,6 @@
 ### Added
 - Added the `$legend-color` and `$legend-size` variables
 - Added the `$switch-disabled-border` and `$switch-disabled-bg` variables
-- Added the `$badge-default-disabled-color`, `$badge-primary-disabled-color`, `$badge-secondary-disabled-color`, `$badge-success-disabled-color`, `$badge-warning-disabled-color` and `$badge-danger-disabled-color` variables
 
 ### Changed
 - [BREAKING] Updated the core branding to meet the WCAG 2.1 AA guidelines
@@ -25,7 +24,6 @@
 
 #### Deprecated
 - Deprecated the `$font-size-ti` and `$font-size-xs` variables
-- Deprecated the `$badge-disabled-color` and `$badge-disabled-bg` variables
 
 
 ## [3.2.2] - 2019-06-03
