@@ -6,13 +6,14 @@
 .m-upload {
   &.is-disabled {
     .m-upload__dropzone {
-      border-color: $state-disabled;
+      border-color: $upload-disabled-border;
       cursor: not-allowed;
 
+      &,
       &:active,
       &:hover,
       &:focus {
-        background-color: transparent;
+        background-color: $upload-disabled-bg;
       }
     }
 
@@ -21,7 +22,7 @@
     }
 
     .m-upload__content {
-      color: $state-disabled;
+      color: $upload-disabled-color;
     }
   }
 }
@@ -117,18 +118,10 @@
       margin-bottom: $spacer-xs;
     }
 
-    &.is-error {
-      background-color: $upload-file-bg-danger;
-
-      > .fa {
-        color: $upload-file-color-danger;
-      }
-    }
-
     > .fa {
       left: $spacer-sm;
       position: absolute;
-      top: 50%;
+      top: $spacer / 4 * 3;
       transform: translateY(-50%);
     }
   }

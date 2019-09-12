@@ -11,7 +11,7 @@
   }
 
   &.is-disabled .a-switch__label {
-    color: $switch-disabled;
+    color: $switch-disabled-label;
     cursor: not-allowed;
   }
 }
@@ -49,6 +49,7 @@
     }
 
     &[disabled] + label {
+      background-color: $switch-disabled;
       box-shadow: inset 0 0 0 1px $switch-disabled-border;
       cursor: not-allowed;
 

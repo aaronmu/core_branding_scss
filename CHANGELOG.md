@@ -4,11 +4,15 @@
 ### Added
 - Added the `$legend-color` and `$legend-size` variables
 - Added the `$switch-disabled-border` and `$switch-disabled-bg` variables
+- Added the `$switch-disabled-label` variable
+- Added the `$upload-disabled-color`, `$upload-disabled-bg` and `$upload-disabled-border` variables
 
 ### Changed
 - [BREAKING] Updated the core branding to meet the WCAG 2.1 AA guidelines
 - [BREAKING] Changed the appearance and behaviour of the A logo
 - [BREAKING] Changed the behaviour of the `.u-wrapper` class
+- [BREAKING] Replaced the function of the `$switch-disabled` variable (The previous one is moved to `$switch-disabled-label`)
+- [BREAKING] Changed the syntax of the upload component
 - changed the behaviour of the a element
 - Made `$grey-dark` slightly darker
 - Made the background of avatars darker
@@ -18,6 +22,11 @@
 - Updated the switch component
 - Updated the appearance of the badge component
 - Updated the appearance of the label component
+- Made the border of the different input states darker
+- Updated the appearance of the switch component
+- Updated the appearance of the navigation components
+- Updated the appearance of the upload component
+
 
 ### Removed
 - [BREAKING] Removed the ability to make the header fixed

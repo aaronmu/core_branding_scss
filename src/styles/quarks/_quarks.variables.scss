@@ -369,16 +369,16 @@ $input-icon:              $grey-dark !default;
 $input-icon-hover:        $black-pearl !default;
 $input-required:          $state-danger !default;
 
-$input-success-border:            $state-success !default;
-$input-success-border-focus:      mix($input-success-border, $white, 25%) !default;
+$input-success-border:            mix($black, $state-success, 40%) !default;
+$input-success-border-focus:      mix($state-success, $white, 25%) !default;
 $input-success-icon:              $state-success !default;
 
-$input-warning-border:            $state-warning !default;
-$input-warning-border-focus:      mix($input-warning-border, $white, 25%) !default;
+$input-warning-border:            mix($black, $state-warning, 40%) !default;
+$input-warning-border-focus:      mix($state-warning, $white, 25%) !default;
 $input-warning-icon:              $state-warning !default;
 
-$input-danger-border:             $state-danger !default;
-$input-danger-border-focus:       mix($input-danger-border, $white, 25%) !default;
+$input-danger-border:             mix($black, $state-danger, 40%) !default;
+$input-danger-border-focus:       mix($state-danger, $white, 25%) !default;
 $input-danger-icon:               $state-danger !default;
 
 $input-height:                    $spacer-lg !default;
@@ -427,13 +427,14 @@ $switch-height:           $switch-width / 2 + .25rem !default;
 $switch-bg:               $input-bg !default;
 $switch-border:           $input-border !default;
 
-$switch-disabled:         $state-disabled !default;
+$switch-disabled:         $grey-lighter !default;
+$switch-disabled-label:   $state-disabled !default;
 $switch-disabled-border:  $grey-light !default;
-$switch-disabled-bg:      $grey-light !default;
+$switch-disabled-bg:      $switch-disabled-label !default;
 
 $switch-handle-width:     ($switch-width - .5rem) / 2 !default;
 
-$switch-handle-bg:        $grey !default;
+$switch-handle-bg:        $grey-dark !default;
 $switch-handle-bg-active: $brand-primary !default;
 
 
@@ -792,9 +793,9 @@ $nav-bg:                      transparent !default;
 $nav-bg-hover:                $grey-lighter !default;
 $nav-bg-active:               $nav-bg !default;
 $nav-padding:                 $spacer / 3 * 2 $spacer !default;
-$nav-bg-disabled:             $state-disabled !default;
-$nav-color-disabled:          $btn-official-color !default;
-$nav-tab-color-disabled:      $nav-bg-disabled !default;
+$nav-bg-disabled:             $grey-lighter !default;
+$nav-color-disabled:          $state-disabled !default;
+$nav-tab-color-disabled:      $nav-color-disabled !default;
 
 
 /**
@@ -853,11 +854,14 @@ $upload-color:            $text-color !default;
 $upload-bg:               $white !default;
 $upload-bg-hover:         mix($brand-primary, $white, 20%) !default;
 $upload-border:           $brand-primary !default;
+$upload-disabled-color:   $state-disabled !default;
+$upload-disabled-bg:      $grey-lighter !default;
+$upload-disabled-border:  $upload-disabled-color !default;
 
 $upload-file-color:           $text-color !default;
 $upload-file-bg:              $background-color-light !default;
 $upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
-$upload-file-color-danger:    $state-danger !default;
+$upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
 
 
 /**
