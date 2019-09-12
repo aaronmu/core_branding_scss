@@ -208,13 +208,12 @@
   padding: $spacer / 6;
 
   strong {
-    background-color: rgba($black-pearl, .5);
+    background-color: rgba($black-pearl, .6);
     display: inline-block;
     padding: rem(1px) rem(4px) rem(2px);
   }
 }
 
-.d-u-text-light,
 .d-u-text-success,
 .d-u-text-xlight,
 .d-u-text-warning {
