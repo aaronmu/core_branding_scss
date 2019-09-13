@@ -29,9 +29,11 @@ gulp.task('icon-font', function() {
             // codepoints so we always have the same
             // CSS codes (eg. content: '\e001')
 
-            fontName: fontName,
             appendCodePoints: true,
-            formats: ['woff', 'ttf', 'eot', 'svg']
+            fontName: fontName,
+            fontHeight: 1001,
+            formats: ['woff', 'ttf', 'eot', 'svg'],
+            normalize:true
 
         })).on('glyphs', function(glyphs, options) {
             // Create the _antwerp-icons-template.scss file based
@@ -40,12 +42,10 @@ gulp.task('icon-font', function() {
 
             gulp.src('src/icons/_antwerp-icons-template.scss')
                 .pipe(consolidate('lodash', {
-
-                    glyphs: glyphs,
+                    className: 'icon',
                     fontName: fontName,
                     fontPath: '../../fonts',
-                    className: 'icon'
-
+                    glyphs: glyphs
                 }))
                 .pipe(rename('_base.antwerpen-icons.scss'))
                 .pipe(gulp.dest('src/styles/base'));
