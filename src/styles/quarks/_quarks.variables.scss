@@ -85,8 +85,6 @@ $font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace !def
  * -------------------------------------------------------------------
  */
 
-$font-size-ti:            12px !default;
-$font-size-xs:            13px !default;
 $font-size-sm:            14px !default;
 $font-size-base:          16px !default;
 $font-size-lg:            18px !default;
@@ -309,46 +307,62 @@ $table-padding:           $spacer-xs !default;
  * Define text, background and border color for each button
  */
 
-$btn-font-weight:         $bold !default;
+$btn-font-weight:              $bold !default;
 
-$btn-font-size-ti:        $font-size-xs !default;
-$btn-font-size-sm:        $font-size-sm !default;
-$btn-font-size:           $font-size-base !default;
-$btn-font-size-lg:        $font-size-lg !default;
+$btn-font-size-ti:             $font-size-sm !default;
+$btn-font-size-sm:             $font-size-sm !default;
+$btn-font-size:                $font-size-base !default;
+$btn-font-size-lg:             $font-size-lg !default;
 
-$btn-padding:             ($spacer * 7 / 12) $spacer !default;
+$btn-padding:                  ($spacer * 7 / 12) $spacer !default;
 
-$btn-icon-size-ti:        $icon-size-ti !default;
-$btn-icon-size-sm:        $icon-size-sm !default;
-$btn-icon-size:           $icon-size-base !default;
-$btn-icon-size-lg:        $icon-size-lg !default;
+$btn-icon-size-ti:             $icon-size-ti !default;
+$btn-icon-size-sm:             $icon-size-sm !default;
+$btn-icon-size:                $icon-size-base !default;
+$btn-icon-size-lg:             $icon-size-lg !default;
 
-$btn-default-color:       $white !default;
-$btn-default-bg:          $grey !default;
+$btn-default-color:            $white !default;
+$btn-default-bg:               $grey-dark !default;
+$btn-default-outline-color:    $btn-default-bg !default;
+$btn-default-outline-border:   $btn-default-bg !default;
 
-$btn-primary-color:       $btn-default-color !default;
-$btn-primary-bg:          $brand-primary !default;
+$btn-primary-color:            $btn-default-color !default;
+$btn-primary-bg:               $brand-primary !default;
+$btn-primary-negative-color:   $btn-primary-bg !default;
+$btn-primary-negative-bg:      $btn-primary-color !default;
+$btn-primary-outline-color:    $btn-primary-bg !default;
+$btn-primary-outline-border:   $btn-primary-bg !default;
 
-$btn-secondary-color:     $btn-default-color !default;
-$btn-secondary-bg:        $brand-secondary !default;
+$btn-secondary-color:          $btn-default-color !default;
+$btn-secondary-bg:             $brand-secondary !default;
+$btn-secondary-negative-color: $btn-secondary-bg !default;
+$btn-secondary-negative-bg:    $btn-secondary-color !default;
+$btn-secondary-outline-color:  $btn-secondary-bg !default;
+$btn-secondary-outline-border: $btn-secondary-bg !default;
 
-$btn-success-color:       $btn-default-color !default;
-$btn-success-bg:          $state-success !default;
+$btn-success-color:            $btn-default-color !default;
+$btn-success-bg:               $state-success !default;
+$btn-success-outline-color:    $btn-success-bg !default;
+$btn-success-outline-border:   $btn-success-bg !default;
 
-$btn-warning-color:       $btn-default-color !default;
-$btn-warning-bg:          $state-warning !default;
+$btn-warning-color:            $text-color !default;
+$btn-warning-bg:               $state-warning !default;
+$btn-warning-outline-color:    $text-color !default;
+$btn-warning-outline-border:   $btn-warning-bg !default;
 
-$btn-danger-color:        $btn-default-color !default;
-$btn-danger-bg:           $state-danger !default;
+$btn-danger-color:             $btn-default-color !default;
+$btn-danger-bg:                $state-danger !default;
+$btn-danger-outline-color:     $btn-danger-bg !default;
+$btn-danger-outline-border:    $btn-danger-bg !default;
 
-$btn-disabled-color:      $state-disabled !default;
-$btn-disabled-bg:         $grey-lighter !default;
+$btn-disabled-color:           $state-disabled !default;
+$btn-disabled-bg:              $grey-lighter !default;
 
-$btn-transparent-color:   $brand-primary !default;
-$btn-transparent-bg:      transparent !default;
+$btn-transparent-color:        $brand-primary !default;
+$btn-transparent-bg:           transparent !default;
 
-$btn-official-color:      $white !default;
-$btn-official-bg:         $monza !default;
+$btn-official-color:           $btn-default-color !default;
+$btn-official-bg:              $monza !default;
 
 
 /**
@@ -591,7 +605,7 @@ $badge-height:                   $spacer-sm !default;
 $badge-line-height:              $badge-height !default;
 $badge-padding:                  0 $spacer / 4 !default;
 
-$badge-default-color:            $black-pearl !default;
+$badge-default-color:            $text-color !default;
 $badge-default-bg:               $grey !default;
 
 $badge-primary-color:            $badge-default-color !default;
@@ -651,22 +665,22 @@ $label-font-weight:       $bold !default;
 $label-height:            $spacer-sm !default;
 $label-line-height:       $label-height !default;
 
-$label-default-color:     $black-pearl !default;
+$label-default-color:     $text-color !default;
 $label-default-border:    $grey !default;
 
-$label-primary-color:     mix($black, $brand-primary, 40%) !default;
+$label-primary-color:     $label-default-color !default;
 $label-primary-border:    $brand-primary !default;
 
-$label-secondary-color:   mix($black, $brand-secondary, 40%) !default;
+$label-secondary-color:   $label-default-color !default;
 $label-secondary-border:  $brand-secondary !default;
 
-$label-success-color:     mix($black, $state-success, 40%) !default;
+$label-success-color:     $label-default-color !default;
 $label-success-border:    $state-success !default;
 
-$label-warning-color:     mix($black, $state-warning, 40%) !default;
+$label-warning-color:     $label-default-color !default;
 $label-warning-border:    $state-warning !default;
 
-$label-danger-color:      mix($black, $state-danger, 40%) !default;
+$label-danger-color:      $label-default-color !default;
 $label-danger-border:     $state-danger !default;
 
 $label-padding:           0 $spacer / 4 !default;
@@ -681,7 +695,7 @@ $tag-color:               $text-color !default;
 $tag-bg:                  $background-color-light !default;
 $tag-border:              $border-color !default;
 $tag-border-focus:        $input-border-focus !default;
-$tag-placeholder:         $grey !default;
+$tag-placeholder:         $input-placeholder !default;
 $tag-height:              $spacer-md !default;
 
 
