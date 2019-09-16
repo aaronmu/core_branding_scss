@@ -28,7 +28,6 @@
     "autoprefixer": "^9.5.1",
     "browser-sync": "^2.26.5",
     "cssnano": "^4.1.10",
-    "del": "^4.1.1",
     "glob": "^7.1.4",
     "gulp": "^4.0.2",
     "gulp-consolidate": "^0.2.0",
