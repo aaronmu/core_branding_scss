@@ -12,8 +12,7 @@ var gulp = require('gulp');
 var imagemin = require('gulp-imagemin'),
     iconfont = require('gulp-iconfont'),
     consolidate = require('gulp-consolidate'),
-    rename = require('gulp-rename'),
-    del = require('del');
+    rename = require('gulp-rename');
 
 gulp.task('icon-font', function() {
     var fontName = 'Antwerpen_Icons';
