@@ -28,10 +28,8 @@ fieldset {
 }
 
 legend {
-  background: $grey;
-  color: $white;
-  display: block;
+  color: $legend-color;
+  font-size: $legend-size;
+  font-weight: $bold;
   padding: $legend-padding;
-  position: absolute;
-  top: 0;
 }

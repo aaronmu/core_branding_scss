@@ -51,12 +51,17 @@
       }
     }
 
+    &:disabled {
+      cursor: not-allowed;
+    }
+
     &:disabled + label {
       color: $input-disabled;
       cursor: not-allowed;
 
       &:before {
-        box-shadow: 0 0 0 1px $input-disabled inset;
+        background-color: $input-disabled-bg;
+        box-shadow: 0 0 0 1px $input-disabled-border inset;
       }
     }
   }
@@ -110,6 +115,7 @@
   &:disabled {
     + label:before {
       background-color: $input-disabled;
+      box-shadow: 0 0 0 1px $input-disabled-bg inset;
     }
   }
 }

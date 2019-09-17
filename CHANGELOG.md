@@ -1,5 +1,47 @@
 # Changelog
 
+## [4.0.0] - 2019-xx-xx
+### Added
+- Added the `$legend-color` and `$legend-size` variables
+- Added the `$switch-disabled-border` and `$switch-disabled-bg` variables
+- Added the `$switch-disabled-label` variable
+- Added the `$upload-disabled-color`, `$upload-disabled-bg` and `$upload-disabled-border` variables
+- Added miscellaneous button variables
+
+### Changed
+- [BREAKING] Updated the core branding to meet the WCAG 2.1 AA guidelines
+- [BREAKING] Changed the appearance and behaviour of the A logo
+- [BREAKING] Changed the behaviour of the `.u-wrapper` class
+- [BREAKING] Replaced the function of the `$switch-disabled` variable (The previous one is moved to `$switch-disabled-label`)
+- [BREAKING] Changed the syntax of the upload component
+- [BREAKING] Added some letterspacing to the label component
+- changed the behaviour of the a element
+- Made `$grey-dark` slightly darker
+- Made the background of the kbd element darker
+- Updated the appearance of the legend element
+- Updated the appearance of both enabled and disabled form elements
+- Made the background of avatars darker
+- Updated the appearance of the badge component
+- Updated the appearance of some button components
+- Made the border of the different input states darker
+- Updated the appearance of the label component
+- Updated the appearance of the switch component
+- Updated the appearance of the navigation components
+- Updated the appearance of the upload component
+- Updated the documentation for the collapsible list component
+- Updated the appearance of the tag component
+- Updated the documentation for the tag component
+
+
+### Removed
+- [BREAKING] Removed the `$font-size-ti` and `$font-size-xs` variables
+- [BREAKING] Removed the `$font-size-ti` and `$font-size-xs` variables
+- [BREAKING] Removed the ability to make the header fixed
+- [BREAKING] Removed the negative success, warning and danger buttons
+
+#### Deprecated
+
+
 ## [3.2.2] - 2019-06-03
 ### Changed
 - Updated Facebook color
@@ -171,6 +213,7 @@
 - Initial release.
 
 
+[4.0.0]: https://github.com/a-ui/core_branding_scss/tree/v4.0.0
 [3.2.2]: https://github.com/a-ui/core_branding_scss/tree/v3.2.2
 [3.2.1]: https://github.com/a-ui/core_branding_scss/tree/v3.2.1
 [3.2.0]: https://github.com/a-ui/core_branding_scss/tree/v3.2.0

@@ -18,6 +18,15 @@
     border-top: 1px solid $input-border;
     transition: background $animation-duration $animation-easing;
 
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
 
     &:last-child {
       border-bottom: 1px solid $input-border;

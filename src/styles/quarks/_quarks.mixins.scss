@@ -44,7 +44,7 @@
  * -------------------------------------------------------------------
  */
 
-@mixin a-button($_color: $btn-primary-color, $_background: $btn-primary-bg) {
+@mixin a-button($_color: $btn-primary-color, $_background: $btn-primary-bg, $_background-hover: $_color) {
   background-color: $_background;
   color: $_color;
 
@@ -59,7 +59,7 @@
     } @else if $_background == transparent {
       background-color: transparent;
     } @else {
-      background-color: mix($_color, $white, 20%);
+      background-color: mix($_background-hover, $white, 20%);
     }
   }
 
@@ -85,38 +85,41 @@
  */
 
 
-@mixin a-button-outline($_color: $btn-primary-bg, $_background: $btn-transparent-bg, $_border: true) {
-  background-color: $_background;
-  color: $_color;
-
-  @if $_border {
-    box-shadow: 0 0 0 1px $_color inset;
+@mixin a-button-outline($_color: $btn-primary-outline-color, $_border: $btn-primary-outline-border, $_transparent: false) {
+  @if $_transparent == false {
+    background-color: rgba($white, .5);
+    box-shadow: 0 0 0 1px $_border inset;
+  } @else {
+    background-color: transparent;
   }
+
+  color: $_color;
 
   &:hover,
   &:active,
   &:focus {
-    color: mix($_color, $black, 85%);
     text-decoration: none;
 
-    @if $_border {
-      background: mix($_color, $white, 20%);
-      box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset;
+    @if $_transparent == false {
+      background: mix($_border, $white, 20%);
+      box-shadow: 0 0 0 1px mix($_border, $black, 85%) inset;
+    } @else {
+      color: mix($black, $_color, 40%);
     }
   }
 
   &:focus {
-    @if $_border {
-      box-shadow: 0 0 0 1px mix($_color, $black, 85%) inset, 0 0 0 3px mix($_color, $white, 25%);
+    @if $_transparent == false {
+      box-shadow: 0 0 0 1px mix($_border, $black, 85%) inset, 0 0 0 3px mix($_color, $white, 25%);
     } @else {
       box-shadow: 0 0 0 3px mix($_color, $white, 20%);
     }
   }
 
   &[disabled] {
-    background: transparent;
-    box-shadow: 0 0 0 1px $btn-disabled-bg inset;
-    color: $btn-disabled-bg;
+    background: $btn-disabled-bg;
+    box-shadow: 0 0 0 1px $input-disabled-border inset;
+    color: $btn-disabled-color;
     cursor: not-allowed;
   }
 }
@@ -145,7 +148,8 @@
     }
 
     &[disabled] {
-      border-color: $input-disabled;
+      background: $input-disabled-bg;
+      border-color: $input-disabled-border;
       color: $input-disabled;
       cursor: not-allowed;
     }
@@ -208,7 +212,8 @@
  */
 
 @mixin a-badge($_color: $badge-default-color, $_background: $badge-default-bg) {
-  background-color: $_background;
+  background-color: mix($_background, $white, 10%);
+  box-shadow: 0 0 0 1px $_background inset;
   color: $_color;
 }
 

@@ -14,10 +14,6 @@
     padding-left: $spacer * 3;
   }
 
-  @include at($screen-md) {
-    padding-left: $spacer-xx;
-  }
-
   @include at($screen-xl) {
     margin: 0 auto;
     padding: 0;
