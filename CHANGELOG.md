@@ -7,23 +7,25 @@
 - Added the `$switch-disabled-label` variable
 - Added the `$upload-disabled-color`, `$upload-disabled-bg` and `$upload-disabled-border` variables
 - Added miscellaneous button variables
-- Added ARIA-labels to all buttons
+- Added ARIA-labels to empty buttons and anchors
 
 ### Changed
 - [BREAKING] Updated the core branding to meet the WCAG 2.1 AA guidelines
 - [BREAKING] Changed the appearance and behaviour of the A logo
 - [BREAKING] Changed the behaviour of the `.u-wrapper` class
 - [BREAKING] Replaced the function of the `$switch-disabled` variable (The previous one is moved to `$switch-disabled-label`)
-- [BREAKING] Changed the syntax of the avatar component
-- [BREAKING] Changed the syntax of icon and social buttons
-- [BREAKING] Changed the syntax of lists with icons
-- [BREAKING] Changed the syntax of the toggle component
-- [BREAKING] Changed the syntax of the alerts
-- [BREAKING] Changed the syntax of the button list component
-- [BREAKING] Changed the syntax of the datepicker component
-- [BREAKING] Changed the syntax of the pagination component
-- [BREAKING] Changed the syntax of the upload component
-- [BREAKING] Changed the syntax of the tag list component
+- [BREAKING] Updated the syntax of the avatar component
+- [BREAKING] Updated the syntax of icon and social buttons
+- [BREAKING] Updated the syntax of lists with icons
+- [BREAKING] Updated the syntax of the table component
+- [BREAKING] Updated the syntax of the tag components with buttons in it
+- [BREAKING] Updated the syntax of the toggle component
+- [BREAKING] Updated the syntax of the alerts
+- [BREAKING] Updated the syntax of the button list component
+- [BREAKING] Updated the syntax of the datepicker component
+- [BREAKING] Updated the syntax of the pagination component
+- [BREAKING] Updated the syntax of the upload component
+- [BREAKING] Updated the syntax of the tag list component
 - [BREAKING] Added some letterspacing to the label component
 - [BREAKING] Updated the syntax for all icons: `<span>` instead of the incorrect `<i>`
 - changed the behaviour of the a element
@@ -41,7 +43,6 @@
 - Updated the appearance of the upload component
 - Updated the documentation for the collapsible list component
 - Updated the appearance of the tag component
-- Updated the documentation for the tag component
 
 
 ### Removed
@@ -49,6 +50,7 @@
 - [BREAKING] Removed the `$font-size-ti` and `$font-size-xs` variables
 - [BREAKING] Removed the ability to make the header fixed
 - [BREAKING] Removed the negative success, warning and danger buttons
+- Removed font-smoothing as it had unexpected results in different browsers
 
 #### Deprecated
 

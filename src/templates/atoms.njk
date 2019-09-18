@@ -727,12 +727,12 @@
         </div>
         <div class="d">
             <div>
-                <a href="javascript:void(0);" class="a-button a-button--google has-icon">
+                <a href="javascript:void(0);" class="a-button a-button--google has-icon" aria-label="Google+">
                     <span class="fa fa-google-plus"></span>
                 </a>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#" class="a-button a-button--google has-icon" aria-label="Snapchat"&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#" class="a-button a-button--google has-icon" aria-label="Google+"&gt;
   &lt;span class="fa fa-google-plus"&gt;&lt;/span&gt;
 &lt;/a&gt;</code></pre>
             </div>
@@ -744,7 +744,7 @@
                 </a>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#" class="a-button a-button--snapchat has-icon"&gt;
+                <pre class="a-pre a-pre--scrollable"><code>&lt;a href="#" class="a-button a-button--snapchat has-icon" aria-label="Snapchat"&gt;
   &lt;span class="fa fa-snapchat-ghost"&gt;&lt;/span&gt;
 &lt;/a&gt;</code></pre>
             </div>
@@ -855,7 +855,7 @@
         <h3 class="u-margin-top-lg">Form</h3>
         <span class="d-file">atoms/atoms.form</span>
         <div class="m-alert d-alert m-alert--wcag">
-            <p>It is important to provide the user with clean instructions on how to complete the form. You can provide these both overall or inline. Note that you can not use the placeholder attribute as a replacement for clean instructions or for the label.</p>
+            <p>It is important to provide the user with clear instructions on how to complete the form. You can provide these both overall or inline. Note that you can not use the placeholder attribute as a replacement for clean instructions or for the label. See the <a href="https://www.w3.org/TR/WCAG21/#input-assistance" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 3.3 – Input Assistance" class="has-icon-right" target="_blank">input assistance success criterion<span class="fa fa-external-link"></span></a>.</p>
         </div>
         <div class="d">
             <div>
@@ -943,7 +943,7 @@
         <div class="d">
             <div>
                 <div class="a-input">
-                    <label class="a-input__label" for="input-text">Input checkbox</label>
+                    <label class="a-input__label">Input checkbox</label>
                     <div class="a-input__checkbox">
                         <input type="checkbox" id="checkbox1" name="input-checkbox" checked="">
                         <label for="checkbox1">Option one</label>
@@ -964,7 +964,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input"&gt;
-  &lt;label class="a-input__label" for="input-text"&gt;Input checkbox&lt;/label&gt;
+  &lt;label class="a-input__label"&gt;Input checkbox&lt;/label&gt;
   &lt;div class="a-input__checkbox"&gt;
     &lt;input type="checkbox" id="checkbox1" name="input-checkbox" checked=""&gt;
     &lt;label for="checkbox1"&gt;Option one&lt;/label&gt;
@@ -987,7 +987,7 @@
         <div class="d">
             <div>
                 <div class="a-input">
-                    <label class="a-input__label" for="input-text">Input radio button</label>
+                    <label class="a-input__label">Input radio button</label>
                     <div class="a-input__radio">
                         <input type="radio" id="radio1" name="input-radio" checked="">
                         <label for="radio1">Option one</label>
@@ -1008,7 +1008,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input"&gt;
-  &lt;label class="a-input__label" for="input-text"&gt;Input radio button&lt;/label&gt;
+  &lt;label class="a-input__label"&gt;Input radio button&lt;/label&gt;
   &lt;div class="a-input__radio"&gt;
     &lt;input type="radio" id="radio1" name="input-radio" checked=""&gt;
     &lt;label for="radio1"&gt;Option one&lt;/label&gt;
@@ -1095,7 +1095,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input has-icon-right a-input--inline"&gt;
-  &lt;label class="a-input__label a-input__label--inline" for="inline-text-field"&gt;Inline select input&lt;/label&gt;
+  &lt;label class="a-input__label a-input__label--inline" for="inline-select"&gt;Inline select input&lt;/label&gt;
   &lt;div class="a-input__wrapper a-input__wrapper--inline"&gt;
     &lt;select name="input-select" id="input-select"&gt;
       &lt;option disabled selected&gt;Make your choice...&lt;/option&gt;
@@ -1118,8 +1118,8 @@
         <div class="d">
             <div>
                 <div class="a-input a-input--small u-margin-bottom">
-                    <label class="a-input__label" for="text-field">Small text field</label>
-                    <input type="text" name="text-field" id="text-field" placeholder="Placeholder" />
+                    <label class="a-input__label" for="text-field-small">Small text field</label>
+                    <input type="text" name="text-field-small" id="text-field-small" placeholder="Placeholder" />
                 </div>
                 <div class="a-input a-input--small has-icon-right u-margin-bottom">
                     <label class="a-input__label" for="input-select">Small select with options</label>
@@ -1142,8 +1142,8 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--small"&gt;
-  &lt;label class="a-input__label" for="text-field"&gt;Text field&lt;/label&gt;
-  &lt;input type="text" name="text-field" id="text-field" placeholder="Placeholder" /&gt;
+  &lt;label class="a-input__label" for="text-field-small"&gt;Text field&lt;/label&gt;
+  &lt;input type="text" name="text-field-small" id="text-field-small" placeholder="Placeholder" /&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--small has-icon-right"&gt;
   &lt;label class="a-input__label" for="input-select"&gt;Select with options&lt;/label&gt;
@@ -1163,8 +1163,8 @@
         <div class="d">
             <div>
                 <div class="a-input a-input--large u-margin-bottom">
-                    <label class="a-input__label" for="text-field">Large text field</label>
-                    <input type="text" name="text-field" id="text-field" placeholder="Placeholder" />
+                    <label class="a-input__label" for="text-field-large">Large text field</label>
+                    <input type="text" name="text-field-large" id="text-field-large" placeholder="Placeholder" />
                 </div>
                 <div class="a-input a-input--large has-icon-right u-margin-bottom">
                     <label class="a-input__label" for="input-select">Large select with options</label>
@@ -1187,8 +1187,8 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--large"&gt;
-  &lt;label class="a-input__label" for="text-field"&gt;Text field&lt;/label&gt;
-  &lt;input type="text" name="text-field" id="text-field" placeholder="Placeholder" /&gt;
+  &lt;label class="a-input__label" for="text-field-large"&gt;Text field&lt;/label&gt;
+  &lt;input type="text" name="text-field-large" id="text-field-large" placeholder="Placeholder" /&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-input a-input--large has-icon-right"&gt;
   &lt;label class="a-input__label" for="input-select"&gt;Select with options&lt;/label&gt;
@@ -1399,7 +1399,7 @@
             </div>
         </div>
 
-        <a name="atoms-link" aria-label="Link"></a>
+        <a name="atoms-link" aria-label="Link component"></a>
         <h3 class="u-margin-top-lg">Link</h3>
         <span class="d-file">atoms/atoms.link</span>
         <div class="d">
@@ -1823,7 +1823,7 @@
                         <label class="a-switch__label">Off</label>
                         <div class="a-switch__toggle">
                             <input type="checkbox" name="switch1" id="switch1">
-                            <label for="switch1"></label>
+                            <label for="switch1"><span class="u-screen-reader-only">Toggle switch</span></label>
                         </div>
                         <label class="a-switch__label">On</label>
                     </div>
@@ -1836,7 +1836,7 @@
     &lt;label class="a-switch__label"&gt;Off&lt;/label&gt;
     &lt;div class="a-switch__toggle"&gt;
       &lt;input type="checkbox" name="switch1" id="switch1"&gt;
-      &lt;label for="switch1"&gt;&lt;/label&gt;
+      &lt;label for="switch1"&gt;&lt;span class="u-screen-reader-only"&gt;Toggle switch&lt;/span&gt;&lt;/label&gt;
     &lt;/div&gt;
     &lt;label class="a-switch__label"&gt;On&lt;/label&gt;
   &lt;/div&gt;
@@ -1851,7 +1851,7 @@
                         <label class="a-switch__label">On</label>
                         <div class="a-switch__toggle">
                             <input type="checkbox" name="switch2" id="switch2" disabled>
-                            <label for="switch2"></label>
+                            <label for="switch2"><span class="u-screen-reader-only">Toggle switch</span></label>
                         </div>
                         <label class="a-switch__label">Off</label>
                     </div>
@@ -1864,7 +1864,7 @@
     &lt;label class="a-switch__label"&gt;On&lt;/label&gt;
     &lt;div class="a-switch__toggle"&gt;
       &lt;input type="checkbox" name="switch2" id="switch2" disabled&gt;
-      &lt;label for="switch2"&gt;&lt;/label&gt;
+      &lt;label for="switch2"&gt;&lt;span class="u-screen-reader-only"&gt;Toggle switch&lt;/span&gt;&lt;/label&gt;
     &lt;/div&gt;
     &lt;label class="a-switch__label"&gt;Off&lt;/label&gt;
   &lt;/div&gt;
@@ -1880,6 +1880,7 @@
         <div class="d">
             <div>
                 <table class="a-table">
+                    <caption>Standard table</caption>
                     <thead>
                         <tr>
                             <th>Standard table</th>
@@ -1904,6 +1905,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;table class="a-table"&gt;
+  &lt;caption&gt;Standard table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Standard table&lt;/th&gt;
@@ -1930,6 +1932,7 @@
         <div class="d">
             <div>
                 <table class="a-table a-table--small">
+                    <caption>More compact table</caption>
                     <thead>
                         <tr>
                             <th>More compact table</th>
@@ -1954,6 +1957,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;table class="a-table a-table--small"&gt;
+  &lt;caption&gt;More compact table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;More compact table&lt;/th&gt;
@@ -1982,6 +1986,7 @@
         <div class="d">
             <div>
                 <table class="a-table a-table--primary">
+                    <caption>Primary table</caption>
                     <thead>
                         <tr>
                             <th>Primary table</th>
@@ -2006,6 +2011,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;table class="a-table a-table--primary"&gt;
+  &lt;caption&gt;Primary table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Primary table&lt;/th&gt;
@@ -2032,6 +2038,7 @@
         <div class="d">
             <div>
                 <table class="a-table a-table--secondary">
+                    <caption>Secondary table</caption>
                     <thead>
                         <tr>
                             <th>Secondary table</th>
@@ -2056,6 +2063,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;table class="a-table a-table--secondary"&gt;
+  &lt;caption&gt;Seconday table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Secondary table&lt;/th&gt;
@@ -2082,6 +2090,7 @@
         <div class="d">
             <div>
                 <table class="a-table a-table--striped">
+                    <caption>Striped table</caption>
                     <thead>
                         <tr>
                             <th>Striped table</th>
@@ -2106,6 +2115,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;table class="a-table a-table--striped"&gt;
+  &lt;caption&gt;Striped table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th&gt;Striped table&lt;/th&gt;
@@ -2134,6 +2144,7 @@
         <div class="d">
             <div>
                 <table class="a-table">
+                    <caption>Condensed table</caption>
                     <thead>
                         <tr>
                             <th class="is-condensed">Condensed table cells</th>
@@ -2158,6 +2169,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;table class="a-table"&gt;
+  &lt;caption&gt;Condensed table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th class="is-condensed"&gt;Condensed table cells&lt;/th&gt;
@@ -2184,6 +2196,7 @@
         <div class="d">
             <div>
                 <table class="a-table">
+                    <caption>Paddingless table</caption>
                     <thead>
                         <tr>
                             <th class="has-no-padding">Table cells without padding</th>
@@ -2208,6 +2221,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;table class="a-table"&gt;
+  &lt;caption&gt;Paddingless table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th class="has-no-padding"&gt;Table cells without padding&lt;/th&gt;
@@ -2236,6 +2250,7 @@
         <div class="d">
             <div>
                 <div class="a-table__wrapper-responsive">
+                    <caption>Responsive table</caption>
                     <table class="a-table">
                         <thead>
                             <tr>
@@ -2263,6 +2278,7 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-table__wrapper-responsive"&gt;
   &lt;table class="a-table"&gt;
+    &lt;caption&gt;Responsive table&lt;/caption&gt;
     &lt;thead&gt;
       &lt;tr&gt;
         &lt;th&gt;Responsive table&lt;/th&gt;
@@ -2297,7 +2313,7 @@
                     <div class="a-input has-icon-right">
                         <label class="a-input__label" for="input-hours">Hours</label>
                         <div class="a-input__wrapper">
-                            <select name="input-hours" id="input-houres">
+                            <select name="input-hours" id="input-hours">
                                 <option value="" disabled selected>hh</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -2374,10 +2390,10 @@
                     <input class="a-toggle__checkbox" id="icon-toggle" type="checkbox">
                     <div class="a-toggle__labels">
                         <label for="icon-toggle" class="a-toggle__on a-button has-icon">
-                            <span class="fa fa-bars"></span>
+                            <span class="fa fa-bars"><span class="u-screen-reader-only">Open menu</span></span>
                         </label>
                         <label for="icon-toggle" class="a-toggle__off a-button a-button--danger has-icon">
-                            <span class="fa fa-close"></span>
+                            <span class="fa fa-close"><span class="u-screen-reader-only">Close menu</span></span>
                         </label>
                     </div>
                 </div>
@@ -2387,10 +2403,10 @@
   &lt;input class="a-toggle__checkbox" id="icon-toggle" type="checkbox"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="icon-toggle" class="a-toggle__on a-button has-icon"&gt;
-      &lt;span class="fa fa-bars"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-bars"&gt;&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;&lt;/span&gt;
     &lt;/label&gt;
     &lt;label for="icon-toggle" class="a-toggle__off a-button a-button--danger has-icon"&gt;
-      &lt;span class="fa fa-close"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-close"&gt;&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;&lt;/span&gt;
     &lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -2403,11 +2419,11 @@
                         <input class="a-toggle__checkbox" id="icon-toggle-large" type="checkbox">
                         <div class="a-toggle__labels">
                             <label for="icon-toggle-large" class="a-toggle__on a-button a-button--large has-icon">
-                                <span class="fa fa-bars"></span>
+                                <span class="fa fa-bars"><span class="u-screen-reader-only">Open menu</span></span>
                             </label>
 
                             <label for="icon-toggle-large" class="a-toggle__off a-button a-button--danger a-button--large has-icon">
-                                <span class="fa fa-close"></span>
+                                <span class="fa fa-close"><span class="u-screen-reader-only">Close menu</span></span>
                             </label>
                         </div>
                     </div>
@@ -2417,10 +2433,10 @@
                         <input class="a-toggle__checkbox" id="icon-toggle-small" type="checkbox">
                         <div class="a-toggle__labels">
                             <label for="icon-toggle-small" class="a-toggle__on a-button a-button--small has-icon">
-                                <span class="fa fa-bars"></span>
+                                <span class="fa fa-bars"><span class="u-screen-reader-only">Open menu</span></span>
                             </label>
                             <label for="icon-toggle-small" class="a-toggle__off a-button a-button--danger a-button--small has-icon">
-                                <span class="fa fa-close"></span>
+                                <span class="fa fa-close"><span class="u-screen-reader-only">Close menu</span></span>
                             </label>
                         </div>
                     </div>
@@ -2430,10 +2446,10 @@
                         <input class="a-toggle__checkbox" id="icon-toggle-tiny" type="checkbox">
                         <div class="a-toggle__labels">
                             <label for="icon-toggle-tiny" class="a-toggle__on a-button a-button--tiny has-icon">
-                                <span class="fa fa-bars"></span>
+                                <span class="fa fa-bars"><span class="u-screen-reader-only">Open menu</span></span>
                             </label>
                             <label for="icon-toggle-tiny" class="a-toggle__off a-button a-button--danger a-button--tiny has-icon">
-                                <span class="fa fa-close"></span>
+                                <span class="fa fa-close"><span class="u-screen-reader-only">Close menu</span></span>
                             </label>
                         </div>
                     </div>
@@ -2444,10 +2460,10 @@
   &lt;input class="a-toggle__checkbox" id="icon-toggle-large" type="checkbox"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="icon-toggle-large" class="a-toggle__on a-button a-button--large has-icon"&gt;
-      &lt;span class="fa fa-bars"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-bars"&gt;&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;&lt;/span&gt;
     &lt;/label&gt;
     &lt;label for="icon-toggle-large" class="a-toggle__off a-button a-button--danger a-button--large has-icon"&gt;
-      &lt;span class="fa fa-close"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-close"&gt;&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;&lt;/span&gt;
     &lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -2455,10 +2471,10 @@
   &lt;input class="a-toggle__checkbox" id="icon-toggle-small" type="checkbox"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="icon-toggle-small" class="a-toggle__on a-button a-button--small has-icon"&gt;
-      &lt;span class="fa fa-bars"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-bars"&gt;&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;&lt;/span&gt;
     &lt;/label&gt;
     &lt;label for="icon-toggle-small" class="a-toggle__off a-button a-button--danger a-button--small has-icon"&gt;
-      &lt;span class="fa fa-close"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-close"&gt;&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;&lt;/span&gt;
     &lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -2466,10 +2482,10 @@
   &lt;input class="a-toggle__checkbox" id="icon-toggle-tiny" type="checkbox"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="icon-toggle-tiny" class="a-toggle__on a-button a-button--tiny has-icon"&gt;
-      &lt;span class="fa fa-bars"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-bars"&gt;&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;&lt;/span&gt;
     &lt;/label&gt;
     &lt;label for="icon-toggle-tiny" class="a-toggle__off a-button a-button--danger a-button--tiny has-icon"&gt;
-      &lt;span class="fa fa-close"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-close"&gt;&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;&lt;/span&gt;
     &lt;/label&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>

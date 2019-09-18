@@ -4,7 +4,7 @@
  */
 
 .cc-banner {
-  background: $brand-primary;
+  background-color: $brand-primary;
   bottom: 0;
   display: flex;
   flex-wrap: wrap;
@@ -62,7 +62,7 @@
     &:hover,
     &:active,
     &:visited {
-      background: palette($brand-primary, 'dark');
+      background-color: mix($brand-primary, $black, 85%);
     }
   }
 }
