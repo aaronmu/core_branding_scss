@@ -39,7 +39,7 @@
 - Updated the appearance of both enabled and disabled form elements
 - Made the background of avatars darker
 - Updated the appearance of the badge component
-- Updated the appearance of some button components
+- Updated the appearance of most button components
 - Made the border of the different input states darker
 - Updated the appearance of the label component
 - Updated the appearance of the switch component
