@@ -886,79 +886,77 @@
         <h4 class="u-margin-top-lg">Datepicker attached to an input field</h4>
         <div class="d">
             <div>
-                <div>
-                    <div class="a-input has-icon-right d-datepicker">
-                        <label class="a-input__label" for="input-datepicker">Choose a date</label>
-                        <div class="a-input__wrapper">
-                            <input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" />
-                            <span class="fa fa-calendar is-clickable" role="button"></span>
-                            <div role="application" aria-label="Attached datepicker days" class="m-datepicker is-open" aria-hidden="false">
-                                <div class="m-datepicker__nav">
-                                    <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"><span class="fa fa-angle-left"></span></button>
-                                    <button type="button" class="m-datepicker__title a-button">May 2017</button>
-                                    <button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"><span class="fa fa-angle-right"></span></button>
-                                </div>
-                                <table>
-                                    <thead>
-                                        <tr class="m-datepicker__days">
-                                            <th scope="col"><span title="Monday">Mo</span></th>
-                                            <th scope="col"><span title="Tuesday">Tu</span></th>
-                                            <th scope="col"><span title="Wednesday">We</span></th>
-                                            <th scope="col"><span title="Thursday">Th</span></th>
-                                            <th scope="col"><span title="Friday">Fr</span></th>
-                                            <th scope="col"><span title="Saturday">Sa</span></th>
-                                            <th scope="col"><span title="Sunday">Su</span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody class="m-datepicker__calendar">
-                                        <tr>
-                                            <td><button type="button" class="is-faded" aria-label="Monday 27 April 2017">27</button></td>
-                                            <td><button type="button" class="is-faded" aria-label="Tuesday 28 April 2017">28</button></td>
-                                            <td><button type="button" aria-label="Wednesday 1 May 2017">1</button></td>
-                                            <td><button type="button" aria-label="Thursday 2 May 2017">2</button></td>
-                                            <td><button type="button" aria-label="Friday 3 May 2017">3</button></td>
-                                            <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 4 May 2017">4</button></td>
-                                            <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 5 May 2017">5</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button type="button" aria-label="Monday 6 May 2017">6</button></td>
-                                            <td><button type="button" aria-label="Tuesday 7 May 2017">7</button></td>
-                                            <td><button type="button" aria-label="Wednesday 8 May 2017">8</button></td>
-                                            <td><button type="button" class="is-selected" aria-pressed="true" aria-label="Thursday 9 May 2017">9</button></td>
-                                            <td><button type="button" aria-label="Friday 10 May 2017">10</button></td>
-                                            <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 11 May 2017">11</button></td>
-                                            <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 12 May 2017">12</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button type="button" aria-label="Monday 13 May 2017">13</button></td>
-                                            <td><button type="button" aria-label="Tuesday 14 May 2017">14</button></td>
-                                            <td><button type="button" aria-label="Wednesday 15 May 2017">15</button></td>
-                                            <td><button type="button" aria-label="Thursday 16 May 2017">16</button></td>
-                                            <td><button type="button" aria-label="Friday 17 May 2017">17</button></td>
-                                            <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 18 May 2017">18</button></td>
-                                            <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 19 May 2017">19</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button type="button" aria-label="Monday 20 May 2017">20</button></td>
-                                            <td><button type="button" class="is-current" aria-label="Tuesday 21 May 2017">21</button></td>
-                                            <td><button type="button" aria-label="Wednesday 22 May 2017">22</button></td>
-                                            <td><button type="button" aria-label="Thursday 23 May 2017">23</button></td>
-                                            <td><button type="button" aria-label="Friday 24 May 2017">24</button></td>
-                                            <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 25 May 2017">25</button></td>
-                                            <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 26 May 2017">26</button></td>
-                                        </tr>
-                                        <tr>
-                                            <td><button type="button" aria-label="Monday 27 May 2017">27</button></td>
-                                            <td><button type="button" aria-label="Tuesday 28 May 2017">28</button></td>
-                                            <td><button type="button" aria-label="Wednesday 29 May 2017">29</button></td>
-                                            <td><button type="button" aria-label="Thursday 30 May 2017">30</button></td>
-                                            <td><button type="button" aria-label="Friday 31 May 2017">31</button></td>
-                                            <td><button type="button" class="is-faded" aria-label="Saturday 1 June 2017">1</button></td>
-                                            <td><button type="button" class="is-faded" aria-label="Sunday 2 June 2017">2</button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                <div class="a-input has-icon-right d-datepicker">
+                    <label class="a-input__label" for="input-datepicker">Choose a date</label>
+                    <div class="a-input__wrapper">
+                        <input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" />
+                        <span class="fa fa-calendar is-clickable" role="button"></span>
+                        <div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false">
+                            <div class="m-datepicker__nav">
+                                <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"><span class="fa fa-angle-left"></span></button>
+                                <button type="button" class="m-datepicker__title a-button">May 2017</button>
+                                <button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"><span class="fa fa-angle-right"></span></button>
                             </div>
+                            <table>
+                                <thead>
+                                    <tr class="m-datepicker__days">
+                                        <th scope="col"><span title="Monday">Mo</span></th>
+                                        <th scope="col"><span title="Tuesday">Tu</span></th>
+                                        <th scope="col"><span title="Wednesday">We</span></th>
+                                        <th scope="col"><span title="Thursday">Th</span></th>
+                                        <th scope="col"><span title="Friday">Fr</span></th>
+                                        <th scope="col"><span title="Saturday">Sa</span></th>
+                                        <th scope="col"><span title="Sunday">Su</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="m-datepicker__calendar">
+                                    <tr>
+                                        <td><button type="button" class="is-faded" aria-label="Monday 27 April 2017">27</button></td>
+                                        <td><button type="button" class="is-faded" aria-label="Tuesday 28 April 2017">28</button></td>
+                                        <td><button type="button" aria-label="Wednesday 1 May 2017">1</button></td>
+                                        <td><button type="button" aria-label="Thursday 2 May 2017">2</button></td>
+                                        <td><button type="button" aria-label="Friday 3 May 2017">3</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 4 May 2017">4</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 5 May 2017">5</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" aria-label="Monday 6 May 2017">6</button></td>
+                                        <td><button type="button" aria-label="Tuesday 7 May 2017">7</button></td>
+                                        <td><button type="button" aria-label="Wednesday 8 May 2017">8</button></td>
+                                        <td><button type="button" class="is-selected" aria-pressed="true" aria-label="Thursday 9 May 2017">9</button></td>
+                                        <td><button type="button" aria-label="Friday 10 May 2017">10</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 11 May 2017">11</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 12 May 2017">12</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" aria-label="Monday 13 May 2017">13</button></td>
+                                        <td><button type="button" aria-label="Tuesday 14 May 2017">14</button></td>
+                                        <td><button type="button" aria-label="Wednesday 15 May 2017">15</button></td>
+                                        <td><button type="button" aria-label="Thursday 16 May 2017">16</button></td>
+                                        <td><button type="button" aria-label="Friday 17 May 2017">17</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 18 May 2017">18</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 19 May 2017">19</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" aria-label="Monday 20 May 2017">20</button></td>
+                                        <td><button type="button" class="is-current" aria-label="Tuesday 21 May 2017">21</button></td>
+                                        <td><button type="button" aria-label="Wednesday 22 May 2017">22</button></td>
+                                        <td><button type="button" aria-label="Thursday 23 May 2017">23</button></td>
+                                        <td><button type="button" aria-label="Friday 24 May 2017">24</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Saturday 25 May 2017">25</button></td>
+                                        <td><button type="button" class="is-unavailable" tabindex="-1" aria-disabled="true" aria-label="Sunday 26 May 2017">26</button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" aria-label="Monday 27 May 2017">27</button></td>
+                                        <td><button type="button" aria-label="Tuesday 28 May 2017">28</button></td>
+                                        <td><button type="button" aria-label="Wednesday 29 May 2017">29</button></td>
+                                        <td><button type="button" aria-label="Thursday 30 May 2017">30</button></td>
+                                        <td><button type="button" aria-label="Friday 31 May 2017">31</button></td>
+                                        <td><button type="button" class="is-faded" aria-label="Saturday 1 June 2017">1</button></td>
+                                        <td><button type="button" class="is-faded" aria-label="Sunday 2 June 2017">2</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -975,7 +973,7 @@
   &lt;div class="a-input__wrapper"&gt;
     &lt;input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" /&gt;
     &lt;span class="fa fa-calendar is-clickable" role="button"&gt;&lt;/span&gt;
-    &lt;div role="application" aria-label="Attached datepicker days" class="m-datepicker is-open" aria-hidden="false"&gt;
+    &lt;div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false"&gt;
       &lt;div class="m-datepicker__nav"&gt;
         &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left"&gt;&lt;/span&gt;&lt;/button&gt;
         &lt;button type="button" class="m-datepicker__title a-button"&gt;May 2017&lt;/button&gt;
