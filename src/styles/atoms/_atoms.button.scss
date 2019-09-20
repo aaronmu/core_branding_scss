@@ -109,7 +109,7 @@
   }
 
   &.a-button--snapchat {
-    @include a-button($white, $snapchat);
+    @include a-button($text-color, $snapchat);
   }
 
   &.a-button--instagram {

@@ -59,7 +59,7 @@
     } @else if $_background == transparent {
       background-color: transparent;
     } @else {
-      background-color: mix($_background-hover, $white, 10%);
+      background-color: mix($_background-hover, $white, 8%);
     }
   }
 
@@ -101,7 +101,7 @@
     text-decoration: none;
 
     @if $_transparent == false {
-      background: mix($_border, $white, 10%);
+      background: mix($_border, $white, 4%);
       box-shadow: 0 0 0 1px mix($_border, $black, 85%) inset;
     } @else {
       color: mix($black, $_color, 40%);
