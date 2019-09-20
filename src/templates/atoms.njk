@@ -1822,7 +1822,7 @@
                     <div class="a-switch">
                         <label class="a-switch__label">Off</label>
                         <div class="a-switch__toggle">
-                            <input type="checkbox" name="switch1" id="switch1">
+                            <input type="checkbox" name="switch1" id="switch1" role="switch" aria-checked="false">
                             <label for="switch1"><span class="u-screen-reader-only">Toggle switch</span></label>
                         </div>
                         <label class="a-switch__label">On</label>
@@ -1835,7 +1835,7 @@
   &lt;div class="a-switch"&gt;
     &lt;label class="a-switch__label"&gt;Off&lt;/label&gt;
     &lt;div class="a-switch__toggle"&gt;
-      &lt;input type="checkbox" name="switch1" id="switch1"&gt;
+      &lt;input type="checkbox" name="switch1" id="switch1" role="switch" aria-checked="false"&gt;
       &lt;label for="switch1"&gt;&lt;span class="u-screen-reader-only"&gt;Toggle switch&lt;/span&gt;&lt;/label&gt;
     &lt;/div&gt;
     &lt;label class="a-switch__label"&gt;On&lt;/label&gt;
@@ -1850,7 +1850,7 @@
                     <div class="a-switch is-disabled">
                         <label class="a-switch__label">On</label>
                         <div class="a-switch__toggle">
-                            <input type="checkbox" name="switch2" id="switch2" disabled>
+                            <input type="checkbox" name="switch2" id="switch2" role="switch" aria-checked="false" disabled>
                             <label for="switch2"><span class="u-screen-reader-only">Toggle switch</span></label>
                         </div>
                         <label class="a-switch__label">Off</label>
@@ -1863,7 +1863,7 @@
   &lt;div class="a-switch"&gt;
     &lt;label class="a-switch__label"&gt;On&lt;/label&gt;
     &lt;div class="a-switch__toggle"&gt;
-      &lt;input type="checkbox" name="switch2" id="switch2" disabled&gt;
+      &lt;input type="checkbox" name="switch2" id="switch2" role="switch" aria-checked="false" disabled&gt;
       &lt;label for="switch2"&gt;&lt;span class="u-screen-reader-only"&gt;Toggle switch&lt;/span&gt;&lt;/label&gt;
     &lt;/div&gt;
     &lt;label class="a-switch__label"&gt;Off&lt;/label&gt;
@@ -2387,7 +2387,7 @@
         <div class="d">
             <div>
                 <div class="a-toggle d-button has-icon">
-                    <input class="a-toggle__checkbox" id="icon-toggle" type="checkbox">
+                    <input class="a-toggle__checkbox" id="icon-toggle" type="checkbox" role="switch" aria-checked="false">
                     <div class="a-toggle__labels">
                         <label for="icon-toggle" class="a-toggle__on a-button has-icon">
                             <span class="fa fa-bars"><span class="u-screen-reader-only">Open menu</span></span>
@@ -2400,7 +2400,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-toggle has-icon"&gt;
-  &lt;input class="a-toggle__checkbox" id="icon-toggle" type="checkbox"&gt;
+  &lt;input class="a-toggle__checkbox" id="icon-toggle" type="checkbox" role="switch" aria-checked="false"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="icon-toggle" class="a-toggle__on a-button has-icon"&gt;
       &lt;span class="fa fa-bars"&gt;&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;&lt;/span&gt;
@@ -2416,7 +2416,7 @@
             <div>
                 <div>
                     <div class="a-toggle d-button a-toggle--large has-icon">
-                        <input class="a-toggle__checkbox" id="icon-toggle-large" type="checkbox">
+                        <input class="a-toggle__checkbox" id="icon-toggle-large" type="checkbox" role="switch" aria-checked="false">
                         <div class="a-toggle__labels">
                             <label for="icon-toggle-large" class="a-toggle__on a-button a-button--large has-icon">
                                 <span class="fa fa-bars"><span class="u-screen-reader-only">Open menu</span></span>
@@ -2430,7 +2430,7 @@
                 </div>
                 <div>
                     <div class="a-toggle d-button a-toggle--small has-icon">
-                        <input class="a-toggle__checkbox" id="icon-toggle-small" type="checkbox">
+                        <input class="a-toggle__checkbox" id="icon-toggle-small" type="checkbox" role="switch" aria-checked="false">
                         <div class="a-toggle__labels">
                             <label for="icon-toggle-small" class="a-toggle__on a-button a-button--small has-icon">
                                 <span class="fa fa-bars"><span class="u-screen-reader-only">Open menu</span></span>
@@ -2443,7 +2443,7 @@
                 </div>
                 <div>
                     <div class="a-toggle d-button a-toggle--tiny has-icon">
-                        <input class="a-toggle__checkbox" id="icon-toggle-tiny" type="checkbox">
+                        <input class="a-toggle__checkbox" id="icon-toggle-tiny" type="checkbox" role="switch" aria-checked="false">
                         <div class="a-toggle__labels">
                             <label for="icon-toggle-tiny" class="a-toggle__on a-button a-button--tiny has-icon">
                                 <span class="fa fa-bars"><span class="u-screen-reader-only">Open menu</span></span>
@@ -2457,7 +2457,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-toggle a-toggle--large has-icon"&gt;
-  &lt;input class="a-toggle__checkbox" id="icon-toggle-large" type="checkbox"&gt;
+  &lt;input class="a-toggle__checkbox" id="icon-toggle-large" type="checkbox" role="switch" aria-checked="false"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="icon-toggle-large" class="a-toggle__on a-button a-button--large has-icon"&gt;
       &lt;span class="fa fa-bars"&gt;&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;&lt;/span&gt;
@@ -2468,7 +2468,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-toggle a-toggle--small has-icon"&gt;
-  &lt;input class="a-toggle__checkbox" id="icon-toggle-small" type="checkbox"&gt;
+  &lt;input class="a-toggle__checkbox" id="icon-toggle-small" type="checkbox" role="switch" aria-checked="false"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="icon-toggle-small" class="a-toggle__on a-button a-button--small has-icon"&gt;
       &lt;span class="fa fa-bars"&gt;&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;&lt;/span&gt;
@@ -2479,7 +2479,7 @@
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-toggle a-toggle--tiny has-icon"&gt;
-  &lt;input class="a-toggle__checkbox" id="icon-toggle-tiny" type="checkbox"&gt;
+  &lt;input class="a-toggle__checkbox" id="icon-toggle-tiny" type="checkbox" role="switch" aria-checked="false"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="icon-toggle-tiny" class="a-toggle__on a-button a-button--tiny has-icon"&gt;
       &lt;span class="fa fa-bars"&gt;&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;&lt;/span&gt;
@@ -2494,7 +2494,7 @@
         <div class="d">
             <div>
                 <div class="a-toggle">
-                    <input class="a-toggle__checkbox" id="toggle-normal" type="checkbox">
+                    <input class="a-toggle__checkbox" id="toggle-normal" type="checkbox" role="switch" aria-checked="false">
                     <div class="a-toggle__labels">
                         <label for="toggle-normal" class="a-toggle__on a-button has-icon-left">
                             <span class="fa fa-bars"></span>
@@ -2509,7 +2509,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class="a-toggle"&gt;
-  &lt;input class="a-toggle__checkbox" id="toggle-normal" type="checkbox"&gt;
+  &lt;input class="a-toggle__checkbox" id="toggle-normal" type="checkbox" role="switch" aria-checked="false"&gt;
   &lt;div class="a-toggle__labels"&gt;
     &lt;label for="toggle-normal" class="a-toggle__on a-button has-icon-left"&gt;
       &lt;span class="fa fa-bars"&gt;&lt;/span&gt;
