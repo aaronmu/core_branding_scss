@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.0.0] - 2019-xx-xx
+## [4.0.0] - 2019-09-21
 ### Added
 - Added a new type of button that can only be used in the header
 - Added the `$header-btn-bg` and `$header-btn-color` variables
@@ -49,15 +49,12 @@
 - Updated the documentation for the collapsible list component
 - Updated the appearance of the tag component
 
-
 ### Removed
 - [BREAKING] Removed the `$font-size-ti` and `$font-size-xs` variables
 - [BREAKING] Removed the `$font-size-ti` and `$font-size-xs` variables
 - [BREAKING] Removed the ability to make the header fixed
 - [BREAKING] Removed the negative success, warning and danger buttons
 - Removed font-smoothing as it had unexpected results in different browsers
-
-#### Deprecated
 
 
 ## [3.2.2] - 2019-06-03
