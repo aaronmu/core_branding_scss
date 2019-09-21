@@ -534,10 +534,10 @@ $link-list-hover:           $grey-lighter !default;
 
 $datepicker-border:       $border-color !default;
 $datepicker-bg:           $white !default;
-$datepicker-bg-hover:      mix($brand-primary, $white, 20%) !default;
+$datepicker-bg-hover:      mix($brand-primary, $white, 15%) !default;
 
 $datepicker-today-color:          $brand-primary !default;
-$datepicker-today-bg:             mix($datepicker-today-color, $white, 20%) !default;
+$datepicker-today-bg:             mix($datepicker-today-color, $white, 15%) !default;
 $datepicker-today-border:         $datepicker-today-color !default;
 $datepicker-today-font-weight:    $extra-bold !default;
 
@@ -736,6 +736,8 @@ $header-height:           $spacer-lg !default;
 
 $header-bg:               $white !default;
 $header-border:           $border-color !default;
+$header-btn-bg:           $white !default;
+$header-btn-color:        $grey-dark !default;
 
 
 /**

@@ -89,8 +89,10 @@
       font-weight: $datepicker-selected-font-weight;
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         background-color: $datepicker-selected-bg;
+        box-shadow: 0 0 0 3px $input-border-focus;
       }
     }
 

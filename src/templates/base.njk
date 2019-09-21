@@ -73,13 +73,16 @@
         <a name="base-antwerpen-icons" aria-label="Antwerpen icons"></a>
         <h3 class="u-margin-top-lg">Antwerpen icons</h3>
         <span class="d-file">base/base.antwerpen-icons</span>
+        <div class="m-alert d-alert m-alert--wcag">
+            <p>In most cases your icon will need an appropriate text alternative. See the <a href="https://www.w3.org/TR/WCAG21/#non-text-content" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 1.1.1 Non-text Content" class="has-icon-right" target="_blank">non-text content success criterion<span class="fa fa-external-link"></span></a>.</p>
+        </div>
         <div class="d">
             <div>
                 <ul class="a-list--unstyled d-list d-list__antwerpen-icons">
                     {% for value in ICONS %}
                         <li>
-                            <i class="d-font d-font-lg icon-{{ value }}"></i>
-                            <code>&lt;i class="icon-{{ value }}"&gt;&lt;/i&gt;</code>
+                            <span class="d-font d-font-lg icon-{{ value }}"></span>
+                            <code>&lt;span class="icon-{{ value }}"&gt;&lt;/span&gt;</code>
                         </li>
                     {% endfor %}
                 </ul>

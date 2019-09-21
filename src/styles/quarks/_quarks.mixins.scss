@@ -55,11 +55,11 @@
     text-decoration: none;
 
     @if $_background != transparent and $_background != white {
-      background-color: mix($_background, $black, 85%);
+      background-color: mix($_background, $black, 90%);
     } @else if $_background == transparent {
       background-color: transparent;
     } @else {
-      background-color: mix($_background-hover, $white, 20%);
+      background-color: mix($_background-hover, $white, 8%);
     }
   }
 
@@ -101,7 +101,7 @@
     text-decoration: none;
 
     @if $_transparent == false {
-      background: mix($_border, $white, 20%);
+      background: mix($_border, $white, 4%);
       box-shadow: 0 0 0 1px mix($_border, $black, 85%) inset;
     } @else {
       color: mix($black, $_color, 40%);
@@ -110,7 +110,7 @@
 
   &:focus {
     @if $_transparent == false {
-      box-shadow: 0 0 0 1px mix($_border, $black, 85%) inset, 0 0 0 3px mix($_color, $white, 25%);
+      box-shadow: 0 0 0 1px mix($_border, $black, 90%) inset, 0 0 0 3px mix($_color, $white, 25%);
     } @else {
       box-shadow: 0 0 0 3px mix($_color, $white, 20%);
     }
