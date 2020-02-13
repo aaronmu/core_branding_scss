@@ -11,9 +11,6 @@ $overlay-color: #444;
 
 .o-menu {
   background: $white;
-  bottom: 0;
-  left: 0;
-  position: fixed;
   width: 100%;
   z-index: layer('pane');
 
@@ -216,6 +213,7 @@ $overlay-color: #444;
         display: flex;
         flex-direction: column;
         text-align: center;
+        align-items: center;
       }
 
       .a-icon {
@@ -366,10 +364,10 @@ $overlay-color: #444;
 .o-menu > .o-menu-navigation-pane {
   background: $white;
   max-height: calc(100vh - #{$mobile-menu-height});
-  position: absolute;
-  top: $mobile-menu-height;
   transition: transform $animation-speed ease;
   width: 100%;
+  position: absolute;
+  top: 0px;
   z-index: layer('header') - 1;
 
   .o-navigation-pane__overlay {
@@ -387,6 +385,9 @@ $overlay-color: #444;
     min-height: $spacer; // make up for the box shadow to be visible, even when hiddenq
     max-height: calc(100vh - #{$header-height} - #{$mobile-menu-height});
     overflow-y: scroll;
+    position: relative;
+    top: -$mobile-menu-height;
+    margin-bottom: -1px;
   }
 
   .main-submenu.slide-down {
@@ -418,10 +419,6 @@ $overlay-color: #444;
     & > .o-navigation-pane__overlay {
       min-height: 100vh;
       opacity: 0.8;
-    }
-
-    & > .o-navigation-pane__wrapper {
-      margin: -1px;
     }
   }
 

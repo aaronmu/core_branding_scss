@@ -436,6 +436,7 @@
                             <div class="o-menu-tab__wrapper">
                                 <div class="o-menu-tab__header">
                                     <div class="o-menu-tab__title">
+                                        <span class="a-icon a-tab-icon fa fa-file"></span>
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
                                     </div>
                                     <span class="a-icon a-tab-submenu-icon fa fa-angle-down"></span>
@@ -456,6 +457,16 @@
                                                 </div>
                                             </li>
                                         </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="o-menu-tab">
+                            <div class="o-menu-tab__wrapper">
+                                <div class="o-menu-tab__header">
+                                    <div class="o-menu-tab__title">
+                                        <span class="a-icon a-tab-icon fa fa-bars"></span>
+                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
                                     </div>
                                 </div>
                             </div>
@@ -494,7 +505,7 @@
                             <div class="o-menu-tab__wrapper">
                                 <div class="o-menu-tab__header">
                                     <div class="o-menu-tab__title">
-                                        <span class="a-icon a-tab-icon fa fa-bars"></span>
+                                        <span class="a-icon a-tab-icon fa fa-file"></span>
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
                                     </div>
                                     <span class="a-icon a-tab-submenu-icon fa fa-angle-down"></span>
@@ -533,33 +544,26 @@
                     <div class="o-menu__hide-cta">
                         <a href="#organisms-navigation-menu"><span class="fa fa-angle-double-right"></span></a>
                     </div>
-                </div>
-            </div>
-            <div>
-                 <pre class="a-pre a-pre--scrollable">
-                    <code>
-                    </code>
-                </pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <div class="o-menu">
-                    <div class="o-menu-navigation-pane">
-                        <div class='o-navigation-pane__overlay' (click)='closeMenu()'></div>
+                    <!-- We override the default position on purpose for the demo, we don't want it floating in absolute position -->
+                    <div class="o-menu-navigation-pane visible" style="position: static">
+
                         <div class="o-navigation-pane__wrapper u-bg-white">
-                            <ul class="m-nav-list m-nav-list--left">
-                                <li><a>One</a></li>
-                                <li><a>Two</a></li>
-                            </ul>
+                            <div class="main-submenu slide-down">
+                                <ul class="m-nav-list m-nav-list--left">
+                                    <li><a>one</a></li>
+                                    <li><a>Two</a></li>
+                                </ul>
+                            </div>
+                            <div class="slide-in-submenu">
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable">
+                 <pre class="a-pre a-pre--scrollable">
                     <code>
-                        nwkdfjhglsbdughvlbsudghlsdjkghlsbdu
                     </code>
                 </pre>
             </div>
