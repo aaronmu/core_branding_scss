@@ -16,7 +16,6 @@ $overlay-color: #444;
 
   @include at($screen-sm) {
     border-right: 1px solid $border-color;
-    //height: calc(100% + #{$header-height} + 2px); // Leave room for the dock/undock labels
     min-width: $menu-undocked-width;
     overflow-x: hidden; // By default, don't show overflowing content
     overflow-y: auto;
