@@ -180,7 +180,6 @@
     }
 
     & > .o-menu__tab-header {
-      //  @include a-button;
       @include a-button-outline($btn-primary-outline-color, $btn-primary-outline-border, true);
       align-items: center;
       color: $text-color-light;
@@ -277,7 +276,6 @@
         border: none $border-color;
         color: $text-color-light;
         display: flex;
-        height: $header-height;
         justify-content: space-between;
         overflow: hidden;
         white-space: nowrap;
