@@ -901,3 +901,15 @@ $slideshow-bg:                    $black !default;
 $slideshow-footer-color:          $text-color !default;
 $slideshow-footer-color-light:    $white !default;
 $slideshow-arrow-color:           $white !default;
+
+/**
+ * NAVIGATION MENU
+ * -------------------------------------------------------------------
+ */
+$navigation-menu-mobile-height: $spacer-xl;
+$navigation-menu-pane-width: 20rem;
+$navigation-menu-undocked-width: 15rem;
+$navigation-menu-docked-width: $header-height;
+$navigation-menu-submenu-inset: $spacer-xs;
+$navigation-menu-submenu-height: $navigation-menu-undocked-width * 2;
+$navigation-menu-animation-speed: 150ms;

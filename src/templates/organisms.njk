@@ -431,8 +431,8 @@
             <div>
                 <div class="o-menu">
                     <div class="o-menu__tabs-wrapper">
-                        <div class="o-menu-tab">
-                            <div class="o-menu-tab__wrapper">
+                        <div class="o-menu__tab">
+                            <div class="o-menu__tab-wrapper">
                                 <div class="o-menu-tab__header">
                                     <div class="o-menu-tab__title">
                                         <span class="a-icon a-tab-icon fa fa-bars"></span>
@@ -441,8 +441,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="o-menu-tab active">
-                            <div class="o-menu-tab__wrapper">
+                        <div class="o-menu__tab active">
+                            <div class="o-menu__tab-wrapper">
                                 <div class="o-menu-tab__header">
                                     <div class="o-menu-tab__title">
                                         <span class="a-icon a-tab-icon fa fa-file"></span>
@@ -471,8 +471,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="o-menu-tab">
-                            <div class="o-menu-tab__wrapper">
+                        <div class="o-menu__tab">
+                            <div class="o-menu__tab-wrapper">
                                 <div class="o-menu-tab__header">
                                     <div class="o-menu-tab__title">
                                         <span class="a-icon a-tab-icon fa fa-bars"></span>
@@ -491,7 +491,7 @@
                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu&quot;&gt;
     &lt;div class=&quot;o-menu__tabs-wrapper&quot;&gt;
         &lt;div class=&quot;o-menu-tab&quot;&gt;
-            &lt;div class=&quot;o-menu-tab__wrapper&quot;&gt;
+            &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
                 &lt;div class=&quot;o-menu-tab__header&quot;&gt;
                     &lt;div class=&quot;o-menu-tab__title&quot;&gt;
                         &lt;span class=&quot;a-icon a-tab-icon fa fa-bars&quot;&gt;&lt;/span&gt;
@@ -500,8 +500,8 @@
                 &lt;/div&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;o-menu-tab active&quot;&gt;
-            &lt;div class=&quot;o-menu-tab__wrapper&quot;&gt;
+        &lt;div class=&quot;o-menu__tab active&quot;&gt;
+            &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
                 &lt;div class=&quot;o-menu-tab__header&quot;&gt;
                     &lt;div class=&quot;o-menu-tab__title&quot;&gt;
                         &lt;span class=&quot;a-icon a-tab-icon fa fa-file&quot;&gt;&lt;/span&gt;
@@ -530,7 +530,7 @@
             &lt;/div&gt;
         &lt;/div&gt;
         &lt;div class=&quot;o-menu-tab&quot;&gt;
-            &lt;div class=&quot;o-menu-tab__wrapper&quot;&gt;
+            &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
                 &lt;div class=&quot;o-menu-tab__header&quot;&gt;
                     &lt;div class=&quot;o-menu-tab__title&quot;&gt;
                         &lt;span class=&quot;a-icon a-tab-icon fa fa-bars&quot;&gt;&lt;/span&gt;
@@ -548,15 +548,15 @@
             </div>
         </div>
         <div class="d">
-            <div>The Navigation Menu may also be 'docked'. This is achieved by only adding the <code>docked</code>
+            <div>The Navigation Menu may also be 'docked'. This is achieved by only adding the <code>is-docked</code>
             class to the <code>o-menu</code> element. Docked behaviour is only relevant for desktop layouts.</div>
         </div>
         <div class="d">
             <div>
-                <div class="o-menu docked">
+                <div class="o-menu is-docked">
                     <div class="o-menu__tabs-wrapper">
-                        <div class="o-menu-tab">
-                            <div class="o-menu-tab__wrapper">
+                        <div class="o-menu__tab">
+                            <div class="o-menu__tab-wrapper">
                                 <div class="o-menu-tab__header">
                                     <div class="o-menu-tab__title">
                                         <span class="a-icon a-tab-icon fa fa-bars"></span>
@@ -565,8 +565,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="o-menu-tab active">
-                            <div class="o-menu-tab__wrapper">
+                        <div class="o-menu__tab active">
+                            <div class="o-menu__tab-wrapper">
                                 <div class="o-menu-tab__header">
                                     <div class="o-menu-tab__title">
                                         <span class="a-icon a-tab-icon fa fa-file"></span>
@@ -595,8 +595,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="o-menu-tab">
-                            <div class="o-menu-tab__wrapper">
+                        <div class="o-menu__tab">
+                            <div class="o-menu__tab-wrapper">
                                 <div class="o-menu-tab__header">
                                     <div class="o-menu-tab__title">
                                         <span class="a-icon a-tab-icon fa fa-bars"></span>
@@ -613,13 +613,13 @@
                     <div class="o-menu-navigation-pane visible" style="position: static">
 
                         <div class="o-navigation-pane__wrapper u-bg-white">
-                            <div class="main-submenu slide-down">
+                            <div class="o-menu__main-submenu slide-down">
                                 <ul class="m-nav-list m-nav-list--left">
                                     <li><a>one</a></li>
                                     <li><a>Two</a></li>
                                 </ul>
                             </div>
-                            <div class="slide-in-submenu">
+                            <div class="o-menu__slide-in-submenu">
 
                             </div>
                         </div>
@@ -627,7 +627,7 @@
                 </div>
             </div>
             <div>
-                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu docked&quot;&gt;
+                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu is-docked&quot;&gt;
     &lt;!-- Exactly the same markup as the first example --&gt;
 &lt;/div&gt;
                  </code></pre>
@@ -640,16 +640,16 @@
                 that will overlay the whole page, designed to contain a <strong>Navigation List</strong>. The use
                 is intended for mobile only.</p>
                 <p>
-                    Use the <code>visible</code> class on the <code>slide-in-submenu</code> to create an animation
+                    Use the <code>is-visible</code> class on the <code>o-menu__slide-in-submenu</code> to create an animation
                     where the second menu slides from the right over the first menu.
                 </p>
             </div>
             <div>
-                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu-navigation-pane visible&quot;&gt;
+                 <pre class="a-pre a-pre--scrollable"><code>&lt;div class=&quot;o-menu-navigation-pane is-visible&quot;&gt;
 &lt;div class=&quot;o-navigation-pane__overlay&quot;&gt;&lt;/div&gt;
     &lt;div class=&quot;o-navigation-pane__wrapper&quot;&gt;
-        &lt;div class=&quot;main-submenu&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;slide-in-submenu visible&quot;&gt; &lt;/div&gt;
+        &lt;div class=&quot;o-menu__main-submenu&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;o-menu__slide-in-submenu is-visible&quot;&gt; &lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
