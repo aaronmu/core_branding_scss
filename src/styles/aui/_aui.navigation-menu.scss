@@ -39,16 +39,16 @@
         }
       }
 
-      .o-menu-submenu {
+      .o-menu__submenu {
         left: $navigation-menu-docked-width;
         position: absolute;
         top: -1px; // Make up for border
 
-        .o-menu-submenu {
+        .o-menu__submenu {
           left: 100%;
         }
 
-        .o-sub-menu__content-wrapper {
+        .o-menu__submenu-content-wrapper {
           box-shadow: $box-shadow;
           max-height: inherit;
           transition: width ease-in-out;
@@ -66,7 +66,7 @@
 
             li {
 
-              .a-icon {
+              .o-menu__icon {
                 transform: rotate(-90deg);
               }
 
@@ -78,7 +78,7 @@
           }
         }
 
-        .o-sub-menu__content-wrapper {
+        .o-menu__submenu-content-wrapper {
           width: $navigation-menu-undocked-width;
         }
       }
@@ -111,7 +111,7 @@
 
   // Only display the first 2 items on a mobile screen
   // and ignore the last element, since it will show a 'more...' menu tab
-  & > .o-menu-tab:nth-child(n + 3) {
+  & > .o-menu__tab:nth-child(n + 3) {
     &:not(:last-child) {
       display: none; //We will need to  display the 'more...' tab
 
@@ -155,11 +155,11 @@
       overflow-y: auto;
     }
 
-    .a-tab-submenu-icon {
+    .o-menu__submenu-icon {
       transform: rotate(180deg);
     }
 
-    & > .o-menu__tab-wrapper> .o-menu-submenu > .o-sub-menu__content-wrapper:first-of-type {
+    & > .o-menu__tab-wrapper> .o-menu__submenu > .o-menu__submenu-content-wrapper:first-of-type {
       display: block;
       max-height: $navigation-menu-submenu-height;
       overflow: visible;
@@ -179,7 +179,7 @@
       @include a-button-outline;
     }
 
-    & > .o-menu-tab__header {
+    & > .o-menu__tab-header {
       //  @include a-button;
       @include a-button-outline($btn-primary-outline-color, $btn-primary-outline-border, true);
       align-items: center;
@@ -201,22 +201,22 @@
         color: $text-color-light;
       }
 
-      .o-menu-tab__title {
+      .o-menu__tab-title {
         align-items: center;
         display: flex;
         flex-direction: column;
         text-align: center;
       }
 
-      .a-icon {
+      .o-menu__icon {
         font-size: $icon-size-base;
         margin-bottom: $spacer-xs / 2;
 
-        &.a-tab-icon {
+        &.o-menu__tab-icon {
           width: $icon-size-lg;
         }
 
-        &.a-tab-submenu-icon {
+        &.o-menu__submenu-icon {
           display: none;
           transition: transform $navigation-menu-animation-speed ease;
 
@@ -242,7 +242,7 @@
           margin-left: $spacer-sm;
         }
 
-        .o-menu-tab__title {
+        .o-menu__tab-title {
           align-items: center;
           display: flex;
           flex-direction: row;
@@ -252,14 +252,14 @@
   }
 }
 
-.o-menu .o-menu-submenu {
+.o-menu .o-menu__submenu {
   display: none;
 
   .u-cursor-pointer {
     cursor: pointer;
   }
 
-  .o-sub-menu__content-wrapper {
+  .o-menu__submenu-content-wrapper {
     background: $white;
     display: none;
     max-height: 0;
@@ -293,26 +293,26 @@
         }
       }
 
-      li > a > .a-icon {
+      li > a > .o-menu__icon {
         transform: rotate(0deg);
       }
     }
 
     @include at($screen-sm) {
-      li > a > .a-icon {
+      li > a > .o-menu__icon {
         margin-right: $spacer-xs /2;
         transform: rotate(0deg);
         transition: transform $navigation-menu-animation-speed ease-in-out;
       }
 
       li.active {
-        & > .o-menu-submenu > .o-sub-menu__content-wrapper {
+        & > .o-menu__submenu > .o-menu__submenu-content-wrapper {
           display: block;
           max-height: $navigation-menu-submenu-height;
           overflow: visible;
         }
 
-        & > a > .a-icon {
+        & > a > .o-menu__icon {
           transform: rotate(180deg);
         }
       }
@@ -320,7 +320,7 @@
   }
 
   // First sub-layer of menus will get larger padding
-  & .m-nav-list li .o-menu-submenu li > a {
+  & .m-nav-list li .o-menu__submenu li > a {
     padding-left: calc(#{$navigation-menu-docked-width} + #{$navigation-menu-submenu-inset * 2});
   }
 
@@ -343,7 +343,7 @@
   }
 }
 
-.o-menu > .o-menu-navigation-pane {
+.o-menu > .o-menu__navigation-pane {
   background: $white;
   max-height: calc(100vh - #{$navigation-menu-mobile-height});
   position: absolute;
@@ -379,7 +379,7 @@
       font-weight: normal;
     }
 
-    li > a > .a-icon {
+    li > a > .o-menu__icon {
       float: right;
       transform: rotate(-90deg);
     }
