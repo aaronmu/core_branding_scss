@@ -38,18 +38,18 @@ gulp.task('icon-sprite', function () {
                     common: 'ai',
                     prefix: '.ai-'
                 },
-                css: {
-                    dest: '',
-                    // example: true,
-                    sprite: '../images/sprite.svg',
-                    common: 'ai',
-                    prefix: '.ai-',
-                    render: {
-                        scss: {
-                            dest: '_antwerpen-icons.scss'
-                        }
-                    }
-                }
+                // css: {
+                //     dest: '',
+                //     busting: true,
+                //     sprite: '../images/sprite.svg',
+                //     common: 'ai',
+                //     prefix: '.ai-',
+                //     render: {
+                //         scss: {
+                //             dest: '_antwerpen-icons.scss'
+                //         }
+                //     }
+                // }
             },
             shape: {
                 dimension: {

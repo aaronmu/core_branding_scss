@@ -2,7 +2,6 @@
 // :: SASS
 // -------------------------------------------------------------------
 // - https://www.npmjs.org/package/gulp-sass
-// - https://www.npmjs.org/package/gulp-merge-media-queries
 // - https://www.npmjs.com/package/gulp-sourcemaps
 // - https://www.npmjs.com/package/gulp-postcss
 // - https://www.npmjs.com/package/autoprefixer
@@ -16,7 +15,6 @@ var gulp = require('gulp');
 var fs = require('fs');
 
 var sass = require('gulp-sass'),
-    mergeMediaQueries = require('gulp-merge-media-queries'),
     sourcemaps = require('gulp-sourcemaps'),
     postcss = require("gulp-postcss"),
     autoprefixer = require("autoprefixer"),
@@ -53,7 +51,6 @@ gulp.task('sass', function () {
     return gulp.src('src/styles/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
         .pipe(gulp.dest('.tmp/styles'));
 });
@@ -72,7 +69,6 @@ gulp.task('sass:dist', function(){
 
     return gulp.src(['src/styles/**/*.scss', '!src/styles/**/styleguide.scss'])
         .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
         .pipe(license('/*\n' + fs.readFileSync('LICENSE.md', 'utf8') + '*/'))
         .pipe(cssUrlAdjuster({

@@ -1,0 +1,23 @@
+/**
+ * ICONS
+ * -------------------------------------------------------------------
+ */
+
+.ai {
+  display: inline-block;
+
+  // Normalize the icons width and height and prepare them for scalability
+  &,
+  svg {
+    height: 1em;
+    width: 1em;
+  }
+
+  svg {
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4%; // Percentages don't give weird results when zooming in
+  }
+}
