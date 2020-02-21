@@ -33,7 +33,7 @@
         width: calc(#{$navigation-menu-docked-width} - 1px); // 1 px make up for border
 
         .o-menu__tab-wrapper{
-          &:not(.active) {
+          &:not(.is-active) {
             overflow: hidden;
           }
         }
@@ -150,7 +150,7 @@
     border-right: none;
   }
 
-  &.active {
+  &.is-active {
     .o-menu__tab-wrapper{
       overflow-y: auto;
     }
@@ -303,7 +303,7 @@
         transition: transform $navigation-menu-animation-speed ease-in-out;
       }
 
-      li.active {
+      li.is-active {
         & > .o-menu__submenu > .o-menu__submenu-content-wrapper {
           display: block;
           max-height: $navigation-menu-submenu-height;
