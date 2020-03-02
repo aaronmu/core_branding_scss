@@ -206,13 +206,15 @@ textarea {
 .a-input__checkbox,
 .a-input__radio {
   input {
+    min-height: 0;
     opacity: 0;
+    width: auto;
 
     &:focus + label:after {
       box-shadow: 0 0 0 3px $input-border-focus;
     }
   }
-}
+s}
 
 
 /**
