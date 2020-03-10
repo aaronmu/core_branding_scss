@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.0.0] - 2020-xx-xx
+### Added
+- [BREAKING] Replaced the complete icon set
+- [BREAKING] Updated avatar to work with the new icon library
+
+
 ## [4.1.1] - 2020-03-02
 ### Fixed
 - Fixed an issue where checkboxes and radio buttons could move out of bounds
