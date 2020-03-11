@@ -4,13 +4,18 @@
  */
 
 .ai {
-  display: inline-block;
+  align-self: center;
+  display: inline-flex;
+  justify-content: center;
 
   // Normalize the icons width and height and prepare them for scalability
-  &,
+  // &,
   svg {
-    height: 1em;
-    width: 1em;
+    height: .875em;
+    // height: 1.125em;
+    position: relative;
+    width: .875em;
+    // width: 1.125em;
   }
 
   svg {
@@ -18,6 +23,12 @@
     stroke: currentColor;
     stroke-linecap: round;
     stroke-linejoin: round;
-    stroke-width: 5%; // Percentages don't give weird results when zooming in
+    stroke-width: 6%; // Percentages don't give weird results when zooming in
+  }
+
+  &-inline {
+    svg {
+      top: .125em;
+    }
   }
 }

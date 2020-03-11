@@ -166,11 +166,11 @@ dl {
     @extend %a-list--unstyled;
   }
 
-  &.has-icon-left > li .fa {
+  &.has-icon-left > li .ai {
     margin-right: $spacer-xs;
   }
 
-  &.has-icon-right > li .fa {
+  &.has-icon-right > li .ai {
     margin-left: $spacer-xs;
   }
 }

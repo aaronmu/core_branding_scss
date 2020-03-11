@@ -45,10 +45,6 @@
         background-color: $radio-checkbox-bg;
         box-shadow: 0 0 0 1px $radio-checkbox-bg inset;
       }
-
-      &:after {
-        @include fontawesome;
-      }
     }
 
     &:disabled {
@@ -109,7 +105,7 @@
 
 .a-input__checkbox input[type='checkbox']:checked {
   + label:after {
-    content: '\f00c';
+    background: url('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEwLDE4LjQ5QTEuNzcsMS43NywwLDAsMSw4LjY5LDE4TDYsMTUuMzFhMS43OCwxLjc4LDAsMCwxLDIuNTItMi41Mkw5LjczLDE0bDUuNTQtNy43MmExLjc4LDEuNzgsMCwxLDEsMi44OSwyLjA3TDExLjQsMTcuNzVhMS44LDEuOCwwLDAsMS0xLjMuNzRaIi8+PC9zdmc+') no-repeat;
   }
 
   &:disabled {

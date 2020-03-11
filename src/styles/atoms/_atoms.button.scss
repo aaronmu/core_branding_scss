@@ -35,7 +35,7 @@
     width: auto;
   }
 
-  .fa {
+  .ai {
     font-size: rem($btn-icon-size);
     line-height: 0;
   }
@@ -252,8 +252,12 @@
     min-height: $spacer;
     padding: ($spacer-xs / 4) $spacer-xs ($spacer-xs / 3);
 
-    .fa {
+    .ai {
       font-size: rem($btn-icon-size-ti);
+
+      svg {
+        stroke-width: 8%;
+      }
     }
   }
 
@@ -262,8 +266,12 @@
     min-height: $spacer-md;
     padding: ($spacer-sm / 2) $spacer;
 
-    .fa {
+    .ai {
       font-size: rem($btn-icon-size-sm);
+
+      svg {
+        stroke-width: 8%;
+      }
     }
   }
 
@@ -272,7 +280,7 @@
     min-height: $spacer-xl;
     padding: $spacer-sm $spacer;
 
-    .fa {
+    .ai {
       font-size: rem($btn-icon-size-lg);
     }
   }
@@ -293,7 +301,7 @@
   &.has-icon-right {
     position: relative;
 
-    .fa {
+    .ai {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -304,7 +312,7 @@
   &.has-icon-left {
     padding-left: $spacer-lg;
 
-    .fa {
+    .ai {
       left: 0;
     }
   }
@@ -312,7 +320,7 @@
   &.has-icon-right {
     padding-right: $spacer-lg;
 
-    .fa {
+    .ai {
       right: 0;
     }
   }
@@ -320,8 +328,8 @@
 
 .a-button--tiny {
 
-  &.has-icon-left .fa,
-  &.has-icon-right .fa {
+  &.has-icon-left .ai,
+  &.has-icon-right .ai {
     width: $spacer;
   }
 
@@ -336,8 +344,8 @@
 
 .a-button--small {
 
-  &.has-icon-left .fa,
-  &.has-icon-right .fa {
+  &.has-icon-left .ai,
+  &.has-icon-right .ai {
     width: $spacer-md;
   }
 
@@ -352,8 +360,8 @@
 
 .a-button--large {
 
-  &.has-icon-left .fa,
-  &.has-icon-right .fa {
+  &.has-icon-left .ai,
+  &.has-icon-right .ai {
     width: $spacer-xl;
   }
 
@@ -384,11 +392,11 @@
     vertical-align: middle;
     width: $spacer-lg;
 
-    .fa {
+    .ai {
       left: 0;
-      line-height: $spacer-lg;
       position: absolute;
-      top: 0;
+      top: 50%;
+      transform: translateY(-50%);
       width: $spacer-lg;
     }
   }
@@ -397,8 +405,7 @@
 .a-button--tiny.has-icon {
   width: $spacer;
 
-  .fa {
-    line-height: $spacer;
+  .ai {
     width: $spacer;
   }
 }
@@ -406,8 +413,7 @@
 .a-button--small.has-icon {
   width: $spacer-md;
 
-  .fa {
-    line-height: $spacer-md;
+  .ai {
     width: $spacer-md;
   }
 }
@@ -415,8 +421,7 @@
 .a-button--large.has-icon {
   width: $spacer-xl;
 
-  .fa {
-    line-height: $spacer-xl;
+  .ai {
     width: $spacer-xl;
   }
 }

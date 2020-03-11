@@ -10,16 +10,16 @@
  */
 
 a:not(.a-button):not(.a-button-outline):not(.a-button-negative):not(.a-button-transparent) {
-  &.has-icon-left .fa,
-  &.has-icon-right .fa {
+  &.has-icon-left .ai,
+  &.has-icon-right .ai {
     font-size: .875rem;
   }
 
-  &.has-icon-left .fa {
+  &.has-icon-left .ai {
     padding-right: $spacer / 3;
   }
 
-  &.has-icon-right .fa {
+  &.has-icon-right .ai {
     padding-left: $spacer / 3;
   }
 }
