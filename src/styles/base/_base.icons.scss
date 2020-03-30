@@ -19,11 +19,11 @@
   }
 
   svg {
-    fill: currentColor;
+    fill: none;
     stroke: currentColor;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-width: 6%; // Percentages don't give weird results when zooming in
+    // stroke-linecap: round;
+    // stroke-linejoin: round;
+    // stroke-width: .5; // Percentages don't give weird results when zooming in
   }
 
   &-inline {

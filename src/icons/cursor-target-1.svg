@@ -1,1 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><svg version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke-linecap="round" stroke-width="1" stroke="#000" fill="none" stroke-linejoin="round"><circle cx="12" cy="11.998" r="8"></circle><line x1="12" x2="12" y1="1" y2="7"></line><line x1="1" x2="7" y1="12" y2="12"></line><line x1="12" x2="12" y1="23" y2="17"></line><line x1="23" x2="17" y1="12" y2="12"></line></g></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:0.85;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	<circle class="st0" cx="7.5" cy="7.5" r="5.1"/>
+	<line class="st0" x1="7.5" y1="0.5" x2="7.5" y2="4.3"/>
+	<line class="st0" x1="0.5" y1="7.5" x2="4.3" y2="7.5"/>
+	<line class="st0" x1="7.5" y1="14.5" x2="7.5" y2="10.7"/>
+	<line class="st0" x1="14.5" y1="7.5" x2="10.7" y2="7.5"/>
+</g>
+</svg>

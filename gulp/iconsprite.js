@@ -10,6 +10,28 @@ var cheerio = require('gulp-cheerio'),
 
 gulp.task('icon-sprite', function () {
     return gulp.src('src/icons/*.svg')
+        .pipe(svgSprite({
+            dest: 'styles',
+            mode: {
+                symbol: {
+                    dest: '',
+                    sprite: '../images/ai.svg',
+                    common: 'ai',
+                    prefix: '.ai-'
+                },
+            },
+            shape: {
+                dimension: {
+                    maxWidth: 48,
+                    maxHeight: 48
+                }
+            }
+        }))
+        .pipe(gulp.dest('src/styles/'));
+});
+
+gulp.task('icon-sprite-prev', function () {
+    return gulp.src('src/icons/*.svg')
         .pipe(cheerio({
             run: function ($) {
                 $('[stroke]').removeAttr('stroke');
