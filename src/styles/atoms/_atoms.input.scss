@@ -135,8 +135,8 @@ textarea {
     @include a-input($input-color, $input-bg, $input-success-border, $input-success-border-focus);
 
     .a-input__wrapper:before {
-      color: $input-success-icon;
-      content: '\f00c';
+      background: $state-success;
+      mask: url('../icons/check-1.svg') no-repeat center center;
     }
   }
 
@@ -144,8 +144,8 @@ textarea {
     @include a-input($input-color, $input-bg, $input-warning-border, $input-warning-border-focus);
 
     .a-input__wrapper:before {
-      color: $input-warning-icon;
-      content: '\f071';
+      background: $state-warning;
+      mask: url('../icons/alert-triangle.svg') no-repeat center center;
     }
   }
 
@@ -153,8 +153,8 @@ textarea {
     @include a-input($input-color, $input-bg, $input-danger-border, $input-danger-border-focus);
 
     .a-input__wrapper:before {
-      color: $input-danger-icon;
-      content: '\f071';
+      background: $state-danger;
+      mask: url('../icons/alert-triangle.svg') no-repeat center center;
     }
   }
 
@@ -163,12 +163,11 @@ textarea {
   &.has-error {
 
     .a-input__wrapper:before {
-      @include fontawesome;
-      font-size: 1.25rem;
-      line-height: $spacer-lg;
+      content: '';
+      height: $spacer;
+      mask-size: contain;
       position: absolute;
       right: 0;
-      text-align: center;
       top: 50%;
       transform: translateY(-50%);
       width: $spacer-lg;

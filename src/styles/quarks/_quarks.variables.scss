@@ -563,7 +563,7 @@ $accordion-header-bg:         $white !default;
 $accordion-header-bg-hover:   $background-color-light !default;
 $accordion-content-bg:        $accordion-header-bg !default;
 $accordion-icon-color:        $brand-primary !default;
-$accordion-icon-size:         $font-size-lg !default;
+$accordion-icon-size:         $icon-size-sm !default;
 $accordion-header-padding:    $spacer-xs $spacer-lg $spacer-xs $spacer-xs !default;
 $accordion-content-padding:   $spacer !default;
 
@@ -808,7 +808,7 @@ $nav-color-active:            $nav-color-hover !default;
 $nav-bg:                      transparent !default;
 $nav-bg-hover:                $grey-lighter !default;
 $nav-bg-active:               $nav-bg !default;
-$nav-padding:                 $spacer / 3 * 2 $spacer !default;
+$nav-padding:                 rem(13px) $spacer !default;
 $nav-bg-disabled:             $grey-lighter !default;
 $nav-color-disabled:          $state-disabled !default;
 $nav-tab-color-disabled:      $nav-color-disabled !default;

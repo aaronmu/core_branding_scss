@@ -13,6 +13,7 @@ a:not(.a-button):not(.a-button-outline):not(.a-button-negative):not(.a-button-tr
   &.has-icon-left .ai,
   &.has-icon-right .ai {
     font-size: .875rem;
+    vertical-align: middle;
   }
 
   &.has-icon-left .ai {

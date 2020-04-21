@@ -13,10 +13,18 @@ gulp.task('icon-sprite', function () {
         .pipe(svgSprite({
             dest: 'styles',
             mode: {
+                // css: {
+                //     dest: '',
+                //     sprite: '../images/ai.svg',
+                //     common: 'ai',
+                //     inline: true,
+                //     prefix: '.ai-'
+                // },
                 symbol: {
                     dest: '',
                     sprite: '../images/ai.svg',
                     common: 'ai',
+                    inline: true,
                     prefix: '.ai-'
                 },
             },

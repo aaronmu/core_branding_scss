@@ -16,7 +16,7 @@
   &.is-open {
 
     .m-accordion__header:after {
-      content: '\f106';
+      mask: url('../icons/arrow-up-1.svg') no-repeat center center;
     }
 
     .m-accordion__content {
@@ -44,14 +44,16 @@
   }
 
   &:after {
-    @include fontawesome;
-    color: $accordion-icon-color;
-    content: '\f107';
-    font-size: rem($accordion-icon-size);
+    background: $accordion-icon-color;
+    content: '';
+    height: rem($accordion-icon-size);
+    mask: url('../icons/arrow-down-1.svg') no-repeat center center;
+    mask-size: contain;
     position: absolute;
-    right: $spacer-sm;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
+    width: $spacer-lg;
   }
 }
 

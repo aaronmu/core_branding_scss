@@ -121,14 +121,14 @@
     content: '';
     height: 1.25rem;
     left: $spacer-xs;
-    mask-image: url('/@a-ui/icons/dist/assets/icons/location-user.svg');
+    // mask-image: url('/@a-ui/icons/dist/assets/icons/location-user.svg');
     position: absolute;
     top: $spacer-xs;
     width: 1.25rem;
 
     @supports (mask-image: url('')) {
       background-color: transparent;
-      background-image: url('/@a-ui/icons/dist/assets/icons/location-user.svg');
+      // background-image: url('/@a-ui/icons/dist/assets/icons/location-user.svg');
     }
 
   }

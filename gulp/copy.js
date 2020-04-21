@@ -35,6 +35,9 @@ gulp.task('copy:docs', function() {
     var imagesStream = gulp.src('src/images/**/*')
         .pipe(gulp.dest('docs/images'));
 
+    var iconsStream = gulp.src('src/icons/**/*')
+        .pipe(gulp.dest('docs/icons'));
+
     var fontsStream = gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('docs/fonts'));
 

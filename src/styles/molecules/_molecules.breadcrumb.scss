@@ -18,10 +18,14 @@
     }
 
     &:not(:last-child):after {
-      @include fontawesome;
-      color: $breadcrumb-arrow-color;
-      content: '\f105';
+      background: $breadcrumb-arrow-color;
+      content: '';
+      display: inline-block;
+      height: rem($icon-size-ti);
       margin: 0 $spacer-xs;
+      mask: url('../icons/arrow-right-1.svg') no-repeat center center;
+      vertical-align: middle;
+      width: rem($icon-size-ti);
     }
   }
 }
