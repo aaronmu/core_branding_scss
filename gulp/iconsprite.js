@@ -32,6 +32,9 @@ gulp.task('icon-sprite', function () {
                 dimension: {
                     maxWidth: 48,
                     maxHeight: 48
+                },
+                spacing: {
+                    padding: 1
                 }
             }
         }))
