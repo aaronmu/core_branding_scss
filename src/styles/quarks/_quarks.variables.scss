@@ -902,14 +902,51 @@ $slideshow-footer-color:          $text-color !default;
 $slideshow-footer-color-light:    $white !default;
 $slideshow-arrow-color:           $white !default;
 
+
 /**
  * NAVIGATION MENU
  * -------------------------------------------------------------------
  */
-$navigation-menu-mobile-height: $spacer-xl;
-$navigation-menu-pane-width: 20rem;
-$navigation-menu-undocked-width: 15rem;
-$navigation-menu-docked-width: $header-height;
-$navigation-menu-submenu-inset: $spacer-xs;
-$navigation-menu-submenu-height: $navigation-menu-undocked-width * 2;
-$navigation-menu-animation-speed: 150ms;
+$navigation-menu-mobile-height: $spacer-xl !default;
+$navigation-menu-pane-width: 20rem !default;
+$navigation-menu-undocked-width: 15rem !default;
+$navigation-menu-docked-width: $header-height !default;
+$navigation-menu-submenu-inset: $spacer-xs !default;
+$navigation-menu-submenu-height: $navigation-menu-undocked-width * 2 !default;
+$navigation-menu-animation-speed: 150ms !default;
+
+
+/**
+ * ARTICLE
+ * -------------------------------------------------------------------
+ */
+$article-h1-font-family: $font-family-headings !default;
+$article-h1-font-size: $font-size-h2 !default;
+$article-h1-font-weight: normal;
+$article-h1-margin: $spacer-lg 0 $spacer !default;
+$article-h2-font-family: $font-family-headings !default;
+$article-h2-font-size: $font-size-h3 !default;
+$article-h2-font-weight: normal;
+$article-h2-margin: $spacer-lg 0 $spacer !default;
+$article-h3-font-family: $font-family-base !default;
+$article-h3-font-size: $font-size-h5 !default;
+$article-h3-font-weight: $bold;
+$article-h3-margin: $spacer 0  $spacer-xs !default;
+$article-h4-font-family: $font-family-base !default;
+$article-h4-font-size: $font-size-h6 !default;
+$article-h4-font-weight: $bold;
+$article-h4-margin: $spacer 0  $spacer-xs !default;
+$article-h5-font-family: $font-family-base !default;
+$article-h5-font-size: $font-size-base !default;
+$article-h5-font-weight: $bold;
+$article-h5-margin: $spacer-xs 0 $spacer-xs / 2 !default;
+$article-h6-font-family: $font-family-base !default;
+$article-h6-font-size: $font-size-base !default;
+$article-h6-font-weight: $bold;
+$article-h6-margin: $spacer-xs 0 $spacer-xs / 2 !default;
+$article-p-font-size: $font-size-base !default;
+$article-p-margin: 0 0 $spacer-xs / 2 !default;
+$article-ul-font-size: $font-size-base !default;
+$article-ul-margin: 0 0 $spacer-xs / 2 !default;
+$article-ol-font-size: $font-size-base !default;
+$article-ol-margin: 0 0 $spacer-xs / 2 !default;
