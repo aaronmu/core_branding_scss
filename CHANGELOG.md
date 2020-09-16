@@ -1,6 +1,12 @@
 # Changelog
 
-## [4.2.0] - 2020-09-16
+## [4.2.1] - 2020-09-16
+
+### Fixed
+- Fixed not all files being available in npm
+
+
+## [4.2.0] - 2020-09-16 - BORKED
 ### Added
 - Added an article organism that automatically styles basic html text elements
 
@@ -247,6 +253,7 @@
 - Initial release.
 
 
+[4.2.1]: https://github.com/a-ui/core_branding_scss/tree/v4.2.1
 [4.2.0]: https://github.com/a-ui/core_branding_scss/tree/v4.2.0
 [4.1.1]: https://github.com/a-ui/core_branding_scss/tree/v4.1.1
 [4.1.0]: https://github.com/a-ui/core_branding_scss/tree/v4.1.0
