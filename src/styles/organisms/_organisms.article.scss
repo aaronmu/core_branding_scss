@@ -1,0 +1,68 @@
+/**
+ * ARTICLE
+ * -------------------------------------------------------------------
+ */
+
+.o-article {
+  h1 {
+    font-family: $article-h1-font-family;
+    font-size: rem($article-h1-font-size);
+    font-weight: $article-h1-font-weight;
+    margin: $article-h1-margin;
+  }
+
+  h2 {
+    font-family: $article-h2-font-family;
+    font-size: rem($article-h2-font-size);
+    font-weight: $article-h2-font-weight;
+    margin: $article-h2-margin;
+  }
+
+  h3 {
+    font-family: $article-h3-font-family;
+    font-size: rem($article-h3-font-size);
+    font-weight: $article-h3-font-weight;
+    margin: $article-h3-margin;
+  }
+
+  h4 {
+    font-family: $article-h4-font-family;
+    font-size: rem($article-h4-font-size);
+    font-weight: $article-h4-font-weight;
+    margin: $article-h4-margin;
+  }
+
+  h5 {
+    font-family: $article-h5-font-family;
+    font-size: rem($article-h5-font-size);
+    font-weight: $article-h5-font-weight;
+    margin: $article-h5-margin;
+  }
+
+  h6 {
+    font-family: $article-h6-font-family;
+    font-size: rem($article-h6-font-size);
+    font-weight: $article-h6-font-weight;
+    margin: $article-h6-margin;
+  }
+
+  p {
+    font-size: rem($article-p-font-size);
+    margin: $article-p-margin;
+  }
+
+  ul {
+    font-size: rem($article-ul-font-size);
+    margin: $article-ul-margin;
+  }
+
+  ol {
+    font-size: rem($article-ol-font-size);
+    margin: $article-ol-margin;
+  }
+
+  // Fix margin of first item in article
+  *:first-child {
+    margin-top: 0;
+  }
+}
