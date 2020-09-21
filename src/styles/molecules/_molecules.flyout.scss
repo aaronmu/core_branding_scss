@@ -127,3 +127,13 @@
 .m-flyout__content.m-datepicker {
   border: none;
 }
+
+
+/**
+ * FLYOUT FOCUS OUTLINE FIX
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout:focus {
+  outline: none;
+}

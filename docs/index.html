@@ -80,7 +80,7 @@
 
         <div class="u-wrapper d-h1 u-text-xlight u-bg-primary">
             <div class="u-container">
-                <h1>Antwerp branding styleguide <small class="u-bg-secondary u-text-xlight">v4.1.1</small></h1>
+                <h1>Antwerp branding styleguide <small class="u-bg-secondary u-text-xlight">v4.2.1</small></h1>
                 <p class="u-margin-top">A collection of building blocks for your next Antwerp-based application.</p>
             </div>
         </div>
@@ -102,9 +102,9 @@
 
             <h3 class="h5 has-base-font u-text-bold u-margin-top-lg">Basic implementation</h3>
             <p class="u-margin-top u-margin-bottom-xs">In its simplest form you can just include the following line in the <code>&lt;head&gt;</code> section of your app.</p>
-            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.1.1/main.min.css"&gt;</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.2.1/main.min.css"&gt;</code></pre>
             <p class="u-margin-top u-margin-bottom-xs">You can even import it directly in your (S)CSS:</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/4.1.1/main.min.css");</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/4.2.1/main.min.css");</code></pre>
             <div class="m-alert d-alert u-margin-top">
                 <p>We adopt semantic versioning. If you want to use another version of the Core Branding you can do so by adjusting the version in the URL address. See the changelog for all available versions.</p>
             </div>
@@ -120,14 +120,14 @@
             <p class="u-margin-top u-margin-bottom-xs">It's also possible to only load the Antwerp fonts. Just like you would implement a font from Google. These are the links you can use:</p>
             <h4 class="h6 has-base-font u-text-bold u-margin-top">Antwerpen</h4>
             <p class="u-margin-top-xs u-margin-bottom-xs">Available in Small, Regular and Tall.</p>
-            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.1.1/antwerpen.min.css"&gt;</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.2.1/antwerpen.min.css"&gt;</code></pre>
             <p class="u-margin-bottom-top-xxs">or</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/4.1.1/antwerpen.min.css");</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/4.2.1/antwerpen.min.css");</code></pre>
             <h4 class="h6 has-base-font u-text-bold u-margin-top">Sun Antwerpen</h4>
             <p class="u-margin-top-xs u-margin-bottom-xs">Available in Light, Regular, Bold and Extra Bold.</p>
-            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.1.1/sun-antwerpen.min.css"&gt;</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>&lt;link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.2.1/sun-antwerpen.min.css"&gt;</code></pre>
             <p class="u-margin-bottom-top-xxs">or</p>
-            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/4.1.1/sun-antwerpen.min.css");</code></pre>
+            <pre class="a-pre a-pre--scrollable"><code>@import url("https://cdn.antwerpen.be/core_branding_scss/4.2.1/sun-antwerpen.min.css");</code></pre>
 
             <h2 class="u-margin-top-lg">Accessibility</h2>
             <p class="u-margin-top u-margin-bottom-xs"><a href="https://www.w3.org/TR/WCAG21/" title="Web Content Accessibility Guidelines (WCAG) 2.1" target="_blank" class="has-icon-right">Web Content Accessibility Guidelines (WCAG) 2.1<span class="fa fa-external-link"></span></a> cover a wide range of recommendations for making web content more accessible.</p>
@@ -240,6 +240,7 @@
         <div class="d-toc__cell">
             <h3 class="h5 has-base-font u-text-bold u-margin-bottom-xs">Organisms</h3>
             <ul class="a-list a-list--unstyled a-list__toc">
+                <li><a href="#organisms-article">Article</a></li>
                 <li><a href="#organisms-footer">Footer</a></li>
                 <li><a href="#organisms-header">Header</a></li>
                 <li><a href="#organisms-navigation-menu">Navigation menu</a></li>
@@ -2256,15 +2257,143 @@
                         </li>
                     
                         <li class="d-navigation-menu-mobile-height">
-                            <code>$navigation-menu-mobile-height</code>: $spacer * 2.5
+                            <code>$navigation-menu-mobile-height</code>: $spacer-xl
+                        </li>
+                    
+                        <li class="d-navigation-menu-pane-width">
+                            <code>$navigation-menu-pane-width</code>: 20rem
+                        </li>
+                    
+                        <li class="d-navigation-menu-undocked-width">
+                            <code>$navigation-menu-undocked-width</code>: 15rem
                         </li>
                     
                         <li class="d-navigation-menu-docked-width">
-                            <code>$navigation-menu-docked-width</code>: $spacer-lg
+                            <code>$navigation-menu-docked-width</code>: $header-height
                         </li>
                     
                         <li class="d-navigation-menu-submenu-inset">
-                            <code>$navigation-menu-submenu-inset</code>: $spacer * .5
+                            <code>$navigation-menu-submenu-inset</code>: $spacer-xs
+                        </li>
+                    
+                        <li class="d-navigation-menu-submenu-height">
+                            <code>$navigation-menu-submenu-height</code>: $navigation-menu-undocked-width * 2
+                        </li>
+                    
+                        <li class="d-navigation-menu-animation-speed">
+                            <code>$navigation-menu-animation-speed</code>: 150ms
+                        </li>
+                    
+                        <li class="d-article-h1-font-family">
+                            <code>$article-h1-font-family</code>: $font-family-headings
+                        </li>
+                    
+                        <li class="d-article-h1-font-size">
+                            <code>$article-h1-font-size</code>: $font-size-h2
+                        </li>
+                    
+                        <li class="d-article-h1-margin">
+                            <code>$article-h1-margin</code>: $spacer-lg 0 $spacer
+                        </li>
+                    
+                        <li class="d-article-h2-font-family">
+                            <code>$article-h2-font-family</code>: $font-family-headings
+                        </li>
+                    
+                        <li class="d-article-h2-font-size">
+                            <code>$article-h2-font-size</code>: $font-size-h3
+                        </li>
+                    
+                        <li class="d-article-h2-margin">
+                            <code>$article-h2-margin</code>: $spacer-lg 0 $spacer
+                        </li>
+                    
+                        <li class="d-article-h3-font-family">
+                            <code>$article-h3-font-family</code>: $font-family-base
+                        </li>
+                    
+                        <li class="d-article-h3-font-size">
+                            <code>$article-h3-font-size</code>: $font-size-h5
+                        </li>
+                    
+                        <li class="d-article-h3-font-weight">
+                            <code>$article-h3-font-weight</code>: 700
+                        </li>
+                    
+                        <li class="d-article-h3-margin">
+                            <code>$article-h3-margin</code>: $spacer 0  $spacer-xs
+                        </li>
+                    
+                        <li class="d-article-h4-font-family">
+                            <code>$article-h4-font-family</code>: $font-family-base
+                        </li>
+                    
+                        <li class="d-article-h4-font-size">
+                            <code>$article-h4-font-size</code>: $font-size-h6
+                        </li>
+                    
+                        <li class="d-article-h4-font-weight">
+                            <code>$article-h4-font-weight</code>: 700
+                        </li>
+                    
+                        <li class="d-article-h4-margin">
+                            <code>$article-h4-margin</code>: $spacer 0  $spacer-xs
+                        </li>
+                    
+                        <li class="d-article-h5-font-family">
+                            <code>$article-h5-font-family</code>: $font-family-base
+                        </li>
+                    
+                        <li class="d-article-h5-font-size">
+                            <code>$article-h5-font-size</code>: $font-size-base
+                        </li>
+                    
+                        <li class="d-article-h5-font-weight">
+                            <code>$article-h5-font-weight</code>: 700
+                        </li>
+                    
+                        <li class="d-article-h5-margin">
+                            <code>$article-h5-margin</code>: $spacer-xs 0 $spacer-xs / 2
+                        </li>
+                    
+                        <li class="d-article-h6-font-family">
+                            <code>$article-h6-font-family</code>: $font-family-base
+                        </li>
+                    
+                        <li class="d-article-h6-font-size">
+                            <code>$article-h6-font-size</code>: $font-size-base
+                        </li>
+                    
+                        <li class="d-article-h6-font-weight">
+                            <code>$article-h6-font-weight</code>: 700
+                        </li>
+                    
+                        <li class="d-article-h6-margin">
+                            <code>$article-h6-margin</code>: $spacer-xs 0 $spacer-xs / 2
+                        </li>
+                    
+                        <li class="d-article-p-font-size">
+                            <code>$article-p-font-size</code>: $font-size-base
+                        </li>
+                    
+                        <li class="d-article-p-margin">
+                            <code>$article-p-margin</code>: 0 0 $spacer-xs / 2
+                        </li>
+                    
+                        <li class="d-article-ul-font-size">
+                            <code>$article-ul-font-size</code>: $font-size-base
+                        </li>
+                    
+                        <li class="d-article-ul-margin">
+                            <code>$article-ul-margin</code>: 0 0 $spacer-xs / 2
+                        </li>
+                    
+                        <li class="d-article-ol-font-size">
+                            <code>$article-ol-font-size</code>: $font-size-base
+                        </li>
+                    
+                        <li class="d-article-ol-margin">
+                            <code>$article-ol-margin</code>: 0 0 $spacer-xs / 2
                         </li>
                     
                 </ul>
@@ -8681,6 +8810,76 @@
     </div>
 </div>
 <div class="u-wrapper">
+    <div class="u-container">
+        <a name="organisms-article" aria-label="Article"></a>
+        <h3 class="u-margin-top-lg">Article</h3>
+        <span class="d-file">organisms/organisms.article</span>
+        <div class="d">
+            <div>
+                <p>Use this wrapper class to style basic html tags without any extra classes.</p>
+            </div>
+        </div>
+        <div class="d">
+            <div class="o-article">
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2>Heading 2</h2>
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                    <li>sit:
+                        <ul>
+                            <li>amet</li>
+                            <li>consectetur</li>
+                        </ul>
+                    </li>
+                    <li>adipisicing elit</li>
+                </ul>
+                <h3>Heading 3</h3>
+                <ol>
+                    <li>Lorem ipsum dolor</li>
+                    <li>sit:
+                        <ul>
+                            <li>amet</li>
+                            <li>consectetur</li>
+                        </ul>
+                    </li>
+                    <li>adipisicing elit</li>
+                </ol>
+                <h4>Heading 4</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h5>Heading 5</h5>
+                <ul>
+                    <li>Lorem ipsum dolor</li>
+                    <li>sit:
+                        <ul>
+                            <li>amet</li>
+                            <li>consectetur</li>
+                        </ul>
+                    </li>
+                    <li>adipisicing elit</li>
+                </ul>
+                <h6>Heading 6</h6>
+                <ol>
+                    <li>Lorem ipsum dolor</li>
+                    <li>sit:
+                        <ul>
+                            <li>amet</li>
+                            <li>consectetur</li>
+                        </ul>
+                    </li>
+                    <li>adipisicing elit</li>
+                </ol>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code>&lt;div class="o-article"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+
     <div class="u-container">
         <a name="organisms-footer" aria-label="Footer"></a>
         <h3 class="u-margin-top-lg">Footer</h3>
