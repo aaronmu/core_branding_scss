@@ -1,5 +1,11 @@
 # Changelog
 
+## [4.2.2] - 2020-09-22
+
+### Fixed
+- Fixed a margin issue when an article organism would contain multiple nested levels
+
+
 ## [4.2.1] - 2020-09-16
 
 ### Fixed
@@ -253,6 +259,7 @@
 - Initial release.
 
 
+[4.2.2]: https://github.com/a-ui/core_branding_scss/tree/v4.2.2
 [4.2.1]: https://github.com/a-ui/core_branding_scss/tree/v4.2.1
 [4.2.0]: https://github.com/a-ui/core_branding_scss/tree/v4.2.0
 [4.1.1]: https://github.com/a-ui/core_branding_scss/tree/v4.1.1

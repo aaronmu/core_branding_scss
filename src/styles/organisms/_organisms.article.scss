@@ -62,7 +62,7 @@
   }
 
   // Fix margin of first item in article
-  *:first-child {
+  > :first-child {
     margin-top: 0;
   }
 }
