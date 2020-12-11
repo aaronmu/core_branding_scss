@@ -133,12 +133,12 @@
                 <ul class="a-list--unstyled d-list d-list__colors">
                     {% for name, value  in COLORS %}
                         <li class="d-{{ name | escape }}">
-                            <span class="d-color" style="background: {{ value }}"></span>
+                            <span class="d-color" style="background: {{ value }}" aria-hidden="true"></span>
                             <code>${{ name }}</code><br /><span>{{ value }}</span></small>
                         </li>
                     {% endfor %}
                     <li class="d-instagram">
-                        <span class="d-color" style="background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%)"></span>
+                        <span class="d-color" style="background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%)" aria-hidden="true"></span>
                             <code>$instagram</code><br /><span class="u-text-light">inspect me</span></small>
                     </li>
                 </ul>
