@@ -1,5 +1,15 @@
 # Changelog
 
+## [4.3.0] - 2020-12-xx
+
+### Added
+- Improved overal accessibility
+
+### Fixed
+- Replaced the small caps font with the right one
+- Removed obsolete `@use` rules that caused problems when importing in external libraries
+
+
 ## [4.2.2] - 2020-09-22
 
 ### Fixed

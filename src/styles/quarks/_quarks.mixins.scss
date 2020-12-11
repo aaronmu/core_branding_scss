@@ -14,6 +14,7 @@
 
   @if $_local {
     @font-face {
+      font-display: swap;
       font-family: $_name;
       font-style: $_style;
       font-weight: $_weight;
@@ -26,6 +27,7 @@
     }
   } @else {
     @font-face {
+      font-display: swap;
       font-family: $_name;
       font-style: $_style;
       font-weight: $_weight;
