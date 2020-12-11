@@ -87,9 +87,9 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" class="m-alert"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert" class="m-alert"&gt;
   &lt;button class="a-button-transparent has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
-  &lt;h4 class="h5 u-margin-bottom-xs"&gt;Alert&lt;/h4&gt;
+  &lt;h4 id="alert" class="h5 u-margin-bottom-xs"&gt;Alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
     &lt;button class="a-button-outline a-button--small"&gt;Cancel&lt;/button&gt;
@@ -104,16 +104,16 @@
                     <button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
                     <h4 id="alert-success" class="h5 u-margin-bottom-xs">Success alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
-                    <devices class="m-alert__actions">
+                    <div class="m-alert__actions">
                         <button class="a-button-outline a-button--success a-button--small">Cancel</button>
                         <button class="a-button a-button--success a-button--small">Got it</button>
                     </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" class="m-alert m-alert--success"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-success" class="m-alert m-alert--success"&gt;
   &lt;button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
-  &lt;h4 class="h5 u-margin-bottom-xs"&gt;Success alert&lt;/h4&gt;
+  &lt;h4 id="alert-success" class="h5 u-margin-bottom-xs"&gt;Success alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
     &lt;button class="a-button-outline a-button--success a-button--small"&gt;Cancel&lt;/button&gt;
@@ -135,9 +135,9 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" class="m-alert m-alert--warning"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-warning" class="m-alert m-alert--warning"&gt;
   &lt;button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
-  &lt;h4 class="h5 u-margin-bottom-xs"&gt;Warning alert&lt;/h4&gt;
+  &lt;h4 id="alert-warning" class="h5 u-margin-bottom-xs"&gt;Warning alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
     &lt;button class="a-button-outline a-button--warning a-button--small"&gt;Cancel&lt;/button&gt;
@@ -159,9 +159,9 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" class="m-alert m-alert--danger"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-danger" class="m-alert m-alert--danger"&gt;
   &lt;button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
-  &lt;h4 class="h5 u-margin-bottom-xs"&gt;Danger alert&lt;/h4&gt;
+  &lt;h4 id="alert-danger" class="h5 u-margin-bottom-xs"&gt;Danger alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
     &lt;button class="a-button-outline a-button--danger a-button--small"&gt;Cancel&lt;/button&gt;
@@ -400,11 +400,11 @@
                         <img src="https://placeimg.com/1000/500/tech" alt="card image">
                     </div>
                     <div class="m-card__body">
-                        <h4 class="h5 u-margin-bottom-xs">Aeneis</h4>
+                        <h4 id="card-title" class="h5 u-margin-bottom-xs">Aeneis</h4>
                         <p class="small u-text-bold u-margin-bottom-xs">May 4th 2017, 12:34</p>
                         <p class="u-margin-bottom">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram. Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</p>
                         <p class="u-text-right">
-                            <a href="javascript:void(0);" class="has-icon-right">
+                            <a id="card-link" href="javascript:void(0);" class="has-icon-right" aria-labelledby="card-link card-title">
                                 Read the article<span class="fa fa-angle-right" aria-hidden="true"></span>
                             </a>
                         </p>
@@ -427,11 +427,11 @@
     &lt;img src="https://placeimg.com/1000/500/tech" alt="card image"&gt;
   &lt;/div&gt;
   &lt;div class="m-card__body"&gt;
-    &lt;h4 class="h5 u-margin-bottom-xs"&gt;Aeneis&lt;/h4&gt;
+    &lt;h4 id="card-title" class="h5 u-margin-bottom-xs"&gt;Aeneis&lt;/h4&gt;
     &lt;p class="small u-text-bold u-margin-bottom-xs"&gt;May 4th 2017, 12:34&lt;/p&gt;
     &lt;p class="u-margin-bottom"&gt;...&lt;/p&gt;
     &lt;p class="u-text-right"&gt;
-      &lt;a href="#" class="has-icon-right"&gt;
+      &lt;a id="card-link" href="#" class="has-icon-right" aria-labelledby="card-link card-title"&gt;
         Read more&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;
       &lt;/a&gt;
     &lt;/p&gt;
@@ -1057,7 +1057,7 @@
             <div>
                 <div class="m-flyout is-open d-flyout">
                     <button class="a-button">Default flyout</button>
-                    <div class="m-flyout__content has-padding">
+                    <div class="m-flyout__content has-padding" aria-expanded="true">
                         <p>The default flyout will never be bigger than the element that triggers it.</p>
                     </div>
                 </div>
@@ -1065,7 +1065,7 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout is-open"&gt;
   &lt;button class="a-button"&gt;Default flyout&lt;/button&gt;
-  &lt;div class="m-flyout__content has-padding"&gt;
+  &lt;div class="m-flyout__content has-padding" aria-expanded="true"&gt;
     &lt;p&gt;The default flyout will never be bigger than the element that triggers it.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1078,7 +1078,7 @@
                 <div>
                     <div class="m-flyout m-flyout--sm is-open d-flyout--sm">
                         <button class="a-button">Small flyout</button>
-                        <div class="m-flyout__content has-padding">
+                        <div class="m-flyout__content has-padding" aria-expanded="true">
                             <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                         </div>
                     </div>
@@ -1086,7 +1086,7 @@
                 <div>
                     <div class="m-flyout m-flyout--md is-open d-flyout--md">
                         <button class="a-button">Medium flyout</button>
-                        <div class="m-flyout__content has-padding">
+                        <div class="m-flyout__content has-padding" aria-expanded="true">
                             <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                         </div>
                     </div>
@@ -1094,7 +1094,7 @@
                 <div>
                     <div class="m-flyout m-flyout--lg is-open d-flyout--lg">
                         <button class="a-button">Large flyout</button>
-                        <div class="m-flyout__content has-padding">
+                        <div class="m-flyout__content has-padding" aria-expanded="true">
                             <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                         </div>
                     </div>
@@ -1102,7 +1102,7 @@
                 <div>
                     <div class="m-flyout m-flyout--full is-open d-flyout--full">
                         <button class="a-button">The full flyout will be as wide as</button>
-                        <div class="m-flyout__content has-padding">
+                        <div class="m-flyout__content has-padding" aria-expanded="true">
                             <p>… the element that triggers it.</p>
                         </div>
                     </div>
@@ -1129,7 +1129,7 @@
             <div class="u-text-right">
                 <div class="m-flyout m-flyout--md m-flyout--right is-open d-flyout--md">
                     <button class="a-button">Flyout to the right</button>
-                    <div class="m-flyout__content has-padding">
+                    <div class="m-flyout__content has-padding" aria-expanded="true">
                         <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                     </div>
                 </div>
@@ -1144,7 +1144,7 @@
             <div>
                 <div class="m-flyout m-flyout--sm is-open d-flyout--no-padding">
                     <button class="a-button">Flyout without padding</button>
-                    <div class="m-flyout__content">
+                    <div class="m-flyout__content" aria-expanded="true">
                         <p>No padding here.</p>
                     </div>
                 </div>
@@ -1152,7 +1152,7 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--sm is-open d-flyout--md"&gt;
   &lt;button class="a-button"&gt;Flyout without padding&lt;/button&gt;
-  &lt;div class="m-flyout__content"&gt;
+  &lt;div class="m-flyout__content" aria-expanded="true"&gt;
     &lt;p&gt;No padding here.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1165,7 +1165,7 @@
                     <div class="a-input">
                         <input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" />
                     </div>
-                    <div class="m-flyout__content">
+                    <div class="m-flyout__content" aria-expanded="true">
                         <ul class="m-selectable-list m-selectable-list--no-border">
                             <li><a class="m-selectable-list__item" href="#">Take</a></li>
                             <li><a class="m-selectable-list__item" href="#">A</a></li>
@@ -1184,7 +1184,7 @@
   &lt;div class="a-input"&gt;
     &lt;input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" /&gt;
   &lt;/div&gt;
-  &lt;div class="m-flyout__content"&gt;
+  &lt;div class="m-flyout__content" aria-expanded="true"&gt;
     &lt;ul class="m-selectable-list m-selectable-list--no-border"&gt;
       &lt;li&gt;...&lt;/li&gt;
     &lt;/ul&gt;
