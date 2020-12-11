@@ -76,9 +76,9 @@
         <span class="d-file">molecules/molecules.alert</span>
         <div class="d">
             <div>
-                <div class="m-alert">
+                <div role="alertdialog" aria-labelledby="alert" class="m-alert">
                     <button class="a-button-transparent has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
-                    <h4 class="h5 u-margin-bottom-xs">Alert</h4>
+                    <h4 id="alert" class="h5 u-margin-bottom-xs">Alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
                         <button class="a-button-outline a-button--small">Cancel</button>
@@ -87,8 +87,8 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-alert"&gt;
-  &lt;button class="a-button-transparent has-icon m-alert__close"&gt;&lt;span class="fa fa-close" aria-label="Close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" class="m-alert"&gt;
+  &lt;button class="a-button-transparent has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;h4 class="h5 u-margin-bottom-xs"&gt;Alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -100,18 +100,18 @@
         </div>
         <div class="d">
             <div>
-                <div class="m-alert m-alert--success">
+                <div role="alertdialog" aria-labelledby="alert-success" class="m-alert m-alert--success">
                     <button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
-                    <h4 class="h5 u-margin-bottom-xs">Success alert</h4>
+                    <h4 id="alert-success" class="h5 u-margin-bottom-xs">Success alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
-                    <div class="m-alert__actions">
+                    <devices class="m-alert__actions">
                         <button class="a-button-outline a-button--success a-button--small">Cancel</button>
                         <button class="a-button a-button--success a-button--small">Got it</button>
                     </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-alert m-alert--success"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" class="m-alert m-alert--success"&gt;
   &lt;button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;h4 class="h5 u-margin-bottom-xs"&gt;Success alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
@@ -124,9 +124,9 @@
         </div>
         <div class="d">
             <div>
-                <div class="m-alert m-alert--warning">
+                <div role="alertdialog" aria-labelledby="alert-warning" class="m-alert m-alert--warning">
                     <button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
-                    <h4 class="h5 u-margin-bottom-xs">Warning alert</h4>
+                    <h4 id="alert-warning" class="h5 u-margin-bottom-xs">Warning alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
                         <button class="a-button-outline a-button--warning a-button--small">Cancel</button>
@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-alert m-alert--warning"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" class="m-alert m-alert--warning"&gt;
   &lt;button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;h4 class="h5 u-margin-bottom-xs"&gt;Warning alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
@@ -148,9 +148,9 @@
         </div>
         <div class="d">
             <div>
-                <div class="m-alert m-alert--danger">
+                <div role="alertdialog" aria-labelledby="alert-danger" class="m-alert m-alert--danger">
                     <button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
-                    <h4 class="h5 u-margin-bottom-xs">Danger alert</h4>
+                    <h4 id="alert-danger" class="h5 u-margin-bottom-xs">Danger alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
                         <button class="a-button-outline a-button--danger a-button--small">Cancel</button>
@@ -159,7 +159,7 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-alert m-alert--danger"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" class="m-alert m-alert--danger"&gt;
   &lt;button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
   &lt;h4 class="h5 u-margin-bottom-xs"&gt;Danger alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
@@ -218,7 +218,7 @@
                         <button class="a-button-outline">Button</button>
                         <button class="a-button-outline">Group</button>
                     </div>
-                    <div class="m-alert d-alert">
+                    <div role="alertdialog" class="m-alert d-alert">
                         <p>Note that all button variations are possible in button groups. Go to the <a href="#atoms-button">buttons</a> section to check out all possibilities.</p>
                     </div>
                 </div>
@@ -960,10 +960,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="m-alert d-alert u-margin-bottom">
+                <div role="alertdialog" class="m-alert d-alert u-margin-bottom">
                     <p>In order to make the datepicker visible, just add the <code>.is-open</code> class, as demonstrated in the example.</p>
                 </div>
-                <div class="m-alert d-alert u-margin-bottom">
+                <div role="alertdialog" class="m-alert d-alert u-margin-bottom">
                     <p>In the rare case that you want your datepicker to open on the left side of the input field, just add the <code>.m-datepicker--left</code> class.</p>
                 </div>
             </div>
@@ -1194,7 +1194,7 @@
         </div>
         <div class="d">
             <div>
-                <div class="m-alert d-alert u-margin-bottom">
+                <div role="alertdialog" class="m-alert d-alert u-margin-bottom">
                     <p>Sometimes you might want to programmatically open the flyout above your clicked element (e.g. when you're at the end of the page and there is no free space below enough). To fix the dropshadow when doing this, add the <code>.opens-above</code> class to your flyout.</p>
                 </div>
                 <div class="m-flyout m-flyout--md is-open opens-above d-flyout--opens-above">
@@ -1327,7 +1327,7 @@
         <a name="molecules-icon-list" aria-label="Icon list"></a>
         <h3 class="u-margin-top-lg">Icon list</h3>
         <span class="d-file">molecules/molecules.icon-list</span>
-        <div class="m-alert d-alert m-alert--wcag">
+        <div role="alertdialog" class="m-alert d-alert m-alert--wcag">
             <p><span class="u-screen-reader-only">Accessibility note. </span>Make sure there is enough contrast between the icon list and the background. See the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 1.4.3 Contrast (Minimum)" class="has-icon-right" target="_blank">contrast success criterion<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a>.</p>
         </div>
         <div class="d">
@@ -1603,7 +1603,7 @@
         </div>
         <div class="d">
             <div>
-                <div class="m-alert u-margin-bottom d-alert">
+                <div role="alertdialog" class="m-alert u-margin-bottom d-alert">
                     <p>In order to maintain correct semantics, you also can use buttons inside a `nav-list`. Use this option when working with click events, instead of linking to another page.</p>
                 </div>
             </div>
@@ -1697,7 +1697,7 @@
         </div>
         <div class="d">
             <div>
-                <div class="m-alert d-alert">
+                <div role="alertdialog" class="m-alert d-alert">
                     <p>Note that on mobile devices <code>.m-nav-tabs</code> has the exact same appearance as <code>.m-nav-list</code>.</p>
                 </div>
             </div>
@@ -1732,7 +1732,7 @@
                         <label class="a-switch__label">Show overlay</label>
                     </div>
                 </div>
-                <div class="m-alert d-alert">
+                <div role="alertdialog" class="m-alert d-alert">
                     <p>In order to make the overlay visible, just add the <code>.is-active</code> class, as demonstrated in the example.</p>
                 </div>
             </div>
@@ -2197,7 +2197,7 @@
                     <label for="new-tag" class="u-screen-reader-only">Insert new tag</label>
                     <input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" />
                 </div>
-                <div class="m-alert d-alert m-alert--wcag">
+                <div role="alertdialog" class="m-alert d-alert m-alert--wcag">
                     <p><span class="u-screen-reader-only">Accessibility note. </span>Note that you can't solely rely on a placeholder for creating new tags.</p>
                 </div>
             </div>
