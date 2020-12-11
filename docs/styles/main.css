@@ -6903,7 +6903,6 @@ dl {
 	position: relative;
 }
 
-@use '../quarks/quarks.variables';
 .o-menu {
 	background: white;
 	width: 100%;
