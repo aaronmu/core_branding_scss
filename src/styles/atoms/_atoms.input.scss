@@ -18,11 +18,6 @@ textarea {
   appearance: none;
   font: inherit;
   margin: 0;
-  outline: none;
-
-  &:focus {
-    box-shadow: 0 0 0 3px $input-border-focus;
-  }
 }
 
 
@@ -132,7 +127,7 @@ textarea {
 .a-input {
 
   &.has-success {
-    @include a-input($input-color, $input-bg, $input-success-border, $input-success-border-focus);
+    @include a-input($input-color, $input-bg, $input-success-border);
 
     .a-input__wrapper:before {
       color: $input-success-icon;
@@ -141,7 +136,7 @@ textarea {
   }
 
   &.has-warning {
-    @include a-input($input-color, $input-bg, $input-warning-border, $input-warning-border-focus);
+    @include a-input($input-color, $input-bg, $input-warning-border);
 
     .a-input__wrapper:before {
       color: $input-warning-icon;
@@ -150,7 +145,7 @@ textarea {
   }
 
   &.has-error {
-    @include a-input($input-color, $input-bg, $input-danger-border, $input-danger-border-focus);
+    @include a-input($input-color, $input-bg, $input-danger-border);
 
     .a-input__wrapper:before {
       color: $input-danger-icon;
@@ -211,7 +206,8 @@ textarea {
     width: auto;
 
     &:focus + label:after {
-      box-shadow: 0 0 0 3px $input-border-focus;
+      @include focus;
+      // box-shadow: 0 0 0 3px $input-border-focus;
     }
   }
 }

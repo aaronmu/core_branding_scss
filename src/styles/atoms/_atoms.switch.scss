@@ -59,7 +59,7 @@
     }
 
     &:focus + label:before {
-      box-shadow: 0 0 0 3px $input-border-focus;
+      @include focus;
     }
   }
 

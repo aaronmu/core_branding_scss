@@ -374,7 +374,7 @@ $btn-official-bg:              $monza !default;
 $input-color:             $text-color !default;
 $input-bg:                $white !default;
 $input-border:            $border-color !default;
-$input-border-focus:      rgb(192, 223, 254) !default;
+$input-border-focus:      rgb(192, 223, 254) !default; // Remove this in a later version
 $input-disabled:          $state-disabled !default;
 $input-disabled-border:   $grey-light !default;
 $input-disabled-bg:       $grey-lighter !default;
@@ -384,15 +384,15 @@ $input-icon-hover:        $black-pearl !default;
 $input-required:          $state-danger !default;
 
 $input-success-border:            mix($black, $state-success, 40%) !default;
-$input-success-border-focus:      mix($state-success, $white, 25%) !default;
+$input-success-border-focus:      mix($state-success, $white, 25%) !default; // Remove this in a later version
 $input-success-icon:              $state-success !default;
 
 $input-warning-border:            mix($black, $state-warning, 40%) !default;
-$input-warning-border-focus:      mix($state-warning, $white, 25%) !default;
+$input-warning-border-focus:      mix($state-warning, $white, 25%) !default; // Remove this in a later version
 $input-warning-icon:              $state-warning !default;
 
 $input-danger-border:             mix($black, $state-danger, 40%) !default;
-$input-danger-border-focus:       mix($state-danger, $white, 25%) !default;
+$input-danger-border-focus:       mix($state-danger, $white, 25%) !default; // Remove this in a later version
 $input-danger-icon:               $state-danger !default;
 
 $input-height:                    $spacer-lg !default;
@@ -694,7 +694,7 @@ $label-padding:           0 $spacer / 4 !default;
 $tag-color:               $text-color !default;
 $tag-bg:                  $background-color-light !default;
 $tag-border:              $border-color !default;
-$tag-border-focus:        $input-border-focus !default;
+$tag-border-focus:        $input-border-focus !default; // Remove this in a later version
 $tag-placeholder:         $input-placeholder !default;
 $tag-height:              $spacer-md !default;
 
