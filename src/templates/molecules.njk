@@ -1442,9 +1442,9 @@
             <div>
                 <figure class="m-image">
                     <img src="https://placeimg.com/1000/500/tech" alt="figure image">
-                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-haspopup="true">
+                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="true">
                         <div class="a-copyright__sign">
-                            <span class="fa fa-copyright" aria-hidden="true"></span>
+                            <span class="fa fa-copyright"><span class="u-screen-reader-only">Copyright </span></span>
                         </div>
                         <span class="a-copyright__label">Lorem Pixel</span>
                     </a>
@@ -1453,43 +1453,16 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;figure class="m-image"&gt;
   &lt;img src="https://placeimg.com/1000/500/tech" alt="figure image"&gt;
-  &lt;a href="#" class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
+  &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="true"&gt;
     &lt;div class="a-copyright__sign"&gt;
-      &lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;
+      &lt;span class="fa fa-copyright"&gt;&lt;span class="u-screen-reader-only"&gt;Copyright &lt;/span&gt;&lt;/span&gt;
     &lt;/div&gt;
     &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
   &lt;/a&gt;
 &lt;/figure&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <figure>
-                    <div class="m-image">
-                        <img src="https://placeimg.com/1000/500/tech" alt="figure image">
-                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                            <div class="a-copyright__sign">
-                                <span class="fa fa-copyright" aria-hidden="true"></span>
-                            </div>
-                            <span class="a-copyright__label">Lorem Pixel</span>
-                        </div>
-                    </div>
-                    <figcaption>Some fancy caption about this photo</figcaption>
-                </figure>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;figure&gt;
-  &lt;div class="m-image"&gt;
-    &lt;img src="https://placeimg.com/1000/500/tech" alt="figure image"&gt;
-    &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-      &lt;div class="a-copyright__sign"&gt;
-        &lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;
-      &lt;/div&gt;
-      &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;figcaption&gt;Some fancy caption about this photo&lt;/figcaption&gt;
-&lt;/figure&gt;</code></pre>
+                <div class="m-alert d-alert">
+                    <p>Note that you need to add/remove the <code>aria-expanded</code> attribute programmatically.</p>
+                </div>
             </div>
         </div>
 
