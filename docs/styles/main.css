@@ -1,4 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
@@ -469,6 +469,7 @@
  */
 
 @font-face {
+	font-display: swap;
 	font-family: "Antwerpen Small";
 	font-style: normal;
 	font-weight: 500;
@@ -477,6 +478,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Antwerpen Regular";
 	font-style: normal;
 	font-weight: 500;
@@ -485,6 +487,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Antwerpen Tall";
 	font-style: normal;
 	font-weight: 500;
@@ -498,6 +501,7 @@
  */
 
 @font-face {
+	font-display: swap;
 	font-family: "Sun Antwerpen";
 	font-style: normal;
 	font-weight: 300;
@@ -506,6 +510,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Sun Antwerpen";
 	font-style: italic;
 	font-weight: 300;
@@ -514,6 +519,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Sun Antwerpen";
 	font-style: normal;
 	font-weight: 500;
@@ -522,6 +528,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Sun Antwerpen";
 	font-style: italic;
 	font-weight: 500;
@@ -530,6 +537,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Sun Antwerpen";
 	font-style: normal;
 	font-weight: 700;
@@ -538,6 +546,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Sun Antwerpen";
 	font-style: italic;
 	font-weight: 700;
@@ -546,6 +555,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Sun Antwerpen";
 	font-style: normal;
 	font-weight: 800;
@@ -554,6 +564,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Sun Antwerpen";
 	font-style: italic;
 	font-weight: 800;
@@ -562,6 +573,7 @@
 }
 
 @font-face {
+	font-display: swap;
 	font-family: "Antwerpen_Icons";
 	font-style: normal;
 	font-weight: normal;

@@ -11,7 +11,7 @@
         <div class="d">
             <div>
                 <p>Classes that allow you to quickly change the background color of an element.</p>
-                <div role="alertdialog" class="m-alert d-alert m-alert--wcag">
+                <div class="m-alert d-alert m-alert--wcag">
                     <p><span class="u-screen-reader-only">Accessibility note. </span>Make sure there is enough contrast between text and background. See the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 1.4.3 Contrast (Minimum)" class="has-icon-right" target="_blank">contrast success criterion<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a>.</p>
                 </div>
             </div>
@@ -52,7 +52,7 @@
         </div>
         <div class="d">
             <div>
-                <div role="alertdialog" class="m-alert d-alert">
+                <div class="m-alert d-alert">
                     <p>Note that <code>.u-wrapper</code> and <code>.u-container</code> can work perfectly together as illustrated in the example.</p>
                 </div>
             </div>
@@ -107,7 +107,7 @@
         <div class="d">
             <div>
                 <p>The <code>.u-clearfix</code> class will force an element to self-clear its children.</p>
-                <div role="alertdialog" class="m-alert d-alert">
+                <div class="m-alert d-alert">
                     <p>Note that you can also use the <code>clearfix</code> mixin.</p>
                 </div>
             </div>
@@ -123,7 +123,7 @@
         <div class="d">
             <div>
                 <p><code>.u-screen-reader-only</code> is an accessiblity class and can be used to hide information intended only for screen readers.</p>
-                <div role="alertdialog" class="m-alert d-alert">
+                <div class="m-alert d-alert">
                     <p>Note that we offer this also as a Sass placeholder, so you can <code>@extend</code> it in your own class.</p>
                 </div>
             </div>
@@ -164,7 +164,7 @@
         <div class="d">
             <div>
                 <p>Helper classes for changing the appearance of text.</p>
-                <div role="alertdialog" class="m-alert d-alert m-alert--wcag">
+                <div class="m-alert d-alert m-alert--wcag">
                     <p><span class="u-screen-reader-only">Accessibility note. </span>Make sure there is enough contrast between text and background. See the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 1.4.3 Contrast (Minimum)" class="has-icon-right" target="_blank">contrast success criterion<span class="fa fa-external-link" aria-hidden="true"></span><span class="u-screen-reader-only"> (external)</span></a>.</p>
                 </div>
             </div>
@@ -176,8 +176,19 @@
                     <p class="{{value}}">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                 </div>
                 {% if value == 'u-text-truncate' %}
-                <div role="alertdialog" class="m-alert d-alert">
+                <div class="m-alert d-alert">
                     <p>Note that we offer this also as a Sass placeholder, so you can <code>@extend</code> it in your own class.</p>
+                </div>
+                {% endif %}
+                {% if value == 'u-text-readable' %}
+                <div class="m-alert d-alert m-alert--wcag">
+                    <p><span class="u-screen-reader-only">Accessibility note. </span>For people with some reading or vision disabilities, long lines of text can become a significant barrier. Try to keep the line length below 80 characters.</p>
+                </div>
+                {% endif %}
+                {% if value == 'u-text-underline' %}
+                <div class="m-alert d-alert m-alert--wcag">
+                    <p><span class="u-screen-reader-only">Accessibility note. </span>Use with caution. It may cause confusion because underlined text is stronly associated with a link.
+                    </p>
                 </div>
                 {% endif %}
             </div>

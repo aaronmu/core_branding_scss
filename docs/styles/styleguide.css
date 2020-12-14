@@ -573,6 +573,19 @@
 	margin-top: 0.375rem;
 }
 
+.d-list__antwerpen-icons > li {
+	margin-bottom: 0.75rem;
+}
+
+.d-list__antwerpen-icons > li > span {
+	line-height: .75;
+	position: absolute;
+}
+
+.d-list__antwerpen-icons > li > pre {
+	margin-left: 3.75rem;
+}
+
 .d-font {
 	font-size: 1.5em;
 }
@@ -684,6 +697,11 @@
 
 .d--with-overlay .o-menu {
 	margin-bottom: -6rem;
+}
+
+.hljs {
+	overflow-y: hidden;
+	padding: 0;
 }
 
 @media screen and (min-width: 30rem) {
