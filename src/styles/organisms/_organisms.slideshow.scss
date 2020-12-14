@@ -54,7 +54,6 @@
 .o-slideshow__next {
   align-items: center;
   color: $slideshow-arrow-color;
-  cursor: pointer;
   display: flex;
   font-size: 2rem;
   height: calc(100% - #{$copyright-height * 2});
@@ -73,6 +72,13 @@
 
   &:before {
     @include fontawesome;
+  }
+
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: transparent;
   }
 }
 
