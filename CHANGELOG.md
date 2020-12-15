@@ -12,6 +12,7 @@
 ### Fixed
 - Replaced the small caps font with the right one
 - Removed obsolete `@use` rules that caused problems when importing in external libraries
+- Fixed avatar images not loading in styleguide
 
 
 ## [4.2.2] - 2020-09-22
