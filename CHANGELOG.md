@@ -1,8 +1,12 @@
 # Changelog
 
+
 ## [4.3.0] - 2020-12-xx
 
 ### Added
+- Updated documentation with many accessibility improvements
+
+### Changed
 - Improved overal accessibility
 
 ### Fixed
@@ -269,6 +273,7 @@
 - Initial release.
 
 
+[4.3.0]: https://github.com/a-ui/core_branding_scss/tree/v4.3.0
 [4.2.2]: https://github.com/a-ui/core_branding_scss/tree/v4.2.2
 [4.2.1]: https://github.com/a-ui/core_branding_scss/tree/v4.2.1
 [4.2.0]: https://github.com/a-ui/core_branding_scss/tree/v4.2.0

@@ -39,7 +39,7 @@
  * -------------------------------------------------------------------
  * Change base styling for placeholder text on input fields
  * Note: Styling the placeholder text is not supported on older
- * browsers, use a html5-placeholder ployfill for that
+ * browsers, use a html5-placeholder polyfill for that
  *
  * Background info:
  * - http://davidwalsh.name/html5-placeholder
@@ -64,6 +64,11 @@
 
 /**
  * TOOLTIP MIXIN
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * FOCUS
  * -------------------------------------------------------------------
  */
 
