@@ -1,10 +1,10 @@
 # Changelog
 
 
-## [4.3.0] - 2020-12-xx
+## [4.3.0] - 2020-12-17
 
 ### Added
-- Updated documentation with many accessibility improvements
+- Updated components and documentation with many accessibility improvements
 
 ### Changed
 - Improved overal accessibility
