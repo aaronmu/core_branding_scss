@@ -1110,6 +1110,8 @@ hr {
 
 a {
 	color: #0064b4;
+	-webkit-text-decoration-skip: ink;
+	        text-decoration-skip-ink: auto;
 	transition: color 250ms ease-in-out;
 }
 
