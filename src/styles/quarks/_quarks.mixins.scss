@@ -14,6 +14,7 @@
 
   @if $_local {
     @font-face {
+      font-display: swap;
       font-family: $_name;
       font-style: $_style;
       font-weight: $_weight;
@@ -26,6 +27,7 @@
     }
   } @else {
     @font-face {
+      font-display: swap;
       font-family: $_name;
       font-style: $_style;
       font-weight: $_weight;
@@ -60,14 +62,6 @@
       background-color: transparent;
     } @else {
       background-color: mix($_background-hover, $white, 8%);
-    }
-  }
-
-  &:focus {
-    @if $_background != transparent and $_background != white {
-      box-shadow: 0 0 0 3px mix($_background, $white, 25%);
-    } @else {
-      box-shadow: 0 0 0 3px $_color;
     }
   }
 
@@ -108,14 +102,6 @@
     }
   }
 
-  &:focus {
-    @if $_transparent == false {
-      box-shadow: 0 0 0 1px mix($_border, $black, 90%) inset, 0 0 0 3px mix($_color, $white, 25%);
-    } @else {
-      box-shadow: 0 0 0 3px mix($_color, $white, 20%);
-    }
-  }
-
   &[disabled] {
     background: $btn-disabled-bg;
     box-shadow: 0 0 0 1px $input-disabled-border inset;
@@ -130,7 +116,7 @@
  * -------------------------------------------------------------------
  */
 
-@mixin a-input($_color: $input-color, $_background: $input-bg, $_border: $input-border, $_border-focus: $input-border-focus) {
+@mixin a-input($_color: $input-color, $_background: $input-bg, $_border: $input-border) {
 
   input:not([class*='a-button']):not([type='checkbox']):not([type='radio']),
   select,
@@ -142,10 +128,6 @@
     background-color: $_background;
     border: 1px solid $_border;
     color: $_color;
-
-    &:focus {
-      box-shadow: 0 0 0 3px $_border-focus;
-    }
 
     &[disabled] {
       background: $input-disabled-bg;
@@ -162,7 +144,7 @@
  * -------------------------------------------------------------------
  * Change base styling for placeholder text on input fields
  * Note: Styling the placeholder text is not supported on older
- * browsers, use a html5-placeholder ployfill for that
+ * browsers, use a html5-placeholder polyfill for that
  *
  * Background info:
  * - http://davidwalsh.name/html5-placeholder
@@ -242,6 +224,17 @@
   &:before {
     background-color: $_background;
   }
+}
+
+
+/**
+ * FOCUS
+ * -------------------------------------------------------------------
+ */
+
+@mixin focus {
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color; // sass-lint:disable-line no-duplicate-properties no-vendor-prefixes
 }
 
 

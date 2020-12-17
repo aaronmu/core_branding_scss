@@ -168,6 +168,7 @@ hr {
 
 a {
   color: $link-color;
+  text-decoration-skip-ink: auto; // sass-lint:disable-line no-misspelled-properties
   transition: color $animation-duration $animation-easing;
 
   &:hover,
@@ -175,10 +176,5 @@ a {
   &:focus {
     color: $link-hover-color;
     text-decoration: none;
-  }
-
-  &:focus {
-    box-shadow: 0 0 0 3px $input-border-focus;
-    outline: none;
   }
 }

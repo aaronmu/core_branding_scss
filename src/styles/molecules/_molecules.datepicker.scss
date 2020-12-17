@@ -71,6 +71,10 @@
       background-color: $datepicker-bg-hover;
     }
 
+    &:focus {
+      z-index: layer('base');
+    }
+
     &.is-current {
       background-color: $datepicker-today-bg;
       color: $datepicker-today-color;
@@ -92,7 +96,6 @@
       &:active,
       &:focus {
         background-color: $datepicker-selected-bg;
-        box-shadow: 0 0 0 3px $input-border-focus;
       }
     }
 
