@@ -1,5 +1,10 @@
 # Changelog
 
+## [4.3.1] - 2021-01-xx
+
+### Fixed
+- Fixed examples for progress component
+
 
 ## [4.3.0] - 2020-12-17
 
@@ -274,6 +279,7 @@
 - Initial release.
 
 
+[4.3.1]: https://github.com/a-ui/core_branding_scss/tree/v4.3.1
 [4.3.0]: https://github.com/a-ui/core_branding_scss/tree/v4.3.0
 [4.2.2]: https://github.com/a-ui/core_branding_scss/tree/v4.2.2
 [4.2.1]: https://github.com/a-ui/core_branding_scss/tree/v4.2.1
