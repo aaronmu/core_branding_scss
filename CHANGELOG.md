@@ -4,6 +4,7 @@
 
 ### Fixed
 - Fixed examples for progress component
+- Fixed examples for copyright component
 
 
 ## [4.3.0] - 2020-12-17
