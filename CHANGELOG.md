@@ -5,6 +5,7 @@
 ### Fixed
 - Fixed examples for progress component
 - Fixed examples for copyright component
+- Fixed examples for slideshow component
 
 
 ## [4.3.0] - 2020-12-17
