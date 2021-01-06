@@ -3,9 +3,11 @@
 ## [4.3.1] - 2021-01-xx
 
 ### Fixed
-- Fixed examples for progress component
-- Fixed examples for copyright component
-- Fixed examples for slideshow component
+- Fixed extra accessibility issues for progress component
+- Fixed extra accessibility issues for copyright component
+- Fixed extra accessibility issues for slideshow component
+- Fixed extra accessibility issues for flyout component
+- Fixed extra accessibility issues for datepicker component
 
 
 ## [4.3.0] - 2020-12-17

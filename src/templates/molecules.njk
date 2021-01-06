@@ -893,7 +893,7 @@
                     <label class="a-input__label" for="input-datepicker">Choose a date</label>
                     <div class="a-input__wrapper">
                         <input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" />
-                        <span class="fa fa-calendar is-clickable" role="button" aria-hidden="true"></span>
+                        <span class="fa fa-calendar is-clickable" role="button" aria-hidden="true" aria-expanded="true"></span>
                         <div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false">
                             <div class="m-datepicker__nav">
                                 <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
@@ -975,7 +975,7 @@
   &lt;label class="a-input__label" for="input-datepicker"&gt;Choose a date&lt;/label&gt;
   &lt;div class="a-input__wrapper"&gt;
     &lt;input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" /&gt;
-    &lt;span class="fa fa-calendar is-clickable" role="button" aria-hidden="true"&gt;&lt;/span&gt;
+    &lt;span class="fa fa-calendar is-clickable" role="button" aria-hidden="true" aria-expanded="true"&gt;&lt;/span&gt;
     &lt;div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false"&gt;
       &lt;div class="m-datepicker__nav"&gt;
         &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
@@ -1059,16 +1059,16 @@
         <div class="d">
             <div>
                 <div class="m-flyout is-open d-flyout">
-                    <button class="a-button">Default flyout</button>
-                    <div class="m-flyout__content has-padding" aria-expanded="true">
+                    <button class="a-button" aria-expanded="true">Default flyout</button>
+                    <div class="m-flyout__content has-padding">
                         <p>The default flyout will never be bigger than the element that triggers it.</p>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout is-open"&gt;
-  &lt;button class="a-button"&gt;Default flyout&lt;/button&gt;
-  &lt;div class="m-flyout__content has-padding" aria-expanded="true"&gt;
+  &lt;button class="a-button" aria-expanded="true"&gt;Default flyout&lt;/button&gt;
+  &lt;div class="m-flyout__content has-padding"&gt;
     &lt;p&gt;The default flyout will never be bigger than the element that triggers it.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1080,24 +1080,24 @@
             <div>
                 <div>
                     <div class="m-flyout m-flyout--sm is-open d-flyout--sm">
-                        <button class="a-button">Small flyout</button>
-                        <div class="m-flyout__content has-padding" aria-expanded="true">
+                        <button class="a-button" aria-expanded="true">Small flyout</button>
+                        <div class="m-flyout__content has-padding">
                             <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="m-flyout m-flyout--md is-open d-flyout--md">
-                        <button class="a-button">Medium flyout</button>
-                        <div class="m-flyout__content has-padding" aria-expanded="true">
+                        <button class="a-button" aria-expanded="true">Medium flyout</button>
+                        <div class="m-flyout__content has-padding">
                             <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="m-flyout m-flyout--lg is-open d-flyout--lg">
-                        <button class="a-button">Large flyout</button>
-                        <div class="m-flyout__content has-padding" aria-expanded="true">
+                        <button class="a-button" aria-expanded="true">Large flyout</button>
+                        <div class="m-flyout__content has-padding">
                             <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                         </div>
                     </div>
@@ -1131,8 +1131,8 @@
         <div class="d">
             <div class="u-text-right">
                 <div class="m-flyout m-flyout--md m-flyout--right is-open d-flyout--md">
-                    <button class="a-button">Flyout to the right</button>
-                    <div class="m-flyout__content has-padding" aria-expanded="true">
+                    <button class="a-button" aria-expanded="true">Flyout to the right</button>
+                    <div class="m-flyout__content has-padding">
                         <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                     </div>
                 </div>
@@ -1146,16 +1146,16 @@
         <div class="d">
             <div>
                 <div class="m-flyout m-flyout--sm is-open d-flyout--no-padding">
-                    <button class="a-button">Flyout without padding</button>
-                    <div class="m-flyout__content" aria-expanded="true">
+                    <button class="a-button" aria-expanded="true">Flyout without padding</button>
+                    <div class="m-flyout__content">
                         <p>No padding here.</p>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--sm is-open d-flyout--md"&gt;
-  &lt;button class="a-button"&gt;Flyout without padding&lt;/button&gt;
-  &lt;div class="m-flyout__content" aria-expanded="true"&gt;
+  &lt;button class="a-button" aria-expanded="true"&gt;Flyout without padding&lt;/button&gt;
+  &lt;div class="m-flyout__content"&gt;
     &lt;p&gt;No padding here.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -1166,9 +1166,9 @@
                 <div class="m-flyout m-flyout--full m-flyout--scrollable is-open d-flyout--sm">
                     <label class="a-input__label" for="input-autocomplete">Flyout as an autocomplete</label>
                     <div class="a-input">
-                        <input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" />
+                        <input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" aria-expanded="true" />
                     </div>
-                    <div class="m-flyout__content" aria-expanded="true">
+                    <div class="m-flyout__content">
                         <ul class="m-selectable-list m-selectable-list--no-border">
                             <li><a class="m-selectable-list__item" href="#">Take</a></li>
                             <li><a class="m-selectable-list__item" href="#">A</a></li>
@@ -1185,9 +1185,9 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--full m-flyout--scrollable is-open"&gt;
   &lt;label class="a-input__label" for="input-autocomplete"&gt;Flyout as an autocomplete&lt;/label&gt;
   &lt;div class="a-input"&gt;
-    &lt;input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" /&gt;
+    &lt;input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" aria-expanded="true" /&gt;
   &lt;/div&gt;
-  &lt;div class="m-flyout__content" aria-expanded="true"&gt;
+  &lt;div class="m-flyout__content"&gt;
     &lt;ul class="m-selectable-list m-selectable-list--no-border"&gt;
       &lt;li&gt;...&lt;/li&gt;
     &lt;/ul&gt;
