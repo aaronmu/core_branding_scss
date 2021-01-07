@@ -1,6 +1,5 @@
-name: 'GitHub actions'
-description: ''
-author: 'Jasper Van Proeyen <trianglejuice@mac.com>'
+name: GitHub actions
+author: Jasper Van Proeyen <trianglejuice@mac.com>
 on: [push, pull_request]
 jobs:
   build:
