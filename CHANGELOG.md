@@ -1,6 +1,6 @@
 # Changelog
 
-## [4.3.1] - 2021-01-xx
+## [4.3.1] - 2021-01-07
 
 ### Fixed
 - Fixed extra accessibility issues for progress component
