@@ -402,7 +402,9 @@
             <div>
                 <div class="o-slideshow">
                     <div class="o-slideshow__inner">
-                        <button class="a-button o-slideshow__prev"></button>
+                        <button class="a-button o-slideshow__prev">
+                            <span class="u-screen-reader-only">Previous image</span>
+                        </button>
                         <div class="o-slideshow__slides">
                             <figure class="o-slideshow__slide is-active">
                                 <div class="o-slideshow__image">
@@ -438,7 +440,9 @@
                                 </div>
                             </figure>
                         </div>
-                        <button class="a-button o-slideshow__next"></button>
+                        <button class="a-button o-slideshow__next">
+                            <span class="u-screen-reader-only">Next image</span>
+                        </button>
                     </div>
                     <figcaption class="o-slideshow__footer">
                         <span class="o-slideshow__counter">1 | 3</span>
@@ -449,7 +453,9 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="o-slideshow"&gt;
   &lt;div class="o-slideshow__inner"&gt;
-    &lt;button class="o-slideshow__prev"&gt;&lt;/button&gt;
+    &lt;button class="a-button o-slideshow__prev"&gt;
+      &lt;span class="u-screen-reader-only"&gt;Previous image&lt;/span&gt;
+    &lt;/button&gt;
     &lt;div class="o-slideshow__slides"&gt;
       &lt;figure class="o-slideshow__slide is-active"&gt;
         &lt;div class="o-slideshow__image"&gt;
@@ -485,7 +491,9 @@
         &lt;/div&gt;
       &lt;/figure&gt;
     &lt;/div&gt;
-    &lt;button class="o-slideshow__next"&gt;&lt;/button&gt;
+    &lt;button class="a-button o-slideshow__next"&gt;
+      &lt;span class="u-screen-reader-only"&gt;Next image&lt;/span&gt;
+    &lt;/button&gt;
   &lt;/div&gt;
   &lt;figcaption class="o-slideshow__footer"&gt;
     &lt;span class="o-slideshow__counter"&gt;1 | 3&lt;/span&gt;
@@ -517,12 +525,9 @@
                                             <figure class="o-slideshow__slide is-active">
                                                 <div class="o-slideshow__image">
                                                     <div class="m-image">
-                                                        <img src="https://placeimg.com/1900/950/tech"
-                                                             alt="Slideshow image 1.">
-                                                        <div class="m-image__copyright a-copyright"
-                                                             aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span
-                                                                class="fa fa-copyright" aria-hidden="true"></span></div>
+                                                        <img src="https://placeimg.com/1900/950/tech" alt="Slideshow image 1.">
+                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
@@ -531,12 +536,9 @@
                                             <figure class="o-slideshow__slide">
                                                 <div class="o-slideshow__image">
                                                     <div class="m-image">
-                                                        <img src="https://placeimg.com/1000/500/tech"
-                                                             alt="Slideshow image 2.">
-                                                        <div class="m-image__copyright a-copyright"
-                                                             aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span
-                                                                class="fa fa-copyright" aria-hidden="true"></span></div>
+                                                        <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2.">
+                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
@@ -547,10 +549,8 @@
                                                     <div class="m-image">
                                                         <img src="https://placeimg.com/1000/500/tech"
                                                              alt="Slideshow image 3.">
-                                                        <div class="m-image__copyright a-copyright"
-                                                             aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span
-                                                                class="fa fa-copyright" aria-hidden="true"></span></div>
+                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
@@ -561,8 +561,7 @@
                                     </div>
                                     <figcaption class="o-slideshow__footer">
                                         <span class="o-slideshow__counter">1 | 3</span>
-                                        Some fancy caption about this photo. Click the "X" in the top right corner to
-                                        close the slideshow.
+                                        Some fancy caption about this photo. Click the "X" in the top right corner to close the slideshow.
                                     </figcaption>
                                 </div>
                             </div>

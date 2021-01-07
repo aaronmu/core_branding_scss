@@ -1,5 +1,14 @@
 # Changelog
 
+## [4.3.1] - 2021-01-xx
+
+### Fixed
+- Fixed extra accessibility issues for progress component
+- Fixed extra accessibility issues for copyright component
+- Fixed extra accessibility issues for slideshow component
+- Fixed extra accessibility issues for flyout component
+- Fixed extra accessibility issues for datepicker component
+
 
 ## [4.3.0] - 2020-12-17
 
@@ -274,6 +283,7 @@
 - Initial release.
 
 
+[4.3.1]: https://github.com/a-ui/core_branding_scss/tree/v4.3.1
 [4.3.0]: https://github.com/a-ui/core_branding_scss/tree/v4.3.0
 [4.2.2]: https://github.com/a-ui/core_branding_scss/tree/v4.2.2
 [4.2.1]: https://github.com/a-ui/core_branding_scss/tree/v4.2.1
