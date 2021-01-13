@@ -1,7 +1,0 @@
-name: 'GitHub action'
-description: ''
-author: 'Jasper Van Proeyen <trianglejuice@mac.com>'
-
-runs:
-  using: 'node10'
-  main: 'npm run '
