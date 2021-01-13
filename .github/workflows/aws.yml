@@ -1,8 +1,8 @@
-name: Deploy to AWS TEST
+name: Deploy to AWS
 on:
   push:
-    branches:
-      - '*'
+    tags:
+      - v*
 jobs:
   build:
     name: Build
@@ -42,5 +42,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
           AWS_BUCKET_NAME: ${{ secrets.AWS_BUCKET }}
-          BUCKET_PATH: "/zzzzzzzz"
+          BUCKET_PATH: /${{ github.event.repository.name }}
           DIST_LOCATION_CODE: dist

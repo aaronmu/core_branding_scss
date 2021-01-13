@@ -1,4 +1,4 @@
-name: Continuous integration TEST
+name: Continuous integration
 on:
   push:
     branches:
