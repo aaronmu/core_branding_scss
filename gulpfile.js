@@ -19,7 +19,7 @@ gulp.task('build', gulp.series('clean:dist', gulp.parallel('icon-font', 'sass:di
 // Build documentation
 gulp.task('docs', gulp.series('clean:docs', gulp.parallel('icon-font', 'sass', 'render-templates', 'readme'), 'copy:docs', 'replace'));
 
-// Run aws task: publish to CDN
+// Run AWS task: publish to CDN
 gulp.task('aws', gulp.series('build', 'copy:aws', 'clean:aws', 'cdn'));
 
 // Default task
