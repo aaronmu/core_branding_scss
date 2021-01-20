@@ -75,8 +75,8 @@ $screen-lg-max:           89.9375rem !default; // 1439px ($screen-xl - 1px)
  * -------------------------------------------------------------------
  */
 
-$font-family-base:        'Sun Antwerpen' !default;
-$font-family-headings:    'Antwerpen Regular' !default;
+$font-family-base:        'Sun Antwerpen', sans-serif !default;
+$font-family-headings:    'Antwerpen Regular', sans-serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 
 
@@ -374,7 +374,7 @@ $btn-official-bg:              $monza !default;
 $input-color:             $text-color !default;
 $input-bg:                $white !default;
 $input-border:            $border-color !default;
-$input-border-focus:      rgb(192, 223, 254) !default;
+$input-border-focus:      rgb(192, 223, 254) !default; // Remove this in a later version
 $input-disabled:          $state-disabled !default;
 $input-disabled-border:   $grey-light !default;
 $input-disabled-bg:       $grey-lighter !default;
@@ -384,15 +384,15 @@ $input-icon-hover:        $black-pearl !default;
 $input-required:          $state-danger !default;
 
 $input-success-border:            mix($black, $state-success, 40%) !default;
-$input-success-border-focus:      mix($state-success, $white, 25%) !default;
+$input-success-border-focus:      mix($state-success, $white, 25%) !default; // Remove this in a later version
 $input-success-icon:              $state-success !default;
 
 $input-warning-border:            mix($black, $state-warning, 40%) !default;
-$input-warning-border-focus:      mix($state-warning, $white, 25%) !default;
+$input-warning-border-focus:      mix($state-warning, $white, 25%) !default; // Remove this in a later version
 $input-warning-icon:              $state-warning !default;
 
 $input-danger-border:             mix($black, $state-danger, 40%) !default;
-$input-danger-border-focus:       mix($state-danger, $white, 25%) !default;
+$input-danger-border-focus:       mix($state-danger, $white, 25%) !default; // Remove this in a later version
 $input-danger-icon:               $state-danger !default;
 
 $input-height:                    $spacer-lg !default;
@@ -694,7 +694,7 @@ $label-padding:           0 $spacer / 4 !default;
 $tag-color:               $text-color !default;
 $tag-bg:                  $background-color-light !default;
 $tag-border:              $border-color !default;
-$tag-border-focus:        $input-border-focus !default;
+$tag-border-focus:        $input-border-focus !default; // Remove this in a later version
 $tag-placeholder:         $input-placeholder !default;
 $tag-height:              $spacer-md !default;
 
@@ -922,27 +922,27 @@ $navigation-menu-animation-speed: 150ms !default;
  */
 $article-h1-font-family: $font-family-headings !default;
 $article-h1-font-size: $font-size-h2 !default;
-$article-h1-font-weight: normal;
+$article-h1-font-weight: normal !default;
 $article-h1-margin: $spacer-lg 0 $spacer !default;
 $article-h2-font-family: $font-family-headings !default;
 $article-h2-font-size: $font-size-h3 !default;
-$article-h2-font-weight: normal;
+$article-h2-font-weight: normal !default;
 $article-h2-margin: $spacer-lg 0 $spacer !default;
 $article-h3-font-family: $font-family-base !default;
 $article-h3-font-size: $font-size-h5 !default;
-$article-h3-font-weight: $bold;
+$article-h3-font-weight: $bold !default;
 $article-h3-margin: $spacer 0  $spacer-xs !default;
 $article-h4-font-family: $font-family-base !default;
 $article-h4-font-size: $font-size-h6 !default;
-$article-h4-font-weight: $bold;
+$article-h4-font-weight: $bold !default;
 $article-h4-margin: $spacer 0  $spacer-xs !default;
 $article-h5-font-family: $font-family-base !default;
 $article-h5-font-size: $font-size-base !default;
-$article-h5-font-weight: $bold;
+$article-h5-font-weight: $bold !default;
 $article-h5-margin: $spacer-xs 0 $spacer-xs / 2 !default;
 $article-h6-font-family: $font-family-base !default;
 $article-h6-font-size: $font-size-base !default;
-$article-h6-font-weight: $bold;
+$article-h6-font-weight: $bold !default;
 $article-h6-margin: $spacer-xs 0 $spacer-xs / 2 !default;
 $article-p-font-size: $font-size-base !default;
 $article-p-margin: 0 0 $spacer-xs / 2 !default;

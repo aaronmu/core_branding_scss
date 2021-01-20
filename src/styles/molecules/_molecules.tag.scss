@@ -36,8 +36,4 @@
   max-width: $spacer * 10;
   min-height: $tag-height;
   padding: 0 $spacer-xs;
-
-  &:focus {
-    box-shadow: 0 0 0 2px $tag-border-focus;
-  }
 }

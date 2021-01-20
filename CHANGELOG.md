@@ -6,6 +6,36 @@
 - [BREAKING] Updated avatar to work with the new icon library
 
 
+## [4.3.1] - 2021-01-07
+
+### Fixed
+- Fixed extra accessibility issues for progress component
+- Fixed extra accessibility issues for copyright component
+- Fixed extra accessibility issues for slideshow component
+- Fixed extra accessibility issues for flyout component
+- Fixed extra accessibility issues for datepicker component
+
+
+## [4.3.0] - 2020-12-17
+
+### Added
+- Updated components and documentation with many accessibility improvements
+
+### Changed
+- Improved overal accessibility
+
+### Fixed
+- Replaced the small caps font with the right one
+- Removed obsolete `@use` rules that caused problems when importing in external libraries
+- Fixed avatar images not loading in styleguide
+
+
+## [4.2.2] - 2020-09-22
+
+### Fixed
+- Fixed a margin issue when an article organism would contain multiple nested levels
+
+
 ## [4.2.1] - 2020-09-16
 
 ### Fixed
@@ -259,7 +289,9 @@
 - Initial release.
 
 
-[5.0.0]: https://github.com/a-ui/core_branding_scss/tree/v5.0.0
+[4.3.1]: https://github.com/a-ui/core_branding_scss/tree/v4.3.1
+[4.3.0]: https://github.com/a-ui/core_branding_scss/tree/v4.3.0
+[4.2.2]: https://github.com/a-ui/core_branding_scss/tree/v4.2.2
 [4.2.1]: https://github.com/a-ui/core_branding_scss/tree/v4.2.1
 [4.2.0]: https://github.com/a-ui/core_branding_scss/tree/v4.2.0
 [4.1.1]: https://github.com/a-ui/core_branding_scss/tree/v4.1.1

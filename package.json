@@ -1,6 +1,6 @@
 {
   "name": "@a-ui/core",
-  "version": "4.2.1",
+  "version": "4.3.1",
   "description": "core_branding_scss",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
     "start": "gulp server",
-    "travis": "gulp travis",
+    "aws": "gulp aws",
     "version": "gulp docs && git add -A ."
   },
   "contributors": [
@@ -24,16 +24,26 @@
     }
   ],
   "license": "MIT",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "IE 11"
+  ],
   "devDependencies": {
     "autoprefixer": "^9.5.1",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "cssnano": "^4.1.10",
     "del": "^5.1.0",
     "glob": "^7.1.4",
     "gulp": "^4.0.2",
-    "gulp-cheerio": "^1.0.0",
+    "gulp-consolidate": "^0.2.0",
     "gulp-css-url-adjuster": "^0.2.3",
     "gulp-header-license": "^1.0.9",
+    "gulp-iconfont": "^10.0.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-merge-media-queries": "^0.2.1",
     "gulp-nunjucks": "^5.0.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
@@ -41,11 +51,10 @@
     "gulp-sass": "^4.0.2",
     "gulp-sass-lint": "^1.4.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-svg-sprite": "^1.5.0",
     "gulp-watch": "^5.0.1",
     "list-selectors": "^2.0.0",
+    "lodash": "^4.17.20",
     "merge-stream": "^2.0.0",
-    "node-sass": "^4.13.1",
     "sass-vars-to-js": "^0.8.7",
     "yargs": "^13.2.4"
   }
