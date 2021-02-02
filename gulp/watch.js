@@ -1,13 +1,10 @@
 // -------------------------------------------------------------------
 // :: WATCH
 // -------------------------------------------------------------------
-// - https://www.npmjs.org/package/gulp-watch
 // - https://www.npmjs.com/package/browser-sync
 
 var gulp = require('gulp');
-
-var watch = require('gulp-watch'),
-    browserSync = require('browser-sync').create();
+var browserSync = require('browser-sync').create();
 
 gulp.task('watch', function() {
     browserSync.init({

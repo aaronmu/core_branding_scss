@@ -1,9 +1,10 @@
 # Changelog
 
-## [5.0.0] - 2020-xx-xx
+## [5.0.0] - 2021-xx-xx
 ### Added
 - [BREAKING] Replaced the complete icon set
 - [BREAKING] Updated avatar to work with the new icon library
+- Added `$spacer-sm` classes
 
 
 ## [4.3.1] - 2021-01-07

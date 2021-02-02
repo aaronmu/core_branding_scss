@@ -86,12 +86,15 @@
   padding-top: $spacer * 3.5;
 
   small {
-    padding: $spacer-xs / 4 $spacer-xs / 2;
+    display: inline-block;
+    padding: $spacer-xs / 4 $spacer-xs / 3 $spacer-xs / 3;
+    position: relative;
+    transform: translateY(-$spacer-xs);
   }
 
   @include at($screen-xs) {
-    padding-bottom: $spacer * 2.5;
-    padding-top: $spacer * 2.5;
+    padding-bottom: $spacer-md;
+    padding-top: $spacer-md;
   }
 }
 
