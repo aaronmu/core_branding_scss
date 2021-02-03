@@ -131,10 +131,10 @@
             <div>
                 <p>An overview of the complete color palette.</p>
                 <ul class="a-list--unstyled d-list d-list__colors">
-                    {% for name, value  in COLORS %}
-                        <li class="d-{{ name | escape }}">
-                            <span class="d-color" style="background: {{ value }}" aria-hidden="true"></span>
-                            <code>${{ name }}</code><br /><span>{{ value }}</span></small>
+                    {% for color in COLORS %}
+                        <li class="d-{{ color.name | escape }}">
+                            <span class="d-color" style="background: {{ color.value }}" aria-hidden="true"></span>
+                            <code>{{ color.name }}</code><br /><span>{{ color.value }}</span></small>
                         </li>
                     {% endfor %}
                     <li class="d-instagram">
@@ -154,9 +154,9 @@
             <div>
                 <p>An overview of all variables and their default values. If you are using Sass, you can overwrite these values for creating your own flavor of the branding kit.</p>
                 <ul class="a-list--unstyled d-list d-list__variables">
-                    {% for name, value in VARIABLES %}
-                        <li class="d-{{ name | escape }}">
-                            <code>${{ name }}</code>: {{ value }}
+                    {% for variable in VARIABLES %}
+                        <li class="d-{{ variable.name | escape }}">
+                            <code>{{ variable.name }}</code>: {{ variable.value }}
                         </li>
                     {% endfor %}
                 </ul>
