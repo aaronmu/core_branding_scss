@@ -4,6 +4,7 @@
 ### Added
 - [BREAKING] Replaced the complete icon set
 - [BREAKING] Updated avatar to work with the new icon library
+- [BREAKING] Updated copyright to work with the new icon library
 - Added `$spacer-sm` classes
 
 

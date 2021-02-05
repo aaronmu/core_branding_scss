@@ -4,16 +4,15 @@
  */
 
 .a-spinner {
-  color: $spinner-color;
-}
-
-.a-spinner:before {
-  @include fontawesome;
-  animation: $spinner-animation-name $spinner-animation-speed infinite $spinner-animation-timing;
-  color: inherit;
-  content: '\f1ce';
-  display: inline-block;
-  font-size: rem($spinner-size);
+  &:before {
+    animation: $spinner-animation-name $spinner-animation-speed infinite $spinner-animation-timing;
+    background: $spinner-color;
+    content: '';
+    display: inline-block;
+    height: rem($spinner-size);
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.a{fill:none;stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:6.25%;}</style></defs><path class="a" d="M.714 10.353l2.787 4.15 3.205-3.838M23.286 14.655l-2.785-4.152-3.207 3.839"/><path class="a" d="M20.464 10.54a8.622 8.622 0 01-6.51 9.729 8.493 8.493 0 01-7.931-2.224M3.505 14.479a8.853 8.853 0 016.538-10.753 8.493 8.493 0 018.324 2.642"/></svg>') no-repeat center center;
+    width: rem($spinner-size);
+  }
 }
 
 .a-spinner--inline {
@@ -31,12 +30,14 @@
 
 .a-spinner--sm {
   &:before {
-    font-size: rem($spinner-size-sm);
+    height: rem($spinner-size-sm);
+    width: rem($spinner-size-sm);
   }
 }
 
 .a-spinner--lg {
   &:before {
-    font-size: rem($spinner-size-lg);
+    height: rem($spinner-size-lg);
+    width: rem($spinner-size-lg);
   }
 }

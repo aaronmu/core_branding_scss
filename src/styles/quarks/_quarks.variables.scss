@@ -753,8 +753,8 @@ $spinner-size:            $icon-size-lg !default;
 $spinner-size-sm:         $icon-size-base !default;
 $spinner-size-lg:         $spinner-size * 2 !default;
 
-$spinner-animation-name:      fa-spin !default;
-$spinner-animation-speed:     1200ms !default;
+$spinner-animation-name:      spin reverse !default;
+$spinner-animation-speed:     1600ms !default;
 $spinner-animation-timing:    linear !default;
 
 
