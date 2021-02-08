@@ -75,8 +75,8 @@
       font-weight: $bold;
 
       &:before {
-        background: $step-indicator-bg-success url('data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNmZmY7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJjbHMtMSIgZD0iTTEwLDE4LjQ5QTEuNzcsMS43NywwLDAsMSw4LjY5LDE4TDYsMTUuMzFhMS43OCwxLjc4LDAsMCwxLDIuNTItMi41Mkw5LjczLDE0bDUuNTQtNy43MmExLjc4LDEuNzgsMCwxLDEsMi44OSwyLjA3TDExLjQsMTcuNzVhMS44LDEuOCwwLDAsMS0xLjMuNzRaIi8+PC9zdmc+') center center no-repeat;
-        background-size: 75% 75%;
+        background: $step-indicator-bg-success url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%" d="M14.5.5l-10 14-4-4"/></svg>') center center no-repeat;
+        background-size: 70% 70%;
         border-color: $step-indicator-border-success;
         content: '';
       }

@@ -7,6 +7,9 @@
 - [BREAKING] Updated copyright to work with the new icon library
 - Added `$spacer-sm` classes
 
+### Changed
+- Aligned the look of disabled components
+
 
 ## [4.3.1] - 2021-01-07
 

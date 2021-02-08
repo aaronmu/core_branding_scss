@@ -1,3 +1,5 @@
+{% import "./templates/macros/icon.njk" as icon %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,7 +126,7 @@
             <span class="o-footer__label">© stad Antwerpen</span>
 
             <a href="#" class="o-footer__button a-button a-button--secondary has-icon" aria-label="Go back to top">
-                <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                {{ icon.render('arrow-up-1') }}
             </a>
         </footer>
     </div>

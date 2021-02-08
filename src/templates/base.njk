@@ -74,16 +74,16 @@
         <h3 class="u-margin-top-lg">Icons</h3>
         <span class="d-file">base/base.icons</span>
         <div class="m-alert d-alert m-alert--wcag">
-            <p><span class="u-screen-reader-only">Accessibility note. </span>In some cases your icon will need an appropriate text alternative. If the icon is informative and not accompanied by a text label, add invisible text for screenreaders with the <code>.u-screen-reader-only</code> class. See the <a href="https://www.w3.org/TR/WCAG21/#non-text-content" class="has-icon-right" target="_blank">non-text content success criterion<span class="ai" aria-hidden="true"><svg><use xlink:href="images/ai.svg#navigation-next" /></svg></span><span class="u-screen-reader-only"> (external)</span></a>. When adding labels or instructions that are only visible to users of assistive technology (such as alt and aria-label attributes), make sure the text strings can be localised if the website is multilingual.</p>
+            <p><span class="u-screen-reader-only">Accessibility note. </span>In some cases your icon will need an appropriate text alternative. If the icon is informative and not accompanied by a text label, add invisible text for screenreaders with the <code>.u-screen-reader-only</code> class. See the <a href="https://www.w3.org/TR/WCAG21/#non-text-content" class="has-icon-right" target="_blank">non-text content success criterion{{ icon.render('navigation-next') }}<span class="u-screen-reader-only"> (external)</span></a>. When adding labels or instructions that are only visible to users of assistive technology (such as alt and aria-label attributes), make sure the text strings can be localised if the website is multilingual.</p>
         </div>
         <div class="d-icons u-margin-top u-margin-bottom-lg">
         {% for value in ICONS %}
             <div class="d-icons__row">
                 <div class="d-icons__icon">
-                    <span class="ai"><svg><use xlink:href="images/ai.svg#{{ value }}" /></svg></span>
+                    {{ icon.render(value) }}
                 </div>
                 <div class="d-icons__code">
-                    <pre class="a-pre a-pre--scrollable"><code>&lt;span class=&quot;ai&quot;&gt;&lt;svg&gt;&lt;use xlink:href=&quot;images/ai.svg#{{ value }}&quot; /&gt;&lt;/svg&gt;&lt;/span&gt;</code></pre>
+                    <pre class="a-pre a-pre--scrollable"><code class="html">{{ icon.code(value, false) }}</code></pre>
                 </div>
             </div>
         {% endfor %}

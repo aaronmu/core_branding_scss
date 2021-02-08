@@ -80,7 +80,7 @@
         <div class="d">
             <div>
                 <div role="alertdialog" aria-labelledby="alert" class="m-alert">
-                    <button class="a-button-transparent has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <button class="a-button-transparent has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
                     <h4 id="alert" class="h5 u-margin-bottom-xs">Alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
@@ -91,7 +91,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert" class="m-alert"&gt;
-  &lt;button class="a-button-transparent has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="a-button-transparent has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;h4 id="alert" class="h5 u-margin-bottom-xs"&gt;Alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -104,7 +104,7 @@
         <div class="d">
             <div>
                 <div role="alertdialog" aria-labelledby="alert-success" class="m-alert m-alert--success">
-                    <button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
                     <h4 id="alert-success" class="h5 u-margin-bottom-xs">Success alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
@@ -115,7 +115,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-success" class="m-alert m-alert--success"&gt;
-  &lt;button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;h4 id="alert-success" class="h5 u-margin-bottom-xs"&gt;Success alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -128,7 +128,7 @@
         <div class="d">
             <div>
                 <div role="alertdialog" aria-labelledby="alert-warning" class="m-alert m-alert--warning">
-                    <button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
                     <h4 id="alert-warning" class="h5 u-margin-bottom-xs">Warning alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
@@ -139,7 +139,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-warning" class="m-alert m-alert--warning"&gt;
-  &lt;button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;h4 id="alert-warning" class="h5 u-margin-bottom-xs"&gt;Warning alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -152,7 +152,7 @@
         <div class="d">
             <div>
                 <div role="alertdialog" aria-labelledby="alert-danger" class="m-alert m-alert--danger">
-                    <button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
                     <h4 id="alert-danger" class="h5 u-margin-bottom-xs">Danger alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
@@ -163,7 +163,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-danger" class="m-alert m-alert--danger"&gt;
-  &lt;button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;h4 id="alert-danger" class="h5 u-margin-bottom-xs"&gt;Danger alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -295,44 +295,38 @@
                 <ul class="m-button-list">
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--facebook has-icon" aria-label="Facebook">
-                            <span class="fa fa-facebook" aria-hidden="true"></span>
+                            {{ icon.render('social-media-facebook') }}
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--twitter has-icon" aria-label="Twitter">
-                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                            {{ icon.render('social-media-twitter') }}
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn">
-                            <span class="fa fa-linkedin" aria-hidden="true"></span>
+                            {{ icon.render('professional-network-linkedin') }}
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--instagram has-icon" aria-label="Instagram">
-                            <span class="fa fa-instagram" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="a-button a-button--google has-icon" aria-label="Google+">
-                            <span class="fa fa-google-plus" aria-hidden="true"></span>
+                            {{ icon.render('social-instagram') }}
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--snapchat has-icon" aria-label="Snapchat">
-                            <span class="fa fa-snapchat-ghost" aria-hidden="true"></span>
+                            {{ icon.render('social-media-snapchat') }}
                         </a>
                     </li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-button-list"&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--facebook has-icon" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--twitter has-icon" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--instagram has-icon" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--google has-icon" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--snapchat has-icon" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--facebook has-icon" aria-label="Facebook"&gt;{{ icon.code('social-media-facebook') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--twitter has-icon" aria-label="Twitter"&gt;{{ icon.code('social-media-twitter') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn"&gt;{{ icon.code('professional-network-linkedin') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--instagram has-icon" aria-label="Instagram"&gt;{{ icon.code('social-instagram') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--snapchat has-icon" aria-label="Snapchat"&gt;{{ icon.code('social-media-snapchat') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -341,44 +335,38 @@
                 <ul class="m-button-list m-button-list--horizontal">
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--facebook has-icon" aria-label="Facebook">
-                            <span class="fa fa-facebook" aria-hidden="true"></span>
+                            {{ icon.render('social-media-facebook') }}
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--twitter has-icon" aria-label="Twitter">
-                            <span class="fa fa-twitter" aria-hidden="true"></span>
+                            {{ icon.render('social-media-twitter') }}
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn">
-                            <span class="fa fa-linkedin" aria-hidden="true"></span>
+                            {{ icon.render('professional-network-linkedin') }}
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--instagram has-icon" aria-label="Instagram">
-                            <span class="fa fa-instagram" aria-hidden="true"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="a-button a-button--google has-icon" aria-label="Google+">
-                            <span class="fa fa-google-plus" aria-hidden="true"></span>
+                            {{ icon.render('social-instagram') }}
                         </a>
                     </li>
                     <li>
                         <a href="javascript:void(0);" class="a-button a-button--snapchat has-icon" aria-label="Snapchat">
-                            <span class="fa fa-snapchat-ghost" aria-hidden="true"></span>
+                            {{ icon.render('social-media-snapchat') }}
                         </a>
                     </li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-button-list m-button-list--horizontal"&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--facebook has-icon" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--twitter has-icon" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--instagram has-icon" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--google has-icon" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" class="a-button a-button--snapchat has-icon" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--facebook has-icon" aria-label="Facebook"&gt;{{ icon.code('social-media-facebook') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--twitter has-icon" aria-label="Twitter"&gt;{{ icon.code('social-media-twitter') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--linkedin has-icon" aria-label="LinkedIn"&gt;{{ icon.code('professional-network-linkedin') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--instagram has-icon" aria-label="Instagram"&gt;{{ icon.code('social-instagram') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" class="a-button a-button--snapchat has-icon" aria-label="Snapchat"&gt;{{ icon.code('social-media-snapchat') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -408,7 +396,7 @@
                         <p class="u-margin-bottom">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram. Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</p>
                         <p class="u-text-right">
                             <a id="card-link" href="javascript:void(0);" class="has-icon-right" aria-labelledby="card-link card-title">
-                                Read the article<span class="fa fa-angle-right" aria-hidden="true"></span>
+                                Read the article{{ icon.render('arrow-right-1') }}
                             </a>
                         </p>
                     </div>
@@ -435,7 +423,7 @@
     &lt;p class="u-margin-bottom"&gt;...&lt;/p&gt;
     &lt;p class="u-text-right"&gt;
       &lt;a id="card-link" href="#" class="has-icon-right" aria-labelledby="card-link card-title"&gt;
-        Read more&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;
+        Read the article{{ icon.code('arrow-right-1') }}
       &lt;/a&gt;
     &lt;/p&gt;
   &lt;/div&gt;
@@ -456,12 +444,12 @@
                     </li>
                     <li class="m-collapsible-list__item">
                         <a href="void(0);">
-                            <span class="fa fa-fw fa-angle-down" aria-hidden="true"></span><span>Second collapsible item</span>
+                            {{ icon.render('arrow-down-1') }}<span>Second collapsible item</span>
                         </a>
                         <ul>
                             <li class="m-collapsible-list__item">
                                 <a href="void(0);">
-                                    <span class="fa fa-fw fa-angle-down" aria-hidden="true"></span><span>First collapsible subitem</span>
+                                    {{ icon.render('arrow-down-1') }}<span>First collapsible subitem</span>
                                 </a>
                                 <ul>
                                     <li class="m-collapsible-list__item is-active">
@@ -473,7 +461,7 @@
                             </li>
                             <li class="m-collapsible-list__item">
                                 <a href="void(0);">
-                                    <span class="fa fa-fw fa-angle-right" aria-hidden="true"></span><span>Second collapsed subitem</span>
+                                    {{ icon.render('arrow-right-1') }}<span>Second collapsed subitem</span>
                                 </a>
                                 <ul class="is-collapsed">
                                     <li class="m-collapsible-list__item">
@@ -496,12 +484,12 @@
   &lt;/li&gt;
   &lt;li class="m-collapsible-list__item"&gt;
     &lt;a href="#"&gt;
-      &lt;span class="fa fa-fw fa-angle-down" aria-hidden="true"&gt;&lt;/span&gt;&lt;span&gt;Second collapsible item&lt;/span&gt;
+      {{ icon.code('arrow-down-1') }}&lt;span&gt;Second collapsible item&lt;/span&gt;
     &lt;/a&gt;
     &lt;ul&gt;
       &lt;li class="m-collapsible-list__item"&gt;
         &lt;a href="#"&gt;
-          &lt;span class="fa fa-fw fa-angle-down" aria-hidden="true"&gt;&lt;/span&gt;&lt;span&gt;First collapsible subitem&lt;/span&gt;
+          {{ icon.code('arrow-down-1') }}&lt;span&gt;First collapsible subitem&lt;/span&gt;
         &lt;/a&gt;
         &lt;ul&gt;
           &lt;li class="m-collapsible-list__item is-active"&gt;
@@ -513,7 +501,7 @@
       &lt;/li&gt;
       &lt;li class="m-collapsible-list__item"&gt;
         &lt;a href="#"&gt;
-          &lt;span class="fa fa-fw fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;span&gt;Second collapsed subitem&lt;/span&gt;
+          {{ icon.code('arrow-right-1') }}&lt;span&gt;Second collapsed subitem&lt;/span&gt;
         &lt;/a&gt;
         &lt;ul class="is-collapsed"&gt;
           &lt;li class="m-collapsible-list__item"&gt;
@@ -621,9 +609,9 @@
             <div>
                 <div role="application" aria-label="Datepicker days" class="m-datepicker is-open" aria-hidden="false">
                     <div class="m-datepicker__nav">
-                        <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
+                        <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon">{{ icon.render('arrow-left-1') }}</button>
                         <button type="button" class="m-datepicker__title a-button">May 2017</button>
-                        <button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"><span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                        <button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon">{{ icon.render('arrow-right-1') }}</button>
                     </div>
                     <table>
                         <thead>
@@ -690,9 +678,9 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker days" class="m-datepicker is-open" aria-hidden="false"&gt;
   &lt;div class="m-datepicker__nav"&gt;
-    &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;{{ icon.code('arrow-left-1') }}&lt;/button&gt;
     &lt;button type="button" class="m-datepicker__title a-button"&gt;May 2017&lt;/button&gt;
-    &lt;button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"&gt;{{ icon.code('arrow-right-1') }}&lt;/button&gt;
   &lt;/div&gt;
   &lt;table&gt;
     &lt;thead&gt;
@@ -761,9 +749,9 @@
             <div>
                 <div role="application" aria-label="Datepicker months" class="m-datepicker is-open" aria-hidden="false">
                     <div class="m-datepicker__nav">
-                        <button type="button" aria-label="Go to previous year (2016)" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
+                        <button type="button" aria-label="Go to previous year (2016)" class="a-button has-icon">{{ icon.render('arrow-left-1') }}</button>
                         <button type="button" class="m-datepicker__title a-button">2017</button>
-                        <button type="button" aria-label="Go to next year (2018)" class="a-button has-icon"><span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                        <button type="button" aria-label="Go to next year (2018)" class="a-button has-icon">{{ icon.render('arrow-right-1') }}</button>
                     </div>
                     <table>
                         <tbody class="m-datepicker__calendar">
@@ -792,9 +780,9 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker months" class="m-datepicker is-open" aria-hidden="false"&gt;
   &lt;div class="m-datepicker__nav"&gt;
-    &lt;button type="button" aria-label="Go to previous year (2016)" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" aria-label="Go to previous year (2016)" class="a-button has-icon"&gt;{{ icon.code('arrow-left-1') }}&lt;/button&gt;
     &lt;button type="button" class="m-datepicker__title a-button"&gt;2017&lt;/button&gt;
-    &lt;button type="button" aria-label="Go to next year (2018)" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" aria-label="Go to next year (2018)" class="a-button has-icon"&gt;{{ icon.code('arrow-right-1') }}&lt;/button&gt;
   &lt;/div&gt;
   &lt;table&gt;
     &lt;tbody class="m-datepicker__calendar"&gt;
@@ -825,9 +813,9 @@
             <div>
                 <div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false">
                     <div class="m-datepicker__nav">
-                        <button type="button" aria-label="Go back 12 years (1995-2006)" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
+                        <button type="button" aria-label="Go back 12 years (1995-2006)" class="a-button has-icon">{{ icon.render('arrow-left-1') }}</button>
                         <button type="button" class="m-datepicker__title a-button">2007 - 2018</button>
-                        <button type="button" aria-label="Go forward 12 years (2019-2030)" class="a-button has-icon"><span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                        <button type="button" aria-label="Go forward 12 years (2019-2030)" class="a-button has-icon">{{ icon.render('arrow-right-1') }}</button>
                     </div>
                     <table>
                         <tbody class="m-datepicker__calendar">
@@ -856,9 +844,9 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false"&gt;
   &lt;div class="m-datepicker__nav"&gt;
-    &lt;button type="button" aria-label="Go back 12 years (1995-2006)" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" aria-label="Go back 12 years (1995-2006)" class="a-button has-icon"&gt;{{ icon.code('arrow-left-1') }}&lt;/button&gt;
     &lt;button type="button" class="m-datepicker__title a-button"&gt;2007 - 2018&lt;/button&gt;
-    &lt;button type="button" aria-label="Go forward 12 years (2019-2030)" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button type="button" aria-label="Go forward 12 years (2019-2030)" class="a-button has-icon"&gt;{{ icon.code('arrow-right-1') }}&lt;/button&gt;
   &lt;/div&gt;
   &lt;table&gt;
     &lt;tbody class="m-datepicker__calendar"&gt;
@@ -893,12 +881,12 @@
                     <label class="a-input__label" for="input-datepicker">Choose a date</label>
                     <div class="a-input__wrapper">
                         <input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" />
-                        <span class="fa fa-calendar is-clickable" role="button" aria-hidden="true" aria-expanded="true"></span>
+                        {{ icon.render('calendar-3', true, 'ai', ' role="button" aria-expanded="true"') }}
                         <div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false">
                             <div class="m-datepicker__nav">
-                                <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"><span class="fa fa-angle-left" aria-hidden="true"></span></button>
+                                <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon">{{ icon.render('arrow-left-1') }}</button>
                                 <button type="button" class="m-datepicker__title a-button">May 2017</button>
-                                <button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"><span class="fa fa-angle-right" aria-hidden="true"></span></button>
+                                <button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon">{{ icon.render('arrow-right-1') }}</button>
                             </div>
                             <table>
                                 <thead>
@@ -975,12 +963,12 @@
   &lt;label class="a-input__label" for="input-datepicker"&gt;Choose a date&lt;/label&gt;
   &lt;div class="a-input__wrapper"&gt;
     &lt;input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" /&gt;
-    &lt;span class="fa fa-calendar is-clickable" role="button" aria-hidden="true" aria-expanded="true"&gt;&lt;/span&gt;
+    {{ icon.code('calendar-3', true, 'ai', ' role="button" aria-expanded="true"') }}
     &lt;div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false"&gt;
       &lt;div class="m-datepicker__nav"&gt;
-        &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;{{ icon.code('arrow-left-1') }}&lt;/button&gt;
         &lt;button type="button" class="m-datepicker__title a-button"&gt;May 2017&lt;/button&gt;
-        &lt;button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+        &lt;button type="button" aria-label="Go to next month, June 2017" class="a-button has-icon"&gt;{{ icon.code('arrow-right-1') }}&lt;/button&gt;
       &lt;/div&gt;
       &lt;table&gt;
         &lt;thead&gt;
@@ -1331,27 +1319,25 @@
         <h3 class="u-margin-top-lg">Icon list</h3>
         <span class="d-file">molecules/molecules.icon-list</span>
         <div class="m-alert d-alert m-alert--wcag">
-            <p><span class="u-screen-reader-only">Accessibility note. </span>Make sure there is enough contrast between the icon list and the background. See the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 1.4.3 Contrast (Minimum)" class="has-icon-right" target="_blank">contrast success criterion<span class="ai" aria-hidden="true"><svg><use xlink:href="images/ai.svg#navigation-next" /></svg></span><span class="u-screen-reader-only"> (external)</span></a>.</p>
+            <p><span class="u-screen-reader-only">Accessibility note. </span>Make sure there is enough contrast between the icon list and the background. See the <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum" title="Web Content Accessibility Guidelines (WCAG) 2.1 Success Criterion 1.4.3 Contrast (Minimum)" class="has-icon-right" target="_blank">contrast success criterion{{ icon.render('navigation-next') }}<span class="u-screen-reader-only"> (external)</span></a>.</p>
         </div>
         <div class="d">
             <div>
                 <ul class="m-icon-list">
-                    <li><a href="javascript:void(0);" aria-label="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="Google+"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="Snapchat"><span class="fa fa-snapchat-ghost" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Facebook">{{ icon.render('social-media-facebook') }}</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Twitter">{{ icon.render('social-media-twitter') }}</a></li>
+                    <li><a href="javascript:void(0);" aria-label="LinkedIn">{{ icon.render('professional-network-linkedin') }}</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Instagram">{{ icon.render('social-instagram') }}</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Snapchat">{{ icon.render('social-media-snapchat') }}</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-icon-list"&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;{{ icon.code('social-media-facebook') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;{{ icon.code('social-media-twitter') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;{{ icon.code('professional-network-linkedin') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;{{ icon.code('social-instagram') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;{{ icon.code('social-media-snapchat') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -1359,45 +1345,41 @@
             <div>
                 <div class="u-bg-black">
                     <ul class="m-icon-list m-icon-list--negative d-icon-list">
-                        <li><a href="javascript:void(0);" aria-label="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="Google+"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="Snapchat"><span class="fa fa-snapchat-ghost" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Facebook">{{ icon.render('social-media-facebook') }}</a></li>
+                        <li><a href="javascript:void(0);" aria-label="Twitter">{{ icon.render('social-media-twitter') }}</a></li>
+                        <li><a href="javascript:void(0);" aria-label="LinkedIn">{{ icon.render('professional-network-linkedin') }}</a></li>
+                        <li><a href="javascript:void(0);" aria-label="Instagram">{{ icon.render('social-instagram') }}</a></li>
+                        <li><a href="javascript:void(0);" aria-label="Snapchat">{{ icon.render('social-media-snapchat') }}</a></li>
                     </ul>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-icon-list m-icon-list--negative"&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;{{ icon.code('social-media-facebook') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;{{ icon.code('social-media-twitter') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;{{ icon.code('professional-network-linkedin') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;{{ icon.code('social-instagram') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;{{ icon.code('social-media-snapchat') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
                 <ul class="m-icon-list m-icon-list--horizontal">
-                    <li><a href="javascript:void(0);" aria-label="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="Google+"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
-                    <li><a href="javascript:void(0);" aria-label="Snapchat"><span class="fa fa-snapchat-ghost" aria-hidden="true"></span></a></li>
+                    <li><a href="javascript:void(0);" aria-label="Facebook">{{ icon.render('social-media-facebook') }}</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Twitter">{{ icon.render('social-media-twitter') }}</a></li>
+                    <li><a href="javascript:void(0);" aria-label="LinkedIn">{{ icon.render('professional-network-linkedin') }}</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Instagram">{{ icon.render('social-instagram') }}</a></li>
+                    <li><a href="javascript:void(0);" aria-label="Snapchat">{{ icon.render('social-media-snapchat') }}</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-icon-list m-icon-list--horizontal"&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;{{ icon.code('social-media-facebook') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;{{ icon.code('social-media-twitter') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;{{ icon.code('professional-network-linkedin') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;{{ icon.code('social-instagram') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;{{ icon.code('social-media-snapchat') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -1405,23 +1387,21 @@
             <div>
                 <div class="u-bg-black">
                     <ul class="m-icon-list m-icon-list--horizontal m-icon-list--negative d-icon-list">
-                        <li><a href="javascript:void(0);" aria-label="Facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="Twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="LinkedIn"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="Instagram"><span class="fa fa-instagram" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="Google+"><span class="fa fa-google-plus" aria-hidden="true"></span></a></li>
-                        <li><a href="javascript:void(0);" aria-label="Snapchat"><span class="fa fa-snapchat-ghost" aria-hidden="true"></span></a></li>
+                        <li><a href="javascript:void(0);" aria-label="Facebook">{{ icon.render('social-media-facebook') }}</a></li>
+                        <li><a href="javascript:void(0);" aria-label="Twitter">{{ icon.render('social-media-twitter') }}</a></li>
+                        <li><a href="javascript:void(0);" aria-label="LinkedIn">{{ icon.render('professional-network-linkedin') }}</a></li>
+                        <li><a href="javascript:void(0);" aria-label="Instagram">{{ icon.render('social-instagram') }}</a></li>
+                        <li><a href="javascript:void(0);" aria-label="Snapchat">{{ icon.render('social-media-snapchat') }}</a></li>
                     </ul>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-icon-list m-icon-list--horizontal m-icon-list--negative"&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;&lt;span class="fa fa-facebook" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;&lt;span class="fa fa-twitter" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;&lt;span class="fa fa-linkedin" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;&lt;span class="fa fa-instagram" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Google+"&gt;&lt;span class="fa fa-google-plus" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;&lt;span class="fa fa-snapchat-ghost" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Facebook"&gt;{{ icon.code('social-media-facebook') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Twitter"&gt;{{ icon.code('social-media-twitter') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="LinkedIn"&gt;{{ icon.code('professional-network-linkedin') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Instagram"&gt;{{ icon.code('social-instagram') }}&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" aria-label="Snapchat"&gt;{{ icon.code('social-media-snapchat') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -1446,10 +1426,7 @@
                 <figure class="m-image">
                     <img src="https://placeimg.com/1000/500/tech" alt="Figure image.">
                     <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="true">
-                        <div class="a-copyright__sign">
-                            <span class="fa fa-copyright" aria-hidden="true"></span>
-                            <span class="u-screen-reader-only">Copyright </span>
-                        </div>
+                        <span class="a-copyright__sign">©</span>
                         <span class="a-copyright__label">Lorem Pixel</span>
                     </a>
                 </figure>
@@ -1458,10 +1435,7 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;figure class="m-image"&gt;
   &lt;img src="https://placeimg.com/1000/500/tech" alt="Figure image."&gt;
   &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="true"&gt;
-    &lt;div class="a-copyright__sign"&gt;
-      &lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;
-        &lt;span class="u-screen-reader-only"&gt;Copyright &lt;/span&gt;
-    &lt;/div&gt;
+    &lt;span class="a-copyright__sign"&gt;&copy;&lt;/span&gt;
     &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
   &lt;/a&gt;
 &lt;/figure&gt;</code></pre>
@@ -1475,14 +1449,14 @@
         <h3 class="u-margin-top-lg">Modal</h3>
         <span class="d-file">molecules/molecules.modal</span>
         <div class="m-alert d-alert m-alert--wcag">
-            <p><span class="u-screen-reader-only">Accessibility note. </span>Note that <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#keyboard-interaction-7" title="WAI-ARIA Authoring Practices 1.2 - 3.9 Dialog (Modal)" class="has-icon-right" target="_blank">focus management is essential<span class="ai" aria-hidden="true"><svg><use xlink:href="images/ai.svg#navigation-next" /></svg></span><span class="u-screen-reader-only"> (external)</span></a> for a modal dialog to be accessible.</p>
+            <p><span class="u-screen-reader-only">Accessibility note. </span>Note that <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#keyboard-interaction-7" title="WAI-ARIA Authoring Practices 1.2 - 3.9 Dialog (Modal)" class="has-icon-right" target="_blank">focus management is essential{{ icon.render('navigation-next') }}<span class="u-screen-reader-only"> (external)</span></a> for a modal dialog to be accessible.</p>
         </div>
         <div class="d">
             <div>
                 <div class="m-modal" role="dialog" aria-modal="true" aria-labelledby="myModalTitle" aria-describedby="myModelDesc">
                     <div class="m-modal__content">
                         <div class="m-modal__header u-margin-bottom-xs">
-                            <button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                            <button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close">{{ icon.render('remove') }}</button>
                             <h4 id="myModalTitle" class="h6">Aeneis</h4>
                         </div>
                         <div class="u-margin-bottom">
@@ -1499,7 +1473,7 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-modal" role="dialog" aria-modal="true" aria-labelledby="myModalTitle" aria-describedby="myModelDesc"&gt;
   &lt;div class="m-modal__content"&gt;
     &lt;div class="m-modal__header u-margin-bottom-xs"&gt;
-      &lt;button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
       &lt;h4 id="myModalTitle" class="h6"&gt;Aeneis&lt;/h4&gt;
     &lt;/div&gt;
     &lt;div class="u-margin-bottom"&gt;
@@ -1518,7 +1492,7 @@
                 <div class="m-modal m-modal--large" role="dialog" aria-modal="true" aria-labelledby="myLargeModalTitle" aria-describedby="myLargeModelDesc">
                     <div class="m-modal__content">
                         <div class="m-modal__header u-margin-bottom-xs">
-                            <button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"><span class="fa fa-close" aria-hidden="true"></span></button>
+                            <button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close">{{ icon.render('remove') }}</button>
                             <h4 class="h6">Aeneis</h4>
                         </div>
                         <div class="u-margin-bottom">
@@ -1535,7 +1509,7 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-modal m-modal--large" role="dialog" aria-modal="true" aria-labelledby="myLargeModalTitle" aria-describedby="myLargeModelDesc"&gt;
   &lt;div class="m-modal__content"&gt;
     &lt;div class="m-modal__header u-margin-bottom-xs"&gt;
-      &lt;button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
       &lt;h4 id="myLargeModalTitle" class="h6"&gt;Aeneis&lt;/h4&gt;
     &lt;/div&gt;
     &lt;div class="u-margin-bottom"&gt;
@@ -1555,32 +1529,32 @@
         <span class="d-file">molecules/molecules.navigation</span>
 
         <div class="m-alert d-alert m-alert--wcag">
-            <p><span class="u-screen-reader-only">Accessibility note. </span>In order to make your navigation accessible make sure to follow the <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#tabpanel" title="WAI-ARIA Authoring Practices 1.2 - 3.23 Tabs" class="has-icon-right" target="_blank">ARIA design patterns for tabs<span class="ai" aria-hidden="true"><svg><use xlink:href="images/ai.svg#navigation-next" /></svg></span><span class="u-screen-reader-only"> (external)</span></a>. Also note that none of the examples below include an actual tab panel, which is part of the design pattern.</p>
+            <p><span class="u-screen-reader-only">Accessibility note. </span>In order to make your navigation accessible make sure to follow the <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#tabpanel" title="WAI-ARIA Authoring Practices 1.2 - 3.23 Tabs" class="has-icon-right" target="_blank">ARIA design patterns for tabs{{ icon.render('navigation-next') }}<span class="u-screen-reader-only"> (external)</span></a>. Also note that none of the examples below include an actual tab panel, which is part of the design pattern.</p>
         </div>
 
         <h4 class="u-margin-top-lg">List navigation</h4>
         <div class="d">
             <div>
                 <ul class="m-nav-list u-margin-bottom-lg" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('study-light-idea') }}Thomas Edison</a></li>
                     <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
                     <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
                 </ul>
 
                 <ul class="m-nav-list m-nav-list--left">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('study-light-idea') }}Thomas Edison</a></li>
                     <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
                     <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('study-light-idea') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list m-nav-list--left"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('study-light-idea') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
@@ -1597,25 +1571,25 @@
         <div class="d">
             <div>
                 <ul class="m-nav-list u-margin-bottom-lg" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</button></li>
+                    <li><button role="tab" aria-selected="false">{{ icon.render('study-light-idea') }}Thomas Edison</button></li>
                     <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></button></li>
                     <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</button></li>
                 </ul>
 
                 <ul class="m-nav-list m-nav-list--left u-margin-bottom-lg" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</button></li>
+                    <li><button role="tab" aria-selected="false">{{ icon.render('study-light-idea') }}Thomas Edison</button></li>
                     <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></button></li>
                     <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</button></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('study-light-idea') }}Thomas Edison&lt;/button&gt;&lt;/li&gt;
   &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
   &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list m-nav-list--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/button&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('study-light-idea') }}Thomas Edison&lt;/button&gt;&lt;/li&gt;
   &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
   &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
@@ -1626,50 +1600,50 @@
         <div class="d">
             <div>
                 <ul class="m-nav-tabs u-margin-bottom-lg" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('study-light-idea') }}Thomas Edison</a></li>
                     <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
                     <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
                 </ul>
 
 
                 <ul class="m-nav-tabs m-nav-tabs--left u-margin-bottom-lg" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('study-light-idea') }}Thomas Edison</a></li>
                     <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
                     <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
                 </ul>
 
 
                 <ul class="m-nav-tabs m-nav-tabs--right u-margin-bottom-lg" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</a></li>
+                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('study-light-idea') }}Thomas Edison</a></li>
                     <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></a></li>
                     <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
                 </ul>
 
 
                 <ul class="m-nav-tabs m-nav-tabs--left u-margin-bottom-lg" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false"><span class="fa fa-lightbulb-o" aria-hidden="true"></span>Thomas Edison</button></li>
+                    <li><button role="tab" aria-selected="false">{{ icon.render('study-light-idea') }}Thomas Edison</button></li>
                     <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge">67</span></button></li>
                     <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</button></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('study-light-idea') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('study-light-idea') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--right" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('study-light-idea') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;&lt;span class="fa fa-lightbulb-o" aria-hidden="true"&gt;&lt;/span&gt;Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('study-light-idea') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
   &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
@@ -1731,42 +1705,42 @@
         <div class="d">
             <div>
                 <ul class="m-pagination u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination u-margin-bottom">
-                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
                     <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
                     <li>...</li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
                     <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;...&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -1774,42 +1748,42 @@
         <div class="d">
             <div>
                 <ul class="m-pagination m-pagination--outline u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--outline u-margin-bottom">
-                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
                     <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--outline u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
                     <li>...</li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
                     <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;...&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -1817,60 +1791,60 @@
         <div class="d">
             <div>
                 <ul class="m-pagination m-pagination--small u-margin-bottom">
-                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
                     <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--large u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
                     <li>...</li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
                     <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--outline m-pagination--large u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--outline m-pagination--small u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page"><span class="fa fa-angle-left" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
                     <li>...</li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
                     <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)"><span class="fa fa-angle-right" aria-hidden="true"></span></a></li>
+                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--small"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--large"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;...&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline m-pagination--large"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline m-pagination--small"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;&lt;span class="fa fa-angle-left" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;...&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;&lt;span class="fa fa-angle-right" aria-hidden="true"&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -1960,7 +1934,7 @@
         <h3 class="u-margin-top-lg">Range slider</h3>
         <span class="d-file">molecules/molecules.range-slider</span>
         <div class="m-alert d-alert m-alert--wcag">
-            <p><span class="u-screen-reader-only">Accessibility note. </span>Also check the <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#slider" title="WAI-ARIA Authoring Practices 1.2 - 3.19 Slider" class="has-icon-right" target="_blank">ARIA best practices<span class="ai" aria-hidden="true"><svg><use xlink:href="images/ai.svg#navigation-next" /></svg></span><span class="u-screen-reader-only"> (external)</span></a> in order to make the range slider accessible.</p>
+            <p><span class="u-screen-reader-only">Accessibility note. </span>Also check the <a href="https://www.w3.org/TR/wai-aria-practices-1.2/#slider" title="WAI-ARIA Authoring Practices 1.2 - 3.19 Slider" class="has-icon-right" target="_blank">ARIA best practices{{ icon.render('navigation-next') }}<span class="u-screen-reader-only"> (external)</span></a> in order to make the range slider accessible.</p>
         </div>
         <div class="d">
             <div>
@@ -2191,13 +2165,13 @@
             <div>
                 <div class="m-tag">
                     <span class="m-tag__label">My tag with delete button</span>
-                    <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"><span class="fa fa-close" aria-hidden="true"></span></button>
+                    <button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete">{{ icon.render('remove') }}</button>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
   &lt;span class="m-tag__label"&gt;My tag with delete button&lt;/span&gt;
-  &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -2205,24 +2179,24 @@
             <div>
                 <div>
                     <div class="m-tag u-margin-bottom-xs">
-                        <button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"><span class="fa fa-check" aria-hidden="true"></span></button>
+                        <button class="a-button a-button--default a-button--small has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
                         <span class="m-tag__label">My tag with icon</span>
                     </div>
                 </div>
                 <div>
                     <div class="m-tag">
-                        <button class="a-button a-button--small a-button--success has-icon" aria-label="Accept"><span class="fa fa-check" aria-hidden="true"></span></button>
+                        <button class="a-button a-button--small a-button--success has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
                         <span class="m-tag__label">My other tag with icon</span>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
   &lt;span class="m-tag__label"&gt;My tag with icon&lt;/span&gt;
  &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;button class="a-button a-button--small a-button--success has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;button class="a-button a-button--small a-button--success has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
   &lt;span class="m-tag__label"&gt;My other tag with icon&lt;/span&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -2307,20 +2281,20 @@
                     <small class="m-upload__description">Maximum file size: 4MB</small>
                     <ul class="m-upload__files">
                         <li>
-                            <span class="fa fa-file-o" aria-hidden="true"></span>
+                            {{ icon.render('common-file-empty') }}
                             <span class="m-upload__filename">my-doc.pdf</span>
-                            <button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"><span class="fa fa-close" aria-label="Close" aria-hidden="true"></span></button>
+                            <button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
                         </li>
                         <li>
-                            <span class="fa fa-file-o" aria-hidden="true"></span>
+                            {{ icon.render('common-file-empty') }}
                             <span class="m-upload__filename">my-pic.jpg</span>
-                            <button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"><span class="fa fa-close" aria-label="Close" aria-hidden="true"></span></button>
+                            <button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
                         </li>
                         <li class="is-error">
-                            <span class="fa fa-warning u-text-danger" aria-hidden="true"></span>
+                            {{ icon.render('alert-triangle') }}
                             <span class="m-upload__filename">my-unallowed-file.xml</span>
                             <span class="m-upload__error">This file format is not allowed.</span>
-                            <button class="m-upload__delete a-button-transparent a-button--danger a-button--small has-icon"><span class="fa fa-close" aria-label="Close" aria-hidden="true"></span></button>
+                            <button class="m-upload__delete a-button-transparent a-button--danger a-button--small has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
                         </li>
                     </ul>
                 </div>
@@ -2344,20 +2318,20 @@
   &lt;small class="m-upload__description"&gt;Maximum file size: 4MB&lt;/small&gt;
   &lt;ul class="m-upload__files"&gt;
     &lt;li&gt;
-      &lt;span class="fa fa-file-o" aria-hidden="true"&gt;&lt;/span&gt;
+      {{ icon.code('common-file-empty') }}
       &lt;span class="m-upload__filename"&gt;my-doc.pdf&lt;/span&gt;
-      &lt;button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"&gt;&lt;span class="fa fa-close" aria-label="Close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;/li&gt;
     &lt;li&gt;
-      &lt;span class="fa fa-file-o" aria-hidden="true"&gt;&lt;/span&gt;
+      {{ icon.code('common-file-empty') }}
       &lt;span class="m-upload__filename"&gt;my-pic.jpg&lt;/span&gt;
-      &lt;button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"&gt;&lt;span class="fa fa-close" aria-label="Close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="m-upload__delete a-button-transparent a-button--default a-button--small has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;/li&gt;
     &lt;li class="is-error"&gt;
-      &lt;span class="fa fa-warning" aria-hidden="true"&gt;&lt;/span&gt;
+      {{ icon.code('alert-triangle') }}
       &lt;span class="m-upload__filename"&gt;my-unallowed-file.xml&lt;/span&gt;
       &lt;span class="m-upload__error"&gt;This file format is not allowed.&lt;/span&gt;
-      &lt;button class="m-upload__delete a-button-transparent a-button--danger a-button--small has-icon"&gt;&lt;span class="fa fa-close" aria-label="Close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="m-upload__delete a-button-transparent a-button--danger a-button--small has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre>

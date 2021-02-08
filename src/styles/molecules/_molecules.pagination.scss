@@ -85,10 +85,7 @@
       }
 
       &.is-disabled {
-        background-color: transparent;
-        box-shadow: 0 0 0 1px $pagination-bg-disabled inset;
-        color: $pagination-bg-disabled;
-        cursor: not-allowed;
+        box-shadow: none;
       }
     }
 
