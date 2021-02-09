@@ -86,7 +86,7 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;footer class="o-footer"&gt;
   &lt;span class="o-footer__label"&gt;© stad Antwerpen&lt;/span&gt;
   &lt;a href="#" class="o-footer__button a-button a-button--secondary has-icon" aria-label="Go back to top"&gt;
-    &lt;span class="fa fa-arrow-up" aria-hidden="true"&gt;&lt;/span&gt;
+    {{ icon.code('arrow-up-1') }}
   &lt;/a&gt;
 &lt;/footer&gt;</code></pre>
             </div>
@@ -173,7 +173,7 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars" aria-hidden="true"></span>
+                                        {{ icon.render('navigation-menu') }}
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link A</a>
                                     </div>
                                 </div>
@@ -183,18 +183,17 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-file" aria-hidden="true"></span>
+                                        {{ icon.render('common-file-empty') }}
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
                                     </div>
-                                    <span class="o-menu__icon o-menu__submenu-icon fa fa-angle-down" aria-hidden="true"></span>
+                                    {{ icon.render('arrow-up-1') }}
                                 </div>
                                 <div class="o-menu__submenu is-active">
                                     <div class="o-menu__submenu-content-wrapper">
                                         <ul class="m-nav-list">
                                             <li><a>First Layer A</a></li>
                                             <li class="is-active">
-                                                <a>First Layer B <span
-                                                    class="o-menu__icon o-menu__submenu-icon fa fa-angle-down" aria-hidden="true"></span></a>
+                                                <a>First Layer B {{ icon.render('arrow-up-1') }}</a>
                                                 <div class="o-menu__submenu">
                                                     <div class="o-menu__submenu-content-wrapper">
                                                         <ul class="m-nav-list">
@@ -213,7 +212,7 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars" aria-hidden="true"></span>
+                                        {{ icon.render('navigation-menu') }}
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
                                     </div>
                                 </div>
@@ -221,7 +220,7 @@
                         </div>
                     </div>
                     <div class="o-menu__hide-cta">
-                        <a href="#organisms-navigation-menu">Hide Menu <span class="fa fa-angle-double-left" aria-hidden="true"></span></a>
+                        <a href="#organisms-navigation-menu">Hide Menu {{ icon.render('arrow-button-left-1') }}</a>
                     </div>
                 </div>
             </div>
@@ -232,7 +231,7 @@
             &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
                 &lt;div class=&quot;o-menu__tab-header&quot;&gt;
                     &lt;div class=&quot;o-menu__tab-title&quot;&gt;
-                        &lt;span class=&quot;o-menu__icon o-menu__tab-icon fa fa-bars&quot;&gt;&lt;/span&gt;
+                        {{ icon.code('navigation-menu') }}
                         &lt;a class=&quot;o-menu__link&quot; href=&quot;#organisms-navigation-menu&quot;&gt;Link A&lt;/a&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
@@ -242,17 +241,17 @@
             &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
                 &lt;div class=&quot;o-menu__tab-header&quot;&gt;
                     &lt;div class=&quot;o-menu__tab-title&quot;&gt;
-                        &lt;span class=&quot;o-menu__icon o-menu__tab-icon fa fa-file&quot;&gt;&lt;/span&gt;
+                        {{ icon.code('common-file-empty') }}
                         &lt;a class=&quot;o-menu__link&quot; href=&quot;#organisms-navigation-menu&quot;&gt;Link B&lt;/a&gt;
                     &lt;/div&gt;
-                    &lt;span class=&quot;o-menu__icon o-menu__submenu-icon fa fa-angle-down&quot;&gt;&lt;/span&gt;
+                    {{ icon.render('arrow-up-1') }}
                 &lt;/div&gt;
                 &lt;div class=&quot;o-menu__submenu is-active&quot;&gt;
                     &lt;div class=&quot;o-menu__submenu-content-wrapper&quot;&gt;
                         &lt;ul class=&quot;m-nav-list&quot;&gt;
                             &lt;li&gt;&lt;a&gt;First Layer A&lt;/a&gt;&lt;/li&gt;
                             &lt;li class=&quot;is-active&quot;&gt;
-                                &lt;a&gt;First Layer B &lt;span class=&quot;o-menu__icon o-menu__submenu-icon fa fa-angle-down&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+                                &lt;a&gt;First Layer B {{ icon.render('arrow-up-1') }}&lt;/a&gt;
                                 &lt;div class=&quot;o-menu__submenu&quot;&gt;
                                     &lt;div class=&quot;o-menu__submenu-content-wrapper&quot;&gt;
                                         &lt;ul class=&quot;m-nav-list&quot;&gt;
@@ -271,7 +270,7 @@
             &lt;div class=&quot;o-menu__tab-wrapper&quot;&gt;
                 &lt;div class=&quot;o-menu__tab-header&quot;&gt;
                     &lt;div class=&quot;o-menu__tab-title&quot;&gt;
-                        &lt;span class=&quot;o-menu__icon o-menu__tab-icon fa fa-bars&quot;&gt;&lt;/span&gt;
+                        {{ icon.code('navigation-menu') }}
                         &lt;a class=&quot;o-menu__link&quot; href=&quot;#organisms-navigation-menu&quot;&gt;Link C&lt;/a&gt;
                     &lt;/div&gt;
                 &lt;/div&gt;
@@ -279,7 +278,7 @@
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class=&quot;o-menu__hide-cta&quot;&gt;
-        &lt;a href=&quot;#organisms-navigation-menu&quot;&gt;Hide Menu &lt;span class=&quot;fa fa-angle-double-left&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;a href=&quot;#organisms-navigation-menu&quot;&gt;Hide Menu {{ icon.render('arrow-button-left-1') }}&lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;
                 </code></pre>
@@ -297,7 +296,7 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars" aria-hidden="true"></span>
+                                        {{ icon.render('navigation-menu') }}
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link A</a>
                                     </div>
                                 </div>
@@ -307,18 +306,17 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-file" aria-hidden="true"></span>
+                                        {{ icon.render('common-file-empty') }}
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
                                     </div>
-                                    <span class="o-menu__icon o-menu__submenu-icon fa fa-angle-down" aria-hidden="true"></span>
+                                    {{ icon.render('arrow-up-1') }}
                                 </div>
                                 <div class="o-menu__submenu is-active">
                                     <div class="o-menu__submenu-content-wrapper">
                                         <ul class="m-nav-list">
                                             <li><a>First Layer A</a></li>
                                             <li class="is-active">
-                                                <a>First Layer B <span
-                                                    class="o-menu__icon o-menu__submenu-icon fa fa-angle-down" aria-hidden="true"></span></a>
+                                                <a>First Layer B {{ icon.render('arrow-down-1') }}</a>
                                                 <div class="o-menu__submenu">
                                                     <div class="o-menu__submenu-content-wrapper">
                                                         <ul class="m-nav-list">
@@ -337,7 +335,7 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        <span class="o-menu__icon o-menu__tab-icon fa fa-bars" aria-hidden="true"></span>
+                                        {{ icon.render('navigation-menu') }}
                                         <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
                                     </div>
                                 </div>
@@ -345,7 +343,7 @@
                         </div>
                     </div>
                     <div class="o-menu__hide-cta">
-                        <a href="#organisms-navigation-menu"><span class="fa fa-angle-double-right" aria-hidden="true"></span></a>
+                        <a href="#organisms-navigation-menu">{{ icon.render('arrow-button-right-1') }}</a>
                     </div>
                     <!-- We override the default position on purpose for the demo, we don't want it floating in absolute position -->
                     <div class="o-menu__navigation-pane is-visible" style="position: static">
@@ -402,7 +400,8 @@
             <div>
                 <div class="o-slideshow">
                     <div class="o-slideshow__inner">
-                        <button class="a-button o-slideshow__prev">
+                        <button class="a-button has-icon o-slideshow__prev">
+                            {{ icon.render('arrow-left-1') }}
                             <span class="u-screen-reader-only">Previous image</span>
                         </button>
                         <div class="o-slideshow__slides">
@@ -411,7 +410,7 @@
                                     <div class="m-image">
                                         <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 1.">
                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
+                                            <div class="a-copyright__sign">©</div>
                                             <span class="a-copyright__label">Lorem Pixel</span>
                                         </div>
                                     </div>
@@ -422,7 +421,7 @@
                                     <div class="m-image">
                                         <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2.">
                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
+                                            <div class="a-copyright__sign">©</div>
                                             <span class="a-copyright__label">Lorem Pixel</span>
                                         </div>
                                     </div>
@@ -433,14 +432,15 @@
                                     <div class="m-image">
                                         <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 3.">
                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
+                                            <div class="a-copyright__sign">©</div>
                                             <span class="a-copyright__label">Lorem Pixel</span>
                                         </div>
                                     </div>
                                 </div>
                             </figure>
                         </div>
-                        <button class="a-button o-slideshow__next">
+                        <button class="a-button has-icon o-slideshow__next">
+                            {{ icon.render('arrow-right-1') }}
                             <span class="u-screen-reader-only">Next image</span>
                         </button>
                     </div>
@@ -453,7 +453,8 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="o-slideshow"&gt;
   &lt;div class="o-slideshow__inner"&gt;
-    &lt;button class="a-button o-slideshow__prev"&gt;
+    &lt;button class="a-button has-icon o-slideshow__prev"&gt;
+      {{ icon.code('arrow-left-1') }}
       &lt;span class="u-screen-reader-only"&gt;Previous image&lt;/span&gt;
     &lt;/button&gt;
     &lt;div class="o-slideshow__slides"&gt;
@@ -462,7 +463,7 @@
           &lt;div class="m-image"&gt;
             &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 1."&gt;
             &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
             &lt;/div&gt;
           &lt;/div&gt;
@@ -473,7 +474,7 @@
           &lt;div class="m-image"&gt;
             &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2."&gt;
             &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
             &lt;/div&gt;
           &lt;/div&gt;
@@ -484,14 +485,15 @@
           &lt;div class="m-image"&gt;
             &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 3."&gt;
             &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-              &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
+              &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/figure&gt;
     &lt;/div&gt;
-    &lt;button class="a-button o-slideshow__next"&gt;
+    &lt;button class="a-button has-icon o-slideshow__next"&gt;
+      {{ icon.code('arrow-right-1') }}
       &lt;span class="u-screen-reader-only"&gt;Next image&lt;/span&gt;
     &lt;/button&gt;
   &lt;/div&gt;
@@ -515,19 +517,19 @@
                             <label for="input-slideshow"><span
                                 class="u-screen-reader-only">Toggle overlay</span></label>
                             <div class="m-overlay">
-                                <label for="input-slideshow"><a class="m-overlay__button"><span
-                                    class="fa fa-close"><span
-                                    class="u-screen-reader-only">Close overlay</span></span></a></label>
+                                <label for="input-slideshow"><a class="m-overlay__button">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close overlay</span></a></label>
                                 <div class="m-overlay__slideshow o-slideshow o-slideshow--transparent">
                                     <div class="o-slideshow__inner">
-                                        <div class="o-slideshow__prev o-slideshow__prev--outside"></div>
+                                        <button class="a-button has-icon o-slideshow__prev o-slideshow__prev--outside">
+                                            {{ icon.render('arrow-left-1') }}
+                                        </button>
                                         <div class="o-slideshow__slides">
                                             <figure class="o-slideshow__slide is-active">
                                                 <div class="o-slideshow__image">
                                                     <div class="m-image">
                                                         <img src="https://placeimg.com/1900/950/tech" alt="Slideshow image 1.">
                                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
+                                                            <div class="a-copyright__sign">©</div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
@@ -538,7 +540,7 @@
                                                     <div class="m-image">
                                                         <img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2.">
                                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
+                                                            <div class="a-copyright__sign">©</div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
@@ -550,18 +552,20 @@
                                                         <img src="https://placeimg.com/1000/500/tech"
                                                              alt="Slideshow image 3.">
                                                         <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign"><span class="fa fa-copyright" aria-hidden="true"></span></div>
+                                                            <div class="a-copyright__sign">©</div>
                                                             <span class="a-copyright__label">Lorem Pixel</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </figure>
                                         </div>
-                                        <div class="o-slideshow__next o-slideshow__next--outside"></div>
+                                        <button class="a-button has-icon o-slideshow__next o-slideshow__next--outside">
+                                            {{ icon.render('arrow-right-1') }}
+                                        </button>
                                     </div>
                                     <figcaption class="o-slideshow__footer">
                                         <span class="o-slideshow__counter">1 | 3</span>
-                                        Some fancy caption about this photo. Click the "X" in the top right corner to close the slideshow.
+                                        Some fancy caption about this photo. Click the close button in the top right corner to close the slideshow.
                                     </figcaption>
                                 </div>
                             </div>
@@ -572,17 +576,19 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-overlay"&gt;
-  &lt;label for="input-slideshow"&gt;&lt;a class="m-overlay__button"&gt;&lt;span class="fa fa-close"&gt;&lt;span class="u-screen-reader-only"&gt;Close overlay&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;
+  &lt;label for="input-slideshow"&gt;&lt;a class="m-overlay__button"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close overlay&lt;/span&gt;&lt;/a&gt;&lt;/label&gt;
   &lt;div class="m-overlay__slideshow o-slideshow o-slideshow--transparent"&gt;
     &lt;div class="o-slideshow__inner"&gt;
-      &lt;div class="o-slideshow__prev o-slideshow__prev--outside"&gt;&lt;/div&gt;
+      &lt;div class="o-slideshow__prev o-slideshow__prev--outside"&gt;
+        {{ icon.code('arrow-left-1') }}
+      &lt;/div&gt;
       &lt;div class="o-slideshow__slides"&gt;
         &lt;figure class="o-slideshow__slide is-active"&gt;
           &lt;div class="o-slideshow__image"&gt;
             &lt;div class="m-image"&gt;
               &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 1."&gt;
               &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
               &lt;/div&gt;
             &lt;/div&gt;
@@ -593,7 +599,7 @@
             &lt;div class="m-image"&gt;
               &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 2."&gt;
               &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
               &lt;/div&gt;
             &lt;/div&gt;
@@ -604,14 +610,16 @@
             &lt;div class="m-image"&gt;
               &lt;img src="https://placeimg.com/1000/500/tech" alt="Slideshow image 3."&gt;
               &lt;div class="m-image__copyright a-copyright" aria-haspopup="true"&gt;
-                &lt;div class="a-copyright__sign"&gt;&lt;span class="fa fa-copyright" aria-hidden="true"&gt;&lt;/span&gt;&lt;/div&gt;
+                &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Lorem Pixel&lt;/span&gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/figure&gt;
       &lt;/div&gt;
-      &lt;div class="o-slideshow__next o-slideshow__next--outside"&gt;&lt;/div&gt;
+      &lt;div class="o-slideshow__next o-slideshow__next--outside"&gt;
+        {{ icon.code('arrow-right-1') }}
+      &lt;/div&gt;
     &lt;/div&gt;
     &lt;figcaption class="o-slideshow__footer"&gt;
       &lt;span class="o-slideshow__counter"&gt;1 | 3&lt;/span&gt;
@@ -658,17 +666,17 @@
                     <li class="m-tag">
                         <span class="m-tag__label">Thomas Edison</span>
                         <button class="a-button-transparent a-button--small a-button--danger has-icon"
-                                aria-label="Delete"><span class="fa fa-close" aria-hidden="true"></span></button>
+                                aria-label="Delete">{{ icon.render('remove') }}</button>
                     </li>
                     <li class="m-tag">
                         <span class="m-tag__label">Leonardo da Vinci</span>
                         <button class="a-button-transparent a-button--small a-button--danger has-icon"
-                                aria-label="Delete"><span class="fa fa-close" aria-hidden="true"></span></button>
+                                aria-label="Delete">{{ icon.render('remove') }}</button>
                     </li>
                     <li class="m-tag">
                         <span class="m-tag__label">Albert Einstein</span>
                         <button class="a-button-transparent a-button--small a-button--danger has-icon"
-                                aria-label="Delete"><span class="fa fa-close" aria-hidden="true"></span></button>
+                                aria-label="Delete">{{ icon.render('remove') }}</button>
                     </li>
                 </ul>
             </div>
@@ -676,15 +684,15 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
     &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
-    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;&lt;span class="fa fa-close" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button-transparent a-button--small a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
@@ -693,18 +701,15 @@
             <div>
                 <ul class="o-tag-list">
                     <li class="m-tag">
-                        <button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"><span
-                            class="fa fa-check" aria-hidden="true"></span></button>
+                        <button class="a-button a-button--default a-button--small has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
                         <span class="m-tag__label">Thomas Edison</span>
                     </li>
                     <li class="m-tag">
-                        <button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"><span
-                            class="fa fa-check" aria-hidden="true"></span></button>
+                        <button class="a-button a-button--success a-button--small has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
                         <span class="m-tag__label">Leonardo da Vinci</span>
                     </li>
                     <li class="m-tag">
-                        <button class="a-button a-button a-button--small has-icon" aria-label="Drag"><span
-                            class="fa fa-arrows" aria-hidden="true"></span></button>
+                        <button class="a-button a-button a-button--small has-icon" aria-label="Drag">{{ icon.render('direction-button-arrows') }}</button>
                         <span class="m-tag__label">Albert Einstein</span>
                     </li>
                 </ul>
@@ -712,15 +717,15 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button--default a-button--small has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"&gt;&lt;span class="fa fa-check" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button--success a-button--small has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
   &lt;/li&gt;
   &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button a-button--small has-icon" aria-label="Drag"&gt;&lt;span class="fa fa-arrows" aria-hidden="true"&gt;&lt;/span&gt;&lt;/button&gt;
+    &lt;button class="a-button a-button a-button--small has-icon" aria-label="Drag"&gt;{{ icon.code('direction-button-arrows') }}&lt;/button&gt;
     &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>

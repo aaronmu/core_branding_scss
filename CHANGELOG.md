@@ -3,11 +3,12 @@
 ## [5.0.0] - 2021-xx-xx
 ### Added
 - [BREAKING] Replaced the complete icon set
-- [BREAKING] Updated avatar to work with the new icon library
-- [BREAKING] Updated copyright to work with the new icon library
 - Added `$spacer-sm` classes
 
 ### Changed
+- [BREAKING] Updated avatar to work with the new icon library
+- [BREAKING] Updated copyright to work with the new icon library
+- [BREAKING] Updated slideshow to work with the new icon library
 - Aligned the look of disabled components
 
 

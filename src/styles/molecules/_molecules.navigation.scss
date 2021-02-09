@@ -14,7 +14,6 @@
   border-top: 1px solid $border-color;
 
   > li {
-    display: flex;
     font-weight: $nav-font-weight;
     line-height: $line-height-paragraph;
     min-height: $spacer-lg;
@@ -33,7 +32,6 @@
       transition-duration: $animation-duration;
       transition-property: background, color;
       transition-timing-function: $animation-easing;
-      vertical-align: middle;
 
       &:hover,
       &:active {
@@ -64,7 +62,6 @@
 
       > .ai {
         display: inline-block;
-        font-size: $nav-icon-size;
         margin-right: $spacer-xs;
       }
     }

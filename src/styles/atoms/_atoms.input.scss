@@ -221,7 +221,7 @@ textarea {
   &.has-icon-left .a-input__wrapper > .ai,
   &.has-icon-right .a-input__wrapper > .ai {
     color: $input-icon;
-    font-size: 1.25rem;
+    font-size: rem($icon-size-base);
     pointer-events: none;
     position: absolute;
     text-align: center;

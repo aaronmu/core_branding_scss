@@ -50,28 +50,29 @@
   }
 }
 
+
+
+
 .o-slideshow__prev,
 .o-slideshow__next {
-  align-items: center;
-  color: $slideshow-arrow-color;
-  display: flex;
-  font-size: 2rem;
-  height: calc(100% - #{$copyright-height * 2});
-  justify-content: center;
-  position: absolute;
-  text-shadow: 0 0 2px $overlay-color;
   top: 50%;
   transform: translateY(-50%);
-  width: $spacer-md;
   z-index: 1;
 
   @include at($screen-sm) {
-    font-size: 2.5rem;
-    width: $spacer-xl;
+    font-size: $spacer;
   }
 
-  &:before {
-    @include fontawesome;
+  @include at($screen-lg) {
+    font-size: $spacer-md;
+  }
+
+  &.has-icon {
+    position: absolute;
+
+    svg {
+      filter: drop-shadow(0 0 2px $overlay-color);
+    }
   }
 
   &,
@@ -80,19 +81,23 @@
   &:focus {
     background: transparent;
   }
+
+  .ai {
+    font-size: inherit;
+  }
 }
 
 .o-slideshow__prev {
   left: 0;
 
-  &:before {
-    content: '\f104';
-  }
-
   &.o-slideshow__prev--outside {
 
     @include at($screen-md) {
-      left: -$spacer * 3;
+      left: -$spacer-lg;
+    }
+
+    @include at($screen-lg) {
+      left: -$spacer-lg / 3 * 4;
     }
   }
 }
@@ -100,14 +105,14 @@
 .o-slideshow__next {
   right: 0;
 
-  &:before {
-    content: '\f105';
-  }
-
   &.o-slideshow__next--outside {
 
     @include at($screen-md) {
-      right: -$spacer * 3;
+      right: -$spacer-lg;
+    }
+
+    @include at($screen-lg) {
+      right: -$spacer-lg / 3 * 4;
     }
   }
 }

@@ -124,16 +124,10 @@
     content: '';
     height: 1.25rem;
     left: $spacer-xs;
-    // mask-image: url('/@a-ui/icons/dist/assets/icons/location-user.svg');
+    mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:#ffffff;stroke-width:6.25%;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><polyline class="st0" points="2,0.5 3.2,6.9 4.8,2.4 6.3,6.9 7.5,0.5 "/><path class="st0" d="M13.1,1.2c0,0-0.8-0.8-1.8-0.8S8.8,1.2,8.8,3.7s1.4,3.4,2.6,3.4s1.9-0.8,1.9-0.8"/><polyline class="st0" points="2.4,14.6 4.7,8.1 7.2,14.6 "/><line class="st0" x1="3.3" y1="12.1" x2="6.2" y2="12.1"/><path class="st0" d="M12.9,8.7c0,0-0.4-0.8-1.5-0.8s-2.7,0.7-2.7,3.4s1.8,3.3,2.6,3.3S13,14,13,13.9s0-2.3,0-2.3h-1.7"/></svg>') no-repeat center center;
     position: absolute;
     top: $spacer-xs;
     width: 1.25rem;
-
-    @supports (mask-image: url('')) {
-      background-color: transparent;
-      // background-image: url('/@a-ui/icons/dist/assets/icons/location-user.svg');
-    }
-
   }
 }
 
@@ -397,6 +391,7 @@
 }
 
 .hljs {
-  overflow-y: hidden;
+  display: inline !important;
+  overflow-x: hidden !important;
   padding: 0;
 }
