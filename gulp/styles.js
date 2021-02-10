@@ -11,8 +11,8 @@
 // - https://www.npmjs.com/package/gulp-header-license
 // - https://www.npmjs.org/package/gulp-sass-lint
 
-var gulp = require('gulp');
-var fs = require('fs');
+var gulp = require('gulp'),
+    fs = require('fs');
 
 var sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -22,8 +22,10 @@ var sass = require('gulp-sass'),
     rename = require('gulp-rename'),
     cssUrlAdjuster = require('gulp-css-url-adjuster'),
     license = require('gulp-header-license'),
-    sassLint = require('gulp-sass-lint');
+    sassLint = require('gulp-sass-lint'),
+    browserSync = require('browser-sync');
 
+sass.compiler = require('dart-sass');
 
 var cssNano = [
     cssnano({
@@ -52,7 +54,8 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
         .pipe(postcss(autoPrefixer))
-        .pipe(gulp.dest('.tmp/styles'));
+        .pipe(gulp.dest('.tmp/styles'))
+        .pipe(browserSync.stream());
 });
 
 
