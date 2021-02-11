@@ -1,14 +1,14 @@
 'use strict';
 
-var gulp = require('gulp');
+require('./gulp/build'),
+require('./gulp/clean'),
+require('./gulp/copy'),
+require('./gulp/iconsprite'),
+require('./gulp/styles'),
+require('./gulp/templates'),
+require('./gulp/watch');
 
-var build = require('./gulp/build'),
-    clean = require('./gulp/clean'),
-    copy = require('./gulp/copy'),
-    iconsprite = require('./gulp/iconsprite'),
-    styles = require('./gulp/styles'),
-    templates = require('./gulp/templates'),
-    watch = require('./gulp/watch');
+var gulp = require('gulp');
 
 // Start a development server
 gulp.task('server', gulp.series('clean:tmp', gulp.parallel('icon-sprite', 'sass', 'render-templates', 'sass-lint'), 'watch'));

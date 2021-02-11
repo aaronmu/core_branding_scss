@@ -18,12 +18,8 @@
       font-family: $_name;
       font-style: $_style;
       font-weight: $_weight;
-      src: url($_url + '.eot');
-      src: $_local, // sass-lint:disable-line no-duplicate-properties
-      url($_url + '.eot?#iefix') format('embedded-opentype'),
-      url($_url + '.woff') format('woff'),
-      url($_url + '.ttf') format('truetype'),
-      url($_url + '.svg#icon') format('svg');
+      src: url($_url + '.woff') format('woff'),
+      url($_url + '.ttf') format('truetype');
     }
   } @else {
     @font-face {
@@ -31,11 +27,8 @@
       font-family: $_name;
       font-style: $_style;
       font-weight: $_weight;
-      src: url($_url + '.eot');
-      src: url($_url + '.eot?#iefix') format('embedded-opentype'), // sass-lint:disable-line no-duplicate-properties
-      url($_url + '.woff') format('woff'),
-      url($_url + '.ttf') format('truetype'),
-      url($_url + '.svg#icon') format('svg');
+      src: url($_url + '.woff') format('woff'),
+      url($_url + '.ttf') format('truetype');
     }
   }
 }
@@ -249,20 +242,6 @@
     content: '';
     display: block;
   }
-}
-
-
-/**
- * FONT AWESOME
- * -------------------------------------------------------------------
- */
-
-@mixin fontawesome {
-  -moz-osx-font-smoothing: grayscale; // sass-lint:disable-line no-vendor-prefixes
-  -webkit-font-smoothing: antialiased; // sass-lint:disable-line no-vendor-prefixes
-  font-family: FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
 }
 
 
