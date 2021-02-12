@@ -9,7 +9,9 @@
 - [BREAKING] Updated avatar to work with the new icon library
 - [BREAKING] Updated copyright to work with the new icon library
 - [BREAKING] Updated slideshow to work with the new icon library
+- [BREAKING] Updated the syntax of the toggle component
 - Aligned the look of disabled components
+- Optimized fonts to be more future-proof
 
 
 ## [4.3.1] - 2021-01-07

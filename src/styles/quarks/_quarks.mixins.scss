@@ -11,24 +11,15 @@
  */
 
 @mixin font-face($_name, $_url, $_weight: normal, $_style: normal, $_local: null) {
-
-  @if $_local {
-    @font-face {
-      font-display: swap;
-      font-family: $_name;
-      font-style: $_style;
-      font-weight: $_weight;
-      src: url($_url + '.woff') format('woff'),
-      url($_url + '.ttf') format('truetype');
-    }
-  } @else {
-    @font-face {
-      font-display: swap;
-      font-family: $_name;
-      font-style: $_style;
-      font-weight: $_weight;
-      src: url($_url + '.woff') format('woff'),
-      url($_url + '.ttf') format('truetype');
+  @font-face {
+    font-display: swap;
+    font-family: $_name;
+    font-style: $_style;
+    font-weight: $_weight;
+    @if $_local {
+      src: local($_name), url($_url + '.woff') format('woff'), url($_url + '.woff2') format('woff2');
+    } @else {
+      src: url($_url + '.woff') format('woff'), url($_url + '.woff2') format('woff2');
     }
   }
 }

@@ -2372,142 +2372,136 @@
         <a name="atoms-toggle" aria-label="Toggle"></a>
         <h3 class="u-margin-top-lg">Toggle</h3>
         <span class="d-file">atoms/atoms.toggle</span>
-        <div class="d">
-            <div>
-                <div class="a-toggle d-button has-icon">
-                    <input class="a-toggle__checkbox" id="icon-toggle" type="checkbox" role="switch" aria-checked="false">
-                    <div class="a-toggle__labels">
-                        <label for="icon-toggle" class="a-toggle__on a-button has-icon">
-                            {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
-                        </label>
-                        <label for="icon-toggle" class="a-toggle__off a-button a-button--danger has-icon">
-                            {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle has-icon"&gt;
-  &lt;input class="a-toggle__checkbox" id="icon-toggle" type="checkbox" role="switch" aria-checked="false"&gt;
-  &lt;div class="a-toggle__labels"&gt;
-    &lt;label for="icon-toggle" class="a-toggle__on a-button has-icon"&gt;
-      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label for="icon-toggle" class="a-toggle__off a-button a-button--danger has-icon"&gt;
-      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
+        <div class="m-alert d-alert">
+            <p>Change the <code>aria-expanded</code> attribute programmatically to true to toggle.</p>
         </div>
         <div class="d">
-            <div>
-                <div>
-                    <div class="a-toggle d-button a-toggle--large has-icon">
-                        <input class="a-toggle__checkbox" id="icon-toggle-large" type="checkbox" role="switch" aria-checked="false">
-                        <div class="a-toggle__labels">
-                            <label for="icon-toggle-large" class="a-toggle__on a-button a-button--large has-icon">
-                                {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
-                            </label>
-
-                            <label for="icon-toggle-large" class="a-toggle__off a-button a-button--danger a-button--large has-icon">
-                                {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="a-toggle d-button a-toggle--small has-icon">
-                        <input class="a-toggle__checkbox" id="icon-toggle-small" type="checkbox" role="switch" aria-checked="false">
-                        <div class="a-toggle__labels">
-                            <label for="icon-toggle-small" class="a-toggle__on a-button a-button--small has-icon">
-                                {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
-                            </label>
-                            <label for="icon-toggle-small" class="a-toggle__off a-button a-button--danger a-button--small has-icon">
-                                {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="a-toggle d-button a-toggle--tiny has-icon">
-                        <input class="a-toggle__checkbox" id="icon-toggle-tiny" type="checkbox" role="switch" aria-checked="false">
-                        <div class="a-toggle__labels">
-                            <label for="icon-toggle-tiny" class="a-toggle__on a-button a-button--tiny has-icon">
-                                {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
-                            </label>
-                            <label for="icon-toggle-tiny" class="a-toggle__off a-button a-button--danger a-button--tiny has-icon">
-                                {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--large has-icon"&gt;
-  &lt;input class="a-toggle__checkbox" id="icon-toggle-large" type="checkbox" role="switch" aria-checked="false"&gt;
-  &lt;div class="a-toggle__labels"&gt;
-    &lt;label for="icon-toggle-large" class="a-toggle__on a-button a-button--large has-icon"&gt;
-      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label for="icon-toggle-large" class="a-toggle__off a-button a-button--danger a-button--large has-icon"&gt;
-      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--small has-icon"&gt;
-  &lt;input class="a-toggle__checkbox" id="icon-toggle-small" type="checkbox" role="switch" aria-checked="false"&gt;
-  &lt;div class="a-toggle__labels"&gt;
-    &lt;label for="icon-toggle-small" class="a-toggle__on a-button a-button--small has-icon"&gt;
-      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label for="icon-toggle-small" class="a-toggle__off a-button a-button--danger a-button--small has-icon"&gt;
-      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--tiny has-icon"&gt;
-  &lt;input class="a-toggle__checkbox" id="icon-toggle-tiny" type="checkbox" role="switch" aria-checked="false"&gt;
-  &lt;div class="a-toggle__labels"&gt;
-    &lt;label for="icon-toggle-tiny" class="a-toggle__on a-button a-button--tiny has-icon"&gt;
-      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
-    &lt;/label&gt;
-    &lt;label for="icon-toggle-tiny" class="a-toggle__off a-button a-button--danger a-button--tiny has-icon"&gt;
-      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
-    &lt;/label&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <div class="a-toggle">
-                    <input class="a-toggle__checkbox" id="toggle-normal" type="checkbox" role="switch" aria-checked="false">
-                    <div class="a-toggle__labels">
-                        <label for="toggle-normal" class="a-toggle__on a-button has-icon-left">
-                            {{ icon.render('navigation-menu') }}
-                            Open
-                        </label>
-                        <label for="toggle-normal" class="a-toggle__off a-button a-button--danger has-icon-left">
-                            {{ icon.render('remove') }}
-                            Close
-                        </label>
-                    </div>
-                </div>
+            <div class="a-toggle d-button">
+                <button class="a-toggle__button" aria-expanded="false">
+                    <span class="a-button a-toggle__on has-icon-left">{{ icon.render('navigation-menu') }}Open</span>
+                    <span class="a-button a-button--danger a-toggle__on has-icon-left">{{ icon.render('remove') }}Close</span>
+                </button>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle"&gt;
-  &lt;input class="a-toggle__checkbox" id="toggle-normal" type="checkbox" role="switch" aria-checked="false"&gt;
-  &lt;div class="a-toggle__labels"&gt;
-    &lt;label for="toggle-normal" class="a-toggle__on a-button has-icon-left"&gt;
-      {{ icon.code('navigation-menu') }}
-      Open
-    &lt;/label&gt;
-    &lt;label for="toggle-normal" class="a-toggle__off a-button a-button--danger has-icon-left"&gt;
-      {{ icon.code('remove') }}
-      Close
-    &lt;/label&gt;
-  &lt;/div&gt;
+  &lt;button class="a-toggle__button" aria-expanded="false"&gt;
+    &lt;span class="a-button a-toggle__on has-icon-left"&gt;{{ icon.code('navigation-menu') }}Open&lt;/span&gt;
+    &lt;span class="a-button a-button--danger a-toggle__on has-icon-left"&gt;{{ icon.code('remove') }}Close&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div class="a-toggle d-button">
+                <button class="a-toggle__button" aria-expanded="true">
+                    <span class="a-button a-toggle__on has-icon-left">{{ icon.render('navigation-menu') }}Open</span>
+                    <span class="a-button a-button--danger a-toggle__on has-icon-left">{{ icon.render('remove') }}Close</span>
+                </button>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle"&gt;
+  &lt;button class="a-toggle__button" aria-expanded="true"&gt;
+    &lt;span class="a-button a-toggle__on has-icon-left"&gt;{{ icon.code('navigation-menu') }}Open&lt;/span&gt;
+    &lt;span class="a-button a-button--danger a-toggle__on has-icon-left"&gt;{{ icon.code('remove') }}Close&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <h4 class="u-margin-top-lg">Toggle with icon only</h4>
+        <div class="d">
+            <div class="a-toggle d-button">
+                <button class="a-toggle__button" aria-expanded="false">
+                    <span class="a-button a-toggle__on has-icon">
+                        {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
+                    </span>
+                    <span class="a-button a-button--danger a-toggle__on has-icon">
+                        {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
+                    </span>
+                </button>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle"&gt;
+  &lt;button class="a-toggle__button" aria-expanded="false"&gt;
+    &lt;span class="a-button a-toggle__on has-icon"&gt;
+      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="a-button a-button--danger a-toggle__on has-icon"&gt;
+      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <h4 class="u-margin-top-lg">Toggle sizes</h4>
+        <div class="d">
+            <div>
+                <div class="d-button">
+                    <div class="a-toggle a-toggle--large">
+                        <button class="a-toggle__button" aria-expanded="false">
+                            <span class="a-button a-button--large a-toggle__on has-icon">
+                                {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
+                            </span>
+                            <span class="a-button a-button--large a-button--danger a-toggle__on has-icon">
+                                {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-button">
+                    <div class="a-toggle a-toggle--small d-button">
+                        <button class="a-toggle__button" aria-expanded="false">
+                            <span class="a-button a-button--small a-toggle__on has-icon">
+                                {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
+                            </span>
+                            <span class="a-button a-button--small a-button--danger a-toggle__on has-icon">
+                                {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-button">
+                    <div class="a-toggle a-toggle--tiny d-button">
+                        <button class="a-toggle__button" aria-expanded="false">
+                            <span class="a-button a-button--tiny a-toggle__on has-icon">
+                                {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
+                            </span>
+                            <span class="a-button a-button--tiny a-button--danger a-toggle__on has-icon">
+                                {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--large"&gt;
+  &lt;button class="a-toggle__button" aria-expanded="false"&gt;
+    &lt;span class="a-button a-button--large a-button--tiny a-toggle__on has-icon"&gt;
+      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="a-button a-button--large a-button--danger a-toggle__on has-icon"&gt;
+      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--small"&gt;
+  &lt;button class="a-toggle__button" aria-expanded="false"&gt;
+    &lt;span class="a-button a-button--small a-button--tiny a-toggle__on has-icon"&gt;
+      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="a-button a-button--small a-button--danger a-toggle__on has-icon"&gt;
+      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--tiny"&gt;
+  &lt;button class="a-toggle__button" aria-expanded="false"&gt;
+    &lt;span class="a-button a-button--tiny a-button--tiny a-toggle__on has-icon"&gt;
+      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class="a-button a-button--tiny a-button--danger a-toggle__on has-icon"&gt;
+      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
