@@ -25,7 +25,7 @@
 .d {
   display: flex;
   flex-direction: column;
-  margin: $spacer $spacer * -1;
+  margin: $spacer $spacer-xs * -1;
 
   @include at($screen-sm) {
     flex-direction: row;
@@ -33,7 +33,7 @@
 
   > div {
     flex: 1 1 auto;
-    padding: $spacer / 4 $spacer 0;
+    padding: $spacer / 4 $spacer-xs 0;
 
     @include at($screen-sm) {
       width: 0;
@@ -134,11 +134,11 @@
 .d-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: $spacer * -1;
-  margin-right: $spacer * -1;
+  margin-left: $spacer-xs * -1;
+  margin-right: $spacer-xs * -1;
 
   > li {
-    padding: 0 $spacer;
+    padding: 0 $spacer-xs;
     width: 100%;
 
     @include at($screen-sm) {
@@ -149,7 +149,7 @@
   &__colors {
     > li {
       margin-top: $spacer / 2;
-      padding: $spacer / 2 $spacer $spacer / 2 $spacer * 6;
+      padding: $spacer / 2 $spacer-xs $spacer / 2 $spacer * 5;
       position: relative;
 
       &.d-white {
@@ -161,7 +161,7 @@
       .d-color {
         bottom: 0;
         display: block;
-        left: $spacer;
+        left: $spacer-xs;
         position: absolute;
         top: 0;
         width: $spacer * 4;

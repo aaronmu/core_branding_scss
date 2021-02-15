@@ -1803,58 +1803,109 @@
         <a name="atoms-switch" aria-label="Switch"></a>
         <h3 class="u-margin-top-lg">Switch</h3>
         <span class="d-file">atoms/atoms.switch</span>
+        <div class="m-alert d-alert">
+            <p>Change the <code>aria-checked</code> attribute programmatically to true to switch.</p>
+        </div>
         <div class="d">
             <div>
-                <div class="a-input">
-                    <label class="a-input__label">Switch</label>
+                <div class="d-tooltip">
                     <div class="a-switch">
-                        <label class="a-switch__label">Off</label>
-                        <div class="a-switch__toggle">
-                            <input type="checkbox" name="switch1" id="switch1" role="switch" aria-checked="false">
-                            <label for="switch1"><span class="u-screen-reader-only">Toggle switch</span></label>
-                        </div>
-                        <label class="a-switch__label">On</label>
+                        <button class="a-switch__button" role="switch" aria-checked="false">
+                            <span class="a-switch__off">Off</span>
+                            <span class="a-switch__on">On</span>
+                        </button>
                     </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
-  &lt;label class="a-input__label"&gt;Switch&lt;/label&gt;
-  &lt;div class="a-switch"&gt;
-    &lt;label class="a-switch__label"&gt;Off&lt;/label&gt;
-    &lt;div class="a-switch__toggle"&gt;
-      &lt;input type="checkbox" name="switch1" id="switch1" role="switch" aria-checked="false"&gt;
-      &lt;label for="switch1"&gt;&lt;span class="u-screen-reader-only"&gt;Toggle switch&lt;/span&gt;&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;label class="a-switch__label"&gt;On&lt;/label&gt;
-  &lt;/div&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch"&gt;
+  &lt;button class="a-switch__button" role="switch" aria-checked="false"&gt;
+    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
+    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
+  &lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div class="a-input">
-                    <label class="a-input__label">Disabled switch</label>
-                    <div class="a-switch is-disabled">
-                        <label class="a-switch__label">On</label>
-                        <div class="a-switch__toggle">
-                            <input type="checkbox" name="switch2" id="switch2" role="switch" aria-checked="false" disabled>
-                            <label for="switch2"><span class="u-screen-reader-only">Toggle switch</span></label>
+                <div class="d-tooltip">
+                    <div class="a-switch">
+                        <button class="a-switch__button" role="switch" aria-checked="true">
+                            <span class="a-switch__off">Off</span>
+                            <span class="a-switch__on">On</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch"&gt;
+  &lt;button class="a-switch__button" role="switch" aria-checked="true"&gt;
+    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
+    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-lg">Disabled switch</h4>
+        <div class="d">
+            <div>
+                <div class="d-tooltip">
+                    <div class="a-switch">
+                        <button class="a-switch__button" role="switch" aria-checked="false" disabled>
+                            <span class="a-switch__off">Off</span>
+                            <span class="a-switch__on">On</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-tooltip">
+                    <div class="a-switch">
+                        <button class="a-switch__button" role="switch" aria-checked="true" disabled>
+                            <span class="a-switch__off">Off</span>
+                            <span class="a-switch__on">On</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch"&gt;
+  &lt;button class="a-switch__button" role="switch" aria-checked="false" disabled&gt;
+    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
+    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch"&gt;
+  &lt;button class="a-switch__button" role="switch" aria-checked="true" disabled&gt;
+    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
+    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-lg">Switch with label</h4>
+        <div class="d">
+            <div>
+                <div class="d-tooltip">
+                    <div class="a-input">
+                        <label class="a-input__label" for="switch-button">Switch label</label>
+                        <div class="a-switch">
+                            <button class="a-switch__button" id="switch-button" role="switch" aria-checked="false">
+                                <span class="a-switch__off">Off</span>
+                                <span class="a-switch__on">On</span>
+                            </button>
                         </div>
-                        <label class="a-switch__label">Off</label>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
-  &lt;label class="a-input__label"&gt;Disabled switch&lt;/label&gt;
+  &lt;label class="a-input__label" for="switch-button"&gt;Switch label&lt;/label&gt;
   &lt;div class="a-switch"&gt;
-    &lt;label class="a-switch__label"&gt;On&lt;/label&gt;
-    &lt;div class="a-switch__toggle"&gt;
-      &lt;input type="checkbox" name="switch2" id="switch2" role="switch" aria-checked="false" disabled&gt;
-      &lt;label for="switch2"&gt;&lt;span class="u-screen-reader-only"&gt;Toggle switch&lt;/span&gt;&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;label class="a-switch__label"&gt;Off&lt;/label&gt;
+    &lt;button class="a-switch__button" id="switch-button" role="switch" aria-checked="false"&gt;
+      &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
+      &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
+    &lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -2407,6 +2458,7 @@
 &lt;/div&gt;</code></pre>
             </div>
         </div>
+
         <h4 class="u-margin-top-lg">Toggle with icon only</h4>
         <div class="d">
             <div class="a-toggle d-button">
