@@ -203,6 +203,7 @@ $icon-size-lg:            28px !default;
 
 $box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 $box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($black, .1) !default;
+$box-shadow-top:          0 $spacer / -2 0 rgba($black, .1) !default;
 
 
 /**
@@ -440,6 +441,7 @@ $radio-checkbox-bg:       $brand-primary !default;
 
 $switch-width:            $spacer-lg !default;
 $switch-height:           $switch-width / 2 + .25rem !default;
+$switch-label:            $text-color !default;
 
 $switch-bg:               $input-bg !default;
 $switch-border:           $input-border !default;
