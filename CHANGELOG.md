@@ -3,9 +3,9 @@
 ## [5.0.0] - 2021-xx-xx
 ### Added
 - [BREAKING] Replaced the complete icon set
-- Added `$spacer-sm` classes
+- Added `$spacer-sm` related classes
 - Added `$switch-label` variable
-- Added `$box-shadow-top` variable
+- Added `$box-shadow-top` and `$box-shadow-top` variables
 
 ### Changed
 - [BREAKING] Changed most of the color palette
@@ -14,11 +14,16 @@
 - [BREAKING] Updated slideshow to work with the new icon library
 - [BREAKING] Updated the syntax of the toggle component to be more accessible
 - [BREAKING] Updated the syntax of the switch component to be more accessible
+- [BREAKING] Moved navigation menu import to organisms
 - Aligned the look of disabled components
 - Optimized fonts to be more future-proof
 
 ### Fixed
 - Fixed a header component accessibility issue
+
+### Removed
+- [BREAKING] Removed cookie consent component
+- [BREAKING] Removed all Google+ related things
 
 
 ## [4.3.1] - 2021-01-07
