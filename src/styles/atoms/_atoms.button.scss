@@ -104,10 +104,6 @@
     @include a-button($white, $facebook);
   }
 
-  &.a-button--google {
-    @include a-button($white, $google);
-  }
-
   &.a-button--snapchat {
     @include a-button($text-color, $snapchat);
   }

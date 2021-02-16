@@ -86,7 +86,7 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;footer class="o-footer"&gt;
   &lt;span class="o-footer__label"&gt;© stad Antwerpen&lt;/span&gt;
   &lt;a href="#" class="o-footer__button a-button a-button--secondary has-icon" aria-label="Go back to top"&gt;
-    {{ icon.code('arrow-up-1') }}
+    {{ icon.code('arrow-up-1', true, 'ai o-menu__icon o-menu__submenu-icon') }}
   &lt;/a&gt;
 &lt;/footer&gt;</code></pre>
             </div>
@@ -173,8 +173,8 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        {{ icon.render('navigation-menu') }}
-                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link A</a>
+                                        {{ icon.render('navigation-menu', true, 'ai o-menu__icon o-menu__tab-icon') }}
+                                        <a class="o-menu__link" href="javascript:void(0);">Link A</a>
                                     </div>
                                 </div>
                             </div>
@@ -183,17 +183,17 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        {{ icon.render('common-file-empty') }}
-                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
+                                        {{ icon.render('common-file-empty', true, 'ai o-menu__icon o-menu__tab-icon') }}
+                                        <a class="o-menu__link" href="javascript:void(0);">Link B</a>
                                     </div>
-                                    {{ icon.render('arrow-up-1') }}
+                                    {{ icon.render('arrow-down-1', true, 'ai o-menu__icon o-menu__submenu-icon') }}
                                 </div>
                                 <div class="o-menu__submenu is-active">
                                     <div class="o-menu__submenu-content-wrapper">
                                         <ul class="m-nav-list">
                                             <li><a>First Layer A</a></li>
                                             <li class="is-active">
-                                                <a>First Layer B {{ icon.render('arrow-up-1') }}</a>
+                                                <a>First Layer B {{ icon.render('arrow-down-1', true, 'ai o-menu__icon o-menu__submenu-icon') }}</a>
                                                 <div class="o-menu__submenu">
                                                     <div class="o-menu__submenu-content-wrapper">
                                                         <ul class="m-nav-list">
@@ -212,76 +212,75 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        {{ icon.render('navigation-menu') }}
-                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
+                                        {{ icon.render('navigation-menu', true, 'ai o-menu__icon o-menu__tab-icon') }}
+                                        <a class="o-menu__link" href="javascript:void(0);">Link C</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="o-menu__hide-cta">
-                        <a href="#organisms-navigation-menu">Hide Menu {{ icon.render('arrow-button-left-1') }}</a>
+                        <a href="javascript:void(0);">Hide Menu {{ icon.render('arrow-button-left-1') }}</a>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="o-menu"&gt;
-    &lt;div class="o-menu__tabs-wrapper"&gt;
-        &lt;div class="o-menu__tab"&gt;
-            &lt;div class="o-menu__tab-wrapper"&gt;
-                &lt;div class="o-menu__tab-header"&gt;
-                    &lt;div class="o-menu__tab-title"&gt;
-                        {{ icon.code('navigation-menu') }}
-                        &lt;a class="o-menu__link" href="#organisms-navigation-menu"&gt;Link A&lt;/a&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
+  &lt;div class="o-menu__tabs-wrapper"&gt;
+    &lt;div class="o-menu__tab"&gt;
+      &lt;div class="o-menu__tab-wrapper"&gt;
+        &lt;div class="o-menu__tab-header"&gt;
+          &lt;div class="o-menu__tab-title"&gt;
+            {{ icon.code('navigation-menu', true, 'ai o-menu__icon o-menu__tab-icon') }}
+            &lt;a class="o-menu__link" href="#"&gt;Link A&lt;/a&gt;
+          &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class="o-menu__tab is-active"&gt;
-            &lt;div class="o-menu__tab-wrapper"&gt;
-                &lt;div class="o-menu__tab-header"&gt;
-                    &lt;div class="o-menu__tab-title"&gt;
-                        {{ icon.code('common-file-empty') }}
-                        &lt;a class="o-menu__link" href="#organisms-navigation-menu"&gt;Link B&lt;/a&gt;
-                    &lt;/div&gt;
-                    {{ icon.render('arrow-up-1') }}
-                &lt;/div&gt;
-                &lt;div class="o-menu__submenu is-active"&gt;
-                    &lt;div class="o-menu__submenu-content-wrapper"&gt;
-                        &lt;ul class="m-nav-list"&gt;
-                            &lt;li&gt;&lt;a&gt;First Layer A&lt;/a&gt;&lt;/li&gt;
-                            &lt;li class="is-active"&gt;
-                                &lt;a&gt;First Layer B {{ icon.render('arrow-up-1') }}&lt;/a&gt;
-                                &lt;div class="o-menu__submenu"&gt;
-                                    &lt;div class="o-menu__submenu-content-wrapper"&gt;
-                                        &lt;ul class="m-nav-list"&gt;
-                                            &lt;li&gt;&lt;a&gt;Second Layer A&lt;/a&gt;&lt;/li&gt;
-                                            &lt;li&gt;&lt;a&gt;Second Layer B&lt;/a&gt;&lt;/li&gt;
-                                        &lt;/ul&gt;
-                                    &lt;/div&gt;
-                                &lt;/div&gt;
-                            &lt;/li&gt;
-                        &lt;/ul&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="o-menu__tab"&gt;
-            &lt;div class="o-menu__tab-wrapper"&gt;
-                &lt;div class="o-menu__tab-header"&gt;
-                    &lt;div class="o-menu__tab-title"&gt;
-                        {{ icon.code('navigation-menu') }}
-                        &lt;a class="o-menu__link" href="#organisms-navigation-menu"&gt;Link C&lt;/a&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class="o-menu__hide-cta"&gt;
-        &lt;a href="#organisms-navigation-menu"&gt;Hide Menu {{ icon.render('arrow-button-left-1') }}&lt;/a&gt;
+    &lt;div class="o-menu__tab is-active"&gt;
+      &lt;div class="o-menu__tab-wrapper"&gt;
+        &lt;div class="o-menu__tab-header"&gt;
+          &lt;div class="o-menu__tab-title"&gt;
+            {{ icon.code('common-file-empty', true, 'ai o-menu__icon o-menu__tab-icon') }}
+            &lt;a class="o-menu__link" href="#"&gt;Link B&lt;/a&gt;
+          &lt;/div&gt;
+          {{ icon.code('arrow-down-1', true, 'ai o-menu__icon o-menu__submenu-icon') }}
+        &lt;/div&gt;
+        &lt;div class="o-menu__submenu is-active"&gt;
+          &lt;div class="o-menu__submenu-content-wrapper"&gt;
+            &lt;ul class="m-nav-list"&gt;
+              &lt;li&gt;&lt;a&gt;First Layer A&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="is-active"&gt;
+                &lt;a&gt;First Layer B {{ icon.code('arrow-down-1', true, 'ai o-menu__icon o-menu__submenu-icon') }}&lt;/a&gt;
+                &lt;div class="o-menu__submenu"&gt;
+                  &lt;div class="o-menu__submenu-content-wrapper"&gt;
+                    &lt;ul class="m-nav-list"&gt;
+                      &lt;li&gt;&lt;a&gt;Second Layer A&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a&gt;Second Layer B&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-                </code></pre>
+    &lt;div class="o-menu__tab"&gt;
+      &lt;div class="o-menu__tab-wrapper"&gt;
+        &lt;div class="o-menu__tab-header"&gt;
+          &lt;div class="o-menu__tab-title"&gt;
+            {{ icon.code('navigation-menu', true, 'ai o-menu__icon o-menu__tab-icon') }}
+            &lt;a class="o-menu__link" href="#"&gt;Link C&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="o-menu__hide-cta"&gt;
+    &lt;a href="#"&gt;Hide Menu {{ icon.code('arrow-button-left-1') }}&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
@@ -296,8 +295,8 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        {{ icon.render('navigation-menu') }}
-                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link A</a>
+                                        {{ icon.render('navigation-menu', true, 'ai o-menu__icon o-menu__tab-icon') }}
+                                        <a class="o-menu__link" href="javascript:void(0);">Link A</a>
                                     </div>
                                 </div>
                             </div>
@@ -306,17 +305,17 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        {{ icon.render('common-file-empty') }}
-                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link B</a>
+                                        {{ icon.render('common-file-empty', true, 'ai o-menu__icon o-menu__tab-icon') }}
+                                        <a class="o-menu__link" href="javascript:void(0);">Link B</a>
                                     </div>
-                                    {{ icon.render('arrow-up-1') }}
+                                    {{ icon.render('arrow-down-1', true, 'ai o-menu__icon o-menu__submenu-icon') }}
                                 </div>
                                 <div class="o-menu__submenu is-active">
                                     <div class="o-menu__submenu-content-wrapper">
                                         <ul class="m-nav-list">
                                             <li><a>First Layer A</a></li>
                                             <li class="is-active">
-                                                <a>First Layer B {{ icon.render('arrow-down-1') }}</a>
+                                                <a>First Layer B {{ icon.render('arrow-down-1', true, 'ai o-menu__icon o-menu__submenu-icon') }}</a>
                                                 <div class="o-menu__submenu">
                                                     <div class="o-menu__submenu-content-wrapper">
                                                         <ul class="m-nav-list">
@@ -335,15 +334,15 @@
                             <div class="o-menu__tab-wrapper">
                                 <div class="o-menu__tab-header">
                                     <div class="o-menu__tab-title">
-                                        {{ icon.render('navigation-menu') }}
-                                        <a class="o-menu__link" href="#organisms-navigation-menu">Link C</a>
+                                        {{ icon.render('navigation-menu', true, 'ai o-menu__icon o-menu__tab-icon') }}
+                                        <a class="o-menu__link" href="javascript:void(0);">Link C</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="o-menu__hide-cta">
-                        <a href="#organisms-navigation-menu">{{ icon.render('arrow-button-right-1') }}</a>
+                        <a href="javascript:void(0);">{{ icon.render('arrow-button-right-1') }}</a>
                     </div>
                     <!-- We override the default position on purpose for the demo, we don't want it floating in absolute position -->
                     <div class="o-menu__navigation-pane is-visible" style="position: static">
@@ -364,9 +363,8 @@
             </div>
             <div>
                  <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="o-menu is-docked"&gt;
-    &lt;!-- Exactly the same markup as the first example --&gt;
-&lt;/div&gt;
-                 </code></pre>
+  &lt;!-- Exactly the same markup as the first example --&gt;
+&lt;/div&gt;</code></pre>
             </div>
         </div>
         <!-- Padding for making up for the menu that is positioned absolute -->
@@ -380,14 +378,12 @@
             </div>
             <div>
                  <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="o-menu__navigation-pane is-visible"&gt;
-    &lt;div class="o-navigation-pane__overlay"&gt;&lt;/div&gt;
-    &lt;div class="o-navigation-pane__wrapper"&gt;
-        &lt;div class="o-menu__main-submenu"&gt;&lt;/div&gt;
-        &lt;div class="o-menu__slide-in-submenu is-visible"&gt; &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-                 </code></pre>
+  &lt;div class="o-navigation-pane__overlay"&gt;&lt;/div&gt;
+  &lt;div class="o-navigation-pane__wrapper"&gt;
+    &lt;div class="o-menu__main-submenu"&gt;&lt;/div&gt;
+    &lt;div class="o-menu__slide-in-submenu is-visible"&gt; &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
             </div>
         </div>
     </div>
@@ -511,12 +507,9 @@
             <div>
                 <div class="a-input u-margin-bottom-lg d-overlay">
                     <div class="a-switch">
-                        <label class="a-switch__label">Hide slideshow overlay</label>
-                        <div class="a-switch__toggle">
-                            <input type="checkbox" name="input-slideshow" id="input-slideshow" role="switch"
-                                   aria-checked="false">
-                            <label for="input-slideshow"><span
-                                class="u-screen-reader-only">Toggle overlay</span></label>
+                        <div class="a-input__checkbox">
+                            <input type="checkbox" name="input-slideshow" id="input-slideshow">
+                            <label for="input-slideshow">Toggle overlay</label>
                             <div class="m-overlay">
                                 <label for="input-slideshow"><a class="m-overlay__button">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close overlay</span></a></label>
                                 <div class="m-overlay__slideshow o-slideshow o-slideshow--transparent">
@@ -571,7 +564,6 @@
                                 </div>
                             </div>
                         </div>
-                        <label class="a-switch__label">Show slideshow overlay</label>
                     </div>
                 </div>
             </div>

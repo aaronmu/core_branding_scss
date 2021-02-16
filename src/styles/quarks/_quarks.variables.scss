@@ -15,13 +15,13 @@
 $brand-primary:           $endeavour !default;
 $brand-secondary:         $monza !default;
 
-$state-success:           $apple !default;
+$state-success:           $mantis-darker !default;
 $state-info:              $endeavour !default;
-$state-warning:           $sun !default;
-$state-danger:            $alizarin-crimson !default;
+$state-warning:           $supernova-dark !default;
+$state-danger:            $cinnabar-dark !default;
 $state-disabled:          $grey-dark !default;
 
-$text-color:              $black-pearl !default;
+$text-color:              $black !default;
 $text-color-light:        $grey-dark !default;
 $text-color-xlight:       $white !default;
 
@@ -143,7 +143,7 @@ $readable-content-width:  45rem !default;
  * -------------------------------------------------------------------
  */
 
-$animation-duration:      250ms !default;
+$animation-duration:      200ms !default;
 $animation-easing:        ease-in-out !default;
 
 $animation-normal:        $animation-duration $animation-easing !default;
@@ -204,6 +204,7 @@ $icon-size-lg:            28px !default;
 $box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 $box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($black, .1) !default;
 $box-shadow-top:          0 $spacer / -2 0 rgba($black, .1) !default;
+$box-shadow-bottom:       0 $spacer / 2 0 rgba($black, .1) !default;
 
 
 /**
@@ -384,7 +385,7 @@ $input-disabled-border:   $grey-light !default;
 $input-disabled-bg:       $grey-lighter !default;
 $input-placeholder:       $grey-dark !default;
 $input-icon:              $grey-dark !default;
-$input-icon-hover:        $black-pearl !default;
+$input-icon-hover:        $black !default;
 $input-required:          $state-danger !default;
 
 $input-success-border:            mix($black, $state-success, 40%) !default;

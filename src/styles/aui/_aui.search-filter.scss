@@ -19,7 +19,7 @@
       margin-left: $spacer / 6;
     }
 
-    > .fa {
+    > .ai {
       color: $input-icon;
       font-size: 1.25rem;
       height: $spacer-lg;
@@ -35,7 +35,7 @@
       border-color: $label-primary-color;
       color: $white;
 
-      > .fa {
+      > .ai {
         color: $white;
       }
     }
@@ -45,7 +45,7 @@
       border-color: $label-danger-color;
       color: $white;
 
-      > .fa {
+      > .ai {
         color: $white;
       }
     }

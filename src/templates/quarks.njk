@@ -122,7 +122,7 @@
                 <p>An overview of the complete color palette.</p>
                 <ul class="a-list--unstyled d-list d-list__colors">
                     {% for color in COLORS %}
-                        <li class="d-{{ color.name | escape }}">
+                        <li class="d-{{ color.name | escape | replace('$', '') }}">
                             <span class="d-color" style="background: {{ color.value }}" aria-hidden="true"></span>
                             <code>{{ color.name }}</code><br /><span>{{ color.value }}</span></small>
                         </li>

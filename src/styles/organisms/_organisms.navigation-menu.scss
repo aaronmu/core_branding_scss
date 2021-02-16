@@ -30,7 +30,7 @@
       .o-menu__tab {
         width: calc(#{$navigation-menu-docked-width} - 1px); // 1 px make up for border
 
-        .o-menu__tab-wrapper{
+        .o-menu__tab-wrapper {
           &:not(.is-active) {
             overflow: hidden;
           }
@@ -149,7 +149,7 @@
   }
 
   &.is-active {
-    .o-menu__tab-wrapper{
+    .o-menu__tab-wrapper {
       overflow-y: auto;
     }
 
@@ -170,7 +170,7 @@
     width: 100%;
   }
 
-  & > .o-menu__tab-wrapper{
+  & > .o-menu__tab-wrapper {
     overflow: hidden;
 
     &:focus-within {
@@ -187,6 +187,9 @@
       height: $navigation-menu-mobile-height;
       justify-content: center;
       text-decoration: none;
+      transition-duration: $animation-duration;
+      transition-property: background, color;
+      transition-timing-function: $animation-easing;
 
       // Support for a margin for iPhone X
       @supports (margin-bottom: env(safe-area-inset-bottom)) {
@@ -206,15 +209,16 @@
       }
 
       .o-menu__icon {
-        font-size: $icon-size-base;
+        font-size: rem($icon-size-base);
         margin-bottom: $spacer-xs / 2;
 
         &.o-menu__tab-icon {
-          width: $icon-size-lg;
+          width: rem($icon-size-lg);
         }
 
         &.o-menu__submenu-icon {
           display: none;
+          font-size: rem($font-size-base);
           transition: transform $navigation-menu-animation-speed ease;
 
           @include at($screen-sm) {
@@ -232,7 +236,7 @@
         flex-direction: row;
         height: $header-height;
         justify-content: space-between;
-        padding: $spacer-xs;
+        padding: .625rem;
         position: relative;
 
         .o-menu__link {
@@ -276,6 +280,8 @@
         display: flex;
         justify-content: space-between;
         overflow: hidden;
+        padding-bottom: .875rem;
+        padding-top: .875rem;
         white-space: nowrap;
 
         @include at($screen-sm) {
@@ -330,7 +336,7 @@
 
   @include at($screen-sm) {
     display: block;
-    margin: $spacer-sm;
+    padding: 1rem $spacer-xs;
     text-align: right;
 
     > a {
@@ -363,7 +369,7 @@
     box-shadow: 0 -.75rem 0 rgba($black, .1);
     margin-bottom: -1px;
     max-height: calc(100vh - #{$header-height} - #{$navigation-menu-mobile-height});
-    min-height: $spacer; // make up for the box shadow to be visible, even when hiddenq
+    min-height: $spacer; // make up for the box shadow to be visible, even when hidden
     overflow-y: scroll;
     position: relative;
   }

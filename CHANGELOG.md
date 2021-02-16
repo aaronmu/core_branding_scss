@@ -8,6 +8,7 @@
 - Added `$box-shadow-top` variable
 
 ### Changed
+- [BREAKING] Changed most of the color palette
 - [BREAKING] Updated avatar to work with the new icon library
 - [BREAKING] Updated copyright to work with the new icon library
 - [BREAKING] Updated slideshow to work with the new icon library

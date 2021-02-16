@@ -12,50 +12,103 @@
  * http://chir.ag/projects/name-that-color
  */
 
-$monza:                   rgb(207, 0, 57) !default;
-$corn:                    rgb(220, 198, 0) !default;
-$sun:                     rgb(249, 176, 30) !default;
-$porsche:                 rgb(236, 161, 84) !default;
+$monza-darker:                 #7c2629 !default;
+$monza-dark:                   #862633 !default;
+$monza:                        #cf0039 !default;
+$monza-medium:                 #df4661 !default;
+$monza-light:                  #ffb1bb !default;
+$monza-lighter:                #f5dadf !default;
 
-$tangerine:               rgb(241, 138, 0) !default;
-$korma:                   rgb(148, 69, 11) !default;
-$punch:                   rgb(224, 78, 57) !default;
-$alizarin-crimson:        rgb(218, 41, 28) !default;
+$cinnabar-darker:              #7c2629 !default;
+$cinnabar-dark:                #af272f !default;
+$cinnabar:                     #e03c31 !default;
+$cinnabar-medium:              #e56a54 !default;
+$cinnabar-light:               #e6baa8 !default;
+$cinnabar-lighter:             #f3cfb3 !default;
 
-$mandy:                   rgb(223, 70, 97) !default;
-$red-ribbon:              rgb(228, 0, 70) !default;
-$deep-blush:              rgb(229, 109, 177) !default;
-$cerise:                  rgb(227, 49, 138) !default;
+$tangerine-darker:             #74491d !default;
+$tangerine-dark:               #c05131 !default;
+$tangerine:                    #f18a00 !default;
+$tangerine-medium:             #eca154 !default;
+$tangerine-light:              #ffc27b !default;
+$tangerine-lighter:            #efdbb2 !default;
 
-$rose-bud-cherry:         rgb(132, 11, 85) !default;
-$east-side:               rgb(181, 128, 209) !default;
-$seance:                  rgb(105, 31, 130) !default;
-$ship-cove:               rgb(103, 135, 183) !default;
+$supernova-darker:             #b47e00 !default;
+$supernova-dark:               #f2a900 !default;
+$supernova:                    #ffcd00 !default;
+$supernova-medium:             #fbde40 !default;
+$supernova-light:              #f0e87b !default;
+$supernova-lighter:            #f1eb9c !default;
 
-$st-tropaz:               rgb(44, 86, 151) !default;
-$congress-blue:           rgb(0, 64, 136) !default;
-$cerulean:                rgb(0, 145, 211) !default;
-$endeavour:               rgb(0, 100, 180) !default;
+$mantis-darker:                #006e33 !default;
+$mantis-dark:                  #4c8d2b !default;
+$mantis:                       #6cc24a !default;
+$mantis-medium:                #97d700 !default;
+$mantis-light:                 #bce194 !default;
+$mantis-lighter:               #d0debb !default;
 
-$light-cerulean:          rgb(0, 160, 211) !default;
-$deep-cerulean:           rgb(0, 127, 163) !default;
-$monte-carlo:             rgb(127, 202, 211) !default;
-$blue-lagoon:             rgb(0, 140, 149) !default;
+$tropical-rain-forest-darker:  #004e42 !default;
+$tropical-rain-forest-dark:    #00664f !default;
+$tropical-rain-forest:         #007b5f !default;
+$tropical-rain-forest-medium:  #00ab84 !default;
+$tropical-rain-forest-light:   #8ce2d0 !default;
+$tropical-rain-forest-lighter: #d1e0d7 !default;
 
-$persian-green:           rgb(0, 152, 130) !default;
-$tropical-rain-forrest:   rgb(0, 123, 95) !default;
-$mantis:                  rgb(108, 194, 74) !default;
-$apple:                   rgb(43, 132, 13) !default;
+$deep-cerulean-darker:         #004f59 !default;
+$deep-cerulean-dark:           #005f83 !default;
+$deep-cerulean:                #007fa3 !default;
+$deep-cerulean-medium:         #00a9ce !default;
+$deep-cerulean-light:          #6ad1e3 !default;
+$deep-cerulean-lighter:        #b7dde1 !default;
 
-$celery:                  rgb(170, 203, 87) !default;
-$limeade:                 rgb(122, 154, 1) !default;
-$asparagus:               rgb(120, 157, 74) !default;
-$green-leaf:              rgb(87, 115, 7) !default;
+$endeavour-darker:             #002855 !default;
+$endeavour-dark:               #003865 !default;
+$endeavour:                    #0057b7 !default;
+$endeavour-medium:             #009cde !default;
+$endeavour-light:              #41b6e6 !default;
+$endeavour-lighter:            #99d6ea !default;
 
-$kabul:                   rgb(85, 71, 65) !default;
-$nepal:                   rgb(144, 171, 188) !default;
-$black-pearl:             rgb(8, 31, 44) !default;
+$st-tropaz-darker:             #002855 !default;
+$st-tropaz-dark:               #1d4289 !default;
+$st-tropaz:                    #2c5697 !default;
+$st-tropaz-medium:             #6787b7 !default;
+$st-tropaz-light:              #94a9cb !default;
+$st-tropaz-lighter:            #c6dae7 !default;
 
+$horizon-darker:               #003d4c !default;
+$horizon-dark:                 #506d85 !default;
+$horizon:                      #5b7f95 !default;
+$horizon-medium:               #7a99ac !default;
+$horizon-light:                #b7c9d3 !default;
+$horizon-lighter:              #dbe2e9 !default;
+
+$butterfly-bush-darker:        #330072 !default;
+$butterfly-bush-dark:          #483698 !default;
+$butterfly-bush:               #654ea3 !default;
+$butterfly-bush-medium:        #be7fae !default;
+$butterfly-bush-light:         #b8acd6 !default;
+$butterfly-bush-lighter:       #dddae8 !default;
+
+$vivid-violet-darker:          #51284f !default;
+$vivid-violet-dark:            #572c5f !default;
+$vivid-violet:                 #8031a7 !default;
+$vivid-violet-medium:          #b580d1 !default;
+$vivid-violet-light:           #d7b9e4 !default;
+$vivid-violet-lighter:         #decde7 !default;
+
+$rouge-darker:                 #672e45 !default;
+$rouge-dark:                   #872651 !default;
+$rouge:                        #a73a64 !default;
+$rouge-medium:                 #c9809e !default;
+$rouge-light:                  #dca9bf !default;
+$rouge-lighter:                #e4c6d4 !default;
+
+$hollywood-cerise-darker:      #651c32 !default;
+$hollywood-cerise-dark:        #840b55 !default;
+$hollywood-cerise:             #e10098 !default;
+$hollywood-cerise-medium:      #f277c6 !default;
+$hollywood-cerise-light:       #e6bcd7 !default;
+$hollywood-cerise-lighter:     #f5dadf !default;
 
 /**
  * GRAYSCALE COLOR PALETTE
@@ -63,12 +116,12 @@ $black-pearl:             rgb(8, 31, 44) !default;
  * Collection of grayscale colors
  */
 
-$black:                   rgb(0, 0, 0) !default;
-$grey-dark:               rgb(111, 111, 111) !default;
-$grey:                    rgb(148, 148, 148) !default;
-$grey-light:              rgb(216, 216, 216) !default;
-$grey-lighter:            rgb(243, 243, 243) !default;
-$white:                   rgb(255, 255, 255) !default;
+$black:                        rgb(0, 0, 0) !default;
+$grey-dark:                    rgb(111, 111, 111) !default;
+$grey:                         rgb(148, 148, 148) !default;
+$grey-light:                   rgb(216, 216, 216) !default;
+$grey-lighter:                 rgb(243, 243, 243) !default;
+$white:                        rgb(255, 255, 255) !default;
 
 
 /**
@@ -77,17 +130,16 @@ $white:                   rgb(255, 255, 255) !default;
  * Collection of social branding colors
  */
 
-$twitter:                 rgb(0, 172, 237) !default;
-$linkedin:                rgb(0, 119, 181) !default;
-$facebook:                rgb(24, 119, 242) !default;
-$google:                  rgb(220, 78, 65) !default;
-$snapchat:                rgb(255, 252, 0) !default;
+$twitter:                      rgb(0, 172, 237) !default;
+$linkedin:                     rgb(0, 119, 181) !default;
+$facebook:                     rgb(24, 119, 242) !default;
+$snapchat:                     rgb(255, 252, 0) !default;
 
-$instagram-yellow-light:  rgb(255, 225, 125);
-$instagram-yellow-dark:   rgb(255, 205, 105);
-$instagram-orange:        rgb(250, 145, 55);
-$instagram-red:           rgb(235, 65, 65);
-$instagram-blue:          rgb(35, 75, 215);
-$instagram-purple:        rgb(195, 60, 190);
+$instagram-yellow-light:       rgb(255, 225, 125);
+$instagram-yellow-dark:        rgb(255, 205, 105);
+$instagram-orange:             rgb(250, 145, 55);
+$instagram-red:                rgb(235, 65, 65);
+$instagram-blue:               rgb(35, 75, 215);
+$instagram-purple:             rgb(195, 60, 190);
 
-$instagram:               radial-gradient(circle farthest-corner at 32% 106%, $instagram-yellow-light 0%, $instagram-yellow-dark 10%, $instagram-orange 28%, $instagram-red 42%, transparent 82%), linear-gradient(135deg, $instagram-blue 12%, $instagram-purple 58%) !default;
+$instagram:                    radial-gradient(circle farthest-corner at 32% 106%, $instagram-yellow-light 0%, $instagram-yellow-dark 10%, $instagram-orange 28%, $instagram-red 42%, transparent 82%), linear-gradient(135deg, $instagram-blue 12%, $instagram-purple 58%) !default;
