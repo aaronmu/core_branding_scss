@@ -506,62 +506,60 @@
         <div class="d">
             <div>
                 <div class="a-input u-margin-bottom-lg d-overlay">
-                    <div class="a-switch">
-                        <div class="a-input__checkbox">
-                            <input type="checkbox" name="input-slideshow" id="input-slideshow">
-                            <label for="input-slideshow">Toggle overlay</label>
-                            <div class="m-overlay">
-                                <label for="input-slideshow"><a class="m-overlay__button">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close overlay</span></a></label>
-                                <div class="m-overlay__slideshow o-slideshow o-slideshow--transparent">
-                                    <div class="o-slideshow__inner">
-                                        <button class="a-button has-icon o-slideshow__prev o-slideshow__prev--outside">
-                                            {{ icon.render('arrow-left-1') }}
-                                        </button>
-                                        <div class="o-slideshow__slides">
-                                            <figure class="o-slideshow__slide is-active">
-                                                <div class="o-slideshow__image">
-                                                    <div class="m-image">
-                                                        <img src="https://source.unsplash.com/collection/54002680/1900x950" alt="Slideshow image 1.">
-                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign">©</div>
-                                                            <span class="a-copyright__label">Unsplash</span>
-                                                        </div>
+                    <div class="a-input__checkbox">
+                        <input type="checkbox" name="input-slideshow" id="input-slideshow">
+                        <label for="input-slideshow">Toggle overlay</label>
+                        <div class="m-overlay">
+                            <label for="input-slideshow"><a class="m-overlay__button">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close overlay</span></a></label>
+                            <div class="m-overlay__slideshow o-slideshow o-slideshow--transparent">
+                                <div class="o-slideshow__inner">
+                                    <button class="a-button has-icon o-slideshow__prev o-slideshow__prev--outside">
+                                        {{ icon.render('arrow-left-1') }}
+                                    </button>
+                                    <div class="o-slideshow__slides">
+                                        <figure class="o-slideshow__slide is-active">
+                                            <div class="o-slideshow__image">
+                                                <div class="m-image">
+                                                    <img src="https://source.unsplash.com/collection/54002680/1900x950" alt="Slideshow image 1.">
+                                                    <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                        <div class="a-copyright__sign">©</div>
+                                                        <span class="a-copyright__label">Unsplash</span>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                            <figure class="o-slideshow__slide">
-                                                <div class="o-slideshow__image">
-                                                    <div class="m-image">
-                                                        <img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 2.">
-                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign">©</div>
-                                                            <span class="a-copyright__label">Unsplash</span>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="o-slideshow__slide">
+                                            <div class="o-slideshow__image">
+                                                <div class="m-image">
+                                                    <img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 2.">
+                                                    <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                        <div class="a-copyright__sign">©</div>
+                                                        <span class="a-copyright__label">Unsplash</span>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                            <figure class="o-slideshow__slide">
-                                                <div class="o-slideshow__image">
-                                                    <div class="m-image">
-                                                        <img src="https://source.unsplash.com/collection/54002680/1000x500"
-                                                             alt="Slideshow image 3.">
-                                                        <div class="m-image__copyright a-copyright" aria-haspopup="true">
-                                                            <div class="a-copyright__sign">©</div>
-                                                            <span class="a-copyright__label">Unsplash</span>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                        <figure class="o-slideshow__slide">
+                                            <div class="o-slideshow__image">
+                                                <div class="m-image">
+                                                    <img src="https://source.unsplash.com/collection/54002680/1000x500"
+                                                            alt="Slideshow image 3.">
+                                                    <div class="m-image__copyright a-copyright" aria-haspopup="true">
+                                                        <div class="a-copyright__sign">©</div>
+                                                        <span class="a-copyright__label">Unsplash</span>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </div>
-                                        <button class="a-button has-icon o-slideshow__next o-slideshow__next--outside">
-                                            {{ icon.render('arrow-right-1') }}
-                                        </button>
+                                            </div>
+                                        </figure>
                                     </div>
-                                    <figcaption class="o-slideshow__footer">
-                                        <span class="o-slideshow__counter">1 | 3</span>
-                                        Some fancy caption about this photo. Click the close button in the top right corner to close the slideshow.
-                                    </figcaption>
+                                    <button class="a-button has-icon o-slideshow__next o-slideshow__next--outside">
+                                        {{ icon.render('arrow-right-1') }}
+                                    </button>
                                 </div>
+                                <figcaption class="o-slideshow__footer">
+                                    <span class="o-slideshow__counter">1 | 3</span>
+                                    Some fancy caption about this photo. Click the close button in the top right corner to close the slideshow.
+                                </figcaption>
                             </div>
                         </div>
                     </div>

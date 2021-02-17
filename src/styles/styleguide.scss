@@ -322,8 +322,12 @@
     }
   }
 
-  .m-modal__footer [class*='a-button'] {
-    margin-bottom: 0;
+  .m-modal__footer  {
+    justify-content: flex-end;
+
+    [class*='a-button'] {
+      margin-bottom: 0;
+    }
   }
 }
 
