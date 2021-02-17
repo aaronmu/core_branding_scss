@@ -97,10 +97,10 @@
       margin-left: -$spacer;
       position: absolute;
       text-align: center;
+      top: 0;
       transition-duration: $animation-duration;
       transition-property: background-size, opacity;
       transition-timing-function: $animation-easing;
-      top: 0;
       width: $spacer;
     }
   }
