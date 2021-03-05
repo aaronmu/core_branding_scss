@@ -140,11 +140,11 @@ dl {
   @extend %a-list--flattened;
 
   > li {
-    border-top: 1px solid $border-color;
+    border-top: 1px solid $border-color-light;
     list-style-position: inside;
 
     &:last-of-type {
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid $border-color-light;
     }
   }
 

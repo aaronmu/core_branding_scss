@@ -100,7 +100,12 @@
  * http://chir.ag/projects/name-that-color
  */
 /**
- * GRAYSCALE COLOR PALETTE
+ * GRAY COLOR PALETTE
+ * -------------------------------------------------------------------
+ * Collection of warm gray colors
+ */
+/**
+ * WEB GRAYSCALE COLOR PALETTE
  * -------------------------------------------------------------------
  * Collection of grayscale colors
  */
@@ -126,7 +131,12 @@
  * http://chir.ag/projects/name-that-color
  */
 /**
- * GRAYSCALE COLOR PALETTE
+ * GRAY COLOR PALETTE
+ * -------------------------------------------------------------------
+ * Collection of warm gray colors
+ */
+/**
+ * WEB GRAYSCALE COLOR PALETTE
  * -------------------------------------------------------------------
  * Collection of grayscale colors
  */
@@ -580,8 +590,8 @@
   content: "";
   height: 1.25rem;
   left: 0.75rem;
-  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:#ffffff;stroke-width:6.25%;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><polyline class="st0" points="2,0.5 3.2,6.9 4.8,2.4 6.3,6.9 7.5,0.5 "/><path class="st0" d="M13.1,1.2c0,0-0.8-0.8-1.8-0.8S8.8,1.2,8.8,3.7s1.4,3.4,2.6,3.4s1.9-0.8,1.9-0.8"/><polyline class="st0" points="2.4,14.6 4.7,8.1 7.2,14.6 "/><line class="st0" x1="3.3" y1="12.1" x2="6.2" y2="12.1"/><path class="st0" d="M12.9,8.7c0,0-0.4-0.8-1.5-0.8s-2.7,0.7-2.7,3.4s1.8,3.3,2.6,3.3S13,14,13,13.9s0-2.3,0-2.3h-1.7"/></svg>') no-repeat center center;
-          mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:#ffffff;stroke-width:6.25%;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><polyline class="st0" points="2,0.5 3.2,6.9 4.8,2.4 6.3,6.9 7.5,0.5 "/><path class="st0" d="M13.1,1.2c0,0-0.8-0.8-1.8-0.8S8.8,1.2,8.8,3.7s1.4,3.4,2.6,3.4s1.9-0.8,1.9-0.8"/><polyline class="st0" points="2.4,14.6 4.7,8.1 7.2,14.6 "/><line class="st0" x1="3.3" y1="12.1" x2="6.2" y2="12.1"/><path class="st0" d="M12.9,8.7c0,0-0.4-0.8-1.5-0.8s-2.7,0.7-2.7,3.4s1.8,3.3,2.6,3.3S13,14,13,13.9s0-2.3,0-2.3h-1.7"/></svg>') no-repeat center center;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:%23ffffff;stroke-width:6.25%;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><polyline class="st0" points="2,0.5 3.2,6.9 4.8,2.4 6.3,6.9 7.5,0.5 "/><path class="st0" d="M13.1,1.2c0,0-0.8-0.8-1.8-0.8S8.8,1.2,8.8,3.7s1.4,3.4,2.6,3.4s1.9-0.8,1.9-0.8"/><polyline class="st0" points="2.4,14.6 4.7,8.1 7.2,14.6 "/><line class="st0" x1="3.3" y1="12.1" x2="6.2" y2="12.1"/><path class="st0" d="M12.9,8.7c0,0-0.4-0.8-1.5-0.8s-2.7,0.7-2.7,3.4s1.8,3.3,2.6,3.3S13,14,13,13.9s0-2.3,0-2.3h-1.7"/></svg>') no-repeat center center;
+          mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve"><style type="text/css">.st0{fill:none;stroke:%23ffffff;stroke-width:6.25%;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}</style><polyline class="st0" points="2,0.5 3.2,6.9 4.8,2.4 6.3,6.9 7.5,0.5 "/><path class="st0" d="M13.1,1.2c0,0-0.8-0.8-1.8-0.8S8.8,1.2,8.8,3.7s1.4,3.4,2.6,3.4s1.9-0.8,1.9-0.8"/><polyline class="st0" points="2.4,14.6 4.7,8.1 7.2,14.6 "/><line class="st0" x1="3.3" y1="12.1" x2="6.2" y2="12.1"/><path class="st0" d="M12.9,8.7c0,0-0.4-0.8-1.5-0.8s-2.7,0.7-2.7,3.4s1.8,3.3,2.6,3.3S13,14,13,13.9s0-2.3,0-2.3h-1.7"/></svg>') no-repeat center center;
   position: absolute;
   top: 0.75rem;
   width: 1.25rem;
@@ -660,7 +670,7 @@
 }
 
 .d-spacing-utility {
-  background: repeating-linear-gradient(45deg, white, white 10px, #f3f3f3 10px, #f3f3f3 20px);
+  background: repeating-linear-gradient(45deg, #fff, #fff 10px, #f3f3f3 10px, #f3f3f3 20px);
   box-shadow: 0 0 0 1px #d8d8d8 inset;
   display: inline-block;
   padding: 0.25rem;
@@ -673,7 +683,7 @@
 
 .d-u-text-xlight,
 .d-u-text-warning {
-  background-color: black;
+  background-color: #141414;
   padding: 0.375rem;
 }
 
@@ -832,4 +842,15 @@
   display: inline !important;
   overflow-x: hidden !important;
   padding: 0;
+}
+.hljs .hljs-attribute,
+.hljs .hljs-built_in,
+.hljs .hljs-builtin-name,
+.hljs .hljs-link,
+.hljs .hljs-literal,
+.hljs .hljs-meta,
+.hljs .hljs-number,
+.hljs .hljs-params,
+.hljs .hljs-type {
+  color: #a25800 !important;
 }

@@ -45,7 +45,7 @@
       background-color: $grey-lighter;
     }
 
-    .a-button-transparent.has-icon[disabled] {
+    .a-button-transparent.has-icon:disabled {
       box-shadow: none;
     }
   }

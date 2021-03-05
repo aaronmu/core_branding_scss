@@ -48,7 +48,7 @@
     }
   }
 
-  &[disabled] {
+  &:disabled {
     cursor: not-allowed;
 
     &:before {

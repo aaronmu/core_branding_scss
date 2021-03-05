@@ -41,7 +41,7 @@
     text-decoration: none;
 
     @if $_background != transparent and $_background != white {
-      background-color: mix($_background, $black, 90%);
+      background-color: mix($_background, $rich-black, 90%);
     } @else if $_background == transparent {
       background-color: transparent;
     } @else {
@@ -49,7 +49,7 @@
     }
   }
 
-  &[disabled] {
+  &:disabled {
     background-color: $btn-disabled-bg;
     color: $btn-disabled-color;
     cursor: not-allowed;
@@ -80,13 +80,13 @@
 
     @if $_transparent == false {
       background: mix($_border, $white, 4%);
-      box-shadow: 0 0 0 1px mix($_border, $black, 85%) inset;
+      box-shadow: 0 0 0 1px mix($_border, $rich-black, 85%) inset;
     } @else {
-      color: mix($black, $_color, 40%);
+      color: mix($rich-black, $_color, 40%);
     }
   }
 
-  &[disabled] {
+  &:disabled {
     background: $btn-disabled-bg;
     box-shadow: 0 0 0 1px $input-disabled-border inset;
     color: $btn-disabled-color;
@@ -101,8 +101,7 @@
  */
 
 @mixin a-input($_color: $input-color, $_background: $input-bg, $_border: $input-border) {
-
-  input:not([class*='a-button']):not([type='checkbox']):not([type='radio']),
+  input,
   select,
   textarea {
     @include a-input-placeholder {
@@ -113,11 +112,17 @@
     border: 1px solid $_border;
     color: $_color;
 
-    &[disabled] {
+    &:disabled {
       background: $input-disabled-bg;
       border-color: $input-disabled-border;
       color: $input-disabled;
       cursor: not-allowed;
+    }
+
+    &[readonly] {
+      background: $input-readonly-bg;
+      border-color: $input-readonly-border;
+      color: $input-readonly;
     }
   }
 }

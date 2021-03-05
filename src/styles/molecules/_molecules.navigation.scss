@@ -11,7 +11,7 @@
 
 %m-nav-list {
   @extend %a-list--reset;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $nav-border;
 
   > li {
     font-weight: $nav-font-weight;
@@ -23,7 +23,7 @@
     > button {
       background-color: $nav-bg;
       border: none;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid $nav-border;
       color: inherit;
       display: block;
       flex: 1 1 auto;

@@ -75,7 +75,7 @@
       font-weight: $bold;
 
       &:before {
-        background: $step-indicator-bg-success url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%" d="M14.5.5l-10 14-4-4"/></svg>') center center no-repeat;
+        background: $step-indicator-bg-success url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="none" stroke="%23ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%" d="M14.5.5l-10 14-4-4"/></svg>') center center no-repeat;
         background-size: 50% 50%;
         border-color: $step-indicator-border-success;
         content: '';

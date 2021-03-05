@@ -881,7 +881,7 @@
                     <label class="a-input__label" for="input-datepicker">Choose a date</label>
                     <div class="a-input__wrapper">
                         <input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" />
-                        {{ icon.render('calendar-3', true, 'ai', ' role="button" aria-expanded="true"') }}
+                        {{ icon.render('calendar-3', true, 'ai is-clickable', ' role="button" tabindex="0" aria-expanded="true"') }}
                         <div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false">
                             <div class="m-datepicker__nav">
                                 <button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon">{{ icon.render('arrow-left-1') }}</button>
@@ -963,7 +963,7 @@
   &lt;label class="a-input__label" for="input-datepicker"&gt;Choose a date&lt;/label&gt;
   &lt;div class="a-input__wrapper"&gt;
     &lt;input type="text" name="input-datepicker" id="input-datepicker" placeholder="dd/mm/yyyy" /&gt;
-    {{ icon.code('calendar-3', true, 'ai', ' role="button" aria-expanded="true"') }}
+    {{ icon.code('calendar-3', true, 'ai is-clickable', ' role="button" tabindex="0" aria-expanded="true"') }}
     &lt;div role="application" aria-label="Attached datepicker days" class="m-datepicker m-datepicker--fixed is-open" aria-hidden="false"&gt;
       &lt;div class="m-datepicker__nav"&gt;
         &lt;button type="button" aria-label="Go to previous month, April 2017" class="a-button has-icon"&gt;{{ icon.code('arrow-left-1') }}&lt;/button&gt;
@@ -1425,7 +1425,7 @@
             <div>
                 <figure class="m-image">
                     <img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Figure image.">
-                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="true">
+                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="false">
                         <span class="a-copyright__sign">©</span>
                         <span class="a-copyright__label">Unsplash</span>
                     </a>
@@ -1434,13 +1434,13 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;figure class="m-image"&gt;
   &lt;img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Figure image."&gt;
-  &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="true"&gt;
+  &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="false"&gt;
     &lt;span class="a-copyright__sign"&gt;&copy;&lt;/span&gt;
     &lt;span class="a-copyright__label"&gt;Unsplash&lt;/span&gt;
   &lt;/a&gt;
 &lt;/figure&gt;</code></pre>
                 <div class="m-alert d-alert">
-                    <p>Note that you need to add/remove the <code>aria-expanded</code> attribute programmatically.</p>
+                    <p>Note that you need to change the <code>aria-expanded</code> attribute programmatically.</p>
                 </div>
             </div>
         </div>
@@ -1705,7 +1705,7 @@
                     <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination u-margin-bottom">
-                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
                     <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
                     <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
@@ -1716,7 +1716,7 @@
                     <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
                     <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
             </div>
             <div>
@@ -1725,7 +1725,7 @@
   &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
   &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
@@ -1736,7 +1736,7 @@
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -1748,7 +1748,7 @@
                     <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--outline u-margin-bottom">
-                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
                     <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
                     <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
@@ -1759,7 +1759,7 @@
                     <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
                     <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
             </div>
             <div>
@@ -1768,7 +1768,7 @@
   &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
   &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
@@ -1779,7 +1779,7 @@
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
@@ -1787,7 +1787,7 @@
         <div class="d">
             <div>
                 <ul class="m-pagination m-pagination--small u-margin-bottom">
-                    <li class="m-pagination__prev"><a class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
                     <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
                     <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
@@ -1798,7 +1798,7 @@
                     <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
                     <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
                 <ul class="m-pagination m-pagination--outline m-pagination--large u-margin-bottom">
                     <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
@@ -1811,12 +1811,12 @@
                     <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
                     <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--small"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
   &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
@@ -1827,7 +1827,7 @@
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outline m-pagination--large"&gt;
   &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
@@ -1840,7 +1840,7 @@
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
         </div>

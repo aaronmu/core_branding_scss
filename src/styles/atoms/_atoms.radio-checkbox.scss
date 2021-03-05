@@ -99,7 +99,7 @@
       text-align: center;
       top: 0;
       transition-duration: $animation-duration;
-      transition-property: background-size, opacity;
+      transition-property: background-size;
       transition-timing-function: $animation-easing;
       width: $spacer;
     }
@@ -108,23 +108,21 @@
 
 .a-input__checkbox input[type='checkbox'] {
   + label:after {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="none" stroke="#ffffff" stroke-width="9.375%" stroke-linecap="round" stroke-linejoin="round" d="M14.5.5l-10 14-4-4"/></svg>');
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="none" stroke="%23ffffff" stroke-width="9.375%" stroke-linecap="round" stroke-linejoin="round" d="M14.5.5l-10 14-4-4"/></svg>');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 0% 0%;
-    opacity: 0;
   }
 }
 
 .a-input__checkbox input[type='checkbox']:checked {
   + label:after {
     background-size: 70% 70%;
-    opacity: 1;
   }
 
   &:disabled {
     + label:after {
-      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="none" stroke="#6f6f6f" stroke-width="9.375%" stroke-linecap="round" stroke-linejoin="round" d="M14.5.5l-10 14-4-4"/></svg>');
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"><path fill="none" stroke="%236f6f6f" stroke-width="9.375%" stroke-linecap="round" stroke-linejoin="round" d="M14.5.5l-10 14-4-4"/></svg>');
     }
   }
 }

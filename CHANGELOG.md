@@ -6,6 +6,8 @@
 - Added `$spacer-sm` related classes
 - Added `$switch-label` variable
 - Added `$box-shadow-top` and `$box-shadow-top` variables
+- Added styling for readonly inputs
+- Added warm grays
 
 ### Changed
 - [BREAKING] Changed most of the color palette
@@ -17,6 +19,7 @@
 - [BREAKING] Moved navigation menu import to organisms
 - Aligned the look of disabled components
 - Optimized fonts to be more future-proof
+- Changed syntax of slideshow
 
 ### Fixed
 - Fixed a header component accessibility issue

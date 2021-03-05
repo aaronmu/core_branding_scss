@@ -85,7 +85,9 @@
       }
 
       &.is-disabled {
+        background-color: $pagination-bg-disabled;
         box-shadow: none;
+        color: $pagination-color-disabled;
       }
     }
 

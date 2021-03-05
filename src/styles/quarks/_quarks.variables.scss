@@ -28,10 +28,10 @@ $text-color-xlight:       $white !default;
 $background-color:        $grey-light !default;
 $background-color-light:  $grey-lighter !default;
 
-$border-color:            $grey !default;
-$border-color-light:      $grey-light !default;
+$border-color:            $grey-dark !default;
+$border-color-light:      $grey !default;
 
-$overlay-color:           rgba($black, .75) !default;
+$overlay-color:           rgba($rich-black, .75) !default;
 $selection-color:         mix($brand-primary, $white, 20%) !default;
 
 
@@ -201,10 +201,10 @@ $icon-size-lg:            28px !default;
  * -------------------------------------------------------------------
  */
 
-$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
-$box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($black, .1) !default;
-$box-shadow-top:          0 $spacer / -2 0 rgba($black, .1) !default;
-$box-shadow-bottom:       0 $spacer / 2 0 rgba($black, .1) !default;
+$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($rich-black, .1) !default;
+$box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($rich-black, .1) !default;
+$box-shadow-top:          0 $spacer / -2 0 rgba($rich-black, .1) !default;
+$box-shadow-bottom:       0 $spacer / 2 0 rgba($rich-black, .1) !default;
 
 
 /**
@@ -215,7 +215,7 @@ $box-shadow-bottom:       0 $spacer / 2 0 rgba($black, .1) !default;
 
 $link-color:              $brand-primary !default;
 $link-background-color:   mix($brand-primary, $white, 10%) !default;
-$link-hover-color:        mix($link-color, $black, 85%) !default;
+$link-hover-color:        mix($link-color, $rich-black, 85%) !default;
 
 
 /**
@@ -291,7 +291,7 @@ $figcaption-padding:      $spacer-xs !default;
  */
 
 $table-bg:                $white !default;
-$table-border:            $border-color !default;
+$table-border:            $border-color-light !default;
 
 $table-head-bg:           $background-color-light !default;
 
@@ -383,20 +383,23 @@ $input-border-focus:      rgb(192, 223, 254) !default; // Remove this in a later
 $input-disabled:          $state-disabled !default;
 $input-disabled-border:   $grey-light !default;
 $input-disabled-bg:       $grey-lighter !default;
+$input-readonly:          $text-color !default;
+$input-readonly-border:   $grey !default;
+$input-readonly-bg:       $white !default;
 $input-placeholder:       $grey-dark !default;
 $input-icon:              $grey-dark !default;
 $input-icon-hover:        $black !default;
 $input-required:          $state-danger !default;
 
-$input-success-border:            mix($black, $state-success, 40%) !default;
+$input-success-border:            mix($rich-black, $state-success, 40%) !default;
 $input-success-border-focus:      mix($state-success, $white, 25%) !default; // Remove this in a later version
 $input-success-icon:              $state-success !default;
 
-$input-warning-border:            mix($black, $state-warning, 40%) !default;
+$input-warning-border:            mix($rich-black, $state-warning, 40%) !default;
 $input-warning-border-focus:      mix($state-warning, $white, 25%) !default; // Remove this in a later version
 $input-warning-icon:              $state-warning !default;
 
-$input-danger-border:             mix($black, $state-danger, 40%) !default;
+$input-danger-border:             mix($rich-black, $state-danger, 40%) !default;
 $input-danger-border-focus:       mix($state-danger, $white, 25%) !default; // Remove this in a later version
 $input-danger-icon:               $state-danger !default;
 
@@ -564,7 +567,7 @@ $datepicker-unavailable-bg:        $datepicker-bg !default;
  * -------------------------------------------------------------------
  */
 
-$accordion-border:            $border-color !default;
+$accordion-border:            $border-color-light !default;
 $accordion-header-bg:         $white !default;
 $accordion-header-bg-hover:   $background-color-light !default;
 $accordion-content-bg:        $accordion-header-bg !default;
@@ -699,7 +702,7 @@ $label-padding:           0 $spacer / 4 !default;
 
 $tag-color:               $text-color !default;
 $tag-bg:                  $background-color-light !default;
-$tag-border:              $border-color !default;
+$tag-border:              $border-color-light !default;
 $tag-border-focus:        $input-border-focus !default; // Remove this in a later version
 $tag-placeholder:         $input-placeholder !default;
 $tag-height:              $spacer-md !default;
@@ -711,7 +714,7 @@ $tag-height:              $spacer-md !default;
  */
 
 $flyout-bg:               $white !default;
-$flyout-border:           $border-color !default;
+$flyout-border:           $border-color-light !default;
 $flyout-max-width-sm:     $spacer * 10 !default;
 $flyout-max-width-md:     $spacer * 20 !default;
 $flyout-max-width-lg:     $spacer * 30 !default;
@@ -723,7 +726,7 @@ $flyout-max-height:       $spacer * 9 !default;
  * -------------------------------------------------------------------
  */
 
-$footer-bg:               $black !default;
+$footer-bg:               $rich-black !default;
 $footer-color:            $white !default;
 
 $footer-height:           $spacer-lg !default;
@@ -741,7 +744,7 @@ $footer-line-height:      $line-height-paragraph !default;
 $header-height:           $spacer-lg !default;
 
 $header-bg:               $white !default;
-$header-border:           $border-color !default;
+$header-border:           $border-color-light !default;
 $header-btn-bg:           $white !default;
 $header-btn-color:        $grey-dark !default;
 
@@ -791,7 +794,7 @@ $overlay-button-color-hover:      $grey-light !default;
  */
 
 $modal-bg:                $white !default;
-$modal-border:            $border-color !default;
+$modal-border:            $border-color-light !default;
 
 $modal-width:             $spacer * 17 !default;
 $modal-width-large:       $spacer * 25 !default;
@@ -806,7 +809,7 @@ $modal-padding:           $spacer !default;
 
 $nav-font-weight:             $bold !default;
 $nav-icon-size:               1.25rem !default;
-$nav-border:                  $border-color !default;
+$nav-border:                  $border-color-light !default;
 $nav-border-hover:            $brand-primary !default;
 $nav-color:                   $text-color !default;
 $nav-color-hover:             $brand-primary !default;
@@ -832,13 +835,13 @@ $pagination-color:          $btn-primary-color !default;
 $pagination-color-disabled: $btn-disabled-color !default;
 $pagination-bg:             $btn-primary-bg !default;
 $pagination-bg-disabled:    $btn-disabled-bg !default;
-$pagination-bg-hover:       mix($pagination-bg, $black, 85%) !default;
+$pagination-bg-hover:       mix($pagination-bg, $rich-black, 85%) !default;
 
 $pagination-outline-color:            $pagination-bg !default;
 $pagination-outline-bg:               $btn-transparent-bg !default;
 $pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
 $pagination-outline-border:           $pagination-outline-color !default;
-$pagination-outline-border-hover:     mix($pagination-outline-border, $black, 85%) !default;
+$pagination-outline-border-hover:     mix($pagination-outline-border, $rich-black, 85%) !default;
 
 $pagination-size-sm: $spacer-md !default;
 $pagination-size-lg: $spacer-xl !default;
@@ -851,7 +854,7 @@ $pagination-size-lg: $spacer-xl !default;
 
 $step-indicator-color:                  $text-color !default;
 $step-indicator-bg:                     $background-color !default;
-$step-indicator-border:                 $border-color !default;
+$step-indicator-border:                 $border-color-light !default;
 $step-indicator-label-color:            $step-indicator-color !default;
 $step-indicator-color-active:           $text-color !default;
 $step-indicator-bg-active:              $white !default;
@@ -883,7 +886,7 @@ $upload-disabled-border:  $upload-disabled-color !default;
 $upload-file-color:           $text-color !default;
 $upload-file-bg:              $background-color-light !default;
 $upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
-$upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
+$upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
 
 
 /**
@@ -912,13 +915,14 @@ $slideshow-footer-color-light:    $white !default;
  * NAVIGATION MENU
  * -------------------------------------------------------------------
  */
-$navigation-menu-mobile-height: $spacer-xl !default;
-$navigation-menu-pane-width: 20rem !default;
-$navigation-menu-undocked-width: 15rem !default;
-$navigation-menu-docked-width: $header-height !default;
-$navigation-menu-submenu-inset: $spacer-xs !default;
-$navigation-menu-submenu-height: $navigation-menu-undocked-width * 2 !default;
-$navigation-menu-animation-speed: 150ms !default;
+$navigation-menu-border:          $border-color-light !default;
+$navigation-menu-mobile-height:   $spacer-xl !default;
+$navigation-menu-pane-width:      20rem !default;
+$navigation-menu-undocked-width:  15rem !default;
+$navigation-menu-docked-width:    $header-height !default;
+$navigation-menu-submenu-inset:   $spacer-xs !default;
+$navigation-menu-submenu-height:  $navigation-menu-undocked-width * 2 !default;
+$navigation-menu-animation-speed: $animation-duration !default;
 
 
 /**
