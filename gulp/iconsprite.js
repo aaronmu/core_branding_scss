@@ -10,6 +10,18 @@ gulp.task('icon-sprite', function () {
     return gulp.src('src/icons/*.svg')
         .pipe(svgSprite({
             dest: 'styles',
+            shape: {
+                dimension: {
+                    maxWidth: 24,
+                    maxHeight: 24
+                },
+                id: {
+                    generator: 'ai-%s'
+                },
+                spacing: {
+                    padding: 1
+                }
+            },
             mode: {
                 symbol: {
                     dest: '',
@@ -19,14 +31,22 @@ gulp.task('icon-sprite', function () {
                     prefix: '.ai-'
                 },
             },
-            shape: {
-                dimension: {
-                    maxWidth: 24,
-                    maxHeight: 24
-                },
-                spacing: {
-                    padding: 1
-                }
+            svg: {
+                transform: [
+                    {
+                        svgo: {
+                            plugins: [
+                                {
+                                    mergePaths: false
+                                }
+                            ]
+                        }
+                    },
+                    function(svg) {
+                        return svg.replace(/(<style.*?<\/style>)/g, "").replace(/(fill=\"#([0-9a-fA-F]{6})\")/g, "").replace(/(fill=\"#([0-9a-fA-F]{3})\")/g, "");
+
+                    }
+                ]
             }
         }))
         .pipe(gulp.dest('src/styles/'));

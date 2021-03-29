@@ -1,8 +1,13 @@
 /**
  * ANTWERPEN FONT
  * -------------------------------------------------------------------
+ * The 'double declarations' are there to fix faux-bold in some browsers:
+ * https://alistapart.com/article/say-no-to-faux-bold/
  */
 
 @include font-face('Antwerpen Small', '../../fonts/AntwerpenSmallCaps-Regular', $normal, normal);
+@include font-face('Antwerpen Small', '../../fonts/AntwerpenSmallCaps-Regular', $bold, normal);
 @include font-face('Antwerpen Regular', '../../fonts/Antwerpen-Regular', $normal, normal);
+@include font-face('Antwerpen Regular', '../../fonts/Antwerpen-Regular', $bold, normal);
 @include font-face('Antwerpen Tall', '../../fonts/AntwerpenTall-Tall', $normal, normal);
+@include font-face('Antwerpen Tall', '../../fonts/AntwerpenTall-Tall', $bold, normal);

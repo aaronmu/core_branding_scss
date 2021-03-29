@@ -17,6 +17,7 @@
 - [BREAKING] Updated the syntax of the toggle component to be more accessible
 - [BREAKING] Updated the syntax of the switch component to be more accessible
 - [BREAKING] Moved navigation menu import to organisms
+- [BREAKING] Fixed the way fallback fonts behave
 - Aligned the look of disabled components
 - Optimized fonts to be more future-proof
 - Changed syntax of slideshow

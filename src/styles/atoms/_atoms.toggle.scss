@@ -36,7 +36,7 @@
 
 .a-toggle__on,
 .a-toggle__off {
-  transition: initial transform $animation-normal;
+  transition-property: background, color, transform;
   width: 100%;
 }
 
