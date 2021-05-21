@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;}
-</style>
-<g>
-	<path class="st0" d="M14.5,1.7h-1.6c-0.2,0-0.3,0.1-0.3,0.3l-0.2,1.6c0,0.3-0.3,0.5-0.6,0.5H1.4c-0.5,0-0.9,0.4-0.9,0.9
-		c0,0.1,0,0.2,0,0.3l1,3C1.6,8.8,2,9,2.4,9h8.8c0.3,0,0.6,0.3,0.6,0.6c0,0.3-0.3,0.6-0.6,0.6H2.6"/>
-	<line class="st0" x1="12.1" y1="5.4" x2="11.8" y2="7.8"/>
-	<circle class="st0" cx="3.8" cy="12.4" r="0.9"/>
-	<circle class="st0" cx="10.5" cy="12.4" r="0.9"/>
-</g>
-</svg>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke-linecap="round" stroke="#000" fill="none" stroke-linejoin="round"><path d="M23.5 2.5h-2.56l-.01-.001c-.26-.01-.47.18-.5.43l-.34 2.68 0-.01c-.07.5-.49.87-1 .87H1.97l0-.001c-.83 0-1.5.67-1.5 1.5 0 .15.02.3.06.44l1.56 5 -.01-.01c.19.62.77 1.05 1.43 1.05h14.43l0 0c.55 0 1 .44.99 1 -.01.55-.45.99-1 .99h-14"/><path d="M19.5 8.5l-.44 3.98"/><path d="M6 18.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 1 0 0-3Z"/><path d="M17 18.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 1 0 0-3Z"/></g></svg>

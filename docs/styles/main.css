@@ -1363,6 +1363,12 @@ a:hover, a:active, a:focus {
 .a-avatar__icon {
   height: 1.5rem;
 }
+.a-avatar__icon .ai {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 
 a .a-avatar:before {
   background-color: #000;
@@ -1393,8 +1399,8 @@ a .a-avatar:hover:before, a .a-avatar:active:before {
   line-height: 2.25rem;
   width: 2.25rem;
 }
-.a-avatar--small__icon {
-  height: 1.125rem;
+.a-avatar--small .a-avatar__icon {
+  height: 2.25rem;
 }
 
 .a-avatar--medium {
@@ -1403,8 +1409,8 @@ a .a-avatar:hover:before, a .a-avatar:active:before {
   line-height: 4.5rem;
   width: 4.5rem;
 }
-.a-avatar--medium__icon {
-  height: 2.25rem;
+.a-avatar--medium .a-avatar__icon {
+  height: 4.5rem;
 }
 
 .a-avatar--large {
@@ -1413,8 +1419,8 @@ a .a-avatar:hover:before, a .a-avatar:active:before {
   line-height: 6rem;
   width: 6rem;
 }
-.a-avatar--large__icon {
-  height: 3rem;
+.a-avatar--large .a-avatar__icon {
+  height: 6rem;
 }
 
 /**
@@ -2714,6 +2720,11 @@ textarea {
   min-height: 2.25rem;
   padding: 0 0.75rem;
 }
+@-moz-document url-prefix() {
+  .a-input.a-input--small select {
+    line-height: 2.1;
+  }
+}
 .a-input.a-input--small textarea {
   min-height: 8rem;
   padding: 0.5rem 0.75rem;
@@ -2789,14 +2800,14 @@ textarea {
  * LINK WITH ICON LEFT OR RIGHT
  * -------------------------------------------------------------------
  */
-a.has-icon-left .ai, a.has-icon-right .ai {
+a:not([class^=a-button]).has-icon-left .ai, a:not([class^=a-button]).has-icon-right .ai {
   font-size: 0.875rem;
-  vertical-align: top;
+  vertical-align: middle;
 }
-a.has-icon-left .ai {
+a:not([class^=a-button]).has-icon-left .ai {
   padding-right: 0.5rem;
 }
-a.has-icon-right .ai {
+a:not([class^=a-button]).has-icon-right .ai {
   padding-left: 0.5rem;
 }
 
@@ -4348,6 +4359,7 @@ dl {
   .m-nav-tabs > li > a,
 .m-nav-tabs > li > button {
     border-bottom: 3px solid transparent;
+    display: inline-flex;
     text-decoration: none;
     transition-property: border, color;
   }
@@ -5786,7 +5798,7 @@ dl {
  */
 .o-hero {
   align-items: center;
-  background: #d8d8d8;
+  background: #f3f3f3;
   display: flex;
   height: 12rem;
 }

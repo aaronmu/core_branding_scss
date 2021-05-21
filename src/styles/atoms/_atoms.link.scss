@@ -9,11 +9,11 @@
  * -------------------------------------------------------------------
  */
 
-a {
+a:not([class^='a-button']) {
   &.has-icon-left .ai,
   &.has-icon-right .ai {
     font-size: .875rem;
-    vertical-align: top;
+    vertical-align: middle;
   }
 
   &.has-icon-left .ai {

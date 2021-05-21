@@ -43,7 +43,14 @@ gulp.task('icon-sprite', function () {
                         }
                     },
                     function(svg) {
-                        return svg.replace(/(<style.*?<\/style>)/g, "").replace(/(fill=\"#([0-9a-fA-F]{6})\")/g, "").replace(/(fill=\"#([0-9a-fA-F]{3})\")/g, "");
+                        return svg
+                            .replace(/(<style.*?<\/style>)/g, "")
+                            .replace(/( fill=\"#([0-9a-fA-F]{3,6})\")/g, "")
+                            .replace(/( fill=\"none")/g, "")
+                            .replace(/( stroke=\"#([0-9a-fA-F]{3,6})\")/g, "")
+                            .replace(/( xmlns=\"http:\/\/www.w3.org\/2000\/svg\")/g, "")
+                            .replace(/(style=\"position:absolute\")/g, "style=\"position:absolute\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"")
+                            .replace(/(  )/g, " ");
 
                     }
                 ]

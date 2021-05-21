@@ -132,11 +132,16 @@ $white:                       #fff !default;
  */
 
 $black:                        #141414;
-$grey-darker:                  #424242 !default;
-$grey-dark:                    #6f6f6f !default;
-$grey:                         #949494 !default;
-$grey-light:                   #d8d8d8 !default;
-$grey-lighter:                 #f3f3f3 !default;
+$gray-darker:                  #424242 !default;
+$grey-darker:                  $gray-darker;
+$gray-dark:                    #6f6f6f !default;
+$grey-dark:                    $gray-dark;
+$gray:                         #949494 !default;
+$grey:                         $gray;
+$gray-light:                   #d8d8d8 !default;
+$grey-light:                   $gray-light;
+$gray-lighter:                 #f3f3f3 !default;
+$grey-lighter:                 $gray-lighter;
 
 
 /**

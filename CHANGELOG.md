@@ -1,16 +1,18 @@
 # Changelog
 
+
 ## [5.0.0] - 2021-xx-xx
 ### Added
-- [BREAKING] Replaced the complete icon set
+- [BREAKING] Replaced the FontAwesome icons with an all new Streamline icon set
 - Added `$spacer-sm` related classes
 - Added `$switch-label` variable
 - Added `$box-shadow-top` and `$box-shadow-top` variables
 - Added styling for readonly inputs
 - Added warm grays
+- Updated some variable names
 
 ### Changed
-- [BREAKING] Changed most of the color palette
+- [BREAKING] Updated many colors in the color palette
 - [BREAKING] Updated avatar to work with the new icon library
 - [BREAKING] Updated copyright to work with the new icon library
 - [BREAKING] Updated slideshow to work with the new icon library
@@ -24,6 +26,7 @@
 
 ### Fixed
 - Fixed a header component accessibility issue
+- Fixed the appearance of the small select in Firefox
 
 ### Removed
 - [BREAKING] Removed cookie consent component
@@ -313,6 +316,7 @@
 - Initial release.
 
 
+[5.0.0]: https://github.com/a-ui/core_branding_scss/tree/v5.0.0
 [4.3.1]: https://github.com/a-ui/core_branding_scss/tree/v4.3.1
 [4.3.0]: https://github.com/a-ui/core_branding_scss/tree/v4.3.0
 [4.2.2]: https://github.com/a-ui/core_branding_scss/tree/v4.2.2
