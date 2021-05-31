@@ -1,7 +1,7 @@
 # Changelog
 
 
-## [5.0.0] - 2021-xx-xx
+## [5.0.0] - 2021-05-31
 ### Added
 - [BREAKING] Replaced the FontAwesome icons with an all new Streamline icon set
 - Added `$spacer-sm` related classes
