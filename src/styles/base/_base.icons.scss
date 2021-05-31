@@ -1,0 +1,46 @@
+/**
+ * ICONS
+ * -------------------------------------------------------------------
+ */
+
+.ai {
+  align-self: center;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  vertical-align: middle;
+
+  // Normalize the icons width and height and prepare them for scalability
+  svg {
+    fill: none;
+    height: 1em;
+    position: relative;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 6.25%; // Percentages don't give weird results when zooming in, use increments of 1.5625% #notkidding
+    width: 1em;
+  }
+}
+
+.ai--thin {
+  svg {
+    stroke-width: 4.6875%;
+  }
+}
+
+.ai--spin {
+  svg {
+    animation: spin 1.6s linear infinite reverse;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

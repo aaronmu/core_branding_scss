@@ -4,62 +4,56 @@
 // - https://www.npmjs.org/package/gulp-svg-sprite
 
 var gulp = require('gulp');
-var cheerio = require('gulp-cheerio'),
-    replace = require('gulp-replace'),
-    svgSprite = require('gulp-svg-sprite');
+var svgSprite = require('gulp-svg-sprite');
 
 gulp.task('icon-sprite', function () {
     return gulp.src('src/icons/*.svg')
-        .pipe(cheerio({
-            run: function ($) {
-                $('[stroke]').removeAttr('stroke');
-            },
-            parserOptions: {xmlMode: true}
-        }))
-        // Cheerio plugin sometimes creates unnecessary string '&gt;'
-        .pipe(replace('&gt;', '>'))
         .pipe(svgSprite({
             dest: 'styles',
-            // transform: [
-            //     {
-            //         svgo: {
-            //             plugins: [
-            //                 {
-            //                     mergePaths: false
-            //                 }
-            //             ]
-            //         }
-            //     }
-            // ],
+            shape: {
+                dimension: {
+                    maxWidth: 24,
+                    maxHeight: 24
+                },
+                id: {
+                    generator: 'ai-%s'
+                },
+                spacing: {
+                    padding: 1
+                }
+            },
             mode: {
                 symbol: {
                     dest: '',
                     sprite: '../images/ai.svg',
                     common: 'ai',
+                    inline: true,
                     prefix: '.ai-'
                 },
-                css: {
-                    dest: '',
-                    // example: true,
-                    sprite: '../images/sprite.svg',
-                    common: 'ai',
-                    prefix: '.ai-',
-                    render: {
-                        scss: {
-                            dest: '_antwerpen-icons.scss'
-                        }
-                    }
-                }
             },
-            shape: {
-                dimension: {
-                    maxWidth: 48,
-                    maxHeight: 48
-                },
-                spacing: {
-                    box: 'padding',
-                    padding: 1
-                }
+            svg: {
+                transform: [
+                    {
+                        svgo: {
+                            plugins: [
+                                {
+                                    mergePaths: false
+                                }
+                            ]
+                        }
+                    },
+                    function(svg) {
+                        return svg
+                            .replace(/(<style.*?<\/style>)/g, "")
+                            .replace(/( fill=\"#([0-9a-fA-F]{3,6})\")/g, "")
+                            .replace(/( fill=\"none")/g, "")
+                            .replace(/( stroke=\"#([0-9a-fA-F]{3,6})\")/g, "")
+                            .replace(/( xmlns=\"http:\/\/www.w3.org\/2000\/svg\")/g, "")
+                            .replace(/(style=\"position:absolute\")/g, "style=\"position:absolute\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\"")
+                            .replace(/(  )/g, " ");
+
+                    }
+                ]
             }
         }))
         .pipe(gulp.dest('src/styles/'));

@@ -13,7 +13,7 @@ var fs = require('fs');
 var listSelectors = require('list-selectors'),
     nunjucks = require('gulp-nunjucks'),
     rename = require('gulp-rename'),
-    sassVars = require('sass-vars-to-js');
+    exporter = require('sass-export').exporter;
 
 gulp.task('render-templates', function () {
     return gulp.src(['src/**/index.njk'])
@@ -28,8 +28,8 @@ function getTemplateData(){
     };
 
     data.VERSION_INFO = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-	data.COLORS = stripDefaults(sassVars('src/styles/quarks/_quarks.colors.scss'));
-    data.VARIABLES = stripDefaults(sassVars('src/styles/quarks/_quarks.variables.scss'));
+    data.COLORS = stripDefaults(exporter({inputFiles: ['src/styles/quarks/_quarks.colors.scss'],includePaths: ['src/styles/quarks/']}).getArray());
+    data.VARIABLES = stripDefaults(exporter({inputFiles: ['src/styles/quarks/_quarks.variables.scss'],includePaths: ['src/styles/quarks/']}).getArray());
 
     var icons = glob.sync("src/icons/*.svg");
 	for(var i in icons) {
@@ -73,13 +73,6 @@ function getTemplateData(){
 }
 
 function stripDefaults(values) {
-    var response = {};
-
-    Object.keys(values).forEach(function(key) {
-        if(values[key].indexOf(" !default") !== -1 && key.indexOf("instagram") === -1) {
-            response[key] = values[key].replace(' !default', '');
-        }
-    });
-
-    return response;
+    // Return all values but these of Instagram (since they are not part of the branding)
+    return values.filter(val => val.name.indexOf("instagram") === -1);
 }

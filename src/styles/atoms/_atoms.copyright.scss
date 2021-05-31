@@ -24,16 +24,12 @@
 }
 
 .a-copyright__sign {
+  align-items: center;
+  display: flex;
+  font-size: rem($copyright-font-size * 1.25);
   height: 100%;
-  position: relative;
+  justify-content: center;
   width: $copyright-height;
-
-  .fa {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 .a-copyright__label {

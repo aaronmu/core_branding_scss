@@ -2,7 +2,6 @@
 // :: SASS
 // -------------------------------------------------------------------
 // - https://www.npmjs.org/package/gulp-sass
-// - https://www.npmjs.org/package/gulp-merge-media-queries
 // - https://www.npmjs.com/package/gulp-sourcemaps
 // - https://www.npmjs.com/package/gulp-postcss
 // - https://www.npmjs.com/package/autoprefixer
@@ -12,11 +11,10 @@
 // - https://www.npmjs.com/package/gulp-header-license
 // - https://www.npmjs.org/package/gulp-sass-lint
 
-var gulp = require('gulp');
-var fs = require('fs');
+var gulp = require('gulp'),
+    fs = require('fs');
 
 var sass = require('gulp-sass'),
-    mergeMediaQueries = require('gulp-merge-media-queries'),
     sourcemaps = require('gulp-sourcemaps'),
     postcss = require("gulp-postcss"),
     autoprefixer = require("autoprefixer"),
@@ -24,8 +22,10 @@ var sass = require('gulp-sass'),
     rename = require('gulp-rename'),
     cssUrlAdjuster = require('gulp-css-url-adjuster'),
     license = require('gulp-header-license'),
-    sassLint = require('gulp-sass-lint');
+    sassLint = require('gulp-sass-lint'),
+    browserSync = require('browser-sync');
 
+sass.compiler = require('dart-sass');
 
 var cssNano = [
     cssnano({
@@ -53,9 +53,9 @@ gulp.task('sass', function () {
     return gulp.src('src/styles/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
-        .pipe(gulp.dest('.tmp/styles'));
+        .pipe(gulp.dest('.tmp/styles'))
+        .pipe(browserSync.stream());
 });
 
 
@@ -72,7 +72,6 @@ gulp.task('sass:dist', function(){
 
     return gulp.src(['src/styles/**/*.scss', '!src/styles/**/styleguide.scss'])
         .pipe(sass(sassOptions).on('error', sass.logError))
-        .pipe(mergeMediaQueries({ use_external: false }))
         .pipe(postcss(autoPrefixer))
         .pipe(license('/*\n' + fs.readFileSync('LICENSE.md', 'utf8') + '*/'))
         .pipe(cssUrlAdjuster({

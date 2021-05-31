@@ -140,11 +140,11 @@ dl {
   @extend %a-list--flattened;
 
   > li {
-    border-top: 1px solid $border-color;
+    border-top: 1px solid $border-color-light;
     list-style-position: inside;
 
     &:last-of-type {
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid $border-color-light;
     }
   }
 
@@ -166,11 +166,11 @@ dl {
     @extend %a-list--unstyled;
   }
 
-  &.has-icon-left > li .fa {
+  &.has-icon-left > li .ai {
     margin-right: $spacer-xs;
   }
 
-  &.has-icon-right > li .fa {
+  &.has-icon-right > li .ai {
     margin-left: $spacer-xs;
   }
 }

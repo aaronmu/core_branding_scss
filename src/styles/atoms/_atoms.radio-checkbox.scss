@@ -45,10 +45,6 @@
         background-color: $radio-checkbox-bg;
         box-shadow: 0 0 0 1px $radio-checkbox-bg inset;
       }
-
-      &:after {
-        @include fontawesome;
-      }
     }
 
     &:disabled {
@@ -102,20 +98,31 @@
       position: absolute;
       text-align: center;
       top: 0;
+      transition-duration: $animation-duration;
+      transition-property: background-size;
+      transition-timing-function: $animation-easing;
       width: $spacer;
     }
   }
 }
 
+.a-input__checkbox input[type='checkbox'] {
+  + label:after {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 15 15%22><path fill=%22none%22 stroke=%22%23ffffff%22 stroke-width=%229.375%%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M14.5.5l-10 14-4-4%22/></svg>');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 0% 0%;
+  }
+}
+
 .a-input__checkbox input[type='checkbox']:checked {
   + label:after {
-    content: '\f00c';
+    background-size: 70% 70%;
   }
 
   &:disabled {
-    + label:before {
-      background-color: $input-disabled;
-      box-shadow: 0 0 0 1px $input-disabled-bg inset;
+    + label:after {
+      background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 15 15%22><path fill=%22none%22 stroke=%22%236f6f6f%22 stroke-width=%229.375%%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 d=%22M14.5.5l-10 14-4-4%22/></svg>');
     }
   }
 }
@@ -134,7 +141,8 @@
 
     &:disabled {
       + label:before {
-        box-shadow: 0 0 0 6px $input-disabled inset;
+        background: $input-disabled;
+        box-shadow: 0 0 0 1px $input-disabled-border inset, 0 0 0 rem(6px) $input-disabled-bg inset;
       }
     }
   }

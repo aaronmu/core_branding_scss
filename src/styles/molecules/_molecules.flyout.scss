@@ -5,6 +5,7 @@
 
 .m-flyout {
   display: inline-block; // Inline-block so our wrapper element is never bigger than our action (button, ...)
+  outline: none;
   position: relative;
 }
 

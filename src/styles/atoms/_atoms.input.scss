@@ -130,8 +130,8 @@ textarea {
     @include a-input($input-color, $input-bg, $input-success-border);
 
     .a-input__wrapper:before {
-      color: $input-success-icon;
-      content: '\f00c';
+      background: $state-success;
+      mask: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 15 15%22><path fill=%22none%22 stroke=%22%23ffffff%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 stroke-width=%226.25%%22 d=%22M14.5.5l-10 14-4-4%22/></svg>') no-repeat center center;
     }
   }
 
@@ -139,8 +139,8 @@ textarea {
     @include a-input($input-color, $input-bg, $input-warning-border);
 
     .a-input__wrapper:before {
-      color: $input-warning-icon;
-      content: '\f071';
+      background: $text-color;
+      mask: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><defs><style>.a{fill:none;stroke:%23ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:6.25%}</style></defs><path class=%22a%22 d=%22M23 11.811A11.162 11.162 0 0112 23 10.837 10.837 0 011 12.192 11.162 11.162 0 0112 1a10.838 10.838 0 0111 10.811zM12 14.005v-7%22/><path class=%22a%22 d=%22M11.991 16.005a.245.245 0 00-.241.255.254.254 0 00.253.245.246.246 0 00.241-.255.253.253 0 00-.244-.245h-.005%22/></svg>') no-repeat center center;
     }
   }
 
@@ -148,8 +148,8 @@ textarea {
     @include a-input($input-color, $input-bg, $input-danger-border);
 
     .a-input__wrapper:before {
-      color: $input-danger-icon;
-      content: '\f071';
+      background: $state-danger;
+      mask: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><defs><style>.a{fill:none;stroke:%23ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:6.25%}</style></defs><path class=%22a%22 d=%22M22.553 22.581a.569.569 0 01-.553.894H2a.569.569 0 01-.553-.894L11.553 2.37c.246-.492.648-.492.894 0zM12 16.979v-7%22/><path class=%22a%22 d=%22M11.991 18.979a.246.246 0 00-.241.255.255.255 0 00.254.245h.005a.246.246 0 00.241-.255.255.255 0 00-.25-.245h-.005%22/></svg>') no-repeat center center;
     }
   }
 
@@ -158,12 +158,11 @@ textarea {
   &.has-error {
 
     .a-input__wrapper:before {
-      @include fontawesome;
-      font-size: 1.25rem;
-      line-height: $spacer-lg;
+      content: '';
+      height: $spacer;
+      mask-size: contain;
       position: absolute;
       right: 0;
-      text-align: center;
       top: 50%;
       transform: translateY(-50%);
       width: $spacer-lg;
@@ -219,12 +218,10 @@ textarea {
 
 .a-input {
 
-  &.has-icon-left .a-input__wrapper > .fa,
-  &.has-icon-right .a-input__wrapper > .fa {
+  &.has-icon-left .a-input__wrapper > .ai,
+  &.has-icon-right .a-input__wrapper > .ai {
     color: $input-icon;
-    font-size: 1.25rem;
-    height: $spacer-lg;
-    line-height: $spacer-lg;
+    font-size: rem($icon-size-base);
     pointer-events: none;
     position: absolute;
     text-align: center;
@@ -234,7 +231,10 @@ textarea {
     width: $spacer-lg;
 
     &.is-clickable {
+      align-items: center;
       cursor: pointer;
+      display: flex;
+      height: 100%;
       pointer-events: auto;
       transition: color $animation-normal;
 
@@ -250,7 +250,7 @@ textarea {
       padding-left: $spacer-lg;
     }
 
-    > .fa {
+    > .ai {
       left: 0;
     }
   }
@@ -261,7 +261,7 @@ textarea {
       padding-right: $spacer-lg;
     }
 
-    > .fa {
+    > .ai {
       right: 0;
     }
   }
@@ -301,6 +301,9 @@ textarea {
     }
 
     select {
+      @-moz-document url-prefix() { // sass-lint:disable-line no-vendor-prefixes
+        line-height: 2.1; // Fixes Firefox line-height bug
+      }
       min-height: $select-height-sm;
       padding: $select-padding-sm;
     }

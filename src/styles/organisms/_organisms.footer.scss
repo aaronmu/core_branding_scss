@@ -40,5 +40,11 @@
   a {
     color: inherit;
     text-decoration: underline;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }

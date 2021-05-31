@@ -4,12 +4,13 @@
  */
 
 .a-avatar {
+  align-items: center;
   background-color: $avatar-bg;
   color: $avatar-color;
-  display: inline-block;
+  display: inline-flex;
   font-size: $avatar / 2;
   height: $avatar;
-  line-height: $avatar;
+  justify-content: center;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -19,12 +20,23 @@
     display: block;
     max-width: 100%;
   }
+
+  &__icon {
+    height: $avatar / 2;
+
+    .ai {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 a .a-avatar {
 
   &:before {
-    background-color: $black;
+    background-color: $rich-black;
     content: '';
     height: 100%;
     left: 0;
@@ -56,6 +68,10 @@ a .a-avatar {
   height: $avatar-sm;
   line-height: $avatar-sm;
   width: $avatar-sm;
+
+  .a-avatar__icon {
+    height: $avatar-sm;
+  }
 }
 
 .a-avatar--medium {
@@ -63,6 +79,10 @@ a .a-avatar {
   height: $avatar-md;
   line-height: $avatar-md;
   width: $avatar-md;
+
+  .a-avatar__icon {
+    height: $avatar-md;
+  }
 }
 
 .a-avatar--large {
@@ -70,4 +90,8 @@ a .a-avatar {
   height: $avatar-lg;
   line-height: $avatar-lg;
   width: $avatar-lg;
+
+  .a-avatar__icon {
+    height: $avatar-lg;
+  }
 }

@@ -11,7 +11,7 @@
 
 %m-nav-list {
   @extend %a-list--reset;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $nav-border;
 
   > li {
     font-weight: $nav-font-weight;
@@ -23,9 +23,10 @@
     > button {
       background-color: $nav-bg;
       border: none;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid $nav-border;
       color: inherit;
       display: block;
+      flex: 1 1 auto;
       padding: $nav-padding;
       text-decoration: none;
       transition-duration: $animation-duration;
@@ -59,11 +60,9 @@
         }
       }
 
-      > .fa {
+      > .ai {
         display: inline-block;
-        font-size: $nav-icon-size;
         margin-right: $spacer-xs;
-        vertical-align: bottom;
       }
     }
 
@@ -85,12 +84,13 @@
  */
 
 .m-nav-list--left > li {
-  text-align: left;
+  &,
+  > a,
+  > button {
+    text-align: left;
+  }
 }
 
-.m-nav-list--left > li > button {
-  text-align: left;
-}
 
 /**
  * NAVIGATION TABS
@@ -107,10 +107,10 @@
     justify-content: center;
 
     > li {
-
       > a,
       > button {
         border-bottom: 3px solid transparent;
+        display: inline-flex;
         text-decoration: none;
         transition-property: border, color;
 

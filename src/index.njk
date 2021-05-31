@@ -1,3 +1,5 @@
+{% import "./templates/macros/icon.njk" as icon with context %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -74,15 +76,15 @@
     <div role="banner">
         <header class="o-header" aria-label="Header">
             <a href="#main-content" class="a-button-negative o-header__button o-header__button-skip">Skip to main content</a>
-            <a href="/" class="o-header__logo" aria-label="Antwerp branding styleguide">
-                <img src="images/a-logo.svg" alt="Homepage Antwerp branding styleguide.">
+            <a href="/" class="o-header__logo">
+                <img src="./images/a-logo.svg" alt="Homepage Antwerp branding styleguide.">
             </a>
         </header>
 
         <div class="u-wrapper d-h1 u-text-xlight u-bg-primary">
             <div class="u-container">
                 <h1>Antwerp branding styleguide <small class="u-bg-secondary u-text-xlight">v{{ VERSION_INFO.version }}</small></h1>
-                <p class="u-margin-top">A collection of building blocks for your next Antwerp-based application.</p>
+                <p class="u-margin-top-xs">A collection of building blocks for your next Antwerp-based application.</p>
             </div>
         </div>
     </div>
@@ -124,7 +126,7 @@
             <span class="o-footer__label">© stad Antwerpen</span>
 
             <a href="#" class="o-footer__button a-button a-button--secondary has-icon" aria-label="Go back to top">
-                <span class="fa fa-arrow-up" aria-hidden="true"></span>
+                {{ icon.render('arrow-up-1') }}
             </a>
         </footer>
     </div>
