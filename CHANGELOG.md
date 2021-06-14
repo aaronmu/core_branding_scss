@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [5.0.1] - 2021-06-14
+### Fixed
+- Fixed an issue where the leaflet component would collapse
+
+
 ## [5.0.0] - 2021-05-31
 ### Added
 - [BREAKING] Replaced the FontAwesome icons with an all new Streamline icon set
@@ -316,6 +321,7 @@
 - Initial release.
 
 
+[5.0.1]: https://github.com/a-ui/core_branding_scss/tree/v5.0.1
 [5.0.0]: https://github.com/a-ui/core_branding_scss/tree/v5.0.0
 [4.3.1]: https://github.com/a-ui/core_branding_scss/tree/v4.3.1
 [4.3.0]: https://github.com/a-ui/core_branding_scss/tree/v4.3.0
