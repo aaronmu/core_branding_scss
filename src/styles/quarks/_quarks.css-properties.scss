@@ -1,0 +1,71 @@
+:root {
+  /**
+   * GLOBAL CSS PROPERTIES
+   * -------------------------------------------------------------------
+   */
+
+  /**
+   * SPECIFIC COLOR PALETTE
+   * -------------------------------------------------------------------
+   */
+
+  --brand-primary:           #{$endeavour};
+  --brand-secondary:         #{$monza};
+
+
+  /**
+   * SPACERS
+   * -------------------------------------------------------------------
+   */
+
+  --spacer:                  1.5rem; // 24px
+
+  --spacer-xx:               calc(var(--spacer) * 4); // 96px
+  --spacer-xl:               calc(var(--spacer) * 2.5); // 60px
+  --spacer-lg:               calc(var(--spacer) * 2); // 48px
+  --spacer-md:               calc(var(--spacer) * 1.5); // 36px
+  --spacer-sm:               calc(var(--spacer) * .75); // 18px
+  --spacer-xs:               calc(var(--spacer) * .5); // 12px
+
+
+  /**
+   * BREAKPOINTS
+   * -------------------------------------------------------------------
+   */
+
+  --screen-xs:               30rem; // 480px
+  --screen-sm:               45rem; // 720px
+  --screen-md:               62rem; // 992px
+  --screen-lg:               75rem; // 1200px
+  /**
+   * --screen-xl =
+   *    max-width of u-container
+   *    + width of official logo * 2
+   *    + space between logo and u-container * 2
+   */
+  --screen-xl:               calc(var(--screen-lg) + calc(var(--spacer-xx) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
+
+  --screen-xs-max:           44.9375rem; // 719px (--screen-sm - 1px)
+  --screen-sm-max:           61.9375rem; // 991px (--screen-md - 1px)
+  --screen-md-max:           74.9375rem; // 1199px (--screen-lg - 1px)
+  --screen-lg-max:           89.9375rem; // 1439px (--screen-xl - 1px)
+
+
+  /**
+   * BORDERS
+   * -------------------------------------------------------------------
+   */
+
+  --border-radius:           0;
+
+
+  /**
+   * ANIMATIONS
+   * -------------------------------------------------------------------
+   */
+
+  --animation-duration:      200ms;
+  --animation-easing:        ease-in-out;
+
+  --animation-normal:        var(--animation-duration) var(--animation-easing);
+}
