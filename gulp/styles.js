@@ -93,7 +93,7 @@ gulp.task('stylelint', function () {
         .pipe(stylelint({
             failAfterError: false,
             reporters: [
-                { formatter: 'string', console: true }
+                { formatter: 'verbose', console: true },
             ]
         }));
 });
