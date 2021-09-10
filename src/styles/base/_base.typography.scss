@@ -162,7 +162,7 @@ hr {
 
 a {
   color: $link-color;
-  text-decoration-skip-ink: auto; // sass-lint:disable-line no-misspelled-properties
+  text-decoration-skip-ink: auto;
   transition: color $animation-duration $animation-easing;
 
   &:hover,

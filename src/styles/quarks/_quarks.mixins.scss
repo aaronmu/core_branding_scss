@@ -142,23 +142,23 @@
  */
 
 @mixin a-input-placeholder {
-  &::-webkit-input-placeholder { // sass-lint:disable-line no-vendor-prefixes
+  &::-webkit-input-placeholder {
     @content;
     text-overflow: ellipsis;
   }
 
-  &:-ms-input-placeholder { // sass-lint:disable-line no-vendor-prefixes
+  &:-ms-input-placeholder {
     @content;
     text-overflow: ellipsis;
   }
 
-  &::-moz-placeholder { // sass-lint:disable-line no-vendor-prefixes
+  &::-moz-placeholder {
     @content;
     opacity: 1;
     text-overflow: ellipsis;
   }
 
-  &:-moz-placeholder { // sass-lint:disable-line no-vendor-prefixes
+  &:-moz-placeholder {
     @content;
     opacity: 1;
     text-overflow: ellipsis;
@@ -223,7 +223,7 @@
 
 @mixin focus {
   outline: 5px auto Highlight;
-  outline: 5px auto -webkit-focus-ring-color; // sass-lint:disable-line no-duplicate-properties no-vendor-prefixes
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 
