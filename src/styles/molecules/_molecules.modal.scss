@@ -1,5 +1,5 @@
 /**
- * MODAL
+ * MODAL VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -10,6 +10,12 @@ $modal-width:             $spacer * 17 !default;
 $modal-width-large:       $spacer * 25 !default;
 
 $modal-padding:           $spacer !default;
+
+
+/**
+ * MODAL
+ * -------------------------------------------------------------------
+ */
 
 .m-modal {
   background-color: $modal-bg;

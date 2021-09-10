@@ -1,5 +1,5 @@
 /**
- * BADGES
+ * BADGE VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -29,6 +29,12 @@ $badge-danger-bg:                $state-danger !default;
 
 $badge-disabled-color:           $grey-dark !default;
 $badge-disabled-bg:              $grey-light !default;
+
+
+/**
+ * BADGES
+ * -------------------------------------------------------------------
+ */
 
 .a-badge {
   display: inline-block;

@@ -1,5 +1,5 @@
 /**
- * AVATARS
+ * AVATAR VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -10,6 +10,12 @@ $avatar-sm:               $spacer * 1.5 !default; // 36px
 $avatar:                  $spacer * 2 !default; // 48px
 $avatar-md:               $spacer * 3 !default; // 72px
 $avatar-lg:               $spacer * 4 !default; // 96px
+
+
+/**
+ * AVATARS
+ * -------------------------------------------------------------------
+ */
 
 .a-avatar {
   align-items: center;

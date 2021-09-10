@@ -2,6 +2,8 @@
  * INPUTS
  * -------------------------------------------------------------------
  * Input fields are normalized in _base.normalize.scss
+ *
+ * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
 
@@ -19,7 +21,6 @@ textarea {
   font: inherit;
   margin: 0;
 }
-
 
 
 /**

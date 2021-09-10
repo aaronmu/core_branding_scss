@@ -1,5 +1,5 @@
 /**
- * SPINNER
+ * SPINNER VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -11,6 +11,12 @@ $spinner-size-lg:             $spinner-size * 2 !default;
 $spinner-animation-name:      spin reverse !default;
 $spinner-animation-speed:     1600ms !default;
 $spinner-animation-timing:    linear !default;
+
+
+/**
+ * SPINNER
+ * -------------------------------------------------------------------
+ */
 
 .a-spinner {
   &:before {

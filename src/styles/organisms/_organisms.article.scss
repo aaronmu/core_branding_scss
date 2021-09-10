@@ -1,5 +1,5 @@
 /**
- * ARTICLE
+ * ARTICLE VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -33,6 +33,12 @@ $article-ul-font-size:      $font-size-base !default;
 $article-ul-margin:         0 0 $spacer-xs / 2 !default;
 $article-ol-font-size:      $font-size-base !default;
 $article-ol-margin:         0 0 $spacer-xs / 2 !default;
+
+
+/**
+ * ARTICLE
+ * -------------------------------------------------------------------
+ */
 
 .o-article {
   h1 {

@@ -1,5 +1,5 @@
 /**
- * ICON LIST
+ * ICON LIST VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -8,6 +8,12 @@ $icon-list-negative-color:    $white !default;
 $icon-list-hover-color:       $brand-secondary !default;
 
 $icon-list-icon-size:         $icon-size-base !default;
+
+
+/**
+ * ICON LIST
+ * -------------------------------------------------------------------
+ */
 
 .m-icon-list {
   @extend %a-list--reset;

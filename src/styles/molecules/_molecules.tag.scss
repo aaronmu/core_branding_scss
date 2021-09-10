@@ -1,5 +1,5 @@
 /**
- * TAGS
+ * TAG VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -9,6 +9,12 @@ $tag-border:              $border-color-light !default;
 $tag-border-focus:        $input-border-focus !default; // Remove this in a later version
 $tag-placeholder:         $input-placeholder !default;
 $tag-height:              $spacer-md !default;
+
+
+/**
+ * TAGS
+ * -------------------------------------------------------------------
+ */
 
 .m-tag {
   background: $tag-bg;

@@ -23,6 +23,12 @@ $datepicker-faded-bg-hover:          $background-color !default;
 $datepicker-unavailable-color:       $state-disabled !default;
 $datepicker-unavailable-bg:          $datepicker-bg !default;
 
+
+/**
+ * DATEPICKER
+ * -------------------------------------------------------------------
+ */
+
 .m-datepicker {
   max-width: $spacer * 14;
   opacity: 0;

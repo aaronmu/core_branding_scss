@@ -1,9 +1,15 @@
 /**
- * BREADCRUMB
+ * BREADCRUMB VARIABLES
  * -------------------------------------------------------------------
  */
 
 $breadcrumb-arrow-color:  $grey !default;
+
+
+/**
+ * BREADCRUMB
+ * -------------------------------------------------------------------
+ */
 
 .m-breadcrumbs {
   @extend %a-list--reset;

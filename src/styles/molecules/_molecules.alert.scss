@@ -1,5 +1,5 @@
 /**
- * ALERTS
+ * ALERT VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -8,6 +8,12 @@ $alert-success:           $state-success !default;
 $alert-warning:           $state-warning !default;
 $alert-danger:            $state-danger !default;
 $alert-padding:           $spacer !default;
+
+
+/**
+ * ALERTS
+ * -------------------------------------------------------------------
+ */
 
 .m-alert {
   padding: $alert-padding;

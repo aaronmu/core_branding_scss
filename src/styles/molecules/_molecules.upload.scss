@@ -1,5 +1,5 @@
 /**
- * UPLOAD
+ * UPLOAD VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -18,6 +18,12 @@ $upload-file-color:           $text-color !default;
 $upload-file-bg:              $background-color-light !default;
 $upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
 $upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
+
+
+/**
+ * UPLOAD
+ * -------------------------------------------------------------------
+ */
 
 .m-upload {
   &.is-disabled {

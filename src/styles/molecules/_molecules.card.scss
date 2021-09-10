@@ -1,10 +1,16 @@
 /**
- * CARD
+ * CARD VARIABLES
  * -------------------------------------------------------------------
  */
 
 $card-header-padding:    $spacer-xs !default;
 $card-content-padding:   $spacer !default;
+
+
+/**
+ * CARD
+ * -------------------------------------------------------------------
+ */
 
 .m-card {
   background-color: $white;

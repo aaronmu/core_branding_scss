@@ -1,5 +1,5 @@
 /**
- * PAGINATION
+ * PAGINATION VARIABLES
  * -------------------------------------------------------------------
  */
 
@@ -20,6 +20,12 @@ $pagination-outline-border-hover:     mix($pagination-outline-border, $rich-blac
 
 $pagination-size-sm:                  $spacer-md !default;
 $pagination-size-lg:                  $spacer-xl !default;
+
+
+/**
+ * PAGINATION
+ * -------------------------------------------------------------------
+ */
 
 .m-pagination {
   @extend %a-list--reset;
