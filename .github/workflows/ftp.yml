@@ -24,5 +24,4 @@ jobs:
           username: vanproeyenbe@vanproeyen.be
           password: ${{ secrets.TMP_FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: ./core-branding/
-          dangerous-clean-slate: false
+          server-dir: ./subsites/jasper.vanproeyen.be/core-branding/
