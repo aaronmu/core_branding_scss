@@ -46,7 +46,7 @@
 }
 
 .m-overlay__inner {
-  -ms-overflow-style: none; // sass-lint:disable-line no-vendor-prefixes
+  -ms-overflow-style: none;
   max-height: calc(100vh - 8.75rem);
   overflow: auto;
   overflow-y: scroll;

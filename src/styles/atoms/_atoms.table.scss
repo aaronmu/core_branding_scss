@@ -118,8 +118,8 @@
  */
 
 .a-table__wrapper-responsive {
-  -ms-overflow-style: scrollbar; // sass-lint:disable-line no-vendor-prefixes
-  -webkit-overflow-scrolling: touch; // sass-lint:disable-line no-vendor-prefixes
+  -ms-overflow-style: scrollbar;
+  -webkit-overflow-scrolling: touch;
   background-color: $table-bg;
   border: 1px solid $table-border;
   overflow-x: auto;
