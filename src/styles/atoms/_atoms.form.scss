@@ -3,6 +3,11 @@
  * -------------------------------------------------------------------
  */
 
+$fieldset-padding:    $spacer-lg 0 !default;
+$legend-color:        $grey-dark !default;
+$legend-padding:      0 $spacer / 3 0 0 !default;
+$legend-size:         $font-size-lg !default;
+
 .a-form .a-input:not(:last-child) {
   margin-bottom: $spacer;
 }

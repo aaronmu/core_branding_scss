@@ -3,6 +3,13 @@
  * -------------------------------------------------------------------
  */
 
+$tag-color:               $text-color !default;
+$tag-bg:                  $background-color-light !default;
+$tag-border:              $border-color-light !default;
+$tag-border-focus:        $input-border-focus !default; // Remove this in a later version
+$tag-placeholder:         $input-placeholder !default;
+$tag-height:              $spacer-md !default;
+
 .m-tag {
   background: $tag-bg;
   box-shadow: 0 0 0 1px $tag-border inset;
@@ -16,6 +23,12 @@
     flex-shrink: 0;
   }
 }
+
+
+/**
+ * TAGS ELEMENTS
+ * -------------------------------------------------------------------
+ */
 
 .m-tag__label {
   @extend %u-text-truncate;

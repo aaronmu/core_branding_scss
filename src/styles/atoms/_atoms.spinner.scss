@@ -3,6 +3,15 @@
  * -------------------------------------------------------------------
  */
 
+$spinner-color:               $grey !default;
+$spinner-size:                $icon-size-lg !default;
+$spinner-size-sm:             $icon-size-base !default;
+$spinner-size-lg:             $spinner-size * 2 !default;
+
+$spinner-animation-name:      spin reverse !default;
+$spinner-animation-speed:     1600ms !default;
+$spinner-animation-timing:    linear !default;
+
 .a-spinner {
   &:before {
     animation: $spinner-animation-name $spinner-animation-speed infinite $spinner-animation-timing;
@@ -15,6 +24,12 @@
   }
 }
 
+
+/**
+ * SPINNER MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
 .a-spinner--inline {
   display: inline-block;
   vertical-align: middle;
@@ -23,10 +38,6 @@
 .a-spinner--centered {
   text-align: center;
 }
-
-/**
- * Spinner sizes
- */
 
 .a-spinner--sm {
   &:before {

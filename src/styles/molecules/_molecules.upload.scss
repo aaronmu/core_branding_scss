@@ -3,6 +3,22 @@
  * -------------------------------------------------------------------
  */
 
+$upload-height:              $spacer * 5 !default;
+$upload-padding:             $spacer-md $spacer !default;
+
+$upload-color:               $text-color !default;
+$upload-bg:                  $white !default;
+$upload-bg-hover:            mix($brand-primary, $white, 20%) !default;
+$upload-border:              $brand-primary !default;
+$upload-disabled-color:      $state-disabled !default;
+$upload-disabled-bg:         $grey-lighter !default;
+$upload-disabled-border:     $upload-disabled-color !default;
+
+$upload-file-color:           $text-color !default;
+$upload-file-bg:              $background-color-light !default;
+$upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
+$upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
+
 .m-upload {
   &.is-disabled {
     .m-upload__dropzone {

@@ -3,6 +3,7 @@
  * -------------------------------------------------------------------
  */
 
+$breadcrumb-arrow-color:  $grey !default;
 
 .m-breadcrumbs {
   @extend %a-list--reset;
@@ -29,4 +30,3 @@
     }
   }
 }
-

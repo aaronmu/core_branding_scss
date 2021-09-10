@@ -3,6 +3,13 @@
  * -------------------------------------------------------------------
  */
 
+$flyout-bg:               $white !default;
+$flyout-border:           $border-color-light !default;
+$flyout-max-width-sm:     $spacer * 10 !default;
+$flyout-max-width-md:     $spacer * 20 !default;
+$flyout-max-width-lg:     $spacer * 30 !default;
+$flyout-max-height:       $spacer * 9 !default;
+
 .m-flyout {
   display: inline-block; // Inline-block so our wrapper element is never bigger than our action (button, ...)
   outline: none;

@@ -3,6 +3,9 @@
  * -------------------------------------------------------------------
  */
 
+$card-header-padding:    $spacer-xs !default;
+$card-content-padding:   $spacer !default;
+
 .m-card {
   background-color: $white;
   border: 1px solid $border-color-light;

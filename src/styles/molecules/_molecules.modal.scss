@@ -3,6 +3,14 @@
  * -------------------------------------------------------------------
  */
 
+$modal-bg:                $white !default;
+$modal-border:            $border-color-light !default;
+
+$modal-width:             $spacer * 17 !default;
+$modal-width-large:       $spacer * 25 !default;
+
+$modal-padding:           $spacer !default;
+
 .m-modal {
   background-color: $modal-bg;
   border: 1px solid $modal-border;

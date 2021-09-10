@@ -3,6 +3,9 @@
  * -------------------------------------------------------------------
  */
 
+$link-list-item-padding:    $spacer / 3 * 2 $spacer !default;
+$link-list-hover:           $grey-lighter !default;
+
 %m-selectable-list__item--active {
   background-color: $link-list-hover;
 
