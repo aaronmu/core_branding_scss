@@ -47,7 +47,7 @@ $avatar-lg:               $spacer * 4 !default; // 96px
   }
 }
 
-a.a-avatar {
+a .a-avatar {
 
   &:before {
     background-color: $rich-black;
