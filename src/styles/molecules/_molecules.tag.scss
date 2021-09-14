@@ -1,4 +1,17 @@
 /**
+ * TAG VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$tag-color:               $text-color !default;
+$tag-bg:                  $background-color-light !default;
+$tag-border:              $border-color-light !default;
+$tag-border-focus:        $input-border-focus !default; // Remove this in a later version
+$tag-placeholder:         $input-placeholder !default;
+$tag-height:              $spacer-md !default;
+
+
+/**
  * TAGS
  * -------------------------------------------------------------------
  */
@@ -16,6 +29,12 @@
     flex-shrink: 0;
   }
 }
+
+
+/**
+ * TAGS ELEMENTS
+ * -------------------------------------------------------------------
+ */
 
 .m-tag__label {
   @extend %u-text-truncate;

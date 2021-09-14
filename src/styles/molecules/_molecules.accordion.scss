@@ -1,5 +1,25 @@
 /**
+ * ACCORDION VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$accordion-border:            $border-color-light !default;
+$accordion-header-bg:         $white !default;
+$accordion-header-bg-hover:   $background-color-light !default;
+$accordion-content-bg:        $accordion-header-bg !default;
+$accordion-icon-color:        $brand-primary !default;
+$accordion-icon-size:         $icon-size-sm !default;
+$accordion-header-padding:    $spacer-xs $spacer-lg $spacer-xs $spacer-xs !default;
+$accordion-content-padding:   $spacer !default;
+
+
+/**
  * ACCORDION
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * ACCORDION ELEMENTS
  * -------------------------------------------------------------------
  */
 

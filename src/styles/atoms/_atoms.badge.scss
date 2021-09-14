@@ -1,4 +1,37 @@
 /**
+ * BADGE VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$badge-font-size:                $font-size-sm !default;
+$badge-font-weight:              $bold !default;
+$badge-height:                   $spacer-sm !default;
+$badge-line-height:              $badge-height !default;
+$badge-padding:                  0 $spacer / 4 !default;
+
+$badge-default-color:            $text-color !default;
+$badge-default-bg:               $grey !default;
+
+$badge-primary-color:            $badge-default-color !default;
+$badge-primary-bg:               $brand-primary !default;
+
+$badge-secondary-color:          $badge-default-color !default;
+$badge-secondary-bg:             $brand-secondary !default;
+
+$badge-success-color:            $badge-default-color !default;
+$badge-success-bg:               $state-success !default;
+
+$badge-warning-color:            $badge-default-color !default;
+$badge-warning-bg:               $state-warning !default;
+
+$badge-danger-color:             $badge-default-color !default;
+$badge-danger-bg:                $state-danger !default;
+
+$badge-disabled-color:           $grey-dark !default;
+$badge-disabled-bg:              $grey-light !default;
+
+
+/**
  * BADGES
  * -------------------------------------------------------------------
  */
@@ -60,8 +93,3 @@
     }
   }
 }
-
-
-
-
-

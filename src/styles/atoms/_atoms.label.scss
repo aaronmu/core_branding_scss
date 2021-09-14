@@ -1,6 +1,7 @@
 /**
  * LABELS
  * -------------------------------------------------------------------
+ * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
 .a-label {
@@ -43,4 +44,3 @@
     @include a-label($label-danger-color, $label-danger-border);
   }
 }
-

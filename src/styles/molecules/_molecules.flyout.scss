@@ -1,4 +1,17 @@
 /**
+ * FLYOUT VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$flyout-bg:               $white !default;
+$flyout-border:           $border-color-light !default;
+$flyout-max-width-sm:     $spacer * 10 !default;
+$flyout-max-width-md:     $spacer * 20 !default;
+$flyout-max-width-lg:     $spacer * 30 !default;
+$flyout-max-height:       $spacer * 9 !default;
+
+
+/**
  * FLYOUT
  * -------------------------------------------------------------------
  */

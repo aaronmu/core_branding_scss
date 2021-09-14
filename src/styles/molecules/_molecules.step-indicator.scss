@@ -1,4 +1,24 @@
 /**
+ * STEP INDICATOR VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$step-indicator-color:                  $text-color !default;
+$step-indicator-bg:                     $background-color !default;
+$step-indicator-border:                 $border-color-light !default;
+$step-indicator-label-color:            $step-indicator-color !default;
+$step-indicator-color-active:           $text-color !default;
+$step-indicator-bg-active:              $white !default;
+$step-indicator-border-active:          $step-indicator-border !default;
+$step-indicator-label-color-active:     $step-indicator-color-active !default;
+$step-indicator-color-success:          $white !default;
+$step-indicator-bg-success:             $state-success !default;
+$step-indicator-border-success:         $step-indicator-bg-success !default;
+$step-indicator-label-color-success:    $step-indicator-bg-success !default;
+$step-indicator-square-size:            $spacer-md !default;
+
+
+/**
  * STEP INDICATOR
  * -------------------------------------------------------------------
  */

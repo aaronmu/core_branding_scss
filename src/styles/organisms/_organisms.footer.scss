@@ -1,4 +1,19 @@
 /**
+ * FOOTER VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$footer-bg:               $rich-black !default;
+$footer-color:            $white !default;
+
+$footer-height:           $spacer-lg !default;
+
+$footer-font-size-sm:     $font-size-sm !default;
+$footer-font-size-lg:     $font-size-sm !default;
+$footer-line-height:      $line-height-paragraph !default;
+
+
+/**
  * FOOTER
  * -------------------------------------------------------------------
  */
@@ -21,6 +36,12 @@
     }
   }
 }
+
+
+/**
+ * FOOTER ELEMENTS
+ * -------------------------------------------------------------------
+ */
 
 .o-footer__label {
   color: $footer-color;

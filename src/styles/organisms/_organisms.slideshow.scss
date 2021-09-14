@@ -1,6 +1,7 @@
 /**
  * SLIDESHOW
  * -------------------------------------------------------------------
+ * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
 .o-slideshow {
@@ -49,9 +50,6 @@
     }
   }
 }
-
-
-
 
 .o-slideshow__prev,
 .o-slideshow__next {

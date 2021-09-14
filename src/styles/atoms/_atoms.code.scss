@@ -1,8 +1,28 @@
 /**
- * CODE
+ * CODE VARIABLES
  * -------------------------------------------------------------------
  */
 
+$pre-color:               $text-color !default;
+$pre-bg:                  $background-color-light !default;
+$pre-font-size:           1rem !default;
+$pre-padding:             $spacer-xs !default;
+
+$code-color:              $pre-color !default;
+$code-bg:                 $pre-bg !default;
+$code-font-size:          .875rem !default;
+$code-padding:            $spacer-xs / 6 $spacer-xs / 2 !default;
+
+$kbd-color:               $white !default;
+$kbd-bg:                  $grey-dark !default;
+$kbd-font-size:          .875rem !default;
+$kbd-padding:             $code-padding !default;
+
+
+/**
+ * CODE
+ * -------------------------------------------------------------------
+ */
 
 /**
  * STANDARD CODE

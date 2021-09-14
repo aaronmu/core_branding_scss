@@ -1,7 +1,22 @@
 /**
- * TABLES
+ * TABLE VARIABLES
  * -------------------------------------------------------------------
  */
+
+$table-bg:                    $white !default;
+$table-border:                $border-color-light !default;
+
+$table-head-bg:               $background-color-light !default;
+
+$table-primary-head-color:    $white !default;
+$table-primary-head-bg:       $brand-primary !default;
+
+$table-secondary-head-color:  $white !default;
+$table-secondary-head-bg:     $brand-secondary !default;
+
+$table-striped-bg:            $background-color-light !default;
+
+$table-padding:               $spacer-xs !default;
 
 
 /**

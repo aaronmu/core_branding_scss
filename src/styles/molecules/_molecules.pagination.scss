@@ -1,4 +1,28 @@
 /**
+ * PAGINATION VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$pagination-font-size:                $btn-font-size !default;
+$pagination-size:                     $spacer-lg !default;
+
+$pagination-color:                    $btn-primary-color !default;
+$pagination-color-disabled:           $btn-disabled-color !default;
+$pagination-bg:                       $btn-primary-bg !default;
+$pagination-bg-disabled:              $btn-disabled-bg !default;
+$pagination-bg-hover:                 mix($pagination-bg, $rich-black, 85%) !default;
+
+$pagination-outline-color:            $pagination-bg !default;
+$pagination-outline-bg:               $btn-transparent-bg !default;
+$pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
+$pagination-outline-border:           $pagination-outline-color !default;
+$pagination-outline-border-hover:     mix($pagination-outline-border, $rich-black, 85%) !default;
+
+$pagination-size-sm:                  $spacer-md !default;
+$pagination-size-lg:                  $spacer-xl !default;
+
+
+/**
  * PAGINATION
  * -------------------------------------------------------------------
  */

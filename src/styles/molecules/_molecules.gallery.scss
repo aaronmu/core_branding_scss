@@ -1,8 +1,18 @@
 /**
- * GALLERY
+ * GALLERY VARIABLES
  * -------------------------------------------------------------------
  */
 
+$gallery-gutter-col:          $spacer !default;
+$gallery-gutter-row:          $gallery-gutter-col !default;
+
+$gallery-item-size:           100% / 3 !default;
+
+
+/**
+ * GALLERY
+ * -------------------------------------------------------------------
+ */
 
 .m-gallery {
   @extend %a-list--reset;

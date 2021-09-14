@@ -1,3 +1,23 @@
+/**
+ * NAVIGATION MENU VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$navigation-menu-border:          $border-color-light !default;
+$navigation-menu-mobile-height:   $spacer-xl !default;
+$navigation-menu-pane-width:      20rem !default;
+$navigation-menu-undocked-width:  15rem !default;
+$navigation-menu-docked-width:    $header-height !default;
+$navigation-menu-submenu-inset:   $spacer-xs !default;
+$navigation-menu-submenu-height:  $navigation-menu-undocked-width * 2 !default;
+$navigation-menu-animation-speed: $animation-duration !default;
+
+
+/**
+ * NAVIGATION MENU
+ * -------------------------------------------------------------------
+ */
+
 .o-menu {
   background: $white;
   width: 100%;

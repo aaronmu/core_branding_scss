@@ -1,4 +1,16 @@
 /**
+ * ALERT VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$alert-default:           $brand-primary !default;
+$alert-success:           $state-success !default;
+$alert-warning:           $state-warning !default;
+$alert-danger:            $state-danger !default;
+$alert-padding:           $spacer !default;
+
+
+/**
  * ALERTS
  * -------------------------------------------------------------------
  */
@@ -17,6 +29,12 @@
     }
   }
 }
+
+
+/**
+ * ALERTS ELEMENTS
+ * -------------------------------------------------------------------
+ */
 
 .m-alert__actions {
   margin-bottom: -$spacer-xs;
