@@ -53,7 +53,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
 
 .m-datepicker__nav {
   display: flex;
-  height: $spacer-lg;
+  height: var(--spacer-lg);
 }
 
 .m-datepicker__title {
@@ -64,7 +64,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
   background-color: $datepicker-bg;
   border-left: 1px solid $datepicker-border;
   border-right: 1px solid $datepicker-border;
-  height: $spacer-lg;
+  height: var(--spacer-lg);
 }
 
 .m-datepicker__calendar {

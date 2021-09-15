@@ -21,7 +21,7 @@
   font-weight: $btn-font-weight;
   line-height: 1.25;
   margin: 0;
-  min-height: $spacer-lg;
+  min-height: var(--spacer-lg);
   padding: $btn-padding;
   text-align: center;
   text-decoration: none;
@@ -295,12 +295,12 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: $spacer-lg;
+      width: var(--spacer-lg);
     }
   }
 
   &.has-icon-left {
-    padding-left: $spacer-lg;
+    padding-left: var(--spacer-lg);
 
     .ai {
       left: 0;
@@ -308,7 +308,7 @@
   }
 
   &.has-icon-right {
-    padding-right: $spacer-lg;
+    padding-right: var(--spacer-lg);
 
     .ai {
       right: 0;
@@ -380,14 +380,14 @@
     padding: 0;
     position: relative;
     vertical-align: middle;
-    width: $spacer-lg;
+    width: var(--spacer-lg);
 
     .ai {
       left: 0;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: $spacer-lg;
+      width: var(--spacer-lg);
     }
   }
 }

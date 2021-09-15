@@ -22,7 +22,7 @@
   border: none;
   display: flex;
   flex-direction: column;
-  height: $spacer-lg;
+  height: var(--spacer-lg);
   overflow: hidden;
   padding: 0;
 

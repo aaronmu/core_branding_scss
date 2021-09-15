@@ -24,7 +24,7 @@ $sidebar-width: 20rem;
     width: $sidebar-width;
 
     &--padding {
-      padding: $spacer-lg;
+      padding: var(--spacer-lg);
     }
   }
 

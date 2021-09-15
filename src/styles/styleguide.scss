@@ -115,7 +115,7 @@
 }
 
 .m-alert--wcag {
-  padding-left: $spacer-lg;
+  padding-left: var(--spacer-lg);
   position: relative;
 
   &:before {
@@ -332,7 +332,7 @@
 }
 
 .d--with-overlay {
-  padding-top: $spacer-lg;
+  padding-top: var(--spacer-lg);
 
   .o-menu {
     margin-bottom: -$spacer-xx;
