@@ -121,7 +121,7 @@ $upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
 
 .m-upload__description {
   display: block;
-  margin-top: $spacer-xs;
+  margin-top: var(--spacer-xs);
 }
 
 .m-upload__files {
@@ -137,7 +137,7 @@ $upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: $spacer-xs;
+      margin-bottom: var(--spacer-xs);
     }
 
     > .ai {

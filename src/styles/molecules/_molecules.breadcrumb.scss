@@ -18,7 +18,7 @@ $breadcrumb-arrow-color:  $grey !default;
   li {
     display: block;
     float: left;
-    margin-bottom: $spacer-xs;
+    margin-bottom: var(--spacer-xs);
 
     @include at($screen-xs) {
       margin-bottom: 0;

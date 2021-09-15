@@ -115,7 +115,7 @@ textarea {
  */
 
 .a-input__label--inline {
-  margin-right: $spacer-xs;
+  margin-right: var(--spacer-xs);
   margin-top: calc(#{$line-height-base * $font-size-base} - 1px);
 }
 

@@ -90,7 +90,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 
               a {
                 border-bottom: 1px solid $border-color-light;
-                padding-left: $spacer-xs;
+                padding-left: var(--spacer-xs);
               }
             }
           }

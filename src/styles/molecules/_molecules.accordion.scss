@@ -24,7 +24,7 @@ $accordion-content-padding:   $spacer !default;
  */
 
 .m-accordion.has-margins .m-accordion__tab:not(:first-child) {
-  margin-top: $spacer-xs;
+  margin-top: var(--spacer-xs);
 }
 
 .m-accordion__tab {

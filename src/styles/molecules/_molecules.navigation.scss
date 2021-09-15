@@ -77,7 +77,7 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
 
       > .ai {
         display: inline-block;
-        margin-right: $spacer-xs;
+        margin-right: var(--spacer-xs);
       }
     }
 

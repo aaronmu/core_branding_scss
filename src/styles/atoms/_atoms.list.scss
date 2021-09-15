@@ -109,7 +109,7 @@ dl {
     margin-top: $spacer * 2 / 3;
 
     > li {
-      padding-left: $spacer-xs;
+      padding-left: var(--spacer-xs);
 
       &:last-of-type {
         margin-bottom: -($spacer * 2 / 3);
@@ -168,11 +168,11 @@ dl {
   }
 
   &.has-icon-left > li .ai {
-    margin-right: $spacer-xs;
+    margin-right: var(--spacer-xs);
   }
 
   &.has-icon-right > li .ai {
-    margin-left: $spacer-xs;
+    margin-left: var(--spacer-xs);
   }
 }
 

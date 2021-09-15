@@ -10,10 +10,10 @@
   margin-bottom: -$spacer-xs;
 
   .m-tag {
-    margin-bottom: $spacer-xs;
+    margin-bottom: var(--spacer-xs);
 
     &:not(:last-child) {
-      margin-right: $spacer-xs;
+      margin-right: var(--spacer-xs);
     }
   }
 }

@@ -121,7 +121,7 @@
 
 .o-slideshow__counter {
   font-weight: $bold;
-  margin-right: $spacer-xs;
+  margin-right: var(--spacer-xs);
 }
 
 
