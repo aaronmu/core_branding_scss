@@ -141,7 +141,7 @@ $upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
     }
 
     > .ai {
-      left: $spacer-sm;
+      left: var(--spacer-sm);
       position: absolute;
       top: $spacer / 4 * 3;
       transform: translateY(-50%);

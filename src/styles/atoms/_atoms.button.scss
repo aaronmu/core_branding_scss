@@ -156,7 +156,7 @@
     content: '';
     display: block;
     height: rem(21px);
-    left: $spacer-sm;
+    left: var(--spacer-sm);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
