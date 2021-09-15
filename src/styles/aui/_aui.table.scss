@@ -64,7 +64,7 @@
 
   &__filters {
     flex: 1;
-    margin-right: $spacer;
+    margin-right: var(--spacer);
     min-height: $spacer-xl;
     overflow: hidden;
 

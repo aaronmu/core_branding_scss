@@ -13,7 +13,7 @@
     justify-content: center;
     line-height: $spacer-lg;
     margin: 0 $spacer-xs 0 0;
-    padding-left: $spacer;
+    padding-left: var(--spacer);
 
     > span:not(.ai) {
       margin-left: $spacer / 6;

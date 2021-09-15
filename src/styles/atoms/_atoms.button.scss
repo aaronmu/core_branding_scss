@@ -247,7 +247,7 @@
 
   &.a-button--tiny {
     font-size: rem($btn-font-size-ti);
-    min-height: $spacer;
+    min-height: var(--spacer);
     padding: ($spacer-xs / 4) $spacer-xs ($spacer-xs / 3);
 
     .ai {
@@ -320,15 +320,15 @@
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
-    width: $spacer;
+    width: var(--spacer);
   }
 
   &.has-icon-left {
-    padding-left: $spacer;
+    padding-left: var(--spacer);
   }
 
   &.has-icon-right {
-    padding-right: $spacer;
+    padding-right: var(--spacer);
   }
 }
 
@@ -393,10 +393,10 @@
 }
 
 .a-button--tiny.has-icon {
-  width: $spacer;
+  width: var(--spacer);
 
   .ai {
-    width: $spacer;
+    width: var(--spacer);
   }
 }
 

@@ -40,7 +40,7 @@
     margin-top: $spacer-sm;
 
     .m-range-slider__step {
-      width: $spacer;
+      width: var(--spacer);
     }
   }
 }

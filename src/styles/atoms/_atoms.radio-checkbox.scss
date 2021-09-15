@@ -30,7 +30,7 @@ $radio-checkbox-bg:       $brand-primary !default;
 
     + .a-input__radio,
     + .a-input__checkbox {
-      margin-left: $spacer;
+      margin-left: var(--spacer);
     }
   }
 }
@@ -38,7 +38,7 @@ $radio-checkbox-bg:       $brand-primary !default;
 .a-input__checkbox,
 .a-input__radio {
   display: block;
-  padding-left: $spacer;
+  padding-left: var(--spacer);
   position: relative;
 
   input {
@@ -74,9 +74,9 @@ $radio-checkbox-bg:       $brand-primary !default;
   label {
     cursor: pointer;
     display: inline-block;
-    line-height: $spacer;
+    line-height: var(--spacer);
     max-width: 100%;
-    min-height: $spacer;
+    min-height: var(--spacer);
     padding-left: $spacer-xs;
     position: relative;
     vertical-align: middle;
@@ -86,14 +86,14 @@ $radio-checkbox-bg:       $brand-primary !default;
       box-shadow: 0 0 0 1px $input-border inset;
       content: '';
       display: inline-block;
-      height: $spacer;
+      height: var(--spacer);
       left: 0;
       margin-left: -$spacer;
       position: absolute;
       transition-duration: $animation-duration;
       transition-property: background, box-shadow;
       transition-timing-function: $animation-easing;
-      width: $spacer;
+      width: var(--spacer);
     }
 
     &:after {
@@ -101,7 +101,7 @@ $radio-checkbox-bg:       $brand-primary !default;
       content: '';
       display: inline-block;
       font-size: $icon-size-sm;
-      height: $spacer;
+      height: var(--spacer);
       left: 0;
       margin-left: -$spacer;
       position: absolute;
@@ -110,7 +110,7 @@ $radio-checkbox-bg:       $brand-primary !default;
       transition-duration: $animation-duration;
       transition-property: background-size;
       transition-timing-function: $animation-easing;
-      width: $spacer;
+      width: var(--spacer);
     }
   }
 }

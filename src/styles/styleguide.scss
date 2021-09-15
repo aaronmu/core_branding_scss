@@ -70,7 +70,7 @@
 
 .a-list__toc {
   margin: 0;
-  padding-bottom: $spacer;
+  padding-bottom: var(--spacer);
 
   li {
     padding-bottom: 0;
@@ -82,7 +82,7 @@
 }
 
 .d-h1 {
-  padding-bottom: $spacer;
+  padding-bottom: var(--spacer);
   padding-top: $spacer * 3.5;
 
   small {
@@ -99,7 +99,7 @@
 }
 
 .d-h2 {
-  padding-top: $spacer;
+  padding-top: var(--spacer);
 }
 
 .d-file {
@@ -153,18 +153,18 @@
       position: relative;
 
       &:nth-child(6n+7) {
-        margin-top: $spacer;
+        margin-top: var(--spacer);
       }
 
       &:nth-child(6n+8) {
         @include at($screen-sm) {
-          margin-top: $spacer;
+          margin-top: var(--spacer);
         }
       }
 
       &:nth-child(6n+9) {
         @include at($screen-lg) {
-          margin-top: $spacer;
+          margin-top: var(--spacer);
         }
       }
 
@@ -209,7 +209,7 @@
 }
 
 .d-bgutility {
-  padding: $spacer;
+  padding: var(--spacer);
 
   &.d-u-bg-white {
     box-shadow: 0 0 0 1px $grey-light inset;
@@ -294,7 +294,7 @@
 }
 
 .d-icon-list {
-  padding: $spacer;
+  padding: var(--spacer);
 }
 
 .d-avatar {

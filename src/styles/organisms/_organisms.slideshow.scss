@@ -58,7 +58,7 @@
   z-index: 1;
 
   @include at($screen-sm) {
-    font-size: $spacer;
+    font-size: var(--spacer);
   }
 
   @include at($screen-lg) {

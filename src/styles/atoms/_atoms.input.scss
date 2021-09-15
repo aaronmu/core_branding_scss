@@ -160,7 +160,7 @@ textarea {
 
     .a-input__wrapper:before {
       content: '';
-      height: $spacer;
+      height: var(--spacer);
       mask-size: contain;
       position: absolute;
       right: 0;
