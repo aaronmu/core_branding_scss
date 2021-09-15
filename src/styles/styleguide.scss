@@ -339,7 +339,7 @@
   }
 
   @include at($screen-sm) {
-    padding-bottom: $spacer-xl;
+    padding-bottom: var(--spacer-xl);
     padding-top: 0;
 
     .o-menu {

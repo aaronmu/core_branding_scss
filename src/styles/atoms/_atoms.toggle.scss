@@ -69,7 +69,7 @@
 
   &.a-toggle--large {
     .a-toggle__button {
-      height: $spacer-xl;
+      height: var(--spacer-xl);
     }
   }
 }
