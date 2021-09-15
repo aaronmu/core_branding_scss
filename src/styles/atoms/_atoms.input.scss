@@ -171,7 +171,7 @@ textarea {
 
     &.has-icon-right {
       .a-input__wrapper:before {
-        right: $spacer-md;
+        right: var(--spacer-md);
       }
 
       .a-input__wrapper {

@@ -82,7 +82,7 @@ $table-padding:               $spacer-xs !default;
  */
 
 .a-table.a-table--small tr {
-  height: $spacer-md;
+  height: var(--spacer-md);
 }
 
 

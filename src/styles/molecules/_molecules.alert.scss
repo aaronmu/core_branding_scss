@@ -25,7 +25,7 @@ $alert-padding:           $spacer !default;
     top: 0;
 
     + * {
-      margin-right: $spacer-md;
+      margin-right: var(--spacer-md);
     }
   }
 }

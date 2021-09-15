@@ -93,8 +93,8 @@
   }
 
   @include at($screen-xs) {
-    padding-bottom: $spacer-md;
-    padding-top: $spacer-md;
+    padding-bottom: var(--spacer-md);
+    padding-top: var(--spacer-md);
   }
 }
 

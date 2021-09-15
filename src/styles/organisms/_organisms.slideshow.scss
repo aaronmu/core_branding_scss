@@ -62,7 +62,7 @@
   }
 
   @include at($screen-lg) {
-    font-size: $spacer-md;
+    font-size: var(--spacer-md);
   }
 
   &.has-icon {

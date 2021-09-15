@@ -63,7 +63,7 @@
 
   &.a-toggle--small {
     .a-toggle__button {
-      height: $spacer-md;
+      height: var(--spacer-md);
     }
   }
 

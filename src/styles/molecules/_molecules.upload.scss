@@ -132,7 +132,7 @@ $upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
     background-color: $upload-file-bg;
     color: $upload-file-color;
     line-height: $line-height-paragraph;
-    min-height: $spacer-md;
+    min-height: var(--spacer-md);
     padding: $spacer / 3 $spacer-lg $spacer / 3 $spacer-lg;
     position: relative;
 

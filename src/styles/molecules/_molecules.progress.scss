@@ -64,7 +64,7 @@ $progress-tooltip-bottom:   $progress-height - $progress-bar-padding + $tooltip-
   .m-progress__label {
     margin-bottom: 0;
     margin-right: $spacer-xs;
-    min-width: $spacer-md;
+    min-width: var(--spacer-md);
     text-align: right;
   }
 
