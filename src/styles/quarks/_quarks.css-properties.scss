@@ -20,7 +20,7 @@
 
   --spacer:                  1.5rem; // 24px
 
-  --spacer-xx:               calc(var(--spacer) * 4); // 96px
+  --spacer-3xl:              calc(var(--spacer) * 4); // 96px
   --spacer-xl:               calc(var(--spacer) * 2.5); // 60px
   --spacer-lg:               calc(var(--spacer) * 2); // 48px
   --spacer-md:               calc(var(--spacer) * 1.5); // 36px
@@ -43,7 +43,7 @@
    *    + width of official logo * 2
    *    + space between logo and u-container * 2
    */
-  --screen-xl:               calc(var(--screen-lg) + calc(var(--spacer-xx) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
+  --screen-xl:               calc(var(--screen-lg) + calc(var(--spacer-3xl) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
 
   --screen-xs-max:           44.9375rem; // 719px (--screen-sm - 1px)
   --screen-sm-max:           61.9375rem; // 991px (--screen-md - 1px)

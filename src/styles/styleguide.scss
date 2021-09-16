@@ -334,7 +334,7 @@
   padding-top: var(--spacer-lg);
 
   .o-menu {
-    margin-bottom: calc(var(--spacer-xx) * -1);
+    margin-bottom: calc(var(--spacer-3xl) * -1);
   }
 
   @include at($screen-sm) {

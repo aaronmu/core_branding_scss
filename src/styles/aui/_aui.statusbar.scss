@@ -54,7 +54,7 @@
     }
 
     @include at($screen-lg) {
-      padding: var(--spacer-xs) var(--spacer-xx);
+      padding: var(--spacer-xs) var(--spacer-3xl);
     }
 
     p {
