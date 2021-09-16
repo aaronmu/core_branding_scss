@@ -338,7 +338,7 @@
   }
 
   @include at($screen-sm) {
-    padding-bottom: var(--spacer-xl);
+    padding-bottom: var(--spacer-xxl);
     padding-top: 0;
 
     .o-menu {

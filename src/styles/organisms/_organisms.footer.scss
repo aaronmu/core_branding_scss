@@ -55,7 +55,7 @@ $footer-line-height:      $line-height-paragraph !default;
 
   @include at($screen-sm) {
     font-size: rem($footer-font-size-lg);
-    padding: 0 var(--spacer-xl);
+    padding: 0 var(--spacer-xxl);
   }
 
   a {
