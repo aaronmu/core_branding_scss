@@ -22,7 +22,7 @@ $avatar-lg:               calc(var(--spacer) * 4) !default; // 96px
   background-color: $avatar-bg;
   color: $avatar-color;
   display: inline-flex;
-  font-size: $avatar / 2;
+  font-size: calc(#{$avatar} / 2);
   height: $avatar;
   justify-content: center;
   overflow: hidden;
@@ -36,7 +36,7 @@ $avatar-lg:               calc(var(--spacer) * 4) !default; // 96px
   }
 
   &__icon {
-    height: $avatar / 2;
+    height: calc(#{$avatar} / 2);
 
     .ai {
       left: 50%;
@@ -79,7 +79,7 @@ a .a-avatar {
  */
 
 .a-avatar--small {
-  font-size: $avatar-sm / 2;
+  font-size: calc(#{$avatar-sm} / 2);
   height: $avatar-sm;
   line-height: $avatar-sm;
   width: $avatar-sm;
@@ -90,7 +90,7 @@ a .a-avatar {
 }
 
 .a-avatar--medium {
-  font-size: $avatar-md / 2;
+  font-size: calc(#{$avatar-md} / 2);
   height: $avatar-md;
   line-height: $avatar-md;
   width: $avatar-md;
@@ -101,7 +101,7 @@ a .a-avatar {
 }
 
 .a-avatar--large {
-  font-size: $avatar-lg / 2;
+  font-size: calc(#{$avatar-lg} / 2);
   height: $avatar-lg;
   line-height: $avatar-lg;
   width: $avatar-lg;
