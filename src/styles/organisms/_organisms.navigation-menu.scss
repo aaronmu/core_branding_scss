@@ -319,7 +319,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 
     @include at($screen-sm) {
       li > a > .o-menu__icon {
-        margin-right: $spacer-xs / 2;
+        margin-right: calc(var(--spacer-xs) / 2);
         transform: rotate(0deg);
         transition: transform $navigation-menu-animation-speed ease-in-out;
       }
