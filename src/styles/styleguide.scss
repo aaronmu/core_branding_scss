@@ -148,7 +148,7 @@
 
   &__colors {
     > li {
-      margin-top: $spacer-xs / 2;
+      margin-top: calc(var(--spacer-xs) / 2);
       padding: $spacer / 2 $spacer-xs $spacer / 2 $spacer * 5;
       position: relative;
 
@@ -364,7 +364,7 @@
   &__row {
     display: grid;
     grid-template-columns: $spacer-lg auto;
-    margin-bottom: $spacer-xs / 2; // [*GG]
+    margin-bottom: calc(var(--spacer-xs) / 2); // [*GG]
 
     @include at($screen-sm) {
       &:nth-child(even) {

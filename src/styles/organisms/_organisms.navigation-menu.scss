@@ -230,7 +230,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 
       .o-menu__icon {
         font-size: rem($icon-size-base);
-        margin-bottom: $spacer-xs / 2;
+        margin-bottom: calc(var(--spacer-xs) / 2);
 
         &.o-menu__tab-icon {
           width: rem($icon-size-lg);
@@ -307,7 +307,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
         @include at($screen-sm) {
           // Padding is parent padding + icon size + header padding to the left to align the link to the header text
           padding-left: calc(#{$navigation-menu-docked-width} + #{$navigation-menu-submenu-inset});
-          padding-right: $spacer-xs / 2;
+          padding-right: calc(var(--spacer-xs) / 2);
 
           a {
             border: none;
