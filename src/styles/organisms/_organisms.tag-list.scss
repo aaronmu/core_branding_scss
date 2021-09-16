@@ -7,7 +7,7 @@
   @extend %a-list--reset;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -$spacer-xs;
+  margin-bottom: calc(var(--spacer-xs) * -1);
 
   .m-tag {
     margin-bottom: var(--spacer-xs);
