@@ -35,5 +35,5 @@
 
 .a-copyright__label {
   line-height: $copyright-height;
-  margin-right: $spacer-xs;
+  margin-right: var(--spacer-xs);
 }

@@ -23,7 +23,7 @@ $icon-list-icon-size:         $icon-size-base !default;
     text-align: center;
 
     &:not(:last-child) {
-      margin-bottom: $spacer-sm;
+      margin-bottom: var(--spacer-sm);
     }
 
     a {

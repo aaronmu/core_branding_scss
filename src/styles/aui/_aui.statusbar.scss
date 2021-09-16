@@ -43,7 +43,7 @@
     display: flex;
     flex: 1;
     justify-content: center;
-    padding: $spacer-xs;
+    padding: var(--spacer-xs);
 
     @include at($screen-sm) {
       padding: $spacer-xs $spacer-md;

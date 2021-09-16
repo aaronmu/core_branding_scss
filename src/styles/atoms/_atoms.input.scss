@@ -115,7 +115,7 @@ textarea {
  */
 
 .a-input__label--inline {
-  margin-right: $spacer-xs;
+  margin-right: var(--spacer-xs);
   margin-top: calc(#{$line-height-base * $font-size-base} - 1px);
 }
 
@@ -160,18 +160,18 @@ textarea {
 
     .a-input__wrapper:before {
       content: '';
-      height: $spacer;
+      height: var(--spacer);
       mask-size: contain;
       position: absolute;
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      width: $spacer-lg;
+      width: var(--spacer-lg);
     }
 
     &.has-icon-right {
       .a-input__wrapper:before {
-        right: $spacer-md;
+        right: var(--spacer-md);
       }
 
       .a-input__wrapper {
@@ -182,7 +182,7 @@ textarea {
     }
 
     input {
-      padding-right: $spacer-lg;
+      padding-right: var(--spacer-lg);
     }
   }
 
@@ -229,7 +229,7 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
     user-select: none;
-    width: $spacer-lg;
+    width: var(--spacer-lg);
 
     &.is-clickable {
       align-items: center;
@@ -248,7 +248,7 @@ textarea {
   &.has-icon-left .a-input__wrapper {
     input,
     select {
-      padding-left: $spacer-lg;
+      padding-left: var(--spacer-lg);
     }
 
     > .ai {
@@ -259,7 +259,7 @@ textarea {
   &.has-icon-right .a-input__wrapper {
     input,
     select {
-      padding-right: $spacer-lg;
+      padding-right: var(--spacer-lg);
     }
 
     > .ai {

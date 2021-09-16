@@ -35,10 +35,10 @@
   color: $overlay-button-color;
   cursor: pointer;
   font-size: rem($overlay-button-size);
-  padding: $spacer-xs;
+  padding: var(--spacer-xs);
   position: absolute;
-  right: $spacer-xs;
-  top: $spacer-xs;
+  right: var(--spacer-xs);
+  top: var(--spacer-xs);
   transition: color $animation-normal;
 
   &:hover {

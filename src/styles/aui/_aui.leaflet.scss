@@ -32,7 +32,7 @@
 
     &.has-content {
       border-right: solid 1px $grey;
-      padding: $spacer-sm;
+      padding: var(--spacer-sm);
       width: 300px;
     }
   }
@@ -42,23 +42,23 @@
     z-index: layer('top');
 
     &--bottom-left {
-      bottom: $spacer-sm;
-      left: $spacer-sm;
+      bottom: var(--spacer-sm);
+      left: var(--spacer-sm);
     }
 
     &--bottom-right {
-      bottom: $spacer-sm;
-      right: $spacer-sm;
+      bottom: var(--spacer-sm);
+      right: var(--spacer-sm);
     }
 
     &--top-left {
-      left: $spacer-sm;
-      top: $spacer-sm;
+      left: var(--spacer-sm);
+      top: var(--spacer-sm);
     }
 
     &--top-right {
-      right: $spacer-sm;
-      top: $spacer-sm;
+      right: var(--spacer-sm);
+      top: var(--spacer-sm);
     }
 
     &--top-left .o-leaflet__control,
@@ -108,10 +108,10 @@
     .o-leaflet__content {
       border: solid 1px $grey;
       box-shadow: .75rem .75rem 0 rgba($rich-black, .1);
-      left: $spacer-sm;
+      left: var(--spacer-sm);
       max-height: calc(100% - 160px);
       position: absolute;
-      top: $spacer-sm;
+      top: var(--spacer-sm);
       width: 350px;
       z-index: layer('top');
     }
@@ -141,7 +141,7 @@
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: $spacer;
+    width: var(--spacer);
   }
 }
 

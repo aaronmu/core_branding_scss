@@ -9,11 +9,11 @@
     border: 1px solid $border-color;
     cursor: pointer;
     display: flex;
-    height: $spacer-lg;
+    height: var(--spacer-lg);
     justify-content: center;
-    line-height: $spacer-lg;
+    line-height: var(--spacer-lg);
     margin: 0 $spacer-xs 0 0;
-    padding-left: $spacer;
+    padding-left: var(--spacer);
 
     > span:not(.ai) {
       margin-left: $spacer / 6;
@@ -22,12 +22,12 @@
     > .ai {
       color: $input-icon;
       font-size: 1.25rem;
-      height: $spacer-lg;
-      line-height: $spacer-lg;
+      height: var(--spacer-lg);
+      line-height: var(--spacer-lg);
       pointer-events: none;
       text-align: center;
       user-select: none;
-      width: $spacer-lg;
+      width: var(--spacer-lg);
     }
 
     &.m-search-filter__label--active {
@@ -53,7 +53,7 @@
 
   &__input {
     margin-bottom: 0;
-    padding: $spacer-xs;
+    padding: var(--spacer-xs);
 
     .a-input__wrapper {
       margin-right: 0;
@@ -93,12 +93,12 @@
       padding-left: $spacer * 1.5;
 
       input[type='checkbox']:checked + label:after {
-        top: $spacer-xs;
+        top: var(--spacer-xs);
       }
 
       label {
         flex: 1;
-        padding: $spacer-xs;
+        padding: var(--spacer-xs);
       }
     }
 

@@ -21,7 +21,7 @@
   font-weight: $btn-font-weight;
   line-height: 1.25;
   margin: 0;
-  min-height: $spacer-lg;
+  min-height: var(--spacer-lg);
   padding: $btn-padding;
   text-align: center;
   text-decoration: none;
@@ -156,7 +156,7 @@
     content: '';
     display: block;
     height: rem(21px);
-    left: $spacer-sm;
+    left: var(--spacer-sm);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -247,7 +247,7 @@
 
   &.a-button--tiny {
     font-size: rem($btn-font-size-ti);
-    min-height: $spacer;
+    min-height: var(--spacer);
     padding: ($spacer-xs / 4) $spacer-xs ($spacer-xs / 3);
 
     .ai {
@@ -257,7 +257,7 @@
 
   &.a-button--small {
     font-size: rem($btn-font-size-sm);
-    min-height: $spacer-md;
+    min-height: var(--spacer-md);
     padding: ($spacer-sm / 2) $spacer;
 
     .ai {
@@ -267,7 +267,7 @@
 
   &.a-button--large {
     font-size: rem($btn-font-size-lg);
-    min-height: $spacer-xl;
+    min-height: var(--spacer-xl);
     padding: $spacer-sm $spacer;
 
     .ai {
@@ -295,12 +295,12 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: $spacer-lg;
+      width: var(--spacer-lg);
     }
   }
 
   &.has-icon-left {
-    padding-left: $spacer-lg;
+    padding-left: var(--spacer-lg);
 
     .ai {
       left: 0;
@@ -308,7 +308,7 @@
   }
 
   &.has-icon-right {
-    padding-right: $spacer-lg;
+    padding-right: var(--spacer-lg);
 
     .ai {
       right: 0;
@@ -320,15 +320,15 @@
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
-    width: $spacer;
+    width: var(--spacer);
   }
 
   &.has-icon-left {
-    padding-left: $spacer;
+    padding-left: var(--spacer);
   }
 
   &.has-icon-right {
-    padding-right: $spacer;
+    padding-right: var(--spacer);
   }
 }
 
@@ -336,15 +336,15 @@
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
-    width: $spacer-md;
+    width: var(--spacer-md);
   }
 
   &.has-icon-left {
-    padding-left: $spacer-md;
+    padding-left: var(--spacer-md);
   }
 
   &.has-icon-right {
-    padding-right: $spacer-md;
+    padding-right: var(--spacer-md);
   }
 }
 
@@ -352,15 +352,15 @@
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
-    width: $spacer-xl;
+    width: var(--spacer-xl);
   }
 
   &.has-icon-left {
-    padding-left: $spacer-xl;
+    padding-left: var(--spacer-xl);
   }
 
   &.has-icon-right {
-    padding-right: $spacer-xl;
+    padding-right: var(--spacer-xl);
   }
 }
 
@@ -380,39 +380,39 @@
     padding: 0;
     position: relative;
     vertical-align: middle;
-    width: $spacer-lg;
+    width: var(--spacer-lg);
 
     .ai {
       left: 0;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: $spacer-lg;
+      width: var(--spacer-lg);
     }
   }
 }
 
 .a-button--tiny.has-icon {
-  width: $spacer;
+  width: var(--spacer);
 
   .ai {
-    width: $spacer;
+    width: var(--spacer);
   }
 }
 
 .a-button--small.has-icon {
-  width: $spacer-md;
+  width: var(--spacer-md);
 
   .ai {
-    width: $spacer-md;
+    width: var(--spacer-md);
   }
 }
 
 .a-button--large.has-icon {
-  width: $spacer-xl;
+  width: var(--spacer-xl);
 
   .ai {
-    width: $spacer-xl;
+    width: var(--spacer-xl);
   }
 }
 

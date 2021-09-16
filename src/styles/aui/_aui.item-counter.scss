@@ -7,7 +7,7 @@
   .a-input {
     .a-input__wrapper {
       display: inline-block;
-      margin-right: $spacer-xs;
+      margin-right: var(--spacer-xs);
     }
   }
 }

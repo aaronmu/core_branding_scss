@@ -32,7 +32,7 @@ $modal-padding:           $spacer !default;
     top: 0;
 
     + * {
-      margin-right: $spacer-md;
+      margin-right: var(--spacer-md);
     }
   }
 }
@@ -57,13 +57,13 @@ $modal-padding:           $spacer !default;
   }
 
   [class*='a-button'] {
-    margin-bottom: $spacer-xs;
+    margin-bottom: var(--spacer-xs);
 
     @include at($screen-xs) {
       margin-bottom: 0;
 
       &:not(:first-child) {
-        margin-left: $spacer-xs;
+        margin-left: var(--spacer-xs);
       }
     }
   }

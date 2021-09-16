@@ -37,10 +37,10 @@
     display: flex;
     font-size: $font-size-sm;
     justify-content: space-between;
-    margin-top: $spacer-sm;
+    margin-top: var(--spacer-sm);
 
     .m-range-slider__step {
-      width: $spacer;
+      width: var(--spacer);
     }
   }
 }

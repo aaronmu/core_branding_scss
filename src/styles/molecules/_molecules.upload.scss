@@ -121,27 +121,27 @@ $upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
 
 .m-upload__description {
   display: block;
-  margin-top: $spacer-xs;
+  margin-top: var(--spacer-xs);
 }
 
 .m-upload__files {
   @extend %a-list--reset;
-  margin-top: $spacer;
+  margin-top: var(--spacer);
 
   > li {
     background-color: $upload-file-bg;
     color: $upload-file-color;
     line-height: $line-height-paragraph;
-    min-height: $spacer-md;
+    min-height: var(--spacer-md);
     padding: $spacer / 3 $spacer-lg $spacer / 3 $spacer-lg;
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: $spacer-xs;
+      margin-bottom: var(--spacer-xs);
     }
 
     > .ai {
-      left: $spacer-sm;
+      left: var(--spacer-sm);
       position: absolute;
       top: $spacer / 4 * 3;
       transform: translateY(-50%);
