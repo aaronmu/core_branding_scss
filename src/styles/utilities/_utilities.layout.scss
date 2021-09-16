@@ -23,7 +23,7 @@
 .u-container {
   margin: 0 auto;
   max-width: $screen-lg;
-  padding: 0 $spacer-xs;
+  padding: 0 var(--spacer-xs);
   width: 100%;
 }
 

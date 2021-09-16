@@ -12,7 +12,7 @@
     height: var(--spacer-lg);
     justify-content: center;
     line-height: var(--spacer-lg);
-    margin: 0 $spacer-xs 0 0;
+    margin: 0 var(--spacer-xs) 0 0;
     padding-left: var(--spacer);
 
     > span:not(.ai) {
@@ -62,7 +62,7 @@
 
   &__clear {
     margin: 0;
-    padding: 0 $spacer-sm $spacer-sm;
+    padding: 0 var(--spacer-sm) var(--spacer-sm);
     text-align: center;
   }
 
@@ -82,7 +82,7 @@
 
   &__results-title {
     font-size: $font-size-base;
-    margin: 0 $spacer-xs;
+    margin: 0 var(--spacer-xs);
   }
 
   &__results-item {

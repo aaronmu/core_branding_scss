@@ -103,7 +103,7 @@ p {
 blockquote {
   border-left: 1px solid $border-color-light;
   margin: 0;
-  padding: $spacer-xs 0 $spacer-xs $spacer;
+  padding: var(--spacer-xs) 0 var(--spacer-xs) var(--spacer);
 
   p {
     display: inline;

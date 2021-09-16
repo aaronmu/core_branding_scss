@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-$figcaption-padding:      $spacer-xs !default;
+$figcaption-padding:         var(--spacer-xs) !default;
 
 
 /**
@@ -25,6 +25,6 @@ figcaption {
   padding: $figcaption-padding;
 
   @include at($screen-sm) {
-    padding: $figcaption-padding / 3 * 4 $figcaption-padding;
+    padding: calc(#{$figcaption-padding} / 3 * 4) $figcaption-padding;
   }
 }

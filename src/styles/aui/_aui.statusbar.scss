@@ -46,15 +46,15 @@
     padding: var(--spacer-xs);
 
     @include at($screen-sm) {
-      padding: $spacer-xs $spacer-md;
+      padding: var(--spacer-xs) var(--spacer-md);
     }
 
     @include at($screen-md) {
-      padding: $spacer-xs $spacer-lg;
+      padding: var(--spacer-xs) var(--spacer-lg);
     }
 
     @include at($screen-lg) {
-      padding: $spacer-xs $spacer-xx;
+      padding: var(--spacer-xs) var(--spacer-xx);
     }
 
     p {
