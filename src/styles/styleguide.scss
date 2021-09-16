@@ -24,7 +24,7 @@
 .d {
   display: flex;
   flex-direction: column;
-  margin: var(--spacer) $spacer-xs * -1;
+  margin: var(--spacer) calc(var(--spacer-xs) * -1);
 
   @include at($screen-sm) {
     flex-direction: row;
@@ -32,7 +32,7 @@
 
   > div {
     flex: 1 1 auto;
-    padding: calc(var(--spacer) / 4) $spacer-xs 0;
+    padding: calc(var(--spacer) / 4) var(--spacer-xs) 0;
 
     @include at($screen-sm) {
       width: 0;
@@ -47,7 +47,7 @@
 }
 
 .u-margin-bottom-top-xxs {
-  margin: $spacer-xs / 2 0;
+  margin: calc(var(--spacer-xs) / 2) 0;
 }
 
 .d-toc {
@@ -86,9 +86,9 @@
 
   small {
     display: inline-block;
-    padding: $spacer-xs / 4 $spacer-xs / 3 $spacer-xs / 3;
+    padding: calc(var(--spacer-xs) / 4) calc(var(--spacer-xs) / 3) calc(var(--spacer-xs) / 3);
     position: relative;
-    transform: translateY(-$spacer-xs);
+    transform: translateY(calc(var(--spacer-xs) * -1));
   }
 
   @include at($screen-xs) {
@@ -105,7 +105,7 @@
   color: $grey-dark;
   display: inline-block;
   font-weight: bold;
-  margin-top: $spacer-xs / 6;
+  margin-top: calc(var(--spacer-xs) / 6);
 }
 
 .d-alert {
@@ -133,11 +133,11 @@
 .d-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: $spacer-xs * -1;
-  margin-right: $spacer-xs * -1;
+  margin-left: calc(var(--spacer-xs) * -1);
+  margin-right: calc(var(--spacer-xs) * -1);
 
   > li {
-    padding: 0 $spacer-xs;
+    padding: 0 var(--spacer-xs);
     width: 100%;
 
     @include at($screen-sm) {
@@ -148,7 +148,7 @@
   &__colors {
     > li {
       margin-top: calc(var(--spacer-xs) / 2);
-      padding: calc(var(--spacer) / 2) $spacer-xs calc(var(--spacer) / 2) calc(var(--spacer) * 5);
+      padding: calc(var(--spacer) / 2) var(--spacer-xs) calc(var(--spacer) / 2) calc(var(--spacer) * 5);
       position: relative;
 
       &:nth-child(6n+7) {
@@ -297,7 +297,7 @@
 }
 
 .d-avatar {
-  margin-top: $spacer-xs / 4;
+  margin-top: calc(var(--spacer-xs) / 4);
 }
 
 .d-overlay input:checked ~ .m-overlay {
@@ -334,7 +334,7 @@
   padding-top: var(--spacer-lg);
 
   .o-menu {
-    margin-bottom: -$spacer-xx;
+    margin-bottom: calc(var(--spacer-xx) * -1);
   }
 
   @include at($screen-sm) {
@@ -350,7 +350,7 @@
 .d-icons {
   display: grid;
   // IE11 doesn't support grid-gap, so we fall back to margins. See [*GG].
-  // grid-gap: $spacer-xs / 2 $spacer;
+  // grid-gap: calc(var(--spacer-xs) / 2) var(--spacer);
 
   @include at($screen-sm) {
     grid-template-columns: 1fr 1fr;
@@ -362,7 +362,7 @@
 
   &__row {
     display: grid;
-    grid-template-columns: $spacer-lg auto;
+    grid-template-columns: var(--spacer-lg) auto;
     margin-bottom: calc(var(--spacer-xs) / 2); // [*GG]
 
     @include at($screen-sm) {
