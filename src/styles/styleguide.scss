@@ -114,7 +114,7 @@
 }
 
 .m-alert--wcag {
-  padding-left: var(--spacer-lg);
+  padding-left: var(--spacer-xl);
   position: relative;
 
   &:before {
@@ -331,7 +331,7 @@
 }
 
 .d--with-overlay {
-  padding-top: var(--spacer-lg);
+  padding-top: var(--spacer-xl);
 
   .o-menu {
     margin-bottom: calc(var(--spacer-3xl) * -1);
@@ -362,7 +362,7 @@
 
   &__row {
     display: grid;
-    grid-template-columns: var(--spacer-lg) auto;
+    grid-template-columns: var(--spacer-xl) auto;
     margin-bottom: calc(var(--spacer-xs) / 2); // [*GG]
 
     @include at($screen-sm) {

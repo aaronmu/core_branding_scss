@@ -41,7 +41,7 @@ $table-padding:               var(--spacer-xs) !default;
 
   tr {
     border-bottom: 1px solid $table-border;
-    height: var(--spacer-lg);
+    height: var(--spacer-xl);
     transition: background-color $animation-duration $animation-easing;
 
     &.a-table--clickable,

@@ -9,9 +9,9 @@
     border: 1px solid $border-color;
     cursor: pointer;
     display: flex;
-    height: var(--spacer-lg);
+    height: var(--spacer-xl);
     justify-content: center;
-    line-height: var(--spacer-lg);
+    line-height: var(--spacer-xl);
     margin: 0 var(--spacer-xs) 0 0;
     padding-left: var(--spacer);
 
@@ -22,12 +22,12 @@
     > .ai {
       color: $input-icon;
       font-size: 1.25rem;
-      height: var(--spacer-lg);
-      line-height: var(--spacer-lg);
+      height: var(--spacer-xl);
+      line-height: var(--spacer-xl);
       pointer-events: none;
       text-align: center;
       user-select: none;
-      width: var(--spacer-lg);
+      width: var(--spacer-xl);
     }
 
     &.m-search-filter__label--active {

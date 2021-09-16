@@ -31,7 +31,7 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
   > li {
     font-weight: $nav-font-weight;
     line-height: $line-height-paragraph;
-    min-height: var(--spacer-lg);
+    min-height: var(--spacer-xl);
     text-align: center;
 
     > a,
