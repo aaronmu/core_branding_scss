@@ -146,7 +146,7 @@
 
 .a-button-official {
   @include a-button($btn-official-color, $btn-official-bg);
-  padding-left: $spacer * 3;
+  padding-left: calc(var(--spacer) * 3);
   position: relative;
   white-space: nowrap;
 

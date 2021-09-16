@@ -13,7 +13,7 @@ $nav-color-active:            $nav-color-hover !default;
 $nav-bg:                      transparent !default;
 $nav-bg-hover:                $grey-lighter !default;
 $nav-bg-active:               $nav-bg !default;
-$nav-padding:                 rem(13px) $spacer !default;
+$nav-padding:                 rem(13px) var(--spacer) !default;
 $nav-bg-disabled:             $grey-lighter !default;
 $nav-color-disabled:          $state-disabled !default;
 $nav-tab-color-disabled:      $nav-color-disabled !default;

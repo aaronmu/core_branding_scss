@@ -106,7 +106,7 @@ dl {
 
   .a-list {
     line-height: 1;
-    margin-top: $spacer * 2 / 3;
+    margin-top: calc(var(--spacer) * 2 / 3);
 
     > li {
       padding-left: var(--spacer-xs);
@@ -118,7 +118,7 @@ dl {
   }
 
   > li {
-    padding: $spacer * 2 / 3 0 $spacer * 2 / 3 $spacer-xs;
+    padding: calc(var(--spacer) * 2 / 3) 0 calc(var(--spacer) * 2 / 3) $spacer-xs;
   }
 }
 
@@ -187,11 +187,11 @@ dl {
 
   dt {
     font-weight: $bold;
-    padding-top: $spacer / 4;
+    padding-top: calc(var(--spacer) / 4);
   }
 
   dd {
     margin-left: 0;
-    padding-bottom: $spacer / 4;
+    padding-bottom: calc(var(--spacer) / 4);
   }
 }

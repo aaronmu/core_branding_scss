@@ -16,7 +16,7 @@
     padding-left: var(--spacer);
 
     > span:not(.ai) {
-      margin-left: $spacer / 6;
+      margin-left: calc(var(--spacer) / 6);
     }
 
     > .ai {
@@ -90,7 +90,7 @@
 
     .a-input__checkbox {
       display: flex;
-      padding-left: $spacer * 1.5;
+      padding-left: calc(var(--spacer) * 1.5);
 
       input[type='checkbox']:checked + label:after {
         top: var(--spacer-xs);

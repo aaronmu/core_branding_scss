@@ -54,7 +54,7 @@ $icon-list-icon-size:         $icon-size-base !default;
     margin: 0;
 
     &:not(:last-child) {
-      margin: 0 $spacer 0 0;
+      margin: 0 var(--spacer) 0 0;
     }
   }
 }

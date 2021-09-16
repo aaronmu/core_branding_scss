@@ -8,7 +8,6 @@
 @import 'quarks';
 
 
-
 /**
  * CUSTOM STYLING FOR STYLEGUIDE
  * -------------------------------------------------------------------
@@ -18,14 +17,14 @@
   margin: 0;
 
   + .a-pre {
-    margin-top: $spacer / 4;
+    margin-top: calc(var(--spacer) / 4);
   }
 }
 
 .d {
   display: flex;
   flex-direction: column;
-  margin: $spacer $spacer-xs * -1;
+  margin: var(--spacer) $spacer-xs * -1;
 
   @include at($screen-sm) {
     flex-direction: row;
@@ -33,7 +32,7 @@
 
   > div {
     flex: 1 1 auto;
-    padding: $spacer / 4 $spacer-xs 0;
+    padding: calc(var(--spacer) / 4) $spacer-xs 0;
 
     @include at($screen-sm) {
       width: 0;
@@ -83,7 +82,7 @@
 
 .d-h1 {
   padding-bottom: var(--spacer);
-  padding-top: $spacer * 3.5;
+  padding-top: calc(var(--spacer) * 3.5);
 
   small {
     display: inline-block;
@@ -110,8 +109,8 @@
 }
 
 .d-alert {
-  margin-top: $spacer / 2;
-  padding: $spacer / 2;
+  margin-top: calc(var(--spacer) / 2);
+  padding: calc(var(--spacer) / 2);
 }
 
 .m-alert--wcag {
@@ -148,8 +147,8 @@
 
   &__colors {
     > li {
-      margin-top: $spacer-xs / 2;
-      padding: $spacer / 2 $spacer-xs $spacer / 2 $spacer * 5;
+      margin-top: calc(var(--spacer-xs) / 2);
+      padding: calc(var(--spacer) / 2) $spacer-xs calc(var(--spacer) / 2) calc(var(--spacer) * 5);
       position: relative;
 
       &:nth-child(6n+7) {
@@ -180,7 +179,7 @@
         left: var(--spacer-xs);
         position: absolute;
         top: 0;
-        width: $spacer * 4;
+        width: calc(var(--spacer) * 4);
       }
 
       @include at($screen-lg) {
@@ -191,7 +190,7 @@
 
   &__variables {
     > li {
-      margin-top: $spacer / 4;
+      margin-top: calc(var(--spacer) / 4);
 
       @include at($screen-lg) {
         width: 100 / 3 * 1%;
@@ -226,7 +225,7 @@
   );
   box-shadow: 0 0 0 1px $grey-light inset;
   display: inline-block;
-  padding: $spacer / 6;
+  padding: calc(var(--spacer) / 6);
 
   strong {
     background-color: rgba($rich-black, .6);
@@ -238,15 +237,15 @@
 .d-u-text-xlight,
 .d-u-text-warning {
   background-color: $black;
-  padding: $spacer / 4;
+  padding: calc(var(--spacer) / 4);
 }
 
 .d-button {
-  margin-bottom: $spacer / 6; // Improves the 'flow' of multiple consecutive buttons
+  margin-bottom: calc(var(--spacer) / 6); // Improves the 'flow' of multiple consecutive buttons
 }
 
 .d-tooltip {
-  margin-bottom: $spacer / 2; // Improves the 'flow' of multiple consecutive tooltips
+  margin-bottom: calc(var(--spacer) / 2); // Improves the 'flow' of multiple consecutive tooltips
 }
 
 .d-datepicker {
@@ -309,7 +308,7 @@
   label {
     box-shadow: none;
     height: auto;
-    margin-bottom: $spacer / 2;
+    margin-bottom: calc(var(--spacer) / 2);
     position: static;
     width: auto;
 
@@ -364,7 +363,7 @@
   &__row {
     display: grid;
     grid-template-columns: $spacer-lg auto;
-    margin-bottom: $spacer-xs / 2; // [*GG]
+    margin-bottom: calc(var(--spacer-xs) / 2); // [*GG]
 
     @include at($screen-sm) {
       &:nth-child(even) {

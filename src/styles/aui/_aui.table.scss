@@ -19,7 +19,7 @@
   &__actions {
     display: flex;
     flex-direction: column;
-    margin-left: $spacer / 4;
+    margin-left: calc(var(--spacer) / 4);
     margin-right: 0;
   }
 
@@ -60,7 +60,7 @@
 .a-table-bar {
   background-color: $grey-light;
   display: flex;
-  padding: $spacer / 2;
+  padding: calc(var(--spacer) / 2);
 
   &__filters {
     flex: 1;
@@ -69,7 +69,7 @@
     overflow: hidden;
 
     &-show-more {
-      margin: $spacer / 4;
+      margin: calc(var(--spacer) / 4);
     }
 
     &--open {
@@ -79,12 +79,12 @@
 
   &__item {
     display: inline-block;
-    margin: $spacer / 4;
+    margin: calc(var(--spacer) / 4);
   }
 
   &__search {
     background: $white;
     height: 100%;
-    margin: $spacer / 4;
+    margin: calc(var(--spacer) / 4);
   }
 }
