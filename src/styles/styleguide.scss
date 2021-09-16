@@ -110,8 +110,8 @@
 }
 
 .d-alert {
-  margin-top: $spacer / 2;
-  padding: $spacer / 2;
+  margin-top: calc(var(--spacer) / 2);
+  padding: calc(var(--spacer) / 2);
 }
 
 .m-alert--wcag {
@@ -246,7 +246,7 @@
 }
 
 .d-tooltip {
-  margin-bottom: $spacer / 2; // Improves the 'flow' of multiple consecutive tooltips
+  margin-bottom: calc(var(--spacer) / 2); // Improves the 'flow' of multiple consecutive tooltips
 }
 
 .d-datepicker {
@@ -309,7 +309,7 @@
   label {
     box-shadow: none;
     height: auto;
-    margin-bottom: $spacer / 2;
+    margin-bottom: calc(var(--spacer) / 2);
     position: static;
     width: auto;
 

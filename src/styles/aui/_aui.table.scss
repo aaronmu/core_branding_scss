@@ -60,7 +60,7 @@
 .a-table-bar {
   background-color: $grey-light;
   display: flex;
-  padding: $spacer / 2;
+  padding: calc(var(--spacer) / 2);
 
   &__filters {
     flex: 1;
