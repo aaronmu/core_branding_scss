@@ -18,7 +18,7 @@
   margin: 0;
 
   + .a-pre {
-    margin-top: $spacer / 4;
+    margin-top: calc(var(--spacer) / 4);
   }
 }
 
@@ -191,7 +191,7 @@
 
   &__variables {
     > li {
-      margin-top: $spacer / 4;
+      margin-top: calc(var(--spacer) / 4);
 
       @include at($screen-lg) {
         width: 100 / 3 * 1%;
@@ -238,7 +238,7 @@
 .d-u-text-xlight,
 .d-u-text-warning {
   background-color: $black;
-  padding: $spacer / 4;
+  padding: calc(var(--spacer) / 4);
 }
 
 .d-button {

@@ -187,11 +187,11 @@ dl {
 
   dt {
     font-weight: $bold;
-    padding-top: $spacer / 4;
+    padding-top: calc(var(--spacer) / 4);
   }
 
   dd {
     margin-left: 0;
-    padding-bottom: $spacer / 4;
+    padding-bottom: calc(var(--spacer) / 4);
   }
 }
