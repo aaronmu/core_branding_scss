@@ -6,7 +6,7 @@
 $footer-bg:               $rich-black !default;
 $footer-color:            $white !default;
 
-$footer-height:           $spacer-lg !default;
+$footer-height:           var(--spacer-lg) !default;
 
 $footer-font-size-sm:     $font-size-sm !default;
 $footer-font-size-lg:     $font-size-sm !default;
@@ -47,7 +47,7 @@ $footer-line-height:      $line-height-paragraph !default;
   color: $footer-color;
   font-size: rem($footer-font-size-sm);
   line-height: $footer-line-height;
-  padding: 0 $spacer-xs;
+  padding: 0 var(--spacer-xs);
 
   @include to($screen-sm) {
     flex: 1 1 auto;
@@ -55,7 +55,7 @@ $footer-line-height:      $line-height-paragraph !default;
 
   @include at($screen-sm) {
     font-size: rem($footer-font-size-lg);
-    padding: 0 $spacer-xl;
+    padding: 0 var(--spacer-xl);
   }
 
   a {

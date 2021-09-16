@@ -4,11 +4,11 @@
  */
 
 $navigation-menu-border:          $border-color-light !default;
-$navigation-menu-mobile-height:   $spacer-xl !default;
+$navigation-menu-mobile-height:   var(--spacer-xl) !default;
 $navigation-menu-pane-width:      20rem !default;
 $navigation-menu-undocked-width:  15rem !default;
 $navigation-menu-docked-width:    $header-height !default;
-$navigation-menu-submenu-inset:   $spacer-xs !default;
+$navigation-menu-submenu-inset:   var(--spacer-xs) !default;
 $navigation-menu-submenu-height:  $navigation-menu-undocked-width * 2 !default;
 $navigation-menu-animation-speed: $animation-duration !default;
 
@@ -340,7 +340,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 
   // First sub-layer of menus will get larger padding
   & .m-nav-list li .o-menu__submenu li > a {
-    padding-left: calc(#{$navigation-menu-docked-width} + #{$navigation-menu-submenu-inset * 2});
+    padding-left: calc(#{$navigation-menu-docked-width} + #{$navigation-menu-submenu-inset} * 2);
   }
 
   @include at($screen-sm) {
@@ -353,7 +353,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 
   @include at($screen-sm) {
     display: block;
-    padding: 1rem $spacer-xs;
+    padding: 1rem var(--spacer-xs);
     text-align: right;
 
     > a {
