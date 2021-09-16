@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-$card-header-padding:    $spacer-xs !default;
+$card-header-padding:    var(--spacer-xs) !default;
 $card-content-padding:   var(--spacer) !default;
 
 

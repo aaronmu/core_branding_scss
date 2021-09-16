@@ -15,7 +15,7 @@ $step-indicator-color-success:          $white !default;
 $step-indicator-bg-success:             $state-success !default;
 $step-indicator-border-success:         $step-indicator-bg-success !default;
 $step-indicator-label-color-success:    $step-indicator-bg-success !default;
-$step-indicator-square-size:            $spacer-md !default;
+$step-indicator-square-size:            var(--spacer-md) !default;
 
 
 /**
@@ -58,13 +58,13 @@ $step-indicator-square-size:            $spacer-md !default;
       font-size: $font-size-h6;
       font-weight: $bold;
       height: $step-indicator-square-size;
-      margin: 0 auto $spacer;
+      margin: 0 auto var(--spacer);
       padding: calc(var(--spacer) / 3) 0;
       text-align: center;
       width: $step-indicator-square-size;
 
       @include at($screen-sm) {
-        margin: 0 auto $spacer-xs;
+        margin: 0 auto var(--spacer-xs);
       }
     }
 
@@ -74,9 +74,9 @@ $step-indicator-square-size:            $spacer-md !default;
       content: '';
       height: 1px;
       position: absolute;
-      right: calc(50% + #{$step-indicator-square-size / 4 * 3});
-      top: calc(#{$step-indicator-square-size / 2} - .5px);
-      width: calc(100% - #{$step-indicator-square-size * 3 / 2});
+      right: calc(50% + #{$step-indicator-square-size} / 4 * 3);
+      top: calc(#{$step-indicator-square-size} / 2 - .5px);
+      width: calc(100% - #{$step-indicator-square-size} * 3 / 2);
     }
 
     &.is-active {
@@ -104,7 +104,7 @@ $step-indicator-square-size:            $spacer-md !default;
       &:after {
         background-color: $step-indicator-border-success;
         height: 2px;
-        top: calc(#{$step-indicator-square-size / 2} - 1px);
+        top: calc(#{$step-indicator-square-size} / 2 - 1px);
       }
     }
 

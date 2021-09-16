@@ -49,7 +49,7 @@ $modal-padding:           var(--spacer) !default;
 }
 
 .m-modal__footer {
-  margin-bottom: -$spacer-xs;
+  margin-bottom: calc(var(--spacer-xs) * -1);
 
   @include at($screen-xs) {
     display: flex;

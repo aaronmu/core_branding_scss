@@ -4,7 +4,7 @@
  */
 
 $pagination-font-size:                $btn-font-size !default;
-$pagination-size:                     $spacer-lg !default;
+$pagination-size:                     var(--spacer-lg) !default;
 
 $pagination-color:                    $btn-primary-color !default;
 $pagination-color-disabled:           $btn-disabled-color !default;
@@ -18,8 +18,8 @@ $pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%
 $pagination-outline-border:           $pagination-outline-color !default;
 $pagination-outline-border-hover:     mix($pagination-outline-border, $rich-black, 85%) !default;
 
-$pagination-size-sm:                  $spacer-md !default;
-$pagination-size-lg:                  $spacer-xl !default;
+$pagination-size-sm:                  var(--spacer-md) !default;
+$pagination-size-lg:                  var(--spacer-xl) !default;
 
 
 /**
@@ -70,7 +70,7 @@ $pagination-size-lg:                  $spacer-xl !default;
   }
 
   .m-pagination__label {
-    padding: 0 $spacer;
+    padding: 0 var(--spacer);
     width: auto;
   }
 
@@ -148,7 +148,7 @@ $pagination-size-lg:                  $spacer-xl !default;
     }
 
     .m-pagination__label {
-      padding: 0 $spacer-xs;
+      padding: 0 var(--spacer-xs);
       width: auto;
     }
   }
@@ -163,7 +163,7 @@ $pagination-size-lg:                  $spacer-xl !default;
     }
 
     .m-pagination__label {
-      padding: 0 $spacer-md;
+      padding: 0 var(--spacer-md);
       width: auto;
     }
   }
