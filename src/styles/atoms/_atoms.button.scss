@@ -156,7 +156,7 @@
     content: '';
     display: block;
     height: rem(21px);
-    left: var(--spacer-sm);
+    left: var(--spacer-s);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -258,7 +258,7 @@
   &.a-button--small {
     font-size: rem($btn-font-size-sm);
     min-height: var(--spacer-l);
-    padding: calc(var(--spacer-sm) / 2) var(--spacer);
+    padding: calc(var(--spacer-s) / 2) var(--spacer);
 
     .ai {
       font-size: rem($btn-icon-size-sm);
@@ -268,7 +268,7 @@
   &.a-button--large {
     font-size: rem($btn-font-size-lg);
     min-height: var(--spacer-xxl);
-    padding: var(--spacer-sm) var(--spacer);
+    padding: var(--spacer-s) var(--spacer);
 
     .ai {
       font-size: rem($btn-icon-size-lg);

@@ -21,7 +21,7 @@ $progress-tooltip-bottom:   $progress-height - $progress-bar-padding + $tooltip-
 
 .m-progress__label {
   display: block;
-  margin-bottom: calc(var(--spacer-sm) / 2);
+  margin-bottom: calc(var(--spacer-s) / 2);
   text-align: left;
 }
 
