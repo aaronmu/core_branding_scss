@@ -34,21 +34,21 @@
    */
 
   --screen-xs:               30rem; // 480px
-  --screen-sm:               45rem; // 720px
-  --screen-md:               62rem; // 992px
-  --screen-lg:               75rem; // 1200px
+  --screen-s:                45rem; // 720px
+  --screen-l:                62rem; // 992px
+  --screen-xl:               75rem; // 1200px
   /**
-   * --screen-xl =
+   * --screen-xxl =
    *    max-width of u-container
    *    + width of official logo * 2
    *    + space between logo and u-container * 2
    */
-  --screen-xl:               calc(var(--screen-lg) + calc(var(--spacer-3xl) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
+  --screen-xxl:              calc(var(--screen-xl) + calc(var(--spacer-3xl) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
 
-  --screen-xs-max:           44.9375rem; // 719px (--screen-sm - 1px)
-  --screen-sm-max:           61.9375rem; // 991px (--screen-md - 1px)
-  --screen-md-max:           74.9375rem; // 1199px (--screen-lg - 1px)
-  --screen-lg-max:           89.9375rem; // 1439px (--screen-xl - 1px)
+  --screen-xs-max:           44.9375rem; // 719px (--screen-s - 1px)
+  --screen-s-max:            61.9375rem; // 991px (--screen-l - 1px)
+  --screen-l-max:            74.9375rem; // 1199px (--screen-xl - 1px)
+  --screen-xl-max:           89.9375rem; // 1439px (--screen-xxl - 1px)
 
 
   /**
