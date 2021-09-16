@@ -62,7 +62,7 @@ $table-padding:               var(--spacer-xs) !default;
     }
 
     &.is-condensed {
-      padding: $table-padding / 2;
+      padding: calc(#{$table-padding} / 2);
     }
 
     &.has-no-padding {
