@@ -8,7 +8,7 @@ $tag-bg:                  $background-color-light !default;
 $tag-border:              $border-color-light !default;
 $tag-border-focus:        $input-border-focus !default; // Remove this in a later version
 $tag-placeholder:         $input-placeholder !default;
-$tag-height:              $spacer-md !default;
+$tag-height:              var(--spacer-md) !default;
 
 
 /**
@@ -41,7 +41,7 @@ $tag-height:              $spacer-md !default;
   display: block;
   font-weight: $bold;
   max-width: calc(var(--spacer) * 10);
-  padding: 0 $spacer-xs;
+  padding: 0 var(--spacer-xs);
 }
 
 .m-tag__input {
@@ -54,5 +54,5 @@ $tag-height:              $spacer-md !default;
   border-radius: 0;
   max-width: calc(var(--spacer) * 10);
   min-height: $tag-height;
-  padding: 0 $spacer-xs;
+  padding: 0 var(--spacer-xs);
 }

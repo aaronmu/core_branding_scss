@@ -19,7 +19,7 @@
 .m-button-list--horizontal {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -$spacer-xs;
+  margin-bottom: calc(var(--spacer-xs) * -1);
 
   li {
     margin-bottom: var(--spacer-xs);

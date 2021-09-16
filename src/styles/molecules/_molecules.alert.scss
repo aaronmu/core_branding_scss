@@ -37,7 +37,7 @@ $alert-padding:           var(--spacer) !default;
  */
 
 .m-alert__actions {
-  margin-bottom: -$spacer-xs;
+  margin-bottom: calc(var(--spacer-xs) * -1);
 
   @include at($screen-xs) {
     display: flex;

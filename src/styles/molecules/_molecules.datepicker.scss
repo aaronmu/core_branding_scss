@@ -32,7 +32,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
 .m-datepicker {
   max-width: calc(var(--spacer) * 14);
   opacity: 0;
-  transform: translateY(-$spacer-lg);
+  transform: translateY(calc(var(--spacer-lg) * -1));
   transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
   visibility: hidden;
 
