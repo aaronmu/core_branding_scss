@@ -6,10 +6,10 @@
 $modal-bg:                $white !default;
 $modal-border:            $border-color-light !default;
 
-$modal-width:             $spacer * 17 !default;
-$modal-width-large:       $spacer * 25 !default;
+$modal-width:             calc(var(--spacer) * 17) !default;
+$modal-width-large:       calc(var(--spacer) * 25) !default;
 
-$modal-padding:           $spacer !default;
+$modal-padding:           var(--spacer) !default;
 
 
 /**

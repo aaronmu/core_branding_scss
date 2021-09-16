@@ -11,7 +11,7 @@
 
 .u-wrapper {
   @include at($screen-xs) {
-    padding-left: $spacer * 3;
+    padding-left: calc(var(--spacer) * 3);
   }
 
   @include at($screen-xl) {

@@ -7,7 +7,7 @@ $alert-default:           $brand-primary !default;
 $alert-success:           $state-success !default;
 $alert-warning:           $state-warning !default;
 $alert-danger:            $state-danger !default;
-$alert-padding:           $spacer !default;
+$alert-padding:           var(--spacer) !default;
 
 
 /**

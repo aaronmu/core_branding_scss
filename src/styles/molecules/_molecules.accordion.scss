@@ -10,7 +10,7 @@ $accordion-content-bg:        $accordion-header-bg !default;
 $accordion-icon-color:        $brand-primary !default;
 $accordion-icon-size:         $icon-size-sm !default;
 $accordion-header-padding:    $spacer-xs $spacer-lg $spacer-xs $spacer-xs !default;
-$accordion-content-padding:   $spacer !default;
+$accordion-content-padding:   var(--spacer) !default;
 
 
 /**

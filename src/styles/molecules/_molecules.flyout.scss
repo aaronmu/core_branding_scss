@@ -5,10 +5,10 @@
 
 $flyout-bg:               $white !default;
 $flyout-border:           $border-color-light !default;
-$flyout-max-width-sm:     $spacer * 10 !default;
-$flyout-max-width-md:     $spacer * 20 !default;
-$flyout-max-width-lg:     $spacer * 30 !default;
-$flyout-max-height:       $spacer * 9 !default;
+$flyout-max-width-sm:     calc(var(--spacer) * 10) !default;
+$flyout-max-width-md:     calc(var(--spacer) * 20) !default;
+$flyout-max-width-lg:     calc(var(--spacer) * 30) !default;
+$flyout-max-height:       calc(var(--spacer) * 9) !default;
 
 
 /**
@@ -118,7 +118,7 @@ $flyout-max-height:       $spacer * 9 !default;
 }
 
 .m-flyout__content.has-padding {
-  padding: $spacer / 3 * 2 $spacer;
+  padding: calc(var(--spacer) / 3 * 2) $spacer;
 }
 
 

@@ -7,7 +7,7 @@ $badge-font-size:                $font-size-sm !default;
 $badge-font-weight:              $bold !default;
 $badge-height:                   $spacer-sm !default;
 $badge-line-height:              $badge-height !default;
-$badge-padding:                  0 $spacer / 4 !default;
+$badge-padding:                  0 calc(var(--spacer) / 4) !default;
 
 $badge-default-color:            $text-color !default;
 $badge-default-bg:               $grey !default;

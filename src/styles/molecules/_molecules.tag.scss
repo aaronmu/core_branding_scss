@@ -40,7 +40,7 @@ $tag-height:              $spacer-md !default;
   @extend %u-text-truncate;
   display: block;
   font-weight: $bold;
-  max-width: $spacer * 10;
+  max-width: calc(var(--spacer) * 10);
   padding: 0 $spacer-xs;
 }
 
@@ -52,7 +52,7 @@ $tag-height:              $spacer-md !default;
   background-color: transparent;
   border: none;
   border-radius: 0;
-  max-width: $spacer * 10;
+  max-width: calc(var(--spacer) * 10);
   min-height: $tag-height;
   padding: 0 $spacer-xs;
 }

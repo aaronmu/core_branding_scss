@@ -73,6 +73,6 @@
   top: $header-height;
 
   img {
-    height: $spacer * 3;
+    height: calc(var(--spacer) * 3);
   }
 }

@@ -8,7 +8,7 @@
   color: $white;
   display: flex;
   left: 0;
-  min-height: $spacer * 2;
+  min-height: calc(var(--spacer) * 2);
   position: fixed;
   right: 0;
   top: 0;
@@ -35,7 +35,7 @@
     background: rgba($rich-black, .2);
     display: flex;
     justify-content: center;
-    width: $spacer * 2;
+    width: calc(var(--spacer) * 2);
   }
 
   &__notification {
