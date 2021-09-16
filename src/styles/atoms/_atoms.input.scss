@@ -171,12 +171,12 @@ textarea {
 
     &.has-icon-right {
       .a-input__wrapper:before {
-        right: var(--spacer-md);
+        right: var(--spacer-l);
       }
 
       .a-input__wrapper {
         input {
-          padding-right: calc(var(--spacer-xl) + var(--spacer-md));
+          padding-right: calc(var(--spacer-xl) + var(--spacer-l));
         }
       }
     }

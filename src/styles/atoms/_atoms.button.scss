@@ -257,7 +257,7 @@
 
   &.a-button--small {
     font-size: rem($btn-font-size-sm);
-    min-height: var(--spacer-md);
+    min-height: var(--spacer-l);
     padding: calc(var(--spacer-sm) / 2) var(--spacer);
 
     .ai {
@@ -336,15 +336,15 @@
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
-    width: var(--spacer-md);
+    width: var(--spacer-l);
   }
 
   &.has-icon-left {
-    padding-left: var(--spacer-md);
+    padding-left: var(--spacer-l);
   }
 
   &.has-icon-right {
-    padding-right: var(--spacer-md);
+    padding-right: var(--spacer-l);
   }
 }
 
@@ -401,10 +401,10 @@
 }
 
 .a-button--small.has-icon {
-  width: var(--spacer-md);
+  width: var(--spacer-l);
 
   .ai {
-    width: var(--spacer-md);
+    width: var(--spacer-l);
   }
 }
 
