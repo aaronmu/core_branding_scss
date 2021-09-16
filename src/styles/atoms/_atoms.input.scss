@@ -33,7 +33,7 @@ textarea {
 
   small {
     display: block;
-    margin: $spacer-sm / 2 0;
+    margin: calc(var(--spacer-sm / 2)) 0;
     text-align: left;
   }
 
@@ -98,13 +98,13 @@ textarea {
 
 .a-input__label {
   display: inline-block;
-  margin-bottom: $spacer-sm / 2;
+  margin-bottom: calc(var(--spacer-sm / 2));
   text-align: left;
 
   + .a-switch,
   + .a-input__checkbox,
   + .a-input__radio {
-    margin-top: $spacer-sm / 2;
+    margin-top: calc(var(--spacer-sm / 2));
   }
 }
 
@@ -176,7 +176,7 @@ textarea {
 
       .a-input__wrapper {
         input {
-          padding-right: $spacer-lg + $spacer-md;
+          padding-right: calc(var(--spacer-lg) + var(--spacer-md));
         }
       }
     }

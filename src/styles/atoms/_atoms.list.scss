@@ -112,13 +112,13 @@ dl {
       padding-left: var(--spacer-xs);
 
       &:last-of-type {
-        margin-bottom: -($spacer * 2 / 3);
+        margin-bottom: calc(var(--spacer) * -2 / 3);
       }
     }
   }
 
   > li {
-    padding: calc(var(--spacer) * 2 / 3) 0 calc(var(--spacer) * 2 / 3) $spacer-xs;
+    padding: calc(var(--spacer) * 2 / 3) 0 calc(var(--spacer) * 2 / 3) var(--spacer-xs);
   }
 }
 
