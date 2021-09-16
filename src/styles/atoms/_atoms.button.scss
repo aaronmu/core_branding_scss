@@ -248,7 +248,7 @@
   &.a-button--tiny {
     font-size: rem($btn-font-size-ti);
     min-height: var(--spacer);
-    padding: ($spacer-xs / 4) $spacer-xs ($spacer-xs / 3);
+    padding: calc(var(--spacer-xs) / 4) var(--spacer-xs) calc(var(--spacer-xs) / 3);
 
     .ai {
       font-size: rem($btn-icon-size-ti);
@@ -258,7 +258,7 @@
   &.a-button--small {
     font-size: rem($btn-font-size-sm);
     min-height: var(--spacer-md);
-    padding: ($spacer-sm / 2) $spacer;
+    padding: calc(var(--spacer-sm) / 2) var(--spacer);
 
     .ai {
       font-size: rem($btn-icon-size-sm);
@@ -268,7 +268,7 @@
   &.a-button--large {
     font-size: rem($btn-font-size-lg);
     min-height: var(--spacer-xl);
-    padding: $spacer-sm $spacer;
+    padding: var(--spacer-sm) var(--spacer);
 
     .ai {
       font-size: rem($btn-icon-size-lg);
