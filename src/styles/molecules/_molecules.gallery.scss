@@ -19,7 +19,7 @@ $gallery-item-size:           100% / 3 !default;
   @include clearfix;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -$gallery-gutter-col / 2;
+  margin-left: calc(#{$gallery-gutter-col} / -2);
   width: calc(100% + #{$gallery-gutter-col});
 }
 
@@ -30,7 +30,7 @@ $gallery-item-size:           100% / 3 !default;
  */
 
 .m-gallery__item {
-  margin: 0 #{$gallery-gutter-col / 2} #{$gallery-gutter-row};
+  margin: 0 calc(#{$gallery-gutter-col / 2}) $gallery-gutter-row;
   width: calc(#{$gallery-item-size} - #{$gallery-gutter-col});
 
   a {
