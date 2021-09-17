@@ -21,6 +21,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 /**
  * Remove inner padding and
  * border in Firefox 4+
@@ -29,6 +30,7 @@ html {
   border: none;
   padding: 0;
 }
+
 /**
  * Hide OS controls for Windows
  * http://msdn.microsoft.com/en-us/library/windows/apps/hh465742.aspx
@@ -36,6 +38,7 @@ html {
 ::-ms-expand {
   display: none;
 }
+
 /**
  * Hide clear button in input fields for Windows
  * https://msdn.microsoft.com/en-us/library/windows/apps/hh465740.aspx

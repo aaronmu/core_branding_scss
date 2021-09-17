@@ -9,6 +9,7 @@ ol,
 dl {
   line-height: 1.3;
 }
+
 /**
  * STANDARD LIST
  * -------------------------------------------------------------------
@@ -33,6 +34,7 @@ dl {
 .a-list {
   @extend %a-list;
 }
+
 /**
  * LIST PLACEHOLDERS
  * -------------------------------------------------------------------
@@ -148,6 +150,7 @@ dl {
     }
   }
 }
+
 /**
  * List with list items including an icon.
  */
