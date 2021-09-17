@@ -76,6 +76,7 @@
 
   &.a-button--transparent {
     @include a-button($btn-transparent-color, $btn-transparent-bg);
+
     text-decoration: underline;
   }
 }
@@ -90,7 +91,6 @@
  */
 
 .a-button.has-icon {
-
   &.a-button--twitter {
     @include a-button($white, $twitter);
   }
@@ -109,6 +109,7 @@
 
   &.a-button--instagram {
     @include a-button($white);
+
     background: $instagram;
     position: relative;
     transition-property: opacity;
@@ -142,6 +143,7 @@
 
 .a-button-official {
   @include a-button($btn-official-color, $btn-official-bg);
+
   padding-left: calc(var(--spacer) * 3);
   position: relative;
   white-space: nowrap;
@@ -236,7 +238,6 @@
 .a-button-negative,
 .a-button-outline,
 .a-button-transparent {
-
   &.a-button--xs {
     font-size: rem($btn-font-size-ti);
     min-height: var(--spacer);
@@ -277,7 +278,6 @@
 .a-button-negative,
 .a-button-outline,
 .a-button-transparent {
-
   &.has-icon-left,
   &.has-icon-right {
     position: relative;
@@ -308,7 +308,6 @@
 }
 
 .a-button--xs {
-
   &.has-icon-left .ai,
   &.has-icon-right .ai {
     width: var(--spacer);
@@ -324,7 +323,6 @@
 }
 
 .a-button--s {
-
   &.has-icon-left .ai,
   &.has-icon-right .ai {
     width: var(--spacer-l);
@@ -340,7 +338,6 @@
 }
 
 .a-button--l {
-
   &.has-icon-left .ai,
   &.has-icon-right .ai {
     width: var(--spacer-xxl);
@@ -364,7 +361,6 @@
 .a-button-negative,
 .a-button-outline,
 .a-button-transparent {
-
   &.has-icon {
     display: inline-block;
     padding: 0;

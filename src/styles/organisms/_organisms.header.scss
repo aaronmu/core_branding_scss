@@ -47,6 +47,7 @@
 
 .o-header__button {
   @include a-button($header-btn-color, $header-btn-bg);
+
   border-left: 1px solid $header-border;
 }
 

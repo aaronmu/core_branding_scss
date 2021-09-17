@@ -16,6 +16,7 @@ $gallery-item-size:           100% / 3 !default;
 .m-gallery {
   @extend %a-list--reset;
   @include clearfix;
+
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(#{$gallery-gutter-col} / -2);

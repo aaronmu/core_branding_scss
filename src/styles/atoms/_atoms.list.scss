@@ -99,7 +99,6 @@ dl {
  * List with more padding.
  */
 %a-list--primary {
-
   .a-list {
     line-height: 1;
     margin-top: calc(var(--spacer) * 2 / 3);
@@ -144,7 +143,6 @@ dl {
   }
 
   .a-list--lined {
-
     > li:last-of-type {
       border-bottom: none;
     }
@@ -155,7 +153,6 @@ dl {
  * List with list items including an icon.
  */
 .a-list {
-
   &.has-icon-left,
   &.has-icon-right {
     @extend %a-list--unstyled;

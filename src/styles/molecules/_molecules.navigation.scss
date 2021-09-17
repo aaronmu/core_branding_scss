@@ -25,6 +25,7 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
 
 %m-nav-list {
   @extend %a-list--reset;
+
   border-top: 1px solid $nav-border;
 
   > li {

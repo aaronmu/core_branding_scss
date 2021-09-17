@@ -28,6 +28,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
 
 .m-pagination {
   @extend %a-list--reset;
+
   display: flex;
 
   > li {
@@ -88,7 +89,6 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
 }
 
 .m-pagination--outline {
-
   > li {
     background-color: $pagination-outline-bg;
     box-shadow: 0 0 0 1px $pagination-outline-border inset;

@@ -36,6 +36,7 @@ $tag-height:              var(--spacer-l) !default;
 
 .m-tag__label {
   @extend %u-text-truncate;
+
   display: block;
   font-weight: $bold;
   max-width: calc(var(--spacer) * 10);

@@ -125,6 +125,7 @@ $upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
 
 .m-upload__files {
   @extend %a-list--reset;
+
   margin-top: var(--spacer);
 
   > li {

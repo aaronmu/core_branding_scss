@@ -99,7 +99,6 @@ $table-padding:               var(--spacer-xs) !default;
 }
 
 .a-table.a-table--striped tbody {
-
   tr:nth-child(odd) {
     background-color: $white;
 

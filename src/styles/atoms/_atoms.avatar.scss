@@ -47,7 +47,6 @@ $avatar-xl:               calc(var(--spacer) * 4) !default; // 96px
 }
 
 a .a-avatar {
-
   &:before {
     background-color: $black;
     content: '';

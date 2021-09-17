@@ -18,7 +18,6 @@
    */
 
   --spacer:                  1.5rem; // 24px
-
   --spacer-3xl:              calc(var(--spacer) * 4); // 96px
   --spacer-xxl:              calc(var(--spacer) * 2.5); // 60px
   --spacer-xl:               calc(var(--spacer) * 2); // 48px
@@ -43,7 +42,6 @@
    *    + space between logo and u-container * 2
    */
   --screen-xxl:              calc(var(--screen-xl) + calc(var(--spacer-3xl) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
-
   --screen-xs-max:           44.9375rem; // 719px (--screen-s - 1px)
   --screen-s-max:            61.9375rem; // 991px (--screen-l - 1px)
   --screen-l-max:            74.9375rem; // 1199px (--screen-xl - 1px)
@@ -63,6 +61,5 @@
 
   --animation-duration:      200ms;
   --animation-easing:        ease-in-out;
-
   --animation-normal:        var(--animation-duration) var(--animation-easing);
 }

@@ -120,7 +120,6 @@ textarea {
  */
 
 .a-input {
-
   &.has-success {
     @include a-input($input-color, $input-bg, $input-success-border);
 
@@ -151,7 +150,6 @@ textarea {
   &.has-success,
   &.has-warning,
   &.has-error {
-
     .a-input__wrapper:before {
       content: '';
       height: var(--spacer);
@@ -210,7 +208,6 @@ textarea {
  */
 
 .a-input {
-
   &.has-icon-left .a-input__wrapper > .ai,
   &.has-icon-right .a-input__wrapper > .ai {
     color: $input-icon;

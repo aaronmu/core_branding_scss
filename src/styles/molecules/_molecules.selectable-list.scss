@@ -65,7 +65,6 @@ $link-list-hover:           $grey-100 !default;
  */
 
 .m-selectable-list--no-border li {
-
   &:first-child {
     border-top: none;
   }
@@ -77,5 +76,6 @@ $link-list-hover:           $grey-100 !default;
 
 .m-selectable-list__item--active {
   @extend %m-selectable-list__item--active;
+
   font-weight: bold;
 }
