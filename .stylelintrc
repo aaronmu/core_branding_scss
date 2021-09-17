@@ -8,8 +8,27 @@
   ],
   "rules": {
     "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": true,
+    "block-closing-brace-newline-before": "always",
+    "no-descending-specificity": null,
     "number-leading-zero": "never",
-    "selector-pseudo-element-colon-notation": "single"
+    "scss/at-rule-no-unknown": true,
+    "selector-pseudo-element-colon-notation": "single",
+    "declaration-colon-space-after": null,
+    "at-rule-empty-line-before": [
+      "always", {
+        "except": [
+          "blockless-after-blockless",
+          "first-nested"
+        ],
+        "ignore": [
+          "after-comment",
+          "first-nested"
+        ],
+        "ignoreAtRules": [
+          "else",
+          "use"
+        ]
+      }
+    ]
   }
 }
