@@ -5,6 +5,7 @@
 
 .o-tag-list {
   @extend %a-list--reset;
+
   display: flex;
   flex-wrap: wrap;
   margin-bottom: calc(var(--spacer-xs) * -1);

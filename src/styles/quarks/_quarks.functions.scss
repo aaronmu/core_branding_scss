@@ -4,7 +4,6 @@
  * Collection of custom functions
  */
 
-
 /**
  * STRIP UNIT FROM VALUE
  * -------------------------------------------------------------------
@@ -18,7 +17,6 @@
   @return $number;
 }
 
-
 /**
  * CONVERT PX TO REM
  * -------------------------------------------------------------------
@@ -27,7 +25,6 @@
 @function rem($_value) {
   @return strip-unit($_value) / 16 * 1rem;
 }
-
 
 /**
  * RAISE NUMBER TO CERTAIN POWER
@@ -45,7 +42,6 @@
 
   @return $value;
 }
-
 
 /**
  * HANDLING Z-INDEX LAYERS

@@ -10,7 +10,6 @@ $flyout-max-width-md:     calc(var(--spacer) * 20) !default;
 $flyout-max-width-lg:     calc(var(--spacer) * 30) !default;
 $flyout-max-height:       calc(var(--spacer) * 9) !default;
 
-
 /**
  * FLYOUT
  * -------------------------------------------------------------------
@@ -21,7 +20,6 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
   outline: none;
   position: relative;
 }
-
 
 /**
  * FLYOUT ELEMENTS
@@ -40,7 +38,6 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
   z-index: layer('flyout');
 }
 
-
 /**
  * FLYOUT MODIFIERS
  * -------------------------------------------------------------------
@@ -52,7 +49,6 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
   }
 }
 
-
 /**
  * FLYOUT POSITIONING
  * -------------------------------------------------------------------
@@ -61,7 +57,6 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
 .m-flyout--right .m-flyout__content {
   right: 0;
 }
-
 
 /**
  * FLYOUT SIZES
@@ -104,7 +99,6 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
   overflow-y: scroll;
 }
 
-
 /**
  * FLYOUT VISIBILITY
  * -------------------------------------------------------------------
@@ -121,7 +115,6 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
   padding: calc(var(--spacer) / 3 * 2) var(--spacer);
 }
 
-
 /**
  * FLYOUT FIX AFTER FORM ELEMENT
  * -------------------------------------------------------------------
@@ -131,7 +124,6 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
   margin-top: -1px;
 }
 
-
 /**
  * DATEPICKER IN FLYOUT BORDER FIX
  * -------------------------------------------------------------------
@@ -140,7 +132,6 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
 .m-flyout__content.m-datepicker {
   border: none;
 }
-
 
 /**
  * FLYOUT FOCUS OUTLINE FIX

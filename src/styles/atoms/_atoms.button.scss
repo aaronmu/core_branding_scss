@@ -6,7 +6,6 @@
  * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
-
 /**
  * BUTTON PLACEHOLDER
  * -------------------------------------------------------------------
@@ -51,7 +50,6 @@
   @extend %a-button;
 }
 
-
 /**
  * BUTTON COLORS
  * -------------------------------------------------------------------
@@ -78,6 +76,7 @@
 
   &.a-button--transparent {
     @include a-button($btn-transparent-color, $btn-transparent-bg);
+
     text-decoration: underline;
   }
 }
@@ -86,14 +85,12 @@
   @include a-button($btn-default-color, $btn-default-bg);
 }
 
-
 /**
  * SOCIAL BUTTON COLORS
  * -------------------------------------------------------------------
  */
 
 .a-button.has-icon {
-
   &.a-button--twitter {
     @include a-button($white, $twitter);
   }
@@ -112,6 +109,7 @@
 
   &.a-button--instagram {
     @include a-button($white);
+
     background: $instagram;
     position: relative;
     transition-property: opacity;
@@ -138,7 +136,6 @@
   }
 }
 
-
 /**
  * OFFICIAL ANTWERP BUTTON
  * -------------------------------------------------------------------
@@ -146,6 +143,7 @@
 
 .a-button-official {
   @include a-button($btn-official-color, $btn-official-bg);
+
   padding-left: calc(var(--spacer) * 3);
   position: relative;
   white-space: nowrap;
@@ -164,7 +162,6 @@
   }
 }
 
-
 /**
  * BUTTON NEGATIVE COLORS
  * -------------------------------------------------------------------
@@ -177,7 +174,6 @@
     @include a-button($btn-secondary-negative-color, $btn-secondary-negative-bg);
   }
 }
-
 
 /**
  * BUTTON OUTLINE COLORS
@@ -203,7 +199,6 @@
     @include a-button-outline($btn-danger-outline-color, $btn-danger-outline-border);
   }
 }
-
 
 /**
  * BUTTON ICON TRANSPARENT COLORS
@@ -234,7 +229,6 @@
   }
 }
 
-
 /**
  * BUTTON SIZES
  * -------------------------------------------------------------------
@@ -244,7 +238,6 @@
 .a-button-negative,
 .a-button-outline,
 .a-button-transparent {
-
   &.a-button--xs {
     font-size: rem($btn-font-size-ti);
     min-height: var(--spacer);
@@ -276,7 +269,6 @@
   }
 }
 
-
 /**
  * BUTTON WITH ICON LEFT OR RIGHT
  * -------------------------------------------------------------------
@@ -286,7 +278,6 @@
 .a-button-negative,
 .a-button-outline,
 .a-button-transparent {
-
   &.has-icon-left,
   &.has-icon-right {
     position: relative;
@@ -317,7 +308,6 @@
 }
 
 .a-button--xs {
-
   &.has-icon-left .ai,
   &.has-icon-right .ai {
     width: var(--spacer);
@@ -333,7 +323,6 @@
 }
 
 .a-button--s {
-
   &.has-icon-left .ai,
   &.has-icon-right .ai {
     width: var(--spacer-l);
@@ -349,7 +338,6 @@
 }
 
 .a-button--l {
-
   &.has-icon-left .ai,
   &.has-icon-right .ai {
     width: var(--spacer-xxl);
@@ -364,7 +352,6 @@
   }
 }
 
-
 /**
  * BUTTON ICONS
  * -------------------------------------------------------------------
@@ -374,7 +361,6 @@
 .a-button-negative,
 .a-button-outline,
 .a-button-transparent {
-
   &.has-icon {
     display: inline-block;
     padding: 0;
@@ -415,7 +401,6 @@
     width: var(--spacer-xxl);
   }
 }
-
 
 /**
  * FULL WIDTH BUTTON

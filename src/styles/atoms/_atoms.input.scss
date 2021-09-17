@@ -6,7 +6,6 @@
  * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
-
 /**
  * INPUT FONT-FAMILY
  * -------------------------------------------------------------------
@@ -21,7 +20,6 @@ textarea {
   font: inherit;
   margin: 0;
 }
-
 
 /**
  * INPUT PLACEHOLDER
@@ -67,7 +65,6 @@ textarea {
   @extend %a-input;
 }
 
-
 /**
  * INPUT
  * -------------------------------------------------------------------
@@ -80,7 +77,6 @@ textarea {
     padding: $textarea-padding;
   }
 }
-
 
 /**
  * INPUT WRAPPER
@@ -108,7 +104,6 @@ textarea {
   }
 }
 
-
 /**
  * INPUT LABEL MODIFIERS
  * -------------------------------------------------------------------
@@ -119,14 +114,12 @@ textarea {
   margin-top: calc(#{$line-height-base * $font-size-base} - 1px);
 }
 
-
 /**
  * INPUT STATES
  * -------------------------------------------------------------------
  */
 
 .a-input {
-
   &.has-success {
     @include a-input($input-color, $input-bg, $input-success-border);
 
@@ -157,7 +150,6 @@ textarea {
   &.has-success,
   &.has-warning,
   &.has-error {
-
     .a-input__wrapper:before {
       content: '';
       height: var(--spacer);
@@ -192,7 +184,6 @@ textarea {
   }
 }
 
-
 /**
  * INPUT WITH ICON LEFT OR RIGHT
  * -------------------------------------------------------------------
@@ -211,14 +202,12 @@ textarea {
   }
 }
 
-
 /**
  * INPUT WITH ICON LEFT OR RIGHT
  * -------------------------------------------------------------------
  */
 
 .a-input {
-
   &.has-icon-left .a-input__wrapper > .ai,
   &.has-icon-right .a-input__wrapper > .ai {
     color: $input-icon;
@@ -268,7 +257,6 @@ textarea {
   }
 }
 
-
 /**
  * INLINE INPUT
  * -------------------------------------------------------------------
@@ -288,7 +276,6 @@ textarea {
   display: inline-block;
 }
 
-
 /**
  * INPUT SIZES
  * -------------------------------------------------------------------
@@ -305,6 +292,7 @@ textarea {
       @-moz-document url-prefix() {
         line-height: 2.1; // Fixes Firefox line-height bug
       }
+
       min-height: $select-height-sm;
       padding: $select-padding-sm;
     }

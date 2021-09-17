@@ -6,7 +6,6 @@
 $link-list-item-padding:    calc(var(--spacer) / 3 * 2) var(--spacer) !default;
 $link-list-hover:           $grey-100 !default;
 
-
 /**
  * SELECTABLE LIST
  * -------------------------------------------------------------------
@@ -48,7 +47,6 @@ $link-list-hover:           $grey-100 !default;
   }
 }
 
-
 /**
  * SELECTABLE LIST ELEMENTS
  * -------------------------------------------------------------------
@@ -61,14 +59,12 @@ $link-list-hover:           $grey-100 !default;
   transition: color $animation-duration $animation-easing;
 }
 
-
 /**
  * LINK LIST MODIFIERS
  * -------------------------------------------------------------------
  */
 
 .m-selectable-list--no-border li {
-
   &:first-child {
     border-top: none;
   }
@@ -80,5 +76,6 @@ $link-list-hover:           $grey-100 !default;
 
 .m-selectable-list__item--active {
   @extend %m-selectable-list__item--active;
+
   font-weight: bold;
 }

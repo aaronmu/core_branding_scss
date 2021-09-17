@@ -12,21 +12,18 @@
   --brand-primary:           #{$theme1-400};
   --brand-secondary:         #{$monza-400};
 
-
   /**
    * SPACERS
    * -------------------------------------------------------------------
    */
 
   --spacer:                  1.5rem; // 24px
-
   --spacer-3xl:              calc(var(--spacer) * 4); // 96px
   --spacer-xxl:              calc(var(--spacer) * 2.5); // 60px
   --spacer-xl:               calc(var(--spacer) * 2); // 48px
   --spacer-l:                calc(var(--spacer) * 1.5); // 36px
   --spacer-s:                calc(var(--spacer) * .75); // 18px
   --spacer-xs:               calc(var(--spacer) * .5); // 12px
-
 
   /**
    * BREAKPOINTS
@@ -37,6 +34,7 @@
   --screen-s:                45rem; // 720px
   --screen-l:                62rem; // 992px
   --screen-xl:               75rem; // 1200px
+
   /**
    * --screen-xxl =
    *    max-width of u-container
@@ -44,12 +42,10 @@
    *    + space between logo and u-container * 2
    */
   --screen-xxl:              calc(var(--screen-xl) + calc(var(--spacer-3xl) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
-
   --screen-xs-max:           44.9375rem; // 719px (--screen-s - 1px)
   --screen-s-max:            61.9375rem; // 991px (--screen-l - 1px)
   --screen-l-max:            74.9375rem; // 1199px (--screen-xl - 1px)
   --screen-xl-max:           89.9375rem; // 1439px (--screen-xxl - 1px)
-
 
   /**
    * BORDERS
@@ -58,7 +54,6 @@
 
   --border-radius:           0;
 
-
   /**
    * ANIMATIONS
    * -------------------------------------------------------------------
@@ -66,6 +61,5 @@
 
   --animation-duration:      200ms;
   --animation-easing:        ease-in-out;
-
   --animation-normal:        var(--animation-duration) var(--animation-easing);
 }

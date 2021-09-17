@@ -30,7 +30,6 @@ $badge-danger-bg:                $state-danger !default;
 $badge-disabled-color:           $grey-400 !default;
 $badge-disabled-bg:              $grey-200 !default;
 
-
 /**
  * BADGES
  * -------------------------------------------------------------------
@@ -44,7 +43,6 @@ $badge-disabled-bg:              $grey-200 !default;
   min-height: $badge-height;
   padding: $badge-padding;
 }
-
 
 /**
  * BADGES COLORS
@@ -74,7 +72,6 @@ $badge-disabled-bg:              $grey-200 !default;
     @include a-badge($badge-danger-color, $badge-danger-bg);
   }
 }
-
 
 /**
  * BADGES DISABLED COLORS

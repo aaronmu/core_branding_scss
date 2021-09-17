@@ -7,12 +7,10 @@
 $progress-tooltip-top:      -($tooltip-min-height + $tooltip-arrow-height + $progress-tooltip-offset + $progress-bar-padding);
 $progress-tooltip-bottom:   $progress-height - $progress-bar-padding + $tooltip-arrow-height + $progress-tooltip-offset;
 
-
 /**
  * PROGRESS
  * -------------------------------------------------------------------
  */
-
 
 /**
  * PROGRESS ELEMENTS
@@ -50,7 +48,6 @@ $progress-tooltip-bottom:   $progress-height - $progress-bar-padding + $tooltip-
   background-color: $brand-primary;
   height: $progress-height - ($progress-bar-padding * 2);
 }
-
 
 /**
  * PROGRESS MODIFIERS

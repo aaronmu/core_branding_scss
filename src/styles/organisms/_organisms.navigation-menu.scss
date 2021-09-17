@@ -12,7 +12,6 @@ $navigation-menu-submenu-inset:   var(--spacer-xs) !default;
 $navigation-menu-submenu-height:  $navigation-menu-undocked-width * 2 !default;
 $navigation-menu-animation-speed: $animation-duration !default;
 
-
 /**
  * NAVIGATION MENU
  * -------------------------------------------------------------------
@@ -196,6 +195,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 
     & > .o-menu__tab-header {
       @include a-button-outline($btn-primary-outline-color, $btn-primary-outline-border, true);
+
       align-items: center;
       color: $text-color-light;
       display: flex;
