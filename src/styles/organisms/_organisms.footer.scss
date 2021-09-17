@@ -6,7 +6,7 @@
 $footer-bg:               $rich-black !default;
 $footer-color:            $white !default;
 
-$footer-height:           var(--spacer-lg) !default;
+$footer-height:           var(--spacer-xl) !default;
 
 $footer-font-size-sm:     $font-size-sm !default;
 $footer-font-size-lg:     $font-size-sm !default;
@@ -55,7 +55,7 @@ $footer-line-height:      $line-height-paragraph !default;
 
   @include at($screen-sm) {
     font-size: rem($footer-font-size-lg);
-    padding: 0 var(--spacer-xl);
+    padding: 0 var(--spacer-xxl);
   }
 
   a {

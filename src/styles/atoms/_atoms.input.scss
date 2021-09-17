@@ -33,7 +33,7 @@ textarea {
 
   small {
     display: block;
-    margin: calc(var(--spacer-sm) / 2) 0;
+    margin: calc(var(--spacer-s) / 2) 0;
     text-align: left;
   }
 
@@ -98,13 +98,13 @@ textarea {
 
 .a-input__label {
   display: inline-block;
-  margin-bottom: calc(var(--spacer-sm) / 2);
+  margin-bottom: calc(var(--spacer-s) / 2);
   text-align: left;
 
   + .a-switch,
   + .a-input__checkbox,
   + .a-input__radio {
-    margin-top: calc(var(--spacer-sm) / 2);
+    margin-top: calc(var(--spacer-s) / 2);
   }
 }
 
@@ -166,23 +166,23 @@ textarea {
       right: 0;
       top: 50%;
       transform: translateY(-50%);
-      width: var(--spacer-lg);
+      width: var(--spacer-xl);
     }
 
     &.has-icon-right {
       .a-input__wrapper:before {
-        right: var(--spacer-md);
+        right: var(--spacer-l);
       }
 
       .a-input__wrapper {
         input {
-          padding-right: calc(var(--spacer-lg) + var(--spacer-md));
+          padding-right: calc(var(--spacer-xl) + var(--spacer-l));
         }
       }
     }
 
     input {
-      padding-right: var(--spacer-lg);
+      padding-right: var(--spacer-xl);
     }
   }
 
@@ -229,7 +229,7 @@ textarea {
     top: 50%;
     transform: translateY(-50%);
     user-select: none;
-    width: var(--spacer-lg);
+    width: var(--spacer-xl);
 
     &.is-clickable {
       align-items: center;
@@ -248,7 +248,7 @@ textarea {
   &.has-icon-left .a-input__wrapper {
     input,
     select {
-      padding-left: var(--spacer-lg);
+      padding-left: var(--spacer-xl);
     }
 
     > .ai {
@@ -259,7 +259,7 @@ textarea {
   &.has-icon-right .a-input__wrapper {
     input,
     select {
-      padding-right: var(--spacer-lg);
+      padding-right: var(--spacer-xl);
     }
 
     > .ai {

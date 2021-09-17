@@ -22,7 +22,7 @@
   border: none;
   display: flex;
   flex-direction: column;
-  height: var(--spacer-lg);
+  height: var(--spacer-xl);
   overflow: hidden;
   padding: 0;
 
@@ -63,13 +63,13 @@
 
   &.a-toggle--small {
     .a-toggle__button {
-      height: var(--spacer-md);
+      height: var(--spacer-l);
     }
   }
 
   &.a-toggle--large {
     .a-toggle__button {
-      height: var(--spacer-xl);
+      height: var(--spacer-xxl);
     }
   }
 }

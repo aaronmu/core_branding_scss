@@ -92,8 +92,8 @@
   }
 
   @include at($screen-xs) {
-    padding-bottom: var(--spacer-md);
-    padding-top: var(--spacer-md);
+    padding-bottom: var(--spacer-l);
+    padding-top: var(--spacer-l);
   }
 }
 
@@ -114,7 +114,7 @@
 }
 
 .m-alert--wcag {
-  padding-left: var(--spacer-lg);
+  padding-left: var(--spacer-xl);
   position: relative;
 
   &:before {
@@ -331,14 +331,14 @@
 }
 
 .d--with-overlay {
-  padding-top: var(--spacer-lg);
+  padding-top: var(--spacer-xl);
 
   .o-menu {
-    margin-bottom: calc(var(--spacer-xx) * -1);
+    margin-bottom: calc(var(--spacer-3xl) * -1);
   }
 
   @include at($screen-sm) {
-    padding-bottom: var(--spacer-xl);
+    padding-bottom: var(--spacer-xxl);
     padding-top: 0;
 
     .o-menu {
@@ -362,7 +362,7 @@
 
   &__row {
     display: grid;
-    grid-template-columns: var(--spacer-lg) auto;
+    grid-template-columns: var(--spacer-xl) auto;
     margin-bottom: calc(var(--spacer-xs) / 2); // [*GG]
 
     @include at($screen-sm) {

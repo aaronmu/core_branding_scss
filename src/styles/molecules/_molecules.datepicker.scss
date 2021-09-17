@@ -32,7 +32,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
 .m-datepicker {
   max-width: calc(var(--spacer) * 14);
   opacity: 0;
-  transform: translateY(calc(var(--spacer-lg) * -1));
+  transform: translateY(calc(var(--spacer-xl) * -1));
   transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
   visibility: hidden;
 
@@ -53,7 +53,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
 
 .m-datepicker__nav {
   display: flex;
-  height: var(--spacer-lg);
+  height: var(--spacer-xl);
 }
 
 .m-datepicker__title {
@@ -64,7 +64,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
   background-color: $datepicker-bg;
   border-left: 1px solid $datepicker-border;
   border-right: 1px solid $datepicker-border;
-  height: var(--spacer-lg);
+  height: var(--spacer-xl);
 }
 
 .m-datepicker__calendar {

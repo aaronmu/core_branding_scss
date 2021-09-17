@@ -21,7 +21,7 @@
   font-weight: $btn-font-weight;
   line-height: 1.25;
   margin: 0;
-  min-height: var(--spacer-lg);
+  min-height: var(--spacer-xl);
   padding: $btn-padding;
   text-align: center;
   text-decoration: none;
@@ -156,7 +156,7 @@
     content: '';
     display: block;
     height: rem(21px);
-    left: var(--spacer-sm);
+    left: var(--spacer-s);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -257,8 +257,8 @@
 
   &.a-button--small {
     font-size: rem($btn-font-size-sm);
-    min-height: var(--spacer-md);
-    padding: calc(var(--spacer-sm) / 2) var(--spacer);
+    min-height: var(--spacer-l);
+    padding: calc(var(--spacer-s) / 2) var(--spacer);
 
     .ai {
       font-size: rem($btn-icon-size-sm);
@@ -267,8 +267,8 @@
 
   &.a-button--large {
     font-size: rem($btn-font-size-lg);
-    min-height: var(--spacer-xl);
-    padding: var(--spacer-sm) var(--spacer);
+    min-height: var(--spacer-xxl);
+    padding: var(--spacer-s) var(--spacer);
 
     .ai {
       font-size: rem($btn-icon-size-lg);
@@ -295,12 +295,12 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: var(--spacer-lg);
+      width: var(--spacer-xl);
     }
   }
 
   &.has-icon-left {
-    padding-left: var(--spacer-lg);
+    padding-left: var(--spacer-xl);
 
     .ai {
       left: 0;
@@ -308,7 +308,7 @@
   }
 
   &.has-icon-right {
-    padding-right: var(--spacer-lg);
+    padding-right: var(--spacer-xl);
 
     .ai {
       right: 0;
@@ -336,15 +336,15 @@
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
-    width: var(--spacer-md);
+    width: var(--spacer-l);
   }
 
   &.has-icon-left {
-    padding-left: var(--spacer-md);
+    padding-left: var(--spacer-l);
   }
 
   &.has-icon-right {
-    padding-right: var(--spacer-md);
+    padding-right: var(--spacer-l);
   }
 }
 
@@ -352,15 +352,15 @@
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
-    width: var(--spacer-xl);
+    width: var(--spacer-xxl);
   }
 
   &.has-icon-left {
-    padding-left: var(--spacer-xl);
+    padding-left: var(--spacer-xxl);
   }
 
   &.has-icon-right {
-    padding-right: var(--spacer-xl);
+    padding-right: var(--spacer-xxl);
   }
 }
 
@@ -380,14 +380,14 @@
     padding: 0;
     position: relative;
     vertical-align: middle;
-    width: var(--spacer-lg);
+    width: var(--spacer-xl);
 
     .ai {
       left: 0;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: var(--spacer-lg);
+      width: var(--spacer-xl);
     }
   }
 }
@@ -401,18 +401,18 @@
 }
 
 .a-button--small.has-icon {
-  width: var(--spacer-md);
+  width: var(--spacer-l);
 
   .ai {
-    width: var(--spacer-md);
+    width: var(--spacer-l);
   }
 }
 
 .a-button--large.has-icon {
-  width: var(--spacer-xl);
+  width: var(--spacer-xxl);
 
   .ai {
-    width: var(--spacer-xl);
+    width: var(--spacer-xxl);
   }
 }
 

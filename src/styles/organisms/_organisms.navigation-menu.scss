@@ -4,7 +4,7 @@
  */
 
 $navigation-menu-border:          $border-color-light !default;
-$navigation-menu-mobile-height:   var(--spacer-xl) !default;
+$navigation-menu-mobile-height:   var(--spacer-xxl) !default;
 $navigation-menu-pane-width:      20rem !default;
 $navigation-menu-undocked-width:  15rem !default;
 $navigation-menu-docked-width:    $header-height !default;
@@ -257,7 +257,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
         position: relative;
 
         .o-menu__link {
-          margin-left: var(--spacer-sm);
+          margin-left: var(--spacer-s);
         }
 
         .o-menu__tab-title {
