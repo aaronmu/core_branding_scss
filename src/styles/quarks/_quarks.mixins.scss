@@ -15,9 +15,11 @@
     font-family: $_name;
     font-style: $_style;
     font-weight: $_weight;
+
     @if $_local {
       src: local($_name), url($_url + '.woff') format('woff'), url($_url + '.woff2') format('woff2');
-    } @else {
+    }
+    @else {
       src: url($_url + '.woff') format('woff'), url($_url + '.woff2') format('woff2');
     }
   }
@@ -40,9 +42,11 @@
 
     @if $_background != transparent and $_background != white {
       background-color: mix($_background, $black, 90%);
-    } @else if $_background == transparent {
+    }
+    @else if $_background == transparent {
       background-color: transparent;
-    } @else {
+    }
+    @else {
       background-color: mix($_background-hover, $white, 8%);
     }
   }
@@ -63,7 +67,8 @@
   @if $_transparent == false {
     background-color: rgba($white, .5);
     box-shadow: 0 0 0 1px $_border inset;
-  } @else {
+  }
+  @else {
     background-color: transparent;
   }
 
@@ -77,7 +82,8 @@
     @if $_transparent == false {
       background: mix($_border, $white, 4%);
       box-shadow: 0 0 0 1px mix($_border, $black, 85%) inset;
-    } @else {
+    }
+    @else {
       color: mix($black, $_color, 40%);
     }
   }
