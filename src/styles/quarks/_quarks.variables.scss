@@ -62,7 +62,7 @@ $brand-secondary:         $monza-400 !default;
  * -------------------------------------------------------------------
  */
 
-$text-color:              $gray-600 !default;
+$text-color:              $grey-600 !default;
 $text-color-light:        $grey-400 !default;
 $text-color-xlight:       $white !default;
 
@@ -70,7 +70,7 @@ $background-color:        $grey-200 !default;
 $background-color-light:  $grey-100 !default;
 
 $border-color:            $grey-400 !default;
-$border-color-light:      $grey-100 !default;
+$border-color-light:      $grey-300 !default;
 
 $overlay-color:           rgba($black, .75) !default;
 $selection-color:         mix($brand-primary, $white, 20%) !default;
@@ -348,11 +348,11 @@ $input-disabled:          $state-disabled !default;
 $input-disabled-border:   $grey-200 !default;
 $input-disabled-bg:       $grey-100 !default;
 $input-readonly:          $text-color !default;
-$input-readonly-border:   $grey-100 !default;
+$input-readonly-border:   $grey-300 !default;
 $input-readonly-bg:       $white !default;
 $input-placeholder:       $grey-400 !default;
 $input-icon:              $grey-400 !default;
-$input-icon-hover:        $gray-600 !default;
+$input-icon-hover:        $grey-600 !default;
 $input-required:          $state-danger !default;
 
 $input-success-border:            mix($black, $state-success, 40%) !default;
@@ -492,7 +492,7 @@ $label-height:            $spacer-sm !default;
 $label-line-height:       $label-height !default;
 
 $label-default-color:     $text-color !default;
-$label-default-border:    $grey-100 !default;
+$label-default-border:    $grey-300 !default;
 
 $label-primary-color:     $label-default-color !default;
 $label-primary-border:    $brand-primary !default;
@@ -543,6 +543,6 @@ $overlay-button-color-hover:      $grey-200 !default;
  */
 
 $slideshow-max-height:            37.5rem !default;
-$slideshow-bg:                    $gray-600 !default;
+$slideshow-bg:                    $grey-600 !default;
 $slideshow-footer-color:          $text-color !default;
 $slideshow-footer-color-light:    $white !default;

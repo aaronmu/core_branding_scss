@@ -4,7 +4,7 @@
  */
 
 .o-leaflet {
-  border: 1px solid $grey-100;
+  border: 1px solid $grey-300;
   display: flex;
   height: 1px;
   min-height: 600px;
@@ -31,7 +31,7 @@
     width: 0;
 
     &.has-content {
-      border-right: solid 1px $grey-100;
+      border-right: solid 1px $grey-300;
       padding: var(--spacer-s);
       width: 300px;
     }
@@ -106,7 +106,7 @@
     z-index: layer('overlay');
 
     .o-leaflet__content {
-      border: solid 1px $grey-100;
+      border: solid 1px $grey-300;
       box-shadow: .75rem .75rem 0 rgba($black, .1);
       left: var(--spacer-s);
       max-height: calc(100% - 160px);
