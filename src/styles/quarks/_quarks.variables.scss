@@ -7,19 +7,60 @@
 @import 'quarks.functions';
 @import 'quarks.mixins';
 
+
 /**
- * SPECIFIC COLOR PALETTE
+ * THEME COLORS
  * -------------------------------------------------------------------
  */
 
-$brand-primary:           $endeavour !default;
-$brand-secondary:         $monza !default;
+$theme1-600:              $endeavour-600 !default;
+$theme1-500:              $endeavour-500 !default;
+$theme1-400:              $endeavour-400 !default;
+$theme1-300:              $endeavour-300 !default;
+$theme1-200:              $endeavour-200 !default;
+$theme1-100:              $endeavour-100 !default;
 
-$state-success:           $mantis-darker !default;
-$state-info:              $endeavour !default;
-$state-warning:           $supernova-dark !default;
-$state-danger:            $cinnabar-dark !default;
+$success-600:             $mantis-600 !default;
+$success-500:             $mantis-500 !default;
+$success-400:             $mantis-400 !default;
+$success-300:             $mantis-300 !default;
+$success-200:             $mantis-200 !default;
+$success-100:             $mantis-100 !default;
+
+$warning-600:             $supernova-600 !default;
+$warning-500:             $supernova-500 !default;
+$warning-400:             $supernova-400 !default;
+$warning-300:             $supernova-300 !default;
+$warning-200:             $supernova-200 !default;
+$warning-100:             $supernova-100 !default;
+
+$danger-600:              $cinnabar-600 !default;
+$danger-500:              $cinnabar-500 !default;
+$danger-400:              $cinnabar-400 !default;
+$danger-300:              $cinnabar-300 !default;
+$danger-200:              $cinnabar-200 !default;
+$danger-100:              $cinnabar-100 !default;
+
+$state-info:              $theme1-400 !default;
+$state-success:           $success-600 !default;
+$state-warning:           $warning-500 !default;
+$state-danger:            $danger-500 !default;
 $state-disabled:          $grey-dark !default;
+
+
+/**
+ * DEPRECATED THEME COLORS
+ * -------------------------------------------------------------------
+ */
+
+$brand-primary:           $theme1-400 !default;
+$brand-secondary:         $monza-400 !default;
+
+
+/**
+ * OTHER THEME COLORS
+ * -------------------------------------------------------------------
+ */
 
 $text-color:              $black !default;
 $text-color-light:        $grey-dark !default;
@@ -290,7 +331,7 @@ $btn-transparent-color:        $brand-primary !default;
 $btn-transparent-bg:           transparent !default;
 
 $btn-official-color:           $btn-default-color !default;
-$btn-official-bg:              $monza !default;
+$btn-official-bg:              $monza-400 !default;
 
 
 /**
