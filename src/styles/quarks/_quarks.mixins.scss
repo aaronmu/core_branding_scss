@@ -59,7 +59,6 @@
  * -------------------------------------------------------------------
  */
 
-
 @mixin a-button-outline($_color: $btn-primary-outline-color, $_border: $btn-primary-outline-border, $_transparent: false) {
   @if $_transparent == false {
     background-color: rgba($white, .5);
