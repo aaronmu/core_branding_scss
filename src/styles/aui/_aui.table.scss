@@ -41,7 +41,7 @@
     }
 
     &.active {
-      background-color: $grey-100;
+      background-color: $gray-100;
     }
 
     .a-button-transparent.has-icon:disabled {
@@ -56,7 +56,7 @@
  */
 
 .a-table-bar {
-  background-color: $grey-200;
+  background-color: $gray-200;
   display: flex;
   padding: calc(var(--spacer) / 2);
 
