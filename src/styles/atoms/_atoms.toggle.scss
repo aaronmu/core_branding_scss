@@ -55,19 +55,19 @@
  */
 
 .a-toggle {
-  &.a-toggle--tiny {
+  &.a-toggle--xs {
     .a-toggle__button {
       height: var(--spacer);
     }
   }
 
-  &.a-toggle--small {
+  &.a-toggle--s {
     .a-toggle__button {
       height: var(--spacer-l);
     }
   }
 
-  &.a-toggle--large {
+  &.a-toggle--l {
     .a-toggle__button {
       height: var(--spacer-xxl);
     }
