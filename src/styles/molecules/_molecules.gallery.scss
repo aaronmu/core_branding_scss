@@ -8,7 +8,6 @@ $gallery-gutter-row:          $gallery-gutter-col !default;
 
 $gallery-item-size:           100% / 3 !default;
 
-
 /**
  * GALLERY
  * -------------------------------------------------------------------
@@ -22,7 +21,6 @@ $gallery-item-size:           100% / 3 !default;
   margin-left: calc(#{$gallery-gutter-col} / -2);
   width: calc(100% + #{$gallery-gutter-col});
 }
-
 
 /**
  * GALLERY ELEMENTS

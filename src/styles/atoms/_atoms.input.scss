@@ -6,7 +6,6 @@
  * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
-
 /**
  * INPUT FONT-FAMILY
  * -------------------------------------------------------------------
@@ -21,7 +20,6 @@ textarea {
   font: inherit;
   margin: 0;
 }
-
 
 /**
  * INPUT PLACEHOLDER
@@ -67,7 +65,6 @@ textarea {
   @extend %a-input;
 }
 
-
 /**
  * INPUT
  * -------------------------------------------------------------------
@@ -81,7 +78,6 @@ textarea {
   }
 }
 
-
 /**
  * INPUT WRAPPER
  * -------------------------------------------------------------------
@@ -90,7 +86,6 @@ textarea {
 .a-input__wrapper {
   position: relative;
 }
-
 /**
  * INPUT LABEL
  * -------------------------------------------------------------------
@@ -108,7 +103,6 @@ textarea {
   }
 }
 
-
 /**
  * INPUT LABEL MODIFIERS
  * -------------------------------------------------------------------
@@ -118,7 +112,6 @@ textarea {
   margin-right: var(--spacer-xs);
   margin-top: calc(#{$line-height-base * $font-size-base} - 1px);
 }
-
 
 /**
  * INPUT STATES
@@ -192,7 +185,6 @@ textarea {
   }
 }
 
-
 /**
  * INPUT WITH ICON LEFT OR RIGHT
  * -------------------------------------------------------------------
@@ -210,7 +202,6 @@ textarea {
     }
   }
 }
-
 
 /**
  * INPUT WITH ICON LEFT OR RIGHT
@@ -268,7 +259,6 @@ textarea {
   }
 }
 
-
 /**
  * INLINE INPUT
  * -------------------------------------------------------------------
@@ -287,7 +277,6 @@ textarea {
 .a-input__wrapper--inline {
   display: inline-block;
 }
-
 
 /**
  * INPUT SIZES

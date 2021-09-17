@@ -18,12 +18,10 @@ $kbd-bg:                  $grey-400 !default;
 $kbd-font-size:          .875rem !default;
 $kbd-padding:             $code-padding !default;
 
-
 /**
  * CODE
  * -------------------------------------------------------------------
  */
-
 /**
  * STANDARD CODE
  * -------------------------------------------------------------------
@@ -35,7 +33,6 @@ pre,
 samp {
   font-family: $font-family-monospace;
 }
-
 
 /**
  * Inline code
@@ -54,7 +51,6 @@ code {
   }
 }
 
-
 /**
  * Keyboard input
  */
@@ -69,7 +65,6 @@ kbd {
     padding: 0;
   }
 }
-
 
 /**
  * CODE BLOCK
@@ -95,12 +90,10 @@ kbd {
   @extend %a-pre;
 }
 
-
 /**
  * CODE MODIFIERS
  * -------------------------------------------------------------------
  */
-
 /**
  * Scrollable code block
  */

@@ -6,7 +6,6 @@
 $link-list-item-padding:    calc(var(--spacer) / 3 * 2) var(--spacer) !default;
 $link-list-hover:           $grey-100 !default;
 
-
 /**
  * SELECTABLE LIST
  * -------------------------------------------------------------------
@@ -48,7 +47,6 @@ $link-list-hover:           $grey-100 !default;
   }
 }
 
-
 /**
  * SELECTABLE LIST ELEMENTS
  * -------------------------------------------------------------------
@@ -60,7 +58,6 @@ $link-list-hover:           $grey-100 !default;
   padding: $link-list-item-padding;
   transition: color $animation-duration $animation-easing;
 }
-
 
 /**
  * LINK LIST MODIFIERS

@@ -8,7 +8,6 @@ $legend-color:        $grey-400 !default;
 $legend-padding:      0 calc(var(--spacer) / 3) 0 0 !default;
 $legend-size:         $font-size-lg !default;
 
-
 /**
  * FORM ELEMENTS
  * -------------------------------------------------------------------
@@ -17,7 +16,6 @@ $legend-size:         $font-size-lg !default;
 .a-form .a-input:not(:last-child) {
   margin-bottom: var(--spacer);
 }
-
 
 /**
  * FIELDSET

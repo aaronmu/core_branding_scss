@@ -19,7 +19,6 @@ $upload-file-bg:              $background-color-light !default;
 $upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
 $upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
 
-
 /**
  * UPLOAD
  * -------------------------------------------------------------------
@@ -48,7 +47,6 @@ $upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
     }
   }
 }
-
 /**
  * UPLOAD ELEMENTS
  * -------------------------------------------------------------------

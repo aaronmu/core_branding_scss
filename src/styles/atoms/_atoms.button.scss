@@ -6,7 +6,6 @@
  * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
-
 /**
  * BUTTON PLACEHOLDER
  * -------------------------------------------------------------------
@@ -51,7 +50,6 @@
   @extend %a-button;
 }
 
-
 /**
  * BUTTON COLORS
  * -------------------------------------------------------------------
@@ -85,7 +83,6 @@
 .a-button.has-icon.a-button--default {
   @include a-button($btn-default-color, $btn-default-bg);
 }
-
 
 /**
  * SOCIAL BUTTON COLORS
@@ -138,7 +135,6 @@
   }
 }
 
-
 /**
  * OFFICIAL ANTWERP BUTTON
  * -------------------------------------------------------------------
@@ -164,7 +160,6 @@
   }
 }
 
-
 /**
  * BUTTON NEGATIVE COLORS
  * -------------------------------------------------------------------
@@ -177,7 +172,6 @@
     @include a-button($btn-secondary-negative-color, $btn-secondary-negative-bg);
   }
 }
-
 
 /**
  * BUTTON OUTLINE COLORS
@@ -203,7 +197,6 @@
     @include a-button-outline($btn-danger-outline-color, $btn-danger-outline-border);
   }
 }
-
 
 /**
  * BUTTON ICON TRANSPARENT COLORS
@@ -233,7 +226,6 @@
     @include a-button-outline($btn-default-outline-color, $btn-default-outline-border, true);
   }
 }
-
 
 /**
  * BUTTON SIZES
@@ -275,7 +267,6 @@
     }
   }
 }
-
 
 /**
  * BUTTON WITH ICON LEFT OR RIGHT
@@ -364,7 +355,6 @@
   }
 }
 
-
 /**
  * BUTTON ICONS
  * -------------------------------------------------------------------
@@ -415,7 +405,6 @@
     width: var(--spacer-xxl);
   }
 }
-
 
 /**
  * FULL WIDTH BUTTON

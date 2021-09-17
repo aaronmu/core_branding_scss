@@ -16,7 +16,6 @@ $range-slider-value-height:     rem($font-size-base);
 $range-slider-tooltip-top:      (($range-slider-handle-size * 2 - $range-slider-height) / 2) - ($tooltip-min-height + $tooltip-arrow-height + $range-slider-offset);
 $range-slider-value-top:        (($range-slider-handle-size * 2 - $range-slider-height) / 2) - ($range-slider-value-height + $range-slider-offset);
 
-
 /**
  * RANGE SLIDER
  * -------------------------------------------------------------------
@@ -30,7 +29,6 @@ $range-slider-value-top:        (($range-slider-handle-size * 2 - $range-slider-
   padding: $range-slider-padding;
   width: 100%;
 }
-
 
 /**
  * RANGE SLIDER ELEMENTS

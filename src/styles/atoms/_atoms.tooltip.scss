@@ -3,7 +3,6 @@
  * -------------------------------------------------------------------
  * This component has shared variables. You can find them in _quarks.variables.scss.
  */
-
 /**
  * TOOLTIP PLACEHOLDER
  * -------------------------------------------------------------------
@@ -33,7 +32,6 @@
   @extend %a-tooltip;
 }
 
-
 /**
  * TOOLTIP COLORS
  * -------------------------------------------------------------------
@@ -50,7 +48,6 @@
     @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg);
   }
 }
-
 
 /**
  * TOOLTIP POSITIONS

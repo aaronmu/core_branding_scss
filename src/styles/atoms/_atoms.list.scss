@@ -9,7 +9,6 @@ ol,
 dl {
   line-height: 1.3;
 }
-
 /**
  * STANDARD LIST
  * -------------------------------------------------------------------
@@ -34,13 +33,11 @@ dl {
 .a-list {
   @extend %a-list;
 }
-
 /**
  * LIST PLACEHOLDERS
  * -------------------------------------------------------------------
  * List without default padding and standard list styling.
  */
-
 
 /**
  * List without default padding and standard list styling.
@@ -62,7 +59,6 @@ dl {
   @extend %a-list--reset;
 }
 
-
 /**
  * List without standard list styling.
  */
@@ -80,7 +76,6 @@ dl {
   @extend %a-list--unstyled;
 }
 
-
 /**
  * List without default padding.
  */
@@ -97,7 +92,6 @@ dl {
 .a-list--flattened {
   @extend %a-list--flattened;
 }
-
 
 /**
  * List with more padding.
@@ -126,12 +120,10 @@ dl {
   @extend %a-list--primary;
 }
 
-
 /**
  * LIST MODIFIERS
  * -------------------------------------------------------------------
  */
-
 
 /**
  * List with list items separated by a border.
@@ -156,7 +148,6 @@ dl {
     }
   }
 }
-
 /**
  * List with list items including an icon.
  */
@@ -175,7 +166,6 @@ dl {
     margin-left: var(--spacer-xs);
   }
 }
-
 
 /**
  * DEFINITION LIST
