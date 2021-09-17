@@ -295,7 +295,7 @@ textarea {
  */
 
 .a-input {
-  &.a-input--small {
+  &.a-input--s {
     input {
       min-height: $input-height-sm;
       padding: $input-padding-sm;
@@ -315,7 +315,7 @@ textarea {
     }
   }
 
-  &.a-input--large {
+  &.a-input--l {
     input {
       min-height: $input-height-lg;
       padding: $input-padding-lg;

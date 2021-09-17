@@ -255,11 +255,11 @@
 .d-flyout {
   margin-bottom: 12rem;
 
-  &--sm {
+  &--s {
     margin-bottom: 14rem;
   }
 
-  &--md {
+  &--l {
     margin-bottom: 14rem;
 
     @include at($screen-sm) {
@@ -267,7 +267,7 @@
     }
   }
 
-  &--lg {
+  &--xl {
     margin-bottom: 14rem;
 
     @include at($screen-sm) {

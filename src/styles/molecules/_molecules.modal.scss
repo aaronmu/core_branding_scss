@@ -75,7 +75,7 @@ $modal-padding:           var(--spacer) !default;
  * -------------------------------------------------------------------
  */
 
-.m-modal--large {
+.m-modal--l {
 
   @include at($screen-xs) {
     max-width: $modal-width-large;

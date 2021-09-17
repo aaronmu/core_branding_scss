@@ -140,7 +140,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
  */
 
 .m-pagination {
-  &.m-pagination--small {
+  &.m-pagination--s {
     > li {
       height: $pagination-size-sm;
       line-height: $pagination-size-sm;
@@ -155,7 +155,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
 }
 
 .m-pagination {
-  &.m-pagination--large {
+  &.m-pagination--l {
     > li {
       height: $pagination-size-lg;
       line-height: $pagination-size-lg;

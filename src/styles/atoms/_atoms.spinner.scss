@@ -45,14 +45,14 @@ $spinner-animation-timing:    linear !default;
   text-align: center;
 }
 
-.a-spinner--sm {
+.a-spinner--s {
   &:before {
     height: rem($spinner-size-sm);
     width: rem($spinner-size-sm);
   }
 }
 
-.a-spinner--lg {
+.a-spinner--l {
   &:before {
     height: rem($spinner-size-lg);
     width: rem($spinner-size-lg);
