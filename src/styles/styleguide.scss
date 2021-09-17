@@ -215,13 +215,14 @@
 }
 
 .d-spacing-utility {
-  background: repeating-linear-gradient(
-    45deg,
-    $white,
-    $white 10px,
-    $grey-100 10px,
-    $grey-100 20px
-  );
+  background:
+    repeating-linear-gradient(
+      45deg,
+      $white,
+      $white 10px,
+      $grey-100 10px,
+      $grey-100 20px
+    );
   box-shadow: 0 0 0 1px $grey-200 inset;
   display: inline-block;
   padding: calc(var(--spacer) / 6);
