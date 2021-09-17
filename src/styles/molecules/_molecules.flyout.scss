@@ -69,13 +69,13 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
  */
 
 .m-flyout--full .m-flyout__content,
-.m-flyout--lg .m-flyout__content,
-.m-flyout--md .m-flyout__content,
-.m-flyout--sm .m-flyout__content {
+.m-flyout--xl .m-flyout__content,
+.m-flyout--l .m-flyout__content,
+.m-flyout--s .m-flyout__content {
   min-width: 100%;
 }
 
-.m-flyout--lg .m-flyout__content {
+.m-flyout--xl .m-flyout__content {
   @include at($screen-md) {
     width: $flyout-max-width-lg;
   }
@@ -87,7 +87,7 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
   width: $flyout-max-width-sm;
 }
 
-.m-flyout--md .m-flyout__content {
+.m-flyout--l .m-flyout__content {
   @include at($screen-sm) {
     width: $flyout-max-width-md;
   }
@@ -95,7 +95,7 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
   width: $flyout-max-width-sm;
 }
 
-.m-flyout--sm .m-flyout__content {
+.m-flyout--s .m-flyout__content {
   width: $flyout-max-width-sm;
 }
 
