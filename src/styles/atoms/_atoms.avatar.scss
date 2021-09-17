@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-$avatar-bg:               $grey-dark !default;
+$avatar-bg:               $grey-400 !default;
 $avatar-color:            $white !default;
 
 $avatar-sm:               calc(var(--spacer) * 1.5) !default; // 36px
@@ -50,7 +50,7 @@ $avatar-xl:               calc(var(--spacer) * 4) !default; // 96px
 a .a-avatar {
 
   &:before {
-    background-color: $rich-black;
+    background-color: $black;
     content: '';
     height: 100%;
     left: 0;

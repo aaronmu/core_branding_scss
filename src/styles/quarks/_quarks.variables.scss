@@ -45,7 +45,7 @@ $state-info:              $theme1-400 !default;
 $state-success:           $success-600 !default;
 $state-warning:           $warning-500 !default;
 $state-danger:            $danger-500 !default;
-$state-disabled:          $grey-dark !default;
+$state-disabled:          $grey-400 !default;
 
 
 /**
@@ -62,17 +62,17 @@ $brand-secondary:         $monza-400 !default;
  * -------------------------------------------------------------------
  */
 
-$text-color:              $black !default;
-$text-color-light:        $grey-dark !default;
+$text-color:              $grey-600 !default;
+$text-color-light:        $grey-400 !default;
 $text-color-xlight:       $white !default;
 
-$background-color:        $grey-light !default;
-$background-color-light:  $grey-lighter !default;
+$background-color:        $grey-200 !default;
+$background-color-light:  $grey-100 !default;
 
-$border-color:            $grey-dark !default;
-$border-color-light:      $grey !default;
+$border-color:            $grey-400 !default;
+$border-color-light:      $grey-300 !default;
 
-$overlay-color:           rgba($rich-black, .75) !default;
+$overlay-color:           rgba($black, .75) !default;
 $selection-color:         mix($brand-primary, $white, 20%) !default;
 
 
@@ -242,10 +242,10 @@ $icon-size-lg:            28px !default;
  * -------------------------------------------------------------------
  */
 
-$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($rich-black, .1) !default;
-$box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($rich-black, .1) !default;
-$box-shadow-top:          0 $spacer / -2 0 rgba($rich-black, .1) !default;
-$box-shadow-bottom:       0 $spacer / 2 0 rgba($rich-black, .1) !default;
+$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
+$box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($black, .1) !default;
+$box-shadow-top:          0 $spacer / -2 0 rgba($black, .1) !default;
+$box-shadow-bottom:       0 $spacer / 2 0 rgba($black, .1) !default;
 
 
 /**
@@ -256,7 +256,7 @@ $box-shadow-bottom:       0 $spacer / 2 0 rgba($rich-black, .1) !default;
 
 $link-color:              $brand-primary !default;
 $link-background-color:   mix($brand-primary, $white, 10%) !default;
-$link-hover-color:        mix($link-color, $rich-black, 85%) !default;
+$link-hover-color:        mix($link-color, $black, 85%) !default;
 
 
 /**
@@ -291,7 +291,7 @@ $btn-icon-size:                $icon-size-base !default;
 $btn-icon-size-lg:             $icon-size-lg !default;
 
 $btn-default-color:            $white !default;
-$btn-default-bg:               $grey-dark !default;
+$btn-default-bg:               $grey-400 !default;
 $btn-default-outline-color:    $btn-default-bg !default;
 $btn-default-outline-border:   $btn-default-bg !default;
 
@@ -325,7 +325,7 @@ $btn-danger-outline-color:     $btn-danger-bg !default;
 $btn-danger-outline-border:    $btn-danger-bg !default;
 
 $btn-disabled-color:           $state-disabled !default;
-$btn-disabled-bg:              $grey-lighter !default;
+$btn-disabled-bg:              $grey-100 !default;
 
 $btn-transparent-color:        $brand-primary !default;
 $btn-transparent-bg:           transparent !default;
@@ -345,25 +345,25 @@ $input-bg:                $white !default;
 $input-border:            $border-color !default;
 $input-border-focus:      rgb(192, 223, 254) !default; // Remove this in a later version
 $input-disabled:          $state-disabled !default;
-$input-disabled-border:   $grey-light !default;
-$input-disabled-bg:       $grey-lighter !default;
+$input-disabled-border:   $grey-200 !default;
+$input-disabled-bg:       $grey-100 !default;
 $input-readonly:          $text-color !default;
-$input-readonly-border:   $grey !default;
+$input-readonly-border:   $grey-300 !default;
 $input-readonly-bg:       $white !default;
-$input-placeholder:       $grey-dark !default;
-$input-icon:              $grey-dark !default;
-$input-icon-hover:        $black !default;
+$input-placeholder:       $grey-400 !default;
+$input-icon:              $grey-400 !default;
+$input-icon-hover:        $grey-600 !default;
 $input-required:          $state-danger !default;
 
-$input-success-border:            mix($rich-black, $state-success, 40%) !default;
+$input-success-border:            mix($black, $state-success, 40%) !default;
 $input-success-border-focus:      mix($state-success, $white, 25%) !default; // Remove this in a later version
 $input-success-icon:              $state-success !default;
 
-$input-warning-border:            mix($rich-black, $state-warning, 40%) !default;
+$input-warning-border:            mix($black, $state-warning, 40%) !default;
 $input-warning-border-focus:      mix($state-warning, $white, 25%) !default; // Remove this in a later version
 $input-warning-icon:              $state-warning !default;
 
-$input-danger-border:             mix($rich-black, $state-danger, 40%) !default;
+$input-danger-border:             mix($black, $state-danger, 40%) !default;
 $input-danger-border-focus:       mix($state-danger, $white, 25%) !default; // Remove this in a later version
 $input-danger-icon:               $state-danger !default;
 
@@ -404,14 +404,14 @@ $switch-label:            $text-color !default;
 $switch-bg:               $input-bg !default;
 $switch-border:           $input-border !default;
 
-$switch-disabled:         $grey-lighter !default;
+$switch-disabled:         $grey-100 !default;
 $switch-disabled-label:   $state-disabled !default;
-$switch-disabled-border:  $grey-light !default;
+$switch-disabled-border:  $grey-200 !default;
 $switch-disabled-bg:      $switch-disabled-label !default;
 
 $switch-handle-width:     ($switch-width - .5rem) / 2 !default;
 
-$switch-handle-bg:        $grey-dark !default;
+$switch-handle-bg:        $grey-400 !default;
 $switch-handle-bg-active: $brand-primary !default;
 
 
@@ -492,7 +492,7 @@ $label-height:            $spacer-sm !default;
 $label-line-height:       $label-height !default;
 
 $label-default-color:     $text-color !default;
-$label-default-border:    $grey !default;
+$label-default-border:    $grey-300 !default;
 
 $label-primary-color:     $label-default-color !default;
 $label-primary-border:    $brand-primary !default;
@@ -522,7 +522,7 @@ $header-height:           $spacer-lg !default;
 $header-bg:               $white !default;
 $header-border:           $border-color-light !default;
 $header-btn-bg:           $white !default;
-$header-btn-color:        $grey-dark !default;
+$header-btn-color:        $grey-400 !default;
 
 
 /**
@@ -534,7 +534,7 @@ $overlay-bg:                      $overlay-color !default;
 
 $overlay-button-size:             $icon-size-lg !default;
 $overlay-button-color:            $white !default;
-$overlay-button-color-hover:      $grey-light !default;
+$overlay-button-color-hover:      $grey-200 !default;
 
 
 /**
@@ -543,6 +543,6 @@ $overlay-button-color-hover:      $grey-light !default;
  */
 
 $slideshow-max-height:            37.5rem !default;
-$slideshow-bg:                    $black !default;
+$slideshow-bg:                    $grey-600 !default;
 $slideshow-footer-color:          $text-color !default;
 $slideshow-footer-color-light:    $white !default;
