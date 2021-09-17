@@ -245,7 +245,7 @@
 .a-button-outline,
 .a-button-transparent {
 
-  &.a-button--tiny {
+  &.a-button--xs {
     font-size: rem($btn-font-size-ti);
     min-height: var(--spacer);
     padding: calc(var(--spacer-xs) / 4) var(--spacer-xs) calc(var(--spacer-xs) / 3);
@@ -255,7 +255,7 @@
     }
   }
 
-  &.a-button--small {
+  &.a-button--s {
     font-size: rem($btn-font-size-sm);
     min-height: var(--spacer-l);
     padding: calc(var(--spacer-s) / 2) var(--spacer);
@@ -265,7 +265,7 @@
     }
   }
 
-  &.a-button--large {
+  &.a-button--l {
     font-size: rem($btn-font-size-lg);
     min-height: var(--spacer-xxl);
     padding: var(--spacer-s) var(--spacer);
@@ -316,7 +316,7 @@
   }
 }
 
-.a-button--tiny {
+.a-button--xs {
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
@@ -332,7 +332,7 @@
   }
 }
 
-.a-button--small {
+.a-button--s {
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
@@ -348,7 +348,7 @@
   }
 }
 
-.a-button--large {
+.a-button--l {
 
   &.has-icon-left .ai,
   &.has-icon-right .ai {
@@ -392,7 +392,7 @@
   }
 }
 
-.a-button--tiny.has-icon {
+.a-button--xs.has-icon {
   width: var(--spacer);
 
   .ai {
@@ -400,7 +400,7 @@
   }
 }
 
-.a-button--small.has-icon {
+.a-button--s.has-icon {
   width: var(--spacer-l);
 
   .ai {
@@ -408,7 +408,7 @@
   }
 }
 
-.a-button--large.has-icon {
+.a-button--l.has-icon {
   width: var(--spacer-xxl);
 
   .ai {
@@ -418,11 +418,11 @@
 
 
 /**
- * BLOCK BUTTON
+ * FULL WIDTH BUTTON
  * -------------------------------------------------------------------
  */
 
-.a-button--block {
+.a-button--full {
   @include at($screen-xs) {
     display: block;
     width: 100%;
