@@ -383,7 +383,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 
   .o-navigation-pane__wrapper {
     background: $white;
-    box-shadow: 0 -.75rem 0 rgba($rich-black, .1);
+    box-shadow: 0 -.75rem 0 rgba($black, .1);
     margin-bottom: -1px;
     max-height: calc(100vh - #{$header-height} - #{$navigation-menu-mobile-height});
     min-height: var(--spacer); // make up for the box shadow to be visible, even when hidden

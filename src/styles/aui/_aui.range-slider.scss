@@ -24,7 +24,7 @@
     z-index: layer('base');
 
     .m-range-slider__step {
-      background-color: $grey;
+      background-color: $grey-100;
       border-radius: 50%;
       height: ($range-slider-inner-height - (2 * $range-slider-padding));
       margin: $range-slider-padding;

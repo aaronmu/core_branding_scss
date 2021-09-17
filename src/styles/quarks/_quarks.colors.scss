@@ -112,36 +112,25 @@ $hollywood-cerise-100:       #f5dadf !default;
 
 
 /**
- * GRAY COLOR PALETTE
- * -------------------------------------------------------------------
- * Collection of warm gray colors
- */
-
-$rich-black:                  #000 !default;
-$warm-gray-11:                #6e6259 !default;
-$warm-gray-8:                 #8c8279 !default;
-$warm-gray-5:                 #aca39a !default;
-$warm-gray-2:                 #cbc4bc !default;
-$white:                       #fff !default;
-
-
-/**
- * WEB GRAYSCALE COLOR PALETTE
+ * GRAYSCALE COLOR PALETTE
  * -------------------------------------------------------------------
  * Collection of grayscale colors
  */
 
-$black:                        #141414;
-$gray-darker:                  #424242 !default;
-$grey-darker:                  $gray-darker;
-$gray-dark:                    #6f6f6f !default;
-$grey-dark:                    $gray-dark;
-$gray:                         #949494 !default;
-$grey:                         $gray;
-$gray-light:                   #d8d8d8 !default;
-$grey-light:                   $gray-light;
-$gray-lighter:                 #f3f3f3 !default;
-$grey-lighter:                 $gray-lighter;
+$black:                      #000 !default;
+$gray-600:                   #141414 !default;
+$grey-600:                   $gray-600;
+$gray-500:                   #424242 !default;
+$grey-500:                   $gray-500;
+$gray-400:                   #6f6f6f !default;
+$grey-400:                   $gray-400;
+$gray-300:                   #949494 !default;
+$grey-300:                   $gray-300;
+$gray-200:                   #d8d8d8 !default;
+$grey-200:                   $gray-200;
+$gray-100:                   #f3f3f3 !default;
+$grey-100:                   $gray-100;
+$white:                      #fff !default;
 
 
 /**

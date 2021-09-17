@@ -102,7 +102,7 @@
 }
 
 .d-file {
-  color: $grey-dark;
+  color: $grey-400;
   display: inline-block;
   font-weight: bold;
   margin-top: calc(var(--spacer-xs) / 6);
@@ -169,7 +169,7 @@
 
       &.d-white {
         .d-color {
-          box-shadow: 0 0 0 1px $grey-light inset;
+          box-shadow: 0 0 0 1px $grey-200 inset;
         }
       }
 
@@ -211,7 +211,7 @@
   padding: var(--spacer);
 
   &.d-u-bg-white {
-    box-shadow: 0 0 0 1px $grey-light inset;
+    box-shadow: 0 0 0 1px $grey-200 inset;
   }
 }
 
@@ -220,15 +220,15 @@
     45deg,
     $white,
     $white 10px,
-    $grey-lighter 10px,
-    $grey-lighter 20px
+    $grey-100 10px,
+    $grey-100 20px
   );
-  box-shadow: 0 0 0 1px $grey-light inset;
+  box-shadow: 0 0 0 1px $grey-200 inset;
   display: inline-block;
   padding: calc(var(--spacer) / 6);
 
   strong {
-    background-color: rgba($rich-black, .6);
+    background-color: rgba($black, .6);
     display: inline-block;
     padding: rem(1px) rem(4px) rem(2px);
   }
@@ -236,7 +236,7 @@
 
 .d-u-text-xlight,
 .d-u-text-warning {
-  background-color: $black;
+  background-color: $gray-600;
   padding: calc(var(--spacer) / 4);
 }
 
@@ -425,6 +425,6 @@
   .hljs-number,
   .hljs-params,
   .hljs-type {
-    color: mix($fix-yellow, $rich-black, 95%) !important;
+    color: mix($fix-yellow, $black, 95%) !important;
   }
 }
