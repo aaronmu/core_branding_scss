@@ -11,10 +11,10 @@ $nav-color:                   $text-color !default;
 $nav-color-hover:             $brand-primary !default;
 $nav-color-active:            $nav-color-hover !default;
 $nav-bg:                      transparent !default;
-$nav-bg-hover:                $grey-100 !default;
+$nav-bg-hover:                $gray-100 !default;
 $nav-bg-active:               $nav-bg !default;
 $nav-padding:                 rem(13px) var(--spacer) !default;
-$nav-bg-disabled:             $grey-100 !default;
+$nav-bg-disabled:             $gray-100 !default;
 $nav-color-disabled:          $state-disabled !default;
 $nav-tab-color-disabled:      $nav-color-disabled !default;
 
