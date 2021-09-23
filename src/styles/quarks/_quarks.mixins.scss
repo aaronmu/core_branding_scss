@@ -90,7 +90,7 @@
 
   &:disabled {
     background: $btn-disabled-bg;
-    box-shadow: 0 0 0 1px $input-disabled-border inset;
+    box-shadow: 0 0 0 1px $btn-disabled-border inset;
     color: $btn-disabled-color;
     cursor: not-allowed;
   }
@@ -101,29 +101,42 @@
  * -------------------------------------------------------------------
  */
 
-@mixin a-input($_color: $input-color, $_background: $input-bg, $_border: $input-border) {
+@mixin a-input(
+  $_color,
+  $_bg-color,
+  $_border-color,
+  $_placeholder-color,
+
+  $_disabled-color,
+  $_disabled-bg-color,
+  $_disabled-border-color,
+
+  $_readonly-color,
+  $_readonly-bg-color,
+  $_readonly-border-color
+) {
   input,
   select,
   textarea {
     @include a-input-placeholder {
-      color: $input-placeholder;
+      color: $_placeholder-color;
     }
 
-    background-color: $_background;
-    border: 1px solid $_border;
+    background-color: $_bg-color;
+    border: 1px solid $_border-color;
     color: $_color;
 
     &:disabled {
-      background: $input-disabled-bg;
-      border-color: $input-disabled-border;
-      color: $input-disabled;
+      background: $_disabled-bg-color;
+      border-color: $_disabled-border-color;
+      color: $_disabled-color;
       cursor: not-allowed;
     }
 
     &[readonly] {
-      background: $input-readonly-bg;
-      border-color: $input-readonly-border;
-      color: $input-readonly;
+      background: $_readonly-bg-color;
+      border-color: $_readonly-border-color;
+      color: $_readonly-color;
     }
   }
 }

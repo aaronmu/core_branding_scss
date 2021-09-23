@@ -1,4 +1,11 @@
 /**
+ * AUI SEARCH FILTER VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+$search-filter-icon-color:   $gray-400;
+
+/**
  * AUI SEARCH FILTER
  * -------------------------------------------------------------------
  */
@@ -20,7 +27,7 @@
     }
 
     > .ai {
-      color: $input-icon;
+      color: $search-filter-icon-color;
       font-size: 1.25rem;
       height: var(--spacer-xl);
       line-height: var(--spacer-xl);

@@ -310,66 +310,13 @@ $btn-danger-outline-border:    $btn-danger-bg !default;
 
 $btn-disabled-color:           $state-disabled !default;
 $btn-disabled-bg:              $gray-100 !default;
+$btn-disabled-border:          $gray-200 !default;
 
 $btn-transparent-color:        $brand-primary !default;
 $btn-transparent-bg:           transparent !default;
 
 $btn-official-color:           $btn-default-color !default;
 $btn-official-bg:              $monza-400 !default;
-
-/**
- * FORMS
- * -------------------------------------------------------------------
- * Define text, background, border and placeholder color for each input
- */
-
-$input-color:             $text-color !default;
-$input-bg:                $white !default;
-$input-border:            $border-color !default;
-$input-border-focus:      rgb(192, 223, 254) !default; // Remove this in a later version
-$input-disabled:          $state-disabled !default;
-$input-disabled-border:   $gray-200 !default;
-$input-disabled-bg:       $gray-100 !default;
-$input-readonly:          $text-color !default;
-$input-readonly-border:   $gray-300 !default;
-$input-readonly-bg:       $white !default;
-$input-placeholder:       $gray-400 !default;
-$input-icon:              $gray-400 !default;
-$input-icon-hover:        $gray-600 !default;
-$input-required:          $state-danger !default;
-
-$input-success-border:            mix($black, $state-success, 40%) !default;
-$input-success-border-focus:      mix($state-success, $white, 25%) !default; // Remove this in a later version
-$input-success-icon:              $state-success !default;
-
-$input-warning-border:            mix($black, $state-warning, 40%) !default;
-$input-warning-border-focus:      mix($state-warning, $white, 25%) !default; // Remove this in a later version
-$input-warning-icon:              $state-warning !default;
-
-$input-danger-border:             mix($black, $state-danger, 40%) !default;
-$input-danger-border-focus:       mix($state-danger, $white, 25%) !default; // Remove this in a later version
-$input-danger-icon:               $state-danger !default;
-
-$input-height:                    $spacer-lg !default;
-$input-padding:                   0 $spacer !default;
-$select-height:                   $input-height !default;
-$select-padding:                  $spacer-xs $spacer !default;
-$textarea-height:                 12rem !default;
-$textarea-padding:                $spacer-sm $spacer !default;
-
-$input-height-sm:                 $spacer-md !default;
-$input-padding-sm:                0 $spacer-xs !default;
-$select-height-sm:                $input-height-sm !default;
-$select-padding-sm:               0 $spacer-xs !default;
-$textarea-height-sm:              8rem !default;
-$textarea-padding-sm:             $spacer-xs / 3 * 2 $spacer-xs !default;
-
-$input-height-lg:                 $spacer-xl !default;
-$input-padding-lg:                0 $spacer !default;
-$select-height-lg:                $input-height-lg !default;
-$select-padding-lg:               $spacer-sm $spacer !default;
-$textarea-height-lg:              16rem !default;
-$textarea-padding-lg:             $spacer / 6 * 5 $spacer !default;
 
 /**
  * SWITCHES
@@ -383,8 +330,8 @@ $switch-width:            $spacer-lg !default;
 $switch-height:           $switch-width / 2 + .25rem !default;
 $switch-label:            $text-color !default;
 
-$switch-bg:               $input-bg !default;
-$switch-border:           $input-border !default;
+$switch-bg:               $white !default;
+$switch-border:           $border-color !default;
 
 $switch-disabled:         $gray-100 !default;
 $switch-disabled-label:   $state-disabled !default;
@@ -428,8 +375,8 @@ $progress-height:             $switch-height !default;
 $progress-bar-padding:        $spacer / 6 !default;
 $progress-tooltip-offset:     .625rem !default;
 
-$progress-bg:                 $input-bg !default;
-$progress-border:             $input-border !default;
+$progress-bg:                 $white !default;
+$progress-border:             $border-color !default;
 
 $progress-bar-bg:             $brand-primary !default;
 
@@ -442,8 +389,8 @@ $range-slider-height:             $switch-height !default;
 $range-slider-padding:            $spacer / 6 !default;
 $range-slider-offset:             $progress-tooltip-offset !default;
 
-$range-slider-bg:                 $input-bg !default;
-$range-slider-border:             $input-border !default;
+$range-slider-bg:                 $white !default;
+$range-slider-border:             $border-color !default;
 
 $range-slider-bar-bg:             $background-color !default;
 $range-slider-handle-bg:          $brand-primary !default;

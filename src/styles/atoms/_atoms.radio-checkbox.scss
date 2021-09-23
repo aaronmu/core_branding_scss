@@ -3,8 +3,15 @@
  * -------------------------------------------------------------------
  */
 
-$radio-checkbox-color:    $white !default;
-$radio-checkbox-bg:       $brand-primary !default;
+:root {
+  --radio-checkbox-color:                   #{$white};
+  --radio-checkbox-bg-color:                var(--brand-primary);
+  --radio-checkbox-border-color:            var(--border-color);
+
+  --radio-checkbox-disabled-color:          var(--state-disabled);
+  --radio-checkbox-disabled-bg-color:       #{$gray-100};
+  --radio-checkbox-disabled-border-color:   #{$gray-200};
+}
 
 /**
  * RADIO BUTTON & CHECKBOX
@@ -43,15 +50,17 @@ $radio-checkbox-bg:       $brand-primary !default;
   input {
     cursor: pointer;
     line-height: normal;
+    min-height: 0;
     opacity: 0;
     padding: 0;
     position: absolute;
+    width: auto;
     z-index: layer('base');
 
     &:checked + label {
       &:before {
-        background-color: $radio-checkbox-bg;
-        box-shadow: 0 0 0 1px $radio-checkbox-bg inset;
+        background-color: var(--radio-checkbox-bg-color);
+        box-shadow: 0 0 0 1px var(--radio-checkbox-bg-color) inset;
       }
     }
 
@@ -60,13 +69,17 @@ $radio-checkbox-bg:       $brand-primary !default;
     }
 
     &:disabled + label {
-      color: $input-disabled;
+      color: var(--radio-checkbox-disabled-color);
       cursor: not-allowed;
 
       &:before {
-        background-color: $input-disabled-bg;
-        box-shadow: 0 0 0 1px $input-disabled-border inset;
+        background-color: var(--radio-checkbox-disabled-bg-color);
+        box-shadow: 0 0 0 1px var(--radio-checkbox-disabled-border-color) inset;
       }
+    }
+
+    &:focus + label:after {
+      @include focus;
     }
   }
 
@@ -81,8 +94,8 @@ $radio-checkbox-bg:       $brand-primary !default;
     vertical-align: middle;
 
     &:before {
-      background-color: $input-bg;
-      box-shadow: 0 0 0 1px $input-border inset;
+      background-color: var(--radio-checkbox-color);
+      box-shadow: 0 0 0 1px var(--radio-checkbox-border-color) inset;
       content: '';
       display: inline-block;
       height: var(--spacer);
@@ -96,7 +109,7 @@ $radio-checkbox-bg:       $brand-primary !default;
     }
 
     &:after {
-      color: $radio-checkbox-color;
+      color: var(--radio-checkbox-color);
       content: '';
       display: inline-block;
       font-size: $icon-size-sm;
@@ -144,13 +157,15 @@ $radio-checkbox-bg:       $brand-primary !default;
   &:checked {
     + label:before {
       background: $white;
-      box-shadow: 0 0 0 rem(6px) $radio-checkbox-bg inset;
+      // TODO: replace rem(6px) by spacer
+      box-shadow: 0 0 0 rem(6px) var(--radio-checkbox-bg-color) inset;
     }
 
     &:disabled {
       + label:before {
-        background: $input-disabled;
-        box-shadow: 0 0 0 1px $input-disabled-border inset, 0 0 0 rem(6px) $input-disabled-bg inset;
+        background: var(--radio-checkbox-disabled-bg-color);
+        // TODO: replace rem(6px) by spacer
+        box-shadow: 0 0 0 1px var(--radio-checkbox-disabled-border-color) inset, 0 0 0 rem(6px) var(--radio-checkbox-disabled-bg-color) inset;
       }
     }
   }
