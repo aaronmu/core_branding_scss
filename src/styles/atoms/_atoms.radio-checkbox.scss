@@ -3,7 +3,8 @@
  * -------------------------------------------------------------------
  */
 
-:root {
+.a-input__checkbox,
+.a-input__radio {
   --radio-checkbox-color:                   #{$white};
   --radio-checkbox-bg-color:                var(--brand-primary);
   --radio-checkbox-border-color:            var(--border-color);

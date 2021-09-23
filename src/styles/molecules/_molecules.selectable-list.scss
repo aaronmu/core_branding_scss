@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-:root {
+.m-selectable-list {
   --selectable-list-item-color:          var(--text-color);
   --selectable-list-item-border-color:   var(--border-color);
   --selectable-list-item-hover-color:    #{$gray-100};
