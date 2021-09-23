@@ -31,7 +31,7 @@ textarea {
 
   small {
     display: block;
-    margin: calc(var(--spacer-s) / 2) 0;
+    margin: var(--spacer-xxs) 0;
     text-align: left;
   }
 
@@ -94,13 +94,13 @@ textarea {
 
 .a-input__label {
   display: inline-block;
-  margin-bottom: calc(var(--spacer-s) / 2);
+  margin-bottom: var(--spacer-xxs);
   text-align: left;
 
   + .a-switch,
   + .a-input__checkbox,
   + .a-input__radio {
-    margin-top: calc(var(--spacer-s) / 2);
+    margin-top: var(--spacer-xxs);
   }
 }
 

@@ -11,7 +11,7 @@ $pre-padding:             var(--spacer-xs) !default;
 $code-color:              $pre-color !default;
 $code-bg:                 $pre-bg !default;
 $code-font-size:          .875rem !default;
-$code-padding:            calc(var(--spacer-xs) / 6) calc(var(--spacer-xs) / 2) !default;
+$code-padding:            calc(var(--spacer) / 12) var(--spacer-3xs) !default;
 
 $kbd-color:               $white !default;
 $kbd-bg:                  $gray-400 !default;

@@ -18,7 +18,7 @@
   &__actions {
     display: flex;
     flex-direction: column;
-    margin-left: calc(var(--spacer) / 4);
+    margin-left: var(--spacer-3xs);
     margin-right: 0;
   }
 
@@ -67,7 +67,7 @@
     overflow: hidden;
 
     &-show-more {
-      margin: calc(var(--spacer) / 4);
+      margin: var(--spacer-3xs);
     }
 
     &--open {
@@ -77,12 +77,12 @@
 
   &__item {
     display: inline-block;
-    margin: calc(var(--spacer) / 4);
+    margin: var(--spacer-3xs);
   }
 
   &__search {
     background: $white;
     height: 100%;
-    margin: calc(var(--spacer) / 4);
+    margin: var(--spacer-3xs);
   }
 }

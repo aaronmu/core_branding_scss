@@ -30,7 +30,7 @@ $table-padding:               var(--spacer-xs) !default;
   width: 100%;
 
   caption {
-    margin-bottom: calc(var(--spacer-s) / 2);
+    margin-bottom: var(--spacer-xxs);
     text-align: left;
   }
 

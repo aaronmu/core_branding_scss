@@ -251,7 +251,7 @@
   &.a-button--s {
     font-size: rem($btn-font-size-sm);
     min-height: var(--spacer-l);
-    padding: calc(var(--spacer-s) / 2) var(--spacer);
+    padding: var(--spacer-xxs) var(--spacer);
 
     .ai {
       font-size: rem($btn-icon-size-sm);

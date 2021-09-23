@@ -22,17 +22,17 @@ $article-h4-margin:         var(--spacer) 0 var(--spacer-xs) !default;
 $article-h5-font-family:    $font-family-base !default;
 $article-h5-font-size:      $font-size-base !default;
 $article-h5-font-weight:    $bold !default;
-$article-h5-margin:         var(--spacer-xs) 0 calc(var(--spacer-xs) / 2) !default;
+$article-h5-margin:         var(--spacer-xs) 0 var(--spacer-3xs) !default;
 $article-h6-font-family:    $font-family-base !default;
 $article-h6-font-size:      $font-size-base !default;
 $article-h6-font-weight:    $bold !default;
-$article-h6-margin:         var(--spacer-xs) 0 calc(var(--spacer-xs) / 2) !default;
+$article-h6-margin:         var(--spacer-xs) 0 var(--spacer-3xs) !default;
 $article-p-font-size:       $font-size-base !default;
-$article-p-margin:          0 0 calc(var(--spacer-xs) / 2) !default;
+$article-p-margin:          0 0 var(--spacer-3xs) !default;
 $article-ul-font-size:      $font-size-base !default;
-$article-ul-margin:         0 0 calc(var(--spacer-xs) / 2) !default;
+$article-ul-margin:         0 0 var(--spacer-3xs) !default;
 $article-ol-font-size:      $font-size-base !default;
-$article-ol-margin:         0 0 calc(var(--spacer-xs) / 2) !default;
+$article-ol-margin:         0 0 var(--spacer-3xs) !default;
 
 /**
  * ARTICLE
