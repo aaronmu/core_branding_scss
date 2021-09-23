@@ -13,7 +13,7 @@ $upload-border:              $brand-primary !default;
 $upload-disabled-color:      $state-disabled !default;
 $upload-disabled-bg:         $gray-100 !default;
 $upload-disabled-border:     $upload-disabled-color !default;
-$upload-focus-color:         rgb(192, 223, 254) !default;
+$upload-focus-border:        rgb(192, 223, 254) !default;
 
 $upload-file-color:           $text-color !default;
 $upload-file-bg:              $background-color-light !default;
@@ -105,7 +105,7 @@ $upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
 
   &:before {
     bottom: -2px;
-    box-shadow: 0 0 0 3px $upload-focus-color;
+    box-shadow: 0 0 0 3px $upload-focus-border;
     cursor: pointer;
     left: -2px;
     position: absolute;
