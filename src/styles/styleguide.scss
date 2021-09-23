@@ -16,7 +16,7 @@
   margin: 0;
 
   + .a-pre {
-    margin-top: calc(var(--spacer) / 4);
+    margin-top: var(--spacer-3xs);
   }
 }
 
@@ -31,7 +31,7 @@
 
   > div {
     flex: 1 1 auto;
-    padding: calc(var(--spacer) / 4) var(--spacer-xs) 0;
+    padding: var(--spacer-3xs) var(--spacer-xs) 0;
 
     @include at($screen-sm) {
       width: 0;
@@ -46,7 +46,7 @@
 }
 
 .u-margin-bottom-top-xxs {
-  margin: calc(var(--spacer-xs) / 2) 0;
+  margin: var(--spacer-3xs) 0;
 }
 
 .d-toc {
@@ -146,7 +146,7 @@
 
   &__colors {
     > li {
-      margin-top: calc(var(--spacer-xs) / 2);
+      margin-top: var(--spacer-3xs);
       padding: calc(var(--spacer) / 2) var(--spacer-xs) calc(var(--spacer) / 2) calc(var(--spacer) * 5);
       position: relative;
 
@@ -189,7 +189,7 @@
 
   &__variables {
     > li {
-      margin-top: calc(var(--spacer) / 4);
+      margin-top: var(--spacer-3xs);
 
       @include at($screen-lg) {
         width: 100 / 3 * 1%;
@@ -237,7 +237,7 @@
 .d-u-text-xlight,
 .d-u-text-warning {
   background-color: $gray-600;
-  padding: calc(var(--spacer) / 4);
+  padding: var(--spacer-3xs);
 }
 
 .d-button {
@@ -350,7 +350,7 @@
 .d-icons {
   display: grid;
   // IE11 doesn't support grid-gap, so we fall back to margins. See [*GG].
-  // grid-gap: calc(var(--spacer-xs) / 2) var(--spacer);
+  // grid-gap: var(--spacer-3xs) var(--spacer);
 
   @include at($screen-sm) {
     grid-template-columns: 1fr 1fr;
@@ -363,7 +363,7 @@
   &__row {
     display: grid;
     grid-template-columns: var(--spacer-xl) auto;
-    margin-bottom: calc(var(--spacer-xs) / 2); // [*GG]
+    margin-bottom: var(--spacer-3xs); // [*GG]
 
     @include at($screen-sm) {
       &:nth-child(even) {

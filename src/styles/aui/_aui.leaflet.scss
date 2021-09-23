@@ -63,22 +63,22 @@
 
     &--top-left .o-leaflet__control,
     &--top-right .o-leaflet__control {
-      margin-bottom: calc(var(--spacer-xs) / 2);
+      margin-bottom: var(--spacer-3xs);
     }
 
     &--bottom-left .o-leaflet__control,
     &--bottom-right .o-leaflet__control {
-      margin-top: calc(var(--spacer-xs) / 2);
+      margin-top: var(--spacer-3xs);
     }
 
     &--bottom-left .o-leaflet__control,
     &--top-left .o-leaflet__control {
-      margin-right: calc(var(--spacer-xs) / 2);
+      margin-right: var(--spacer-3xs);
     }
 
     &--bottom-right .o-leaflet__control,
     &--top-right .o-leaflet__control {
-      margin-left: calc(var(--spacer-xs) / 2);
+      margin-left: var(--spacer-3xs);
     }
   }
 
@@ -154,7 +154,7 @@
 }
 
 .leaflet-popup-close-button {
-  right: calc(var(--spacer-xs) / 2) !important;
-  top: calc(var(--spacer-xs) / 2) !important;
+  right: var(--spacer-3xs) !important;
+  top: var(--spacer-3xs) !important;
   z-index: layer('base');
 }
