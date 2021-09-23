@@ -127,15 +127,15 @@
     color: $_color;
 
     &:disabled {
-      background: $_disabled-bg-color;
-      border-color: $_disabled-border-color;
+      background-color: $_disabled-bg-color;
+      border: 1px solid $_disabled-border-color;
       color: $_disabled-color;
       cursor: not-allowed;
     }
 
     &[readonly] {
-      background: $_readonly-bg-color;
-      border-color: $_readonly-border-color;
+      background-color: $_readonly-bg-color;
+      border: 1px solid $_readonly-border-color;
       color: $_readonly-color;
     }
   }
