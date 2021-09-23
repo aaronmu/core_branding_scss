@@ -227,7 +227,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 
       .o-menu__icon {
         font-size: rem($icon-size-base);
-        margin-bottom: var(--spacer-3xs);
+        margin-bottom: var(--spacer-xxs);
 
         &.o-menu__tab-icon {
           width: rem($icon-size-lg);

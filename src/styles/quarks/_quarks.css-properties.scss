@@ -19,13 +19,13 @@
 
   --spacer:                  1.5rem; // 24px
   --spacer-3xl:              calc(var(--spacer) * 4); // 96px
-  --spacer-xxl:              calc(var(--spacer) * 2.5); // 60px (Deprecated in favor of spacer of 72px)
+  --spacer-xxl:              calc(var(--spacer) * 2.5); // 60px
   --spacer-xl:               calc(var(--spacer) * 2); // 48px
   --spacer-l:                calc(var(--spacer) * 1.5); // 36px
-  --spacer-s:                calc(var(--spacer) * .75); // 18px
-  --spacer-xs:               calc(var(--spacer) * .5); // 12px
-  --spacer-xxs:              calc(var(--spacer) * .375); // 9px
-  --spacer-3xs:              calc(var(--spacer) * .25); // 6px
+  --spacer-s:                calc(var(--spacer) / 1.5); // 16px
+  --spacer-xs:               calc(var(--spacer) / 2); // 12px
+  --spacer-xxs:              calc(var(--spacer) / 3); // 8px
+  --spacer-3xs:              calc(var(--spacer) / 6); // 4px
 
   /**
    * BREAKPOINTS
