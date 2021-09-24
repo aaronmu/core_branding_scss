@@ -27,8 +27,6 @@
   --input-icon-hover-color:        #{$gray-600};
   --input-icon-size:               1.25rem;
 
-  --input-required-color:          var(--danger-400);
-
   --input-success-border-color:    var(--state-success);
   --input-warning-border-color:    var(--state-warning);
   --input-danger-border-color:     var(--state-danger);
@@ -271,7 +269,6 @@ textarea {
   }
 
   &.is-required .a-input__label:after {
-    color: var(--input-required-color);
     content: '*';
     margin-left: var(--spacer-3xs);
   }
