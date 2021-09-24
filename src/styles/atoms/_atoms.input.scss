@@ -355,6 +355,7 @@ textarea {
 .a-input__addon {
   border-bottom: 1px solid var(--input-border-color);
   border-top: 1px solid var(--input-border-color);
+  color: var(--input-icon-color);
   line-height: var(--input-height);
   text-align: center;
   white-space: nowrap;
