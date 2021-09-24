@@ -25,6 +25,7 @@
 
   --input-icon-color:              #{$gray-400};
   --input-icon-hover-color:        #{$gray-600};
+  --input-icon-size:               1.25rem;
 
   --input-required-color:          var(--danger-400);
 
@@ -33,25 +34,20 @@
   --input-danger-border-color:     var(--state-danger);
 
   --input-height:                  var(--spacer-xl);
-  --input-padding:                 0 var(--spacer-s);
-  --input-height-s:                var(--spacer-l);
-  --input-padding-s:               0 var(--spacer-xs);
-  --input-height-l:                var(--spacer-xxl);
-  --input-padding-l:               0 var(--spacer);
+  --input-padding-vertical:        0;
+  --input-padding-horizontal:      var(--spacer-s);
 
-  --select-height:                 var(--input-height);
-  --select-padding:                var(--spacer-xs) var(--spacer);
-  --select-height-s:               var(--input-height-s);
-  --select-padding-s:              0 var(--spacer-xs);
-  --select-height-l:               var(--input-height-l);
-  --select-padding-l:              var(--spacer-s) var(--spacer);
+  --input-height-s:                var(--spacer-l);
+  --input-padding-vertical-s:      var(--input-padding-vertical);
+  --input-padding-horizontal-s:    var(--spacer-xs);
+
+  --input-height-l:                var(--spacer-xxl);
+  --input-padding-vertical-l:      var(--input-padding-vertical);
+  --input-padding-horizontal-l:    var(--spacer);
 
   --textarea-height:               12rem;
-  --textarea-padding:              var(--spacer-s) var(--spacer);
   --textarea-height-s:             8rem;
-  --textarea-padding-s:            var(--spacer-xxs) var(--spacer-xs);
   --textarea-height-l:             16rem;
-  --textarea-padding-l:            var(--spacer-s) var(--spacer);
 }
 
 /**
@@ -93,19 +89,15 @@ textarea {
     width: 100%;
   }
 
-  input {
-    min-height: var(--input-height);
-    padding: var(--input-padding);
-  }
-
+  input,
   select {
-    min-height: var(--select-height);
-    padding: var(--select-padding);
+    min-height: var(--input-height);
+    padding: var(--input-padding-vertical) var(--input-padding-horizontal);
   }
 
   textarea {
     min-height: var(--textarea-height);
-    padding: var(--textarea-padding);
+    padding: var(--input-padding-horizontal);
   }
 }
 
@@ -135,7 +127,7 @@ textarea {
   );
 
   &.w-textarea-padding {
-    padding: var(--textarea-padding);
+    padding: var(--input-padding-horizontal);
   }
 }
 
@@ -293,15 +285,14 @@ textarea {
 .a-input {
   &.has-icon-left .a-input__wrapper > .ai,
   &.has-icon-right .a-input__wrapper > .ai {
-    color: var(--input-icon);
-    font-size: rem(20px);
+    color: var(--input-icon-color);
+    font-size: var(--input-icon-size);
     pointer-events: none;
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
     user-select: none;
-    width: var(--spacer-xl);
 
     &.is-clickable {
       align-items: center;
@@ -312,7 +303,7 @@ textarea {
       transition: color var(--animation-normal);
 
       &:hover {
-        color: var(--input-icon-hover);
+        color: var(--input-icon-hover-color);
       }
     }
   }
@@ -320,22 +311,22 @@ textarea {
   &.has-icon-left .a-input__wrapper {
     input,
     select {
-      padding-left: var(--spacer-xl);
+      padding-left: calc(#{var(--input-padding-horizontal)} * 2 + #{var(--input-icon-size)});
     }
 
     > .ai {
-      left: 0;
+      left: var(--input-padding-horizontal);
     }
   }
 
   &.has-icon-right .a-input__wrapper {
     input,
     select {
-      padding-right: var(--spacer-xl);
+      padding-right: calc(#{var(--input-padding-horizontal)} * 2 + #{var(--input-icon-size)});
     }
 
     > .ai {
-      right: 0;
+      right: var(--input-padding-horizontal);
     }
   }
 }
@@ -382,48 +373,86 @@ textarea {
 
 .a-input {
   &.a-input--s {
-    input {
+    input,
+    select {
       min-height: var(--input-height-s);
-      padding: var(--input-padding-s);
+      padding: var(--input-padding-vertical-s) var(--input-padding-horizontal-s);
     }
 
     select {
       @-moz-document url-prefix() {
         line-height: 2.1; // Fixes Firefox line-height bug
       }
-
-      min-height: var(--select-height-s);
-      padding: var(--select-padding-s);
     }
 
     textarea {
       min-height: var(--textarea-height-s);
-      padding: var(--textarea-padding-s);
+      padding: var(--input-padding-horizontal-s);
     }
 
     .a-input__addon {
       line-height: var(--input-height-s);
     }
+
+    &.has-icon-left .a-input__wrapper {
+      input,
+      select {
+        padding-left: calc(#{var(--input-padding-horizontal-s)} * 2 + #{var(--input-icon-size)});
+      }
+
+      > .ai {
+        left: var(--input-padding-horizontal-s);
+      }
+    }
+
+    &.has-icon-right .a-input__wrapper {
+      input,
+      select {
+        padding-right: calc(#{var(--input-padding-horizontal-s)} * 2 + #{var(--input-icon-size)});
+      }
+
+      > .ai {
+        right: var(--input-padding-horizontal-s);
+      }
+    }
   }
 
   &.a-input--l {
-    input {
-      min-height: var(--input-height-l);
-      padding: var(--input-padding-l);
-    }
-
+    input,
     select {
-      min-height: var(--select-height-l);
-      padding: var(--select-padding-l);
+      min-height: var(--input-height-l);
+      padding: var(--input-padding-vertical-l) var(--input-padding-horizontal-l);
     }
 
     textarea {
       min-height: var(--textarea-height-l);
-      padding: var(--textarea-padding-l);
+      padding: var(--input-padding-horizontal-l);
     }
 
     .a-input__addon {
       line-height: var(--input-height-l);
+    }
+
+    &.has-icon-left .a-input__wrapper {
+      input,
+      select {
+        padding-left: calc(#{var(--input-padding-horizontal-l)} * 2 + #{var(--input-icon-size)});
+      }
+
+      > .ai {
+        left: var(--input-padding-horizontal-l);
+      }
+    }
+
+    &.has-icon-right .a-input__wrapper {
+      input,
+      select {
+        padding-right: calc(#{var(--input-padding-horizontal-l)} * 2 + #{var(--input-icon-size)});
+      }
+
+      > .ai {
+        right: var(--input-padding-horizontal-l);
+      }
     }
   }
 }
