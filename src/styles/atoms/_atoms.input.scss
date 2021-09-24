@@ -332,17 +332,46 @@ textarea {
 }
 
 /**
- * INPUT WITH ADDON
+ * INPUT WITH ADDON LEFT OR RIGHT
  * -------------------------------------------------------------------
  */
 
-.a-input.has-addon .a-input__wrapper {
-  display: flex;
+.a-input {
+  &.has-addon-left,
+  &.has-addon-right {
+    .a-input__wrapper {
+      display: flex;
+    }
+  }
+
+  &.has-addon-left {
+    input,
+    select {
+      border-left: none;
+    }
+
+    .a-input__addon {
+      border-left: 1px solid var(--input-border-color);
+      padding-left: var(--input-padding-horizontal);
+    }
+  }
+
+  &.has-addon-right {
+    input {
+      border-right: none;
+    }
+
+    .a-input__addon {
+      border-right: 1px solid var(--input-border-color);
+      padding-right: var(--input-padding-horizontal);
+    }
+  }
 }
 
 .a-input__addon {
+  border-bottom: 1px solid var(--input-border-color);
+  border-top: 1px solid var(--input-border-color);
   line-height: var(--input-height);
-  padding: 0 var(--spacer-xs);
   text-align: center;
   white-space: nowrap;
 }
@@ -415,6 +444,14 @@ textarea {
         right: var(--input-padding-horizontal-s);
       }
     }
+
+    &.has-addon-left .a-input__addon {
+      padding-left: var(--input-padding-horizontal-s);
+    }
+
+    &.has-addon-right .a-input__addon {
+      padding-right: var(--input-padding-horizontal-s);
+    }
   }
 
   &.a-input--l {
@@ -453,6 +490,14 @@ textarea {
       > .ai {
         right: var(--input-padding-horizontal-l);
       }
+    }
+
+    &.has-addon-left .a-input__addon {
+      padding-left: var(--input-padding-horizontal-l);
+    }
+
+    &.has-addon-right .a-input__addon {
+      padding-right: var(--input-padding-horizontal-l);
     }
   }
 }
