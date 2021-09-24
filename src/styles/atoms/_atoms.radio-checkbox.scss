@@ -158,14 +158,12 @@
   &:checked {
     + label:before {
       background: $white;
-      // TODO: replace rem(6px) by spacer
       box-shadow: 0 0 0 rem(6px) var(--radio-checkbox-bg-color) inset;
     }
 
     &:disabled {
       + label:before {
-        background: var(--radio-checkbox-disabled-bg-color);
-        // TODO: replace rem(6px) by spacer
+        background: var(--radio-checkbox-disabled-color);
         box-shadow: 0 0 0 1px var(--radio-checkbox-disabled-border-color) inset, 0 0 0 rem(6px) var(--radio-checkbox-disabled-bg-color) inset;
       }
     }
