@@ -315,8 +315,19 @@ textarea {
 .a-input {
   &.has-addon-left,
   &.has-addon-right {
+    input,
+    select {
+      &:focus {
+        outline: none;
+      }
+    }
+
     .a-input__wrapper {
       display: flex;
+    }
+
+    &:focus-within .a-input__wrapper {
+      @include focus;
     }
   }
 
@@ -330,10 +341,6 @@ textarea {
       border-left: 1px solid var(--input-border-color);
       padding-left: var(--input-padding-horizontal);
     }
-
-    &:focus-within .a-input__addon {
-      padding-right: var(--input-padding-horizontal);
-    }
   }
 
   &.has-addon-right {
@@ -344,10 +351,6 @@ textarea {
     .a-input__addon {
       border-right: 1px solid var(--input-border-color);
       padding-right: var(--input-padding-horizontal);
-    }
-
-    &:focus-within .a-input__addon {
-      padding-left: var(--input-padding-horizontal);
     }
   }
 }
