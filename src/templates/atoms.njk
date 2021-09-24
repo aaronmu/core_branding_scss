@@ -879,14 +879,22 @@
                 <div class="a-input">
                     <label class="a-input__label" for="text-field">Text field</label>
                     <input type="text" name="text-field" id="text-field" placeholder="Placeholder" aria-describedby="text-field-description" />
-                    <small id="text-field-description">Input description</small>
+                    <div class="a-input__info">
+                        <small class="a-input__helper-text">Input description</small>
+                        <div class="a-input__info-spacer"></div>
+                        <small class="a-input__character-counter">0 / 200</small>
+                    </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
-  &lt;label class="a-input__label" for="text-field"&gt;Text field&lt;/label&gt;
-  &lt;input type="text" name="text-field" id="text-field" placeholder="Placeholder" aria-describedby="text-field-description" /&gt;
-  &lt;small id="text-field-description"&gt;Input description&lt;/small&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class=&quot;a-input&quot;&gt;
+  &lt;label class=&quot;a-input__label&quot; for=&quot;text-field&quot;&gt;Text field&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;text-field&quot; id=&quot;text-field&quot; placeholder=&quot;Placeholder&quot; aria-describedby=&quot;text-field-description&quot; /&gt;
+  &lt;div class=&quot;a-input__info&quot;&gt;
+    &lt;small class=&quot;a-input__helper-text&quot;&gt;Input description&lt;/small&gt;
+    &lt;div class=&quot;a-input__info-spacer&quot;&gt;&lt;/div&gt;
+    &lt;small class=&quot;a-input__character-counter&quot;&gt;0 / 200&lt;/small&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -1315,7 +1323,9 @@
                     <div class="a-input__wrapper">
                         <input type="text" name="text-field-success" id="text-field-success" placeholder="Placeholder" />
                     </div>
-                    <small class="a-input__description has-success">Success description</small>
+                    <div class="a-input__info">
+                        <small class="a-input__success-text">Success description</small>
+                    </div>
                 </div>
             </div>
             <div>
@@ -1324,7 +1334,9 @@
   &lt;div class=&quot;a-input__wrapper&quot;&gt;
     &lt;input type=&quot;text&quot; name=&quot;text-field-success&quot; id=&quot;text-field-success&quot; placeholder=&quot;Placeholder&quot; /&gt;
   &lt;/div&gt;
-  &lt;small class=&quot;a-input__description has-success&quot;&gt;Success description&lt;/small&gt;
+  &lt;div class=&quot;a-input__info&quot;&gt;
+    &lt;small class=&quot;a-input__success-text&quot;&gt;Success description&lt;/small&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -1335,7 +1347,9 @@
                     <div class="a-input__wrapper">
                         <input type="text" name="text-field-error" id="text-field-error" placeholder="Placeholder" />
                     </div>
-                    <small class="a-input__description has-error">Error description</small>
+                    <div class="a-input__info">
+                        <small class="a-input__error-text">Error description</small>
+                    </div>
                 </div>
             </div>
             <div>
@@ -1344,7 +1358,9 @@
   &lt;div class=&quot;a-input__wrapper&quot;&gt;
     &lt;input type=&quot;text&quot; name=&quot;text-field-error&quot; id=&quot;text-field-error&quot; placeholder=&quot;Placeholder&quot; /&gt;
   &lt;/div&gt;
-  &lt;small class=&quot;a-input__description has-error&quot;&gt;Error description&lt;/small&gt;
+  &lt;div class=&quot;a-input__info&quot;&gt;
+    &lt;small class=&quot;a-input__error-text&quot;&gt;Error description&lt;/small&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
