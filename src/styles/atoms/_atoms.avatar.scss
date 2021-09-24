@@ -3,13 +3,22 @@
  * -------------------------------------------------------------------
  */
 
-$avatar-bg:               $gray-400 !default;
-$avatar-color:            $white !default;
+.a-avatar {
+  --avatar-color:                    #{$gray-400};
+  --avatar-bg-color:                 #{$white};
+  --avatar-hover-bg-color:           #{$gray-100};
 
-$avatar-sm:               calc(var(--spacer) * 1.5) !default; // 36px
-$avatar:                  calc(var(--spacer) * 2) !default; // 48px
-$avatar-l:                calc(var(--spacer) * 3) !default; // 72px
-$avatar-xl:               calc(var(--spacer) * 4) !default; // 96px
+  --avatar-primary-color:            #{$white};
+  --avatar-primary-bg-color:         var(--theme1-400);
+  --avatar-primary-hover-bg-color:   var(--theme1-500);
+
+  --avatar-size-s:                   calc(var(--spacer) * 1.5); // 36px
+  --avatar-size:                     calc(var(--spacer) * 2); // 48px
+  --avatar-size-l:                   calc(var(--spacer) * 3); // 72px
+  --avatar-size-xl:                  calc(var(--spacer) * 4); // 96px
+
+  --avatar-icon-size:                1.25rem;
+}
 
 /**
  * AVATARS
@@ -18,54 +27,38 @@ $avatar-xl:               calc(var(--spacer) * 4) !default; // 96px
 
 .a-avatar {
   align-items: center;
-  background-color: $avatar-bg;
-  color: $avatar-color;
+  background-color: var(--avatar-bg-color);
+  color: var(--avatar-color);
   display: inline-flex;
-  font-size: calc(#{$avatar} / 2);
-  height: $avatar;
+  font-family: $font-family-headings;
+  font-size: var(--avatar-icon-size);
+  height: var(--avatar-size);
   justify-content: center;
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: $avatar;
+  transition: background-color var(--animation-normal);
+  width: var(--avatar-size);
 
   img {
     display: block;
     max-width: 100%;
+    transition: transform var(--animation-normal);
   }
 
-  &__icon {
-    height: calc(#{$avatar} / 2);
-
-    .ai {
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
+  &__icon .ai {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
 a .a-avatar {
-  &:before {
-    background-color: $black;
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    transition: opacity $animation-duration $animation-easing;
-    width: 100%;
-  }
-
   &:hover,
   &:active {
-    color: $avatar-color;
-
-    &:before {
-      opacity: .15;
+    img {
+      transform: scale(1.25);
     }
   }
 }
@@ -76,34 +69,54 @@ a .a-avatar {
  */
 
 .a-avatar--s {
-  font-size: calc(#{$avatar-sm} / 2);
-  height: $avatar-sm;
-  line-height: $avatar-sm;
-  width: $avatar-sm;
-
-  .a-avatar__icon {
-    height: $avatar-sm;
-  }
+  height: var(--avatar-size-s);
+  width: var(--avatar-size-s);
 }
 
 .a-avatar--l {
-  font-size: calc(#{$avatar-l} / 2);
-  height: $avatar-l;
-  line-height: $avatar-l;
-  width: $avatar-l;
-
-  .a-avatar__icon {
-    height: $avatar-l;
-  }
+  height: var(--avatar-size-l);
+  width: var(--avatar-size-l);
 }
 
 .a-avatar--xl {
-  font-size: calc(#{$avatar-xl} / 2);
-  height: $avatar-xl;
-  line-height: $avatar-xl;
-  width: $avatar-xl;
+  height: var(--avatar-size-xl);
+  width: var(--avatar-size-xl);
+}
 
-  .a-avatar__icon {
-    height: $avatar-xl;
+/**
+ * AVATAR COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-avatar {
+  background-color: var(--avatar-bg-color);
+  color: var(--avatar-color);
+
+  &.a-avatar--primary {
+    background-color: var(--avatar-primary-bg-color);
+    color: var(--avatar-primary-color);
   }
+}
+
+a .a-avatar {
+  &:hover,
+  &:active {
+    background-color: var(--avatar-hover-bg-color);
+  }
+
+  &.a-avatar--primary {
+    &:hover,
+    &:active {
+      background-color: var(--avatar-primary-hover-bg-color);
+    }
+  }
+}
+
+/**
+ * AVATAR SHAPES
+ * -------------------------------------------------------------------
+ */
+
+.a-avatar--rounded {
+  border-radius: 50%;
 }
