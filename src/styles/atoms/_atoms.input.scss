@@ -155,46 +155,29 @@ textarea {
 
 .a-input__info {
   display: flex;
+  justify-content: space-between;
   margin: var(--spacer-xxs) 0;
 }
 
-.a-input__info-spacer {
-  flex: 1 0 var(--spacer);
+.a-input__character-counter {
+  flex: 1 0 auto;
+  margin-left: var(--spacer);
+  text-align: right;
 }
 
 .a-input__error-text,
 .a-input__success-text {
-  padding-left: var(--spacer);
-  position: relative;
-
-  &:before {
-    content: '';
-    height: var(--spacer-s);
-    left: 0;
-    mask-size: contain;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: var(--spacer-s);
+  .ai {
+    margin-right: var(--spacer-3xs);
   }
 }
 
 .a-input__success-text {
   color: var(--state-success);
-
-  &:before {
-    background: var(--state-success);
-    mask: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 15 15%22><path fill=%22none%22 stroke=%22%23ffffff%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 stroke-width=%226.25%%22 d=%22M14.5.5l-10 14-4-4%22/></svg>') no-repeat center center;
-  }
 }
 
 .a-input__error-text {
   color: var(--state-danger-light);
-
-  &:before {
-    background: var(--state-danger-light);
-    mask: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><defs><style>.a{fill:none;stroke:%23ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:6.25%}</style></defs><path class=%22a%22 d=%22M22.553 22.581a.569.569 0 01-.553.894H2a.569.569 0 01-.553-.894L11.553 2.37c.246-.492.648-.492.894 0zM12 16.979v-7%22/><path class=%22a%22 d=%22M11.991 18.979a.246.246 0 00-.241.255.255.255 0 00.254.245h.005a.246.246 0 00.241-.255.255.255 0 00-.25-.245h-.005%22/></svg>') no-repeat center center;
-  }
 }
 
 /**
