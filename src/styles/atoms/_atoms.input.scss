@@ -160,8 +160,7 @@ textarea {
 }
 
 .a-input__character-counter {
-  flex-grow: 1;
-  flex-shrink: 0;
+  flex: 1 0 auto;
   margin-left: var(--spacer);
   text-align: right;
 }
