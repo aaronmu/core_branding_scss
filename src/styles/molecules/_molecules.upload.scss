@@ -62,7 +62,7 @@ $upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
 .m-upload__dropzone {
   align-items: center;
   background-color: $upload-bg;
-  border: 2px dashed $upload-border;
+  border: rem(2px) dashed $upload-border;
   color: $upload-color;
   cursor: pointer;
   display: flex;
@@ -106,12 +106,12 @@ $upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
   &:before {
     @include focus;
 
-    bottom: -3px;
+    bottom: rem(-3px);
     cursor: pointer;
-    left: -3px;
+    left: rem(-3px);
     position: absolute;
-    right: -3px;
-    top: -3px;
+    right: rem(-3px);
+    top: rem(-3px);
     z-index: layer('cellar');
   }
 }
