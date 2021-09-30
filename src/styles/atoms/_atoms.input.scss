@@ -167,8 +167,10 @@ textarea {
 
 .a-input__error-text,
 .a-input__success-text {
+  display: flex;
+
   .ai {
-    margin-right: var(--spacer-3xs);
+    margin-right: var(--spacer-xxs);
   }
 }
 
