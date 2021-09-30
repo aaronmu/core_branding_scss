@@ -413,3 +413,39 @@
     width: 100%;
   }
 }
+
+/**
+ * BUTTON WITH AVATAR
+ * -------------------------------------------------------------------
+ */
+
+.a-button {
+  &.has-avatar,
+  &.has-avatar-with-image {
+    position: relative;
+
+    .a-avatar {
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  &.has-avatar {
+    padding-left: var(--spacer-xl);
+  }
+
+  &.has-avatar-with-image {
+    padding-left: calc(var(--spacer-xl) + var(--spacer));
+  }
+}
+
+.a-button--s {
+  &.has-avatar {
+    padding-left: var(--spacer-l);
+  }
+
+  &.has-avatar-with-image {
+    padding-left: calc(var(--spacer-l) + var(--spacer));
+  }
+}
