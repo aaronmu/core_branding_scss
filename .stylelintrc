@@ -26,6 +26,7 @@
     ],
     "at-rule-no-unknown": null,
     "block-closing-brace-newline-before": "always",
+    "custom-property-empty-line-before": null,
     "declaration-colon-space-after": null,
     "no-descending-specificity": null,
     "no-duplicate-selectors": null,

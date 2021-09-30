@@ -13,6 +13,7 @@ $upload-border:              $brand-primary !default;
 $upload-disabled-color:      $state-disabled !default;
 $upload-disabled-bg:         $gray-100 !default;
 $upload-disabled-border:     $upload-disabled-color !default;
+$upload-focus-border:        rgb(192, 223, 254) !default;
 
 $upload-file-color:           $text-color !default;
 $upload-file-bg:              $background-color-light !default;
@@ -61,7 +62,7 @@ $upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
 .m-upload__dropzone {
   align-items: center;
   background-color: $upload-bg;
-  border: 2px dashed $upload-border;
+  border: rem(2px) dashed $upload-border;
   color: $upload-color;
   cursor: pointer;
   display: flex;
@@ -103,13 +104,14 @@ $upload-file-color-danger:    mix($black, $state-danger, 40%) !default;
   width: 100%;
 
   &:before {
-    bottom: -2px;
-    box-shadow: 0 0 0 3px $input-border-focus;
+    @include focus;
+
+    bottom: rem(-3px);
     cursor: pointer;
-    left: -2px;
+    left: rem(-3px);
     position: absolute;
-    right: -2px;
-    top: -2px;
+    right: rem(-3px);
+    top: rem(-3px);
     z-index: layer('cellar');
   }
 }

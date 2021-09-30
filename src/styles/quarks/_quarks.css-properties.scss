@@ -5,12 +5,55 @@
    */
 
   /**
-   * SPECIFIC COLOR PALETTE
+   * THEME COLORS
    * -------------------------------------------------------------------
    */
 
-  --brand-primary:           #{$theme1-400};
-  --brand-secondary:         #{$monza-400};
+  --theme1-600:              #{$endeavour-600};
+  --theme1-500:              #{$endeavour-500};
+  --theme1-400:              #{$endeavour-400};
+  --theme1-300:              #{$endeavour-300};
+  --theme1-200:              #{$endeavour-200};
+  --theme1-100:              #{$endeavour-100};
+
+  --success-600:             #{$mantis-600};
+  --success-500:             #{$mantis-500};
+  --success-400:             #{$mantis-400};
+  --success-300:             #{$mantis-300};
+  --success-200:             #{$mantis-200};
+  --success-100:             #{$mantis-100};
+
+  --warning-600:             #{$supernova-600};
+  --warning-500:             #{$supernova-500};
+  --warning-400:             #{$supernova-400};
+  --warning-300:             #{$supernova-300};
+  --warning-200:             #{$supernova-200};
+  --warning-100:             #{$supernova-100};
+
+  --danger-600:              #{$cinnabar-600};
+  --danger-500:              #{$cinnabar-500};
+  --danger-400:              #{$cinnabar-400};
+  --danger-300:              #{$cinnabar-300};
+  --danger-200:              #{$cinnabar-200};
+  --danger-100:              #{$cinnabar-100};
+
+  /**
+   * UI COLORS
+   * -------------------------------------------------------------------
+   */
+
+  --brand-primary:           var(--theme1-400);
+
+  --text-color:              #{$black};
+
+  --border-color:            #{$gray-300};
+
+  --state-info:              var(--brand-primary);
+  --state-success:           var(--success-600);
+  --state-warning:           var(--warning-500);
+  --state-danger:            var(--danger-500);
+  --state-danger-light:      var(--danger-400); // TODO: Give --state-danger-light a better name
+  --state-disabled:          #{$gray-400};
 
   /**
    * SPACERS
