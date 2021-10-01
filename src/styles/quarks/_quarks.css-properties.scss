@@ -107,4 +107,12 @@
   --animation-duration:      200ms;
   --animation-easing:        ease-in-out;
   --animation-normal:        var(--animation-duration) var(--animation-easing);
+
+  /**
+   * SHARED CSS PROPERTIES
+   * -------------------------------------------------------------------
+   */
+
+  --shared-avatar-size-s:    calc(var(--spacer) * 1.5); // 36px
+  --shared-avatar-size:      calc(var(--spacer) * 2); // 48px
 }

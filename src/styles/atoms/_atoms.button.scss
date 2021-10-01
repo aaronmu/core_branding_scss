@@ -432,20 +432,20 @@
   }
 
   &.has-avatar {
-    padding-left: var(--spacer-xl);
+    padding-left: var(--shared-avatar-size);
   }
 
   &.has-avatar-with-image {
-    padding-left: calc(var(--spacer-xl) + var(--spacer));
+    padding-left: calc(var(--shared-avatar-size) + var(--spacer));
   }
 }
 
 .a-button--s {
   &.has-avatar {
-    padding-left: var(--spacer-l);
+    padding-left: var(--shared-avatar-size-s);
   }
 
   &.has-avatar-with-image {
-    padding-left: calc(var(--spacer-l) + var(--spacer));
+    padding-left: calc(var(--shared-avatar-size-s) + var(--spacer));
   }
 }
