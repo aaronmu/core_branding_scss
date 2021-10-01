@@ -89,3 +89,32 @@
     }
   }
 }
+
+/**
+ * BADGES DISABLED COLORS
+ * -------------------------------------------------------------------
+ */
+
+.is-disabled {
+  .a-badge {
+    &,
+    &.a-badge--primary,
+    &.a-badge--secondary {
+      --badge-color:             #{$white};
+      --badge-bg-color:          #{$gray-400};
+      --badge-border-color:      #{$gray-400};
+
+      &.a-badge--outline {
+        --badge-color:            #{$gray-400};
+        --badge-bg-color:         transparent;
+        --badge-border-color:     #{$gray-300};
+      }
+
+      &.a-badge--transparent {
+        --badge-color:            #{$gray-400};
+        --badge-bg-color:         #{$gray-100};
+        --badge-border-color:     #{$gray-100};
+      }
+    }
+  }
+}
