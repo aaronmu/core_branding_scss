@@ -30,7 +30,7 @@
   background-color: var(--avatar-bg-color);
   color: var(--avatar-color);
   display: inline-flex;
-  font-family: $font-family-headings;
+  font-family: var(--font-family-headings);
   font-size: var(--avatar-icon-size);
   height: var(--avatar-size);
   justify-content: center;

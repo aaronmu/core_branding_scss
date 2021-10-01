@@ -15,7 +15,7 @@ $cite-color:              $brand-secondary !default;
 
 body {
   color: $text-color;
-  font-family: $font-family-base;
+  font-family: var(--font-family-base);
   font-size: rem($font-size-base);
   line-height: $line-height-base;
 }
@@ -41,12 +41,12 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: $font-family-headings;
+  font-family: var(--font-family-headings);
   line-height: $line-height-headings;
   margin: 0;
 
   &.has-base-font {
-    font-family: $font-family-base;
+    font-family: var(--font-family-base);
   }
 }
 
@@ -103,7 +103,7 @@ blockquote {
 
   p {
     display: inline;
-    font-family: $font-family-headings;
+    font-family: var(--font-family-headings);
   }
 
   cite {
