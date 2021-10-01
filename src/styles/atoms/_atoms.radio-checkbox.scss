@@ -103,9 +103,9 @@
       left: 0;
       margin-left: calc(var(--spacer) * -1);
       position: absolute;
-      transition-duration: $animation-duration;
+      transition-duration: var(--animation-duration);
       transition-property: background, box-shadow;
-      transition-timing-function: $animation-easing;
+      transition-timing-function: var(--animation-easing);
       width: var(--spacer);
     }
 
@@ -120,9 +120,9 @@
       position: absolute;
       text-align: center;
       top: 0;
-      transition-duration: $animation-duration;
+      transition-duration: var(--animation-duration);
       transition-property: background-size;
-      transition-timing-function: $animation-easing;
+      transition-timing-function: var(--animation-easing);
       width: var(--spacer);
     }
   }

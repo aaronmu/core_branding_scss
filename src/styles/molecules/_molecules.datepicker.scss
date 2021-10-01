@@ -32,7 +32,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
   max-width: calc(var(--spacer) * 14);
   opacity: 0;
   transform: translateY(calc(var(--spacer-xl) * -1));
-  transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
+  transition: visibility 0s var(--animation-normal), opacity $animation-normal, transform $animation-normal;
   visibility: hidden;
 
   table {

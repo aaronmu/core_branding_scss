@@ -44,9 +44,9 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
       flex: 1 1 auto;
       padding: $nav-padding;
       text-decoration: none;
-      transition-duration: $animation-duration;
+      transition-duration: var(--animation-duration);
       transition-property: background, color;
-      transition-timing-function: $animation-easing;
+      transition-timing-function: var(--animation-easing);
 
       &:hover,
       &:active {

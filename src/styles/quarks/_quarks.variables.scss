@@ -161,16 +161,6 @@ $font-weight-h6:          $normal !default;
 $readable-content-width:  45rem !default;
 
 /**
- * ANIMATIONS
- * -------------------------------------------------------------------
- */
-
-$animation-duration:      200ms !default;
-$animation-easing:        ease-in-out !default;
-
-$animation-normal:        $animation-duration $animation-easing !default;
-
-/**
  * Z-INDEXES
  * -------------------------------------------------------------------
  * http://www.sitepoint.com/better-solution-managing-z-index-sass/

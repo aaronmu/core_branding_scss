@@ -10,7 +10,7 @@ $navigation-menu-undocked-width:  15rem !default;
 $navigation-menu-docked-width:    $header-height !default;
 $navigation-menu-submenu-inset:   var(--spacer-xs) !default;
 $navigation-menu-submenu-height:  $navigation-menu-undocked-width * 2 !default;
-$navigation-menu-animation-speed: $animation-duration !default;
+$navigation-menu-animation-speed: var(--animation-duration) !default;
 
 /**
  * NAVIGATION MENU
@@ -29,7 +29,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
     overflow-y: auto;
     position: initial;
     top: 0;
-    transition: width min-width ease-in-out $navigation-menu-animation-speed;
+    transition: width min-width var(--animation-easing) $navigation-menu-animation-speed;
     width: $navigation-menu-undocked-width;
 
     a {
@@ -67,7 +67,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
         .o-menu__submenu-content-wrapper {
           box-shadow: $box-shadow;
           max-height: inherit;
-          transition: width ease-in-out;
+          transition: width var(--animation-easing);
           width: 0;
 
           .m-nav-list {
@@ -204,9 +204,9 @@ $navigation-menu-animation-speed: $animation-duration !default;
       height: $navigation-menu-mobile-height;
       justify-content: center;
       text-decoration: none;
-      transition-duration: $animation-duration;
+      transition-duration: var(--animation-duration);
       transition-property: background, color;
-      transition-timing-function: $animation-easing;
+      transition-timing-function: var(--animation-easing);
 
       // Support for a margin for iPhone X
       @supports (margin-bottom: env(safe-area-inset-bottom)) {
@@ -282,7 +282,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
     display: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height ease-in-out $navigation-menu-animation-speed;
+    transition: max-height var(--animation-easing) $navigation-menu-animation-speed;
 
     .m-nav-list {
       border: none;
@@ -321,7 +321,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
       li > a > .o-menu__icon {
         margin-right: var(--spacer-3xs);
         transform: rotate(0deg);
-        transition: transform $navigation-menu-animation-speed ease-in-out;
+        transition: transform $navigation-menu-animation-speed var(--animation-easing);
       }
 
       li.is-active {

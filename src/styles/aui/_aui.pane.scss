@@ -19,7 +19,7 @@ $pane-width: 20rem !default;
   &--left,
   &--right {
     position: absolute;
-    transition: transform $animation-duration $animation-easing;
+    transition: transform var(--animation-normal);
 
     &.m-pane--open {
       transform: translate(0);

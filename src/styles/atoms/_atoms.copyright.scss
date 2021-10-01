@@ -10,7 +10,7 @@
   display: inline-block;
   font-size: rem($copyright-font-size);
   height: $copyright-height;
-  transition: transform $animation-duration $animation-easing;
+  transition: transform var(--animation-normal);
 }
 
 /**
