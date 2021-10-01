@@ -197,9 +197,9 @@
  * -------------------------------------------------------------------
  */
 
-@mixin a-badge($_color: $badge-default-color, $_background: $badge-default-bg) {
-  background-color: mix($_background, $white, 10%);
-  box-shadow: 0 0 0 1px $_background inset;
+@mixin a-badge($_color, $_bg-color, $_border-color) {
+  background-color: $_bg-color;
+  box-shadow: 0 0 0 var(--border-width) $_border-color inset;
   color: $_color;
 }
 
