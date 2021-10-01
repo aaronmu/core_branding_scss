@@ -17,7 +17,7 @@
 
   &:before {
     background-color: $switch-bg;
-    border: 1px solid $switch-border;
+    border: var(--border-width) solid $switch-border;
     content: '';
     cursor: pointer;
     display: inline-block;
@@ -38,7 +38,7 @@
     position: absolute;
     top: .25rem;
     transform: translateX(-50%);
-    transition: background, transform $animation-normal;
+    transition: background, transform var(--animation-normal);
     width: $switch-handle-width;
   }
 
@@ -54,7 +54,7 @@
 
     &:before {
       background-color: $switch-disabled;
-      border: 1px solid $switch-disabled-border;
+      border: var(--border-width) solid $switch-disabled-border;
     }
 
     .a-switch__off,

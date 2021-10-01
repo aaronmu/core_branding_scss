@@ -32,7 +32,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
   max-width: calc(var(--spacer) * 14);
   opacity: 0;
   transform: translateY(calc(var(--spacer-xl) * -1));
-  transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
+  transition: visibility 0s var(--animation-normal), opacity var(--animation-normal), transform var(--animation-normal);
   visibility: hidden;
 
   table {
@@ -60,8 +60,8 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
 
 .m-datepicker__days {
   background-color: $datepicker-bg;
-  border-left: 1px solid $datepicker-border;
-  border-right: 1px solid $datepicker-border;
+  border-left: var(--border-width) solid $datepicker-border;
+  border-right: var(--border-width) solid $datepicker-border;
   height: var(--spacer-xl);
 }
 
@@ -69,7 +69,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
   background-color: $datepicker-bg;
 
   td {
-    border: 1px solid $datepicker-border;
+    border: var(--border-width) solid $datepicker-border;
     padding: 0;
     position: relative;
 
@@ -87,7 +87,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
     height: 100%;
     padding: 0;
     position: absolute;
-    transition: background $animation-normal;
+    transition: background var(--animation-normal);
     width: 100%;
 
     &:hover,

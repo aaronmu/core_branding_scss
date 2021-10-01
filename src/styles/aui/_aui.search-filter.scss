@@ -13,7 +13,7 @@ $search-filter-icon-color:   $gray-400;
 .m-search-filter {
   &__label {
     background: $white;
-    border: 1px solid $border-color;
+    border: var(--border-width) solid $border-color;
     cursor: pointer;
     display: flex;
     height: var(--spacer-xl);

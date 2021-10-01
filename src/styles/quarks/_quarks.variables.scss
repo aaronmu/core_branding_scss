@@ -110,15 +110,6 @@ $screen-md-max:           74.9375rem !default; // 1199px ($screen-lg - 1px)
 $screen-lg-max:           89.9375rem !default; // 1439px ($screen-xl - 1px)
 
 /**
- * FONT FAMILIES
- * -------------------------------------------------------------------
- */
-
-$font-family-base:        'Sun Antwerpen', sans-serif !default;
-$font-family-headings:    'Antwerpen Regular', sans-serif !default;
-$font-family-monospace:   'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace !default;
-
-/**
  * FONT SIZES
  * -------------------------------------------------------------------
  */
@@ -168,16 +159,6 @@ $font-weight-h6:          $normal !default;
  */
 
 $readable-content-width:  45rem !default;
-
-/**
- * ANIMATIONS
- * -------------------------------------------------------------------
- */
-
-$animation-duration:      200ms !default;
-$animation-easing:        ease-in-out !default;
-
-$animation-normal:        $animation-duration $animation-easing !default;
 
 /**
  * Z-INDEXES

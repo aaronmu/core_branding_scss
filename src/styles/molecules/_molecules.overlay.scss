@@ -38,7 +38,7 @@
   position: absolute;
   right: var(--spacer-xs);
   top: var(--spacer-xs);
-  transition: color $animation-normal;
+  transition: color var(--animation-normal);
 
   &:hover {
     color: $overlay-button-color-hover;

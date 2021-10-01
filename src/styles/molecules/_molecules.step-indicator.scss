@@ -51,7 +51,7 @@ $step-indicator-square-size:            var(--spacer-l) !default;
     // The square
     &:before {
       background-color: $step-indicator-bg;
-      border: 1px solid $step-indicator-border;
+      border: var(--border-width) solid $step-indicator-border;
       color: $step-indicator-color;
       content: counter(steps);
       display: block;

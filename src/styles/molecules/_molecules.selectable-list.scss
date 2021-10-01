@@ -27,7 +27,7 @@
   @extend %a-list--reset;
 
   li {
-    border-top: 1px solid var(--selectable-list-item-border-color);
+    border-top: var(--border-width) solid var(--selectable-list-item-border-color);
     transition: background var(--animation-normal);
 
     a {
@@ -41,7 +41,7 @@
     }
 
     &:last-child {
-      border-bottom: 1px solid var(--selectable-list-item-border-color);
+      border-bottom: var(--border-width) solid var(--selectable-list-item-border-color);
     }
 
     &:hover,

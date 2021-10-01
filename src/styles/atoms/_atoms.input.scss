@@ -323,7 +323,7 @@ textarea {
     }
 
     .a-input__addon {
-      border-left: 1px solid var(--input-border-color);
+      border-left: var(--border-width) solid var(--input-border-color);
       padding-left: var(--input-padding-horizontal);
     }
   }
@@ -334,15 +334,15 @@ textarea {
     }
 
     .a-input__addon {
-      border-right: 1px solid var(--input-border-color);
+      border-right: var(--border-width) solid var(--input-border-color);
       padding-right: var(--input-padding-horizontal);
     }
   }
 }
 
 .a-input__addon {
-  border-bottom: 1px solid var(--input-border-color);
-  border-top: 1px solid var(--input-border-color);
+  border-bottom: var(--border-width) solid var(--input-border-color);
+  border-top: var(--border-width) solid var(--input-border-color);
   color: var(--input-icon-color);
   line-height: var(--input-height);
   text-align: center;
