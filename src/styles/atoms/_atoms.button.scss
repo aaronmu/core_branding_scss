@@ -440,6 +440,16 @@
   }
 }
 
+.a-button--xs {
+  &.has-avatar {
+    padding-left: var(--shared-avatar-size-xs);
+  }
+
+  &.has-avatar-with-image {
+    padding-left: calc(var(--shared-avatar-size-xs) + var(--spacer-xs));
+  }
+}
+
 .a-button--s {
   &.has-avatar {
     padding-left: var(--shared-avatar-size-s);
@@ -447,5 +457,15 @@
 
   &.has-avatar-with-image {
     padding-left: calc(var(--shared-avatar-size-s) + var(--spacer));
+  }
+}
+
+.a-button--l {
+  &.has-avatar {
+    padding-left: var(--shared-avatar-size-l);
+  }
+
+  &.has-avatar-with-image {
+    padding-left: calc(var(--shared-avatar-size-l) + var(--spacer));
   }
 }
