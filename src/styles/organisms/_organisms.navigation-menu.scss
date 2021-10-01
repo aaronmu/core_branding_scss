@@ -377,7 +377,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
     height: 0;
     opacity: 0;
     position: absolute;
-    transition: opacity $navigation-menu-animation-speed * 2 ease;
+    transition: opacity calc(#{$navigation-menu-animation-speed} * 2) ease;
     width: 100vh;
   }
 

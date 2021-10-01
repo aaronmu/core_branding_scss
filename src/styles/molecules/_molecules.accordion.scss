@@ -53,7 +53,7 @@ $accordion-content-padding:   var(--spacer) !default;
   padding: $accordion-header-padding;
   position: relative;
   text-align: left;
-  transition: background $animation-normal;
+  transition: background var(--animation-normal);
   user-select: none;
 
   &:hover {

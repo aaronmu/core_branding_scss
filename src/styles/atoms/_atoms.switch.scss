@@ -38,7 +38,7 @@
     position: absolute;
     top: .25rem;
     transform: translateX(-50%);
-    transition: background, transform $animation-normal;
+    transition: background, transform var(--animation-normal);
     width: $switch-handle-width;
   }
 
