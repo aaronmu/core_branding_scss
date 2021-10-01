@@ -4,46 +4,14 @@
  */
 
 .a-badge {
-  --badge-font-size:                            #{$font-size-sm};
-  --badge-font-weight:                          #{$bold};
-  --badge-size:                                 var(--spacer);
-  --badge-padding:                              0 var(--spacer-3xs);
+  --badge-font-size:         #{$font-size-sm};
+  --badge-font-weight:       #{$bold};
+  --badge-size:              var(--spacer);
+  --badge-padding:           0 var(--spacer-3xs);
 
-  --badge-default-color:                        #{$white};
-  --badge-default-bg-color:                     #{$gray-400};
-  --badge-default-border-color:                 #{$gray-400};
-
-  --badge-default-outline-color:                #{$gray-400};
-  --badge-default-outline-bg-color:             transparent;
-  --badge-default-outline-border-color:         #{$gray-300};
-
-  --badge-default-transparent-color:            #{$gray-400};
-  --badge-default-transparent-bg-color:         #{$gray-100};
-  --badge-default-transparent-border-color:     #{$gray-100};
-
-  --badge-primary-color:                        #{$white};
-  --badge-primary-bg-color:                     var(--theme1-400);
-  --badge-primary-border-color:                 var(--theme1-400);
-
-  --badge-primary-outline-color:                var(--theme1-400);
-  --badge-primary-outline-bg-color:             transparent;
-  --badge-primary-outline-border-color:         var(--theme1-400);
-
-  --badge-primary-transparent-color:            var(--theme1-400);
-  --badge-primary-transparent-bg-color:         var(--theme1-050);
-  --badge-primary-transparent-border-color:     var(--theme1-050);
-
-  --badge-secondary-color:                      #{$white};
-  --badge-secondary-bg-color:                   var(--theme2-400);
-  --badge-secondary-border-color:               var(--theme2-400);
-
-  --badge-secondary-outline-color:              var(--theme2-400);
-  --badge-secondary-outline-bg-color:           transparent;
-  --badge-secondary-outline-border-color:       var(--theme2-400);
-
-  --badge-secondary-transparent-color:          var(--theme2-400);
-  --badge-secondary-transparent-bg-color:       var(--theme2-100);
-  --badge-secondary-transparent-border-color:   var(--theme2-100);
+  --badge-color:             #{$white};
+  --badge-bg-color:          #{$gray-400};
+  --badge-border-color:      #{$gray-400};
 }
 
 /**
@@ -69,73 +37,55 @@
  */
 
 .a-badge {
-  @include a-badge(
-    var(--badge-default-color),
-    var(--badge-default-bg-color),
-    var(--badge-default-border-color)
-  );
+  background-color: var(--badge-bg-color);
+  box-shadow: 0 0 0 var(--border-width) var(--badge-border-color) inset;
+  color: var(--badge-color);
 
   &.a-badge--outline {
-    @include a-badge(
-      var(--badge-default-outline-color),
-      var(--badge-default-outline-bg-color),
-      var(--badge-default-outline-border-color)
-    );
+    --badge-color:            #{$gray-400};
+    --badge-bg-color:         transparent;
+    --badge-border-color:     #{$gray-300};
   }
 
   &.a-badge--transparent {
-    @include a-badge(
-      var(--badge-default-transparent-color),
-      var(--badge-default-transparent-bg-color),
-      var(--badge-default-transparent-border-color)
-    );
+    --badge-color:            #{$gray-400};
+    --badge-bg-color:         #{$gray-100};
+    --badge-border-color:     #{$gray-100};
   }
 
   &.a-badge--primary {
-    @include a-badge(
-      var(--badge-primary-color),
-      var(--badge-primary-bg-color),
-      var(--badge-primary-border-color)
-    );
+    --badge-color:            #{$white};
+    --badge-bg-color:         var(--theme1-400);
+    --badge-border-color:     var(--theme1-400);
 
     &.a-badge--outline {
-      @include a-badge(
-        var(--badge-primary-outline-color),
-        var(--badge-primary-outline-bg-color),
-        var(--badge-primary-outline-border-color)
-      );
+      --badge-color:          var(--theme1-400);
+      --badge-bg-color:       transparent;
+      --badge-border-color:   var(--theme1-400);
     }
 
     &.a-badge--transparent {
-      @include a-badge(
-        var(--badge-primary-transparent-color),
-        var(--badge-primary-transparent-bg-color),
-        var(--badge-primary-transparent-border-color)
-      );
+      --badge-color:          var(--theme1-400);
+      --badge-bg-color:       var(--theme1-050);
+      --badge-border-color:   var(--theme1-050);
     }
   }
 
   &.a-badge--secondary {
-    @include a-badge(
-      var(--badge-secondary-color),
-      var(--badge-secondary-bg-color),
-      var(--badge-secondary-border-color)
-    );
+    --badge-color:            #{$white};
+    --badge-bg-color:         var(--theme2-400);
+    --badge-border-color:     var(--theme2-400);
 
     &.a-badge--outline {
-      @include a-badge(
-        var(--badge-secondary-outline-color),
-        var(--badge-secondary-outline-bg-color),
-        var(--badge-secondary-outline-border-color)
-      );
+      --badge-color:          var(--theme2-400);
+      --badge-bg-color:       transparent;
+      --badge-border-color:   var(--theme2-400);
     }
 
     &.a-badge--transparent {
-      @include a-badge(
-        var(--badge-secondary-transparent-color),
-        var(--badge-secondary-transparent-bg-color),
-        var(--badge-secondary-transparent-border-color)
-      );
+      --badge-color:          var(--theme2-400);
+      --badge-bg-color:       var(--theme2-100);
+      --badge-border-color:   var(--theme2-100);
     }
   }
 }

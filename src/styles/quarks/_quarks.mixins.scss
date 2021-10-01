@@ -193,17 +193,6 @@
 }
 
 /**
- * BADGE MIXIN
- * -------------------------------------------------------------------
- */
-
-@mixin a-badge($_color, $_bg-color, $_border-color) {
-  background-color: $_bg-color;
-  box-shadow: 0 0 0 var(--border-width) $_border-color inset;
-  color: $_color;
-}
-
-/**
  * LABEL MIXIN
  * -------------------------------------------------------------------
  */
