@@ -240,6 +240,10 @@
   padding: var(--spacer-3xs);
 }
 
+.d-avatars {
+  display: flex;
+}
+
 .d-button {
   margin-bottom: calc(var(--spacer) / 6); // Improves the 'flow' of multiple consecutive buttons
 }
