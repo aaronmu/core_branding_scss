@@ -25,7 +25,7 @@ $table-padding:               var(--spacer-xs) !default;
 
 %a-table {
   background-color: $table-bg;
-  border: 1px solid $table-border;
+  border: var(--border-width) solid $table-border;
   border-collapse: collapse;
   width: 100%;
 
@@ -39,7 +39,7 @@ $table-padding:               var(--spacer-xs) !default;
   }
 
   tr {
-    border-bottom: 1px solid $table-border;
+    border-bottom: var(--border-width) solid $table-border;
     height: var(--spacer-xl);
     transition: background-color $animation-duration $animation-easing;
 
@@ -131,7 +131,7 @@ $table-padding:               var(--spacer-xs) !default;
   -ms-overflow-style: scrollbar;
   -webkit-overflow-scrolling: touch;
   background-color: $table-bg;
-  border: 1px solid $table-border;
+  border: var(--border-width) solid $table-border;
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;

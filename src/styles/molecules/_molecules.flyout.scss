@@ -28,7 +28,7 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
 
 .m-flyout__content {
   background-color: $flyout-bg;
-  border: 1px solid $flyout-border;
+  border: var(--border-width) solid $flyout-border;
   box-shadow: $box-shadow;
   opacity: 0;
   position: absolute;

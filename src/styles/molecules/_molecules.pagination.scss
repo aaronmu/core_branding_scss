@@ -75,7 +75,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
   }
 
   .m-pagination__prev {
-    border-right: 1px solid $pagination-bg-hover;
+    border-right: var(--border-width) solid $pagination-bg-hover;
 
     + .m-pagination__next {
       border-left: none;
@@ -83,7 +83,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
   }
 
   .m-pagination__next {
-    border-left: 1px solid $pagination-bg-hover;
+    border-left: var(--border-width) solid $pagination-bg-hover;
     z-index: layer('auto');
   }
 }

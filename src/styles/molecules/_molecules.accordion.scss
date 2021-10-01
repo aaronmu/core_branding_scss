@@ -37,7 +37,7 @@ $accordion-content-padding:   var(--spacer) !default;
     }
 
     .m-accordion__content {
-      border-bottom: 1px solid $accordion-border;
+      border-bottom: var(--border-width) solid $accordion-border;
       max-height: 500px;
     }
   }
@@ -46,7 +46,7 @@ $accordion-content-padding:   var(--spacer) !default;
 .m-accordion__header {
   align-items: center;
   background-color: $accordion-header-bg;
-  border: 1px solid $accordion-border;
+  border: var(--border-width) solid $accordion-border;
   cursor: pointer;
   display: flex;
   min-height: var(--spacer-xl);
@@ -77,8 +77,8 @@ $accordion-content-padding:   var(--spacer) !default;
 .m-accordion__content {
   background-color: $accordion-content-bg;
   border-bottom: none;
-  border-left: 1px solid $accordion-border;
-  border-right: 1px solid $accordion-border;
+  border-left: var(--border-width) solid $accordion-border;
+  border-right: var(--border-width) solid $accordion-border;
   display: block;
   max-height: 0;
   overflow: auto;

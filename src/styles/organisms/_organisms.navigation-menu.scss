@@ -23,7 +23,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
   z-index: layer('pane');
 
   @include at($screen-sm) {
-    border-right: 1px solid $border-color-light;
+    border-right: var(--border-width) solid $border-color-light;
     min-width: $navigation-menu-undocked-width;
     overflow-x: hidden; // By default, don't show overflowing content
     overflow-y: auto;
@@ -71,12 +71,12 @@ $navigation-menu-animation-speed: $animation-duration !default;
           width: 0;
 
           .m-nav-list {
-            border: 1px solid $border-color-light;
+            border: var(--border-width) solid $border-color-light;
             border-bottom: none;
             border-left: none;
 
             .m-nav-list {
-              border-left: 1px solid $border-color-light;
+              border-left: var(--border-width) solid $border-color-light;
             }
 
             li {
@@ -85,7 +85,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
               }
 
               a {
-                border-bottom: 1px solid $border-color-light;
+                border-bottom: var(--border-width) solid $border-color-light;
                 padding-left: var(--spacer-xs);
               }
             }
@@ -117,7 +117,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
   align-content: space-between;
   align-items: center;
   background: $white;
-  border-top: 1px solid $border-color-light;
+  border-top: var(--border-width) solid $border-color-light;
   display: flex;
   position: relative;
   width: 100%;
@@ -152,7 +152,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
 }
 
 .o-menu .o-menu__tab {
-  border-right: 1px solid $border-color-light;
+  border-right: var(--border-width) solid $border-color-light;
   cursor: pointer;
   flex-basis: 33%;
   flex-grow: 1;
@@ -181,7 +181,7 @@ $navigation-menu-animation-speed: $animation-duration !default;
   }
 
   @include at($screen-sm) {
-    border-bottom: 1px solid $border-color-light;
+    border-bottom: var(--border-width) solid $border-color-light;
     border-right: none;
     width: 100%;
   }
