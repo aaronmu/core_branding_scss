@@ -18,9 +18,29 @@
         <h3 class="u-margin-top-xl">Avatar</h3>
         <span class="d-file">atoms/atoms.avatar</span>
         <div class="d">
-            <div>
+            <div class="d-avatars">
+                <div class="u-margin-right-xs">
+                    <a href="javascript:void(0);">
+                        <div class="a-avatar a-avatar--s">
+                            <span class="a-avatar__icon" aria-label="avatarTitle">
+                                {{ icon.render('single-neutral') }}
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="u-margin-right-xs">
+                    <a href="javascript:void(0);">
+                        <div class="a-avatar">
+                            <span class="a-avatar__icon" aria-label="avatarTitle">
+                                {{ icon.render('single-neutral') }}
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
                 <a href="javascript:void(0);">
-                    <div class="a-avatar">
+                    <div class="a-avatar a-avatar--l">
                         <span class="a-avatar__icon" aria-label="avatarTitle">
                             {{ icon.render('single-neutral') }}
                         </span>
@@ -43,19 +63,25 @@
             <div class="d-avatars">
                 <div class="u-margin-right-xs">
                     <a href="javascript:void(0);">
+                        <div class="a-avatar a-avatar--primary a-avatar--s">
+                            <span class="a-avatar__letter">A</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="u-margin-right-xs">
+                    <a href="javascript:void(0);">
                         <div class="a-avatar a-avatar--primary">
                             <span class="a-avatar__letter">A</span>
                         </div>
                     </a>
                 </div>
 
-                <div>
-                    <a href="javascript:void(0);">
-                        <div class="a-avatar a-avatar--primary">
-                            <span class="a-avatar__letter">WW</span>
-                        </div>
-                    </a>
-                </div>
+                <a href="javascript:void(0);">
+                    <div class="a-avatar a-avatar--primary a-avatar--l">
+                        <span class="a-avatar__letter">A</span>
+                    </div>
+                </a>
             </div>
 
             <div>
@@ -68,9 +94,25 @@
         </div>
 
         <div class="d">
-            <div>
+            <div class="d-avatars">
+                <div class="u-margin-right-xs">
+                    <a href="javascript:void(0);">
+                        <div class="a-avatar a-avatar--s">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar image." />
+                        </div>
+                    </a>
+                </div>
+
+                <div class="u-margin-right-xs">
+                    <a href="javascript:void(0);">
+                        <div class="a-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar image." />
+                        </div>
+                    </a>
+                </div>
+
                 <a href="javascript:void(0);">
-                    <div class="a-avatar">
+                    <div class="a-avatar a-avatar--l">
                         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar image." />
                     </div>
                 </a>
@@ -654,6 +696,14 @@
         <h4 class="u-margin-top-xl">Buttons with avatar</h4>
         <div class="d">
             <div>
+                <button class="a-button a-button--l has-avatar">
+                    <span class="a-avatar a-avatar--primary a-avatar--l">
+                        <span class="a-avatar__letter" aria-label="avatarTitle">A</span>
+                    </span>
+
+                    Anne-Marie
+                </button>
+
                 <button class="a-button has-avatar">
                     <span class="a-avatar a-avatar--primary">
                         <span class="a-avatar__letter" aria-label="avatarTitle">A</span>
@@ -683,6 +733,14 @@
         </div>
         <div class="d">
             <div>
+                <button class="a-button a-button--l has-avatar-with-image">
+                    <span class="a-avatar a-avatar--l">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar image." />
+                    </span>
+
+                    Anne-Marie
+                </button>
+
                 <button class="a-button has-avatar-with-image">
                     <span class="a-avatar">
                         <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar image." />
@@ -690,6 +748,7 @@
 
                     Anne-Marie
                 </button>
+
 
                 <button class="a-button a-button--s has-avatar-with-image">
                     <span class="a-avatar a-avatar--s">
