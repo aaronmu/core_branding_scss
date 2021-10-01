@@ -50,13 +50,10 @@
    * -------------------------------------------------------------------
    */
 
-  --brand-primary:           var(--theme1-400);
-
   --text-color:              #{$black};
-
   --border-color:            #{$gray-300};
 
-  --state-info:              var(--brand-primary);
+  --state-info:              var(--theme1-400);
   --state-success:           var(--success-600);
   --state-warning:           var(--warning-500);
   --state-danger:            var(--danger-500);
