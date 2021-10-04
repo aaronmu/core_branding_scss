@@ -28,7 +28,7 @@ $icon-list-icon-size:         $icon-size-base !default;
     a {
       color: inherit;
       display: block;
-      transition: color $animation-duration $animation-easing;
+      transition: color var(--animation-normal);
 
       &:hover {
         color: $icon-list-hover-color;

@@ -26,7 +26,7 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
 %m-nav-list {
   @extend %a-list--reset;
 
-  border-top: 1px solid $nav-border;
+  border-top: var(--border-width) solid $nav-border;
 
   > li {
     font-weight: $nav-font-weight;
@@ -38,15 +38,15 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
     > button {
       background-color: $nav-bg;
       border: none;
-      border-bottom: 1px solid $nav-border;
+      border-bottom: var(--border-width) solid $nav-border;
       color: inherit;
       display: block;
       flex: 1 1 auto;
       padding: $nav-padding;
       text-decoration: none;
-      transition-duration: $animation-duration;
+      transition-duration: var(--animation-duration);
       transition-property: background, color;
-      transition-timing-function: $animation-easing;
+      transition-timing-function: var(--animation-easing);
 
       &:hover,
       &:active {
@@ -122,7 +122,7 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
     > li {
       > a,
       > button {
-        border-bottom: 3px solid transparent;
+        border-bottom: calc(var(--border-width) * 3) solid transparent;
         display: inline-flex;
         text-decoration: none;
         transition-property: border, color;

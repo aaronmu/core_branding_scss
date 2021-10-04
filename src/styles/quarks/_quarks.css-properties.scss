@@ -93,11 +93,21 @@
   --screen-xl-max:           89.9375rem; // 1439px (--screen-xxl - 1px)
 
   /**
+   * FONT FAMILIES
+   * -------------------------------------------------------------------
+   */
+
+  --font-family-base:        'Sun Antwerpen', sans-serif;
+  --font-family-headings:    'Antwerpen Regular', sans-serif;
+  --font-family-monospace:   'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+
+  /**
    * BORDERS
    * -------------------------------------------------------------------
    */
 
   --border-radius:           0;
+  --border-width:            .0625rem;
 
   /**
    * ANIMATIONS

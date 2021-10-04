@@ -15,7 +15,7 @@ $cite-color:              $brand-secondary !default;
 
 body {
   color: $text-color;
-  font-family: $font-family-base;
+  font-family: var(--font-family-base);
   font-size: rem($font-size-base);
   line-height: $line-height-base;
 }
@@ -41,12 +41,12 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: $font-family-headings;
+  font-family: var(--font-family-headings);
   line-height: $line-height-headings;
   margin: 0;
 
   &.has-base-font {
-    font-family: $font-family-base;
+    font-family: var(--font-family-base);
   }
 }
 
@@ -97,13 +97,13 @@ p {
  */
 
 blockquote {
-  border-left: 1px solid $border-color-light;
+  border-left: var(--border-width) solid $border-color-light;
   margin: 0;
   padding: var(--spacer-xs) 0 var(--spacer-xs) var(--spacer);
 
   p {
     display: inline;
-    font-family: $font-family-headings;
+    font-family: var(--font-family-headings);
   }
 
   cite {
@@ -147,7 +147,7 @@ mark {
 
 hr {
   border: none;
-  border-top: 1px solid $border-color-light;
+  border-top: var(--border-width) solid $border-color-light;
   height: 1px;
   margin: var(--spacer) 0;
 }
@@ -160,7 +160,7 @@ hr {
 a {
   color: $link-color;
   text-decoration-skip-ink: auto;
-  transition: color $animation-duration $animation-easing;
+  transition: color var(--animation-normal);
 
   &:hover,
   &:active,

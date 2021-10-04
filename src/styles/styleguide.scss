@@ -76,7 +76,7 @@
 }
 
 .line {
-  border-top: 1px solid $border-color-light;
+  border-top: var(--border-width) solid $border-color-light;
 }
 
 .d-h1 {

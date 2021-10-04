@@ -37,7 +37,7 @@
     }
 
     &.show {
-      animation: fadeIn $animation-duration $animation-easing;
+      animation: fadeIn var(--animation-normal);
     }
 
     &.active {

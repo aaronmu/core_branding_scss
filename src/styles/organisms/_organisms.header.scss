@@ -6,7 +6,7 @@
 
 .o-header {
   background-color: $header-bg;
-  border-bottom: 1px solid $header-border;
+  border-bottom: var(--border-width) solid $header-border;
   box-sizing: content-box;
   height: $header-height;
   position: relative;
@@ -48,7 +48,7 @@
 .o-header__button {
   @include a-button($header-btn-color, $header-btn-bg);
 
-  border-left: 1px solid $header-border;
+  border-left: var(--border-width) solid $header-border;
 }
 
 .o-header__button-skip {

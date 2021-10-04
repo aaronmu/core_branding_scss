@@ -18,7 +18,7 @@ $modal-padding:           var(--spacer) !default;
 
 .m-modal {
   background-color: $modal-bg;
-  border: 1px solid $modal-border;
+  border: var(--border-width) solid $modal-border;
   width: 100%;
 
   @include at($screen-xs) {

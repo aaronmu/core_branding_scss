@@ -24,8 +24,8 @@ $legend-size:         $font-size-lg !default;
 
 fieldset {
   border: none;
-  border-bottom: 1px solid $border-color-light;
-  border-top: 1px solid $border-color-light;
+  border-bottom: var(--border-width) solid $border-color-light;
+  border-top: var(--border-width) solid $border-color-light;
   margin: 0;
   min-width: 0;
   padding: $fieldset-padding;
