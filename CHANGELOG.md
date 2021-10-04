@@ -1,5 +1,118 @@
 # Changelog
 
+## [6.0.0] - xxxx-xx-xx
+
+### General
+
+#### Added
+- Added CSS properties for color palette, grayscale colors, spacers, components, etc. to allow customization and theming
+
+#### Changed
+- [BREAKING] Updated and renamed color palette SASS variables
+- [BREAKING] Removed SASS variables of warm gray colors
+- [BREAKING] Updated and renamed SASS variables of grayscale colors
+- [BREAKING] Moved various SASS variables from global variables stylesheet to corresponding component stylesheets
+
+### Tooling
+
+#### Changed
+- Replaced sass-lint by stylelint
+
+### Helpers
+
+#### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.u-margin-*-xx` to `.u-margin-*-3xl`
+  - Changed `.u-margin-*-lg` to `.u-margin-*-xl`
+  - Changed `.u-margin-*-md` to `.u-margin-*-l`
+  - Changed `.u-margin-*-sm` to `.u-margin-*-s`
+
+### Components
+
+#### Avatar
+
+##### Added
+- Added round variant for every avatar
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-avatar--small` to `.a-avatar--s`
+  - Changed `.a-avatar--medium` to `.a-avatar--l`
+  - Changed `.a-avatar--large` to `.a-avatar--xl`
+
+#### Button
+
+##### Added
+- Added button with avatar
+
+##### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-button--tiny` to `.a-button--xs`
+  - Changed `.a-button--small` to `.a-button--s`
+  - Changed `.a-button--large` to `.a-button--l`
+
+#### Flyout
+
+##### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.m-flyout--lg` to `.m-flyout--xl`
+  - Changed `.m-flyout--md` to `.m-flyout--l`
+  - Changed `.m-flyout--sm` to `.m-flyout--s`
+
+#### Input
+
+##### Added
+- Extended input field with character counter
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-input--small` to `.a-input--s`
+  - Changed `.a-input--large` to `.a-input--l`
+  - Changed `.has-addon` to `.has-addon-left` and `.has-addon-right`
+- [BREAKING] Changed the way of adding a description, success and error message to an input field
+- [BREAKING] Removed warning messages
+
+#### Modal
+
+##### Changed
+- [BREAKING] Changed `.m-modal--large` to `.m-modal--l`
+
+#### Pagination
+
+##### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.m-pagination--small` to `.m-pagination--s`
+  - Changed `.m-pagination--large` to `.m-pagination--l`
+
+#### Spinner
+
+##### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-spinner--small` to `.a-spinner--s`
+  - Changed `.a-spinner--large` to `.a-spinner--l`
+
+#### Table
+
+##### Changed
+- [BREAKING] Changed `.a-table--small` to `.a-table--s`
+
+#### Toggle
+
+##### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-toggle--tiny` to `.a-toggle--xs`
+  - Changed `.a-toggle--small` to `.a-toggle--s`
+  - Changed `.a-toggle--large` to `.a-toggle--l`
+
+#### Upload
+
+##### Changed
+- Updated visual appearance when focused
+
 
 ## [5.0.1] - 2021-06-14
 ### Fixed
