@@ -38,7 +38,7 @@
 
 .a-badge {
   background-color: var(--badge-bg-color);
-  box-shadow: 0 0 0 var(--border-width) var(--badge-border-color) inset;
+  border: var(--border-width) solid var(--badge-border-color);
   color: var(--badge-color);
 
   &.a-badge--outline {
