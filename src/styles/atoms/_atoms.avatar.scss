@@ -13,11 +13,13 @@
   --avatar-primary-hover-bg-color:   var(--theme1-500);
 
   --avatar-size-s:                   var(--shared-avatar-size-s); // 36px
-  --avatar-size:                     var(--shared-avatar-size); // 48px
-  --avatar-size-l:                   calc(var(--spacer) * 3); // 72px
-  --avatar-size-xl:                  calc(var(--spacer) * 4); // 96px
+  --avatar-icon-size-s:              1rem;
 
+  --avatar-size:                     var(--shared-avatar-size); // 48px
   --avatar-icon-size:                1.25rem;
+
+  --avatar-size-l:                   var(--shared-avatar-size-l); // 60px
+  --avatar-icon-size-l:              1.5rem;
 }
 
 /**
@@ -79,18 +81,15 @@ a,
  */
 
 .a-avatar--s {
+  font-size: var(--avatar-icon-size-s);
   height: var(--avatar-size-s);
   width: var(--avatar-size-s);
 }
 
 .a-avatar--l {
+  font-size: var(--avatar-icon-size-l);
   height: var(--avatar-size-l);
   width: var(--avatar-size-l);
-}
-
-.a-avatar--xl {
-  height: var(--avatar-size-xl);
-  width: var(--avatar-size-xl);
 }
 
 /**
