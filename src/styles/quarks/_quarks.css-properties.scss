@@ -15,6 +15,14 @@
   --theme1-300:              #{$endeavour-300};
   --theme1-200:              #{$endeavour-200};
   --theme1-100:              #{$endeavour-100};
+  --theme1-050:              #{$endeavour-050};
+
+  --theme2-600:              #{$monza-600};
+  --theme2-500:              #{$monza-500};
+  --theme2-400:              #{$monza-400};
+  --theme2-300:              #{$monza-300};
+  --theme2-200:              #{$monza-200};
+  --theme2-100:              #{$monza-100};
 
   --success-600:             #{$mantis-600};
   --success-500:             #{$mantis-500};
@@ -42,13 +50,10 @@
    * -------------------------------------------------------------------
    */
 
-  --brand-primary:           var(--theme1-400);
-
   --text-color:              #{$black};
-
   --border-color:            #{$gray-300};
 
-  --state-info:              var(--brand-primary);
+  --state-info:              var(--theme1-400);
   --state-success:           var(--success-600);
   --state-warning:           var(--warning-500);
   --state-danger:            var(--danger-500);
