@@ -42,6 +42,16 @@
   - Changed `.a-avatar--medium` to `.a-avatar--l`
   - Changed `.a-avatar--large` to `.a-avatar--xl`
 
+#### Badge
+
+##### Added
+- Added outlined and transparent variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Removed `.a-badge--success`, a-badge--warning` and `a-badge--danger`
+
 #### Button
 
 ##### Added
