@@ -7,6 +7,40 @@
  */
 
 /**
+ * BUTTON VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-button {
+  --btn-color:                      #{$white};
+  --btn-bg-color:                   #{$gray-400};
+  --btn-hover-bg-color:             #{$gray-500};
+
+  --btn-primary-color:              #{$white};
+  --btn-primary-bg-color:           var(--theme1-400);
+  --btn-primary-hover-bg-color:     var(--theme1-500);
+
+  --btn-secondary-color:            #{$white};
+  --btn-secondary-bg-color:         var(--theme2-400);
+  --btn-secondary-hover-bg-color:   var(--theme2-500);
+
+  --btn-success-color:              #{$white};
+  --btn-success-bg-color:           var(--success-600);
+  --btn-success-hover-bg-color:     var(--success-500); // TODO: Implement correct hover state
+
+  --btn-warning-color:              #{$gray-600};
+  --btn-warning-bg-color:           var(--warning-500);
+  --btn-warning-hover-bg-color:     var(--warning-600);
+
+  --btn-danger-color:               #{$white};
+  --btn-danger-bg-color:            var(--danger-500);
+  --btn-danger-hover-bg-color:      var(--danger-600);
+
+  --btn-disabled-color:             #{$gray-400};
+  --btn-disabled-bg-color:          #{$gray-100};
+}
+
+/**
  * BUTTON PLACEHOLDER
  * -------------------------------------------------------------------
  */
@@ -56,28 +90,50 @@
  */
 
 .a-button {
-  @include a-button;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-color);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--btn-hover-bg-color);
+    text-decoration: none;
+  }
+
+  &:disabled {
+    background-color: var(--btn-disabled-bg-color);
+    color: var(--btn-disabled-color);
+    cursor: not-allowed;
+  }
+
+  &.a-button--primary {
+    --btn-color: var(--btn-primary-color);
+    --btn-bg-color: var(--btn-primary-bg-color);
+    --btn-hover-bg-color: var(--btn-primary-hover-bg-color);
+  }
 
   &.a-button--secondary {
-    @include a-button($btn-secondary-color, $btn-secondary-bg);
+    --btn-color: var(--btn-secondary-color);
+    --btn-bg-color: var(--btn-secondary-bg-color);
+    --btn-hover-bg-color: var(--btn-secondary-hover-bg-color);
   }
 
   &.a-button--success {
-    @include a-button($btn-success-color, $btn-success-bg);
+    --btn-color: var(--btn-success-color);
+    --btn-bg-color: var(--btn-success-bg-color);
+    --btn-hover-bg-color: var(--btn-success-hover-bg-color);
   }
 
   &.a-button--warning {
-    @include a-button($btn-warning-color, $btn-warning-bg);
+    --btn-color: var(--btn-warning-color);
+    --btn-bg-color: var(--btn-warning-bg-color);
+    --btn-hover-bg-color: var(--btn-warning-hover-bg-color);
   }
 
   &.a-button--danger {
-    @include a-button($btn-danger-color, $btn-danger-bg);
-  }
-
-  &.a-button--transparent {
-    @include a-button($btn-transparent-color, $btn-transparent-bg);
-
-    text-decoration: underline;
+    --btn-color: var(--btn-danger-color);
+    --btn-bg-color: var(--btn-danger-bg-color);
+    --btn-hover-bg-color: var(--btn-danger-hover-bg-color);
   }
 }
 
