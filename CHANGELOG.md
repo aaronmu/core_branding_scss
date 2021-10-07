@@ -59,7 +59,8 @@
 
 ##### Changed
 - [BREAKING] Changed various CSS classes:
-  - Changed `.a-button--tiny` to `.a-button--xs`
+  - Changed `.a-button-outline` to `.a-button.a-button--outlined`
+  - Removed `.a-button--tiny`
   - Changed `.a-button--small` to `.a-button--s`
   - Changed `.a-button--large` to `.a-button--l`
 
