@@ -74,6 +74,11 @@
   - Changed `.m-flyout--md` to `.m-flyout--l`
   - Changed `.m-flyout--sm` to `.m-flyout--s`
 
+#### Header
+
+##### Changed
+- [BREAKING] `.o-header__button` requires additional classes: `a-button--text a-button--neutral`
+
 #### Input
 
 ##### Added
