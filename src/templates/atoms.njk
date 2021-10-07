@@ -261,50 +261,58 @@
         <h4 class="u-margin-top-xl">Outlined buttons</h4>
         <div class="d">
             <div>
-                <button class="a-button-outline">Primary button</button>
+                <button class="a-button a-button--outlined">Primary button</button>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline"&gt;Primary button&lt;/button&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <button class="a-button-outline" disabled>Disabled button</button>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline" disabled&gt;Secondary button&lt;/button&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--outlined"&gt;Primary button&lt;/button&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <button class="a-button-outline a-button--secondary">Secondary button</button>
+                <button class="a-button a-button--outlined" disabled>Disabled button</button>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline a-button--secondary"&gt;Secondary button&lt;/button&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <button class="a-button-outline a-button--success">Success button</button>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline a-button--success"&gt;Success button&lt;/button&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--outlined" disabled&gt;Secondary button&lt;/button&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <button class="a-button-outline a-button--warning">Warning button</button>
+                <button class="a-button a-button--outlined a-button--neutral">Neutral button</button>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline a-button--warning"&gt;Warning button&lt;/button&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--outlined a-button--neutral"&gt;Secondary button&lt;/button&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <button class="a-button-outline a-button--danger">Danger button</button>
+                <button class="a-button a-button--outlined a-button--secondary">Secondary button</button>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline a-button--danger"&gt;Danger button&lt;/button&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--outlined a-button--secondary"&gt;Secondary button&lt;/button&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <button class="a-button a-button--outlined a-button--success">Success button</button>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--outlined a-button--success"&gt;Success button&lt;/button&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <button class="a-button a-button--outlined a-button--warning">Warning button</button>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--outlined a-button--warning"&gt;Warning button&lt;/button&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <button class="a-button a-button--outlined a-button--danger">Danger button</button>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--outlined a-button--danger"&gt;Danger button&lt;/button&gt;</code></pre>
             </div>
         </div>
 
@@ -351,14 +359,6 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--s"&gt;Small button&lt;/button&gt;</code></pre>
             </div>
         </div>
-        <div class="d">
-            <div>
-                <button class="a-button a-button--xs">Tiny button</button>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button a-button--xs"&gt;Tiny button&lt;/button&gt;</code></pre>
-            </div>
-        </div>
 
         <h4 class="u-margin-top-xl">Full width buttons</h4>
         <div class="d">
@@ -376,7 +376,7 @@
         <div class="d">
             <div>
                 <div class="m-alert d-alert u-margin-bottom">
-                    <p>Note that the button sizes are omitted in the code examples. Just add the <code>.a-button--l</code>, <code>.a-button--s</code> or <code>.a-button--xs</code> class to achieve the wanted result.</p>
+                    <p>Note that the button sizes are omitted in the code examples. Just add the <code>.a-button--l</code> or <code>.a-button--s</code> class to achieve the wanted result.</p>
                 </div>
             </div>
         </div>
@@ -395,10 +395,6 @@
                         {{ icon.render('arrow-left-1') }}
                         Icon left
                     </button>
-                    <button class="a-button d-button a-button--xs has-icon-left">
-                        {{ icon.render('arrow-left-1') }}
-                        Icon left
-                    </button>
                 </div>
                 <div class="u-margin-bottom-xs">
                     <button class="a-button-negative d-button a-button--l has-icon-left">
@@ -413,25 +409,17 @@
                         {{ icon.render('arrow-left-1') }}
                         Icon left
                     </button>
-                    <button class="a-button-negative d-button a-button--xs has-icon-left">
-                        {{ icon.render('arrow-left-1') }}
-                        Icon left
-                    </button>
                 </div>
                 <div>
-                    <button class="a-button-outline d-button a-button--l has-icon-left">
+                    <button class="a-button a-button--outlined d-button a-button--l has-icon-left">
                         {{ icon.render('arrow-left-1') }}
                         Icon left
                     </button>
-                    <button class="a-button-outline d-button has-icon-left">
+                    <button class="a-button a-button--outlined d-button has-icon-left">
                         {{ icon.render('arrow-left-1') }}
                         Icon left
                     </button>
-                    <button class="a-button-outline d-button a-button--s has-icon-left">
-                        {{ icon.render('arrow-left-1') }}
-                        Icon left
-                    </button>
-                    <button class="a-button-outline d-button a-button--xs has-icon-left">
+                    <button class="a-button a-button--outlined d-button a-button--s has-icon-left">
                         {{ icon.render('arrow-left-1') }}
                         Icon left
                     </button>
@@ -443,10 +431,6 @@
   Icon left
 &lt;/button&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-negative has-icon-left"&gt;
-  {{ icon.code('arrow-left-1') }}
-  Icon left
-&lt;/button&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline has-icon-left"&gt;
   {{ icon.code('arrow-left-1') }}
   Icon left
 &lt;/button&gt;</code></pre>
@@ -467,10 +451,6 @@
                         {{ icon.render('arrow-right-1') }}
                         Icon right
                     </button>
-                    <button class="a-button d-button a-button--xs has-icon-right">
-                        {{ icon.render('arrow-right-1') }}
-                        Icon right
-                    </button>
                 </div>
                 <div class="u-margin-bottom-xs">
                     <button class="a-button-negative d-button a-button--l has-icon-right">
@@ -485,25 +465,17 @@
                         {{ icon.render('arrow-right-1') }}
                         Icon right
                     </button>
-                    <button class="a-button-negative d-button a-button--xs has-icon-right">
-                        {{ icon.render('arrow-right-1') }}
-                        Icon right
-                    </button>
                 </div>
                 <div>
-                    <button class="a-button-outline d-button a-button--l has-icon-right">
+                    <button class="a-button a-button--outlined d-button a-button--l has-icon-right">
                         {{ icon.render('arrow-right-1') }}
                         Icon right
                     </button>
-                    <button class="a-button-outline d-button has-icon-right">
+                    <button class="a-button a-button--outlined d-button has-icon-right">
                         {{ icon.render('arrow-right-1') }}
                         Icon right
                     </button>
-                    <button class="a-button-outline d-button a-button--s has-icon-right">
-                        {{ icon.render('arrow-right-1') }}
-                        Icon right
-                    </button>
-                    <button class="a-button-outline d-button a-button--xs has-icon-right">
+                    <button class="a-button a-button--outlined d-button a-button--s has-icon-right">
                         {{ icon.render('arrow-right-1') }}
                         Icon right
                     </button>
@@ -515,10 +487,6 @@
   Icon right
 &lt;/button&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-negative has-icon-right"&gt;
-  {{ icon.code('arrow-right-1') }}
-  Icon right
-&lt;/button&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline has-icon-right"&gt;
   {{ icon.code('arrow-right-1') }}
   Icon right
 &lt;/button&gt;</code></pre>
@@ -539,9 +507,6 @@
                     <button class="a-button d-button a-button--s has-icon" aria-label="Download">
                         {{ icon.render('download-bottom') }}
                     </button>
-                    <button class="a-button d-button a-button--xs has-icon" aria-label="Download">
-                        {{ icon.render('download-bottom') }}
-                    </button>
                 </div>
                 <div class="u-margin-bottom-xs">
                     <button class="a-button-negative d-button a-button--l has-icon" aria-label="Download">
@@ -553,21 +518,15 @@
                     <button class="a-button-negative d-button a-button--s has-icon" aria-label="Download">
                         {{ icon.render('download-bottom') }}
                     </button>
-                    <button class="a-button-negative d-button a-button--xs has-icon" aria-label="Download">
-                        {{ icon.render('download-bottom') }}
-                    </button>
                 </div>
                 <div>
-                    <button class="a-button-outline d-button a-button--l has-icon" aria-label="Download">
+                    <button class="a-button a-button--outlined d-button a-button--l has-icon" aria-label="Download">
                         {{ icon.render('download-bottom') }}
                     </button>
-                    <button class="a-button-outline d-button has-icon" aria-label="Download">
+                    <button class="a-button a-button--outlined d-button has-icon" aria-label="Download">
                         {{ icon.render('download-bottom') }}
                     </button>
-                    <button class="a-button-outline d-button a-button--s has-icon" aria-label="Download">
-                        {{ icon.render('download-bottom') }}
-                    </button>
-                    <button class="a-button-outline d-button a-button--xs has-icon" aria-label="Download">
+                    <button class="a-button a-button--outlined d-button a-button--s has-icon" aria-label="Download">
                         {{ icon.render('download-bottom') }}
                     </button>
                 </div>
@@ -577,9 +536,6 @@
   {{ icon.code('download-bottom') }}
 &lt;/button&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-negative has-icon" aria-label="Download"&gt;
-  {{ icon.code('download-bottom') }}
-&lt;/button&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button-outline has-icon" aria-label="Download"&gt;
   {{ icon.code('download-bottom') }}
 &lt;/button&gt;</code></pre>
             </div>
@@ -596,10 +552,6 @@
                         Loading
                     </button>
                     <button class="a-button d-button a-button--s has-icon-right">
-                        {{ icon.render('synchronize-arrows-1', true, 'ai ai--spin') }}
-                        Loading
-                    </button>
-                    <button class="a-button d-button a-button--xs has-icon-right">
                         {{ icon.render('synchronize-arrows-1', true, 'ai ai--spin') }}
                         Loading
                     </button>
@@ -2656,23 +2608,11 @@
                         </button>
                     </div>
                 </div>
-                <div class="d-button">
-                    <div class="a-toggle a-toggle--xs d-button">
-                        <button class="a-toggle__button" aria-expanded="false">
-                            <span class="a-button a-button--xs a-toggle__on has-icon">
-                                {{ icon.render('navigation-menu') }}<span class="u-screen-reader-only">Open menu</span>
-                            </span>
-                            <span class="a-button a-button--xs a-button--danger a-toggle__on has-icon">
-                                {{ icon.render('remove') }}<span class="u-screen-reader-only">Close menu</span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--l"&gt;
   &lt;button class="a-toggle__button" aria-expanded="false"&gt;
-    &lt;span class="a-button a-button--l a-button--xs a-toggle__on has-icon"&gt;
+    &lt;span class="a-button a-button--l a-toggle__on has-icon"&gt;
       {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
     &lt;/span&gt;
     &lt;span class="a-button a-button--l a-button--danger a-toggle__on has-icon"&gt;
@@ -2682,20 +2622,10 @@
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--s"&gt;
   &lt;button class="a-toggle__button" aria-expanded="false"&gt;
-    &lt;span class="a-button a-button--s a-button--xs a-toggle__on has-icon"&gt;
+    &lt;span class="a-button a-button--s a-toggle__on has-icon"&gt;
       {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
     &lt;/span&gt;
     &lt;span class="a-button a-button--s a-button--danger a-toggle__on has-icon"&gt;
-      {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
-    &lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-toggle a-toggle--xs"&gt;
-  &lt;button class="a-toggle__button" aria-expanded="false"&gt;
-    &lt;span class="a-button a-button--xs a-button--xs a-toggle__on has-icon"&gt;
-      {{ icon.code('navigation-menu') }}&lt;span class="u-screen-reader-only"&gt;Open menu&lt;/span&gt;
-    &lt;/span&gt;
-    &lt;span class="a-button a-button--xs a-button--danger a-toggle__on has-icon"&gt;
       {{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close menu&lt;/span&gt;
     &lt;/span&gt;
   &lt;/button&gt;
