@@ -137,7 +137,6 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline,
 .a-button-transparent,
 .a-button-official {
   @extend %a-button;
@@ -403,7 +402,6 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline,
 .a-button-transparent {
   &.a-button--s {
     font-size: rem($btn-font-size-sm);
@@ -433,7 +431,6 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline,
 .a-button-transparent {
   &.has-icon-left,
   &.has-icon-right {
@@ -501,7 +498,6 @@
 
 .a-button,
 .a-button-negative,
-.a-button-outline,
 .a-button-transparent {
   &.has-icon {
     display: inline-block;
