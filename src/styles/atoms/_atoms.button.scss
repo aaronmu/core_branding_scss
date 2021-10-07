@@ -405,16 +405,6 @@
 .a-button-negative,
 .a-button-outline,
 .a-button-transparent {
-  &.a-button--xs {
-    font-size: rem($btn-font-size-ti);
-    min-height: var(--spacer);
-    padding: calc(var(--spacer-xs) / 4) var(--spacer-xs) calc(var(--spacer-xs) / 3);
-
-    .ai {
-      font-size: rem($btn-icon-size-ti);
-    }
-  }
-
   &.a-button--s {
     font-size: rem($btn-font-size-sm);
     min-height: var(--spacer-l);
@@ -474,21 +464,6 @@
   }
 }
 
-.a-button--xs {
-  &.has-icon-left .ai,
-  &.has-icon-right .ai {
-    width: var(--spacer);
-  }
-
-  &.has-icon-left {
-    padding-left: var(--spacer);
-  }
-
-  &.has-icon-right {
-    padding-right: var(--spacer);
-  }
-}
-
 .a-button--s {
   &.has-icon-left .ai,
   &.has-icon-right .ai {
@@ -545,14 +520,6 @@
   }
 }
 
-.a-button--xs.has-icon {
-  width: var(--spacer);
-
-  .ai {
-    width: var(--spacer);
-  }
-}
-
 .a-button--s.has-icon {
   width: var(--spacer-l);
 
@@ -604,16 +571,6 @@
 
   &.has-avatar-with-image {
     padding-left: calc(var(--shared-avatar-size) + var(--spacer));
-  }
-}
-
-.a-button--xs {
-  &.has-avatar {
-    padding-left: var(--shared-avatar-size-xs);
-  }
-
-  &.has-avatar-with-image {
-    padding-left: calc(var(--shared-avatar-size-xs) + var(--spacer-xs));
   }
 }
 
