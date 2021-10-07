@@ -182,6 +182,7 @@
   &:focus {
     background-color: var(--btn-hover-bg-color);
     box-shadow: 0 0 0 var(--border-width) var(--btn-hover-border-color) inset;
+    color: var(--btn-color);
     text-decoration: none;
   }
 
