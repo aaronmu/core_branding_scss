@@ -105,6 +105,12 @@
   --btn-text-border-color:                      transparent;
   --btn-text-hover-border-color:                transparent;
 
+  --btn-text-neutral-color:                     #{$gray-400};
+  --btn-text-neutral-bg-color:                  transparent;
+  --btn-text-neutral-hover-bg-color:            #{$gray-100};
+  --btn-text-neutral-border-color:              transparent;
+  --btn-text-neutral-hover-border-color:        transparent;
+
   --btn-text-secondary-color:                   var(--theme2-400);
   --btn-text-secondary-bg-color:                transparent;
   --btn-text-secondary-hover-bg-color:          var(--theme2-100);
@@ -379,6 +385,14 @@
   --btn-hover-bg-color: var(--btn-text-hover-bg-color);
   --btn-border-color: var(--btn-text-border-color);
   --btn-hover-border-color: var(--btn-text-hover-border-color);
+
+  &.a-button--neutral {
+    --btn-color: var(--btn-text-neutral-color);
+    --btn-bg-color: var(--btn-text-neutral-bg-color);
+    --btn-hover-bg-color: var(--btn-text-neutral-hover-bg-color);
+    --btn-border-color: var(--btn-text-neutral-border-color);
+    --btn-hover-border-color: var(--btn-text-neutral-hover-border-color);
+  }
 
   &.a-button--secondary {
     --btn-color: var(--btn-text-secondary-color);
