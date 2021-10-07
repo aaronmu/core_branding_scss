@@ -408,7 +408,7 @@
   &.a-button--s {
     font-size: rem($btn-font-size-sm);
     min-height: var(--spacer-l);
-    padding: var(--spacer-xxs) var(--spacer);
+    padding: 0 var(--spacer-s);
 
     .ai {
       font-size: rem($btn-icon-size-sm);
@@ -418,7 +418,7 @@
   &.a-button--l {
     font-size: rem($btn-font-size-lg);
     min-height: var(--spacer-xxl);
-    padding: var(--spacer-s) var(--spacer);
+    padding: 0 var(--spacer);
 
     .ai {
       font-size: rem($btn-icon-size-lg);
@@ -580,7 +580,7 @@
   }
 
   &.has-avatar-with-image {
-    padding-left: calc(var(--shared-avatar-size-s) + var(--spacer));
+    padding-left: calc(var(--shared-avatar-size-s) + var(--spacer-s));
   }
 }
 
