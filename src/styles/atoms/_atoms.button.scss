@@ -97,6 +97,25 @@
   --btn-outline-disabled-hover-bg-color:        var(--btn-outline-disabled-bg-color);
   --btn-outline-disabled-border-color:          #{$gray-200};
   --btn-outline-disabled-hover-border-color:    var(--btn-outline-disabled-border-color);
+
+  // Text buttons
+  --btn-text-color:                             var(--theme1-400);
+  --btn-text-bg-color:                          transparent;
+  --btn-text-hover-bg-color:                    var(--theme1-050);
+  --btn-text-border-color:                      transparent;
+  --btn-text-hover-border-color:                transparent;
+
+  --btn-text-secondary-color:                   var(--theme2-400);
+  --btn-text-secondary-bg-color:                transparent;
+  --btn-text-secondary-hover-bg-color:          var(--theme2-100);
+  --btn-text-secondary-border-color:            transparent;
+  --btn-text-secondary-hover-border-color:      transparent;
+
+  --btn-text-disabled-color:                    #{$gray-400};
+  --btn-text-disabled-bg-color:                 #{$gray-100};
+  --btn-text-disabled-hover-bg-color:           var(--btn-text-disabled-bg-color);
+  --btn-text-disabled-border-color:             var(--btn-text-disabled-bg-color);
+  --btn-text-disabled-hover-border-color:       var(--btn-text-disabled-bg-color);
 }
 
 /**
@@ -137,7 +156,6 @@
 }
 
 .a-button,
-.a-button-negative,
 .a-button-transparent,
 .a-button-official {
   @extend %a-button;
@@ -290,20 +308,7 @@
 }
 
 /**
- * BUTTON NEGATIVE COLORS
- * -------------------------------------------------------------------
- */
-
-.a-button-negative {
-  @include a-button($btn-primary-negative-color, $btn-primary-negative-bg);
-
-  &.a-button--secondary {
-    @include a-button($btn-secondary-negative-color, $btn-secondary-negative-bg);
-  }
-}
-
-/**
- * BUTTON OUTLINE COLORS
+ * OUTLINED BUTTON COLORS
  * -------------------------------------------------------------------
  */
 
@@ -364,6 +369,35 @@
 }
 
 /**
+ * TEXT BUTTON COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-button.a-button--text {
+  --btn-color: var(--btn-out-color);
+  --btn-bg-color: var(--btn-out-bg-color);
+  --btn-hover-bg-color: var(--btn-out-hover-bg-color);
+  --btn-border-color: var(--btn-text-border-color);
+  --btn-hover-border-color: var(--btn-text-hover-border-color);
+
+  &.a-button--secondary {
+    --btn-color: var(--btn-text-secondary-color);
+    --btn-bg-color: var(--btn-text-secondary-bg-color);
+    --btn-hover-bg-color: var(--btn-text-secondary-hover-bg-color);
+    --btn-border-color: var(--btn-text-secondary-border-color);
+    --btn-hover-border-color: var(--btn-text-secondary-hover-border-color);
+  }
+
+  &:disabled {
+    --btn-color: var(--btn-text-disabled-color);
+    --btn-bg-color: var(--btn-text-disabled-bg-color);
+    --btn-hover-bg-color: var(--btn-text-disabled-hover-bg-color);
+    --btn-border-color: var(--btn-text-disabled-border-color);
+    --btn-hover-border-color: var(--btn-text-disabled-hover-border-color);
+  }
+}
+
+/**
  * BUTTON ICON TRANSPARENT COLORS
  * -------------------------------------------------------------------
  */
@@ -398,7 +432,6 @@
  */
 
 .a-button,
-.a-button-negative,
 .a-button-transparent {
   &.a-button--s {
     font-size: rem($btn-font-size-sm);
@@ -427,7 +460,6 @@
  */
 
 .a-button,
-.a-button-negative,
 .a-button-transparent {
   &.has-icon-left,
   &.has-icon-right {
@@ -494,7 +526,6 @@
  */
 
 .a-button,
-.a-button-negative,
 .a-button-transparent {
   &.has-icon {
     display: inline-block;
