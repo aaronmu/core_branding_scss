@@ -80,11 +80,11 @@
   --btn-outline-success-border-color:           var(--btn-outline-success-color);
   --btn-outline-success-hover-border-color:     var(--btn-outline-success-color);
 
-  --btn-outline-warning-color:                  var(--warning-500);
+  --btn-outline-warning-color:                  #{$gray-600};
   --btn-outline-warning-bg-color:               transparent;
   --btn-outline-warning-hover-bg-color:         var(--warning-050);
-  --btn-outline-warning-border-color:           var(--btn-outline-warning-color);
-  --btn-outline-warning-hover-border-color:     var(--btn-outline-warning-color);
+  --btn-outline-warning-border-color:           var(--warning-500);
+  --btn-outline-warning-hover-border-color:     var(--btn-outline-warning-border-color);
 
   --btn-outline-danger-color:                   var(--danger-500);
   --btn-outline-danger-bg-color:                transparent;
