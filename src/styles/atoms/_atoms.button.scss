@@ -374,9 +374,9 @@
  */
 
 .a-button.a-button--text {
-  --btn-color: var(--btn-out-color);
-  --btn-bg-color: var(--btn-out-bg-color);
-  --btn-hover-bg-color: var(--btn-out-hover-bg-color);
+  --btn-color: var(--btn-text-color);
+  --btn-bg-color: var(--btn-text-bg-color);
+  --btn-hover-bg-color: var(--btn-text-hover-bg-color);
   --btn-border-color: var(--btn-text-border-color);
   --btn-hover-border-color: var(--btn-text-hover-border-color);
 
