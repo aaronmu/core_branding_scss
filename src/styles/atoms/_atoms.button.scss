@@ -105,12 +105,14 @@
  */
 
 %a-button {
+  align-items: center;
   border: none;
   border-radius: 0;
   cursor: pointer;
-  display: block;
+  display: flex;
   font-size: rem($btn-font-size);
   font-weight: $btn-font-weight;
+  justify-content: center;
   line-height: 1.5;
   margin: 0;
   min-height: var(--spacer-xl);
@@ -124,8 +126,7 @@
   width: 100%;
 
   @include at($screen-xs) {
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-flex;
     width: auto;
   }
 
