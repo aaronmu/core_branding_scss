@@ -33,6 +33,7 @@
 @mixin a-button($_color: $btn-primary-color, $_background: $btn-primary-bg, $_background-hover: $_color) {
   background-color: $_background;
   color: $_color;
+  box-shadow: none;
 
   &:hover,
   &:active,
