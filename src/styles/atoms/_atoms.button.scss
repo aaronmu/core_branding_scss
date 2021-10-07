@@ -161,16 +161,6 @@
     text-decoration: none;
   }
 
-  &:disabled {
-    --btn-color: var(--btn-disabled-color);
-    --btn-bg-color: var(--btn-disabled-bg-color);
-    --btn-hover-bg-color: var(--btn-disabled-hover-bg-color);
-    --btn-border-color: var(--btn-disabled-border-color);
-    --btn-hover-border-color: var(--btn-disabled-hover-border-color);
-
-    cursor: not-allowed;
-  }
-
   &.a-button--neutral {
     --btn-color: var(--btn-neutral-color);
     --btn-bg-color: var(--btn-neutral-bg-color);
@@ -209,6 +199,16 @@
     --btn-hover-bg-color: var(--btn-danger-hover-bg-color);
     --btn-border-color: var(--btn-danger-border-color);
     --btn-hover-border-color: var(--btn-danger-hover-border-color);
+  }
+
+  &:disabled {
+    --btn-color: var(--btn-disabled-color);
+    --btn-bg-color: var(--btn-disabled-bg-color);
+    --btn-hover-bg-color: var(--btn-disabled-hover-bg-color);
+    --btn-border-color: var(--btn-disabled-border-color);
+    --btn-hover-border-color: var(--btn-disabled-hover-border-color);
+
+    cursor: not-allowed;
   }
 }
 
@@ -318,14 +318,6 @@
   --btn-border-color: var(--btn-outline-border-color);
   --btn-hover-border-color: var(--btn-outline-hover-border-color);
 
-  &:disabled {
-    --btn-color: var(--btn-outline-disabled-color);
-    --btn-bg-color: var(--btn-outline-disabled-bg-color);
-    --btn-hover-bg-color: var(--btn-outline-disabled-hover-bg-color);
-    --btn-border-color: var(--btn-outline-disabled-border-color);
-    --btn-hover-border-color: var(--btn-outline-disabled-hover-border-color);
-  }
-
   &.a-button--neutral {
     --btn-color: var(--btn-outline-neutral-color);
     --btn-bg-color: var(--btn-outline-neutral-bg-color);
@@ -364,6 +356,14 @@
     --btn-hover-bg-color: var(--btn-outline-danger-hover-bg-color);
     --btn-border-color: var(--btn-outline-danger-border-color);
     --btn-hover-border-color: var(--btn-outline-danger-hover-border-color);
+  }
+
+  &:disabled {
+    --btn-color: var(--btn-outline-disabled-color);
+    --btn-bg-color: var(--btn-outline-disabled-bg-color);
+    --btn-hover-bg-color: var(--btn-outline-disabled-hover-bg-color);
+    --btn-border-color: var(--btn-outline-disabled-border-color);
+    --btn-hover-border-color: var(--btn-outline-disabled-hover-border-color);
   }
 }
 
