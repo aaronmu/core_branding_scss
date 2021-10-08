@@ -93,6 +93,7 @@
   &:active,
   &:focus {
     background-color: var(--btn-hover-bg-color);
+    color: var(--btn-color);
     text-decoration: none;
   }
 
