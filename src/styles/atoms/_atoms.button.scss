@@ -11,6 +11,15 @@
  * -------------------------------------------------------------------
  */
 
+.a-button,
+.a-button-official {
+  --btn-height:                                 var(--spacer-xl);
+  --btn-padding:                                0 var(--spacer);
+  --btn-font-weight:                            #{$bold};
+  --btn-font-size:                              1rem;
+  --btn-icon-size:                              1.25rem;
+}
+
 .a-button {
   // Contained button
   --btn-color:                                  #{$white};
@@ -180,13 +189,13 @@
   border-radius: var(--border-radius);
   cursor: pointer;
   display: flex;
-  font-size: rem($btn-font-size);
-  font-weight: $btn-font-weight;
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
   justify-content: center;
   line-height: 1.5;
   margin: 0;
-  min-height: var(--spacer-xl);
-  padding: 0 var(--spacer);
+  min-height: var(--btn-height);
+  padding: var(--btn-padding);
   text-align: center;
   text-decoration: none;
   transition-duration: var(--animation-duration);
@@ -201,7 +210,7 @@
   }
 
   .ai {
-    font-size: rem($btn-icon-size);
+    font-size: var(--btn-icon-size);
     line-height: 0;
   }
 }
@@ -500,23 +509,15 @@
 
 .a-button {
   &.a-button--s {
-    font-size: rem($btn-font-size-sm);
-    min-height: var(--spacer-l);
-    padding: 0 var(--spacer-s);
-
-    .ai {
-      font-size: rem($btn-icon-size-sm);
-    }
+    --btn-height: var(--spacer-l);
+    --btn-padding: 0 var(--spacer-s);
+    --btn-icon-size: 1rem;
   }
 
   &.a-button--l {
-    font-size: rem($btn-font-size-lg);
-    min-height: var(--spacer-xxl);
-    padding: 0 var(--spacer);
-
-    .ai {
-      font-size: rem($btn-icon-size-lg);
-    }
+    --btn-height: var(--spacer-xxl);
+    --btn-font-size: 1.125rem;
+    --btn-icon-size: 1.5rem;
   }
 }
 

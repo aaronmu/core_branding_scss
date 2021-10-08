@@ -236,68 +236,6 @@ $list-item-padding-top:      $spacer / 3 !default;
 $list-item-padding-bottom:   $spacer / 3 !default;
 
 /**
- * BUTTONS
- * -------------------------------------------------------------------
- * Define text, background and border color for each button
- */
-
-$btn-font-weight:              $bold !default;
-
-$btn-font-size-ti:             $font-size-sm !default;
-$btn-font-size-sm:             $font-size-sm !default;
-$btn-font-size:                $font-size-base !default;
-$btn-font-size-lg:             $font-size-lg !default;
-
-$btn-icon-size-ti:             $icon-size-ti !default;
-$btn-icon-size-sm:             $icon-size-sm !default;
-$btn-icon-size:                $icon-size-base !default;
-$btn-icon-size-lg:             $icon-size-lg !default;
-
-$btn-default-color:            $white !default;
-$btn-default-bg:               $gray-400 !default;
-$btn-default-outline-color:    $btn-default-bg !default;
-$btn-default-outline-border:   $btn-default-bg !default;
-
-$btn-primary-color:            $btn-default-color !default;
-$btn-primary-bg:               $brand-primary !default;
-$btn-primary-negative-color:   $btn-primary-bg !default;
-$btn-primary-negative-bg:      $btn-primary-color !default;
-$btn-primary-outline-color:    $btn-primary-bg !default;
-$btn-primary-outline-border:   $btn-primary-bg !default;
-
-$btn-secondary-color:          $btn-default-color !default;
-$btn-secondary-bg:             $brand-secondary !default;
-$btn-secondary-negative-color: $btn-secondary-bg !default;
-$btn-secondary-negative-bg:    $btn-secondary-color !default;
-$btn-secondary-outline-color:  $btn-secondary-bg !default;
-$btn-secondary-outline-border: $btn-secondary-bg !default;
-
-$btn-success-color:            $btn-default-color !default;
-$btn-success-bg:               $state-success !default;
-$btn-success-outline-color:    $btn-success-bg !default;
-$btn-success-outline-border:   $btn-success-bg !default;
-
-$btn-warning-color:            $text-color !default;
-$btn-warning-bg:               $state-warning !default;
-$btn-warning-outline-color:    $text-color !default;
-$btn-warning-outline-border:   $btn-warning-bg !default;
-
-$btn-danger-color:             $btn-default-color !default;
-$btn-danger-bg:                $state-danger !default;
-$btn-danger-outline-color:     $btn-danger-bg !default;
-$btn-danger-outline-border:    $btn-danger-bg !default;
-
-$btn-disabled-color:           $state-disabled !default;
-$btn-disabled-bg:              $gray-100 !default;
-$btn-disabled-border:          $gray-200 !default;
-
-$btn-transparent-color:        $brand-primary !default;
-$btn-transparent-bg:           transparent !default;
-
-$btn-official-color:           $btn-default-color !default;
-$btn-official-bg:              $monza-400 !default;
-
-/**
  * SWITCHES
  * -------------------------------------------------------------------
  * WATCH OUT

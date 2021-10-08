@@ -3,17 +3,17 @@
  * -------------------------------------------------------------------
  */
 
-$pagination-font-size:                $btn-font-size !default;
+$pagination-font-size:                $font-size-base !default;
 $pagination-size:                     var(--spacer-xl) !default;
 
-$pagination-color:                    $btn-primary-color !default;
-$pagination-color-disabled:           $btn-disabled-color !default;
-$pagination-bg:                       $btn-primary-bg !default;
-$pagination-bg-disabled:              $btn-disabled-bg !default;
+$pagination-color:                    $white !default;
+$pagination-color-disabled:           $state-disabled !default;
+$pagination-bg:                       $brand-primary !default;
+$pagination-bg-disabled:              $gray-100 !default;
 $pagination-bg-hover:                 mix($pagination-bg, $black, 85%) !default;
 
 $pagination-outline-color:            $pagination-bg !default;
-$pagination-outline-bg:               $btn-transparent-bg !default;
+$pagination-outline-bg:               transparent !default;
 $pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
 $pagination-outline-border:           $pagination-outline-color !default;
 $pagination-outline-border-hover:     mix($pagination-outline-border, $black, 85%) !default;
