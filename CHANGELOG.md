@@ -62,6 +62,7 @@
   - Removed `.a-button--secondary`
   - Removed `.a-button--transparent`
   - Removed `.a-button--tiny`
+  - Removed `.a-button-transparent`
   - Changed `.a-button-outline` to `.a-button.a-button--outlined`
   - Changed `.a-button-negative` to `.a-button.a-button--text`
   - Changed `.a-button--default` to `.a-button--neutral`

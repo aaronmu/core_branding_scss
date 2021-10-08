@@ -162,7 +162,6 @@
 }
 
 .a-button,
-.a-button-transparent,
 .a-button-official {
   @extend %a-button;
 }
@@ -413,41 +412,11 @@
 }
 
 /**
- * BUTTON ICON TRANSPARENT COLORS
- * -------------------------------------------------------------------
- */
-
-.a-button-transparent.has-icon {
-  @include a-button-outline($btn-primary-outline-color, $btn-primary-outline-border, true);
-
-  &.a-button--secondary {
-    @include a-button-outline($btn-secondary-outline-color, $btn-secondary-outline-border, true);
-  }
-
-  &.a-button--success {
-    @include a-button-outline($btn-success-outline-color, $btn-success-outline-border, true);
-  }
-
-  &.a-button--warning {
-    @include a-button-outline($btn-warning-outline-color, $btn-warning-outline-border, true);
-  }
-
-  &.a-button--danger {
-    @include a-button-outline($btn-danger-outline-color, $btn-danger-outline-border, true);
-  }
-
-  &.a-button--default {
-    @include a-button-outline($btn-default-outline-color, $btn-default-outline-border, true);
-  }
-}
-
-/**
  * BUTTON SIZES
  * -------------------------------------------------------------------
  */
 
-.a-button,
-.a-button-transparent {
+.a-button {
   &.a-button--s {
     font-size: rem($btn-font-size-sm);
     min-height: var(--spacer-l);
@@ -474,8 +443,7 @@
  * -------------------------------------------------------------------
  */
 
-.a-button,
-.a-button-transparent {
+.a-button {
   &.has-icon-left,
   &.has-icon-right {
     position: relative;
@@ -540,22 +508,19 @@
  * -------------------------------------------------------------------
  */
 
-.a-button,
-.a-button-transparent {
-  &.has-icon {
-    display: inline-block;
-    padding: 0;
-    position: relative;
-    vertical-align: middle;
-    width: var(--spacer-xl);
+.a-button.has-icon {
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+  width: var(--spacer-xl);
 
-    .ai {
-      left: 0;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: var(--spacer-xl);
-    }
+  .ai {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--spacer-xl);
   }
 }
 
