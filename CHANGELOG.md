@@ -59,6 +59,8 @@
 
 ##### Changed
 - [BREAKING] Changed various CSS classes:
+  - Removed `.a-button--secondary`
+  - Removed `.a-button--transparent`
   - Changed `.a-button--default` to `.a-button--neutral`
   - Changed `.a-button--tiny` to `.a-button--xs`
   - Changed `.a-button--small` to `.a-button--s`
