@@ -80,7 +80,7 @@
         <div class="d">
             <div>
                 <div role="alertdialog" aria-labelledby="alert" class="m-alert">
-                    <button class="a-button-transparent has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
+                    <button class="a-button a-button--text has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
                     <h4 id="alert" class="h5 u-margin-bottom-xs">Alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
@@ -91,7 +91,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert" class="m-alert"&gt;
-  &lt;button class="a-button-transparent has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+  &lt;button class="a-button a-button--text has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;h4 id="alert" class="h5 u-margin-bottom-xs"&gt;Alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -104,7 +104,7 @@
         <div class="d">
             <div>
                 <div role="alertdialog" aria-labelledby="alert-success" class="m-alert m-alert--success">
-                    <button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
+                    <button class="a-button a-button--text a-button--success has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
                     <h4 id="alert-success" class="h5 u-margin-bottom-xs">Success alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
@@ -115,7 +115,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-success" class="m-alert m-alert--success"&gt;
-  &lt;button class="a-button-transparent a-button--success has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+  &lt;button class="a-button a-button--text a-button--success has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;h4 id="alert-success" class="h5 u-margin-bottom-xs"&gt;Success alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -128,7 +128,7 @@
         <div class="d">
             <div>
                 <div role="alertdialog" aria-labelledby="alert-warning" class="m-alert m-alert--warning">
-                    <button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
+                    <button class="a-button a-button--text a-button--warning has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
                     <h4 id="alert-warning" class="h5 u-margin-bottom-xs">Warning alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
@@ -139,7 +139,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-warning" class="m-alert m-alert--warning"&gt;
-  &lt;button class="a-button-transparent a-button--warning has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+  &lt;button class="a-button a-button--text a-button--warning has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;h4 id="alert-warning" class="h5 u-margin-bottom-xs"&gt;Warning alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -152,7 +152,7 @@
         <div class="d">
             <div>
                 <div role="alertdialog" aria-labelledby="alert-danger" class="m-alert m-alert--danger">
-                    <button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
+                    <button class="a-button a-button--text a-button--danger has-icon m-alert__close" aria-label="Close">{{ icon.render('remove') }}</button>
                     <h4 id="alert-danger" class="h5 u-margin-bottom-xs">Danger alert</h4>
                     <p class="u-margin-bottom">Some explanation.</p>
                     <div class="m-alert__actions">
@@ -163,7 +163,7 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-danger" class="m-alert m-alert--danger"&gt;
-  &lt;button class="a-button-transparent a-button--danger has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+  &lt;button class="a-button a-button--text a-button--danger has-icon m-alert__close" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
   &lt;h4 id="alert-danger" class="h5 u-margin-bottom-xs"&gt;Danger alert&lt;/h4&gt;
   &lt;p class="u-margin-bottom"&gt;Some explanation.&lt;/p&gt;
   &lt;div class="m-alert__actions"&gt;
@@ -210,9 +210,9 @@
                 </div>
                 <div>
                     <div class="m-button-group u-margin-bottom">
-                        <button class="a-button-negative">Primary</button>
-                        <button class="a-button-negative">Button</button>
-                        <button class="a-button-negative">Group</button>
+                        <button class="a-button a-button--text">Primary</button>
+                        <button class="a-button a-button--text">Button</button>
+                        <button class="a-button a-button--text">Group</button>
                     </div>
                 </div>
                 <div>
@@ -233,9 +233,9 @@
   &lt;button class="a-button"&gt;Group&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group"&gt;
-  &lt;button class="a-button-negative"&gt;Primary&lt;/button&gt;
-  &lt;button class="a-button-negative"&gt;Button&lt;/button&gt;
-  &lt;button class="a-button-negative"&gt;Group&lt;/button&gt;
+  &lt;button class="a-button a-button--text"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button a-button--text"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button a-button--text"&gt;Group&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group"&gt;
   &lt;button class="a-button a-button--outlined"&gt;Primary&lt;/button&gt;
@@ -255,9 +255,9 @@
                 </div>
                 <div>
                     <div class="m-button-group m-button-group--vertical u-margin-bottom">
-                        <button class="a-button-negative">Primary</button>
-                        <button class="a-button-negative">Button</button>
-                        <button class="a-button-negative">Group</button>
+                        <button class="a-button a-button--text">Primary</button>
+                        <button class="a-button a-button--text">Button</button>
+                        <button class="a-button a-button--text">Group</button>
                     </div>
                 </div>
                 <div>
@@ -275,9 +275,9 @@
   &lt;button class="a-button"&gt;Group&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group m-button-group--vertical"&gt;
-  &lt;button class="a-button-negative"&gt;Primary&lt;/button&gt;
-  &lt;button class="a-button-negative"&gt;Button&lt;/button&gt;
-  &lt;button class="a-button-negative"&gt;Group&lt;/button&gt;
+  &lt;button class="a-button a-button--text"&gt;Primary&lt;/button&gt;
+  &lt;button class="a-button a-button--text"&gt;Button&lt;/button&gt;
+  &lt;button class="a-button a-button--text"&gt;Group&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group m-button-group--vertical"&gt;
   &lt;button class="a-button a-button--outlined"&gt;Primary&lt;/button&gt;
@@ -1456,7 +1456,7 @@
                 <div class="m-modal" role="dialog" aria-modal="true" aria-labelledby="myModalTitle" aria-describedby="myModelDesc">
                     <div class="m-modal__content">
                         <div class="m-modal__header u-margin-bottom-xs">
-                            <button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close">{{ icon.render('remove') }}</button>
+                            <button class="m-modal__close a-button a-button--text a-button--neutral has-icon" aria-label="Close">{{ icon.render('remove') }}</button>
                             <h4 id="myModalTitle" class="h6">Aeneis</h4>
                         </div>
                         <div class="u-margin-bottom">
@@ -1473,7 +1473,7 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-modal" role="dialog" aria-modal="true" aria-labelledby="myModalTitle" aria-describedby="myModelDesc"&gt;
   &lt;div class="m-modal__content"&gt;
     &lt;div class="m-modal__header u-margin-bottom-xs"&gt;
-      &lt;button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+      &lt;button class="m-modal__close a-button a-button--text a-button--neutral has-icon" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
       &lt;h4 id="myModalTitle" class="h6"&gt;Aeneis&lt;/h4&gt;
     &lt;/div&gt;
     &lt;div class="u-margin-bottom"&gt;
@@ -1492,7 +1492,7 @@
                 <div class="m-modal m-modal--l" role="dialog" aria-modal="true" aria-labelledby="myLargeModalTitle" aria-describedby="myLargeModelDesc">
                     <div class="m-modal__content">
                         <div class="m-modal__header u-margin-bottom-xs">
-                            <button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close">{{ icon.render('remove') }}</button>
+                            <button class="m-modal__close a-button a-button--text a-button--neutral has-icon" aria-label="Close">{{ icon.render('remove') }}</button>
                             <h4 class="h6">Aeneis</h4>
                         </div>
                         <div class="u-margin-bottom">
@@ -1509,7 +1509,7 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-modal m-modal--l" role="dialog" aria-modal="true" aria-labelledby="myLargeModalTitle" aria-describedby="myLargeModelDesc"&gt;
   &lt;div class="m-modal__content"&gt;
     &lt;div class="m-modal__header u-margin-bottom-xs"&gt;
-      &lt;button class="m-modal__close a-button-transparent a-button--default has-icon" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+      &lt;button class="m-modal__close a-button a-button--text a-button--neutral has-icon" aria-label="Close"&gt;{{ icon.code('remove') }}&lt;/button&gt;
       &lt;h4 id="myLargeModalTitle" class="h6"&gt;Aeneis&lt;/h4&gt;
     &lt;/div&gt;
     &lt;div class="u-margin-bottom"&gt;
@@ -2161,13 +2161,13 @@
             <div>
                 <div class="m-tag">
                     <span class="m-tag__label">My tag with delete button</span>
-                    <button class="a-button-transparent a-button--s a-button--danger has-icon" aria-label="Delete">{{ icon.render('remove') }}</button>
+                    <button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete">{{ icon.render('remove') }}</button>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
   &lt;span class="m-tag__label"&gt;My tag with delete button&lt;/span&gt;
-  &lt;button class="a-button-transparent a-button--s a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+  &lt;button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -2279,18 +2279,18 @@
                         <li>
                             {{ icon.render('common-file-empty') }}
                             <span class="m-upload__filename">my-doc.pdf</span>
-                            <button class="m-upload__delete a-button-transparent a-button--default a-button--s has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
+                            <button class="m-upload__delete a-button a-button--text a-button--neutral a-button--s has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
                         </li>
                         <li>
                             {{ icon.render('common-file-empty') }}
                             <span class="m-upload__filename">my-pic.jpg</span>
-                            <button class="m-upload__delete a-button-transparent a-button--default a-button--s has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
+                            <button class="m-upload__delete a-button a-button--text a-button--neutral a-button--s has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
                         </li>
                         <li class="is-error">
                             {{ icon.render('alert-triangle') }}
                             <span class="m-upload__filename">my-unallowed-file.xml</span>
                             <span class="m-upload__error">This file format is not allowed.</span>
-                            <button class="m-upload__delete a-button-transparent a-button--danger a-button--s has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
+                            <button class="m-upload__delete a-button a-button--text a-button--danger a-button--s has-icon">{{ icon.render('remove') }}<span class="u-screen-reader-only">Close</span></span></button>
                         </li>
                     </ul>
                 </div>
@@ -2316,18 +2316,18 @@
     &lt;li&gt;
       {{ icon.code('common-file-empty') }}
       &lt;span class="m-upload__filename"&gt;my-doc.pdf&lt;/span&gt;
-      &lt;button class="m-upload__delete a-button-transparent a-button--default a-button--s has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="m-upload__delete a-button a-button--text a-button--neutral a-button--s has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;/li&gt;
     &lt;li&gt;
       {{ icon.code('common-file-empty') }}
       &lt;span class="m-upload__filename"&gt;my-pic.jpg&lt;/span&gt;
-      &lt;button class="m-upload__delete a-button-transparent a-button--default a-button--s has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="m-upload__delete a-button a-button--text a-button--neutral a-button--s has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;/li&gt;
     &lt;li class="is-error"&gt;
       {{ icon.code('alert-triangle') }}
       &lt;span class="m-upload__filename"&gt;my-unallowed-file.xml&lt;/span&gt;
       &lt;span class="m-upload__error"&gt;This file format is not allowed.&lt;/span&gt;
-      &lt;button class="m-upload__delete a-button-transparent a-button--danger a-button--s has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
+      &lt;button class="m-upload__delete a-button a-button--text a-button--danger a-button--s has-icon"&gt;{{ icon.code('remove') }}&lt;span class="u-screen-reader-only"&gt;Close&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;
     &lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;</code></pre>

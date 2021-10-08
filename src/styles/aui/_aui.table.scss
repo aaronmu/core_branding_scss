@@ -43,10 +43,6 @@
     &.active {
       background-color: $gray-100;
     }
-
-    .a-button-transparent.has-icon:disabled {
-      box-shadow: none;
-    }
   }
 }
 
