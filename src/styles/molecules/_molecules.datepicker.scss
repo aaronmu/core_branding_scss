@@ -10,7 +10,7 @@ $datepicker-bg-hover:                mix($brand-primary, $white, 15%) !default;
 $datepicker-today-color:             $brand-primary !default;
 $datepicker-today-bg:                mix($datepicker-today-color, $white, 15%) !default;
 $datepicker-today-border:            $datepicker-today-color !default;
-$datepicker-today-font-weight:       $extra-bold !default;
+$datepicker-today-font-weight:       var(--font-weight-extra-bold) !default;
 
 $datepicker-selected-color:          $white !default;
 $datepicker-selected-bg:             $datepicker-today-color !default;
@@ -139,7 +139,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
       box-shadow: none;
       color: $state-disabled;
       cursor: not-allowed;
-      font-weight: $normal;
+      font-weight: var(--font-weight-normal);
 
       &:hover,
       &:active {

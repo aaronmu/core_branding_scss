@@ -9,7 +9,7 @@
  */
 
 .u-text-bold {
-  font-weight: $bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .u-text-italic {

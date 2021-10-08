@@ -81,5 +81,5 @@
 .m-selectable-list__item--active {
   @extend %m-selectable-list__item--active;
 
-  font-weight: $bold;
+  font-weight: var(--font-weight-bold);
 }

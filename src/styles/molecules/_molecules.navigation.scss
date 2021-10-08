@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-$nav-font-weight:             $bold !default;
+$nav-font-weight:             var(--font-weight-bold) !default;
 $nav-icon-size:               1.25rem !default;
 $nav-border:                  $border-color-light !default;
 $nav-border-hover:            $brand-primary !default;

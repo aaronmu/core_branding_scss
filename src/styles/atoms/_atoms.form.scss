@@ -39,6 +39,6 @@ fieldset {
 legend {
   color: $legend-color;
   font-size: $legend-size;
-  font-weight: $bold;
+  font-weight: var(--font-weight-bold);
   padding: $legend-padding;
 }

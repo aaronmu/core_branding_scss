@@ -58,7 +58,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
 
       &.is-active {
         background-color: $pagination-bg-hover;
-        font-weight: $bold;
+        font-weight: var(--font-weight-bold);
       }
 
       &.is-disabled {
