@@ -101,7 +101,7 @@
 %a-button {
   align-items: center;
   border: none;
-  border-radius: 0;
+  border-radius: var(--border-radius);
   cursor: pointer;
   display: flex;
   font-size: rem($btn-font-size);
