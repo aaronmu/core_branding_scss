@@ -59,7 +59,8 @@
 a,
 .a-button {
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     .a-avatar img {
       transform: scale(1.25);
     }
@@ -110,7 +111,8 @@ a,
 a,
 .a-button {
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     .a-avatar {
       background-color: var(--avatar-hover-bg-color);
 
