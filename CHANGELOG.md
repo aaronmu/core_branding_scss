@@ -59,10 +59,12 @@
 
 ##### Changed
 - [BREAKING] Changed various CSS classes:
+  - Removed `.a-button--transparent`
+  - Removed `.a-button--tiny`
+  - Removed `.a-button-transparent`
   - Changed `.a-button-outline` to `.a-button.a-button--outlined`
   - Changed `.a-button-negative` to `.a-button.a-button--text`
   - Changed `.a-button--default` to `.a-button--neutral`
-  - Removed `.a-button--tiny`
   - Changed `.a-button--small` to `.a-button--s`
   - Changed `.a-button--large` to `.a-button--l`
 

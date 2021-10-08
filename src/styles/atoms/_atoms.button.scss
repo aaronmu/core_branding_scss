@@ -68,12 +68,6 @@
   --btn-outline-neutral-border-color:           var(--btn-outline-neutral-color);
   --btn-outline-neutral-hover-border-color:     var(--btn-outline-neutral-color);
 
-  --btn-outline-secondary-color:                var(--theme2-400);
-  --btn-outline-secondary-bg-color:             transparent;
-  --btn-outline-secondary-hover-bg-color:       var(--theme2-100);
-  --btn-outline-secondary-border-color:         var(--btn-outline-secondary-color);
-  --btn-outline-secondary-hover-border-color:   var(--btn-outline-secondary-color);
-
   --btn-outline-success-color:                  var(--success-600);
   --btn-outline-success-bg-color:               transparent;
   --btn-outline-success-hover-bg-color:         var(--success-050);
@@ -111,11 +105,23 @@
   --btn-text-neutral-border-color:              transparent;
   --btn-text-neutral-hover-border-color:        transparent;
 
-  --btn-text-secondary-color:                   var(--theme2-400);
-  --btn-text-secondary-bg-color:                transparent;
-  --btn-text-secondary-hover-bg-color:          var(--theme2-100);
-  --btn-text-secondary-border-color:            transparent;
-  --btn-text-secondary-hover-border-color:      transparent;
+  --btn-text-success-color:                     var(--success-600);
+  --btn-text-success-bg-color:                  transparent;
+  --btn-text-success-hover-bg-color:            var(--success-050);
+  --btn-text-success-border-color:              transparent;
+  --btn-text-success-hover-border-color:        transparent;
+
+  --btn-text-warning-color:                     #{$gray-600};
+  --btn-text-warning-bg-color:                  transparent;
+  --btn-text-warning-hover-bg-color:            var(--warning-050);
+  --btn-text-warning-border-color:              transparent;
+  --btn-text-warning-hover-border-color:        transparent;
+
+  --btn-text-danger-color:                      var(--danger-500);
+  --btn-text-danger-bg-color:                   transparent;
+  --btn-text-danger-hover-bg-color:             var(--danger-050);
+  --btn-text-danger-border-color:               transparent;
+  --btn-text-danger-hover-border-color:         transparent;
 
   --btn-text-disabled-color:                    #{$gray-400};
   --btn-text-disabled-bg-color:                 #{$gray-100};
@@ -162,7 +168,6 @@
 }
 
 .a-button,
-.a-button-transparent,
 .a-button-official {
   @extend %a-button;
 }
@@ -334,14 +339,6 @@
     --btn-hover-border-color: var(--btn-outline-neutral-hover-border-color);
   }
 
-  &.a-button--secondary {
-    --btn-color: var(--btn-outline-secondary-color);
-    --btn-bg-color: var(--btn-outline-secondary-bg-color);
-    --btn-hover-bg-color: var(--btn-outline-secondary-hover-bg-color);
-    --btn-border-color: var(--btn-outline-secondary-border-color);
-    --btn-hover-border-color: var(--btn-outline-secondary-hover-border-color);
-  }
-
   &.a-button--success {
     --btn-color: var(--btn-outline-success-color);
     --btn-bg-color: var(--btn-outline-success-bg-color);
@@ -395,12 +392,28 @@
     --btn-hover-border-color: var(--btn-text-neutral-hover-border-color);
   }
 
-  &.a-button--secondary {
-    --btn-color: var(--btn-text-secondary-color);
-    --btn-bg-color: var(--btn-text-secondary-bg-color);
-    --btn-hover-bg-color: var(--btn-text-secondary-hover-bg-color);
-    --btn-border-color: var(--btn-text-secondary-border-color);
-    --btn-hover-border-color: var(--btn-text-secondary-hover-border-color);
+  &.a-button--success {
+    --btn-color: var(--btn-text-success-color);
+    --btn-bg-color: var(--btn-text-success-bg-color);
+    --btn-hover-bg-color: var(--btn-text-success-hover-bg-color);
+    --btn-border-color: var(--btn-text-success-border-color);
+    --btn-hover-border-color: var(--btn-text-success-hover-border-color);
+  }
+
+  &.a-button--warning {
+    --btn-color: var(--btn-text-warning-color);
+    --btn-bg-color: var(--btn-text-warning-bg-color);
+    --btn-hover-bg-color: var(--btn-text-warning-hover-bg-color);
+    --btn-border-color: var(--btn-text-warning-border-color);
+    --btn-hover-border-color: var(--btn-text-warning-hover-border-color);
+  }
+
+  &.a-button--danger {
+    --btn-color: var(--btn-text-danger-color);
+    --btn-bg-color: var(--btn-text-danger-bg-color);
+    --btn-hover-bg-color: var(--btn-text-danger-hover-bg-color);
+    --btn-border-color: var(--btn-text-danger-border-color);
+    --btn-hover-border-color: var(--btn-text-danger-hover-border-color);
   }
 
   &:disabled {
@@ -413,41 +426,11 @@
 }
 
 /**
- * BUTTON ICON TRANSPARENT COLORS
- * -------------------------------------------------------------------
- */
-
-.a-button-transparent.has-icon {
-  @include a-button-outline($btn-primary-outline-color, $btn-primary-outline-border, true);
-
-  &.a-button--secondary {
-    @include a-button-outline($btn-secondary-outline-color, $btn-secondary-outline-border, true);
-  }
-
-  &.a-button--success {
-    @include a-button-outline($btn-success-outline-color, $btn-success-outline-border, true);
-  }
-
-  &.a-button--warning {
-    @include a-button-outline($btn-warning-outline-color, $btn-warning-outline-border, true);
-  }
-
-  &.a-button--danger {
-    @include a-button-outline($btn-danger-outline-color, $btn-danger-outline-border, true);
-  }
-
-  &.a-button--default {
-    @include a-button-outline($btn-default-outline-color, $btn-default-outline-border, true);
-  }
-}
-
-/**
  * BUTTON SIZES
  * -------------------------------------------------------------------
  */
 
-.a-button,
-.a-button-transparent {
+.a-button {
   &.a-button--s {
     font-size: rem($btn-font-size-sm);
     min-height: var(--spacer-l);
@@ -474,8 +457,7 @@
  * -------------------------------------------------------------------
  */
 
-.a-button,
-.a-button-transparent {
+.a-button {
   &.has-icon-left,
   &.has-icon-right {
     position: relative;
@@ -540,22 +522,19 @@
  * -------------------------------------------------------------------
  */
 
-.a-button,
-.a-button-transparent {
-  &.has-icon {
-    display: inline-block;
-    padding: 0;
-    position: relative;
-    vertical-align: middle;
-    width: var(--spacer-xl);
+.a-button.has-icon {
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  vertical-align: middle;
+  width: var(--spacer-xl);
 
-    .ai {
-      left: 0;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: var(--spacer-xl);
-    }
+  .ai {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--spacer-xl);
   }
 }
 
