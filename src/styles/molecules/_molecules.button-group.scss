@@ -25,34 +25,34 @@
     }
   }
 
-  > .a-button {
-    border-right: var(--border-width) solid mix($btn-primary-bg, $black, 85%);
-    margin-top: -1px;
+  > .a-button:not(.a-button--outlined) {
+    border-right: var(--border-width) solid var(--btn-hover-border-color);
+    margin-bottom: calc(var(--border-width) * -1);
 
     &:last-child {
       border-right: none;
     }
 
     &.a-button--secondary {
-      border-color: mix($btn-secondary-bg, $black, 85%);
+      border-color: var(--btn-secondary-hover-border-color);
     }
 
     &.a-button--success {
-      border-color: mix($btn-success-bg, $black, 85%);
+      border-color: var(--btn-success-hover-border-color);
     }
 
     &.a-button--warning {
-      border-color: mix($btn-warning-bg, $black, 85%);
+      border-color: var(--btn-warning-hover-border-color);
     }
 
     &.a-button--danger {
-      border-color: mix($btn-danger-bg, $black, 85%);
+      border-color: var(--btn-danger-hover-border-color);
     }
   }
 
-  > .a-button-outline {
-    margin-bottom: -1px;
-    margin-right: -1px;
+  > .a-button--outlined {
+    margin-bottom: calc(var(--border-width) * -1);
+    margin-right: calc(var(--border-width) * -1);
 
     &:last-child {
       margin-right: 0;
@@ -69,15 +69,15 @@
 .m-button-group--vertical {
   flex-direction: column;
 
-  > .a-button {
+  > .a-button:not(.a-button--outlined) {
     border-right: none;
 
     &:not(:first-child) {
-      border-top: var(--border-width) solid mix($btn-primary-bg, $black, 85%);
+      border-top: var(--border-width) solid var(--btn-hover-border-color);
     }
   }
 
-  > .a-button-outline {
+  > .a-button--outlined {
     margin-right: 0;
   }
 }

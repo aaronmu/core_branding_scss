@@ -53,12 +53,6 @@
  */
 
 .a-toggle {
-  &.a-toggle--xs {
-    .a-toggle__button {
-      height: var(--spacer);
-    }
-  }
-
   &.a-toggle--s {
     .a-toggle__button {
       height: var(--spacer-l);
