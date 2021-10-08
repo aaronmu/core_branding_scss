@@ -33,6 +33,10 @@
       border-right: none;
     }
 
+    &.a-button--secondary {
+      border-color: var(--btn-secondary-hover-border-color);
+    }
+
     &.a-button--success {
       border-color: var(--btn-success-hover-border-color);
     }

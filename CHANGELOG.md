@@ -59,7 +59,6 @@
 
 ##### Changed
 - [BREAKING] Changed various CSS classes:
-  - Removed `.a-button--secondary`
   - Removed `.a-button--transparent`
   - Removed `.a-button--tiny`
   - Removed `.a-button-transparent`
