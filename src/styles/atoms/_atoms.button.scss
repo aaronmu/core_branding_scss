@@ -99,12 +99,6 @@
   --btn-text-neutral-border-color:              transparent;
   --btn-text-neutral-hover-border-color:        transparent;
 
-  --btn-text-secondary-color:                   var(--theme2-400);
-  --btn-text-secondary-bg-color:                transparent;
-  --btn-text-secondary-hover-bg-color:          var(--theme2-100);
-  --btn-text-secondary-border-color:            transparent;
-  --btn-text-secondary-hover-border-color:      transparent;
-
   --btn-text-disabled-color:                    #{$gray-400};
   --btn-text-disabled-bg-color:                 #{$gray-100};
   --btn-text-disabled-hover-bg-color:           var(--btn-text-disabled-bg-color);
@@ -365,14 +359,6 @@
     --btn-hover-bg-color: var(--btn-text-neutral-hover-bg-color);
     --btn-border-color: var(--btn-text-neutral-border-color);
     --btn-hover-border-color: var(--btn-text-neutral-hover-border-color);
-  }
-
-  &.a-button--secondary {
-    --btn-color: var(--btn-text-secondary-color);
-    --btn-bg-color: var(--btn-text-secondary-bg-color);
-    --btn-hover-bg-color: var(--btn-text-secondary-hover-bg-color);
-    --btn-border-color: var(--btn-text-secondary-border-color);
-    --btn-hover-border-color: var(--btn-text-secondary-hover-border-color);
   }
 
   &:disabled {
