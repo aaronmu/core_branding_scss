@@ -11,6 +11,15 @@
  * -------------------------------------------------------------------
  */
 
+.a-button,
+.a-button-official {
+  --btn-height:                                 var(--spacer-xl);
+  --btn-padding:                                0 var(--spacer);
+  --btn-font-weight:                            #{$bold};
+  --btn-font-size:                              1rem;
+  --btn-icon-size:                              1.25rem;
+}
+
 .a-button {
   // Contained button
   --btn-color:                                  #{$white};
@@ -128,6 +137,45 @@
   --btn-text-disabled-hover-bg-color:           var(--btn-text-disabled-bg-color);
   --btn-text-disabled-border-color:             var(--btn-text-disabled-bg-color);
   --btn-text-disabled-hover-border-color:       var(--btn-text-disabled-bg-color);
+
+  // Social buttons
+  --btn-twitter-color:                          #{$white};
+  --btn-twitter-bg-color:                       #{$twitter};
+  --btn-twitter-hover-bg-color:                 #{mix($twitter, $black, 90%)};
+  --btn-twitter-border-color:                   #{$twitter};
+  --btn-twitter-hover-border-color:             #{mix($twitter, $black, 90%)};
+
+  --btn-linkedin-color:                         #{$white};
+  --btn-linkedin-bg-color:                      #{$linkedin};
+  --btn-linkedin-hover-bg-color:                #{mix($linkedin, $black, 90%)};
+  --btn-linkedin-border-color:                  #{$linkedin};
+  --btn-linkedin-hover-border-color:            #{mix($linkedin, $black, 90%)};
+
+  --btn-facebook-color:                         #{$white};
+  --btn-facebook-bg-color:                      #{$facebook};
+  --btn-facebook-hover-bg-color:                #{mix($facebook, $black, 90%)};
+  --btn-facebook-border-color:                  #{$facebook};
+  --btn-facebook-hover-border-color:            #{mix($facebook, $black, 90%)};
+
+  --btn-snapchat-color:                         #{$black};
+  --btn-snapchat-bg-color:                      #{$snapchat};
+  --btn-snapchat-hover-bg-color:                #{mix($snapchat, $black, 90%)};
+  --btn-snapchat-border-color:                  #{$snapchat};
+  --btn-snapchat-hover-border-color:            #{mix($snapchat, $black, 90%)};
+
+  --btn-instagram-color:                        #{$white};
+  --btn-instagram-bg-color:                     #{$instagram};
+  --btn-instagram-hover-bg-color:               #{$instagram};
+  --btn-instagram-border-color:                 transparent;
+  --btn-instagram-hover-border-color:           transparent;
+}
+
+.a-button-official {
+  --btn-official-color:                          #{$white};
+  --btn-official-bg-color:                       #{$monza-400};
+  --btn-official-hover-bg-color:                 #{mix($monza-400, $black, 90%)};
+  --btn-official-border-color:                   #{$monza-400};
+  --btn-official-hover-border-color:             #{mix($monza-400, $black, 90%)};
 }
 
 /**
@@ -141,13 +189,13 @@
   border-radius: var(--border-radius);
   cursor: pointer;
   display: flex;
-  font-size: rem($btn-font-size);
-  font-weight: $btn-font-weight;
+  font-size: var(--btn-font-size);
+  font-weight: var(--btn-font-weight);
   justify-content: center;
   line-height: 1.5;
   margin: 0;
-  min-height: var(--spacer-xl);
-  padding: 0 var(--spacer);
+  min-height: var(--btn-height);
+  padding: var(--btn-padding);
   text-align: center;
   text-decoration: none;
   transition-duration: var(--animation-duration);
@@ -162,7 +210,7 @@
   }
 
   .ai {
-    font-size: rem($btn-icon-size);
+    font-size: var(--btn-icon-size);
     line-height: 0;
   }
 }
@@ -178,14 +226,14 @@
  */
 
 .a-button {
-  background-color: var(--btn-bg-color);
+  background: var(--btn-bg-color);
   color: var(--btn-color);
   box-shadow: 0 0 0 var(--border-width) var(--btn-border-color) inset;
 
   &:hover,
   &:active,
   &:focus {
-    background-color: var(--btn-hover-bg-color);
+    background: var(--btn-hover-bg-color);
     box-shadow: 0 0 0 var(--border-width) var(--btn-hover-border-color) inset;
     color: var(--btn-color);
     text-decoration: none;
@@ -249,27 +297,45 @@
 
 .a-button.has-icon {
   &.a-button--twitter {
-    @include a-button($white, $twitter);
+    --btn-color: var(--btn-twitter-color);
+    --btn-bg-color: var(--btn-twitter-bg-color);
+    --btn-hover-bg-color: var(--btn-twitter-hover-bg-color);
+    --btn-border-color: var(--btn-twitter-border-color);
+    --btn-hover-border-color: var(--btn-twitter-hover-border-color);
   }
 
   &.a-button--linkedin {
-    @include a-button($white, $linkedin);
+    --btn-color: var(--btn-linkedin-color);
+    --btn-bg-color: var(--btn-linkedin-bg-color);
+    --btn-hover-bg-color: var(--btn-linkedin-hover-bg-color);
+    --btn-border-color: var(--btn-linkedin-border-color);
+    --btn-hover-border-color: var(--btn-linkedin-hover-border-color);
   }
 
   &.a-button--facebook {
-    @include a-button($white, $facebook);
+    --btn-color: var(--btn-facebook-color);
+    --btn-bg-color: var(--btn-facebook-bg-color);
+    --btn-hover-bg-color: var(--btn-facebook-hover-bg-color);
+    --btn-border-color: var(--btn-facebook-border-color);
+    --btn-hover-border-color: var(--btn-facebook-hover-border-color);
   }
 
   &.a-button--snapchat {
-    @include a-button($text-color, $snapchat);
+    --btn-color: var(--btn-snapchat-color);
+    --btn-bg-color: var(--btn-snapchat-bg-color);
+    --btn-hover-bg-color: var(--btn-snapchat-hover-bg-color);
+    --btn-border-color: var(--btn-snapchat-border-color);
+    --btn-hover-border-color: var(--btn-snapchat-hover-border-color);
   }
 
   &.a-button--instagram {
-    @include a-button($white);
+    --btn-color: var(--btn-instagram-color);
+    --btn-bg-color: var(--btn-instagram-bg-color);
+    --btn-hover-bg-color: var(--btn-instagram-hover-bg-color);
+    --btn-border-color: var(--btn-instagram-border-color);
+    --btn-hover-border-color: var(--btn-instagram-hover-border-color);
 
-    background: $instagram;
     position: relative;
-    transition-property: opacity;
 
     &:before {
       background-color: $black;
@@ -285,7 +351,8 @@
     }
 
     &:hover,
-    &:active {
+    &:active,
+    &:focus {
       &:before {
         opacity: .15;
       }
@@ -299,11 +366,21 @@
  */
 
 .a-button-official {
-  @include a-button($btn-official-color, $btn-official-bg);
-
+  background: var(--btn-official-bg-color);
+  box-shadow: 0 0 0 var(--border-width) var(--btn-official-border-color) inset;
+  color: var(--btn-official-color);
   padding-left: calc(var(--spacer) * 3);
   position: relative;
   white-space: nowrap;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: var(--btn-official-hover-bg-color);
+    box-shadow: 0 0 0 var(--border-width) var(--btn-official-hover-border-color) inset;
+    color: var(--btn-official-color);
+    text-decoration: none;
+  }
 
   &:before {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 196.1 115.3%22><path fill=%22%23ffffff%22 d=%22M128 115.3l-9.1-25.7H76.7l-9.1 25.7H43L87.1 0h22.4l43.8 115.3H128zm-24.4-68.5c-2.3-6.8-4.6-13.7-5.8-18-1.2 4.3-3.5 11.2-5.8 18l-7.4 20.9H111l-7.4-20.9z%22/><path fill=%22%23f18a00%22 d=%22M38.2 60.8c-.5 1.6-2.3 2.5-3.9 1.9L2.1 52C.5 51.5-.4 49.7.2 48.1l2.7-8c.5-1.6 2.3-2.5 3.9-1.9L38.9 49c1.6.5 2.5 2.3 1.9 3.9l-2.6 7.9zM36.4 86.1c.5 1.6-.3 3.4-1.9 3.9l-22.9 8.1c-1.6.5-3.4-.3-3.9-1.9l-2.7-8c-.5-1.6.3-3.4 1.9-3.9l22.9-8.1c1.6-.5 3.4.3 3.9 1.9l2.7 8zM30.1 12.6c-1.3 1-1.6 3-.6 4.3L44 36.4c1 1.3 3 1.6 4.3.6l6.6-5.1c1.3-1 1.6-3 .6-4.3L41.1 8c-1-1.3-3-1.6-4.3-.6l-6.7 5.2zM157.9 60.8c.5 1.6 2.3 2.5 3.9 1.9L194 52c1.6-.5 2.5-2.3 1.9-3.9l-2.7-8c-.5-1.6-2.3-2.5-3.9-1.9L157.2 49c-1.6.5-2.5 2.3-1.9 3.9l2.6 7.9zM159.6 86.1c-.5 1.6.3 3.4 1.9 3.9l22.9 8.1c1.6.5 3.4-.3 3.9-1.9l2.7-8c.5-1.6-.3-3.4-1.9-3.9l-22.9-8.1c-1.6-.5-3.4.3-3.9 1.9l-2.7 8zM165.9 12.6c1.3 1 1.6 3 .6 4.3L152 36.4c-1 1.3-3 1.6-4.3.6l-6.6-5.1c-1.4-1-1.6-3-.6-4.3L155 8c1-1.3 3-1.6 4.3-.6l6.6 5.2z%22/></svg>');
@@ -432,23 +509,15 @@
 
 .a-button {
   &.a-button--s {
-    font-size: rem($btn-font-size-sm);
-    min-height: var(--spacer-l);
-    padding: 0 var(--spacer-s);
-
-    .ai {
-      font-size: rem($btn-icon-size-sm);
-    }
+    --btn-height: var(--spacer-l);
+    --btn-padding: 0 var(--spacer-s);
+    --btn-icon-size: 1rem;
   }
 
   &.a-button--l {
-    font-size: rem($btn-font-size-lg);
-    min-height: var(--spacer-xxl);
-    padding: 0 var(--spacer);
-
-    .ai {
-      font-size: rem($btn-icon-size-lg);
-    }
+    --btn-height: var(--spacer-xxl);
+    --btn-font-size: 1.125rem;
+    --btn-icon-size: 1.5rem;
   }
 }
 

@@ -189,13 +189,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
   & > .o-menu__tab-wrapper {
     overflow: hidden;
 
-    &:focus-within {
-      @include a-button-outline;
-    }
-
     & > .o-menu__tab-header {
-      @include a-button-outline($btn-primary-outline-color, $btn-primary-outline-border, true);
-
       align-items: center;
       color: $text-color-light;
       display: flex;
@@ -213,6 +207,8 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
         margin-bottom: env(safe-area-inset-bottom);
       }
 
+      &:hover,
+      &:active,
       &:hover {
         background-color: $background-color-light;
         color: $text-color-light;
