@@ -33,6 +33,10 @@
       border-right: none;
     }
 
+    &.a-button--secondary {
+      border-color: mix($btn-secondary-bg, $black, 85%);
+    }
+
     &.a-button--success {
       border-color: mix($btn-success-bg, $black, 85%);
     }
