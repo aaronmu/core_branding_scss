@@ -25,12 +25,6 @@
   --btn-neutral-border-color:                   var(--btn-neutral-bg-color);
   --btn-neutral-hover-border-color:             var(--btn-neutral-hover-bg-color);
 
-  --btn-secondary-color:                        #{$white};
-  --btn-secondary-bg-color:                     var(--theme2-400);
-  --btn-secondary-hover-bg-color:               var(--theme2-500);
-  --btn-secondary-border-color:                 var(--btn-secondary-bg-color);
-  --btn-secondary-hover-border-color:           var(--btn-secondary-hover-bg-color);
-
   --btn-success-color:                          #{$white};
   --btn-success-bg-color:                       var(--success-600);
   --btn-success-hover-bg-color:                 var(--success-500); // TODO: Implement correct hover color
@@ -67,12 +61,6 @@
   --btn-outline-neutral-hover-bg-color:         #{$gray-100};
   --btn-outline-neutral-border-color:           var(--btn-outline-neutral-color);
   --btn-outline-neutral-hover-border-color:     var(--btn-outline-neutral-color);
-
-  --btn-outline-secondary-color:                var(--theme2-400);
-  --btn-outline-secondary-bg-color:             transparent;
-  --btn-outline-secondary-hover-bg-color:       var(--theme2-100);
-  --btn-outline-secondary-border-color:         var(--btn-outline-secondary-color);
-  --btn-outline-secondary-hover-border-color:   var(--btn-outline-secondary-color);
 
   --btn-outline-success-color:                  var(--success-600);
   --btn-outline-success-bg-color:               transparent;
@@ -192,14 +180,6 @@
     --btn-hover-bg-color: var(--btn-neutral-hover-bg-color);
     --btn-border-color: var(--btn-neutral-border-color);
     --btn-hover-border-color: var(--btn-neutral-hover-border-color);
-  }
-
-  &.a-button--secondary {
-    --btn-color: var(--btn-secondary-color);
-    --btn-bg-color: var(--btn-secondary-bg-color);
-    --btn-hover-bg-color: var(--btn-secondary-hover-bg-color);
-    --btn-border-color: var(--btn-secondary-border-color);
-    --btn-hover-border-color: var(--btn-secondary-hover-border-color);
   }
 
   &.a-button--success {
@@ -332,14 +312,6 @@
     --btn-hover-bg-color: var(--btn-outline-neutral-hover-bg-color);
     --btn-border-color: var(--btn-outline-neutral-border-color);
     --btn-hover-border-color: var(--btn-outline-neutral-hover-border-color);
-  }
-
-  &.a-button--secondary {
-    --btn-color: var(--btn-outline-secondary-color);
-    --btn-bg-color: var(--btn-outline-secondary-bg-color);
-    --btn-hover-bg-color: var(--btn-outline-secondary-hover-bg-color);
-    --btn-border-color: var(--btn-outline-secondary-border-color);
-    --btn-hover-border-color: var(--btn-outline-secondary-hover-border-color);
   }
 
   &.a-button--success {
