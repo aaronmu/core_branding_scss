@@ -48,10 +48,6 @@
     &.a-button--danger {
       border-color: mix($btn-danger-bg, $black, 85%);
     }
-
-    &.a-button--transparent {
-      border: none;
-    }
   }
 
   > .a-button-outline {
