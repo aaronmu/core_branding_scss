@@ -36,7 +36,10 @@ gulp.task('copy:docs', function() {
     var fontsStream = gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('docs/fonts'));
 
-    return merge(tmpStream, imagesStream, fontsStream);
+    var scriptsStream = gulp.src('src/scripts/**/*')
+        .pipe(gulp.dest('docs/scripts'));
+
+    return merge(tmpStream, imagesStream, fontsStream, scriptsStream);
 
 });
 
