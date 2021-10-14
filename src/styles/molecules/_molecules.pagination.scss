@@ -88,7 +88,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
   }
 }
 
-.m-pagination--outline {
+.m-pagination--outlined {
   > li {
     background-color: $pagination-outline-bg;
     box-shadow: 0 0 0 var(--border-width) $pagination-outline-border inset;

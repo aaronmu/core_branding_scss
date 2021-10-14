@@ -41,7 +41,7 @@
   border: var(--border-width) solid var(--badge-border-color);
   color: var(--badge-color);
 
-  &.a-badge--outline {
+  &.a-badge--outlined {
     --badge-color:            #{$gray-400};
     --badge-bg-color:         transparent;
     --badge-border-color:     #{$gray-300};
@@ -58,7 +58,7 @@
     --badge-bg-color:         var(--theme1-400);
     --badge-border-color:     var(--theme1-400);
 
-    &.a-badge--outline {
+    &.a-badge--outlined {
       --badge-color:          var(--theme1-400);
       --badge-bg-color:       transparent;
       --badge-border-color:   var(--theme1-400);
@@ -76,7 +76,7 @@
     --badge-bg-color:         var(--theme2-400);
     --badge-border-color:     var(--theme2-400);
 
-    &.a-badge--outline {
+    &.a-badge--outlined {
       --badge-color:          var(--theme2-400);
       --badge-bg-color:       transparent;
       --badge-border-color:   var(--theme2-400);
@@ -104,7 +104,7 @@
       --badge-bg-color:          #{$gray-400};
       --badge-border-color:      #{$gray-400};
 
-      &.a-badge--outline,
+      &.a-badge--outlined,
       &.a-badge--transparent {
         --badge-color:            #{$gray-400};
         --badge-bg-color:         transparent;
