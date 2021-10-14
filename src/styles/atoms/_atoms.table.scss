@@ -138,7 +138,7 @@ $table-padding:               var(--spacer-xs) !default;
 
   table {
     border: none;
-    margin-bottom: calc(#{var(--border-width)} * -1);
+    margin-bottom: calc(var(--border-width) * -1);
 
     > thead > tr,
     > tbody > tr,

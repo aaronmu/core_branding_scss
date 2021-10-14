@@ -28,7 +28,7 @@ $accordion-content-padding:   var(--spacer) !default;
 
 .m-accordion__tab {
   &:not(:first-child) {
-    margin-top: calc(#{var(--border-width)} * -1);
+    margin-top: calc(var(--border-width) * -1);
   }
 
   &.is-open {
