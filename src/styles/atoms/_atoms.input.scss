@@ -27,24 +27,13 @@
   --input-icon-hover-color:        #{$gray-600};
   --input-icon-size:               1.25rem;
 
-  --input-success-border-color:    var(--input-border-color);
   --input-danger-border-color:     var(--state-danger);
 
   --input-height:                  var(--spacer-xl);
   --input-padding-vertical:        0;
   --input-padding-horizontal:      var(--spacer-s);
 
-  --input-height-s:                var(--spacer-l);
-  --input-padding-vertical-s:      var(--input-padding-vertical);
-  --input-padding-horizontal-s:    var(--spacer-xs);
-
-  --input-height-l:                var(--spacer-xxl);
-  --input-padding-vertical-l:      var(--input-padding-vertical);
-  --input-padding-horizontal-l:    var(--spacer);
-
   --textarea-height:               12rem;
-  --textarea-height-s:             8rem;
-  --textarea-height-l:             16rem;
 }
 
 /**
@@ -63,21 +52,42 @@ textarea {
 }
 
 /**
- * INPUT PLACEHOLDER
+ * INPUT
  * -------------------------------------------------------------------
  */
 
-%a-input {
+.a-input {
   position: relative;
 
   input,
   select,
   textarea {
+    @include a-input-placeholder {
+      color: var(--input-placeholder-color);
+    }
+
+    background-color: var(--input-bg-color);
+    border: var(--border-width) solid var(--input-border-color);
+    color: var(--input-color);
     border-radius: 0;
     line-height: normal;
     resize: vertical;
     transition: border-color var(--animation-normal);
     width: 100%;
+
+    &:disabled {
+      --input-color: var(--input-disabled-color);
+      --input-bg-color: var(--input-disabled-bg-color);
+      --input-border-color: var(--input-disabled-border-color);
+
+      cursor: not-allowed;
+    }
+
+    &[readonly] {
+      --input-color: var(--input-readonly-color);
+      --input-bg-color: var(--input-readonly-bg-color);
+      --input-border-color: var(--input-readonly-border-color);
+    }
   }
 
   input,
@@ -90,32 +100,6 @@ textarea {
     min-height: var(--textarea-height);
     padding: var(--input-padding-horizontal);
   }
-}
-
-.a-input {
-  @extend %a-input;
-}
-
-/**
- * INPUT
- * -------------------------------------------------------------------
- */
-
-.a-input {
-  @include a-input(
-    var(--input-color),
-    var(--input-bg-color),
-    var(--input-border-color),
-    var(--input-placeholder-color),
-
-    var(--input-disabled-color),
-    var(--input-disabled-bg-color),
-    var(--input-disabled-border-color),
-
-    var(--input-readonly-color),
-    var(--input-readonly-bg-color),
-    var(--input-readonly-border-color)
-  );
 
   &.w-textarea-padding {
     padding: var(--input-padding-horizontal);
@@ -198,38 +182,8 @@ textarea {
  */
 
 .a-input {
-  &.has-success {
-    @include a-input(
-      var(--input-color),
-      var(--input-bg-color),
-      var(--input-success-border-color),
-      var(--input-placeholder-color),
-
-      var(--input-disabled-color),
-      var(--input-disabled-bg-color),
-      var(--input-disabled-border-color),
-
-      var(--input-readonly-color),
-      var(--input-readonly-bg-color),
-      var(--input-readonly-border-color)
-    );
-  }
-
   &.has-error {
-    @include a-input(
-      var(--input-color),
-      var(--input-bg),
-      var(--input-danger-border-color),
-      var(--input-placeholder-color),
-
-      var(--input-disabled-color),
-      var(--input-disabled-bg-color),
-      var(--input-disabled-border-color),
-
-      var(--input-readonly-color),
-      var(--input-readonly-bg-color),
-      var(--input-readonly-border-color)
-    );
+    --input-border-color: var(--input-danger-border-color);
   }
 
   &.is-required .a-input__label:after {
@@ -375,102 +329,15 @@ textarea {
 
 .a-input {
   &.a-input--s {
-    input,
-    select {
-      min-height: var(--input-height-s);
-      padding: var(--input-padding-vertical-s) var(--input-padding-horizontal-s);
-    }
-
-    select {
-      @-moz-document url-prefix() {
-        line-height: 2.1; // Fixes Firefox line-height bug
-      }
-    }
-
-    textarea {
-      min-height: var(--textarea-height-s);
-      padding: var(--input-padding-horizontal-s);
-    }
-
-    .a-input__addon {
-      line-height: var(--input-height-s);
-    }
-
-    &.has-icon-left .a-input__wrapper {
-      input,
-      select {
-        padding-left: calc(#{var(--input-padding-horizontal-s)} * 2 + #{var(--input-icon-size)});
-      }
-
-      > .ai {
-        left: var(--input-padding-horizontal-s);
-      }
-    }
-
-    &.has-icon-right .a-input__wrapper {
-      input,
-      select {
-        padding-right: calc(#{var(--input-padding-horizontal-s)} * 2 + #{var(--input-icon-size)});
-      }
-
-      > .ai {
-        right: var(--input-padding-horizontal-s);
-      }
-    }
-
-    &.has-addon-left .a-input__addon {
-      padding-left: var(--input-padding-horizontal-s);
-    }
-
-    &.has-addon-right .a-input__addon {
-      padding-right: var(--input-padding-horizontal-s);
-    }
+    --input-height: var(--spacer-l);
+    --input-icon-size: 1rem;
+    --input-padding-horizontal: var(--spacer-xs);
+    --textarea-height: 8rem;
   }
 
   &.a-input--l {
-    input,
-    select {
-      min-height: var(--input-height-l);
-      padding: var(--input-padding-vertical-l) var(--input-padding-horizontal-l);
-    }
-
-    textarea {
-      min-height: var(--textarea-height-l);
-      padding: var(--input-padding-horizontal-l);
-    }
-
-    .a-input__addon {
-      line-height: var(--input-height-l);
-    }
-
-    &.has-icon-left .a-input__wrapper {
-      input,
-      select {
-        padding-left: calc(#{var(--input-padding-horizontal-l)} * 2 + #{var(--input-icon-size)});
-      }
-
-      > .ai {
-        left: var(--input-padding-horizontal-l);
-      }
-    }
-
-    &.has-icon-right .a-input__wrapper {
-      input,
-      select {
-        padding-right: calc(#{var(--input-padding-horizontal-l)} * 2 + #{var(--input-icon-size)});
-      }
-
-      > .ai {
-        right: var(--input-padding-horizontal-l);
-      }
-    }
-
-    &.has-addon-left .a-input__addon {
-      padding-left: var(--input-padding-horizontal-l);
-    }
-
-    &.has-addon-right .a-input__addon {
-      padding-right: var(--input-padding-horizontal-l);
-    }
+    --input-height: var(--spacer-xxl);
+    --input-padding-horizontal: var(--spacer);
+    --textarea-height: 16rem;
   }
 }
