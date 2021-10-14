@@ -3,20 +3,24 @@
  * -------------------------------------------------------------------
  */
 
-$pre-color:               $text-color !default;
-$pre-bg:                  $background-color-light !default;
-$pre-font-size:           1rem !default;
-$pre-padding:             var(--spacer-xs) !default;
+pre,
+code,
+kbd {
+  --pre-color:               var(--text-color);
+  --pre-bg:                  #{$gray-100};
+  --pre-font-size:           1rem;
+  --pre-padding:             var(--spacer-xs);
 
-$code-color:              $pre-color !default;
-$code-bg:                 $pre-bg !default;
-$code-font-size:          .875rem !default;
-$code-padding:            calc(var(--spacer) / 12) var(--spacer-3xs) !default;
+  --code-color:              var(--pre-color);
+  --code-bg:                 var(--pre-bg);
+  --code-font-size:          .875rem;
+  --code-padding:            calc(var(--spacer) / 12) var(--spacer-3xs);
 
-$kbd-color:               $white !default;
-$kbd-bg:                  $gray-400 !default;
-$kbd-font-size:          .875rem !default;
-$kbd-padding:             $code-padding !default;
+  --kbd-color:               #{$white};
+  --kbd-bg:                  #{$gray-400};
+  --kbd-font-size:          .875rem;
+  --kbd-padding:             var(--code-padding);
+}
 
 /**
  * CODE
@@ -39,10 +43,10 @@ samp {
  * Inline code
  */
 code {
-  background-color: $code-bg;
-  color: $code-color;
-  font-size: $code-font-size;
-  padding: $code-padding;
+  background-color: var(--code-bg);
+  color: var(--code-color);
+  font-size: var(--code-font-size);
+  padding: var(--code-padding);
 
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {
@@ -56,10 +60,10 @@ code {
  * Keyboard input
  */
 kbd {
-  background-color: $kbd-bg;
-  color: $kbd-color;
-  font-size: $kbd-font-size;
-  padding: $kbd-padding;
+  background-color: var(--kbd-bg);
+  color: var(--kbd-color);
+  font-size: var(--kbd-font-size);
+  padding: var(--kbd-padding);
 
   kbd {
     font-size: 100%;
@@ -73,12 +77,12 @@ kbd {
  */
 
 %a-pre {
-  background: $pre-bg;
-  color: $pre-color;
+  background: var(--pre-bg);
+  color: var(--pre-color);
   display: block;
-  font-size: $pre-font-size;
+  font-size: var(--pre-font-size);
   margin-top: 0;
-  padding: $pre-padding;
+  padding: var(--pre-padding);
   white-space: pre-wrap;
 
   code {
