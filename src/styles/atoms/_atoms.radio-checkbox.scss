@@ -62,7 +62,7 @@
     &:indeterminate {
       + label:before {
         background-color: var(--radio-checkbox-bg-color);
-        box-shadow: 0 0 0 1px var(--radio-checkbox-bg-color) inset;
+        box-shadow: 0 0 0 var(--border-width) var(--radio-checkbox-bg-color) inset;
       }
     }
 
@@ -76,7 +76,7 @@
 
       &:before {
         background-color: var(--radio-checkbox-disabled-bg-color);
-        box-shadow: 0 0 0 1px var(--radio-checkbox-disabled-border-color) inset;
+        box-shadow: 0 0 0 var(--border-width) var(--radio-checkbox-disabled-border-color) inset;
       }
     }
 
@@ -97,7 +97,7 @@
 
     &:before {
       background-color: var(--radio-checkbox-color);
-      box-shadow: 0 0 0 1px var(--radio-checkbox-border-color) inset;
+      box-shadow: 0 0 0 var(--border-width) var(--radio-checkbox-border-color) inset;
       content: '';
       display: inline-block;
       height: var(--spacer);
@@ -185,7 +185,7 @@
     &:disabled {
       + label:before {
         background: var(--radio-checkbox-disabled-color);
-        box-shadow: 0 0 0 1px var(--radio-checkbox-disabled-border-color) inset, 0 0 0 rem(6px) var(--radio-checkbox-disabled-bg-color) inset;
+        box-shadow: 0 0 0 var(--border-width) var(--radio-checkbox-disabled-border-color) inset, 0 0 0 rem(6px) var(--radio-checkbox-disabled-bg-color) inset;
       }
     }
   }

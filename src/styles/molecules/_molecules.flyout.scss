@@ -121,7 +121,7 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
  */
 
 .a-input + .m-flyout__content {
-  margin-top: -1px;
+  margin-top: calc(#{var(--border-width)} * -1);
 }
 
 /**

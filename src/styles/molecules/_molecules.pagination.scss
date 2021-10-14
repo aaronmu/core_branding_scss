@@ -91,7 +91,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
 .m-pagination--outline {
   > li {
     background-color: $pagination-outline-bg;
-    box-shadow: 0 0 0 1px $pagination-outline-border inset;
+    box-shadow: 0 0 0 var(--border-width) $pagination-outline-border inset;
     color: $pagination-outline-color;
 
     > a,
@@ -118,11 +118,11 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
     > a:active,
     > a:focus {
       background-color: $pagination-outline-bg-hover;
-      box-shadow: 0 0 0 1px $pagination-outline-border-hover inset;
+      box-shadow: 0 0 0 var(--border-width) $pagination-outline-border-hover inset;
     }
 
     + li {
-      margin-left: -1px;
+      margin-left: calc(#{var(--border-width)} * -1);
     }
   }
 

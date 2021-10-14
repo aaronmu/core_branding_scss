@@ -112,7 +112,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
 
     &.is-selected {
       background-color: $datepicker-selected-bg;
-      box-shadow: 0 0 0 1px $datepicker-selected-bg;
+      box-shadow: 0 0 0 var(--border-width) $datepicker-selected-bg;
       color: $datepicker-selected-color;
       font-weight: $datepicker-selected-font-weight;
 

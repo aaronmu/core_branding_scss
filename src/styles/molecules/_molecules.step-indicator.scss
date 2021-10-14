@@ -72,7 +72,7 @@ $step-indicator-square-size:            var(--spacer-l) !default;
     &:after {
       background-color: $step-indicator-border;
       content: '';
-      height: 1px;
+      height: var(--border-width);
       position: absolute;
       right: calc(50% + #{$step-indicator-square-size} / 4 * 3);
       top: calc(#{$step-indicator-square-size} / 2 - .5px);
@@ -104,7 +104,7 @@ $step-indicator-square-size:            var(--spacer-l) !default;
       &:after {
         background-color: $step-indicator-border-success;
         height: 2px;
-        top: calc(#{$step-indicator-square-size} / 2 - 1px);
+        top: calc(#{$step-indicator-square-size} / 2 - #{var(--border-width)});
       }
     }
 

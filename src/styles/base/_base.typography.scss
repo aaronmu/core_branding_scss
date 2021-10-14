@@ -148,7 +148,7 @@ mark {
 hr {
   border: none;
   border-top: var(--border-width) solid $border-color-light;
-  height: 1px;
+  height: var(--border-width);
   margin: var(--spacer) 0;
 }
 

@@ -6,7 +6,7 @@
 .m-button-group {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 1px;
+  padding-bottom: var(--border-width);
   vertical-align: middle;
 
   > .a-button {
