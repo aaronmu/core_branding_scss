@@ -38,7 +38,7 @@ $accordion-content-padding:   var(--spacer) !default;
 
     .m-accordion__content {
       border-bottom: var(--border-width) solid $accordion-border;
-      max-height: 500px;
+      max-height: rem(500px);
     }
   }
 }
