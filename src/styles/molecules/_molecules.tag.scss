@@ -16,7 +16,7 @@ $tag-height:              var(--spacer-l) !default;
 
 .m-tag {
   background: $tag-bg;
-  box-shadow: 0 0 0 1px $tag-border inset;
+  box-shadow: 0 0 0 var(--border-width) $tag-border inset;
   color: $tag-color;
   display: inline-flex;
   height: $tag-height;

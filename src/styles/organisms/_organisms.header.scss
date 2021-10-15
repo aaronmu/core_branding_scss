@@ -65,7 +65,7 @@
 }
 
 .o-header__logo {
-  margin-top: 1px;
+  margin-top: var(--border-width);
   position: absolute;
   top: $header-height;
 

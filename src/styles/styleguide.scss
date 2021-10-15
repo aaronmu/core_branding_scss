@@ -168,7 +168,7 @@
 
       &.d-white {
         .d-color {
-          box-shadow: 0 0 0 1px $gray-200 inset;
+          box-shadow: 0 0 0 var(--border-width) $gray-200 inset;
         }
       }
 
@@ -210,7 +210,7 @@
   padding: var(--spacer);
 
   &.d-u-bg-white {
-    box-shadow: 0 0 0 1px $gray-200 inset;
+    box-shadow: 0 0 0 var(--border-width) $gray-200 inset;
   }
 }
 
@@ -223,7 +223,7 @@
       $gray-100 10px,
       $gray-100 20px
     );
-  box-shadow: 0 0 0 1px $gray-200 inset;
+  box-shadow: 0 0 0 var(--border-width) $gray-200 inset;
   display: inline-block;
   padding: calc(var(--spacer) / 6);
 

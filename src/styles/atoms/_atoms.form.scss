@@ -32,7 +32,7 @@ fieldset {
   position: relative;
 
   + fieldset {
-    margin-top: -1px;
+    margin-top: calc(var(--border-width) * -1);
   }
 }
 
