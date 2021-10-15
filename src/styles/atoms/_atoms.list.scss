@@ -113,19 +113,19 @@ dl {
 %a-list--primary {
   .a-list {
     line-height: 1;
-    margin-top: calc(var(--spacer) * 2 / 3);
+    margin-top: var(--spacer-s);
 
     > li {
       padding-left: var(--spacer-xs);
 
       &:last-of-type {
-        margin-bottom: calc(var(--spacer) * -2 / 3);
+        margin-bottom: calc(var(--spacer-s) * -1);
       }
     }
   }
 
   > li {
-    padding: calc(var(--spacer) * 2 / 3) 0 calc(var(--spacer) * 2 / 3) var(--spacer-xs);
+    padding: var(--spacer-s) 0 var(--spacer-s) var(--spacer-xs);
   }
 }
 
