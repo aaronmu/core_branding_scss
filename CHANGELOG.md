@@ -105,6 +105,7 @@
 
 ##### Changed
 - [BREAKING] Changed various CSS classes:
+  - Changed `.m-pagination--outline` to `.m-pagination--outlined`
   - Changed `.m-pagination--small` to `.m-pagination--s`
   - Changed `.m-pagination--large` to `.m-pagination--l`
 
