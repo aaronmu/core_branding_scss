@@ -1,11 +1,22 @@
 /**
- * OVERLAY
+ * OVERLAY VARIABLES
  * -------------------------------------------------------------------
- * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
 .m-overlay {
-  background-color: $overlay-color;
+  --overlay-bg-color:             var(--overlay-color);
+  --overlay-button-font-size:     #{$icon-size-lg};
+  --overlay-button-color:         #{$white};
+  --overlay-button-hover-color:   #{$gray-200};
+}
+
+/**
+ * OVERLAY
+ * -------------------------------------------------------------------
+ */
+
+.m-overlay {
+  background-color: var(--overlay-bg-color);
   bottom: 0;
   display: none;
   left: 0;
@@ -31,17 +42,19 @@
 .m-overlay__button {
   background: none;
   border: none;
-  color: $overlay-button-color;
+  color: var(--overlay-button-color);
   cursor: pointer;
-  font-size: rem($overlay-button-size);
+  font-size: var(--overlay-button-font-size);
   padding: var(--spacer-xs);
   position: absolute;
   right: var(--spacer-xs);
   top: var(--spacer-xs);
   transition: color var(--animation-normal);
 
-  &:hover {
-    color: $overlay-button-color-hover;
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--overlay-button-hover-color);
   }
 }
 

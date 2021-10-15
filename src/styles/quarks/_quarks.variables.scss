@@ -69,7 +69,6 @@ $background-color-light:  $gray-100 !default;
 $border-color:            $gray-400 !default;
 $border-color-light:      $gray-300 !default;
 
-$overlay-color:           rgba($black, .75) !default;
 $selection-color:         mix($brand-primary, $white, 20%) !default;
 
 /**
@@ -336,17 +335,6 @@ $header-bg:               $white !default;
 $header-border:           $border-color-light !default;
 $header-btn-bg:           $white !default;
 $header-btn-color:        $gray-400 !default;
-
-/**
- * OVERLAY
- * -------------------------------------------------------------------
- */
-
-$overlay-bg:                      $overlay-color !default;
-
-$overlay-button-size:             $icon-size-lg !default;
-$overlay-button-color:            $white !default;
-$overlay-button-color-hover:      $gray-200 !default;
 
 /**
  * SLIDESHOW
