@@ -208,16 +208,6 @@ $link-background-color:   mix($brand-primary, $white, 10%) !default;
 $link-hover-color:        mix($link-color, $black, 85%) !default;
 
 /**
- * LISTS
- * -------------------------------------------------------------------
- * Define default paddings for lists
- */
-
-$list-padding-left:          $spacer !default;
-$list-item-padding-top:      $spacer / 3 !default;
-$list-item-padding-bottom:   $spacer / 3 !default;
-
-/**
  * LABELS
  * -------------------------------------------------------------------
  */
