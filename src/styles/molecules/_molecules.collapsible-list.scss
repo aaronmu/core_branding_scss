@@ -5,14 +5,24 @@
  */
 
 .m-collapsible-list {
+  --collapsible-list-spacing:   var(--shared-list-item-padding-top);
+}
+
+/**
+ * COLLAPSIBLE LIST
+ * -------------------------------------------------------------------
+ * This component has shared variables. You can find them in _quarks.variables.scss.
+ */
+
+.m-collapsible-list {
   @extend %a-list;
   @extend %a-list--unstyled;
 
   ul {
     @extend %a-list;
 
-    margin-bottom: -$list-item-padding-top;
-    margin-top: $list-item-padding-top;
+    margin-bottom: calc(var(--collapsible-list-spacing) * -1);
+    margin-top: var(--collapsible-list-spacing);
   }
 }
 

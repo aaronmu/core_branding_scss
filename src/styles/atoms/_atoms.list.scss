@@ -4,6 +4,18 @@
  * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
+%a-list {
+  --list-padding-left:          var(--spacer);
+  --list-item-padding-top:      var(--shared-list-item-padding-top);
+  --list-item-padding-bottom:   var(--list-item-padding-top);
+}
+
+/**
+ * LISTS
+ * -------------------------------------------------------------------
+ * This component has shared variables. You can find them in _quarks.variables.scss.
+ */
+
 ul,
 ol,
 dl {
@@ -16,18 +28,18 @@ dl {
  */
 
 %a-list {
-  padding-left: $list-padding-left;
+  padding-left: var(--list-padding-left);
 
   .a-list {
-    margin-top: $list-item-padding-top;
+    margin-top: var(--list-item-padding-top);
 
     > li:last-of-type {
-      margin-bottom: -$list-item-padding-bottom;
+      margin-bottom: calc(var(--list-item-padding-bottom) * -1);
     }
   }
 
   > li {
-    padding: $list-item-padding-top 0 $list-item-padding-bottom;
+    padding: var(--list-item-padding-top) 0 var(--list-item-padding-bottom);
   }
 }
 
