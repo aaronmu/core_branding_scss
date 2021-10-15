@@ -1,7 +1,30 @@
 /**
+ * SWITCH VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-switch {
+  --switch-width:                    var(--spacer-xl);
+  --switch-height:                   calc(var(--switch-width) / 2 + var(--spacer-3xs));
+  --switch-label:                    var(--text-color);
+
+  --switch-bg-color:                 #{$white};
+  --switch-border-color:             var(--border-color);
+
+  --switch-disabled:                 #{$gray-100};
+  --switch-disabled-label:           var(--state-disabled);
+  --switch-disabled-border:          #{$gray-200};
+  --switch-disabled-bg-color:        var(--switch-disabled-label);
+
+  --switch-handle-width:             calc((var(--switch-width) - .5rem) / 2);
+
+  --switch-handle-bg-color:          #{$gray-400};
+  --switch-handle-active-bg-color:   var(--theme1-400);
+}
+
+/**
  * SWITCH
  * -------------------------------------------------------------------
- * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
 .a-switch {

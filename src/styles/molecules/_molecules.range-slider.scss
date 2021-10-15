@@ -4,8 +4,8 @@
  */
 
 .m-range-slider {
-  --range-slider-height:            var(--switch-height);
-  --range-slider-padding:           calc(var(--spacer) / 6);
+  --range-slider-height:            calc(var(--spacer) + var(--spacer-3xs));
+  --range-slider-padding:           var(--spacer-3xs);
   --range-slider-offset:            var(--shared-progress-tooltip-offset);
 
   --range-slider-bg-color:          #{$white};
