@@ -23,7 +23,7 @@ $search-filter-icon-color:   $gray-400;
     padding-left: var(--spacer);
 
     > span:not(.ai) {
-      margin-left: calc(var(--spacer) / 6);
+      margin-left: var(--spacer-3xs);
     }
 
     > .ai {

@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     left: 0;
-    padding: calc(var(--spacer) / 6);
+    padding: var(--spacer-3xs);
     position: absolute;
     right: 0;
     top: 0;
