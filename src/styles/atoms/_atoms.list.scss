@@ -176,7 +176,7 @@ dl {
   margin: 0;
 
   dt {
-    font-weight: $bold;
+    font-weight: var(--font-weight-bold);
     padding-top: var(--spacer-3xs);
   }
 

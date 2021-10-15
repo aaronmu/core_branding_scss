@@ -137,23 +137,6 @@ $line-height-paragraph:   1.3 !default;
 $line-height-headings:    1.1 !default;
 
 /**
- * FONT WEIGHTS
- * -------------------------------------------------------------------
- */
-
-$light:                   300 !default;
-$normal:                  500 !default;
-$bold:                    700 !default;
-$extra-bold:              800 !default;
-
-$font-weight-h1:          $normal !default;
-$font-weight-h2:          $normal !default;
-$font-weight-h3:          $normal !default;
-$font-weight-h4:          $normal !default;
-$font-weight-h5:          $normal !default;
-$font-weight-h6:          $normal !default;
-
-/**
  * OTHER TYPOGRAPHY
  * -------------------------------------------------------------------
  */
@@ -328,7 +311,7 @@ $copyright-font-size:     $font-size-sm !default;
  */
 
 $label-font-size:         $font-size-sm !default;
-$label-font-weight:       $bold !default;
+$label-font-weight:       var(--font-weight-bold) !default;
 $label-height:            $spacer-sm !default;
 $label-line-height:       $label-height !default;
 

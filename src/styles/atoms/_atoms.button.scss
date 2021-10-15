@@ -15,7 +15,7 @@
 .a-button-official {
   --btn-height:                                 var(--spacer-xl);
   --btn-padding:                                0 var(--spacer);
-  --btn-font-weight:                            #{$bold};
+  --btn-font-weight:                            #{var(--font-weight-bold)};
   --btn-font-size:                              1rem;
   --btn-icon-size:                              1.25rem;
 }

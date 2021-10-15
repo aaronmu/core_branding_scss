@@ -5,7 +5,7 @@
 
 .a-badge {
   --badge-font-size:         #{$font-size-sm};
-  --badge-font-weight:       #{$bold};
+  --badge-font-weight:       #{var(--font-weight-bold)};
   --badge-size:              var(--spacer);
   --badge-padding:           0 var(--spacer-3xs);
 

@@ -26,51 +26,6 @@
 }
 
 /**
- * INPUT MIXIN
- * -------------------------------------------------------------------
- */
-
-@mixin a-input(
-  $_color,
-  $_bg-color,
-  $_border-color,
-  $_placeholder-color,
-
-  $_disabled-color,
-  $_disabled-bg-color,
-  $_disabled-border-color,
-
-  $_readonly-color,
-  $_readonly-bg-color,
-  $_readonly-border-color
-) {
-  input,
-  select,
-  textarea {
-    @include a-input-placeholder {
-      color: $_placeholder-color;
-    }
-
-    background-color: $_bg-color;
-    border: var(--border-width) solid $_border-color;
-    color: $_color;
-
-    &:disabled {
-      background-color: $_disabled-bg-color;
-      border: var(--border-width) solid $_disabled-border-color;
-      color: $_disabled-color;
-      cursor: not-allowed;
-    }
-
-    &[readonly] {
-      background-color: $_readonly-bg-color;
-      border: var(--border-width) solid $_readonly-border-color;
-      color: $_readonly-color;
-    }
-  }
-}
-
-/**
  * INPUT PLACEHOLDER MIXIN
  * -------------------------------------------------------------------
  * Change base styling for placeholder text on input fields

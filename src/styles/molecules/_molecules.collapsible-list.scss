@@ -55,7 +55,7 @@
 .m-collapsible-list__item {
   &.is-active {
     > a {
-      font-weight: $bold;
+      font-weight: var(--font-weight-bold);
     }
   }
 

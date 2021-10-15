@@ -328,7 +328,7 @@
   .m-modal__footer {
     justify-content: flex-end;
 
-    [class*='a-button'] {
+    .a-button {
       margin-bottom: 0;
     }
   }

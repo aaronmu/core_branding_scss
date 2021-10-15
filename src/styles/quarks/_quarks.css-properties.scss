@@ -110,6 +110,23 @@
   --font-family-monospace:   'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
 
   /**
+   * FONT WEIGHTS
+   * -------------------------------------------------------------------
+   */
+
+  --font-weight-light:        300;
+  --font-weight-normal:       500;
+  --font-weight-bold:         700;
+  --font-weight-extra-bold:   800;
+
+  --font-weight-h1:           var(--font-weight-normal);
+  --font-weight-h2:           var(--font-weight-normal);
+  --font-weight-h3:           var(--font-weight-normal);
+  --font-weight-h4:           var(--font-weight-normal);
+  --font-weight-h5:           var(--font-weight-normal);
+  --font-weight-h6:           var(--font-weight-normal);
+
+  /**
    * BORDERS
    * -------------------------------------------------------------------
    */
