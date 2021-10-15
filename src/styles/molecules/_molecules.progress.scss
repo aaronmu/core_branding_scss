@@ -1,4 +1,23 @@
 /**
+ * PROGRESS VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.m-progress {
+  --progress-height:           var(--switch-height);
+  --progress-bar-padding:      calc(var(--spacer) / 6);
+  --progress-tooltip-offset:   var(--shared-progress-tooltip-offset);
+
+  --progress-bg:               #{$white};
+  --progress-border:           var(--border-color);
+
+  --progress-bar-bg:           var(--theme1-400);
+
+  --progress-tooltip-top:      calc((var(--shared-tooltip-min-height) + var(--shared-tooltip-arrow-height) + var(--progress-tooltip-offset) + var(--progress-bar-padding)) * -1);
+  --progress-tooltip-bottom:   calc(var(--progress-height) - var(--progress-bar-padding) + var(--shared-tooltip-arrow-height) + var(--progress-tooltip-offset));
+}
+
+/**
  * PROGRESS
  * -------------------------------------------------------------------
  */
