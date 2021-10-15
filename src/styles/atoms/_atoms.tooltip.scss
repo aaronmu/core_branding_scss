@@ -1,7 +1,6 @@
 /**
  * TOOLTIP
  * -------------------------------------------------------------------
- * This component has shared variables. You can find them in _quarks.variables.scss.
  */
 
 /**
@@ -9,11 +8,11 @@
  * -------------------------------------------------------------------
  */
 
-%a-tooltip {
+.a-tooltip {
   display: inline-block;
-  max-width: $tooltip-max-width;
-  min-height: $tooltip-min-height;
-  padding: $tooltip-padding;
+  max-width: var(--tooltip-max-width);
+  min-height: var(--tooltip-min-height);
+  padding: var(--tooltip-padding);
   position: relative;
 
   a {
@@ -23,14 +22,10 @@
   &:before {
     content: '';
     display: block;
-    height: $tooltip-arrow-height * 2;
+    height: calc(var(--tooltip-arrow-height) * 2);
     position: absolute;
-    width: $tooltip-arrow-height * 2;
+    width: calc(var(--tooltip-arrow-height) * 2);
   }
-}
-
-.a-tooltip {
-  @extend %a-tooltip;
 }
 
 /**
@@ -39,14 +34,21 @@
  */
 
 .a-tooltip {
-  @include a-tooltip;
+  background-color: var(--tooltip-bg-color);
+  color: var(--tooltip-color);
+
+  &:before {
+    background-color: var(--tooltip-bg-color);
+  }
 
   &.a-tooltip--primary {
-    @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg);
+    --tooltip-color: var(--tooltip-primary-color);
+    --tooltip-bg-color: var(--tooltip-primary-bg-color);
   }
 
   &.a-tooltip--secondary {
-    @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg);
+    --tooltip-color: var(--tooltip-secondary-color);
+    --tooltip-bg-color: var(--tooltip-secondary-bg-color);
   }
 }
 

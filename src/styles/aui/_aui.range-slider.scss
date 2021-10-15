@@ -26,10 +26,10 @@
     .m-range-slider__step {
       background-color: $gray-300;
       border-radius: 50%;
-      height: ($range-slider-inner-height - (2 * $range-slider-padding));
-      margin: $range-slider-padding;
+      height: calc(var(--range-slider-inner-height) - (2 * var(--range-slider-padding)));
+      margin: var(--range-slider-padding);
       text-align: center;
-      width: ($range-slider-inner-height - (2 * $range-slider-padding));
+      width: calc(var(--range-slider-inner-height) - (2 * var(--range-slider-padding)));
     }
   }
 

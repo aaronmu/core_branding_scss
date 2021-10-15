@@ -88,20 +88,6 @@
 }
 
 /**
- * TOOLTIP MIXIN
- * -------------------------------------------------------------------
- */
-
-@mixin a-tooltip($_color: $tooltip-default-color, $_background: $tooltip-default-bg) {
-  background-color: $_background;
-  color: $_color;
-
-  &:before {
-    background-color: $_background;
-  }
-}
-
-/**
  * FOCUS
  * -------------------------------------------------------------------
  */

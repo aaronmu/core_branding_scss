@@ -54,6 +54,7 @@
    */
 
   --text-color:              #{$black};
+  --bg-color:                #{$gray-200};
   --border-color:            #{$gray-300};
   --overlay-color:           #{rgba($black, .75)};
 
@@ -149,10 +150,82 @@
    * -------------------------------------------------------------------
    */
 
-  --shared-avatar-size-s:      var(--spacer-l); // 36px
-  --shared-avatar-size:        var(--spacer-xl); // 48px
-  --shared-avatar-size-l:      var(--spacer-xxl); // 60px
+  // Avatar
+  --shared-avatar-size-s:             var(--spacer-l); // 36px
+  --shared-avatar-size:               var(--spacer-xl); // 48px
+  --shared-avatar-size-l:             var(--spacer-xxl); // 60px
 
-  --shared-copyright-color:    #{$white};
-  --shared-copyright-height:   var(--spacer-l);
+  // Copyright
+  --shared-copyright-color:           #{$white};
+  --shared-copyright-height:          var(--spacer-l);
+
+  // Switch
+  --switch-width:                     var(--spacer-xl);
+  --switch-height:                    calc(var(--switch-width) / 2 + .25rem);
+  --switch-label:                     var(--text-color);
+
+  --switch-bg-color:                  #{$white};
+  --switch-border-color:              var(--border-color);
+
+  --switch-disabled:                  #{$gray-100};
+  --switch-disabled-label:            var(--state-disabled);
+  --switch-disabled-border:           #{$gray-200};
+  --switch-disabled-bg-color:         var(--switch-disabled-label);
+
+  --switch-handle-width:              calc((var(--switch-width) - .5rem) / 2);
+
+  --switch-handle-bg-color:           #{$gray-400};
+  --switch-handle-active-bg-color:    var(--theme1-400);
+
+  // Tooltip
+  --tooltip-max-width:                calc(var(--spacer) * 12);
+  --tooltip-min-height:               var(--spacer-l);
+
+  --tooltip-color:                    var(--text-color);
+  --tooltip-bg-color:                 var(--bg-color);
+
+  --tooltip-primary-color:            #{$white};
+  --tooltip-primary-bg-color:         var(--theme1-400);
+
+  --tooltip-secondary-color:          #{$white};
+  --tooltip-secondary-bg-color:       var(--theme2-400);
+
+  --tooltip-padding:                  var(--spacer-xxs) var(--spacer-xs);
+  --tooltip-arrow-height:             calc(var(--spacer) / 4);
+
+  // Progress
+  --progress-height:                  var(--switch-height);
+  --progress-bar-padding:             calc(var(--spacer) / 6);
+  --progress-tooltip-offset:          .625rem;
+
+  --progress-bg:                      #{$white};
+  --progress-border:                  var(--border-color);
+
+  --progress-bar-bg:                  var(--theme1-400);
+
+  --progress-tooltip-top:             calc((var(--tooltip-min-height) + var(--tooltip-arrow-height) + var(--progress-tooltip-offset) + var(--progress-bar-padding)) * -1);
+  --progress-tooltip-bottom:          calc(var(--progress-height) - var(--progress-bar-padding) + var(--tooltip-arrow-height) + var(--progress-tooltip-offset));
+
+  // Range slider
+  --range-slider-height:              var(--switch-height);
+  --range-slider-padding:             calc(var(--spacer) / 6);
+  --range-slider-offset:              var(--progress-tooltip-offset);
+
+  --range-slider-bg:                  #{$white};
+  --range-slider-border:              var(--border-color);
+
+  --range-slider-bar-bg:              var(--bg-color);
+  --range-slider-handle-bg:           var(--theme1-400);
+
+  --range-slider-inner-height:        calc(var(--range-slider-height) - (var(--range-slider-padding) * 2));
+  --range-slider-inner-width:         calc(100% - (var(--range-slider-height) - var(--range-slider-padding) * 2));
+
+  --range-slider-bar-height:          var(--range-slider-inner-height);
+
+  --range-slider-handle-size:         var(--range-slider-inner-height);
+  --range-slider-handle-padding:      calc(var(--range-slider-handle-size) / 2);
+
+  --range-slider-value-height:        #{$font-size-base};
+  --range-slider-tooltip-top:         calc(((var(--range-slider-handle-size) * 2 - var(--range-slider-height)) / 2) - (var(--tooltip-min-height) + var(--tooltip-arrow-height) + var(--range-slider-offset)));
+  --range-slider-value-top:           calc(((var(--range-slider-handle-size) * 2 - var(--range-slider-height)) / 2) - (var(--range-slider-value-height) + var(--range-slider-offset)));
 }
