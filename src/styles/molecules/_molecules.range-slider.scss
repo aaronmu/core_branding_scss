@@ -1,12 +1,41 @@
 /**
+ * RANGE SLIDER VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.m-range-slider {
+  --range-slider-height:            var(--switch-height);
+  --range-slider-padding:           calc(var(--spacer) / 6);
+  --range-slider-offset:            var(--shared-progress-tooltip-offset);
+
+  --range-slider-bg-color:          #{$white};
+  --range-slider-border-color:      var(--border-color);
+
+  --range-slider-bar-bg-color:      var(--bg-color);
+  --range-slider-handle-bg-color:   var(--theme1-400);
+
+  --range-slider-inner-height:      calc(var(--range-slider-height) - (var(--range-slider-padding) * 2));
+  --range-slider-inner-width:       calc(100% - (var(--range-slider-height) - var(--range-slider-padding) * 2));
+
+  --range-slider-bar-height:        var(--range-slider-inner-height);
+
+  --range-slider-handle-size:       var(--range-slider-inner-height);
+  --range-slider-handle-padding:    calc(var(--range-slider-handle-size) / 2);
+
+  --range-slider-value-height:      #{$font-size-base};
+  --range-slider-tooltip-top:       calc(((var(--range-slider-handle-size) * 2 - var(--range-slider-height)) / 2) - (var(--shared-tooltip-min-height) + var(--shared-tooltip-arrow-height) + var(--range-slider-offset)));
+  --range-slider-value-top:         calc(((var(--range-slider-handle-size) * 2 - var(--range-slider-height)) / 2) - (var(--range-slider-value-height) + var(--range-slider-offset)));
+}
+
+/**
  * RANGE SLIDER
  * -------------------------------------------------------------------
  */
 
 .m-range-slider {
-  background: var(--range-slider-bg);
+  background: var(--range-slider-bg-color);
   border-radius: var(--range-slider-height);
-  box-shadow: inset 0 0 0 var(--border-width) var(--range-slider-border);
+  box-shadow: inset 0 0 0 var(--border-width) var(--range-slider-border-color);
   height: var(--range-slider-height);
   padding: var(--range-slider-padding);
   width: 100%;
@@ -25,13 +54,13 @@
 }
 
 .m-range-slider__bar {
-  background-color: var(--range-slider-bar-bg);
+  background-color: var(--range-slider-bar-bg-color);
   height: 100%;
   position: absolute;
 
   &:before,
   &:after {
-    background-color: var(--range-slider-bar-bg);
+    background-color: var(--range-slider-bar-bg-color);
     border-radius: var(--range-slider-bar-height);
     content: '';
     display: block;
@@ -60,7 +89,7 @@
   transform: translate(-50%, -50%);
 
   &:before {
-    background-color: var(--range-slider-handle-bg);
+    background-color: var(--range-slider-handle-bg-color);
     border-radius: var(--range-slider-handle-size);
     content: '';
     display: block;

@@ -183,27 +183,4 @@
 
   // Progress
   --shared-progress-tooltip-offset:   .625rem;
-
-  // Range slider
-  --range-slider-height:              var(--switch-height);
-  --range-slider-padding:             calc(var(--spacer) / 6);
-  --range-slider-offset:              var(--shared-progress-tooltip-offset);
-
-  --range-slider-bg:                  #{$white};
-  --range-slider-border:              var(--border-color);
-
-  --range-slider-bar-bg:              var(--bg-color);
-  --range-slider-handle-bg:           var(--theme1-400);
-
-  --range-slider-inner-height:        calc(var(--range-slider-height) - (var(--range-slider-padding) * 2));
-  --range-slider-inner-width:         calc(100% - (var(--range-slider-height) - var(--range-slider-padding) * 2));
-
-  --range-slider-bar-height:          var(--range-slider-inner-height);
-
-  --range-slider-handle-size:         var(--range-slider-inner-height);
-  --range-slider-handle-padding:      calc(var(--range-slider-handle-size) / 2);
-
-  --range-slider-value-height:        #{$font-size-base};
-  --range-slider-tooltip-top:         calc(((var(--range-slider-handle-size) * 2 - var(--range-slider-height)) / 2) - (var(--shared-tooltip-min-height) + var(--shared-tooltip-arrow-height) + var(--range-slider-offset)));
-  --range-slider-value-top:           calc(((var(--range-slider-handle-size) * 2 - var(--range-slider-height)) / 2) - (var(--range-slider-value-height) + var(--range-slider-offset)));
 }
