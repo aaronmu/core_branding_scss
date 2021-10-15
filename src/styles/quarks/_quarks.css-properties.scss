@@ -148,7 +148,10 @@
    * -------------------------------------------------------------------
    */
 
-  --shared-avatar-size-s:    var(--spacer-l); // 36px
-  --shared-avatar-size:      var(--spacer-xl); // 48px
-  --shared-avatar-size-l:    var(--spacer-xxl); // 60px
+  --shared-avatar-size-s:      var(--spacer-l); // 36px
+  --shared-avatar-size:        var(--spacer-xl); // 48px
+  --shared-avatar-size-l:      var(--spacer-xxl); // 60px
+
+  --shared-copyright-color:    #{$white};
+  --shared-copyright-height:   var(--spacer-l);
 }
