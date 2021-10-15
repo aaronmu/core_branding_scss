@@ -1,4 +1,25 @@
 /**
+ * TOOLTIP VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-tooltip {
+  --tooltip-max-width:            calc(var(--spacer) * 12);
+  --tooltip-min-height:           var(--shared-tooltip-min-height);
+  --tooltip-padding:              var(--spacer-xxs) var(--spacer-xs);
+  --tooltip-arrow-height:         var(--shared-tooltip-arrow-height);
+
+  --tooltip-color:                var(--text-color);
+  --tooltip-bg-color:             var(--bg-color);
+
+  --tooltip-primary-color:        #{$white};
+  --tooltip-primary-bg-color:     var(--theme1-400);
+
+  --tooltip-secondary-color:      #{$white};
+  --tooltip-secondary-bg-color:   var(--theme2-400);
+}
+
+/**
  * TOOLTIP
  * -------------------------------------------------------------------
  */
