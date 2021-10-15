@@ -58,7 +58,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
       .o-menu__submenu {
         left: $navigation-menu-docked-width;
         position: absolute;
-        top: calc(#{--border-width} * -1); // Make up for border
+        top: calc(var(--border-width) * -1); // Make up for border
 
         .o-menu__submenu {
           left: 100%;
@@ -368,7 +368,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
   z-index: layer('header') - 1;
 
   .o-navigation-pane__overlay {
-    background: $overlay-color;
+    background: var(--overlay-color);
     bottom: 100%;
     height: 0;
     opacity: 0;
@@ -380,7 +380,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
   .o-navigation-pane__wrapper {
     background: $white;
     box-shadow: 0 -.75rem 0 rgba($black, .1);
-    margin-bottom: calc(#{--border-width} * -1);
+    margin-bottom: calc(var(--border-width) * -1);
     max-height: calc(100vh - #{$header-height} - #{$navigation-menu-mobile-height});
     min-height: var(--spacer); // make up for the box shadow to be visible, even when hidden
     overflow-y: scroll;

@@ -68,7 +68,7 @@
     position: absolute;
 
     svg {
-      filter: drop-shadow(0 0 2px $overlay-color);
+      filter: drop-shadow(0 0 2px var(--overlay-color));
     }
   }
 
@@ -77,6 +77,7 @@
   &:active,
   &:focus {
     background: transparent;
+    box-shadow: none;
   }
 
   .ai {
