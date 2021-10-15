@@ -4,10 +4,9 @@
  */
 
 .m-gallery {
-  --gallery-gutter-col:          var(--spacer);
-  --gallery-gutter-row:          var(--gallery-gutter-col);
-
-  --gallery-item-size:           100% / 3;
+  --gallery-gutter-col:      var(--spacer);
+  --gallery-gutter-row:      var(--gallery-gutter-col);
+  --gallery-item-size:       100% / 3;
 }
 
 /**
