@@ -643,6 +643,7 @@
 .a-button {
   &.has-avatar,
   &.has-avatar-with-image {
+    overflow: hidden;
     position: relative;
 
     .a-avatar {

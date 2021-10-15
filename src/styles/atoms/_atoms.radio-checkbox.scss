@@ -130,10 +130,16 @@
 }
 
 .a-input__checkbox input[type='checkbox'] {
-  + label:after {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 0% 0%;
+  + label {
+    &:before {
+      border-radius: var(--border-radius);
+    }
+
+    &:after {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 0% 0%;
+    }
   }
 }
 
