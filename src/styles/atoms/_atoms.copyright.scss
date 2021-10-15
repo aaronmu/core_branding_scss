@@ -1,15 +1,27 @@
 /**
- * COPYRIGHT
+ * COPYRIGHT VARIABLES
  * -------------------------------------------------------------------
- * This component has shared variables. You can find them in _quarks.variables.scss.
+ * This component has shared variables with _molecules.image.scss. You can find them in _quarks.css-properties.scss.
  */
 
 .a-copyright {
-  background-color: $copyright-bg;
-  color: $copyright-color;
+  --copyright-height:        var(--shared-copyright-height);
+  --copyright-font-size:     #{$font-size-sm};
+  --copyright-color:         var(--shared-copyright-color);
+  --copyright-bg-color:      var(--overlay-color);
+}
+
+/**
+ * COPYRIGHT
+ * -------------------------------------------------------------------
+ */
+
+.a-copyright {
+  background-color: var(--copyright-bg-color);
+  color: var(--copyright-color);
   display: inline-block;
-  font-size: rem($copyright-font-size);
-  height: $copyright-height;
+  font-size: var(--copyright-font-size);
+  height: var(--copyright-height);
   transition: transform var(--animation-normal);
 }
 
@@ -26,13 +38,13 @@
 .a-copyright__sign {
   align-items: center;
   display: flex;
-  font-size: rem($copyright-font-size * 1.25);
+  font-size: calc(var(--copyright-font-size) * 1.25);
   height: 100%;
   justify-content: center;
-  width: $copyright-height;
+  width: var(--copyright-height);
 }
 
 .a-copyright__label {
-  line-height: $copyright-height;
+  line-height: var(--copyright-height);
   margin-right: var(--spacer-xs);
 }

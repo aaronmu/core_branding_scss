@@ -1,7 +1,18 @@
 /**
  * IMAGES
  * -------------------------------------------------------------------
+ * This component has shared variables with _atoms.copyright.scss. You can find them in _quarks.css-properties.scss.
  */
+
+/**
+ * IMAGES VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.m-image {
+  --image-copyright-height:   calc(var(--shared-copyright-height) * -1);
+  --image-copyright-color:    var(--shared-copyright-color);
+}
 
 /**
  * IMAGE
@@ -26,15 +37,15 @@
 
 .m-image__copyright {
   bottom: 0;
-  color: $copyright-color;
+  color: var(--image-copyright-color);
   position: absolute;
   right: 0;
-  transform: translateX(100%) translateX(-$copyright-height);
+  transform: translateX(100%) translateX(var(--image-copyright-height));
 
   &:hover,
   &:active,
   &:focus {
-    color: $copyright-color;
+    color: var(--image-copyright-color);
     transform: translateX(0);
   }
 }

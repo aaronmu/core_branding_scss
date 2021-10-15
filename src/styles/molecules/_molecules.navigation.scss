@@ -3,20 +3,27 @@
  * -------------------------------------------------------------------
  */
 
-$nav-font-weight:             var(--font-weight-bold) !default;
-$nav-icon-size:               1.25rem !default;
-$nav-border:                  $border-color-light !default;
-$nav-border-hover:            $brand-primary !default;
-$nav-color:                   $text-color !default;
-$nav-color-hover:             $brand-primary !default;
-$nav-color-active:            $nav-color-hover !default;
-$nav-bg:                      transparent !default;
-$nav-bg-hover:                $gray-100 !default;
-$nav-bg-active:               $nav-bg !default;
-$nav-padding:                 rem(13px) var(--spacer) !default;
-$nav-bg-disabled:             $gray-100 !default;
-$nav-color-disabled:          $state-disabled !default;
-$nav-tab-color-disabled:      $nav-color-disabled !default;
+.m-nav-list,
+.m-nav-tabs {
+  --nav-font-weight:          var(--font-weight-bold);
+  --nav-icon-size:            1.25rem;
+  --nav-padding:              .8125rem var(--spacer);
+
+  --nav-color:                var(--text-color);
+  --nav-bg-color:             transparent;
+  --nav-border-color:         var(--border-color);
+
+  --nav-active-color:         var(--nav-hover-color);
+  --nav-active-bg-color:      var(--nav-bg-color);
+
+  --nav-hover-color:          var(--theme1-400);
+  --nav-hover-bg-color:       #{$gray-100};
+  --nav-hover-border-color:   var(--theme1-400);
+
+  --nav-disabled-color:       var(--state-disabled);
+  --nav-disabled-bg-color:    #{$gray-100};
+  --nav-disabled-tab-color:   var(--nav-disabled-color);
+}
 
 /**
  * NAVIGATION LIST
@@ -26,23 +33,23 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
 %m-nav-list {
   @extend %a-list--reset;
 
-  border-top: var(--border-width) solid $nav-border;
+  border-top: var(--border-width) solid var(--nav-border-color);
 
   > li {
-    font-weight: $nav-font-weight;
+    font-weight: var(--nav-font-weight);
     line-height: $line-height-paragraph;
     min-height: var(--spacer-xl);
     text-align: center;
 
     > a,
     > button {
-      background-color: $nav-bg;
+      background-color: var(--nav-bg-color);
       border: none;
-      border-bottom: var(--border-width) solid $nav-border;
+      border-bottom: var(--border-width) solid var(--nav-border-color);
       color: inherit;
       display: block;
       flex: 1 1 auto;
-      padding: $nav-padding;
+      padding: var(--nav-padding);
       text-decoration: none;
       transition-duration: var(--animation-duration);
       transition-property: background, color;
@@ -50,16 +57,16 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
 
       &:hover,
       &:active {
-        background-color: $nav-bg-hover;
-        color: $nav-color-hover;
+        background-color: var(--nav-hover-bg-color);
+        color: var(--nav-hover-color);
       }
 
       &.is-active {
         &,
         &:hover,
         &:active {
-          background-color: $nav-bg-active;
-          color: $nav-color-active;
+          background-color: var(--nav-active-bg-color);
+          color: var(--nav-active-color);
           text-decoration: underline;
         }
       }
@@ -68,8 +75,8 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
         &,
         &:hover,
         &:active {
-          background-color: $nav-bg-disabled;
-          color: $nav-color-disabled;
+          background-color: var(--nav-disabled-bg-color);
+          color: var(--nav-disabled-color);
           cursor: not-allowed;
           text-decoration: none;
         }
@@ -130,8 +137,8 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
         &:hover,
         &:active {
           background-color: transparent;
-          border-color: $nav-color-active;
-          color: $nav-color;
+          border-color: var(--nav-active-color);
+          color: var(--nav-color);
           text-decoration: none;
         }
 
@@ -139,9 +146,9 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
           &,
           &:hover,
           &:active {
-            background-color: $nav-bg-active;
-            border-color: $nav-color-active;
-            color: $nav-color-active;
+            background-color: var(--nav-active-bg-color);
+            border-color: var(--nav-active-color);
+            color: var(--nav-active-color);
             text-decoration: none;
           }
         }
@@ -150,8 +157,10 @@ $nav-tab-color-disabled:      $nav-color-disabled !default;
           &,
           &:hover,
           &:active {
-            background-color: $nav-bg;
+            background-color: var(--nav-bg-color);
             border-color: transparent;
+            color: var(--nav-disabled-color);
+            cursor: not-allowed;
           }
         }
       }

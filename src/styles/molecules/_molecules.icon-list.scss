@@ -3,11 +3,12 @@
  * -------------------------------------------------------------------
  */
 
-$icon-list-color:             $gray-600 !default;
-$icon-list-negative-color:    $white !default;
-$icon-list-hover-color:       $brand-secondary !default;
-
-$icon-list-icon-size:         $icon-size-base !default;
+.m-icon-list {
+  --icon-list-color:            #{$gray-600};
+  --icon-list-hover-color:      var(--theme2-400);
+  --icon-list-negative-color:   #{$white};
+  --icon-list-icon-size:        #{rem($icon-size-base)};
+}
 
 /**
  * ICON LIST
@@ -18,7 +19,7 @@ $icon-list-icon-size:         $icon-size-base !default;
   @extend %a-list--reset;
 
   li {
-    color: $icon-list-color;
+    color: var(--icon-list-color);
     text-align: center;
 
     &:not(:last-child) {
@@ -30,13 +31,15 @@ $icon-list-icon-size:         $icon-size-base !default;
       display: block;
       transition: color var(--animation-normal);
 
-      &:hover {
-        color: $icon-list-hover-color;
+      &:active,
+      &:hover,
+      &:focus {
+        color: var(--icon-list-hover-color);
       }
     }
 
     .ai {
-      font-size: rem($icon-list-icon-size);
+      font-size: var(--icon-list-icon-size);
     }
   }
 }
@@ -58,6 +61,6 @@ $icon-list-icon-size:         $icon-size-base !default;
   }
 }
 
-.m-icon-list--negative li {
-  color: $icon-list-negative-color;
+.m-icon-list--negative {
+  --icon-list-color: var(--icon-list-negative-color);
 }

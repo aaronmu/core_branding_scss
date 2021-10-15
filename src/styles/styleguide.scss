@@ -225,7 +225,7 @@
     );
   box-shadow: 0 0 0 var(--border-width) $gray-200 inset;
   display: inline-block;
-  padding: calc(var(--spacer) / 6);
+  padding: var(--spacer-3xs);
 
   strong {
     background-color: rgba($black, .6);
@@ -245,7 +245,7 @@
 }
 
 .d-button {
-  margin-bottom: calc(var(--spacer) / 6); // Improves the 'flow' of multiple consecutive buttons
+  margin-bottom: var(--spacer-3xs); // Improves the 'flow' of multiple consecutive buttons
 }
 
 .d-tooltip {

@@ -3,10 +3,11 @@
  * -------------------------------------------------------------------
  */
 
-$gallery-gutter-col:          var(--spacer) !default;
-$gallery-gutter-row:          $gallery-gutter-col !default;
-
-$gallery-item-size:           100% / 3 !default;
+.m-gallery {
+  --gallery-gutter-col:      var(--spacer);
+  --gallery-gutter-row:      var(--gallery-gutter-col);
+  --gallery-item-size:       100% / 3;
+}
 
 /**
  * GALLERY
@@ -19,8 +20,8 @@ $gallery-item-size:           100% / 3 !default;
 
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(#{$gallery-gutter-col} / -2);
-  width: calc(100% + #{$gallery-gutter-col});
+  margin-left: calc(var(--gallery-gutter-col) / -2);
+  width: calc(100% + var(--gallery-gutter-col));
 }
 
 /**
@@ -29,8 +30,8 @@ $gallery-item-size:           100% / 3 !default;
  */
 
 .m-gallery__item {
-  margin: 0 calc(#{$gallery-gutter-col / 2}) $gallery-gutter-row;
-  width: calc(#{$gallery-item-size} - #{$gallery-gutter-col});
+  margin: 0 calc(var(--gallery-gutter-col) / 2) var(--gallery-gutter-row);
+  width: calc(var(--gallery-item-size) - var(--gallery-gutter-col));
 
   a {
     display: block;
@@ -49,6 +50,6 @@ $gallery-item-size:           100% / 3 !default;
   &.m-gallery__item--preview {
     height: auto;
     margin-right: 0;
-    width: calc(100% - #{$gallery-gutter-col});
+    width: calc(100% - var(--gallery-gutter-col));
   }
 }
