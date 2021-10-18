@@ -3,23 +3,25 @@
  * -------------------------------------------------------------------
  */
 
-$pagination-font-size:                $font-size-base !default;
-$pagination-size:                     var(--spacer-xl) !default;
+.m-pagination {
+  --pagination-font-size:                #{rem($font-size-base)};
+  --pagination-size:                     var(--spacer-xl);
 
-$pagination-color:                    $white !default;
-$pagination-color-disabled:           $state-disabled !default;
-$pagination-bg:                       $brand-primary !default;
-$pagination-bg-disabled:              $gray-100 !default;
-$pagination-bg-hover:                 mix($pagination-bg, $black, 85%) !default;
+  --pagination-color:                    #{$white};
+  --pagination-color-disabled:           #{$gray-400};
+  --pagination-bg:                       var(--theme1-400);
+  --pagination-bg-disabled:              #{$gray-100};
+  --pagination-bg-hover:                 var(--theme1-500);
 
-$pagination-outline-color:            $pagination-bg !default;
-$pagination-outline-bg:               transparent !default;
-$pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
-$pagination-outline-border:           $pagination-outline-color !default;
-$pagination-outline-border-hover:     mix($pagination-outline-border, $black, 85%) !default;
+  --pagination-outline-color:            var(--pagination-bg);
+  --pagination-outline-bg:               transparent;
+  --pagination-outline-bg-hover:         var(--theme1-050);
+  --pagination-outline-border:           var(--pagination-outline-color);
+  --pagination-outline-border-hover:     var(--theme1-500);
 
-$pagination-size-sm:                  var(--spacer-l) !default;
-$pagination-size-lg:                  var(--spacer-xxl) !default;
+  --pagination-size-sm:                  var(--spacer-l);
+  --pagination-size-lg:                  var(--spacer-xxl);
+}
 
 /**
  * PAGINATION
@@ -32,18 +34,18 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
   display: flex;
 
   > li {
-    background-color: $pagination-bg;
-    color: $pagination-color;
-    font-size: rem($pagination-font-size);
-    height: $pagination-size;
-    line-height: $pagination-size;
+    background-color: var(--pagination-bg);
+    color: var(--pagination-color);
+    font-size: var(--pagination-font-size);
+    height: var(--pagination-size);
+    line-height: var(--pagination-size);
     position: relative;
     text-align: center;
-    width: $pagination-size;
+    width: var(--pagination-size);
     z-index: layer('base');
 
     > a {
-      color: $pagination-color;
+      color: var(--pagination-color);
       display: block;
       text-decoration: none;
       transition-duration: var(--animation-duration);
@@ -53,17 +55,17 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
       &:hover,
       &:active,
       &:focus {
-        background-color: $pagination-bg-hover;
+        background-color: var(--pagination-bg-hover);
       }
 
       &.is-active {
-        background-color: $pagination-bg-hover;
+        background-color: var(--pagination-bg-hover);
         font-weight: var(--font-weight-bold);
       }
 
       &.is-disabled {
-        background-color: $pagination-bg-disabled;
-        color: $pagination-color-disabled;
+        background-color: var(--pagination-bg-disabled);
+        color: var(--pagination-color-disabled);
         cursor: not-allowed;
       }
     }
@@ -75,7 +77,7 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
   }
 
   .m-pagination__prev {
-    border-right: var(--border-width) solid $pagination-bg-hover;
+    border-right: var(--border-width) solid var(--pagination-bg-hover);
 
     + .m-pagination__next {
       border-left: none;
@@ -83,16 +85,16 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
   }
 
   .m-pagination__next {
-    border-left: var(--border-width) solid $pagination-bg-hover;
+    border-left: var(--border-width) solid var(--pagination-bg-hover);
     z-index: layer('auto');
   }
 }
 
 .m-pagination--outlined {
   > li {
-    background-color: $pagination-outline-bg;
-    box-shadow: 0 0 0 var(--border-width) $pagination-outline-border inset;
-    color: $pagination-outline-color;
+    background-color: var(--pagination-outline-bg);
+    box-shadow: 0 0 0 var(--border-width) var(--pagination-outline-border) inset;
+    color: var(--pagination-outline-color);
 
     > a,
     > a:hover,
@@ -103,22 +105,22 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
       color: inherit;
 
       &.is-active {
-        background-color: $pagination-bg;
-        color: $pagination-color;
+        background-color: var(--pagination-bg);
+        color: var(--pagination-color);
       }
 
       &.is-disabled {
-        background-color: $pagination-bg-disabled;
+        background-color: var(--pagination-bg-disabled);
         box-shadow: none;
-        color: $pagination-color-disabled;
+        color: var(--pagination-color-disabled);
       }
     }
 
     > a:hover,
     > a:active,
     > a:focus {
-      background-color: $pagination-outline-bg-hover;
-      box-shadow: 0 0 0 var(--border-width) $pagination-outline-border-hover inset;
+      background-color: var(--pagination-outline-bg-hover);
+      box-shadow: 0 0 0 var(--border-width) var(--pagination-outline-border-hover) inset;
     }
 
     + li {
@@ -140,9 +142,9 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
 .m-pagination {
   &.m-pagination--s {
     > li {
-      height: $pagination-size-sm;
-      line-height: $pagination-size-sm;
-      width: $pagination-size-sm;
+      height: var(--pagination-size-sm);
+      line-height: var(--pagination-size-sm);
+      width: var(--pagination-size-sm);
     }
 
     .m-pagination__label {
@@ -155,9 +157,9 @@ $pagination-size-lg:                  var(--spacer-xxl) !default;
 .m-pagination {
   &.m-pagination--l {
     > li {
-      height: $pagination-size-lg;
-      line-height: $pagination-size-lg;
-      width: $pagination-size-lg;
+      height: var(--pagination-size-lg);
+      line-height: var(--pagination-size-lg);
+      width: var(--pagination-size-lg);
     }
 
     .m-pagination__label {
