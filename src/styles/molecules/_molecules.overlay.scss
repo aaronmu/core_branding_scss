@@ -6,7 +6,7 @@
 
 .m-overlay {
   --overlay-bg-color:             var(--overlay-color);
-  --overlay-button-font-size:     #{$icon-size-lg};
+  --overlay-button-font-size:     #{rem($icon-size-lg)};
   --overlay-button-color:         #{$white};
   --overlay-button-hover-color:   #{$gray-200};
 }
