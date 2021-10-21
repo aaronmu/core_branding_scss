@@ -84,11 +84,11 @@
 }
 
 .u-text-light {
-  color: $text-color-light;
+  color: var(--text-color-light);
 }
 
 .u-text-xlight {
-  color: $text-color-xlight;
+  color: var(--text-color-xlight);
 }
 
 /**
