@@ -3,14 +3,16 @@
  * -------------------------------------------------------------------
  */
 
-$navigation-menu-border:          $border-color-light !default;
-$navigation-menu-mobile-height:   var(--spacer-xxl) !default;
-$navigation-menu-pane-width:      20rem !default;
-$navigation-menu-undocked-width:  15rem !default;
-$navigation-menu-docked-width:    $header-height !default;
-$navigation-menu-submenu-inset:   var(--spacer-xs) !default;
-$navigation-menu-submenu-height:  $navigation-menu-undocked-width * 2 !default;
-$navigation-menu-animation-speed: var(--animation-duration) !default;
+.o-menu {
+  --navigation-menu-border:            #{$border-color-light};
+  --navigation-menu-mobile-height:     var(--spacer-xxl);
+  --navigation-menu-pane-width:        20rem;
+  --navigation-menu-undocked-width:    15rem;
+  --navigation-menu-docked-width:      #{$header-height};
+  --navigation-menu-submenu-inset:     var(--spacer-xs);
+  --navigation-menu-submenu-height:    calc(var(--navigation-menu-undocked-width) * 2);
+  --navigation-menu-animation-speed:   var(--animation-duration);
+}
 
 /**
  * NAVIGATION MENU
@@ -23,40 +25,38 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
   z-index: layer('pane');
 
   @include at($screen-sm) {
-    border-right: var(--border-width) solid $border-color-light;
-    min-width: $navigation-menu-undocked-width;
+    border-right: var(--border-width) solid var(--navigation-menu-border);
+    min-width: var(--navigation-menu-undocked-width);
     overflow-x: hidden; // By default, don't show overflowing content
     overflow-y: auto;
     position: initial;
     top: 0;
-    transition: width min-width var(--animation-easing) $navigation-menu-animation-speed;
-    width: $navigation-menu-undocked-width;
+    transition: width min-width var(--animation-easing) var(--navigation-menu-animation-speed);
+    width: var(--navigation-menu-undocked-width);
 
     a {
       border: none;
     }
 
     &.is-docked {
-      min-width: $navigation-menu-docked-width;
+      min-width: var(--navigation-menu-docked-width);
       overflow: visible; // Since when docked the submenu's will appear to the right, show the overflowing content
-      width: $navigation-menu-docked-width;
+      width: var(--navigation-menu-docked-width);
 
       .o-menu__tabs-wrapper {
         box-shadow: none;
       }
 
       .o-menu__tab {
-        width: calc(#{$navigation-menu-docked-width} - #{var(--border-width)}); // 1 px make up for border
+        width: calc(var(--navigation-menu-docked-width) - var(--border-width)); // 1 px make up for border
 
-        .o-menu__tab-wrapper {
-          &:not(.is-active) {
-            overflow: hidden;
-          }
+        .o-menu__tab-wrapper:not(.is-active) {
+          overflow: hidden;
         }
       }
 
       .o-menu__submenu {
-        left: $navigation-menu-docked-width;
+        left: var(--navigation-menu-docked-width);
         position: absolute;
         top: calc(var(--border-width) * -1); // Make up for border
 
@@ -71,12 +71,12 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
           width: 0;
 
           .m-nav-list {
-            border: var(--border-width) solid $border-color-light;
+            border: var(--border-width) solid var(--navigation-menu-border);
             border-bottom: none;
             border-left: none;
 
             .m-nav-list {
-              border-left: var(--border-width) solid $border-color-light;
+              border-left: var(--border-width) solid var(--navigation-menu-border);
             }
 
             li {
@@ -85,7 +85,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
               }
 
               a {
-                border-bottom: var(--border-width) solid $border-color-light;
+                border-bottom: var(--border-width) solid var(--navigation-menu-border);
                 padding-left: var(--spacer-xs);
               }
             }
@@ -93,7 +93,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
         }
 
         .o-menu__submenu-content-wrapper {
-          width: $navigation-menu-undocked-width;
+          width: var(--navigation-menu-undocked-width);
         }
       }
     }
@@ -117,7 +117,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
   align-content: space-between;
   align-items: center;
   background: $white;
-  border-top: var(--border-width) solid $border-color-light;
+  border-top: var(--border-width) solid var(--navigation-menu-border);
   display: flex;
   position: relative;
   width: 100%;
@@ -152,7 +152,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
 }
 
 .o-menu .o-menu__tab {
-  border-right: var(--border-width) solid $border-color-light;
+  border-right: var(--border-width) solid var(--navigation-menu-border);
   cursor: pointer;
   flex-basis: 33%;
   flex-grow: 1;
@@ -175,13 +175,13 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
 
     & > .o-menu__tab-wrapper > .o-menu__submenu > .o-menu__submenu-content-wrapper:first-of-type {
       display: block;
-      max-height: $navigation-menu-submenu-height;
+      max-height: var(--navigation-menu-submenu-height);
       overflow: visible;
     }
   }
 
   @include at($screen-sm) {
-    border-bottom: var(--border-width) solid $border-color-light;
+    border-bottom: var(--border-width) solid var(--navigation-menu-border);
     border-right: none;
     width: 100%;
   }
@@ -195,7 +195,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
       display: flex;
       flex-direction: column;
       font-weight: bold;
-      height: $navigation-menu-mobile-height;
+      height: var(--navigation-menu-mobile-height);
       justify-content: center;
       text-decoration: none;
       transition-duration: var(--animation-duration);
@@ -232,7 +232,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
         &.o-menu__submenu-icon {
           display: none;
           font-size: rem($font-size-base);
-          transition: transform $navigation-menu-animation-speed ease;
+          transition: transform var(--navigation-menu-animation-speed) ease;
 
           @include at($screen-sm) {
             display: inline;
@@ -278,7 +278,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
     display: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height var(--animation-easing) $navigation-menu-animation-speed;
+    transition: max-height var(--animation-easing) var(--navigation-menu-animation-speed);
 
     .m-nav-list {
       border: none;
@@ -299,7 +299,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
 
         @include at($screen-sm) {
           // Padding is parent padding + icon size + header padding to the left to align the link to the header text
-          padding-left: calc(#{$navigation-menu-docked-width} + #{$navigation-menu-submenu-inset});
+          padding-left: calc(var(--navigation-menu-docked-width) + var(--navigation-menu-submenu-inset));
           padding-right: var(--spacer-3xs);
 
           a {
@@ -317,13 +317,13 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
       li > a > .o-menu__icon {
         margin-right: var(--spacer-3xs);
         transform: rotate(0deg);
-        transition: transform $navigation-menu-animation-speed var(--animation-easing);
+        transition: transform var(--navigation-menu-animation-speed) var(--animation-easing);
       }
 
       li.is-active {
         & > .o-menu__submenu > .o-menu__submenu-content-wrapper {
           display: block;
-          max-height: $navigation-menu-submenu-height;
+          max-height: var(--navigation-menu-submenu-height);
           overflow: visible;
         }
 
@@ -336,7 +336,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
 
   // First sub-layer of menus will get larger padding
   & .m-nav-list li .o-menu__submenu li > a {
-    padding-left: calc(#{$navigation-menu-docked-width} + #{$navigation-menu-submenu-inset} * 2);
+    padding-left: calc(var(--navigation-menu-docked-width) + var(--navigation-menu-submenu-inset) * 2);
   }
 
   @include at($screen-sm) {
@@ -360,10 +360,10 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
 
 .o-menu > .o-menu__navigation-pane {
   background: $white;
-  max-height: calc(100vh - #{$navigation-menu-mobile-height});
+  max-height: calc(100vh - var(--navigation-menu-mobile-height));
   position: absolute;
   top: 0;
-  transition: transform $navigation-menu-animation-speed ease;
+  transition: transform var(--navigation-menu-animation-speed) ease;
   width: 100%;
   z-index: layer('header') - 1;
 
@@ -373,7 +373,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
     height: 0;
     opacity: 0;
     position: absolute;
-    transition: opacity calc(#{$navigation-menu-animation-speed} * 2) ease;
+    transition: opacity calc(#{var(--navigation-menu-animation-speed)} * 2) ease;
     width: 100vh;
   }
 
@@ -381,7 +381,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
     background: $white;
     box-shadow: 0 -.75rem 0 rgba($black, .1);
     margin-bottom: calc(var(--border-width) * -1);
-    max-height: calc(100vh - #{$header-height} - #{$navigation-menu-mobile-height});
+    max-height: calc(100vh - #{$header-height} - var(--navigation-menu-mobile-height));
     min-height: var(--spacer); // make up for the box shadow to be visible, even when hidden
     overflow-y: scroll;
     position: relative;
@@ -408,7 +408,7 @@ $navigation-menu-animation-speed: var(--animation-duration) !default;
     overflow: hidden;
     position: absolute;
     transform: translateX(100%);
-    transition: transform $navigation-menu-animation-speed ease;
+    transition: transform var(--navigation-menu-animation-speed) ease;
     width: 100%;
 
     &.is-visible {
