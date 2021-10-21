@@ -3,12 +3,10 @@
  * -------------------------------------------------------------------
  */
 
-$pane-width: 20rem !default;
-
 .m-pane {
   background-color: $white;
   height: 100%;
-  width: $pane-width;
+  width: 20rem;
   z-index: layer('pane');
 
   &__content {

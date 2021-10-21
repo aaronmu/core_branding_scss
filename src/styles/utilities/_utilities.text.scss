@@ -64,23 +64,23 @@
  */
 
 .u-text-primary {
-  color: $brand-primary;
+  color: var(--theme1-400);
 }
 
 .u-text-secondary {
-  color: $brand-secondary;
+  color: var(--theme2-400);
 }
 
 .u-text-success {
-  color: $state-success;
+  color: var(--state-success);
 }
 
 .u-text-warning {
-  color: $state-warning;
+  color: var(--state-warning);
 }
 
 .u-text-danger {
-  color: $state-danger;
+  color: var(--state-danger);
 }
 
 .u-text-light {

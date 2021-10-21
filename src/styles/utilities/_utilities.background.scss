@@ -4,7 +4,7 @@
  */
 
 .u-bg {
-  background-color: $background-color;
+  background-color: var(--bg-color);
 }
 
 .u-bg-light {
@@ -12,23 +12,23 @@
 }
 
 .u-bg-primary {
-  background-color: $brand-primary;
+  background-color: var(--theme1-400);
 }
 
 .u-bg-secondary {
-  background-color: $brand-secondary;
+  background-color: var(--theme2-400);
 }
 
 .u-bg-success {
-  background-color: $state-success;
+  background-color: var(--state-success);
 }
 
 .u-bg-warning {
-  background-color: $state-warning;
+  background-color: var(--state-warning);
 }
 
 .u-bg-danger {
-  background-color: $state-danger;
+  background-color: var(--state-danger);
 }
 
 .u-bg-white {

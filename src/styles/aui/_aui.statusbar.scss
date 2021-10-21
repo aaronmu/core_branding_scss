@@ -4,30 +4,30 @@
  */
 
 .o-statusbar {
-  background: $state-info;
+  background: var(--state-info);
   color: $white;
   display: flex;
   left: 0;
-  min-height: calc(var(--spacer) * 2);
+  min-height: var(--spacer-xl);
   position: fixed;
   right: 0;
   top: 0;
   z-index: layer('statusbar');
 
   &.info {
-    background: $state-info;
+    background: var(--state-info);
   }
 
   &.error {
-    background: $state-danger;
+    background: var(--state-danger);
   }
 
   &.warning {
-    background: $state-warning;
+    background: var(--state-warning);
   }
 
   &.success {
-    background: $state-success;
+    background: var(--state-success);
   }
 
   &__status {
@@ -35,7 +35,7 @@
     background: rgba($black, .2);
     display: flex;
     justify-content: center;
-    width: calc(var(--spacer) * 2);
+    width: var(--spacer-xl);
   }
 
   &__notification {
