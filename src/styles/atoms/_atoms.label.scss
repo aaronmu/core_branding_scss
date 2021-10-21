@@ -15,23 +15,23 @@
   --label-border-color:             var(--border-color);
 
   --label-primary-color:            var(--label-color);
-  --label-primary-bg-color:         transparent;
+  --label-primary-bg-color:         var(--label-bg-color);
   --label-primary-border-color:     var(--theme1-400);
 
   --label-secondary-color:          var(--label-color);
-  --label-secondary-bg-color:       transparent;
+  --label-secondary-bg-color:       var(--label-bg-color);
   --label-secondary-border-color:   var(--theme2-400);
 
   --label-success-color:            var(--label-color);
-  --label-success-bg-color:         transparent;
+  --label-success-bg-color:         var(--label-bg-color);
   --label-success-border-color:     var(--state-success);
 
   --label-warning-color:            var(--label-color);
-  --label-warning-bg-color:         transparent;
+  --label-warning-bg-color:         var(--label-bg-color);
   --label-warning-border-color:     var(--state-warning);
 
   --label-danger-color:             var(--label-color);
-  --label-danger-bg-color:          transparent;
+  --label-danger-bg-color:          var(--label-bg-color);
   --label-danger-border-color:      var(--state-danger);
 }
 
