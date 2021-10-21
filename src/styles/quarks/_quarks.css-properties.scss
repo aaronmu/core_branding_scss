@@ -132,6 +132,15 @@
   --font-weight-h6:           var(--font-weight-normal);
 
   /**
+   * LINKS
+   * -------------------------------------------------------------------
+   * Define text and hover color for each hyperlink
+   */
+
+  --link-color:              var(--theme1-400);
+  --link-hover-color:        var(--theme1-500);
+
+  /**
    * BORDERS
    * -------------------------------------------------------------------
    */

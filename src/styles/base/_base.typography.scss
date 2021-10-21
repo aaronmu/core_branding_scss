@@ -153,14 +153,14 @@ hr {
  */
 
 a {
-  color: $link-color;
+  color: var(--link-color);
   text-decoration-skip-ink: auto;
   transition: color var(--animation-normal);
 
   &:hover,
   &:active,
   &:focus {
-    color: $link-hover-color;
+    color: var(--link-hover-color);
     text-decoration: none;
   }
 }

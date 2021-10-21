@@ -196,13 +196,3 @@ $box-shadow:              $spacer / 2 $spacer / 2 0 rgba($black, .1) !default;
 $box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($black, .1) !default;
 $box-shadow-top:          0 $spacer / -2 0 rgba($black, .1) !default;
 $box-shadow-bottom:       0 $spacer / 2 0 rgba($black, .1) !default;
-
-/**
- * LINKS
- * -------------------------------------------------------------------
- * Define text and hover color for each hyperlink
- */
-
-$link-color:              $brand-primary !default;
-$link-background-color:   mix($brand-primary, $white, 10%) !default;
-$link-hover-color:        mix($link-color, $black, 85%) !default;
