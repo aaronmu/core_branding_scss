@@ -92,7 +92,7 @@ p {
  */
 
 blockquote {
-  border-left: var(--border-width) solid $border-color-light;
+  border-left: var(--border-width) solid var(--border-color);
   margin: 0;
   padding: var(--spacer-xs) 0 var(--spacer-xs) var(--spacer);
 
@@ -142,7 +142,7 @@ mark {
 
 hr {
   border: none;
-  border-top: var(--border-width) solid $border-color-light;
+  border-top: var(--border-width) solid var(--border-color);
   height: var(--border-width);
   margin: var(--spacer) 0;
 }

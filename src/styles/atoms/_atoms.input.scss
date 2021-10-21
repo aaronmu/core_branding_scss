@@ -62,7 +62,7 @@ textarea {
   input,
   select,
   textarea {
-    @include a-input-placeholder {
+    @include input-placeholder {
       color: var(--input-placeholder-color);
     }
 

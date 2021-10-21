@@ -38,7 +38,7 @@
  * - http://jamesallardice.github.io/Placeholders.js
  */
 
-@mixin a-input-placeholder {
+@mixin input-placeholder {
   &::-webkit-input-placeholder {
     @content;
 

@@ -4,11 +4,11 @@
  */
 
 .o-menu {
-  --navigation-menu-border-color:      #{$border-color-light};
+  --navigation-menu-border-color:      var(--border-color);
   --navigation-menu-mobile-height:     var(--spacer-xxl);
   --navigation-menu-pane-width:        20rem;
   --navigation-menu-undocked-width:    15rem;
-  --navigation-menu-docked-width:      #{$header-height};
+  --navigation-menu-docked-width:      var(--shared-header-height);
   --navigation-menu-submenu-inset:     var(--spacer-xs);
   --navigation-menu-submenu-height:    calc(var(--navigation-menu-undocked-width) * 2);
   --navigation-menu-animation-speed:   var(--animation-duration);
@@ -247,7 +247,7 @@
       @include at($screen-sm) {
         align-items: center;
         flex-direction: row;
-        height: $header-height;
+        height: var(--shared-header-height);
         justify-content: space-between;
         padding: .625rem;
         position: relative;
@@ -381,7 +381,7 @@
     background: $white;
     box-shadow: 0 -.75rem 0 rgba($black, .1);
     margin-bottom: calc(var(--border-width) * -1);
-    max-height: calc(100vh - #{$header-height} - var(--navigation-menu-mobile-height));
+    max-height: calc(100vh - var(--shared-header-height) - var(--navigation-menu-mobile-height));
     min-height: var(--spacer); // make up for the box shadow to be visible, even when hidden
     overflow-y: scroll;
     position: relative;
