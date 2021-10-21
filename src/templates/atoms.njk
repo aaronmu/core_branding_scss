@@ -1959,22 +1959,36 @@
                     <caption>Standard table</caption>
                     <thead>
                         <tr>
-                            <th>Standard table</th>
-                            <th>Publius Vergilius Maro</th>
+                            <th>Snack</th>
+                            <th>Description</th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td><small>Tasty, frozen treat for a hot day</small></td>
+                            <td><small>160</small></td>
+                            <td>€2,49</td>
                         </tr>
                         <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                            <td class="u-text-bold">Chips</td>
+                            <td><small>Salty, crunchy goodness</small></td>
+                            <td><small>48</small></td>
+                            <td>€1,99</td>
                         </tr>
                         <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td><small>Rainbow flavors with a bubblegum center</small></td>
+                            <td><small>480</small></td>
+                            <td>€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td><small>Chewy and quite nutty</small></td>
+                            <td><small>240</small></td>
+                            <td>€1,49</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1984,73 +1998,154 @@
   &lt;caption&gt;Standard table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Standard table&lt;/th&gt;
-      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
+      &lt;td class="u-text-bold"&gt;Ice cream&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Tasty, frozen treat for a hot day&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;160&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&euro;2,49&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
       &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
       &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
             </div>
         </div>
+
         <div class="d">
             <div>
-                <table class="a-table a-table--s">
-                    <caption>More compact table</caption>
+                <table class="a-table">
+                    <caption>Standard table with checkboxes</caption>
                     <thead>
                         <tr>
-                            <th>More compact table</th>
-                            <th>Publius Vergilius Maro</th>
+                            <th>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="table-checkbox1" name="table-checkbox">
+                                        <label for="table-checkbox1"></label>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>Snack</th>
+                            <th>Description</th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        <tr class="is-clickable">
+                            <td>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="table-checkbox2" name="table-checkbox">
+                                        <label for="table-checkbox2"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td><small>Tasty, frozen treat for a hot day</small></td>
+                            <td><small>160</small></td>
+                            <td>€2,49</td>
                         </tr>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        <tr class="is-clickable is-selected">
+                            <td>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="table-checkbox3" name="table-checkbox" checked>
+                                        <label for="table-checkbox3"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="u-text-bold">Chips</td>
+                            <td><small>Salty, crunchy goodness</small></td>
+                            <td><small>48</small></td>
+                            <td>€1,99</td>
                         </tr>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                        <tr class="is-clickable">
+                            <td>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="table-checkbox4" name="table-checkbox">
+                                        <label for="table-checkbox4"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td><small>Rainbow flavors with a bubblegum center</small></td>
+                            <td><small>480</small></td>
+                            <td>€0,99</td>
+                        </tr>
+                        <tr class="is-clickable">
+                            <td>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="table-checkbox5" name="table-checkbox">
+                                        <label for="table-checkbox5"></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td><small>Chewy and quite nutty</small></td>
+                            <td><small>240</small></td>
+                            <td>€1,49</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table a-table--s"&gt;
-  &lt;caption&gt;More compact table&lt;/caption&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Standard table with checkboxes&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;More compact table&lt;/th&gt;
-      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;
+        &lt;div class="a-input"&gt;
+          &lt;div class="a-input__checkbox"&gt;
+            &lt;input type="checkbox" id="table-checkbox1" name="table-checkbox"&gt;
+            &lt;label for="table-checkbox1"&gt;&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/th&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
+    &lt;tr class="is-clickable"&gt;
       &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
-    &lt;tr&gt;
+    &lt;tr class="is-clickable is-selected"&gt;
+      &lt;td&gt;
+        &lt;div class="a-input"&gt;
+          &lt;div class="a-input__checkbox"&gt;
+            &lt;input type="checkbox" id="table-checkbox3" name="table-checkbox" checked&gt;
+            &lt;label for="table-checkbox3"&gt;&lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/td&gt;
+      &lt;td class="u-text-bold"&gt;Chips&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Salty, crunchy goodness&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;48&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&euro;1,99&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="is-clickable"&gt;
       &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="is-clickable"&gt;
       &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
@@ -2061,322 +2156,113 @@
         <h4 class="u-margin-top-xl">Table schemes</h4>
         <div class="d">
             <div>
-                <table class="a-table a-table--primary">
-                    <caption>Primary table</caption>
-                    <thead>
-                        <tr>
-                            <th>Primary table</th>
-                            <th>Publius Vergilius Maro</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table a-table--primary"&gt;
-  &lt;caption&gt;Primary table&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Primary table&lt;/th&gt;
-      &lt;th&gt;...&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <table class="a-table a-table--secondary">
-                    <caption>Secondary table</caption>
-                    <thead>
-                        <tr>
-                            <th>Secondary table</th>
-                            <th>Publius Vergilius Maro</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                        <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table a-table--secondary"&gt;
-  &lt;caption&gt;Seconday table&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Secondary table&lt;/th&gt;
-      &lt;th&gt;...&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
                 <table class="a-table a-table--striped">
-                    <caption>Striped table</caption>
+                    <caption>Striped table with checkboxes</caption>
                     <thead>
                         <tr>
-                            <th>Striped table</th>
-                            <th>Publius Vergilius Maro</th>
+                            <th>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="striped-table-checkbox1" name="striped-table-checkbox">
+                                        <label for="striped-table-checkbox1"></label>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>Snack</th>
+                            <th>Description</th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                            <td>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="striped-table-checkbox2" name="striped-table-checkbox">
+                                        <label for="striped-table-checkbox2"></label>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td><small>Tasty, frozen treat for a hot day</small></td>
+                            <td><small>160</small></td>
+                            <td>€2,49</td>
                         </tr>
                         <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                            <td>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="striped-table-checkbox3" name="striped-table-checkbox">
+                                        <label for="striped-table-checkbox3"></label>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="u-text-bold">Chips</td>
+                            <td><small>Salty, crunchy goodness</small></td>
+                            <td><small>48</small></td>
+                            <td>€1,99</td>
                         </tr>
                         <tr>
-                            <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
+                            <td>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="striped-table-checkbox4" name="striped-table-checkbox">
+                                        <label for="striped-table-checkbox4"></label>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td><small>Rainbow flavors with a bubblegum center</small></td>
+                            <td><small>480</small></td>
+                            <td>€0,99</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="a-input">
+                                    <div class="a-input__checkbox">
+                                        <input type="checkbox" id="striped-table-checkbox5" name="input-checkbox">
+                                        <label for="striped-table-checkbox5"></label>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td><small>Chewy and quite nutty</small></td>
+                            <td><small>240</small></td>
+                            <td>€1,49</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table a-table--striped"&gt;
-  &lt;caption&gt;Striped table&lt;/caption&gt;
+  &lt;caption&gt;Standard table&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th&gt;Striped table&lt;/th&gt;
-      &lt;th&gt;...&lt;/th&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
+      &lt;td class="u-text-bold"&gt;Ice cream&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;Tasty, frozen treat for a hot day&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;small&gt;160&lt;/small&gt;&lt;/td&gt;
+      &lt;td&gt;&euro;2,49&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
       &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;...&lt;/td&gt;
-      &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
       &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-            </div>
-        </div>
-
-        <h4 class="u-margin-top-xl">Table cell options</h4>
-        <div class="d">
-            <div>
-                <table class="a-table">
-                    <caption>Condensed table</caption>
-                    <thead>
-                        <tr>
-                            <th class="is-condensed">Condensed table cells</th>
-                            <th class="is-condensed">Publius Vergilius Maro</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="is-condensed">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td class="is-condensed">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                        <tr>
-                            <td class="is-condensed">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td class="is-condensed">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                        <tr>
-                            <td class="is-condensed">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td class="is-condensed">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
-  &lt;caption&gt;Condensed table&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th class="is-condensed"&gt;Condensed table cells&lt;/th&gt;
-      &lt;th class="is-condensed"&gt;...&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
-      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
-      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
-      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <table class="a-table">
-                    <caption>Paddingless table</caption>
-                    <thead>
-                        <tr>
-                            <th class="has-no-padding">Table cells without padding</th>
-                            <th class="has-no-padding">Publius Vergilius Maro</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="has-no-padding">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td class="has-no-padding">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                        <tr>
-                            <td class="has-no-padding">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td class="has-no-padding">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                        <tr>
-                            <td class="has-no-padding">Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                            <td class="has-no-padding">Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
-  &lt;caption&gt;Paddingless table&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th class="has-no-padding"&gt;Table cells without padding&lt;/th&gt;
-      &lt;th class="has-no-padding"&gt;...&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
-            </div>
-        </div>
-
-        <h4 class="u-margin-top-xl">Responsive wrapper for tables</h4>
-        <div class="d">
-            <div>
-                <div class="a-table__wrapper-responsive">
-                    <caption>Responsive table</caption>
-                    <table class="a-table">
-                        <thead>
-                            <tr>
-                                <th>Responsive table</th>
-                                <th>Publius Vergilius Maro</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                                <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                            </tr>
-                            <tr>
-                                <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                                <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                            </tr>
-                            <tr>
-                                <td>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</td>
-                                <td>Multa quoque et bello passus, dum conderet urbem, inferretque deos Latio, genus unde Latinum, Albanique patres, atque altae moenia Romae.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table__wrapper-responsive"&gt;
-  &lt;table class="a-table"&gt;
-    &lt;caption&gt;Responsive table&lt;/caption&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Responsive table&lt;/th&gt;
-        &lt;th&gt;...&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-&lt;/div&gt;</code></pre>
             </div>
         </div>
 
