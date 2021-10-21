@@ -10,7 +10,7 @@
   --table-highlight-bg-color:       var(--theme1-050);
   --table-highlight-border-color:   var(--theme1-400);
 
-  --table-striped-bg-color:         #{$background-color-light};
+  --table-striped-bg-color:         var(--bg-color-light);
 }
 
 /**

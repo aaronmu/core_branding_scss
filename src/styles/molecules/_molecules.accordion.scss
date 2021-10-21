@@ -7,7 +7,7 @@
   --accordion-border:                  #{$border-color-light};
 
   --accordion-header-bg-color:         #{$white};
-  --accordion-header-hover-bg-color:   #{$background-color-light};
+  --accordion-header-hover-bg-color:   var(--bg-color-light);
 
   --accordion-content-bg-color:        var(--accordion-header-bg-color);
 
