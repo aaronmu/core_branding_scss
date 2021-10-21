@@ -3,29 +3,33 @@
  * -------------------------------------------------------------------
  */
 
-$table-bg:                    $white !default;
-$table-border:                $border-color-light !default;
+.a-table,
+.a-table__wrapper-responsive {
+  --table-bg-color:                  #{$white};
+  --table-border-color:              #{$border-color-light};
 
-$table-head-bg:               $background-color-light !default;
+  --table-head-color:                var(--text-color);
+  --table-head-bg-color:             #{$background-color-light};
 
-$table-primary-head-color:    $white !default;
-$table-primary-head-bg:       $brand-primary !default;
+  --table-primary-head-color:        #{$white};
+  --table-primary-head-bg-color:     #{$brand-primary};
 
-$table-secondary-head-color:  $white !default;
-$table-secondary-head-bg:     $brand-secondary !default;
+  --table-secondary-head-color:      #{$white};
+  --table-secondary-head-bg-color:   #{$brand-secondary};
 
-$table-striped-bg:            $background-color-light !default;
+  --table-striped-bg-color:          #{$background-color-light};
 
-$table-padding:               var(--spacer-xs) !default;
+  --table-padding:                   var(--spacer-xs);
+}
 
 /**
  * TABLE PLACEHOLDER
  * -------------------------------------------------------------------
  */
 
-%a-table {
-  background-color: $table-bg;
-  border: var(--border-width) solid $table-border;
+.a-table {
+  background-color: var(--table-bg-color);
+  border: var(--border-width) solid var(--table-border-color);
   border-collapse: collapse;
   width: 100%;
 
@@ -35,11 +39,12 @@ $table-padding:               var(--spacer-xs) !default;
   }
 
   thead {
-    background: $background-color-light;
+    color: var(--table-head-color);
+    background: var(--table-head-bg-color);
   }
 
   tr {
-    border-bottom: var(--border-width) solid $table-border;
+    border-bottom: var(--border-width) solid var(--table-border-color);
     height: var(--spacer-xl);
     transition: background-color var(--animation-normal);
 
@@ -54,24 +59,20 @@ $table-padding:               var(--spacer-xs) !default;
 
   th,
   td {
-    padding: $table-padding;
+    padding: var(--table-padding);
 
     &:not(.u-text-center):not(.u-text-right):not(.u-text-justify) {
       text-align: left;
     }
 
     &.is-condensed {
-      padding: calc(#{$table-padding} / 2);
+      padding: calc(var(--table-padding) / 2);
     }
 
     &.has-no-padding {
       padding: 0;
     }
   }
-}
-
-.a-table {
-  @extend %a-table;
 }
 
 /**
@@ -88,14 +89,14 @@ $table-padding:               var(--spacer-xs) !default;
  * -------------------------------------------------------------------
  */
 
-.a-table.a-table--primary thead {
-  background-color: $table-primary-head-bg;
-  color: $table-primary-head-color;
+.a-table.a-table--primary {
+  --table-head-color: var(--table-primary-head-color);
+  --table-head-bg-color: var(--table-primary-head-bg-color);
 }
 
-.a-table.a-table--secondary thead {
-  background-color: $table-secondary-head-bg;
-  color: $table-secondary-head-color;
+.a-table.a-table--secondary {
+  --table-head-color: var(--table-secondary-head-color);
+  --table-head-bg-color: var(--table-secondary-head-bg-color);
 }
 
 .a-table.a-table--striped tbody {
@@ -111,7 +112,7 @@ $table-padding:               var(--spacer-xs) !default;
   }
 
   tr:nth-child(even) {
-    background-color: $table-striped-bg;
+    background-color: var(--table-striped-bg-color);
 
     &.a-table--clickable,
     &.has-click-action {
@@ -130,8 +131,8 @@ $table-padding:               var(--spacer-xs) !default;
 .a-table__wrapper-responsive {
   -ms-overflow-style: scrollbar;
   -webkit-overflow-scrolling: touch;
-  background-color: $table-bg;
-  border: var(--border-width) solid $table-border;
+  background-color: var(--table-bg-color);
+  border: var(--border-width) solid var(--table-border-color);
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
