@@ -67,27 +67,6 @@
 }
 
 /**
- * ALERT MIXIN
- * -------------------------------------------------------------------
- */
-
-@mixin m-alert($_background: $alert-default) {
-  background-color: mix($_background, $white, 10%);
-  border: var(--border-width) solid $_background;
-}
-
-/**
- * LABEL MIXIN
- * -------------------------------------------------------------------
- */
-
-@mixin a-label($_color: $label-default-color, $_border: $label-default-border) {
-  background-color: transparent;
-  border: var(--border-width) solid $_border;
-  color: $_color;
-}
-
-/**
  * FOCUS
  * -------------------------------------------------------------------
  */
