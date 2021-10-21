@@ -3,11 +3,21 @@
  * -------------------------------------------------------------------
  */
 
-$alert-default:           $brand-primary !default;
-$alert-success:           $state-success !default;
-$alert-warning:           $state-warning !default;
-$alert-danger:            $state-danger !default;
-$alert-padding:           var(--spacer) !default;
+.m-alert {
+  --alert-bg-color:               var(--theme1-050);
+  --alert-border-color:           var(--theme1-400);
+
+  --alert-success-bg-color:       var(--success-050);
+  --alert-success-border-color:   var(--success-600);
+
+  --alert-warning-bg-color:       var(--warning-050);
+  --alert-warning-border-color:   var(--warning-500);
+
+  --alert-danger-bg-color:        var(--danger-050);
+  --alert-danger-border-color:    var(--danger-500);
+
+  --alert-padding:                var(--spacer);
+}
 
 /**
  * ALERTS
@@ -15,7 +25,9 @@ $alert-padding:           var(--spacer) !default;
  */
 
 .m-alert {
-  padding: $alert-padding;
+  background-color: var(--alert-bg-color);
+  border: var(--border-width) solid var(--alert-border-color);
+  padding: var(--alert-padding);
   position: relative;
 
   .m-alert__close {
@@ -62,17 +74,18 @@ $alert-padding:           var(--spacer) !default;
  */
 
 .m-alert {
-  @include m-alert;
-
   &.m-alert--success {
-    @include m-alert($alert-success);
+    --alert-bg-color: var(--alert-success-bg-color);
+    --alert-border-color: var(--alert-success-border-color);
   }
 
   &.m-alert--warning {
-    @include m-alert($alert-warning);
+    --alert-bg-color: var(--alert-warning-bg-color);
+    --alert-border-color: var(--alert-warning-border-color);
   }
 
   &.m-alert--danger {
-    @include m-alert($alert-danger);
+    --alert-bg-color: var(--alert-danger-bg-color);
+    --alert-border-color: var(--alert-danger-border-color);
   }
 }
