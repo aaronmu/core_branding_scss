@@ -59,7 +59,7 @@ $step-indicator-square-size:            var(--spacer-l) !default;
       font-weight: var(--font-weight-bold);
       height: $step-indicator-square-size;
       margin: 0 auto var(--spacer);
-      padding: calc(var(--spacer) / 3) 0;
+      padding: var(--spacer-xxs) 0;
       text-align: center;
       width: $step-indicator-square-size;
 

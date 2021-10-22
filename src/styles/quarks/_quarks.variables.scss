@@ -208,36 +208,6 @@ $link-background-color:   mix($brand-primary, $white, 10%) !default;
 $link-hover-color:        mix($link-color, $black, 85%) !default;
 
 /**
- * LABELS
- * -------------------------------------------------------------------
- */
-
-$label-font-size:         $font-size-sm !default;
-$label-font-weight:       var(--font-weight-bold) !default;
-$label-height:            $spacer-sm !default;
-$label-line-height:       $label-height !default;
-
-$label-default-color:     $text-color !default;
-$label-default-border:    $gray-300 !default;
-
-$label-primary-color:     $label-default-color !default;
-$label-primary-border:    $brand-primary !default;
-
-$label-secondary-color:   $label-default-color !default;
-$label-secondary-border:  $brand-secondary !default;
-
-$label-success-color:     $label-default-color !default;
-$label-success-border:    $state-success !default;
-
-$label-warning-color:     $label-default-color !default;
-$label-warning-border:    $state-warning !default;
-
-$label-danger-color:      $label-default-color !default;
-$label-danger-border:     $state-danger !default;
-
-$label-padding:           0 $spacer / 4 !default;
-
-/**
  * HEADER
  * -------------------------------------------------------------------
  */

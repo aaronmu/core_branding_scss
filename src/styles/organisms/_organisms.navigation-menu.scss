@@ -108,7 +108,7 @@
   &:active,
   &:link,
   &:hover {
-    color: $text-color-light;
+    color: var(--text-color-light);
     text-decoration: none;
   }
 }
@@ -191,7 +191,7 @@
 
     & > .o-menu__tab-header {
       align-items: center;
-      color: $text-color-light;
+      color: var(--text-color-light);
       display: flex;
       flex-direction: column;
       font-weight: bold;
@@ -210,8 +210,8 @@
       &:hover,
       &:active,
       &:hover {
-        background-color: $background-color-light;
-        color: $text-color-light;
+        background-color: var(--bg-color-light);
+        color: var(--text-color-light);
       }
 
       .o-menu__tab-title {
@@ -289,7 +289,7 @@
 
       li > a {
         border: none;
-        color: $text-color-light;
+        color: var(--text-color-light);
         display: flex;
         justify-content: space-between;
         overflow: hidden;
@@ -390,7 +390,7 @@
   .o-menu__main-submenu,
   .o-menu__slide-in-submenu {
     .o-menu__back-link {
-      color: $text-color-light;
+      color: var(--text-color-light);
       font-weight: normal;
     }
 

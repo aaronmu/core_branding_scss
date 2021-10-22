@@ -54,7 +54,7 @@
 .a-table-bar {
   background-color: $gray-200;
   display: flex;
-  padding: calc(var(--spacer) / 2);
+  padding: var(--spacer-xs);
 
   &__filters {
     flex: 1;

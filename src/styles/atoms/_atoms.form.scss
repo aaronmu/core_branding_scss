@@ -1,14 +1,4 @@
 /**
- * FORM ELEMENT VARIABLES
- * -------------------------------------------------------------------
- */
-
-$fieldset-padding:    var(--spacer-xl) 0 !default;
-$legend-color:        $gray-400 !default;
-$legend-padding:      0 calc(var(--spacer) / 3) 0 0 !default;
-$legend-size:         $font-size-lg !default;
-
-/**
  * FORM ELEMENTS
  * -------------------------------------------------------------------
  */
@@ -28,7 +18,7 @@ fieldset {
   border-top: var(--border-width) solid $border-color-light;
   margin: 0;
   min-width: 0;
-  padding: $fieldset-padding;
+  padding: var(--spacer-xl) 0;
   position: relative;
 
   + fieldset {
@@ -37,8 +27,8 @@ fieldset {
 }
 
 legend {
-  color: $legend-color;
-  font-size: $legend-size;
+  color: #{$gray-400};
+  font-size: #{rem($font-size-lg)};
   font-weight: var(--font-weight-bold);
-  padding: $legend-padding;
+  padding: 0 var(--spacer-xxs) 0 0;
 }

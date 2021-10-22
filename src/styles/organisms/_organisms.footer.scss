@@ -3,14 +3,10 @@
  * -------------------------------------------------------------------
  */
 
-$footer-bg:               $black !default;
-$footer-color:            $white !default;
-
-$footer-height:           var(--spacer-xl) !default;
-
-$footer-font-size-sm:     $font-size-sm !default;
-$footer-font-size-lg:     $font-size-sm !default;
-$footer-line-height:      $line-height-paragraph !default;
+.o-footer {
+  --footer-bg:      #{$black};
+  --footer-color:   #{$white};
+}
 
 /**
  * FOOTER
@@ -19,10 +15,10 @@ $footer-line-height:      $line-height-paragraph !default;
 
 .o-footer {
   align-items: center;
-  background-color: $footer-bg;
+  background-color: var(--footer-bg);
   display: flex;
   flex: 0 0 auto;
-  height: $footer-height;
+  height: var(--spacer-xl);
   justify-content: center;
   position: relative;
   text-align: center;
@@ -42,9 +38,9 @@ $footer-line-height:      $line-height-paragraph !default;
  */
 
 .o-footer__label {
-  color: $footer-color;
-  font-size: rem($footer-font-size-sm);
-  line-height: $footer-line-height;
+  color: var(--footer-color);
+  font-size: rem($font-size-sm);
+  line-height: $line-height-paragraph;
   padding: 0 var(--spacer-xs);
 
   @include to($screen-sm) {
@@ -52,7 +48,6 @@ $footer-line-height:      $line-height-paragraph !default;
   }
 
   @include at($screen-sm) {
-    font-size: rem($footer-font-size-lg);
     padding: 0 var(--spacer-xxl);
   }
 

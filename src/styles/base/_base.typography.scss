@@ -3,18 +3,13 @@
  * -------------------------------------------------------------------
  */
 
-$mark-color:              $white !default;
-$mark-bg:                 $brand-primary !default;
-
-$cite-color:              $brand-secondary !default;
-
 /**
  * BASE
  * -------------------------------------------------------------------
  */
 
 body {
-  color: $text-color;
+  color: var(--text-color);
   font-family: var(--font-family-base);
   font-size: rem($font-size-base);
   line-height: $line-height-base;
@@ -107,7 +102,7 @@ blockquote {
   }
 
   cite {
-    color: $cite-color;
+    color: var(--theme2-400);
     display: inline-block;
     font-style: normal;
     line-height: $line-height-headings;
@@ -125,7 +120,7 @@ blockquote {
 
 small,
 .small {
-  color: $text-color-light;
+  color: var(--text-color-light);
   font-size: rem($font-size-sm);
 }
 
@@ -135,8 +130,8 @@ small,
  */
 
 mark {
-  background-color: $mark-bg;
-  color: $mark-color;
+  background-color: var(--theme1-400);
+  color: $white;
   padding: 0 .125rem;
 }
 

@@ -1,11 +1,4 @@
 /**
- * AUI SEARCH FILTER VARIABLES
- * -------------------------------------------------------------------
- */
-
-$search-filter-icon-color:   $gray-400;
-
-/**
  * AUI SEARCH FILTER
  * -------------------------------------------------------------------
  */
@@ -13,7 +6,7 @@ $search-filter-icon-color:   $gray-400;
 .m-search-filter {
   &__label {
     background: $white;
-    border: var(--border-width) solid $border-color;
+    border: var(--border-width) solid var(--border-color);
     cursor: pointer;
     display: flex;
     height: var(--spacer-xl);
@@ -27,7 +20,7 @@ $search-filter-icon-color:   $gray-400;
     }
 
     > .ai {
-      color: $search-filter-icon-color;
+      color: #{$gray-400};
       font-size: 1.25rem;
       height: var(--spacer-xl);
       line-height: var(--spacer-xl);
@@ -38,8 +31,8 @@ $search-filter-icon-color:   $gray-400;
     }
 
     &.m-search-filter__label--active {
-      background-color: $label-primary-color;
-      border-color: $label-primary-color;
+      background-color: var(--text-color);
+      border-color: var(--text-color);
       color: $white;
 
       > .ai {
@@ -48,8 +41,8 @@ $search-filter-icon-color:   $gray-400;
     }
 
     &.m-search-filter__label--error {
-      background-color: $label-danger-color;
-      border-color: $label-danger-color;
+      background-color: var(--text-color);
+      border-color: var(--text-color);
       color: $white;
 
       > .ai {

@@ -1,17 +1,56 @@
 /**
- * LABELS
+ * LABEL VARIABLES
  * -------------------------------------------------------------------
- * This component has shared variables with _aui.search-filter.scss. You can find them in _quarks.variables.scss.
  */
 
 .a-label {
+  --label-height:                   #{$spacer-sm}; // TODO: Remove deprecated SASS variable when revising label component
+  --label-padding:                  0 calc(var(--spacer) / 4);
+  --label-font-size:                #{rem($font-size-sm)};
+  --label-line-height:              var(--label-height);
+  --label-font-weight:              var(--font-weight-bold);
+
+  --label-color:                    var(--text-color);
+  --label-bg-color:                 transparent;
+  --label-border-color:             var(--border-color);
+
+  --label-primary-color:            var(--label-color);
+  --label-primary-bg-color:         var(--label-bg-color);
+  --label-primary-border-color:     var(--theme1-400);
+
+  --label-secondary-color:          var(--label-color);
+  --label-secondary-bg-color:       var(--label-bg-color);
+  --label-secondary-border-color:   var(--theme2-400);
+
+  --label-success-color:            var(--label-color);
+  --label-success-bg-color:         var(--label-bg-color);
+  --label-success-border-color:     var(--state-success);
+
+  --label-warning-color:            var(--label-color);
+  --label-warning-bg-color:         var(--label-bg-color);
+  --label-warning-border-color:     var(--state-warning);
+
+  --label-danger-color:             var(--label-color);
+  --label-danger-bg-color:          var(--label-bg-color);
+  --label-danger-border-color:      var(--state-danger);
+}
+
+/**
+ * LABELS
+ * -------------------------------------------------------------------
+ */
+
+.a-label {
+  background-color: var(--label-bg-color);
+  border: var(--border-width) solid var(--label-border-color);
+  color: var(--label-color);
   display: inline-block;
-  font-size: rem($label-font-size);
-  font-weight: $label-font-weight;
+  font-size: var(--label-font-size);
+  font-weight: var(--label-font-weight);
   letter-spacing: .24px;
-  line-height: $label-line-height;
-  min-height: $label-height;
-  padding: $label-padding;
+  line-height: var(--label-line-height);
+  min-height: var(--label-height);
+  padding: var(--label-padding);
   text-transform: uppercase;
 }
 
@@ -21,25 +60,33 @@
  */
 
 .a-label {
-  @include a-label;
-
   &.a-label--primary {
-    @include a-label($label-primary-color, $label-primary-border);
+    --label-color: var(--label-primary-color);
+    --label-bg-color: var(--label-primary-bg-color);
+    --label-border-color: var(--label-primary-border-color);
   }
 
   &.a-label--secondary {
-    @include a-label($label-secondary-color, $label-secondary-border);
+    --label-color: var(--label-secondary-color);
+    --label-bg-color: var(--label-secondary-bg-color);
+    --label-border-color: var(--label-secondary-border-color);
   }
 
   &.a-label--success {
-    @include a-label($label-success-color, $label-success-border);
+    --label-color: var(--label-success-color);
+    --label-bg-color: var(--label-success-bg-color);
+    --label-border-color: var(--label-success-border-color);
   }
 
   &.a-label--warning {
-    @include a-label($label-warning-color, $label-warning-border);
+    --label-color: var(--label-warning-color);
+    --label-bg-color: var(--label-warning-bg-color);
+    --label-border-color: var(--label-warning-border-color);
   }
 
   &.a-label--danger {
-    @include a-label($label-danger-color, $label-danger-border);
+    --label-color: var(--label-danger-color);
+    --label-bg-color: var(--label-danger-bg-color);
+    --label-border-color: var(--label-danger-border-color);
   }
 }

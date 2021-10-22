@@ -112,7 +112,7 @@ $flyout-max-height:       calc(var(--spacer) * 9) !default;
 }
 
 .m-flyout__content.has-padding {
-  padding: calc(var(--spacer) / 3 * 2) var(--spacer);
+  padding: var(--spacer-s) var(--spacer);
 }
 
 /**
