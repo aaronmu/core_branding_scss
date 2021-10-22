@@ -13,7 +13,7 @@ $card-content-padding:   var(--spacer) !default;
 
 .m-card {
   background-color: $white;
-  border: var(--border-width) solid $border-color-light;
+  border: var(--border-width) solid var(--border-color);
 }
 
 /**

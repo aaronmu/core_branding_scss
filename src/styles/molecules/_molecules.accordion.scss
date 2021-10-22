@@ -4,7 +4,7 @@
  */
 
 .m-accordion {
-  --accordion-border:                  #{$border-color-light};
+  --accordion-border:                  var(--border-color);
 
   --accordion-header-bg-color:         #{$white};
   --accordion-header-hover-bg-color:   var(--bg-color-light);

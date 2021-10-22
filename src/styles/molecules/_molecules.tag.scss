@@ -3,11 +3,13 @@
  * -------------------------------------------------------------------
  */
 
-$tag-color:               $text-color !default;
-$tag-bg:                  $background-color-light !default;
-$tag-border:              $border-color-light !default;
-$tag-placeholder:         $gray-400 !default;
-$tag-height:              var(--spacer-l) !default;
+.m-tag {
+  --tag-height:              var(--spacer-l);
+  --tag-color:               var(--text-color);
+  --tag-bg-color:            var(--bg-color-light);
+  --tag-border-color:        var(--border-color);
+  --tag-placeholder-color:   #{$gray-400};
+}
 
 /**
  * TAGS
@@ -15,12 +17,12 @@ $tag-height:              var(--spacer-l) !default;
  */
 
 .m-tag {
-  background: $tag-bg;
-  box-shadow: 0 0 0 var(--border-width) $tag-border inset;
-  color: $tag-color;
+  background: var(--tag-bg-color);
+  box-shadow: 0 0 0 var(--border-width) var(--tag-border-color) inset;
+  color: var(--tag-color);
   display: inline-flex;
-  height: $tag-height;
-  line-height: $tag-height;
+  height: var(--tag-height);
+  line-height: var(--tag-height);
   max-width: 100%;
 
   > *:not(.m-tag__label):not(.m-tag__input) {
@@ -43,14 +45,14 @@ $tag-height:              var(--spacer-l) !default;
 }
 
 .m-tag__input {
-  @include a-input-placeholder {
-    color: $tag-placeholder;
+  @include input-placeholder {
+    color: var(--tag-placeholder-color);
   }
 
   background-color: transparent;
   border: none;
   border-radius: 0;
   max-width: calc(var(--spacer) * 10);
-  min-height: $tag-height;
+  min-height: var(--tag-height);
   padding: 0 var(--spacer-xs);
 }

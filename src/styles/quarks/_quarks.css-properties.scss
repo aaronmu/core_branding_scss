@@ -132,6 +132,15 @@
   --font-weight-h6:           var(--font-weight-normal);
 
   /**
+   * LINKS
+   * -------------------------------------------------------------------
+   * Define text and hover color for each hyperlink
+   */
+
+  --link-color:              var(--theme1-400);
+  --link-hover-color:        var(--theme1-500);
+
+  /**
    * BORDERS
    * -------------------------------------------------------------------
    */
@@ -161,6 +170,9 @@
   // Copyright
   --shared-copyright-color:                #{$white};
   --shared-copyright-height:               var(--spacer-l);
+
+  // Header
+  --shared-header-height:                  var(--spacer-xl);
 
   // List
   --shared-list-item-padding-top:          var(--spacer-xxs);
