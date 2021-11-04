@@ -7,6 +7,7 @@
 .a-table__wrapper-responsive {
   --table-bg-color:                 #{$white};
   --table-border-color:             var(--border-color);
+  --table-border-color-light:       #{$gray-200};
   --table-highlight-bg-color:       var(--theme1-050);
   --table-highlight-border-color:   var(--theme1-400);
 
@@ -29,10 +30,17 @@
     text-align: left;
   }
 
-  tr {
+  thead tr {
     border-bottom: var(--border-width) solid var(--table-border-color);
+  }
+
+  tbody tr {
     height: var(--spacer-xl);
     transition: background-color var(--animation-normal);
+
+    &:not(:last-child) {
+      border-bottom: var(--border-width) solid var(--table-border-color-light);
+    }
 
     &.is-selected,
     &.is-clickable:active,
