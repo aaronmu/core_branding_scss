@@ -106,6 +106,14 @@
       --switch-border-color: var(--switch-disabled-active-border-color);
       --switch-handle-bg-color: var(--switch-handle-disabled-active-bg-color);
     }
+
+    .a-switch__on {
+      color: var(--switch-label-color);
+    }
+  }
+
+  &[aria-checked='false'] .a-switch__off {
+    color: var(--switch-label-color);
   }
 
   &:disabled {
@@ -120,7 +128,8 @@
 
 .a-switch__off,
 .a-switch__on {
-  color: var(--switch-label-color);
+  color: var(--switch-label-disabled-color);
+  transition: color var(--animation-normal);
 }
 
 .a-switch__off {
