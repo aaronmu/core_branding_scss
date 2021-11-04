@@ -35,7 +35,6 @@
   }
 
   tbody tr {
-    height: var(--spacer-xl);
     transition: background-color var(--animation-normal);
 
     &:not(:last-child) {
@@ -64,12 +63,20 @@
     }
   }
 
+  tr {
+    height: var(--spacer-xl);
+  }
+
   th,
   td {
     padding: var(--spacer-xs);
 
     &:not(.u-text-center):not(.u-text-right):not(.u-text-justify) {
       text-align: left;
+    }
+
+    &.has-no-padding {
+      padding: 0;
     }
   }
 }
