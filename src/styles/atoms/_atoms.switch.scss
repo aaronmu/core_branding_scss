@@ -4,9 +4,9 @@
  */
 
 .a-switch {
-  --switch-width:                                      #{rem(44px)};
+  --switch-width:                                      2.75rem;
   --switch-height:                                     var(--spacer);
-  --switch-handle-size:                                #{rem(18px)};
+  --switch-handle-size:                                1.125rem;
 
   --switch-label-color:                                var(--text-color);
   --switch-label-disabled-color:                       var(--text-color-light);
