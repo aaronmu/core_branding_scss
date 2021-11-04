@@ -120,7 +120,7 @@
 #### Switch
 
 ##### Added
-- Added outlined variant
+- Added outlined and small variant
 
 ##### Changed
 - Implemented new design changes
