@@ -73,6 +73,7 @@
     left: calc(50% - var(--switch-width) / 2);
     position: absolute;
     top: 0;
+    transition: background, border;
     width: var(--switch-width);
   }
 
