@@ -2087,6 +2087,113 @@
         <div class="d">
             <div>
                 <table class="a-table">
+                    <caption>Standard table with sortable columns</caption>
+                    <thead>
+                        <tr>
+                            <th class="has-no-padding" aria-sort="none">
+                                <button class="a-table__sort-button">
+                                    Snack {{ icon.render('move-expand-vertical') }}
+                                </button>
+                            </th>
+
+                            <th class="has-no-padding" aria-sort="none">
+                                <button class="a-table__sort-button">
+                                    Description {{ icon.render('move-expand-vertical') }}
+                                </button>
+                            </th>
+
+                            <th class="has-no-padding" aria-sort="none">
+                                <button class="a-table__sort-button a-table__sort-button--align-right">
+                                    Stock {{ icon.render('move-expand-vertical') }}
+                                </button>
+                            </th>
+
+                            <th class="has-no-padding" aria-sort="none">
+                                <button class="a-table__sort-button a-table__sort-button--align-right">
+                                    Price {{ icon.render('move-expand-vertical') }}
+                                </button>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td><small>Tasty, frozen treat for a hot day</small></td>
+                            <td class="u-text-right"><small>160</small></td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td><small>Salty, crunchy goodness</small></td>
+                            <td class="u-text-right"><small>48</small></td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td><small>Rainbow flavors with a bubblegum center</small></td>
+                            <td class="u-text-right"><small>480</small></td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td><small>Chewy and quite nutty</small></td>
+                            <td class="u-text-right"><small>240</small></td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Standard table with sortable columns&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class="has-no-padding" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button"&gt;
+          Snack {{ icon.code('move-expand-vertical') }}
+        &lt;/button&gt;
+      &lt;/th&gt;
+
+      &lt;th class="has-no-padding" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button"&gt;
+          Description {{ icon.code('move-expand-vertical') }}
+        &lt;/button&gt;
+      &lt;/th&gt;
+
+      &lt;th class="has-no-padding" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
+          Stock {{ icon.code('move-expand-vertical') }}
+        &lt;/button&gt;
+      &lt;/th&gt;
+
+      &lt;th class="has-no-padding" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
+          Price {{ icon.code('move-expand-vertical') }}
+        &lt;/button&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+        </div>
+
+        <div class="d">
+            <div>
+                <table class="a-table">
                     <caption>Standard table with checkboxes</caption>
                     <thead>
                         <tr>

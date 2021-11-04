@@ -5,17 +5,22 @@
 
 .a-table,
 .a-table__wrapper-responsive {
-  --table-bg-color:                 #{$white};
-  --table-border-color:             var(--border-color);
-  --table-border-color-light:       #{$gray-200};
-  --table-highlight-bg-color:       var(--theme1-050);
-  --table-highlight-border-color:   var(--theme1-400);
+  --table-bg-color:                  #{$white};
+  --table-border-color:              var(--border-color);
+  --table-border-color-light:        #{$gray-200};
+  --table-highlight-bg-color:        var(--theme1-050);
+  --table-highlight-border-color:    var(--theme1-400);
 
-  --table-striped-bg-color:         var(--bg-color-light);
+  --table-striped-bg-color:          var(--bg-color-light);
+
+  --table-sort-btn-color:            var(--text-color);
+  --table-sort-btn-bg-color:         #{$white};
+  --table-sort-btn-hover-bg-color:   #{$gray-100};
+  --table-sort-btn-icon-color:       var(--text-color-light);
 }
 
 /**
- * TABLE PLACEHOLDER
+ * TABLE
  * -------------------------------------------------------------------
  */
 
@@ -78,6 +83,44 @@
     &.has-no-padding {
       padding: 0;
     }
+  }
+}
+
+/**
+ * TABLE ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.a-table__sort-button {
+  align-items: center;
+  background-color: var(--table-sort-btn-bg-color);
+  border: none;
+  color: var(--table-sort-btn-color);
+  cursor: pointer;
+  display: flex;
+  font-weight: var(--font-weight-bold);
+  justify-content: flex-start;
+  margin: 0;
+  min-height: var(--spacer-xl);
+  padding: 0 var(--spacer-xs);
+  transition: background-color var(--animation-normal);
+  user-select: none;
+  width: 100%;
+
+  .ai {
+    color: var(--table-sort-btn-icon-color);
+    font-size: .875rem;
+    margin-left: var(--spacer-3xs);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--table-sort-btn-hover-bg-color);
+  }
+
+  &.a-table__sort-button--align-right {
+    justify-content: flex-end;
   }
 }
 
