@@ -25,4 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    const switches = document.querySelectorAll(".a-switch__button");
+
+    for (let index = 0; index < switches.length; index++) {
+        const switchEl = switches[index];
+
+        switchEl.onclick = () => {
+            if (switchEl.getAttribute("aria-checked") == "true") {
+                switchEl.setAttribute("aria-checked", "false");
+            } else {
+                switchEl.setAttribute("aria-checked", "true");
+            }
+        }
+    }
 }, false);
