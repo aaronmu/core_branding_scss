@@ -174,3 +174,25 @@
     }
   }
 }
+
+.a-table {
+  &.a-table--first-column-fixed {
+    tr th:first-child,
+    tr td:first-child {
+      background-color: var(--table-bg-color);
+      filter: drop-shadow(4px 0 2px $gray-200);
+      left: 0;
+      position: sticky;
+    }
+  }
+
+  &.a-table--last-column-fixed {
+    tr th:last-child,
+    tr td:last-child {
+      background-color: var(--table-bg-color);
+      filter: drop-shadow(-4px 0 2px $gray-200);
+      position: sticky;
+      right: 0;
+    }
+  }
+}
