@@ -634,7 +634,7 @@
 
 .a-button {
   &.has-avatar,
-  &.has-avatar-with-image {
+  &.has-avatar-with-inset {
     overflow: hidden;
     position: relative;
 
@@ -649,7 +649,7 @@
     padding-left: var(--shared-avatar-size);
   }
 
-  &.has-avatar-with-image {
+  &.has-avatar-with-inset {
     padding-left: calc(var(--shared-avatar-size) + var(--spacer));
   }
 }
@@ -659,7 +659,7 @@
     padding-left: var(--shared-avatar-size-s);
   }
 
-  &.has-avatar-with-image {
+  &.has-avatar-with-inset {
     padding-left: calc(var(--shared-avatar-size-s) + var(--spacer-s));
   }
 }
@@ -669,7 +669,7 @@
     padding-left: var(--shared-avatar-size-l);
   }
 
-  &.has-avatar-with-image {
+  &.has-avatar-with-inset {
     padding-left: calc(var(--shared-avatar-size-l) + var(--spacer));
   }
 }
