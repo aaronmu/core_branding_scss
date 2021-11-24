@@ -32,7 +32,7 @@
   align-items: center;
   background-color: var(--avatar-bg-color);
   color: var(--avatar-color);
-  display: inline-flex;
+  display: inline-block;
   font-family: var(--font-family-headings);
   font-size: var(--avatar-icon-size);
   height: var(--avatar-size);
@@ -40,6 +40,7 @@
   overflow: hidden;
   position: relative;
   text-align: center;
+  text-decoration: none;
   transition: background-color var(--animation-normal);
   width: var(--avatar-size);
 
@@ -49,7 +50,8 @@
     transition: transform var(--animation-normal);
   }
 
-  &__icon .ai {
+  &__icon .ai,
+  &__letter {
     left: 50%;
     position: absolute;
     top: 50%;
