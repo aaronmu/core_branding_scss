@@ -3,9 +3,8 @@
  * -------------------------------------------------------------------
  */
 
-.a-list,
-.a-list-lined {
-  --list-border-color:          #{$gray-200};
+.a-list {
+  --list-border-color:       #{$gray-200};
 }
 
 /**
@@ -19,18 +18,20 @@
  */
 
 %a-list {
-  padding-left: var(--spacer);
+  padding-left: 1rem;
 
-  .a-list__item {
+  .a-list__content {
+    display: flex;
     padding: var(--spacer-xxs) 0;
   }
 
-  .a-list {
-    margin-top: var(--spacer-xxs);
+  .a-list__text {
+    flex-grow: 1;
+  }
 
-    .a-list__item:last-of-type {
-      margin-bottom: calc(var(--spacer-xxs) * -1);
-    }
+  .a-list__text + .ai,
+  .ai + .a-list__text {
+    margin-left: var(--spacer-xs);
   }
 }
 
@@ -43,44 +44,36 @@
  * -------------------------------------------------------------------
  */
 
-.a-list-lined {
+.a-list.a-list--lined {
   list-style: none;
   margin: 0;
   padding: 0;
 
-  .a-list-lined__item:last-of-type .a-list-lined__content {
-    border-bottom: var(--border-width) solid var(--list-border-color);
+  .a-list__item {
+    &:last-of-type .a-list__content {
+      border-bottom: var(--border-width) solid var(--list-border-color);
+    }
+
+    .a-list__content {
+      border-top: var(--border-width) solid var(--list-border-color);
+      padding: .875rem var(--spacer-s);
+    }
   }
 
-  .a-list-lined__content {
+  .a-list {
     border-top: var(--border-width) solid var(--list-border-color);
-    display: flex;
-    padding: rem(14px) var(--spacer-s);
-  }
+    padding-left: 2rem;
 
-  .a-list-lined__text {
-    flex-grow: 1;
-  }
-
-  .a-list-lined__text + .ai,
-  .ai + .a-list-lined__text {
-    margin-left: var(--spacer-xs);
-  }
-
-  .a-list-lined {
-    border-top: var(--border-width) solid var(--list-border-color);
-    padding-left: var(--spacer);
-
-    .a-list-lined__item {
-      &:first-of-type .a-list-lined__content {
+    .a-list__item {
+      &:first-of-type .a-list__content {
         border-top: none;
       }
 
-      &:last-of-type .a-list-lined__content {
+      &:last-of-type .a-list__content {
         border-bottom: none;
       }
 
-      .a-list-lined__content {
+      .a-list__content {
         padding-left: 0;
       }
     }
