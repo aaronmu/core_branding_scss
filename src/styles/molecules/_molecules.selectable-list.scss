@@ -24,7 +24,7 @@
 }
 
 .m-selectable-list {
-  @extend %a-list--reset;
+  @extend %u-list-reset;
 
   li {
     border-top: var(--border-width) solid var(--selectable-list-item-border-color);

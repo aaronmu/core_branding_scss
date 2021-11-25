@@ -11,7 +11,7 @@ $breadcrumb-arrow-color:  $gray-300 !default;
  */
 
 .m-breadcrumbs {
-  @extend %a-list--reset;
+  @extend %u-list-reset;
   @include clearfix;
 
   li {

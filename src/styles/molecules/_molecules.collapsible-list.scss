@@ -15,7 +15,7 @@
 
 .m-collapsible-list {
   @extend %a-list;
-  @extend %a-list--unstyled;
+  @extend %u-list-unstyled;
 
   ul {
     @extend %a-list;

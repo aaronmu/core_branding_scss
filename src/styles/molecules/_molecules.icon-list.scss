@@ -16,7 +16,7 @@
  */
 
 .m-icon-list {
-  @extend %a-list--reset;
+  @extend %u-list-reset;
 
   li {
     color: var(--icon-list-color);
