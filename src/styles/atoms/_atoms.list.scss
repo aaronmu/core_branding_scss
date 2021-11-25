@@ -25,6 +25,27 @@
     padding: var(--spacer-xxs) 0;
   }
 
+  a.a-list__content {
+    color: var(--text-color);
+    text-decoration: none;
+    transition-duration: var(--animation-duration);
+    transition-property: background-color, color;
+    transition-timing-function: var(--animation-easing);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--theme1-050);
+      color: var(--theme1-400);
+      font-weight: var(--font-weight-bold);
+    }
+
+    &.is-active {
+      background-color: $gray-100;
+      font-weight: var(--font-weight-bold);
+    }
+  }
+
   .a-list__text {
     flex-grow: 1;
   }
@@ -62,7 +83,6 @@
 
   .a-list {
     border-top: var(--border-width) solid var(--list-border-color);
-    padding-left: 2rem;
 
     .a-list__item {
       &:first-of-type .a-list__content {
@@ -74,7 +94,7 @@
       }
 
       .a-list__content {
-        padding-left: 0;
+        padding-left: 2rem;
       }
     }
   }
