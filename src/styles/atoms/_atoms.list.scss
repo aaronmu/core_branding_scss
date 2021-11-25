@@ -1,14 +1,10 @@
 /**
  * LIST VARIABLES
  * -------------------------------------------------------------------
- * This component has shared variables with _molecules.collapsible-list.scss. You can find them in _quarks.css-properties.scss.
  */
 
 .a-list,
 .a-list-lined {
-  --list-padding-left:          var(--spacer);
-  --list-item-padding-top:      var(--shared-list-item-padding-top);
-  --list-item-padding-bottom:   var(--list-item-padding-top);
   --list-border-color:          #{$gray-200};
 }
 
@@ -23,17 +19,17 @@
  */
 
 %a-list {
-  padding-left: var(--list-padding-left);
+  padding-left: var(--spacer);
 
   .a-list__item {
-    padding: var(--list-item-padding-top) 0 var(--list-item-padding-bottom);
+    padding: var(--spacer-xxs) 0 var(--spacer-xxs);
   }
 
   .a-list {
-    margin-top: var(--list-item-padding-top);
+    margin-top: var(--spacer-xxs);
 
     .a-list__item:last-of-type {
-      margin-bottom: calc(var(--list-item-padding-bottom) * -1);
+      margin-bottom: calc(var(--spacer-xxs) * -1);
     }
   }
 }
@@ -73,7 +69,7 @@
 
   .a-list-lined {
     border-top: var(--border-width) solid var(--list-border-color);
-    padding-left: var(--list-padding-left);
+    padding-left: var(--spacer);
 
     .a-list-lined__item {
       &:first-of-type .a-list-lined__content {
