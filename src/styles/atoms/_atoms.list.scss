@@ -4,22 +4,18 @@
  * This component has shared variables with _molecules.collapsible-list.scss. You can find them in _quarks.css-properties.scss.
  */
 
-%a-list {
+.a-list,
+.a-list-lined {
   --list-padding-left:          var(--spacer);
   --list-item-padding-top:      var(--shared-list-item-padding-top);
   --list-item-padding-bottom:   var(--list-item-padding-top);
+  --list-border-color:          #{$gray-200};
 }
 
 /**
  * LISTS
  * -------------------------------------------------------------------
  */
-
-ul,
-ol,
-dl {
-  line-height: 1.3;
-}
 
 /**
  * STANDARD LIST
@@ -29,16 +25,16 @@ dl {
 %a-list {
   padding-left: var(--list-padding-left);
 
+  .a-list__item {
+    padding: var(--list-item-padding-top) 0 var(--list-item-padding-bottom);
+  }
+
   .a-list {
     margin-top: var(--list-item-padding-top);
 
-    > li:last-of-type {
+    .a-list__item:last-of-type {
       margin-bottom: calc(var(--list-item-padding-bottom) * -1);
     }
-  }
-
-  > li {
-    padding: var(--list-item-padding-top) 0 var(--list-item-padding-bottom);
   }
 }
 
@@ -47,134 +43,51 @@ dl {
 }
 
 /**
- * LIST PLACEHOLDERS
+ * LINED LIST
  * -------------------------------------------------------------------
- * List without default padding and standard list styling.
  */
 
-/**
- * List without default padding and standard list styling.
- */
-%a-list--reset {
-  line-height: 1;
+.a-list-lined {
   list-style: none;
   margin: 0;
   padding: 0;
 
-  ul,
-  ol {
-    list-style: none;
-    padding: 0;
+  .a-list-lined__item:last-of-type .a-list-lined__content {
+    border-bottom: var(--border-width) solid var(--list-border-color);
   }
-}
 
-.a-list--reset {
-  @extend %a-list--reset;
-}
-
-/**
- * List without standard list styling.
- */
-%a-list--unstyled {
-  list-style: none;
-  padding: 0;
-
-  ul,
-  ol {
-    list-style: none;
+  .a-list-lined__content {
+    border-top: var(--border-width) solid var(--list-border-color);
+    display: flex;
+    padding: rem(14px) var(--spacer-s);
   }
-}
 
-.a-list--unstyled {
-  @extend %a-list--unstyled;
-}
-
-/**
- * List without default padding.
- */
-%a-list--flattened {
-  line-height: 1;
-  padding: 0;
-
-  ul,
-  ol {
-    padding: 0;
+  .a-list-lined__text {
+    flex-grow: 1;
   }
-}
 
-.a-list--flattened {
-  @extend %a-list--flattened;
-}
+  .a-list-lined__text + .ai,
+  .ai + .a-list-lined__text {
+    margin-left: var(--spacer-xs);
+  }
 
-/**
- * List with more padding.
- */
-%a-list--primary {
-  .a-list {
-    line-height: 1;
-    margin-top: var(--spacer-s);
+  .a-list-lined {
+    border-top: var(--border-width) solid var(--list-border-color);
+    padding-left: var(--list-padding-left);
 
-    > li {
-      padding-left: var(--spacer-xs);
+    .a-list-lined__item {
+      &:first-of-type .a-list-lined__content {
+        border-top: none;
+      }
 
-      &:last-of-type {
-        margin-bottom: calc(var(--spacer-s) * -1);
+      &:last-of-type .a-list-lined__content {
+        border-bottom: none;
+      }
+
+      .a-list-lined__content {
+        padding-left: 0;
       }
     }
-  }
-
-  > li {
-    padding: var(--spacer-s) 0 var(--spacer-s) var(--spacer-xs);
-  }
-}
-
-.a-list--primary {
-  @extend %a-list--primary;
-}
-
-/**
- * LIST MODIFIERS
- * -------------------------------------------------------------------
- */
-
-/**
- * List with list items separated by a border.
- */
-.a-list--lined {
-  @extend %a-list--primary;
-  @extend %a-list--flattened;
-
-  > li {
-    border-top: var(--border-width) solid var(--border-color);
-    list-style-position: inside;
-
-    &:last-of-type {
-      border-bottom: var(--border-width) solid var(--border-color);
-    }
-  }
-
-  .a-list--lined {
-    > li:last-of-type {
-      border-bottom: none;
-    }
-  }
-}
-
-/**
- * List with list items including an icon.
- */
-.a-list {
-  &.has-icon-left,
-  &.has-icon-right {
-    @extend %a-list--unstyled;
-  }
-
-  &.has-icon-left > li .ai {
-    margin-right: var(--spacer-xs);
-  }
-
-  &.has-icon-right > li .ai {
-    margin-left: var(--spacer-xs);
   }
 }
 
