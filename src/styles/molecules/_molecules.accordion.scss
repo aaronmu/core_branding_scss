@@ -4,8 +4,6 @@
  */
 
 .m-accordion {
-  --accordion-border-color:                var(--border-color);
-
   --accordion-header-color:                var(--text-color);
   --accordion-header-hover-color:          var(--theme1-400);
   --accordion-header-bg-color:             #{$white};
@@ -14,6 +12,7 @@
   --accordion-header-hover-border-color:   var(--theme1-400);
 
   --accordion-content-bg-color:            var(--accordion-header-bg-color);
+  --accordion-border-border-color:         var(--accordion-header-border-color);
 
   --accordion-icon-color:                  var(--text-color-light);
   --accordion-icon-hover-color:            var(--accordion-header-hover-color);
@@ -48,7 +47,7 @@
 .m-accordion__header {
   align-items: center;
   background-color: var(--accordion-header-bg-color);
-  border: var(--border-width) solid var(--accordion-border-color);
+  border: var(--border-width) solid var(--accordion-header-border-color);
   color: var(--accordion-header-color);
   cursor: pointer;
   display: flex;
@@ -64,15 +63,13 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: var(--accordion-header-hover-bg-color);
-    border-color: var(--accordion-header-hover-border-color);
-    color: var(--accordion-header-hover-color);
+    --accordion-header-color: var(--accordion-header-hover-color);
+    --accordion-header-bg-color: var(--accordion-header-hover-bg-color);
+    --accordion-header-border-color: var(--accordion-header-hover-border-color);
+    --accordion-icon-color: var(--accordion-icon-hover-color);
+
     font-weight: var(--font-weight-bold);
     z-index: 1;
-
-    &:after {
-      background: var(--accordion-icon-hover-color);
-    }
   }
 
   &:after {
@@ -91,7 +88,6 @@
 
 .m-accordion__content {
   background-color: var(--accordion-content-bg-color);
-  border: var(--border-width) solid var(--accordion-border-color);
   border-top: none;
   display: block;
   margin-top: calc(var(--border-width) * -1);
