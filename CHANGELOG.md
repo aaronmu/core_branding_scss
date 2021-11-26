@@ -43,6 +43,17 @@
   - Changed `.a-avatar--medium` to `.a-avatar--l`
   - Changed `.a-avatar--large` to `.a-avatar--xl`
 
+#### Accordion
+
+##### Added
+- Added round variant for every avatar
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.has-margins`
+
 #### Badge
 
 ##### Added
