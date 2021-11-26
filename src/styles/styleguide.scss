@@ -288,7 +288,11 @@
   }
 
   &--opens-above {
-    margin-top: 8rem;
+    margin-top: 14rem;
+
+    @include at($screen-sm) {
+      margin-top: 8rem;
+    }
   }
 }
 
