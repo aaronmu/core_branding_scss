@@ -71,11 +71,17 @@
 
 #### Flyout
 
+##### Added
+- Added classes to position flyout above button/input field
+
 ##### Changed
+- [BREAKING] Replaced SASS variables by CSS properties
 - [BREAKING] Changed various CSS classes:
-  - Changed `.m-flyout--lg` to `.m-flyout--xl`
-  - Changed `.m-flyout--md` to `.m-flyout--l`
+  - Removed `.m-flyout--lg`
+  - Removed `.m-flyout--md`
+  - Removed `.m-flyout.opens-above`
   - Changed `.m-flyout--sm` to `.m-flyout--s`
+  - Replaced `.m-flyout--right` to `.m-flyout--bottom-right`
 
 #### Header
 
