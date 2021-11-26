@@ -1049,7 +1049,7 @@
                 <div class="m-flyout is-open d-flyout">
                     <button class="a-button" aria-expanded="true">Default flyout</button>
                     <div class="m-flyout__content has-padding">
-                        <p>The default flyout will never be bigger than the element that triggers it.</p>
+                        <p>This is a medium sized flyout. It’s width is optimised to display 45-55 characters per line. content is broken up over multiple lines when needed as is displayed right here.</p>
                     </div>
                 </div>
             </div>
@@ -1057,7 +1057,7 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout is-open"&gt;
   &lt;button class="a-button" aria-expanded="true"&gt;Default flyout&lt;/button&gt;
   &lt;div class="m-flyout__content has-padding"&gt;
-    &lt;p&gt;The default flyout will never be bigger than the element that triggers it.&lt;/p&gt;
+    &lt;p&gt;This is a medium sized flyout. It’s width is optimised to display 45-55 characters per line. content is broken up over multiple lines when needed as is displayed right here.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -1070,31 +1070,15 @@
                     <div class="m-flyout m-flyout--s is-open d-flyout--s">
                         <button class="a-button" aria-expanded="true">Small flyout</button>
                         <div class="m-flyout__content has-padding">
-                            <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                            <p>This is a small flyout. It’s a bit narrower than the medium sized variant, but behaves the same.</p>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <div class="m-flyout m-flyout--l is-open d-flyout--l">
-                        <button class="a-button" aria-expanded="true">Medium flyout</button>
+                    <div class="m-flyout m-flyout--full is-open d-flyout--s">
+                        <button class="a-button" aria-expanded="true">Adaptive flyout</button>
                         <div class="m-flyout__content has-padding">
-                            <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="m-flyout m-flyout--xl is-open d-flyout--xl">
-                        <button class="a-button" aria-expanded="true">Large flyout</button>
-                        <div class="m-flyout__content has-padding">
-                            <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="m-flyout m-flyout--full is-open d-flyout--full">
-                        <button class="a-button">The full flyout will be as wide as</button>
-                        <div class="m-flyout__content has-padding" aria-expanded="true">
-                            <p>… the element that triggers it.</p>
+                            <p>The adaptive variation adapts its width to the content provided within. It can be very big or small. The adaptive variation adapts its width to the content provided within. It can be very big or small.</p>
                         </div>
                     </div>
                 </div>
@@ -1103,34 +1087,75 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--s is-open"&gt;
   ...
 &lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--l is-open"&gt;
-  ...
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--xl is-open"&gt;
-  ...
-&lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--full is-open"&gt;
   ...
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code>
             </div>
         </div>
 
-        <h4 class="u-margin-top-xl">Flyout options</h4>
+        <h4 class="u-margin-top-xl">Flyout positions</h4>
         <div class="d">
-            <div class="u-text-right">
-                <div class="m-flyout m-flyout--l m-flyout--right is-open d-flyout--l">
-                    <button class="a-button" aria-expanded="true">Flyout to the right</button>
+            <div class="u-text-left">
+                <div class="m-flyout is-open d-flyout--l">
+                    <button class="a-button" aria-expanded="true">Flyout to the bottom left</button>
                     <div class="m-flyout__content has-padding">
                         <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
                     </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--right m-flyout--l is-open"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout is-open"&gt;
   ...
 &lt;/div&gt;</code></pre>
             </div>
         </div>
+        <div class="d">
+            <div class="u-text-right">
+                <div class="m-flyout m-flyout--bottom-right is-open d-flyout--l">
+                    <button class="a-button" aria-expanded="true">Flyout to the bottom right</button>
+                    <div class="m-flyout__content has-padding">
+                        <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--bottom-right is-open"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div class="u-text-left">
+                <div class="m-flyout m-flyout--upper-left is-open d-flyout--l">
+                    <button class="a-button" aria-expanded="true">Flyout to the upper left</button>
+                    <div class="m-flyout__content has-padding">
+                        <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--upper-left is-open"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div class="u-text-right">
+                <div class="m-flyout m-flyout--upper-right is-open d-flyout--l">
+                    <button class="a-button" aria-expanded="true">Flyout to the upper right</button>
+                    <div class="m-flyout__content has-padding">
+                        <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--upper-right is-open"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-xl">Flyout examples</h4>
         <div class="d">
             <div>
                 <div class="m-flyout m-flyout--s is-open d-flyout--s">
@@ -1213,7 +1238,7 @@
         </div>
         <div class="d">
             <div>
-                <div class="m-flyout m-flyout--full m-flyout--scrollable is-open d-flyout--s">
+                <div class="m-flyout m-flyout--scrollable is-open d-flyout--s">
                     <label class="a-input__label" for="input-autocomplete">Flyout as an autocomplete</label>
                     <div class="a-input">
                         <input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" aria-expanded="true" />
@@ -1232,7 +1257,7 @@
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--full m-flyout--scrollable is-open"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--scrollable is-open"&gt;
   &lt;label class="a-input__label" for="input-autocomplete"&gt;Flyout as an autocomplete&lt;/label&gt;
   &lt;div class="a-input"&gt;
     &lt;input type="text" name="input-autocomplete" id="input-autocomplete" placeholder="Placeholder" aria-expanded="true" /&gt;
@@ -1242,23 +1267,6 @@
       &lt;li&gt;...&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <div class="m-alert d-alert u-margin-bottom">
-                    <p>Sometimes you might want to programmatically open the flyout above your clicked element (e.g. when you're at the end of the page and there is no free space below enough). To fix the dropshadow when doing this, add the <code>.opens-above</code> class to your flyout.</p>
-                </div>
-                <div class="m-flyout m-flyout--l is-open opens-above d-flyout--opens-above">
-                  <div class="m-flyout__content has-padding">
-                    <p>Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus, Laviniaque venit litora, multum ille et terris iactatus et alto vi superum saevae memorem Iunonis ob iram.</p>
-                  </div>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout is-open opens-above"&gt;
-  ...
 &lt;/div&gt;</code></pre>
             </div>
         </div>
