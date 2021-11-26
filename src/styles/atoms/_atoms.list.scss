@@ -104,6 +104,16 @@
       }
     }
   }
+
+  &.a-list--flushed .a-list__item {
+    &:first-of-type .a-list__content {
+      border-top: none;
+    }
+
+    &:last-of-type .a-list__content {
+      border-bottom: none;
+    }
+  }
 }
 
 /**
