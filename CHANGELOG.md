@@ -143,6 +143,17 @@
   - Changed `.m-pagination--small` to `.m-pagination--s`
   - Changed `.m-pagination--large` to `.m-pagination--l`
 
+#### Progress
+
+##### Added
+- Added small and extra small variant
+- Added progress variant with steps
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Removed progress variant with tooltip
+
 #### Spinner
 
 ##### Added
