@@ -304,7 +304,7 @@
 
 .m-datepicker.is-open {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(calc(var(--border-width) * -1));
   transition-delay: 0s;
   visibility: visible;
 }
