@@ -80,6 +80,13 @@
   - Changed `.a-button--small` to `.a-button--s`
   - Changed `.a-button--large` to `.a-button--l`
 
+#### Datepicker
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes
+
 #### Flyout
 
 ##### Added
