@@ -3,25 +3,30 @@
  * -------------------------------------------------------------------
  */
 
-$datepicker-border:                  $border-color !default;
-$datepicker-bg:                      $white !default;
-$datepicker-bg-hover:                mix($brand-primary, $white, 15%) !default;
+.m-datepicker {
+  --datepicker-border-color:           var(--border-color);
+  --datepicker-bg-color:               #{$white};
+  --datepicker-hover-bg-color:         var(--theme1-050);
 
-$datepicker-today-color:             $brand-primary !default;
-$datepicker-today-bg:                mix($datepicker-today-color, $white, 15%) !default;
-$datepicker-today-border:            $datepicker-today-color !default;
-$datepicker-today-font-weight:       var(--font-weight-extra-bold) !default;
+  --datepicker-week-days-color:        var(--text-color-light);
+  --datepicker-week-days-bg-color:     var(--bg-color-light);
 
-$datepicker-selected-color:          $white !default;
-$datepicker-selected-bg:             $datepicker-today-color !default;
-$datepicker-selected-font-weight:    $datepicker-today-font-weight !default;
+  --datepicker-today-color:            var(--theme1-400);
+  --datepicker-today-bg-color:         var(--theme1-050);
+  --datepicker-today-border-color:     var(--datepicker-today-color);
+  --datepicker-today-font-weight:      var(--font-weight-extra-bold);
 
-$datepicker-faded-color:             $gray-400 !default;
-$datepicker-faded-bg:                $background-color-light !default;
-$datepicker-faded-bg-hover:          $background-color !default;
+  --datepicker-selected-color:         #{$white};
+  --datepicker-selected-bg-color:      var(--datepicker-today-color);
+  --datepicker-selected-font-weight:   var(--datepicker-today-font-weight);
 
-$datepicker-unavailable-color:       $state-disabled !default;
-$datepicker-unavailable-bg:          $datepicker-bg !default;
+  --datepicker-faded-color:            #{$gray-400};
+  --datepicker-faded-bg-color:         var(--bg-color-light);
+  --datepicker-faded-hover-bg-color:   var(--bg-color);
+
+  --datepicker-unavailable-color:      var(--state-disabled);
+  --datepicker-unavailable-bg-color:   var(--datepicker-bg-color);
+}
 
 /**
  * DATEPICKER
@@ -50,26 +55,69 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
  */
 
 .m-datepicker__nav {
+  border: var(--border-width) solid var(--datepicker-border-color);
   display: flex;
   height: var(--spacer-xl);
+  justify-content: space-between;
 }
 
-.m-datepicker__title {
-  flex: 1;
+.m-datepicker__nav-title {
+  align-items: center;
+  background-color: $white;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  flex-grow: 1;
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+  padding: 0 1rem;
+  transition: background-color var(--animation-normal);
+  user-select: none;
+
+  .ai {
+    font-size: 1.25rem;
+    color: var(--text-color-light);
+    margin-left: var(--spacer-xxs);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $gray-100;
+  }
 }
 
-.m-datepicker__days {
-  background-color: $datepicker-bg;
-  border-left: var(--border-width) solid $datepicker-border;
-  border-right: var(--border-width) solid $datepicker-border;
+.m-datepicker__nav-pagination {
+  display: flex;
+
+  .a-button {
+    min-height: auto;
+  }
+}
+
+.m-datepicker__week-days {
+  border-left: var(--border-width) solid var(--datepicker-border-color);
+  border-right: var(--border-width) solid var(--datepicker-border-color);
   height: var(--spacer-xl);
+
+  th {
+    background-color: var(--datepicker-week-days-bg-color);
+    color: var(--datepicker-week-days-color);
+    font-size: .875rem;
+    font-weight: var(--font-weight-normal);
+    padding: 0;
+  }
 }
 
 .m-datepicker__calendar {
-  background-color: $datepicker-bg;
+  background-color: var(--datepicker-bg-color);
+  border-left: var(--border-width) solid var(--datepicker-border-color);
+  border-right: var(--border-width) solid var(--datepicker-border-color);
+  border-bottom: var(--border-width) solid var(--datepicker-border-color);
 
   td {
-    border: var(--border-width) solid $datepicker-border;
     padding: 0;
     position: relative;
 
@@ -83,68 +131,88 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
   button {
     background-color: transparent;
     border: none;
+    color: var(--text-color);
     cursor: pointer;
+    font-size: 1rem;
     height: 100%;
     padding: 0;
     position: absolute;
-    transition: background var(--animation-normal);
+    transition: color var(--animation-normal);
     width: 100%;
 
-    &:hover,
-    &:active {
-      background-color: $datepicker-bg-hover;
+    &:not(.is-unavailable):not(:disabled) {
+      &:before {
+        background-color: transparent;
+        border: var(--border-width) solid transparent;
+        border-radius: 2.5rem;
+        content: '';
+        height: 2.5rem;
+        left: 50%;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: background-color var(--animation-normal);
+        width: 2.5rem;
+      }
+
+      &.is-current:before {
+        border-color: var(--border-color);
+      }
+
+      &.is-selected {
+        color: $white;
+        font-weight: var(--font-weight-bold);
+
+        &:before {
+          background-color: var(--theme1-400);
+        }
+      }
+
+      &.is-faded {
+        background-color: var(--datepicker-faded-bg-color);
+        color: var(--datepicker-faded-color);
+      }
+    }
+
+    &:not(.is-selected):not(.is-unavailable):not(:disabled) {
+      &:hover,
+      &:active,
+      &:focus {
+        color: var(--theme1-400);
+        font-weight: var(--font-weight-bold);
+
+        &:before {
+          background-color: var(--theme1-050);
+        }
+      }
     }
 
     &:focus {
       z-index: layer('base');
     }
 
-    &.is-current {
-      background-color: $datepicker-today-bg;
-      color: $datepicker-today-color;
-      font-weight: $datepicker-today-font-weight;
-
-      &:hover,
-      &:active {
-        background-color: $datepicker-today-bg;
-      }
-    }
-
-    &.is-selected {
-      background-color: $datepicker-selected-bg;
-      box-shadow: 0 0 0 var(--border-width) $datepicker-selected-bg;
-      color: $datepicker-selected-color;
-      font-weight: $datepicker-selected-font-weight;
-
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: $datepicker-selected-bg;
-      }
-    }
-
-    &.is-faded {
-      background-color: $datepicker-faded-bg;
-      color: $datepicker-faded-color;
-
-      &:hover,
-      &:active {
-        background-color: $datepicker-faded-bg-hover;
-      }
-    }
-
     &.is-unavailable,
     &:disabled {
-      background-color: $datepicker-unavailable-bg;
-      box-shadow: none;
-      color: $state-disabled;
+      color: var(--text-color-light);
       cursor: not-allowed;
-      font-weight: var(--font-weight-normal);
+      font-size: .875rem;
 
-      &:hover,
-      &:active {
-        background-color: $datepicker-unavailable-bg;
+      &:before {
+        background-color: $gray-200;
+        content: '';
+        height: var(--border-width);
+        left: 50%;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 2rem;
       }
+    }
+
+    span {
+      position: relative;
     }
   }
 }
