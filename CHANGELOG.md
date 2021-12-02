@@ -126,6 +126,11 @@
   - Changed `.m-pagination--small` to `.m-pagination--s`
   - Changed `.m-pagination--large` to `.m-pagination--l`
 
+#### Selectable list
+
+##### Changed
+- [BREAKING] Selectable list was removed in favor of a standard lined flushed list
+
 #### Spinner
 
 ##### Changed
