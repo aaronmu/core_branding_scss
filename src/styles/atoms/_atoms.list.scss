@@ -26,7 +26,7 @@
   padding-left: 1rem;
 
   .a-list__content {
-    display: flex;
+    display: inline-flex;
     padding: var(--spacer-xxs) 0;
   }
 
@@ -63,6 +63,10 @@
       border-top: var(--border-width) solid var(--list-item-border-color);
       padding: .875rem var(--spacer-s);
     }
+  }
+
+  .a-list__content {
+    display: flex;
   }
 
   a.a-list__content {
