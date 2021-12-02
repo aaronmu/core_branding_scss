@@ -12,6 +12,7 @@
 - [BREAKING] Removed SASS variables of warm gray colors
 - [BREAKING] Updated and renamed SASS variables of grayscale colors
 - [BREAKING] Moved various SASS variables from global variables stylesheet to corresponding component stylesheets
+- [BREAKING] Replaced all component-related SASS variables to CSS properties.
 
 ### Tooling
 
@@ -115,6 +116,15 @@
 - [BREAKING] Changed various CSS classes:
   - Changed `.a-spinner--small` to `.a-spinner--s`
   - Changed `.a-spinner--large` to `.a-spinner--l`
+
+#### Switch
+
+##### Added
+- Added outlined and small variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
 
 #### Table
 

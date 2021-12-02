@@ -57,41 +57,41 @@
   --btn-disabled-hover-border-color:            var(--btn-disabled-bg-color);
 
   // Outlined button
-  --btn-outline-color:                          var(--theme1-400);
-  --btn-outline-bg-color:                       transparent;
-  --btn-outline-hover-bg-color:                 var(--theme1-050);
-  --btn-outline-border-color:                   var(--btn-outline-color);
-  --btn-outline-hover-border-color:             var(--btn-outline-color);
+  --btn-outlined-color:                         var(--theme1-400);
+  --btn-outlined-bg-color:                      transparent;
+  --btn-outlined-hover-bg-color:                var(--theme1-050);
+  --btn-outlined-border-color:                  var(--btn-outlined-color);
+  --btn-outlined-hover-border-color:            var(--btn-outlined-color);
 
-  --btn-outline-neutral-color:                  #{$gray-400};
-  --btn-outline-neutral-bg-color:               transparent;
-  --btn-outline-neutral-hover-bg-color:         #{$gray-100};
-  --btn-outline-neutral-border-color:           var(--btn-outline-neutral-color);
-  --btn-outline-neutral-hover-border-color:     var(--btn-outline-neutral-color);
+  --btn-outlined-neutral-color:                 #{$gray-400};
+  --btn-outlined-neutral-bg-color:              transparent;
+  --btn-outlined-neutral-hover-bg-color:        #{$gray-100};
+  --btn-outlined-neutral-border-color:          var(--btn-outlined-neutral-color);
+  --btn-outlined-neutral-hover-border-color:    var(--btn-outlined-neutral-color);
 
-  --btn-outline-success-color:                  var(--success-600);
-  --btn-outline-success-bg-color:               transparent;
-  --btn-outline-success-hover-bg-color:         var(--success-050);
-  --btn-outline-success-border-color:           var(--btn-outline-success-color);
-  --btn-outline-success-hover-border-color:     var(--btn-outline-success-color);
+  --btn-outlined-success-color:                 var(--success-600);
+  --btn-outlined-success-bg-color:              transparent;
+  --btn-outlined-success-hover-bg-color:        var(--success-050);
+  --btn-outlined-success-border-color:          var(--btn-outlined-success-color);
+  --btn-outlined-success-hover-border-color:    var(--btn-outlined-success-color);
 
-  --btn-outline-warning-color:                  #{$gray-600};
-  --btn-outline-warning-bg-color:               transparent;
-  --btn-outline-warning-hover-bg-color:         var(--warning-050);
-  --btn-outline-warning-border-color:           var(--warning-500);
-  --btn-outline-warning-hover-border-color:     var(--btn-outline-warning-border-color);
+  --btn-outlined-warning-color:                 #{$gray-600};
+  --btn-outlined-warning-bg-color:              transparent;
+  --btn-outlined-warning-hover-bg-color:        var(--warning-050);
+  --btn-outlined-warning-border-color:          var(--warning-500);
+  --btn-outlined-warning-hover-border-color:    var(--btn-outlined-warning-border-color);
 
-  --btn-outline-danger-color:                   var(--danger-500);
-  --btn-outline-danger-bg-color:                transparent;
-  --btn-outline-danger-hover-bg-color:          var(--danger-050);
-  --btn-outline-danger-border-color:            var(--btn-outline-danger-color);
-  --btn-outline-danger-hover-border-color:      var(--btn-outline-danger-color);
+  --btn-outlined-danger-color:                  var(--danger-500);
+  --btn-outlined-danger-bg-color:               transparent;
+  --btn-outlined-danger-hover-bg-color:         var(--danger-050);
+  --btn-outlined-danger-border-color:           var(--btn-outlined-danger-color);
+  --btn-outlined-danger-hover-border-color:     var(--btn-outlined-danger-color);
 
-  --btn-outline-disabled-color:                 #{$gray-400};
-  --btn-outline-disabled-bg-color:              #{$gray-100};
-  --btn-outline-disabled-hover-bg-color:        var(--btn-outline-disabled-bg-color);
-  --btn-outline-disabled-border-color:          #{$gray-200};
-  --btn-outline-disabled-hover-border-color:    var(--btn-outline-disabled-border-color);
+  --btn-outlined-disabled-color:                #{$gray-400};
+  --btn-outlined-disabled-bg-color:             #{$gray-100};
+  --btn-outlined-disabled-hover-bg-color:       var(--btn-outlined-disabled-bg-color);
+  --btn-outlined-disabled-border-color:         #{$gray-200};
+  --btn-outlined-disabled-hover-border-color:   var(--btn-outlined-disabled-border-color);
 
   // Text buttons
   --btn-text-color:                             var(--theme1-400);
@@ -394,50 +394,50 @@
  */
 
 .a-button.a-button--outlined {
-  --btn-color: var(--btn-outline-color);
-  --btn-bg-color: var(--btn-outline-bg-color);
-  --btn-hover-bg-color: var(--btn-outline-hover-bg-color);
-  --btn-border-color: var(--btn-outline-border-color);
-  --btn-hover-border-color: var(--btn-outline-hover-border-color);
+  --btn-color: var(--btn-outlined-color);
+  --btn-bg-color: var(--btn-outlined-bg-color);
+  --btn-hover-bg-color: var(--btn-outlined-hover-bg-color);
+  --btn-border-color: var(--btn-outlined-border-color);
+  --btn-hover-border-color: var(--btn-outlined-hover-border-color);
 
   &.a-button--neutral {
-    --btn-color: var(--btn-outline-neutral-color);
-    --btn-bg-color: var(--btn-outline-neutral-bg-color);
-    --btn-hover-bg-color: var(--btn-outline-neutral-hover-bg-color);
-    --btn-border-color: var(--btn-outline-neutral-border-color);
-    --btn-hover-border-color: var(--btn-outline-neutral-hover-border-color);
+    --btn-color: var(--btn-outlined-neutral-color);
+    --btn-bg-color: var(--btn-outlined-neutral-bg-color);
+    --btn-hover-bg-color: var(--btn-outlined-neutral-hover-bg-color);
+    --btn-border-color: var(--btn-outlined-neutral-border-color);
+    --btn-hover-border-color: var(--btn-outlined-neutral-hover-border-color);
   }
 
   &.a-button--success {
-    --btn-color: var(--btn-outline-success-color);
-    --btn-bg-color: var(--btn-outline-success-bg-color);
-    --btn-hover-bg-color: var(--btn-outline-success-hover-bg-color);
-    --btn-border-color: var(--btn-outline-success-border-color);
-    --btn-hover-border-color: var(--btn-outline-success-hover-border-color);
+    --btn-color: var(--btn-outlined-success-color);
+    --btn-bg-color: var(--btn-outlined-success-bg-color);
+    --btn-hover-bg-color: var(--btn-outlined-success-hover-bg-color);
+    --btn-border-color: var(--btn-outlined-success-border-color);
+    --btn-hover-border-color: var(--btn-outlined-success-hover-border-color);
   }
 
   &.a-button--warning {
-    --btn-color: var(--btn-outline-warning-color);
-    --btn-bg-color: var(--btn-outline-warning-bg-color);
-    --btn-hover-bg-color: var(--btn-outline-warning-hover-bg-color);
-    --btn-border-color: var(--btn-outline-warning-border-color);
-    --btn-hover-border-color: var(--btn-outline-warning-hover-border-color);
+    --btn-color: var(--btn-outlined-warning-color);
+    --btn-bg-color: var(--btn-outlined-warning-bg-color);
+    --btn-hover-bg-color: var(--btn-outlined-warning-hover-bg-color);
+    --btn-border-color: var(--btn-outlined-warning-border-color);
+    --btn-hover-border-color: var(--btn-outlined-warning-hover-border-color);
   }
 
   &.a-button--danger {
-    --btn-color: var(--btn-outline-danger-color);
-    --btn-bg-color: var(--btn-outline-danger-bg-color);
-    --btn-hover-bg-color: var(--btn-outline-danger-hover-bg-color);
-    --btn-border-color: var(--btn-outline-danger-border-color);
-    --btn-hover-border-color: var(--btn-outline-danger-hover-border-color);
+    --btn-color: var(--btn-outlined-danger-color);
+    --btn-bg-color: var(--btn-outlined-danger-bg-color);
+    --btn-hover-bg-color: var(--btn-outlined-danger-hover-bg-color);
+    --btn-border-color: var(--btn-outlined-danger-border-color);
+    --btn-hover-border-color: var(--btn-outlined-danger-hover-border-color);
   }
 
   &:disabled {
-    --btn-color: var(--btn-outline-disabled-color);
-    --btn-bg-color: var(--btn-outline-disabled-bg-color);
-    --btn-hover-bg-color: var(--btn-outline-disabled-hover-bg-color);
-    --btn-border-color: var(--btn-outline-disabled-border-color);
-    --btn-hover-border-color: var(--btn-outline-disabled-hover-border-color);
+    --btn-color: var(--btn-outlined-disabled-color);
+    --btn-bg-color: var(--btn-outlined-disabled-bg-color);
+    --btn-hover-bg-color: var(--btn-outlined-disabled-hover-bg-color);
+    --btn-border-color: var(--btn-outlined-disabled-border-color);
+    --btn-hover-border-color: var(--btn-outlined-disabled-hover-border-color);
   }
 }
 
