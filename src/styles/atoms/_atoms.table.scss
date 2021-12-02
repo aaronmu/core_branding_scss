@@ -180,9 +180,20 @@
     tr th:first-child,
     tr td:first-child {
       background-color: var(--table-bg-color);
-      filter: drop-shadow(4px 0 2px $gray-200);
+      box-shadow: inset calc(var(--border-width) * -1) 0 0 0 var(--table-border-color);
       left: 0;
       position: sticky;
+
+      &:after {
+        background-color: var(--box-shadow-color);
+        bottom: 0;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateX(100%);
+        width: var(--spacer-xs);
+      }
     }
   }
 
@@ -190,9 +201,20 @@
     tr th:last-child,
     tr td:last-child {
       background-color: var(--table-bg-color);
-      filter: drop-shadow(-4px 0 2px $gray-200);
+      box-shadow: inset var(--border-width) 0 0 0 var(--table-border-color);
       position: sticky;
       right: 0;
+
+      &:after {
+        background-color: var(--box-shadow-color);
+        bottom: 0;
+        content: '';
+        left: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(-100%);
+        width: var(--spacer-xs);
+      }
     }
   }
 }
