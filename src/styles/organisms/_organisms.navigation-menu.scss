@@ -380,7 +380,7 @@
 
   .o-navigation-pane__wrapper {
     background: $white;
-    box-shadow: 0 -.75rem 0 rgba($black, .1);
+    box-shadow: 0 -.75rem 0 var(--box-shadow-color);
     margin-bottom: calc(var(--border-width) * -1);
     max-height: calc(100vh - var(--shared-header-height) - var(--navigation-menu-mobile-height));
     min-height: var(--spacer); // make up for the box shadow to be visible, even when hidden
