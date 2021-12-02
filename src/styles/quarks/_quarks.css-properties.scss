@@ -159,6 +159,17 @@
   --animation-normal:        var(--animation-duration) var(--animation-easing);
 
   /**
+   * BOX SHADOWS
+   * -------------------------------------------------------------------
+   */
+
+  --box-shadow-bottom-left:      calc(var(--spacer) / -2) calc(var(--spacer) / 2) 0 var(--box-shadow-color);
+  --box-shadow-bottom-right:     calc(var(--spacer) / 2) calc(var(--spacer) / 2) 0 var(--box-shadow-color);
+  --box-shadow-upper-left:       calc(var(--spacer) / -2) calc(var(--spacer) / -2) 0 var(--box-shadow-color);
+  --box-shadow-upper-right:      calc(var(--spacer) / 2) calc(var(--spacer) / -2) 0 var(--box-shadow-color);
+  --box-shadow:                  var(--box-shadow-bottom-right);
+
+  /**
    * SHARED CSS PROPERTIES
    * -------------------------------------------------------------------
    */

@@ -283,12 +283,12 @@
     }
   }
 
-  &--full {
-    margin-bottom: 7rem;
-  }
-
   &--opens-above {
-    margin-bottom: 6rem;
+    margin-top: 14rem;
+
+    @include at($screen-sm) {
+      margin-top: 8rem;
+    }
   }
 }
 

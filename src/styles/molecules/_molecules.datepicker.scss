@@ -162,7 +162,7 @@ $datepicker-unavailable-bg:          $datepicker-bg !default;
 }
 
 .m-datepicker--fixed {
-  box-shadow: $box-shadow;
+  box-shadow: var(--box-shadow);
   position: absolute;
   right: 0;
   top: 100%;
