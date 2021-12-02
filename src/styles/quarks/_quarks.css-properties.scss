@@ -60,6 +60,7 @@
   --bg-color-light:          #{$gray-100};
   --border-color:            #{$gray-300};
   --overlay-color:           #{rgba($black, .75)};
+  --box-shadow-color:        #{rgba($gray-600, .12)};
 
   --state-info:              var(--theme1-400);
   --state-success:           var(--success-600);
