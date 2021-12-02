@@ -97,6 +97,22 @@
 - [BREAKING] Changed the way of adding a description, success and error message to an input field
 - [BREAKING] Removed warning messages
 
+#### List
+
+##### Added
+- Added flushed list variant with no top and bottom border
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-list--reset` to `.u-list-reset`
+  - Changed `.a-list--unstyled` to `.u-list-unstyled`
+  - Removed `.a-list--primary`
+  - Removed `.a-list--flattened`
+  - Removed `.has-icon-left` and `.has-icon-right`
+- [BREAKING] Provide list styles through class selectors instead of element selectors
+
 #### Modal
 
 ##### Changed
@@ -109,6 +125,11 @@
   - Changed `.m-pagination--outline` to `.m-pagination--outlined`
   - Changed `.m-pagination--small` to `.m-pagination--s`
   - Changed `.m-pagination--large` to `.m-pagination--l`
+
+#### Selectable list
+
+##### Changed
+- [BREAKING] Selectable list was removed in favor of a standard lined flushed list
 
 #### Spinner
 

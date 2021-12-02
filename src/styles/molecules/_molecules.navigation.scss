@@ -31,7 +31,7 @@
  */
 
 %m-nav-list {
-  @extend %a-list--reset;
+  @extend %u-list-reset;
 
   border-top: var(--border-width) solid var(--nav-border-color);
 

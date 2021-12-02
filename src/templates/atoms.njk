@@ -1480,297 +1480,290 @@
         <div class="d">
             <div>
                 <ul class="a-list">
-                    <li>First item</li>
-                    <li>Second item
+                    <li class="a-list__item">
+                        <span class="a-list__content">First item</span>
+                    </li>
+                    <li class="a-list__item">
+                        <a href="javascript:void(0);" class="a-list__content">Second item</a>
                         <ul class="a-list">
-                            <li>First subitem</li>
-                            <li>Second subitem</li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">First subitem</span>
+                            </li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">Second subitem</span>
+                            </li>
                         </ul>
                     </li>
-                    <li>Third item</li>
-                    <li>Fourth item</li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Third item</span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Fourth item</span>
+                    </li>
                 </ul>
                 <ol class="a-list">
-                    <li>First item</li>
-                    <li>Second item
+                    <li class="a-list__item">
+                        <span class="a-list__content">First item</span>
+                    </li>
+                    <li class="a-list__item">
+                        <a href="javascript:void(0);" class="a-list__content">Second item</a>
                         <ol class="a-list">
-                            <li>First subitem</li>
-                            <li>Second subitem</li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">First subitem</span>
+                            </li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">Second subitem</span>
+                            </li>
                         </ol>
                     </li>
-                    <li>Third item</li>
-                    <li>Fourth item</li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Third item</span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Fourth item</span>
+                    </li>
                 </ol>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list"&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item
-    &lt;ul class="a-list"&gt;
-      &lt;li&gt;First subitem&lt;/li&gt;
-      &lt;li&gt;Second subitem&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-  &lt;li&gt;Fourth item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ol class="a-list"&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item
-    &lt;ol class="a-list"&gt;
-      &lt;li&gt;First subitem&lt;/li&gt;
-      &lt;li&gt;Second subitem&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-  &lt;li&gt;Fourth item&lt;/li&gt;
-&lt;/ol&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  @extend %a-list;
-}</code></pre>
             </div>
         </div>
 
-        <h4 class="u-margin-top-xl">List variations</h4>
-        <div class="d">
-            <div>
-                <ul class="a-list a-list--reset">
-                    <li>First item</li>
-                    <li>Second item
-                        <ul class="a-list">
-                            <li>First subitem</li>
-                            <li>Second subitem</li>
-                        </ul>
-                    </li>
-                    <li>Third item</li>
-                    <li>Fourth item</li>
-                </ul>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list a-list--reset"&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item
-    &lt;ul class="a-list"&gt;
-      &lt;li&gt;First subitem&lt;/li&gt;
-      &lt;li&gt;Second subitem&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-  &lt;li&gt;Fourth item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  @extend %a-list--reset;
-}</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <ul class="a-list a-list--unstyled">
-                    <li>First item</li>
-                    <li>Second item
-                        <ul class="a-list">
-                            <li>First subitem</li>
-                            <li>Second subitem</li>
-                        </ul>
-                    </li>
-                    <li>Third item</li>
-                    <li>Fourth item</li>
-                </ul>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list a-list--unstyled"&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item
-    &lt;ul class="a-list"&gt;
-      &lt;li&gt;First subitem&lt;/li&gt;
-      &lt;li&gt;Second subitem&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-  &lt;li&gt;Fourth item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  @extend %a-list--unstyled;
-}</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <ul class="a-list a-list--flattened">
-                    <li>First item</li>
-                    <li>Second item
-                        <ul class="a-list">
-                            <li>First subitem</li>
-                            <li>Second subitem</li>
-                        </ul>
-                    </li>
-                    <li>Third item</li>
-                    <li>Fourth item</li>
-                </ul>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list a-list--flattened"&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item
-    &lt;ul class="a-list"&gt;
-      &lt;li&gt;First subitem&lt;/li&gt;
-      &lt;li&gt;Second subitem&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-  &lt;li&gt;Fourth item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  @extend %a-list--flattened;
-}</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <ul class="a-list a-list--primary">
-                    <li>First item</li>
-                    <li>Second item
-                        <ul class="a-list">
-                            <li>First subitem</li>
-                            <li>Second subitem</li>
-                        </ul>
-                    </li>
-                    <li>Third item</li>
-                    <li>Fourth item</li>
-                </ul>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list a-list--primary"&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item
-    &lt;ul class="a-list"&gt;
-      &lt;li&gt;First subitem&lt;/li&gt;
-      &lt;li&gt;Second subitem&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-  &lt;li&gt;Fourth item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  @extend %a-list--primary;
-}</code></pre>
-            </div>
-        </div>
+        <h4 class="u-margin-top-xl">Lined list</h4>
         <div class="d">
             <div>
                 <ul class="a-list a-list--lined">
-                    <li>First item</li>
-                    <li>Second item
+                    <li class="a-list__item">
+                        <span class="a-list__content">First item</span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Second item</span>
                         <ul class="a-list a-list--lined">
-                            <li>First subitem</li>
-                            <li>Second subitem</li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">First subitem</span>
+                            </li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">Second subitem</span>
+                            </li>
                         </ul>
                     </li>
-                    <li>Third item</li>
-                    <li>Fourth item</li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Third item</span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Fourth item</span>
+                    </li>
                 </ul>
             </div>
+            <div></div>
+        </div>
+        <div class="d">
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list a-list--lined"&gt;
-  &lt;li&gt;First item&lt;/li&gt;
-  &lt;li&gt;Second item
-    &lt;ul class="a-list a-list--lined"&gt;
-      &lt;li&gt;First subitem&lt;/li&gt;
-      &lt;li&gt;Second subitem&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Third item&lt;/li&gt;
-  &lt;li&gt;Fourth item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  @extend %a-list--lined;
-}</code></pre>
+                <ul class="a-list a-list--lined a-list--flushed">
+                    <li class="a-list__item">
+                        <span class="a-list__content">First item</span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Second item</span>
+                        <ul class="a-list a-list--lined">
+                            <li class="a-list__item">
+                                <span class="a-list__content">First subitem</span>
+                            </li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">Second subitem</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Third item</span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">Fourth item</span>
+                    </li>
+                </ul>
             </div>
+            <div></div>
         </div>
 
         <h4 class="u-margin-top-xl">Icon lists</h4>
         <div class="d">
             <div>
-                <ul class="a-list has-icon-left">
-                    <li>{{ icon.render('arrow-left-1') }}First item</li>
-                    <li>{{ icon.render('arrow-left-1') }}Second item
-                        <ul class="a-list">
-                            <li>{{ icon.render('arrow-left-1') }}First subitem</li>
-                            <li>{{ icon.render('arrow-left-1') }}Second subitem</li>
+                <ul class="a-list a-list--lined">
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}<span class="a-list__text">First item</span>
+                        </span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}<span class="a-list__text">Second item</span>
+                        </span>
+                        <ul class="a-list a-list--lined">
+                            <li class="a-list__item">
+                                <span class="a-list__content">
+                                    {{ icon.render('arrow-left-1') }}<span class="a-list__text">First subitem</span>
+                                </span>
+                            </li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">
+                                    {{ icon.render('arrow-left-1') }}<span class="a-list__text">Second subitem</span>
+                                </span>
+                            </li>
                         </ul>
                     </li>
-                    <li>{{ icon.render('arrow-left-1') }}Third item</li>
-                    <li>{{ icon.render('arrow-left-1') }}Fourth item</li>
-                </ul>
-                <ul class="a-list has-icon-right">
-                    <li>First item{{ icon.render('arrow-right-1') }}</li>
-                    <li>Second item{{ icon.render('arrow-right-1') }}
-                        <ul class="a-list">
-                            <li>First subitem{{ icon.render('arrow-right-1') }}</li>
-                            <li>Second subitem{{ icon.render('arrow-right-1') }}</li>
-                        </ul>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}<span class="a-list__text">Third item</span>
+                        </span>
                     </li>
-                    <li>Third item{{ icon.render('arrow-right-1') }}</li>
-                    <li>Fourth item{{ icon.render('arrow-right-1') }}</li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}<span class="a-list__text">Fourth item</span>
+                        </span>
+                    </li>
                 </ul>
             </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list has-icon-left"&gt;
-  &lt;li&gt;{{ icon.code('arrow-left-1') }}First item&lt;/li&gt;
-  &lt;li&gt;{{ icon.code('arrow-left-1') }}Second item
-    &lt;ul class="a-list"&gt;
-      &lt;li&gt;{{ icon.code('arrow-left-1') }}First subitem&lt;/li&gt;
-      &lt;li&gt;{{ icon.code('arrow-left-1') }}Second subitem&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;{{ icon.code('arrow-left-1') }}Third item&lt;/li&gt;
-  &lt;li&gt;{{ icon.code('arrow-left-1') }}Fourth item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list has-icon-right"&gt;
-  &lt;li&gt;First item{{ icon.code('arrow-right-1') }}&lt;/li&gt;
-  &lt;li&gt;Second item{{ icon.code('arrow-right-1') }}
-    &lt;ul class="a-list"&gt;
-      &lt;li&gt;First subitem{{ icon.code('arrow-right-1') }}&lt;/li&gt;
-      &lt;li&gt;Second subitem{{ icon.code('arrow-right-1') }}&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Third item{{ icon.code('arrow-right-1') }}&lt;/li&gt;
-  &lt;li&gt;Fourth item{{ icon.code('arrow-right-1') }}&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-            </div>
+            <div></div>
         </div>
-
-        <h4 class="u-margin-top-xl">List combinations</h4>
         <div class="d">
             <div>
-                <ul class="a-list a-list--lined has-icon-left">
-                    <li>{{ icon.render('arrow-left-1') }}First item</li>
-                    <li>{{ icon.render('arrow-left-1') }}Second item
-                        <ul class="a-list a-list--lined has-icon-left">
-                            <li>{{ icon.render('arrow-left-1') }}First subitem</li>
-                            <li>{{ icon.render('arrow-left-1') }}Second subitem</li>
+                <ul class="a-list a-list--lined">
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            <span class="a-list__text">First item</span>{{ icon.render('arrow-right-1') }}
+                        </span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            <span class="a-list__text">Second item</span>{{ icon.render('arrow-right-1') }}
+                        </span>
+                        <ul class="a-list a-list--lined">
+                            <li class="a-list__item">
+                                <span class="a-list__content">
+                                    <span class="a-list__text">First subitem</span>{{ icon.render('arrow-right-1') }}
+                                </span>
+                            </li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">
+                                    <span class="a-list__text">Second subitem</span>{{ icon.render('arrow-right-1') }}
+                                </span>
+                            </li>
                         </ul>
                     </li>
-                    <li>{{ icon.render('arrow-left-1') }}Third item</li>
-                    <li>{{ icon.render('arrow-left-1') }}Fourth item</li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            <span class="a-list__text">Third item</span>{{ icon.render('arrow-right-1') }}
+                        </span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            <span class="a-list__text">Fourth item</span>{{ icon.render('arrow-right-1') }}
+                        </span>
+                    </li>
                 </ul>
             </div>
+            <div></div>
+        </div>
+        <div class="d">
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="a-list a-list--lined has-icon-left"&gt;
-  &lt;li&gt;{{ icon.code('arrow-left-1') }}First item&lt;/li&gt;
-  &lt;li&gt;{{ icon.code('arrow-left-1') }}Second item
-    &lt;ul class="a-list a-list--lined has-icon-left"&gt;
-      &lt;li&gt;{{ icon.code('arrow-left-1') }}First subitem&lt;/li&gt;
-      &lt;li&gt;{{ icon.code('arrow-left-1') }}Second subitem&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;{{ icon.code('arrow-left-1') }}Third item&lt;/li&gt;
-  &lt;li&gt;{{ icon.code('arrow-left-1') }}Fourth item&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  @extend %a-list--lined has-icon-left;
-}</code></pre>
+                <ul class="a-list a-list--lined">
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}
+                            <span class="a-list__text">First item</span>
+                            {{ icon.render('arrow-right-1') }}
+                        </span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}
+                            <span class="a-list__text">Second item</span>
+                            {{ icon.render('arrow-right-1') }}
+                        </span>
+                        <ul class="a-list a-list--lined">
+                            <li class="a-list__item">
+                                <span class="a-list__content">
+                                    {{ icon.render('arrow-left-1') }}
+                                    <span class="a-list__text">First subitem</span>
+                                    {{ icon.render('arrow-right-1') }}
+                                </span>
+                            </li>
+                            <li class="a-list__item">
+                                <span class="a-list__content">
+                                    {{ icon.render('arrow-left-1') }}
+                                    <span class="a-list__text">Second subitem</span>
+                                    {{ icon.render('arrow-right-1') }}
+                                </span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}
+                            <span class="a-list__text">Third item</span>
+                            {{ icon.render('arrow-right-1') }}
+                        </span>
+                    </li>
+                    <li class="a-list__item">
+                        <span class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}
+                            <span class="a-list__text">Fourth item</span>
+                            {{ icon.render('arrow-right-1') }}
+                        </span>
+                    </li>
+                </ul>
             </div>
+            <div></div>
+        </div>
+
+        <h4 class="u-margin-top-xl">Selectable lists</h4>
+        <div class="d">
+            <div>
+                <ul class="a-list a-list--lined">
+                    <li class="a-list__item">
+                        <a href="javascript:void(0);" class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}
+                            <span class="a-list__text">First item</span>
+                            {{ icon.render('arrow-right-1') }}
+                        </a>
+                    </li>
+                    <li class="a-list__item">
+                        <a href="javascript:void(0);" class="a-list__content is-active">
+                            {{ icon.render('arrow-left-1') }}
+                            <span class="a-list__text">Second item</span>
+                            {{ icon.render('arrow-right-1') }}
+                        </a>
+                        <ul class="a-list a-list--lined">
+                            <li class="a-list__item">
+                                <a href="javascript:void(0);" class="a-list__content">
+                                    {{ icon.render('arrow-left-1') }}
+                                    <span class="a-list__text">First subitem</span>
+                                    {{ icon.render('arrow-right-1') }}
+                                </a>
+                            </li>
+                            <li class="a-list__item">
+                                <a href="javascript:void(0);" class="a-list__content">
+                                    {{ icon.render('arrow-left-1') }}
+                                    <span class="a-list__text">Second subitem</span>
+                                    {{ icon.render('arrow-right-1') }}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="a-list__item">
+                        <a href="javascript:void(0);" class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}
+                            <span class="a-list__text">Third item</span>
+                            {{ icon.render('arrow-right-1') }}
+                        </a>
+                    </li>
+                    <li class="a-list__item">
+                        <a href="javascript:void(0);" class="a-list__content">
+                            {{ icon.render('arrow-left-1') }}
+                            <span class="a-list__text">Fourth item</span>
+                            {{ icon.render('arrow-right-1') }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div></div>
         </div>
 
         <h4 class="u-margin-top-xl">Definition list</h4>
