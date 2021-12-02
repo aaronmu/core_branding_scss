@@ -133,5 +133,7 @@ a,
  */
 
 .a-avatar--rounded {
+  // Fix image from breaking out of rounded parent element when hovering avatar on Safari
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   border-radius: 50%;
 }
