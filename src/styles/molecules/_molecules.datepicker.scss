@@ -129,66 +129,46 @@
 
   button {
     background-color: transparent;
-    border: none;
+    border-radius: var(--border-radius);
+    border: var(--border-width) solid transparent;
     color: var(--datepicker-text-color);
     cursor: pointer;
     font-size: 1rem;
     height: 100%;
     padding: 0;
     position: absolute;
-    transition: color var(--animation-normal);
+    transition-duration: var(--animation-duration);
+    transition-property: color, background-color, border;
+    transition-timing-function: var(--animation-easing);
     width: 100%;
-
-    &:not(.is-unavailable):not(:disabled) {
-      &:before {
-        background-color: transparent;
-        border: var(--border-width) solid transparent;
-        border-radius: 2.5rem;
-        content: '';
-        height: 2.5rem;
-        left: 50%;
-        pointer-events: none;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        transition: background-color var(--animation-normal);
-        width: 2.5rem;
-      }
-
-      &.is-current:before {
-        border-color: var(--datepicker-border-color);
-      }
-
-      &.is-selected {
-        color: var(--datepicker-text-color-xlight);
-        font-weight: var(--font-weight-bold);
-
-        &:before {
-          background-color: var(--datepicker-active-color);
-        }
-      }
-
-      &.is-faded {
-        background-color: var(--datepicker-bg-color-dark);
-        color: var(--datepicker-text-color-light);
-      }
-    }
 
     &:not(.is-selected):not(.is-unavailable):not(:disabled) {
       &:hover,
       &:active,
       &:focus {
+        background-color: var(--datepicker-highlight-color);
         color: var(--datepicker-active-color);
         font-weight: var(--font-weight-bold);
-
-        &:before {
-          background-color: var(--datepicker-highlight-color);
-        }
       }
     }
 
     &:focus {
       z-index: layer('base');
+    }
+
+    &.is-current {
+      border-color: var(--datepicker-border-color);
+    }
+
+    &.is-selected {
+      background-color: var(--datepicker-active-color);
+      color: var(--datepicker-text-color-xlight);
+      font-weight: var(--font-weight-bold);
+    }
+
+    &.is-faded {
+      background-color: var(--datepicker-bg-color-dark);
+      color: var(--datepicker-text-color-light);
     }
 
     &.is-unavailable,
@@ -238,51 +218,30 @@
 
   button {
     background-color: transparent;
+    border-radius: var(--border-radius);
     border: none;
     color: var(--datepicker-text-color);
     cursor: pointer;
     height: var(--spacer-xl);
     padding: 0;
     position: relative;
-    transition: color var(--animation-normal);
+    transition-duration: var(--animation-duration);
+    transition-property: color, background-color;
+    transition-timing-function: var(--animation-easing);
     width: 100%;
-
-    &:before {
-      background-color: transparent;
-      border-radius: 2.5rem;
-      content: '';
-      height: 2.5rem;
-      left: 50%;
-      pointer-events: none;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      transition: background-color var(--animation-normal);
-      width: 4rem;
-    }
 
     &:hover,
     &:active,
     &:focus {
+      background-color: var(--datepicker-highlight-color);
       color: var(--datepicker-active-color);
       font-weight: var(--font-weight-bold);
-
-      &:before {
-        background-color: var(--datepicker-highlight-color);
-      }
     }
 
     &.is-current {
+      background-color: var(--datepicker-active-color);
       color: var(--datepicker-text-color-xlight);
       font-weight: var(--font-weight-bold);
-
-      &:before {
-        background-color: var(--datepicker-active-color);
-      }
-    }
-
-    span {
-      position: relative;
     }
   }
 }
