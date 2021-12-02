@@ -23,7 +23,7 @@
  */
 
 %a-list {
-  padding-left: 1rem;
+  padding-left: var(--spacer-s);
 
   .a-list__content {
     display: inline-flex;
@@ -104,7 +104,7 @@
       }
 
       .a-list__content {
-        padding-left: 2rem;
+        padding-left: calc(var(--spacer-s) * 2);
       }
     }
   }
