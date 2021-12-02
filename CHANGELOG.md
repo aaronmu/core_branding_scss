@@ -146,7 +146,7 @@
 #### Progress
 
 ##### Added
-- Added small and extra small variant
+- Added small and large variant
 - Added progress variant with steps
 
 ##### Changed
