@@ -4,9 +4,9 @@
  */
 
 .m-progress {
-  --progress-height:          1.25rem;
-  --progress-label-size:      1rem;
-  --progress-label-spacing:   var(--spacer-xs);
+  --progress-height:          var(--spacer-xxs);
+  --progress-label-size:      .875rem;
+  --progress-label-spacing:   var(--spacer-xxs);
   --progress-bg-color:        var(--theme1-050);
   --progress-bar-bg-color:    var(--theme1-400);
 }
@@ -55,16 +55,16 @@
  */
 
 .m-progress {
-  &.m-progress--xs {
+  &.m-progress--s {
     --progress-height: var(--spacer-3xs);
-    --progress-label-spacing: var(--spacer-xxs);
     --progress-label-size: .875rem;
+    --progress-label-spacing: var(--spacer-xxs);
   }
 
-  &.m-progress--s {
-    --progress-height: var(--spacer-xxs);
-    --progress-label-spacing: var(--spacer-xxs);
-    --progress-label-size: .875rem;
+  &.m-progress--l {
+    --progress-height: 1.25rem;
+    --progress-label-size: 1rem;
+    --progress-label-spacing: var(--spacer-xs);
   }
 
   &.m-progress--inline {

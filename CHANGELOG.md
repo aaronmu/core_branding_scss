@@ -12,7 +12,7 @@
 - [BREAKING] Removed SASS variables of warm gray colors
 - [BREAKING] Updated and renamed SASS variables of grayscale colors
 - [BREAKING] Moved various SASS variables from global variables stylesheet to corresponding component stylesheets
-- [BREAKING] Replaced all compontent related SASS variables to CSS properties.
+- [BREAKING] Replaced all component-related SASS variables to CSS properties.
 
 ### Tooling
 
@@ -153,7 +153,7 @@
 #### Progress
 
 ##### Added
-- Added small and extra small variant
+- Added small and large variant
 - Added progress variant with steps
 
 ##### Changed
