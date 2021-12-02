@@ -150,6 +150,9 @@
 
 #### Spinner
 
+##### Added
+- Extended spinner with loading message
+
 ##### Changed
 - [BREAKING] Changed various CSS classes:
   - Changed `.a-spinner--small` to `.a-spinner--s`
