@@ -63,6 +63,7 @@
   align-items: center;
   background: transparent;
   border: none;
+  cursor: pointer;
   display: inline-flex;
   height: var(--switch-height);
   padding: 0;
@@ -73,7 +74,6 @@
     border-radius: var(--switch-height);
     border: var(--border-width) solid var(--switch-border-color);
     content: '';
-    cursor: pointer;
     display: inline-block;
     height: var(--switch-height);
     left: var(--switch-label-width);
