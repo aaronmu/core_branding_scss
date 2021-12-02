@@ -143,10 +143,16 @@
   - Changed `.m-pagination--small` to `.m-pagination--s`
   - Changed `.m-pagination--large` to `.m-pagination--l`
 
-#### Selectable list
+#### Progress
+
+##### Added
+- Added small and large variant
+- Added progress variant with steps
 
 ##### Changed
-- [BREAKING] Selectable list was removed in favor of a standard lined flushed list
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Removed progress variant with tooltip
 
 #### Spinner
 
