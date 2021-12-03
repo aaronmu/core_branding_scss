@@ -53,8 +53,8 @@
 
 .m-alert__icon {
   position: absolute;
-  left: var(--spacer);
-  top: var(--spacer);
+  left: var(--alert-padding);
+  top: var(--alert-padding);
 
   .ai {
     font-size: 1.5rem;
@@ -83,7 +83,7 @@
 }
 
 /**
- * ALERTS COLORS
+ * ALERTS MODIFIERS
  * -------------------------------------------------------------------
  */
 
@@ -109,6 +109,10 @@
   &.m-alert--success,
   &.m-alert--warning,
   &.m-alert--danger {
-    padding-left: var(--spacer-xxl);
+    padding-left: calc(var(--alert-padding) + var(--spacer-l));
   }
+}
+
+.m-alert.m-alert--inline {
+  --alert-padding: var(--spacer-xs);
 }
