@@ -948,24 +948,16 @@
                         <label for="checkbox1">Option one is unchecked</label>
                     </div>
                     <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox2" name="input-checkbox">
-                        <label for="checkbox2">Option two is indeterminate</label>
+                        <input type="checkbox" id="checkbox2" name="input-checkbox" checked="">
+                        <label for="checkbox2">Option two is checked</label>
                     </div>
                     <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox3" name="input-checkbox" checked="">
-                        <label for="checkbox3">Option three is checked</label>
+                        <input type="checkbox" id="checkbox3" name="input-checkbox" disabled="">
+                        <label for="checkbox3">Option three is disabled</label>
                     </div>
                     <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox4" name="input-checkbox" disabled="">
-                        <label for="checkbox4">Option four is disabled</label>
-                    </div>
-                    <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox5" name="input-checkbox" disabled="">
-                        <label for="checkbox5">Option five is indeterminate and disabled</label>
-                    </div>
-                    <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox6" name="input-checkbox" checked="" disabled="">
-                        <label for="checkbox6">Option six is checked and disabled</label>
+                        <input type="checkbox" id="checkbox4" name="input-checkbox" checked="" disabled="">
+                        <label for="checkbox4">Option four is checked and disabled</label>
                     </div>
                 </div>
             </div>
@@ -977,24 +969,64 @@
     &lt;label for="checkbox1"&gt;Option one is unchecked&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox2" name="input-checkbox"&gt;
-    &lt;label for="checkbox2"&gt;Option two is indeterminate&lt;/label&gt;
+    &lt;input type="checkbox" id="checkbox2" name="input-checkbox" checked=""&gt;
+    &lt;label for="checkbox2"&gt;Option two is checked&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox3" name="input-checkbox" checked=""&gt;
-    &lt;label for="checkbox3"&gt;Option three is checked&lt;/label&gt;
+    &lt;input type="checkbox" id="checkbox3" name="input-checkbox" disabled=""&gt;
+    &lt;label for="checkbox3"&gt;Option three is disabled&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox4" name="input-checkbox" disabled=""&gt;
-    &lt;label for="checkbox4"&gt;Option four is disabled&lt;/label&gt;
+    &lt;input type="checkbox" id="checkbox4" name="input-checkbox" checked="" disabled=""&gt;
+    &lt;label for="checkbox4"&gt;Option four is checked and disabled&lt;/label&gt;
   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input">
+                    <label class="a-input__label">Input with nested checkboxes</label>
+                    <div class="a-input__checkbox">
+                        <input type="checkbox" id="checkbox-indeterminate" name="input-checkbox">
+                        <label for="checkbox-indeterminate">Option one</label>
+                    </div>
+                    <div class="u-margin-left">
+                        <div class="a-input__checkbox">
+                            <input type="checkbox" id="nested-checkbox1" name="input-checkbox">
+                            <label for="nested-checkbox1">Nested option one</label>
+                        </div>
+                        <div class="a-input__checkbox">
+                            <input type="checkbox" id="nested-checkbox2" name="input-checkbox" checked="">
+                            <label for="nested-checkbox2">Nested option two</label>
+                        </div>
+                        <div class="a-input__checkbox">
+                            <input type="checkbox" id="nested-checkbox3" name="input-checkbox">
+                            <label for="nested-checkbox3">Nested option three</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label"&gt;Input with nested checkboxes&lt;/label&gt;
   &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox5" name="input-checkbox" disabled=""&gt;
-    &lt;label for="checkbox5"&gt;Option five is indeterminate and disabled&lt;/label&gt;
+    &lt;input type="checkbox" id="checkbox-indeterminate" name="input-checkbox"&gt;
+    &lt;label for="checkbox-indeterminate"&gt;Option one&lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox6" name="input-checkbox" checked="" disabled=""&gt;
-    &lt;label for="checkbox6"&gt;Option six is checked and disabled&lt;/label&gt;
+  &lt;div class="u-margin-left"&gt;
+    &lt;div class="a-input__checkbox"&gt;
+      &lt;input type="checkbox" id="nested-checkbox1" name="input-checkbox"&gt;
+      &lt;label for="nested-checkbox1"&gt;Nested option one&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="a-input__checkbox"&gt;
+      &lt;input type="checkbox" id="nested-checkbox2" name="input-checkbox" checked=""&gt;
+      &lt;label for="nested-checkbox2"&gt;Nested option two&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="a-input__checkbox"&gt;
+      &lt;input type="checkbox" id="nested-checkbox3" name="input-checkbox"&gt;
+      &lt;label for="nested-checkbox3"&gt;Nested option three&lt;/label&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
