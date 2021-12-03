@@ -11,23 +11,23 @@
   --label-font-weight:              var(--font-weight-bold);
 
   --label-color:                    var(--text-color);
-  --label-bg-color:                 #{$gray-100};
+  --label-bg-color:                 transparent;
   --label-border-color:             #{$gray-400};
 
   --label-primary-color:            var(--theme1-400);
-  --label-primary-bg-color:         var(--theme1-050);
+  --label-primary-bg-color:         var(--label-bg-color);
   --label-primary-border-color:     var(--label-primary-color);
 
   --label-success-color:            var(--success-600);
-  --label-success-bg-color:         var(--success-050);
+  --label-success-bg-color:         var(--label-bg-color);
   --label-success-border-color:     var(--label-success-color);
 
-  --label-warning-color:            var(--warning-600);
-  --label-warning-bg-color:         var(--warning-050);
-  --label-warning-border-color:     var(--label-warning-color);
+  --label-warning-color:            var(--text-color);
+  --label-warning-bg-color:         var(--label-bg-color);
+  --label-warning-border-color:     var(--warning-600);
 
   --label-danger-color:            var(--danger-500);
-  --label-danger-bg-color:         var(--danger-050);
+  --label-danger-bg-color:         var(--label-bg-color);
   --label-danger-border-color:     var(--label-danger-color);
 }
 
