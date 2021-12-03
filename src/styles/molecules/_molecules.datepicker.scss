@@ -219,14 +219,14 @@
   button {
     background-color: transparent;
     border-radius: var(--border-radius);
-    border: none;
+    border: var(--border-width) solid transparent;
     color: var(--datepicker-text-color);
     cursor: pointer;
     height: var(--spacer-xl);
     padding: 0;
     position: relative;
     transition-duration: var(--animation-duration);
-    transition-property: color, background-color;
+    transition-property: color, background-color, border;
     transition-timing-function: var(--animation-easing);
     width: 100%;
 
@@ -239,6 +239,10 @@
     }
 
     &.is-current {
+      border-color: var(--datepicker-border-color);
+    }
+
+    &.is-selected {
       background-color: var(--datepicker-active-color);
       color: var(--datepicker-text-color-xlight);
       font-weight: var(--font-weight-bold);
