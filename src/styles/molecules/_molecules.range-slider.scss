@@ -1,13 +1,12 @@
 /**
  * RANGE SLIDER VARIABLES
  * -------------------------------------------------------------------
- * This component has shared variables with _atoms.tooltip.scss. You can find them in _quarks.css-properties.scss.
  */
 
 .m-range-slider {
   --range-slider-height:            calc(var(--spacer) + var(--spacer-3xs));
   --range-slider-padding:           var(--spacer-3xs);
-  --range-slider-offset:            var(--shared-progress-tooltip-offset);
+  --range-slider-offset:            .625rem;
 
   --range-slider-bg-color:          #{$white};
   --range-slider-border-color:      var(--border-color);
@@ -24,7 +23,6 @@
   --range-slider-handle-padding:    calc(var(--range-slider-handle-size) / 2);
 
   --range-slider-value-height:      #{$font-size-base};
-  --range-slider-tooltip-top:       calc(((var(--range-slider-handle-size) * 2 - var(--range-slider-height)) / 2) - (var(--shared-tooltip-min-height) + var(--shared-tooltip-arrow-height) + var(--range-slider-offset)));
   --range-slider-value-top:         calc(((var(--range-slider-handle-size) * 2 - var(--range-slider-height)) / 2) - (var(--range-slider-value-height) + var(--range-slider-offset)));
 }
 
@@ -99,17 +97,12 @@
   }
 }
 
-.m-range-slider__tooltip,
 .m-range-slider__value {
   display: block;
   left: 50%;
   pointer-events: none;
   position: absolute;
   transform: translateX(-50%);
-}
-
-.m-range-slider__tooltip {
-  top: var(--range-slider-tooltip-top);
 }
 
 .m-range-slider__value {

@@ -161,6 +161,11 @@
 - [BREAKING] Replaced SASS variables by CSS properties
 - [BREAKING] Removed progress variant with tooltip
 
+#### Range slider
+
+##### Changed
+- [BREAKING] Removed range slider variant with tooltip
+
 #### Spinner
 
 ##### Added
@@ -192,6 +197,18 @@
   - Changed `.a-toggle--tiny` to `.a-toggle--xs`
   - Changed `.a-toggle--small` to `.a-toggle--s`
   - Changed `.a-toggle--large` to `.a-toggle--l`
+
+#### Toggle
+
+##### Added
+- Added inverted variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.a-tooltip--primary`
+  - Removed `.a-tooltip--secondary`
 
 #### Upload
 
