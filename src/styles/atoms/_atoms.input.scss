@@ -181,15 +181,8 @@ textarea {
  * -------------------------------------------------------------------
  */
 
-.a-input {
-  &.has-error {
-    --input-border-color: var(--input-danger-border-color);
-  }
-
-  &.is-required .a-input__label:after {
-    content: '*';
-    margin-left: var(--spacer-3xs);
-  }
+.a-input.has-error {
+  --input-border-color: var(--input-danger-border-color);
 }
 
 /**
