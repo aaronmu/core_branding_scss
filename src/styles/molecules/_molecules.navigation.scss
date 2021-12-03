@@ -37,6 +37,7 @@
 
   > li {
     display: flex;
+    flex-direction: column;
     font-weight: var(--nav-font-weight);
     line-height: $line-height-paragraph;
     min-height: var(--spacer-xl);
