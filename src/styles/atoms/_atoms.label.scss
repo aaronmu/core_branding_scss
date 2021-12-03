@@ -22,9 +22,9 @@
   --label-success-bg-color:         var(--label-bg-color);
   --label-success-border-color:     var(--label-success-color);
 
-  --label-warning-color:            var(--text-color);
+  --label-warning-color:            #{$burnt-orange-400};
   --label-warning-bg-color:         var(--label-bg-color);
-  --label-warning-border-color:     var(--warning-600);
+  --label-warning-border-color:     var(--label-warning-color);
 
   --label-danger-color:            var(--danger-500);
   --label-danger-bg-color:         var(--label-bg-color);
