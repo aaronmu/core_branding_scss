@@ -2826,199 +2826,253 @@
         <h4 class="u-margin-top-xl">Responsive wrapper for tables</h4>
         <div class="d">
             <div>
-                <div class="a-table__wrapper-responsive">
-                    <table class="a-table">
-                        <thead>
-                            <tr>
-                                <th>Snack</th>
-                                <th>Description</th>
-                                <th>Ingredients</th>
-                                <th class="u-text-right">Stock</th>
-                                <th class="u-text-right">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="u-text-bold">Ice cream</td>
-                                <td class="small">Tasty, frozen treat for a hot day</td>
-                                <td class="small">Milk, Vanilla</td>
-                                <td class="u-text-right small">160</td>
-                                <td class="u-text-right">€2,49</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Chips</td>
-                                <td class="small">Salty, crunchy goodness</td>
-                                <td class="small">Potatoes, sea salt</td>
-                                <td class="u-text-right small">48</td>
-                                <td class="u-text-right">€1,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Lollipop</td>
-                                <td class="small">Rainbow flavors with a bubblegum center</td>
-                                <td class="small">Water, corn syrup</td>
-                                <td class="u-text-right small">480</td>
-                                <td class="u-text-right">€0,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Candy bar</td>
-                                <td class="small">Chewy and quite nutty</td>
-                                <td class="small">Cocoa butter</td>
-                                <td class="u-text-right small">240</td>
-                                <td class="u-text-right">€1,49</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="a-table-responsive-wrapper has-shadow-left has-shadow-right">
+                    <div class="a-table-scrollable-wrapper">
+                        <table class="a-table">
+                            <thead>
+                                <tr>
+                                    <th>Snack</th>
+                                    <th>Description</th>
+                                    <th>Ingredients</th>
+                                    <th class="u-text-right">Stock</th>
+                                    <th class="u-text-right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="u-text-bold">Ice cream</td>
+                                    <td class="small">Tasty, frozen treat for a hot day</td>
+                                    <td class="small">Milk, Vanilla</td>
+                                    <td class="u-text-right small">160</td>
+                                    <td class="u-text-right">€2,49</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Chips</td>
+                                    <td class="small">Salty, crunchy goodness</td>
+                                    <td class="small">Potatoes, sea salt</td>
+                                    <td class="u-text-right small">48</td>
+                                    <td class="u-text-right">€1,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Lollipop</td>
+                                    <td class="small">Rainbow flavors with a bubblegum center</td>
+                                    <td class="small">Water, corn syrup</td>
+                                    <td class="u-text-right small">480</td>
+                                    <td class="u-text-right">€0,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Candy bar</td>
+                                    <td class="small">Chewy and quite nutty</td>
+                                    <td class="small">Cocoa butter</td>
+                                    <td class="u-text-right small">240</td>
+                                    <td class="u-text-right">€1,49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table__wrapper-responsive"&gt;
-  &lt;table class="a-table"&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Snack&lt;/th&gt;
-        &lt;th&gt;Description&lt;/th&gt;
-        &lt;th&gt;Ingredients&lt;/th&gt;
-        &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
-        &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="u-text-bold"&gt;Ice cream&lt;/td&gt;
-        &lt;td class="small"&gt;Tasty, frozen treat for a hot day&lt;/small&gt;&lt;/td&gt;
-        &lt;td class="small"&gt;Milk, Vanilla&lt;/small&gt;&lt;/td&gt;
-        &lt;td class="u-text-right small"&gt;160&lt;/small&gt;&lt;/td&gt;
-        &lt;td class="u-text-right"&gt;&euro;2,49&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table-responsive-wrapper has-shadow-left has-shadow-right"&gt;
+  &lt;div class="a-table-scrollable-wrapper"&gt;
+    &lt;table class="a-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div class="a-table__wrapper-responsive">
-                    <table class="a-table a-table--first-column-fixed">
-                        <thead>
-                            <tr>
-                                <th>Snack</th>
-                                <th>Description</th>
-                                <th>Ingredients</th>
-                                <th class="u-text-right">Stock</th>
-                                <th class="u-text-right">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="u-text-bold">Ice cream</td>
-                                <td class="small">Tasty, frozen treat for a hot day</td>
-                                <td class="small">Milk, Vanilla</td>
-                                <td class="u-text-right small">160</td>
-                                <td class="u-text-right">€2,49</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Chips</td>
-                                <td class="small">Salty, crunchy goodness</td>
-                                <td class="small">Potatoes, sea salt</td>
-                                <td class="u-text-right small">48</td>
-                                <td class="u-text-right">€1,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Lollipop</td>
-                                <td class="small">Rainbow flavors with a bubblegum center</td>
-                                <td class="small">Water, corn syrup</td>
-                                <td class="u-text-right small">480</td>
-                                <td class="u-text-right">€0,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Candy bar</td>
-                                <td class="small">Chewy and quite nutty</td>
-                                <td class="small">Cocoa butter</td>
-                                <td class="u-text-right small">240</td>
-                                <td class="u-text-right">€1,49</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="a-table-responsive-wrapper has-first-column-fixed has-shadow-left has-shadow-right">
+                    <div class="a-table-scrollable-wrapper">
+                        <table class="a-table">
+                            <thead>
+                                <tr>
+                                    <th>Snack</th>
+                                    <th>Description</th>
+                                    <th>Ingredients</th>
+                                    <th class="u-text-right">Stock</th>
+                                    <th class="u-text-right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="u-text-bold">Ice cream</td>
+                                    <td class="small">Tasty, frozen treat for a hot day</td>
+                                    <td class="small">Milk, Vanilla</td>
+                                    <td class="u-text-right small">160</td>
+                                    <td class="u-text-right">€2,49</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Chips</td>
+                                    <td class="small">Salty, crunchy goodness</td>
+                                    <td class="small">Potatoes, sea salt</td>
+                                    <td class="u-text-right small">48</td>
+                                    <td class="u-text-right">€1,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Lollipop</td>
+                                    <td class="small">Rainbow flavors with a bubblegum center</td>
+                                    <td class="small">Water, corn syrup</td>
+                                    <td class="u-text-right small">480</td>
+                                    <td class="u-text-right">€0,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Candy bar</td>
+                                    <td class="small">Chewy and quite nutty</td>
+                                    <td class="small">Cocoa butter</td>
+                                    <td class="u-text-right small">240</td>
+                                    <td class="u-text-right">€1,49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table__wrapper-responsive"&gt;
-  &lt;table class="a-table a-table--first-column-fixed"&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;...&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;...&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table-responsive-wrapper has-first-column-fixed has-shadow-left has-shadow-right"&gt;
+  &lt;div class="a-table-scrollable-wrapper"&gt;
+    &lt;table class="a-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div class="a-table__wrapper-responsive">
-                    <table class="a-table a-table--last-column-fixed">
-                        <thead>
-                            <tr>
-                                <th>Snack</th>
-                                <th>Description</th>
-                                <th>Ingredients</th>
-                                <th class="u-text-right">Stock</th>
-                                <th class="u-text-right">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="u-text-bold">Ice cream</td>
-                                <td class="small">Tasty, frozen treat for a hot day</td>
-                                <td class="small">Milk, Vanilla</td>
-                                <td class="u-text-right small">160</td>
-                                <td class="u-text-right">€2,49</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Chips</td>
-                                <td class="small">Salty, crunchy goodness</td>
-                                <td class="small">Potatoes, sea salt</td>
-                                <td class="u-text-right small">48</td>
-                                <td class="u-text-right">€1,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Lollipop</td>
-                                <td class="small">Rainbow flavors with a bubblegum center</td>
-                                <td class="small">Water, corn syrup</td>
-                                <td class="u-text-right small">480</td>
-                                <td class="u-text-right">€0,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Candy bar</td>
-                                <td class="small">Chewy and quite nutty</td>
-                                <td class="small">Cocoa butter</td>
-                                <td class="u-text-right small">240</td>
-                                <td class="u-text-right">€1,49</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="a-table-responsive-wrapper has-last-column-fixed has-shadow-left has-shadow-right">
+                    <div class="a-table-scrollable-wrapper">
+                        <table class="a-table">
+                            <thead>
+                                <tr>
+                                    <th>Snack</th>
+                                    <th>Description</th>
+                                    <th>Ingredients</th>
+                                    <th class="u-text-right">Stock</th>
+                                    <th class="u-text-right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="u-text-bold">Ice cream</td>
+                                    <td class="small">Tasty, frozen treat for a hot day</td>
+                                    <td class="small">Milk, Vanilla</td>
+                                    <td class="u-text-right small">160</td>
+                                    <td class="u-text-right">€2,49</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Chips</td>
+                                    <td class="small">Salty, crunchy goodness</td>
+                                    <td class="small">Potatoes, sea salt</td>
+                                    <td class="u-text-right small">48</td>
+                                    <td class="u-text-right">€1,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Lollipop</td>
+                                    <td class="small">Rainbow flavors with a bubblegum center</td>
+                                    <td class="small">Water, corn syrup</td>
+                                    <td class="u-text-right small">480</td>
+                                    <td class="u-text-right">€0,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Candy bar</td>
+                                    <td class="small">Chewy and quite nutty</td>
+                                    <td class="small">Cocoa butter</td>
+                                    <td class="u-text-right small">240</td>
+                                    <td class="u-text-right">€1,49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table__wrapper-responsive"&gt;
-  &lt;table class="a-table a-table--last-column-fixed"&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;...&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;...&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table-responsive-wrapper has-last-column-fixed has-shadow-left has-shadow-right"&gt;
+  &lt;div class="a-table-scrollable-wrapper"&gt;
+    &lt;table class="a-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-table-responsive-wrapper has-first-column-fixed has-last-column-fixed has-shadow-left has-shadow-right">
+                    <div class="a-table-scrollable-wrapper">
+                        <table class="a-table">
+                            <thead>
+                                <tr>
+                                    <th>Snack</th>
+                                    <th>Description</th>
+                                    <th>Ingredients</th>
+                                    <th class="u-text-right">Stock</th>
+                                    <th class="u-text-right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="u-text-bold">Ice cream</td>
+                                    <td class="small">Tasty, frozen treat for a hot day</td>
+                                    <td class="small">Milk, Vanilla</td>
+                                    <td class="u-text-right small">160</td>
+                                    <td class="u-text-right">€2,49</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Chips</td>
+                                    <td class="small">Salty, crunchy goodness</td>
+                                    <td class="small">Potatoes, sea salt</td>
+                                    <td class="u-text-right small">48</td>
+                                    <td class="u-text-right">€1,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Lollipop</td>
+                                    <td class="small">Rainbow flavors with a bubblegum center</td>
+                                    <td class="small">Water, corn syrup</td>
+                                    <td class="u-text-right small">480</td>
+                                    <td class="u-text-right">€0,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Candy bar</td>
+                                    <td class="small">Chewy and quite nutty</td>
+                                    <td class="small">Cocoa butter</td>
+                                    <td class="u-text-right small">240</td>
+                                    <td class="u-text-right">€1,49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table-responsive-wrapper has-first-column-fixed has-last-column-fixed has-shadow-left has-shadow-right"&gt;
+  &lt;div class="a-table-scrollable-wrapper"&gt;
+    &lt;table class="a-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
