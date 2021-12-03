@@ -2162,25 +2162,25 @@
                     <caption>Standard table with sortable columns</caption>
                     <thead>
                         <tr>
-                            <th class="has-no-padding" aria-sort="none">
+                            <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button">
                                     Snack {{ icon.render('move-expand-vertical') }}
                                 </button>
                             </th>
 
-                            <th class="has-no-padding" aria-sort="none">
+                            <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button">
                                     Description {{ icon.render('move-expand-vertical') }}
                                 </button>
                             </th>
 
-                            <th class="has-no-padding" aria-sort="none">
+                            <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button a-table__sort-button--align-right">
                                     Stock {{ icon.render('move-expand-vertical') }}
                                 </button>
                             </th>
 
-                            <th class="has-no-padding" aria-sort="none">
+                            <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button a-table__sort-button--align-right">
                                     Price {{ icon.render('move-expand-vertical') }}
                                 </button>
@@ -2220,25 +2220,25 @@
   &lt;caption&gt;Standard table with sortable columns&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th class="has-no-padding" aria-sort="none"&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button"&gt;
           Snack {{ icon.code('move-expand-vertical') }}
         &lt;/button&gt;
       &lt;/th&gt;
 
-      &lt;th class="has-no-padding" aria-sort="none"&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button"&gt;
           Description {{ icon.code('move-expand-vertical') }}
         &lt;/button&gt;
       &lt;/th&gt;
 
-      &lt;th class="has-no-padding" aria-sort="none"&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
           Stock {{ icon.code('move-expand-vertical') }}
         &lt;/button&gt;
       &lt;/th&gt;
 
-      &lt;th class="has-no-padding" aria-sort="none"&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
           Price {{ icon.code('move-expand-vertical') }}
         &lt;/button&gt;
@@ -2530,64 +2530,68 @@
         <div class="d">
             <div>
                 <table class="a-table">
-                    <caption>Paddingless table</caption>
+                    <caption>Table with less padding</caption>
                     <thead>
                         <tr>
-                            <th class="has-no-padding">Snack</th>
-                            <th class="has-no-padding">Description</th>
-                            <th class="has-no-padding u-text-right">Stock</th>
-                            <th class="has-no-padding u-text-right">Price</th>
+                            <th class="is-condensed">Snack</th>
+                            <th class="is-condensed">Description</th>
+                            <th class="is-condensed u-text-right">Stock</th>
+                            <th class="is-condensed u-text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="has-no-padding u-text-bold">Ice cream</td>
-                            <td class="has-no-padding small">Tasty, frozen treat for a hot day</td>
-                            <td class="has-no-padding u-text-right small">160</td>
-                            <td class="has-no-padding u-text-right">€2,49</td>
+                            <td class="is-condensed u-text-bold">Ice cream</td>
+                            <td class="is-condensed small">Tasty, frozen treat for a hot day</td>
+                            <td class="is-condensed u-text-right small">160</td>
+                            <td class="is-condensed u-text-right">€2,49</td>
+                            <td class="is-condensed"><button class="a-button a-button--s">Buy</button></td>
                         </tr>
                         <tr>
-                            <td class="has-no-padding u-text-bold">Chips</td>
-                            <td class="has-no-padding small">Salty, crunchy goodness</td>
-                            <td class="has-no-padding u-text-right small">48</td>
-                            <td class="has-no-padding u-text-right">€1,99</td>
+                            <td class="is-condensed u-text-bold">Chips</td>
+                            <td class="is-condensed small">Salty, crunchy goodness</td>
+                            <td class="is-condensed u-text-right small">48</td>
+                            <td class="is-condensed u-text-right">€1,99</td>
+                            <td class="is-condensed"><button class="a-button a-button--s">Buy</button></td>
                         </tr>
                         <tr>
-                            <td class="has-no-padding u-text-bold">Lollipop</td>
-                            <td class="has-no-padding small">Rainbow flavors with a bubblegum center</td>
-                            <td class="has-no-padding u-text-right small">480</td>
-                            <td class="has-no-padding u-text-right">€0,99</td>
+                            <td class="is-condensed u-text-bold">Lollipop</td>
+                            <td class="is-condensed small">Rainbow flavors with a bubblegum center</td>
+                            <td class="is-condensed u-text-right small">480</td>
+                            <td class="is-condensed u-text-right">€0,99</td>
+                            <td class="is-condensed"><button class="a-button a-button--s">Buy</button></td>
                         </tr>
                         <tr>
-                            <td class="has-no-padding u-text-bold">Candy bar</td>
-                            <td class="has-no-padding small">Chewy and quite nutty</td>
-                            <td class="has-no-padding u-text-right small">240</td>
-                            <td class="has-no-padding u-text-right">€1,49</td>
+                            <td class="is-condensed u-text-bold">Candy bar</td>
+                            <td class="is-condensed small">Chewy and quite nutty</td>
+                            <td class="is-condensed u-text-right small">240</td>
+                            <td class="is-condensed u-text-right">€1,49</td>
+                            <td class="is-condensed"><button class="a-button a-button--s">Buy</button></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
-  &lt;caption&gt;Paddingless table&lt;/caption&gt;
+  &lt;caption&gt;Table with less padding&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th class="has-no-padding"&gt;Table cells without padding&lt;/th&gt;
-      &lt;th class="has-no-padding"&gt;...&lt;/th&gt;
+      &lt;th class="is-condensed"&gt;Table cells with smaller padding&lt;/th&gt;
+      &lt;th class="is-condensed"&gt;...&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>

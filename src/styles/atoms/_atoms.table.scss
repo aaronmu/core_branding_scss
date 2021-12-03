@@ -80,7 +80,11 @@
       text-align: left;
     }
 
-    &.has-no-padding {
+    &.is-condensed {
+      padding: var(--spacer-3xs) var(--spacer-xs);
+    }
+
+    &.is-collapsed {
       padding: 0;
     }
   }
