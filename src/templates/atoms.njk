@@ -2144,7 +2144,7 @@
 
                             <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button">
-                                    Description {{ icon.render('move-expand-vertical') }}
+                                    Description {{ icon.render('keyboard-arrow-down') }}
                                 </button>
                             </th>
 
@@ -2188,6 +2188,8 @@
                         </tr>
                     </tbody>
                 </table>
+                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
+                <div class="u-screen-reader-only" aria-live="polite">Description column sorted down</div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
@@ -2202,7 +2204,7 @@
 
       &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button"&gt;
-          Description {{ icon.code('move-expand-vertical') }}
+          Description {{ icon.code('keyboard-arrow-down') }}
         &lt;/button&gt;
       &lt;/th&gt;
 
@@ -2233,7 +2235,9 @@
       &lt;td&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
-&lt;/table&gt;</code></pre>
+&lt;/table&gt;
+
+&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted down&lt;/div&gt;</code></pre>
             </div>
         </div>
 
