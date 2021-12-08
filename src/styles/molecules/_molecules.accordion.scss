@@ -23,6 +23,27 @@
  * -------------------------------------------------------------------
  */
 
+.m-accordion:not(.m-accordion--open) {
+  .m-accordion__tab.is-open .m-accordion__header {
+    --accordion-header-bg-color: #{$gray-100};
+
+    &:hover,
+    &:active,
+    &:focus {
+      --accordion-header-bg-color: var(--accordion-header-hover-bg-color);
+      --accordion-header-border-color: var(--accordion-header-hover-border-color);
+    }
+  }
+
+  .m-accordion__header {
+    &:hover,
+    &:active,
+    &:focus {
+      --accordion-header-border-color: var(--accordion-header-hover-border-color);
+    }
+  }
+}
+
 /**
  * ACCORDION ELEMENTS
  * -------------------------------------------------------------------
@@ -35,8 +56,6 @@
 
   &.is-open {
     .m-accordion__header {
-      --accordion-header-bg-color: #{$gray-100};
-
       font-weight: var(--font-weight-bold);
 
       &:after {
@@ -47,8 +66,6 @@
       &:active,
       &:focus {
         --accordion-header-color: var(--accordion-header-hover-color);
-        --accordion-header-bg-color: var(--accordion-header-hover-bg-color);
-        --accordion-header-border-color: var(--accordion-header-hover-border-color);
         --accordion-icon-color: var(--accordion-icon-hover-color);
       }
     }
@@ -80,7 +97,6 @@
   &:focus {
     --accordion-header-color: var(--accordion-header-hover-color);
     --accordion-header-bg-color: var(--accordion-header-hover-bg-color);
-    --accordion-header-border-color: var(--accordion-header-hover-border-color);
     --accordion-icon-color: var(--accordion-icon-hover-color);
 
     z-index: 1;
