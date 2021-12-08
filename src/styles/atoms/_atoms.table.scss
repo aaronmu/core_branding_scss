@@ -159,18 +159,20 @@
   position: relative;
 
   &:not(.has-first-column-fixed) {
+    // Display a drop shadow on the left inner side of the table
     &.has-shadow-left:before {
       background-color: var(--box-shadow-color);
       bottom: 0;
       content: '';
-      position: absolute;
       left: 0;
+      position: absolute;
       top: 0;
       width: var(--spacer-xs);
     }
   }
 
   &:not(.has-last-column-fixed) {
+    // Display a drop shadow on the right inner side of the table
     &.has-shadow-right:after {
       background-color: var(--box-shadow-color);
       bottom: 0;
@@ -182,6 +184,7 @@
     }
   }
 
+  // Make first column of the table fixed
   &.has-first-column-fixed {
     table {
       tr th:first-child,
@@ -193,6 +196,10 @@
       }
     }
 
+    /*
+      When the first column of the table is fixed, the drop shadow on the
+      left side of the table is displayed on the right side of the fixed first column
+    */
     &.has-shadow-left table {
       tr th:first-child,
       tr td:first-child {
@@ -210,6 +217,7 @@
     }
   }
 
+  // Make last column of the table fixed
   &.has-last-column-fixed {
     table {
       tr th:last-child,
@@ -221,6 +229,10 @@
       }
     }
 
+    /*
+      When the last column of the table is fixed, the drop shadow on the
+      right side of the table is displayed on the lefst side of the fixed last column
+    */
     &.has-shadow-right table {
       tr th:last-child,
       tr td:last-child {
