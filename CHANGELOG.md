@@ -80,6 +80,13 @@
   - Changed `.a-button--small` to `.a-button--s`
   - Changed `.a-button--large` to `.a-button--l`
 
+#### Datepicker
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes
+
 #### Flyout
 
 ##### Added
@@ -154,6 +161,11 @@
 - [BREAKING] Replaced SASS variables by CSS properties
 - [BREAKING] Removed progress variant with tooltip
 
+#### Selectable list
+
+##### Changed
+- [BREAKING] Selectable list styling got removed
+
 #### Spinner
 
 ##### Added
@@ -175,8 +187,22 @@
 
 #### Table
 
+##### Added
+- Added helper classes to set fixed columns and drop shadows
+- Added `.is-condensed` to decrease padding in table cell
+
 ##### Changed
-- [BREAKING] Changed `.a-table--small` to `.a-table--s`
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-table--small` to `.a-table--s`
+  - Changed `.a-table__wrapper-responsive` to `.a-table-scrollable-wrapper`
+  - Changed `.has-no-padding` to `.is-collapsed`
+
+#### Timepicker
+
+##### Changed
+- [BREAKING] Timepicker styling got removed
 
 #### Toggle
 
