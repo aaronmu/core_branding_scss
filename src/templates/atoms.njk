@@ -847,14 +847,14 @@
             <div>
                 <div class="a-input">
                     <label class="a-input__label" for="text-field">Text field</label>
-                    <small class="a-input__description">Input description</small>
+                    <small class="a-input__description" id="text-field-description">Input description</small>
                     <input type="text" name="text-field" id="text-field" aria-describedby="text-field-description" />
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
   &lt;label class="a-input__label" for="text-field"&gt;Text field&lt;/label&gt;
-  &lt;small class="a-input__description"&gt;Input description&lt;/small&gt;
+  &lt;small class="a-input__description" id="text-field-description"&gt;Input description&lt;/small&gt;
   &lt;input type="text" name="text-field" id="text-field" aria-describedby="text-field-description" /&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -863,13 +863,13 @@
             <div>
                 <div class="a-input">
                     <label class="a-input__label" for="text-field-disabled">Text field disabled</label>
-                    <input type="text" name="text-field-disabled" id="text-field-disabled" aria-describedby="text-field-description" disabled />
+                    <input type="text" name="text-field-disabled" id="text-field-disabled" disabled />
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
   &lt;label class="a-input__label" for="text-field-disabled"&gt;Text field&lt;/label&gt;
-  &lt;input type="text" name="text-field-disabled" id="text-field-disabled" aria-describedby="text-field-description" disabled /&gt;
+  &lt;input type="text" name="text-field-disabled" id="text-field-disabled" disabled /&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -877,13 +877,13 @@
             <div>
                 <div class="a-input">
                     <label class="a-input__label" for="text-field-readonly">Text field readonly</label>
-                    <input type="text" name="text-field-readonly" id="text-field-readonly" aria-describedby="text-field-description" readonly />
+                    <input type="text" name="text-field-readonly" id="text-field-readonly" readonly />
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
   &lt;label class="a-input__label" for="text-field-readonly"&gt;Text field&lt;/label&gt;
-  &lt;input type="text" name="text-field-readonly" id="text-field-readonly" aria-describedby="text-field-description" readonly /&gt;
+  &lt;input type="text" name="text-field-readonly" id="text-field-readonly" readonly /&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -929,17 +929,17 @@
             <div>
                 <div class="a-input">
                     <label class="a-input__label" for="text-field-with-character-counter">Text field with character counter</label>
-                    <small class="a-input__description">Input description</small>
-                    <input type="text" name="text-field-with-character-counter" id="text-field-with-character-counter" aria-describedby="text-field-description" />
+                    <small class="a-input__description" id="text-field-with-character-counter-description">Input description</small>
+                    <input type="text" name="text-field-with-character-counter" id="text-field-with-character-counter" aria-describedby="text-field-with-character-counter-description" />
                     <small aria-live="polite" class="a-input__description u-text-right">0 / 200</small>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
   &lt;label class="a-input__label" for="text-field-with-character-counter"&gt;Text field with character counter&lt;/label&gt;
-  &lt;div class="a-input__description"&gt;Input description&lt;/div&gt;
-  &lt;input type="text" name="text-field-with-character-counter" id="text-field-with-character-counter" aria-describedby="text-field-description" /&gt;
-  &lt;div aria-live="polite" class="a-input__description u-text-right"&gt;0 / 200&lt;/div&gt;
+  &lt;small class="a-input__description" id="text-field-with-character-counter-description"&gt;Input description&lt;/small&gt;
+  &lt;input type="text" name="text-field-with-character-counter" id="text-field-with-character-counter" aria-describedby="text-field-with-character-counter-description" /&gt;
+  &lt;small aria-live="polite" class="a-input__description u-text-right"&gt;0 / 200&lt;/small&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -1309,18 +1309,18 @@
             <div>
                 <div class="a-input">
                     <label class="a-input__label" for="text-field-success">Success text field</label>
-                    <small class="a-input__description is-success">{{ icon.render('check-1') }} Success description</small>
+                    <small class="a-input__description is-success" id="text-field-success-description">{{ icon.render('check-1') }} Success description</small>
                     <div class="a-input__wrapper">
-                        <input type="text" name="text-field-success" id="text-field-success" />
+                        <input type="text" name="text-field-success" id="text-field-success" aria-describedby="text-field-success-description" />
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
   &lt;label class="a-input__label" for="text-field-success"&gt;Success text field&lt;/label&gt;
-  &lt;small class="a-input__description is-success"&gt;{{ icon.code('check-1') }} Success description&lt;/div&gt;
+  &lt;small class="a-input__description is-success" id="text-field-success-description"&gt;{{ icon.code('check-1') }} Success description&lt;/div&gt;
   &lt;div class="a-input__wrapper"&gt;
-    &lt;input type="text" name="text-field-success" id="text-field-success" /&gt;
+    &lt;input type="text" name="text-field-success" id="text-field-success" aria-describedby="text-field-success-description" /&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -1329,18 +1329,18 @@
             <div>
                 <div class="a-input has-error">
                     <label class="a-input__label" for="text-field-error">Error text field</label>
-                    <small class="a-input__description is-error">{{ icon.render('alert-triangle') }} Error description</small>
+                    <small class="a-input__description is-error" id="text-field-error-description">{{ icon.render('alert-triangle') }} Error description</small>
                     <div class="a-input__wrapper">
-                        <input type="text" name="text-field-error" id="text-field-error" />
+                        <input type="text" name="text-field-error" id="text-field-error" aria-describedby="text-field-error-description" />
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input has-error"&gt;
   &lt;label class="a-input__label" for="text-field-error"&gt;Error text field&lt;/label&gt;
-  &lt;small class="a-input__description is-error"&gt;{{ icon.code('alert-triangle') }}Error description&lt;/small&gt;
+  &lt;small class="a-input__description is-error" id="text-field-error-description"&gt;{{ icon.code('alert-triangle') }}Error description&lt;/small&gt;
   &lt;div class="a-input__wrapper"&gt;
-    &lt;input type="text" name="text-field-error" id="text-field-error" /&gt;
+    &lt;input type="text" name="text-field-error" id="text-field-error" aria-describedby="text-field-error-description" /&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
