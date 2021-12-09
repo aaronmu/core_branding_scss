@@ -686,10 +686,10 @@
                             <button type="button" aria-label="Go to next month, June 2021" class="a-button a-button--text a-button--neutral has-icon">{{ icon.render('arrow-right-1') }}</button>
                         </div>
                     </div>
-                    <div class="m-datepicker__day-view">
+                    <div class="m-datepicker__grid">
                         <table>
                             <thead>
-                                <tr class="m-datepicker__week-days">
+                                <tr class="m-datepicker__grid-head">
                                     <th scope="col"><span title="Monday">Mo</span></th>
                                     <th scope="col"><span title="Tuesday">Tu</span></th>
                                     <th scope="col"><span title="Wednesday">We</span></th>
@@ -699,7 +699,7 @@
                                     <th scope="col"><span title="Sunday">Su</span></th>
                                 </tr>
                             </thead>
-                            <tbody class="m-datepicker__calendar-days">
+                            <tbody class="m-datepicker__grid-body">
                                 <tr>
                                     <td><button type="button" class="is-faded" aria-label="Monday 27 April 2021"><span>27</span></button></td>
                                     <td><button type="button" class="is-faded" aria-label="Tuesday 28 April 2021"><span>28</span></button></td>
@@ -760,10 +760,10 @@
       &lt;button type="button" aria-label="Go to next month, June 2021" class="a-button a-button--text a-button--neutral has-icon"&gt;{{ icon.render('arrow-right-1') }}&lt;/button&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class="m-datepicker__day-view"&gt;
+  &lt;div class="m-datepicker__grid"&gt;
     &lt;table&gt;
       &lt;thead&gt;
-        &lt;tr class="m-datepicker__week-days"&gt;
+        &lt;tr class="m-datepicker__grid-head"&gt;
           &lt;th scope="col"&gt;&lt;span title="Monday"&gt;Mo&lt;/span&gt;&lt;/th&gt;
           &lt;th scope="col"&gt;&lt;span title="Tuesday"&gt;Tu&lt;/span&gt;&lt;/th&gt;
           &lt;th scope="col"&gt;&lt;span title="Wednesday"&gt;We&lt;/span&gt;&lt;/th&gt;
@@ -773,7 +773,7 @@
           &lt;th scope="col"&gt;&lt;span title="Sunday"&gt;Su&lt;/span&gt;&lt;/th&gt;
         &lt;/tr&gt;
       &lt;/thead&gt;
-      &lt;tbody class="m-datepicker__calendar-days"&gt;
+      &lt;tbody class="m-datepicker__grid-body"&gt;
         &lt;tr&gt;
           &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Monday 27 April 2021"&gt;&lt;span&gt;27&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;
           &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Tuesday 28 April 2021"&gt;&lt;span&gt;28&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;
@@ -831,9 +831,72 @@
                     <div class="m-datepicker__nav">
                         <button type="button" class="m-datepicker__nav-title">May 2021 {{ icon.render('arrow-up-1') }}</button>
                     </div>
-                    <div class="m-datepicker__year-view">
+                    <div class="m-datepicker__list">
                         <table>
-                            <tbody class="m-datepicker__calendar-years">
+                            <tbody class="m-datepicker__list-body">
+                                <tr>
+                                    <td><button type="button">January</button></td>
+                                    <td><button type="button">February</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button">March</button></td>
+                                    <td><button type="button">April</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button" class="is-selected">May</button></td>
+                                    <td><button type="button">June</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button">July</button></td>
+                                    <td><button type="button">August</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button">September</button></td>
+                                    <td><button type="button">October</button></td>
+                                </tr>
+                                <tr>
+                                    <td><button type="button">November</button></td>
+                                    <td><button type="button" class="is-current">December</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false"&gt;
+  &lt;div class="m-datepicker__nav"&gt;
+    &lt;button type="button" class="m-datepicker__nav-title"&gt;May 2021 {{ icon.code('arrow-up-1') }}&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="m-datepicker__list"&gt;
+    &lt;table&gt;
+      &lt;tbody class="m-datepicker__list-body"&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;button type="button" class="is-selected"&gt;May&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button type="button"&gt;June&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;button type="button"&gt;November&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button type="button" class="is-current"&gt;December&lt;/button&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false">
+                    <div class="m-datepicker__nav">
+                        <button type="button" class="m-datepicker__nav-title">May 2021 {{ icon.render('arrow-up-1') }}</button>
+                    </div>
+                    <div class="m-datepicker__list">
+                        <table>
+                            <tbody class="m-datepicker__list-body">
                                 <tr>
                                     <td><button type="button">1971</button></td>
                                     <td><button type="button">1972</button></td>
@@ -964,9 +1027,9 @@
   &lt;div class="m-datepicker__nav"&gt;
     &lt;button type="button" class="m-datepicker__nav-title"&gt;May 2021 {{ icon.code('arrow-up-1') }}&lt;/button&gt;
   &lt;/div&gt;
-  &lt;div class="m-datepicker__year-view"&gt;
+  &lt;div class="m-datepicker__list"&gt;
     &lt;table&gt;
-      &lt;tbody class="m-datepicker__calendar-years"&gt;
+      &lt;tbody class="m-datepicker__list-body"&gt;
         &lt;tr&gt;...&lt;/tr&gt;
         &lt;tr&gt;
           &lt;td&gt;&lt;button type="button"&gt;2015&lt;/button&gt;&lt;/td&gt;
@@ -1005,10 +1068,10 @@
                                     <button type="button" aria-label="Go to next month, June 2021" class="a-button a-button--text a-button--neutral has-icon">{{ icon.render('arrow-right-1') }}</button>
                                 </div>
                             </div>
-                            <div class="m-datepicker__day-view">
+                            <div class="m-datepicker__grid">
                                 <table>
                                     <thead>
-                                        <tr class="m-datepicker__week-days">
+                                        <tr class="m-datepicker__grid-head">
                                             <th scope="col"><span title="Monday">Mo</span></th>
                                             <th scope="col"><span title="Tuesday">Tu</span></th>
                                             <th scope="col"><span title="Wednesday">We</span></th>
@@ -1018,7 +1081,7 @@
                                             <th scope="col"><span title="Sunday">Su</span></th>
                                         </tr>
                                     </thead>
-                                    <tbody class="m-datepicker__calendar-days">
+                                    <tbody class="m-datepicker__grid-body">
                                         <tr>
                                             <td><button type="button" class="is-faded" aria-label="Monday 27 April 2021"><span>27</span></button></td>
                                             <td><button type="button" class="is-faded" aria-label="Tuesday 28 April 2021"><span>28</span></button></td>
@@ -1092,10 +1155,10 @@
           &lt;button type="button" aria-label="Go to next month, June 2021" class="a-button a-button--text a-button--neutral has-icon"&gt;{{ icon.render('arrow-right-1') }}&lt;/button&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="m-datepicker__day-view"&gt;
+      &lt;div class="m-datepicker__grid"&gt;
         &lt;table&gt;
           &lt;thead&gt;
-            &lt;tr class="m-datepicker__week-days"&gt;
+            &lt;tr class="m-datepicker__grid-head"&gt;
               &lt;th scope="col"&gt;&lt;span title="Monday"&gt;Mo&lt;/span&gt;&lt;/th&gt;
               &lt;th scope="col"&gt;&lt;span title="Tuesday"&gt;Tu&lt;/span&gt;&lt;/th&gt;
               &lt;th scope="col"&gt;&lt;span title="Wednesday"&gt;We&lt;/span&gt;&lt;/th&gt;
@@ -1105,7 +1168,7 @@
               &lt;th scope="col"&gt;&lt;span title="Sunday"&gt;Su&lt;/span&gt;&lt;/th&gt;
             &lt;/tr&gt;
           &lt;/thead&gt;
-          &lt;tbody class="m-datepicker__calendar-days"&gt;
+          &lt;tbody class="m-datepicker__grid-body"&gt;
             &lt;tr&gt;
               &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Monday 27 April 2021"&gt;&lt;span&gt;27&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;
               &lt;td&gt;&lt;button type="button" class="is-faded" aria-label="Tuesday 28 April 2021"&gt;&lt;span&gt;28&lt;/span&gt;&lt;/button&gt;&lt;/td&gt;
