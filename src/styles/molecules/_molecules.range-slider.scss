@@ -78,6 +78,13 @@
   bottom: 0;
   position: absolute;
   top: 0;
-  transform: translateX(-50%);
   width: calc(var(--border-width) * 2);
+
+  &:not(:first-child):not(:last-child) {
+    transform: translateX(-50%);
+  }
+
+  &:last-child {
+    transform: translateX(-100%);
+  }
 }
