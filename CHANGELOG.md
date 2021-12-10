@@ -121,6 +121,14 @@
 - [BREAKING] Changed the way of adding a description, success and error message to an input field
 - [BREAKING] Removed warning messages
 
+#### Label
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.a-label--secondary`
+
 #### List
 
 ##### Added
