@@ -221,6 +221,26 @@
 .m-datepicker__list-body {
   background-color: var(--datepicker-bg-color);
 
+  tr {
+    &:first-child button {
+      border-top: 0;
+    }
+
+    &:last-child button {
+      border-bottom: 0;
+    }
+
+    td {
+      &:first-child button {
+        border-left: 0;
+      }
+
+      &:last-child button {
+        border-right: 0;
+      }
+    }
+  }
+
   td {
     padding: 0;
   }
