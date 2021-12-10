@@ -182,13 +182,6 @@
   // Header
   --shared-header-height:                  var(--spacer-xl);
 
-  // Tooltip
-  --shared-tooltip-min-height:             var(--spacer-l);
-  --shared-tooltip-arrow-height:           calc(var(--spacer) / 4);
-
-  // Progress
-  --shared-progress-tooltip-offset:        .625rem;
-
   // Slideshow
   --shared-slideshow-footer-color-light:   #{$white};
 }
