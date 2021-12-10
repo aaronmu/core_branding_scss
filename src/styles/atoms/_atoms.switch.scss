@@ -13,9 +13,8 @@
   --switch-label-width:                                var(--spacer-l);
   --switch-label-font-size:                            1rem;
   --switch-label-color:                                var(--text-color);
-  --switch-label-disabled-color:                       var(--text-color-light);
+  --switch-label-disabled-color:                       #{$gray-300};
 
-  // Contained switch
   --switch-bg-color:                                   #{$gray-300};
   --switch-border-color:                               var(--switch-bg-color);
   --switch-handle-bg-color:                            #{$white};
@@ -24,30 +23,9 @@
   --switch-active-border-color:                        var(--switch-active-bg-color);
   --switch-handle-active-bg-color:                     #{$white};
 
-  --switch-disabled-bg-color:                          #{$gray-300};
+  --switch-disabled-bg-color:                          #{$gray-200};
   --switch-disabled-border-color:                      var(--switch-disabled-bg-color);
-  --switch-handle-disabled-bg-color:                   #{$gray-100};
-
-  --switch-disabled-active-bg-color:                   var(--theme1-400);
-  --switch-disabled-active-border-color:               var(--switch-disabled-active-border-color);
-  --switch-handle-disabled-active-bg-color:            #{$gray-100};
-
-  // Outlined switch
-  --switch-outlined-bg-color:                          #{$white};
-  --switch-outlined-border-color:                      #{$gray-300};
-  --switch-outlined-handle-bg-color:                   #{$gray-300};
-
-  --switch-outlined-active-bg-color:                   #{$white};
-  --switch-outlined-active-border-color:               var(--theme1-400);
-  --switch-outlined-handle-active-bg-color:            var(--theme1-400);
-
-  --switch-outlined-disabled-bg-color:                 #{$gray-100};
-  --switch-outlined-disabled-border-color:             #{$gray-300};
-  --switch-outlined-handle-disabled-bg-color:          #{$gray-300};
-
-  --switch-outlined-disabled-active-bg-color:          #{$gray-100};
-  --switch-outlined-disabled-active-border-color:      var(--theme1-400);
-  --switch-outlined-handle-disabled-active-bg-color:   var(--theme1-400);
+  --switch-handle-disabled-bg-color:                   #{$white};
 }
 
 /**
@@ -105,29 +83,20 @@
     &:after {
       transform: translate(calc(var(--switch-width) - var(--switch-handle-size) - var(--switch-padding)), -50%);
     }
-
-    &:disabled {
-      --switch-bg-color: var(--switch-disabled-active-bg-color);
-      --switch-border-color: var(--switch-disabled-active-border-color);
-      --switch-handle-bg-color: var(--switch-handle-disabled-active-bg-color);
-    }
-
-    .a-switch__on {
-      color: var(--switch-label-color);
-    }
-  }
-
-  &[aria-checked='false'] .a-switch__off {
-    color: var(--switch-label-color);
   }
 
   &:disabled {
     --switch-bg-color: var(--switch-disabled-bg-color);
     --switch-border-color: var(--switch-disabled-border-color);
-    --switch-label-color: var(--switch-label-disabled-color);
     --switch-handle-bg-color: var(--switch-handle-disabled-bg-color);
+    --switch-label-color: var(--switch-label-disabled-color);
 
     cursor: not-allowed;
+  }
+
+  .a-switch__on,
+  .a-switch__off {
+    color: var(--switch-label-color);
   }
 }
 
@@ -147,35 +116,4 @@
 .a-switch__on {
   margin-left: calc(var(--switch-width) / 2);
   text-align: right;
-}
-
-/**
- * OUTLINED SWITCH
- * -------------------------------------------------------------------
- */
-
-.a-switch.a-switch--outlined {
-  --switch-bg-color: var(--switch-outlined-bg-color);
-  --switch-border-color: var(--switch-outlined-border-color);
-  --switch-handle-bg-color: var(--switch-outlined-handle-bg-color);
-
-  .a-switch__button {
-    &[aria-checked='true'] {
-      --switch-bg-color: var(--switch-outlined-active-bg-color);
-      --switch-border-color: var(--switch-outlined-active-border-color);
-      --switch-handle-bg-color: var(--switch-outlined-handle-active-bg-color);
-
-      &:disabled {
-        --switch-bg-color: var(--switch-outlined-disabled-active-bg-color);
-        --switch-border-color: var(--switch-outlined-disabled-active-border-color);
-        --switch-handle-bg-color: var(--switch-outlined-handle-disabled-active-bg-color);
-      }
-    }
-
-    &:disabled {
-      --switch-bg-color: var(--switch-outlined-disabled-bg-color);
-      --switch-border-color: var(--switch-outlined-disabled-border-color);
-      --switch-handle-bg-color: var(--switch-outlined-handle-disabled-bg-color);
-    }
-  }
 }
