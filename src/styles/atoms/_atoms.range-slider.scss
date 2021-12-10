@@ -48,6 +48,7 @@
 }
 
 .a-range-slider__handle {
+  border-radius: 50%;
   cursor: grab;
   padding: var(--spacer-s);
   position: absolute;
