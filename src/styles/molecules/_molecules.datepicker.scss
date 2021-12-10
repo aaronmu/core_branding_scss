@@ -95,13 +95,13 @@
  * -------------------------------------------------------------------
  */
 
-.m-datepicker__day-view {
+.m-datepicker__grid {
   border-bottom: var(--border-width) solid var(--datepicker-border-color);
   border-left: var(--border-width) solid var(--datepicker-border-color);
   border-right: var(--border-width) solid var(--datepicker-border-color);
 }
 
-.m-datepicker__week-days {
+.m-datepicker__grid-head {
   height: var(--spacer-xl);
 
   th {
@@ -113,7 +113,7 @@
   }
 }
 
-.m-datepicker__calendar-days {
+.m-datepicker__grid-body {
   background-color: var(--datepicker-bg-color);
 
   td {
@@ -152,6 +152,14 @@
       }
     }
 
+    &:not(.is-current):not(.is-selected):not(.is-unavailable):not(:disabled) {
+      &:hover,
+      &:active,
+      &:focus {
+        border-color: var(--datepicker-highlight-color);
+      }
+    }
+
     &:focus {
       z-index: layer('base');
     }
@@ -168,6 +176,7 @@
 
     &.is-faded {
       background-color: var(--datepicker-bg-color-dark);
+      border-color: var(--datepicker-bg-color-dark);
       color: var(--datepicker-text-color-light);
     }
 
@@ -201,16 +210,36 @@
  * -------------------------------------------------------------------
  */
 
-.m-datepicker__year-view {
+.m-datepicker__list {
   border-bottom: var(--border-width) solid var(--datepicker-border-color);
   border-left: var(--border-width) solid var(--datepicker-border-color);
   border-right: var(--border-width) solid var(--datepicker-border-color);
-  height: calc(var(--spacer) * 11);
-  overflow-x: auto;
+  height: calc(var(--spacer) * 12 + var(--border-width));
+  overflow-y: auto;
 }
 
-.m-datepicker__calendar-years {
+.m-datepicker__list-body {
   background-color: var(--datepicker-bg-color);
+
+  tr {
+    &:first-child button {
+      border-top: 0;
+    }
+
+    &:last-child button {
+      border-bottom: 0;
+    }
+
+    td {
+      &:first-child button {
+        border-left: 0;
+      }
+
+      &:last-child button {
+        border-right: 0;
+      }
+    }
+  }
 
   td {
     padding: 0;
