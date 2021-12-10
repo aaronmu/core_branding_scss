@@ -4,11 +4,11 @@
  */
 
 .a-switch {
-  --switch-width:                                      2.75rem;
+  --switch-width:                                      44px;
   --switch-height:                                     var(--spacer);
-  --switch-padding:                                    .1875rem;
+  --switch-padding:                                    3px;
 
-  --switch-handle-size:                                1.125rem;
+  --switch-handle-size:                                18px;
 
   --switch-label-width:                                var(--spacer-l);
   --switch-label-font-size:                            1rem;
@@ -34,53 +34,19 @@
  */
 
 .a-switch {
-  display: block;
-}
-
-.a-switch__button {
   align-items: center;
   background: transparent;
   border: none;
   cursor: pointer;
-  display: inline-flex;
-  height: var(--switch-height);
+  display: flex;
   padding: 0;
-  position: relative;
-
-  &:before {
-    background-color: var(--switch-bg-color);
-    border-radius: var(--switch-height);
-    border: var(--border-width) solid var(--switch-border-color);
-    content: '';
-    display: inline-block;
-    height: var(--switch-height);
-    left: var(--switch-label-width);
-    position: absolute;
-    top: 0;
-    transition: background, border;
-    width: var(--switch-width);
-  }
-
-  &:after {
-    background-color: var(--switch-handle-bg-color);
-    border-radius: var(--switch-handle-size);
-    content: '';
-    display: inline-block;
-    height: var(--switch-handle-size);
-    left: var(--switch-label-width);
-    position: absolute;
-    top: 50%;
-    transform: translate(var(--switch-padding), -50%);
-    transition: background, transform var(--animation-normal);
-    width: var(--switch-handle-size);
-  }
 
   &[aria-checked='true'] {
     --switch-bg-color: var(--switch-active-bg-color);
     --switch-border-color: var(--switch-active-border-color);
     --switch-handle-bg-color: var(--switch-handle-active-bg-color);
 
-    &:after {
+    .a-switch__toggle:after {
       transform: translate(calc(var(--switch-width) - var(--switch-handle-size) - var(--switch-padding)), -50%);
     }
   }
@@ -93,27 +59,48 @@
 
     cursor: not-allowed;
   }
+}
 
-  .a-switch__on,
-  .a-switch__off {
-    color: var(--switch-label-color);
+/**
+ * SWITCH ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.a-switch__toggle {
+  background-color: var(--switch-bg-color);
+  border-radius: var(--switch-height);
+  height: var(--switch-height);
+  position: relative;
+  transition: background-color, border;
+  width: var(--switch-width);
+
+  &:after {
+    background-color: var(--switch-handle-bg-color);
+    border-radius: var(--switch-handle-size);
+    content: '';
+    height: var(--switch-handle-size);
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(var(--switch-padding), -50%);
+    transition: background, transform var(--animation-normal);
+    width: var(--switch-handle-size);
   }
 }
 
-.a-switch__off,
-.a-switch__on {
-  color: var(--switch-label-disabled-color);
+.a-switch__label {
+  color: var(--switch-label-color);
   font-size: var(--switch-label-font-size);
+  min-width: 2rem;
   transition: color var(--animation-normal);
-  width: var(--switch-label-width);
-}
-
-.a-switch__off {
-  margin-right: calc(var(--switch-width) / 2);
-  text-align: left;
-}
-
-.a-switch__on {
-  margin-left: calc(var(--switch-width) / 2);
   text-align: right;
+}
+
+.a-switch__label + .a-switch__toggle,
+.a-switch__toggle + .a-switch__label {
+  margin-left: var(--spacer-xs);
+}
+
+.a-switch__toggle + .a-switch__label {
+  text-align: left;
 }
