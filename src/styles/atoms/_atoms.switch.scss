@@ -45,9 +45,17 @@
     --switch-border-color: var(--switch-active-border-color);
     --switch-handle-bg-color: var(--switch-handle-active-bg-color);
 
+    .a-switch__label--on {
+      display: block;
+    }
+
     .a-switch__toggle:after {
       transform: translate(calc(var(--switch-width) - var(--switch-handle-size) - var(--switch-inset)), -50%);
     }
+  }
+
+  &[aria-checked='false'] .a-switch__label--off {
+    display: block;
   }
 
   &:disabled {
@@ -93,6 +101,11 @@
   min-width: 2rem;
   transition: color var(--animation-normal);
   text-align: right;
+
+  &.a-switch__label--on,
+  &.a-switch__label--off {
+    display: none;
+  }
 }
 
 .a-switch__label + .a-switch__toggle,
