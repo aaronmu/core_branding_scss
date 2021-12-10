@@ -214,8 +214,8 @@
   border-bottom: var(--border-width) solid var(--datepicker-border-color);
   border-left: var(--border-width) solid var(--datepicker-border-color);
   border-right: var(--border-width) solid var(--datepicker-border-color);
-  height: calc(var(--spacer) * 12);
-  overflow-x: auto;
+  height: calc(var(--spacer) * 12 + var(--border-width));
+  overflow-y: auto;
 }
 
 .m-datepicker__list-body {
