@@ -23,6 +23,27 @@
  * -------------------------------------------------------------------
  */
 
+.m-accordion:not(.m-accordion--open) {
+  .m-accordion__tab.is-open .m-accordion__header {
+    --accordion-header-bg-color: #{$gray-100};
+
+    &:hover,
+    &:active,
+    &:focus {
+      --accordion-header-bg-color: var(--accordion-header-hover-bg-color);
+      --accordion-header-border-color: var(--accordion-header-hover-border-color);
+    }
+  }
+
+  .m-accordion__header {
+    &:hover,
+    &:active,
+    &:focus {
+      --accordion-header-border-color: var(--accordion-header-hover-border-color);
+    }
+  }
+}
+
 /**
  * ACCORDION ELEMENTS
  * -------------------------------------------------------------------
@@ -34,8 +55,19 @@
   }
 
   &.is-open {
-    .m-accordion__header:after {
-      mask: url('data:image/svg+xml;utf8,<svg id=%22arrow-up-1%22 viewBox=%22-1 -1 17 17%22 xml:space=%22preserve%22 xmlns=%22http://www.w3.org/2000/svg%22><style>.bgst0{fill:none;stroke:%23ffffff;stroke-width:6.25%;stroke-linecap:round;stroke-linejoin:round}</style><path class=%22bgst0%22 d=%22M14.5 11.4L7.7 3.7c-.1-.1-.3-.1-.4 0L.5 11.4%22/></svg>') no-repeat center center;
+    .m-accordion__header {
+      font-weight: var(--font-weight-bold);
+
+      &:after {
+        mask: url('data:image/svg+xml;utf8,<svg id=%22arrow-up-1%22 viewBox=%22-1 -1 17 17%22 xml:space=%22preserve%22 xmlns=%22http://www.w3.org/2000/svg%22><style>.bgst0{fill:none;stroke:%23ffffff;stroke-width:6.25%;stroke-linecap:round;stroke-linejoin:round}</style><path class=%22bgst0%22 d=%22M14.5 11.4L7.7 3.7c-.1-.1-.3-.1-.4 0L.5 11.4%22/></svg>') no-repeat center center;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        --accordion-header-color: var(--accordion-header-hover-color);
+        --accordion-icon-color: var(--accordion-icon-hover-color);
+      }
     }
 
     .m-accordion__content {
@@ -65,10 +97,8 @@
   &:focus {
     --accordion-header-color: var(--accordion-header-hover-color);
     --accordion-header-bg-color: var(--accordion-header-hover-bg-color);
-    --accordion-header-border-color: var(--accordion-header-hover-border-color);
     --accordion-icon-color: var(--accordion-icon-hover-color);
 
-    font-weight: var(--font-weight-bold);
     z-index: 1;
   }
 
@@ -108,14 +138,6 @@
   .m-accordion__content {
     border-left: none;
     border-right: none;
-  }
-
-  .m-accordion__header {
-    &:hover,
-    &:active,
-    &:focus {
-      border-color: var(--accordion-header-bg-color);
-    }
   }
 
   .m-accordion__tab {

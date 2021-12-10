@@ -3,14 +3,16 @@
  * -------------------------------------------------------------------
  */
 
-$breadcrumb-arrow-color:  $gray-300 !default;
+.a-breadcrumbs {
+  --breadcrumb-arrow-color:   #{$gray-300};
+}
 
 /**
  * BREADCRUMB
  * -------------------------------------------------------------------
  */
 
-.m-breadcrumbs {
+.a-breadcrumbs {
   @extend %u-list-reset;
   @include clearfix;
 
@@ -24,7 +26,7 @@ $breadcrumb-arrow-color:  $gray-300 !default;
     }
 
     &:not(:last-child):after {
-      background: $breadcrumb-arrow-color;
+      background: var(--breadcrumb-arrow-color);
       content: '';
       display: inline-block;
       height: rem($icon-size-ti);
