@@ -24,7 +24,7 @@
   height: var(--tag-height);
   justify-content: center;
   overflow: hidden;
-  padding: 0 var(--spacer-xs);
+  padding-left: var(--spacer-xs);
   transition-duration: var(--animation-duration);
   transition-property: background, border-color;
   transition-timing-function: var(--animation-easing);
@@ -80,17 +80,20 @@ button.m-tag {
   font-size: .875rem;
   font-weight: var(--font-weight-bold);
   line-height: normal;
-  margin: 0 var(--spacer-3xs);
+  margin: 0 var(--spacer-s) 0 var(--spacer-3xs);
   max-width: calc(var(--spacer) * 10);
   transition: color var(--animation-normal);
 }
 
 .m-tag__button {
   background: transparent;
+  border-radius: 2rem;
   border: none;
   color: var(--tag-color);
   cursor: pointer;
+  height: 2rem;
   padding: 0;
+  width: 2rem;
 }
 
 .m-tag__icon + .m-tag__label {
@@ -98,7 +101,7 @@ button.m-tag {
 }
 
 .m-tag__label + .m-tag__button {
-  margin-left: var(--spacer-3xs);
+  margin-left: calc(var(--spacer-s) * -1);
 }
 
 /**
@@ -106,7 +109,9 @@ button.m-tag {
  * -------------------------------------------------------------------
  */
 
-.m-tag.is-hoverable {
+.m-tag.is-clickable {
+  cursor: pointer;
+
   &:hover,
   &:active,
   &:focus {
