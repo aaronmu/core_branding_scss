@@ -30,6 +30,15 @@
 
 ### Components
 
+#### Alert
+
+##### Added
+- Added inline variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+
 #### Avatar
 
 ##### Added
