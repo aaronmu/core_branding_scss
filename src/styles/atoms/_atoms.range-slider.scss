@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-.m-range-slider {
+.a-range-slider {
   --range-slider-bg-color:            var(--theme1-050);
   --range-slider-bar-bg-color:        var(--theme1-400);
   --range-slider-handle-bg-color:     var(--theme1-400);
@@ -20,34 +20,34 @@
  * -------------------------------------------------------------------
  */
 
-.m-range-slider__labels,
-.m-range-slider__descriptions {
+.a-range-slider__labels,
+.a-range-slider__descriptions {
   display: flex;
   justify-content: space-between;
 }
 
-.m-range-slider__labels {
+.a-range-slider__labels {
   margin-bottom: var(--spacer-xs);
 }
 
-.m-range-slider__descriptions {
+.a-range-slider__descriptions {
   margin-top: var(--spacer-3xs);
 }
 
-.m-range-slider__inner {
+.a-range-slider__inner {
   background-color: var(--range-slider-bg-color);
   height: var(--spacer-3xs);
   position: relative;
   width: 100%;
 }
 
-.m-range-slider__bar {
+.a-range-slider__bar {
   background-color: var(--range-slider-bar-bg-color);
   height: 100%;
   position: absolute;
 }
 
-.m-range-slider__handle {
+.a-range-slider__handle {
   cursor: grab;
   padding: var(--spacer-s);
   position: absolute;
@@ -64,7 +64,7 @@
   }
 }
 
-.m-range-slider__tickmarks {
+.a-range-slider__tickmarks {
   bottom: 0;
   left: 0;
   position: absolute;
@@ -73,7 +73,7 @@
   width: 100%;
 }
 
-.m-range-slider__tickmark {
+.a-range-slider__tickmark {
   background-color: var(--range-slider-tickmark-bg-color);
   bottom: 0;
   position: absolute;
