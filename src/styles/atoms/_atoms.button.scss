@@ -38,9 +38,9 @@
   --btn-success-border-color:                   var(--btn-success-bg-color);
   --btn-success-hover-border-color:             var(--btn-success-hover-bg-color);
 
-  --btn-warning-color:                          #{$gray-600};
-  --btn-warning-bg-color:                       var(--warning-500);
-  --btn-warning-hover-bg-color:                 var(--warning-600);
+  --btn-warning-color:                          #{$white};
+  --btn-warning-bg-color:                       var(--warning-400);
+  --btn-warning-hover-bg-color:                 var(--warning-500);
   --btn-warning-border-color:                   var(--btn-warning-bg-color);
   --btn-warning-hover-border-color:             var(--btn-warning-hover-bg-color);
 
@@ -75,10 +75,10 @@
   --btn-outlined-success-border-color:          var(--btn-outlined-success-color);
   --btn-outlined-success-hover-border-color:    var(--btn-outlined-success-color);
 
-  --btn-outlined-warning-color:                 #{$gray-600};
+  --btn-outlined-warning-color:                 var(--warning-400);
   --btn-outlined-warning-bg-color:              transparent;
   --btn-outlined-warning-hover-bg-color:        var(--warning-050);
-  --btn-outlined-warning-border-color:          var(--warning-500);
+  --btn-outlined-warning-border-color:          var(--btn-outlined-warning-color);
   --btn-outlined-warning-hover-border-color:    var(--btn-outlined-warning-border-color);
 
   --btn-outlined-danger-color:                  var(--danger-500);
@@ -112,7 +112,7 @@
   --btn-text-success-border-color:              transparent;
   --btn-text-success-hover-border-color:        transparent;
 
-  --btn-text-warning-color:                     #{$gray-600};
+  --btn-text-warning-color:                     var(--warning-400);
   --btn-text-warning-bg-color:                  transparent;
   --btn-text-warning-hover-bg-color:            var(--warning-050);
   --btn-text-warning-border-color:              transparent;
