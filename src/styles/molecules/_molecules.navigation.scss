@@ -7,7 +7,7 @@
 .m-nav-tabs {
   --nav-font-weight:          var(--font-weight-bold);
   --nav-icon-size:            1.25rem;
-  --nav-padding:              .8125rem var(--spacer);
+  --nav-padding:              var(--spacer-3xs) var(--spacer);
 
   --nav-color:                var(--text-color);
   --nav-bg-color:             transparent;
@@ -36,6 +36,8 @@
   border-top: var(--border-width) solid var(--nav-border-color);
 
   > li {
+    display: flex;
+    flex-direction: column;
     font-weight: var(--nav-font-weight);
     line-height: $line-height-paragraph;
     min-height: var(--spacer-xl);
@@ -43,12 +45,14 @@
 
     > a,
     > button {
+      align-items: center;
       background-color: var(--nav-bg-color);
       border: none;
       border-bottom: var(--border-width) solid var(--nav-border-color);
       color: inherit;
-      display: block;
-      flex: 1 1 auto;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
       padding: var(--nav-padding);
       text-decoration: none;
       transition-duration: var(--animation-duration);
@@ -84,7 +88,11 @@
 
       > .ai {
         display: inline-block;
-        margin-right: var(--spacer-xs);
+        margin-right: var(--spacer-xxs);
+      }
+
+      > .a-badge {
+        margin-left: var(--spacer-xxs);
       }
     }
 
@@ -108,7 +116,7 @@
   &,
   > a,
   > button {
-    text-align: left;
+    justify-content: flex-start;
   }
 }
 

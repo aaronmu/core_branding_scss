@@ -948,24 +948,16 @@
                         <label for="checkbox1">Option one is unchecked</label>
                     </div>
                     <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox2" name="input-checkbox">
-                        <label for="checkbox2">Option two is indeterminate</label>
+                        <input type="checkbox" id="checkbox2" name="input-checkbox" checked="">
+                        <label for="checkbox2">Option two is checked</label>
                     </div>
                     <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox3" name="input-checkbox" checked="">
-                        <label for="checkbox3">Option three is checked</label>
+                        <input type="checkbox" id="checkbox3" name="input-checkbox" disabled="">
+                        <label for="checkbox3">Option three is disabled</label>
                     </div>
                     <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox4" name="input-checkbox" disabled="">
-                        <label for="checkbox4">Option four is disabled</label>
-                    </div>
-                    <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox5" name="input-checkbox" disabled="">
-                        <label for="checkbox5">Option five is indeterminate and disabled</label>
-                    </div>
-                    <div class="a-input__checkbox">
-                        <input type="checkbox" id="checkbox6" name="input-checkbox" checked="" disabled="">
-                        <label for="checkbox6">Option six is checked and disabled</label>
+                        <input type="checkbox" id="checkbox4" name="input-checkbox" checked="" disabled="">
+                        <label for="checkbox4">Option four is checked and disabled</label>
                     </div>
                 </div>
             </div>
@@ -977,24 +969,64 @@
     &lt;label for="checkbox1"&gt;Option one is unchecked&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox2" name="input-checkbox"&gt;
-    &lt;label for="checkbox2"&gt;Option two is indeterminate&lt;/label&gt;
+    &lt;input type="checkbox" id="checkbox2" name="input-checkbox" checked=""&gt;
+    &lt;label for="checkbox2"&gt;Option two is checked&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox3" name="input-checkbox" checked=""&gt;
-    &lt;label for="checkbox3"&gt;Option three is checked&lt;/label&gt;
+    &lt;input type="checkbox" id="checkbox3" name="input-checkbox" disabled=""&gt;
+    &lt;label for="checkbox3"&gt;Option three is disabled&lt;/label&gt;
   &lt;/div&gt;
   &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox4" name="input-checkbox" disabled=""&gt;
-    &lt;label for="checkbox4"&gt;Option four is disabled&lt;/label&gt;
+    &lt;input type="checkbox" id="checkbox4" name="input-checkbox" checked="" disabled=""&gt;
+    &lt;label for="checkbox4"&gt;Option four is checked and disabled&lt;/label&gt;
   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input">
+                    <label class="a-input__label">Input with nested checkboxes</label>
+                    <div class="a-input__checkbox">
+                        <input type="checkbox" id="checkbox-indeterminate" name="input-checkbox">
+                        <label for="checkbox-indeterminate">Option one</label>
+                    </div>
+                    <div class="u-margin-left">
+                        <div class="a-input__checkbox">
+                            <input type="checkbox" id="nested-checkbox1" name="input-checkbox">
+                            <label for="nested-checkbox1">Nested option one</label>
+                        </div>
+                        <div class="a-input__checkbox">
+                            <input type="checkbox" id="nested-checkbox2" name="input-checkbox" checked="">
+                            <label for="nested-checkbox2">Nested option two</label>
+                        </div>
+                        <div class="a-input__checkbox">
+                            <input type="checkbox" id="nested-checkbox3" name="input-checkbox">
+                            <label for="nested-checkbox3">Nested option three</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label"&gt;Input with nested checkboxes&lt;/label&gt;
   &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox5" name="input-checkbox" disabled=""&gt;
-    &lt;label for="checkbox5"&gt;Option five is indeterminate and disabled&lt;/label&gt;
+    &lt;input type="checkbox" id="checkbox-indeterminate" name="input-checkbox"&gt;
+    &lt;label for="checkbox-indeterminate"&gt;Option one&lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class="a-input__checkbox"&gt;
-    &lt;input type="checkbox" id="checkbox6" name="input-checkbox" checked="" disabled=""&gt;
-    &lt;label for="checkbox6"&gt;Option six is checked and disabled&lt;/label&gt;
+  &lt;div class="u-margin-left"&gt;
+    &lt;div class="a-input__checkbox"&gt;
+      &lt;input type="checkbox" id="nested-checkbox1" name="input-checkbox"&gt;
+      &lt;label for="nested-checkbox1"&gt;Nested option one&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="a-input__checkbox"&gt;
+      &lt;input type="checkbox" id="nested-checkbox2" name="input-checkbox" checked=""&gt;
+      &lt;label for="nested-checkbox2"&gt;Nested option two&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="a-input__checkbox"&gt;
+      &lt;input type="checkbox" id="nested-checkbox3" name="input-checkbox"&gt;
+      &lt;label for="nested-checkbox3"&gt;Nested option three&lt;/label&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -2130,25 +2162,25 @@
                     <caption>Standard table with sortable columns</caption>
                     <thead>
                         <tr>
-                            <th class="has-no-padding" aria-sort="none">
+                            <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button">
                                     Snack {{ icon.render('move-expand-vertical') }}
                                 </button>
                             </th>
 
-                            <th class="has-no-padding" aria-sort="none">
+                            <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button">
                                     Description {{ icon.render('move-expand-vertical') }}
                                 </button>
                             </th>
 
-                            <th class="has-no-padding" aria-sort="none">
+                            <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button a-table__sort-button--align-right">
                                     Stock {{ icon.render('move-expand-vertical') }}
                                 </button>
                             </th>
 
-                            <th class="has-no-padding" aria-sort="none">
+                            <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button a-table__sort-button--align-right">
                                     Price {{ icon.render('move-expand-vertical') }}
                                 </button>
@@ -2188,25 +2220,25 @@
   &lt;caption&gt;Standard table with sortable columns&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th class="has-no-padding" aria-sort="none"&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button"&gt;
           Snack {{ icon.code('move-expand-vertical') }}
         &lt;/button&gt;
       &lt;/th&gt;
 
-      &lt;th class="has-no-padding" aria-sort="none"&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button"&gt;
           Description {{ icon.code('move-expand-vertical') }}
         &lt;/button&gt;
       &lt;/th&gt;
 
-      &lt;th class="has-no-padding" aria-sort="none"&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
           Stock {{ icon.code('move-expand-vertical') }}
         &lt;/button&gt;
       &lt;/th&gt;
 
-      &lt;th class="has-no-padding" aria-sort="none"&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
         &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
           Price {{ icon.code('move-expand-vertical') }}
         &lt;/button&gt;
@@ -2498,64 +2530,68 @@
         <div class="d">
             <div>
                 <table class="a-table">
-                    <caption>Paddingless table</caption>
+                    <caption>Table with less padding</caption>
                     <thead>
                         <tr>
-                            <th class="has-no-padding">Snack</th>
-                            <th class="has-no-padding">Description</th>
-                            <th class="has-no-padding u-text-right">Stock</th>
-                            <th class="has-no-padding u-text-right">Price</th>
+                            <th class="is-condensed">Snack</th>
+                            <th class="is-condensed">Description</th>
+                            <th class="is-condensed u-text-right">Stock</th>
+                            <th class="is-condensed u-text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="has-no-padding u-text-bold">Ice cream</td>
-                            <td class="has-no-padding small">Tasty, frozen treat for a hot day</td>
-                            <td class="has-no-padding u-text-right small">160</td>
-                            <td class="has-no-padding u-text-right">€2,49</td>
+                            <td class="is-condensed u-text-bold">Ice cream</td>
+                            <td class="is-condensed small">Tasty, frozen treat for a hot day</td>
+                            <td class="is-condensed u-text-right small">160</td>
+                            <td class="is-condensed u-text-right">€2,49</td>
+                            <td class="is-condensed"><button class="a-button a-button--s">Buy</button></td>
                         </tr>
                         <tr>
-                            <td class="has-no-padding u-text-bold">Chips</td>
-                            <td class="has-no-padding small">Salty, crunchy goodness</td>
-                            <td class="has-no-padding u-text-right small">48</td>
-                            <td class="has-no-padding u-text-right">€1,99</td>
+                            <td class="is-condensed u-text-bold">Chips</td>
+                            <td class="is-condensed small">Salty, crunchy goodness</td>
+                            <td class="is-condensed u-text-right small">48</td>
+                            <td class="is-condensed u-text-right">€1,99</td>
+                            <td class="is-condensed"><button class="a-button a-button--s">Buy</button></td>
                         </tr>
                         <tr>
-                            <td class="has-no-padding u-text-bold">Lollipop</td>
-                            <td class="has-no-padding small">Rainbow flavors with a bubblegum center</td>
-                            <td class="has-no-padding u-text-right small">480</td>
-                            <td class="has-no-padding u-text-right">€0,99</td>
+                            <td class="is-condensed u-text-bold">Lollipop</td>
+                            <td class="is-condensed small">Rainbow flavors with a bubblegum center</td>
+                            <td class="is-condensed u-text-right small">480</td>
+                            <td class="is-condensed u-text-right">€0,99</td>
+                            <td class="is-condensed"><button class="a-button a-button--s">Buy</button></td>
                         </tr>
                         <tr>
-                            <td class="has-no-padding u-text-bold">Candy bar</td>
-                            <td class="has-no-padding small">Chewy and quite nutty</td>
-                            <td class="has-no-padding u-text-right small">240</td>
-                            <td class="has-no-padding u-text-right">€1,49</td>
+                            <td class="is-condensed u-text-bold">Candy bar</td>
+                            <td class="is-condensed small">Chewy and quite nutty</td>
+                            <td class="is-condensed u-text-right small">240</td>
+                            <td class="is-condensed u-text-right">€1,49</td>
+                            <td class="is-condensed"><button class="a-button a-button--s">Buy</button></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
-  &lt;caption&gt;Paddingless table&lt;/caption&gt;
+  &lt;caption&gt;Table with less padding&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th class="has-no-padding"&gt;Table cells without padding&lt;/th&gt;
-      &lt;th class="has-no-padding"&gt;...&lt;/th&gt;
+      &lt;th class="is-condensed"&gt;Table cells with smaller padding&lt;/th&gt;
+      &lt;th class="is-condensed"&gt;...&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
-      &lt;td class="has-no-padding"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
+      &lt;td class="is-condensed"&gt;...&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
@@ -2790,277 +2826,254 @@
         <h4 class="u-margin-top-xl">Responsive wrapper for tables</h4>
         <div class="d">
             <div>
-                <div class="a-table__wrapper-responsive">
-                    <table class="a-table">
-                        <thead>
-                            <tr>
-                                <th>Snack</th>
-                                <th>Description</th>
-                                <th>Ingredients</th>
-                                <th class="u-text-right">Stock</th>
-                                <th class="u-text-right">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="u-text-bold">Ice cream</td>
-                                <td class="small">Tasty, frozen treat for a hot day</td>
-                                <td class="small">Milk, Vanilla</td>
-                                <td class="u-text-right small">160</td>
-                                <td class="u-text-right">€2,49</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Chips</td>
-                                <td class="small">Salty, crunchy goodness</td>
-                                <td class="small">Potatoes, sea salt</td>
-                                <td class="u-text-right small">48</td>
-                                <td class="u-text-right">€1,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Lollipop</td>
-                                <td class="small">Rainbow flavors with a bubblegum center</td>
-                                <td class="small">Water, corn syrup</td>
-                                <td class="u-text-right small">480</td>
-                                <td class="u-text-right">€0,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Candy bar</td>
-                                <td class="small">Chewy and quite nutty</td>
-                                <td class="small">Cocoa butter</td>
-                                <td class="u-text-right small">240</td>
-                                <td class="u-text-right">€1,49</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table__wrapper-responsive"&gt;
-  &lt;table class="a-table"&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;
-        &lt;th&gt;Snack&lt;/th&gt;
-        &lt;th&gt;Description&lt;/th&gt;
-        &lt;th&gt;Ingredients&lt;/th&gt;
-        &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
-        &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
-      &lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;
-        &lt;td class="u-text-bold"&gt;Ice cream&lt;/td&gt;
-        &lt;td class="small"&gt;Tasty, frozen treat for a hot day&lt;/small&gt;&lt;/td&gt;
-        &lt;td class="small"&gt;Milk, Vanilla&lt;/small&gt;&lt;/td&gt;
-        &lt;td class="u-text-right small"&gt;160&lt;/small&gt;&lt;/td&gt;
-        &lt;td class="u-text-right"&gt;&euro;2,49&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-        &lt;td&gt;...&lt;/td&gt;
-      &lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <div class="a-table__wrapper-responsive">
-                    <table class="a-table a-table--first-column-fixed">
-                        <thead>
-                            <tr>
-                                <th>Snack</th>
-                                <th>Description</th>
-                                <th>Ingredients</th>
-                                <th class="u-text-right">Stock</th>
-                                <th class="u-text-right">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="u-text-bold">Ice cream</td>
-                                <td class="small">Tasty, frozen treat for a hot day</td>
-                                <td class="small">Milk, Vanilla</td>
-                                <td class="u-text-right small">160</td>
-                                <td class="u-text-right">€2,49</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Chips</td>
-                                <td class="small">Salty, crunchy goodness</td>
-                                <td class="small">Potatoes, sea salt</td>
-                                <td class="u-text-right small">48</td>
-                                <td class="u-text-right">€1,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Lollipop</td>
-                                <td class="small">Rainbow flavors with a bubblegum center</td>
-                                <td class="small">Water, corn syrup</td>
-                                <td class="u-text-right small">480</td>
-                                <td class="u-text-right">€0,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Candy bar</td>
-                                <td class="small">Chewy and quite nutty</td>
-                                <td class="small">Cocoa butter</td>
-                                <td class="u-text-right small">240</td>
-                                <td class="u-text-right">€1,49</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table__wrapper-responsive"&gt;
-  &lt;table class="a-table a-table--first-column-fixed"&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;...&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;...&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <div class="a-table__wrapper-responsive">
-                    <table class="a-table a-table--last-column-fixed">
-                        <thead>
-                            <tr>
-                                <th>Snack</th>
-                                <th>Description</th>
-                                <th>Ingredients</th>
-                                <th class="u-text-right">Stock</th>
-                                <th class="u-text-right">Price</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="u-text-bold">Ice cream</td>
-                                <td class="small">Tasty, frozen treat for a hot day</td>
-                                <td class="small">Milk, Vanilla</td>
-                                <td class="u-text-right small">160</td>
-                                <td class="u-text-right">€2,49</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Chips</td>
-                                <td class="small">Salty, crunchy goodness</td>
-                                <td class="small">Potatoes, sea salt</td>
-                                <td class="u-text-right small">48</td>
-                                <td class="u-text-right">€1,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Lollipop</td>
-                                <td class="small">Rainbow flavors with a bubblegum center</td>
-                                <td class="small">Water, corn syrup</td>
-                                <td class="u-text-right small">480</td>
-                                <td class="u-text-right">€0,99</td>
-                            </tr>
-                            <tr>
-                                <td class="u-text-bold">Candy bar</td>
-                                <td class="small">Chewy and quite nutty</td>
-                                <td class="small">Cocoa butter</td>
-                                <td class="u-text-right small">240</td>
-                                <td class="u-text-right">€1,49</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table__wrapper-responsive"&gt;
-  &lt;table class="a-table a-table--last-column-fixed"&gt;
-    &lt;thead&gt;
-      &lt;tr&gt;...&lt;/tr&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;tr&gt;...&lt;/tr&gt;
-    &lt;/tbody&gt;
-  &lt;/table&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-
-        <a name="atoms-timepicker" aria-label="Timepicker"></a>
-        <h3 class="u-margin-top-xl">Timepicker</h3>
-        <span class="d-file">atoms/atoms.timepicker</span>
-        <div class="d">
-            <div>
-                <div class="a-timepicker">
-                    <div class="a-input has-icon-right">
-                        <label class="a-input__label" for="input-hours">Hours</label>
-                        <div class="a-input__wrapper">
-                            <select name="input-hours" id="input-hours">
-                                <option value="" disabled selected>hh</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                            </select>
-                            {{ icon.render('arrow-down-1') }}
-                        </div>
-                    </div>
-                    <span class="a-timepicker__separator">:</span>
-                    <div class="a-input has-icon-right">
-                        <label class="a-input__label" for="input-minutes">Minutes</label>
-                        <div class="a-input__wrapper">
-                            <select name="input-minutes" id="input-minutes">
-                                <option value="" disabled selected>mm</option>
-                                <option value="0">0</option>
-                                <option value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                                <option value="25">25</option>
-                                <option value="35">35</option>
-                                <option value="45">45</option>
-                                <option value="50">50</option>
-                                <option value="55">55</option>
-                            </select>
-                            {{ icon.render('arrow-down-1') }}
-                        </div>
+                <div class="a-table-responsive-wrapper has-shadow-left has-shadow-right">
+                    <div class="a-table-scrollable-wrapper">
+                        <table class="a-table">
+                            <thead>
+                                <tr>
+                                    <th>Snack</th>
+                                    <th>Description</th>
+                                    <th>Ingredients</th>
+                                    <th class="u-text-right">Stock</th>
+                                    <th class="u-text-right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="u-text-bold">Ice cream</td>
+                                    <td class="small">Tasty, frozen treat for a hot day</td>
+                                    <td class="small">Milk, Vanilla</td>
+                                    <td class="u-text-right small">160</td>
+                                    <td class="u-text-right">€2,49</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Chips</td>
+                                    <td class="small">Salty, crunchy goodness</td>
+                                    <td class="small">Potatoes, sea salt</td>
+                                    <td class="u-text-right small">48</td>
+                                    <td class="u-text-right">€1,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Lollipop</td>
+                                    <td class="small">Rainbow flavors with a bubblegum center</td>
+                                    <td class="small">Water, corn syrup</td>
+                                    <td class="u-text-right small">480</td>
+                                    <td class="u-text-right">€0,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Candy bar</td>
+                                    <td class="small">Chewy and quite nutty</td>
+                                    <td class="small">Cocoa butter</td>
+                                    <td class="u-text-right small">240</td>
+                                    <td class="u-text-right">€1,49</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-timepicker"&gt;
-  &lt;div class="a-input has-icon-right"&gt;
-    &lt;label class="a-input__label" for="input-hours"&gt;Hours&lt;/label&gt;
-    &lt;div class="a-input__wrapper"&gt;
-      &lt;select name="input-hours" id="input-houres"&gt;
-        &lt;option value="" disabled selected&gt;hh&lt;/option&gt;
-        &lt;option value="..."&gt;...&lt;/option&gt;
-      &lt;/select&gt;
-      {{ icon.code('arrow-down-1') }}
-    &lt;/div&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table-responsive-wrapper has-shadow-left has-shadow-right"&gt;
+  &lt;div class="a-table-scrollable-wrapper"&gt;
+    &lt;table class="a-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
   &lt;/div&gt;
-  &lt;span class="a-timepicker__separator"&gt;:&lt;/span&gt;
-  &lt;div class="a-input has-icon-right"&gt;
-    &lt;label class="a-input__label" for="input-minutes"&gt;Minutes&lt;/label&gt;
-    &lt;div class="a-input__wrapper"&gt;
-      &lt;select name="input-minutes" id="input-minutes"&gt;
-        &lt;option value="" disabled selected&gt;mm&lt;/option&gt;
-        &lt;option value="..."&gt;...&lt;/option&gt;
-      &lt;/select&gt;
-      {{ icon.code('arrow-down-1') }}
-    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-table-responsive-wrapper has-first-column-fixed has-shadow-left has-shadow-right">
+                    <div class="a-table-scrollable-wrapper">
+                        <table class="a-table">
+                            <thead>
+                                <tr>
+                                    <th>Snack</th>
+                                    <th>Description</th>
+                                    <th>Ingredients</th>
+                                    <th class="u-text-right">Stock</th>
+                                    <th class="u-text-right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="u-text-bold">Ice cream</td>
+                                    <td class="small">Tasty, frozen treat for a hot day</td>
+                                    <td class="small">Milk, Vanilla</td>
+                                    <td class="u-text-right small">160</td>
+                                    <td class="u-text-right">€2,49</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Chips</td>
+                                    <td class="small">Salty, crunchy goodness</td>
+                                    <td class="small">Potatoes, sea salt</td>
+                                    <td class="u-text-right small">48</td>
+                                    <td class="u-text-right">€1,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Lollipop</td>
+                                    <td class="small">Rainbow flavors with a bubblegum center</td>
+                                    <td class="small">Water, corn syrup</td>
+                                    <td class="u-text-right small">480</td>
+                                    <td class="u-text-right">€0,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Candy bar</td>
+                                    <td class="small">Chewy and quite nutty</td>
+                                    <td class="small">Cocoa butter</td>
+                                    <td class="u-text-right small">240</td>
+                                    <td class="u-text-right">€1,49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table-responsive-wrapper has-first-column-fixed has-shadow-left has-shadow-right"&gt;
+  &lt;div class="a-table-scrollable-wrapper"&gt;
+    &lt;table class="a-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-table-responsive-wrapper has-last-column-fixed has-shadow-left has-shadow-right">
+                    <div class="a-table-scrollable-wrapper">
+                        <table class="a-table">
+                            <thead>
+                                <tr>
+                                    <th>Snack</th>
+                                    <th>Description</th>
+                                    <th>Ingredients</th>
+                                    <th class="u-text-right">Stock</th>
+                                    <th class="u-text-right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="u-text-bold">Ice cream</td>
+                                    <td class="small">Tasty, frozen treat for a hot day</td>
+                                    <td class="small">Milk, Vanilla</td>
+                                    <td class="u-text-right small">160</td>
+                                    <td class="u-text-right">€2,49</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Chips</td>
+                                    <td class="small">Salty, crunchy goodness</td>
+                                    <td class="small">Potatoes, sea salt</td>
+                                    <td class="u-text-right small">48</td>
+                                    <td class="u-text-right">€1,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Lollipop</td>
+                                    <td class="small">Rainbow flavors with a bubblegum center</td>
+                                    <td class="small">Water, corn syrup</td>
+                                    <td class="u-text-right small">480</td>
+                                    <td class="u-text-right">€0,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Candy bar</td>
+                                    <td class="small">Chewy and quite nutty</td>
+                                    <td class="small">Cocoa butter</td>
+                                    <td class="u-text-right small">240</td>
+                                    <td class="u-text-right">€1,49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table-responsive-wrapper has-last-column-fixed has-shadow-left has-shadow-right"&gt;
+  &lt;div class="a-table-scrollable-wrapper"&gt;
+    &lt;table class="a-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-table-responsive-wrapper has-first-column-fixed has-last-column-fixed has-shadow-left has-shadow-right">
+                    <div class="a-table-scrollable-wrapper">
+                        <table class="a-table">
+                            <thead>
+                                <tr>
+                                    <th>Snack</th>
+                                    <th>Description</th>
+                                    <th>Ingredients</th>
+                                    <th class="u-text-right">Stock</th>
+                                    <th class="u-text-right">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="u-text-bold">Ice cream</td>
+                                    <td class="small">Tasty, frozen treat for a hot day</td>
+                                    <td class="small">Milk, Vanilla</td>
+                                    <td class="u-text-right small">160</td>
+                                    <td class="u-text-right">€2,49</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Chips</td>
+                                    <td class="small">Salty, crunchy goodness</td>
+                                    <td class="small">Potatoes, sea salt</td>
+                                    <td class="u-text-right small">48</td>
+                                    <td class="u-text-right">€1,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Lollipop</td>
+                                    <td class="small">Rainbow flavors with a bubblegum center</td>
+                                    <td class="small">Water, corn syrup</td>
+                                    <td class="u-text-right small">480</td>
+                                    <td class="u-text-right">€0,99</td>
+                                </tr>
+                                <tr>
+                                    <td class="u-text-bold">Candy bar</td>
+                                    <td class="small">Chewy and quite nutty</td>
+                                    <td class="small">Cocoa butter</td>
+                                    <td class="u-text-right small">240</td>
+                                    <td class="u-text-right">€1,49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-table-responsive-wrapper has-first-column-fixed has-last-column-fixed has-shadow-left has-shadow-right"&gt;
+  &lt;div class="a-table-scrollable-wrapper"&gt;
+    &lt;table class="a-table"&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;...&lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
             </div>
         </div>
 
