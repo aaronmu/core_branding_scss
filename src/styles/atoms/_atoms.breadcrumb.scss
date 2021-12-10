@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-.m-breadcrumbs {
+.a-breadcrumbs {
   --breadcrumb-arrow-color:   #{$gray-300};
 }
 
@@ -12,7 +12,7 @@
  * -------------------------------------------------------------------
  */
 
-.m-breadcrumbs {
+.a-breadcrumbs {
   @extend %u-list-reset;
   @include clearfix;
 
