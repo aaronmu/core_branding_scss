@@ -45,8 +45,12 @@
     --switch-border-color: var(--switch-active-border-color);
     --switch-handle-bg-color: var(--switch-handle-active-bg-color);
 
-    .a-switch__label--on {
-      display: block;
+    .a-switch__label--off {
+      display: none;
+    }
+
+    .a-switch__toggle-label--off {
+      opacity: 0;
     }
 
     .a-switch__toggle:after {
@@ -54,8 +58,14 @@
     }
   }
 
-  &[aria-checked='false'] .a-switch__label--off {
-    display: block;
+  &[aria-checked='false'] {
+    .a-switch__label--on {
+      display: none;
+    }
+
+    .a-switch__toggle-label--on {
+      opacity: 0;
+    }
   }
 
   &:disabled {
@@ -74,9 +84,13 @@
  */
 
 .a-switch__toggle {
+  align-items: center;
   background-color: var(--switch-bg-color);
   border-radius: var(--switch-height);
+  display: flex;
   height: var(--switch-height);
+  justify-content: space-between;
+  padding: var(--switch-inset);
   position: relative;
   transition: background-color, border;
   width: var(--switch-width);
@@ -101,11 +115,6 @@
   min-width: 2rem;
   transition: color var(--animation-normal);
   text-align: right;
-
-  &.a-switch__label--on,
-  &.a-switch__label--off {
-    display: none;
-  }
 }
 
 .a-switch__label + .a-switch__toggle,
@@ -115,4 +124,12 @@
 
 .a-switch__toggle + .a-switch__label {
   text-align: left;
+}
+
+.a-switch__toggle-label {
+  color: var(--switch-handle-bg-color);
+  font-size: .875rem;
+  text-transform: uppercase;
+  transition: opacity var(--animation-normal);
+  width: var(--switch-handle-size);
 }
