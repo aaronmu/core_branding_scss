@@ -4,13 +4,12 @@
  */
 
 .a-switch {
-  --switch-width:                                      44px;
+  --switch-width:                                      2.75rem;
   --switch-height:                                     var(--spacer);
-  --switch-padding:                                    3px;
+  --switch-inset:                                      .1875rem;
 
-  --switch-handle-size:                                18px;
+  --switch-handle-size:                                1.125rem;
 
-  --switch-label-width:                                var(--spacer-l);
   --switch-label-font-size:                            1rem;
   --switch-label-color:                                var(--text-color);
   --switch-label-disabled-color:                       #{$gray-300};
@@ -47,7 +46,7 @@
     --switch-handle-bg-color: var(--switch-handle-active-bg-color);
 
     .a-switch__toggle:after {
-      transform: translate(calc(var(--switch-width) - var(--switch-handle-size) - var(--switch-padding)), -50%);
+      transform: translate(calc(var(--switch-width) - var(--switch-handle-size) - var(--switch-inset)), -50%);
     }
   }
 
@@ -82,7 +81,7 @@
     left: 0;
     position: absolute;
     top: 50%;
-    transform: translate(var(--switch-padding), -50%);
+    transform: translate(var(--switch-inset), -50%);
     transition: background, transform var(--animation-normal);
     width: var(--switch-handle-size);
   }
