@@ -30,6 +30,15 @@
 
 ### Components
 
+#### Alert
+
+##### Added
+- Added inline variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+
 #### Avatar
 
 ##### Added
@@ -121,6 +130,14 @@
 - [BREAKING] Changed the way of adding a description, success and error message to an input field
 - [BREAKING] Removed warning messages
 
+#### Label
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.a-label--secondary`
+
 #### List
 
 ##### Added
@@ -160,6 +177,11 @@
 - Implemented new design changes
 - [BREAKING] Replaced SASS variables by CSS properties
 - [BREAKING] Removed progress variant with tooltip
+
+#### Range slider
+
+##### Changed
+- [BREAKING] Removed range slider variant with tooltip
 
 #### Selectable list
 
@@ -211,6 +233,18 @@
   - Changed `.a-toggle--tiny` to `.a-toggle--xs`
   - Changed `.a-toggle--small` to `.a-toggle--s`
   - Changed `.a-toggle--large` to `.a-toggle--l`
+
+#### Toggle
+
+##### Added
+- Added inverted variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.a-tooltip--primary`
+  - Removed `.a-tooltip--secondary`
 
 #### Upload
 
