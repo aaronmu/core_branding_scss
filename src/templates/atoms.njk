@@ -2777,8 +2777,8 @@
                             <th class="is-collapsed" aria-sort="none">
                                 <button class="a-table__sort-button is-unsorted">Description</button>
                             </th>
-                            <th>Stock</th>
-                            <th>Price</th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2810,6 +2810,22 @@
                 </table>
             </div>
             <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one unsorted column&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button is-unsorted"&gt;Description&lt;/button&gt;
+      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
             </div>
         </div>
         <div class="d">
@@ -2822,8 +2838,8 @@
                             <th class="is-collapsed" aria-sort="ascending">
                                 <button class="a-table__sort-button is-sorted-asc">Description</button>
                             </th>
-                            <th>Stock</th>
-                            <th>Price</th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2856,7 +2872,26 @@
                 <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
                 <div class="u-screen-reader-only" aria-live="polite">Description column sorted ascending</div>
             </div>
-            <div></div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one column sorted ascending&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="ascending"&gt;
+        &lt;button class="a-table__sort-button is-sorted-asc"&gt;Description&lt;/button&gt;
+      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted ascending&lt;/div&gt;</code></pre>
+            </div>
         </div>
         <div class="d">
             <div>
@@ -2868,8 +2903,8 @@
                             <th class="is-collapsed" aria-sort="descending">
                                 <button class="a-table__sort-button is-sorted-desc">Description</button>
                             </th>
-                            <th>Stock</th>
-                            <th>Price</th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -2903,52 +2938,24 @@
                 <div class="u-screen-reader-only" aria-live="polite">Description column sorted descending</div>
             </div>
             <div>
-                <!-- <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
-  &lt;caption&gt;Standard table with sortable columns&lt;/caption&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one column sorted descending&lt;/caption&gt;
   &lt;thead&gt;
     &lt;tr&gt;
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button"&gt;
-          Snack {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="descending"&gt;
+        &lt;button class="a-table__sort-button is-sorted-desc"&gt;Description&lt;/button&gt;
       &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button"&gt;
-          Description {{ icon.code('keyboard-arrow-down') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
-          Stock {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
-          Price {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted down&lt;/div&gt;</code></pre> -->
+&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted descending&lt;/div&gt;</code></pre>
             </div>
         </div>
 
