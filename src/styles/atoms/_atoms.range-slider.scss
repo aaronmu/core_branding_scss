@@ -67,6 +67,8 @@
 
 .a-range-slider__tickmarks {
   bottom: 0;
+  display: flex;
+  justify-content: space-between;
   left: 0;
   position: absolute;
   right: 0;
@@ -76,16 +78,5 @@
 
 .a-range-slider__tickmark {
   background-color: var(--range-slider-tickmark-bg-color);
-  bottom: 0;
-  position: absolute;
-  top: 0;
   width: calc(var(--border-width) * 2);
-
-  &:not(:first-child):not(:last-child) {
-    transform: translateX(-50%);
-  }
-
-  &:last-child {
-    transform: translateX(-100%);
-  }
 }
