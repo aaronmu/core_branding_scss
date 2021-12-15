@@ -32,22 +32,15 @@
       display: flex;
       flex-direction: column;
       min-height: var(--spacer-xl);
-      position: relative;
       transition-duration: var(--animation-duration);
       transition-property: background-color, box-shadow;
       transition-timing-function: var(--animation-easing);
 
-      &:not(:first-child):after {
-        background-color: var(--nav-border-color);
-        content: '';
-        height: var(--border-width);
-        left: var(--spacer-s);
-        opacity: 1;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: translateY(calc(var(--border-width) / -2));
-        transition: opacity var(--animation-normal);
+      &:not(:first-child) {
+        > a,
+        > button {
+          border-top: var(--border-width) solid var(--nav-border-color);
+        }
       }
 
       &:not(.is-active):not(.is-disabled) {
@@ -59,9 +52,16 @@
           color: var(--nav-hover-color);
           font-weight: var(--font-weight-bold);
 
-          &:after,
-          + li:after {
-            opacity: 0;
+          > a,
+          > button {
+            border-top-color: transparent;
+          }
+
+          + li {
+            > a,
+            > button {
+              border-top-color: transparent;
+            }
           }
         }
       }
@@ -103,8 +103,10 @@
         cursor: pointer;
         display: flex;
         flex-grow: 1;
-        padding: var(--spacer-3xs) var(--spacer-s);
+        margin-left: var(--spacer-s);
+        padding: var(--spacer-3xs) var(--spacer-s) var(--spacer-3xs) 0;
         text-decoration: none;
+        transition: border-top-color var(--animation-normal);
 
         > .ai {
           display: inline-block;
