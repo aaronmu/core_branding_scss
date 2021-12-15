@@ -86,7 +86,11 @@
         &:focus,
         &:focus-within {
           color: var(--nav-disabled-color);
-          cursor: not-allowed;
+
+          > a,
+          > button {
+            cursor: not-allowed;
+          }
         }
       }
 
@@ -171,7 +175,11 @@
         &:focus,
         &:focus-within {
           color: var(--nav-disabled-color);
-          cursor: not-allowed;
+
+          > a,
+          > button {
+            cursor: not-allowed;
+          }
         }
       }
 
