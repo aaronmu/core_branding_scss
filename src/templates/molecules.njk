@@ -1425,6 +1425,40 @@
         <div class="d">
             <div>
                 <div class="m-flyout m-flyout--scrollable is-open d-flyout--s">
+                    <button class="a-button" aria-expanded="true">Flyout with a navigation list</button>
+                    <div class="m-flyout__content">
+                        <nav class="m-nav-list">
+                            <ul role="tablist" aria-label="My tablist">
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                                <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                                <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--scrollable is-open"&gt;
+  &lt;button class="a-button" aria-expanded="true"&gt;Flyout with a navigation list&lt;/button&gt;
+  &lt;div class="m-flyout__content"&gt;
+    &lt;nav class="m-nav-list"&gt;
+      &lt;ul role="tablist" aria-label="My tablist"&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-flyout m-flyout--scrollable is-open d-flyout--s">
                     <div class="a-input">
                         <label class="a-input__label" for="input-autocomplete">Flyout as an autocomplete</label>
                         <input type="text" name="input-autocomplete" id="input-autocomplete" aria-expanded="true" />
