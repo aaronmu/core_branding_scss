@@ -31,7 +31,9 @@
     flex-direction: column;
     min-height: var(--spacer-xl);
     position: relative;
-    transition: background var(--animation-normal);
+    transition-duration: var(--animation-duration);
+    transition-property: background-color, box-shadow;
+    transition-timing-function: var(--animation-easing);
 
     &:not(:first-child):after {
       background-color: var(--nav-border-color);
@@ -49,6 +51,7 @@
     &:not(.is-disabled) {
       &:hover,
       &:active,
+      &:focus,
       &:focus-within {
         background-color: var(--nav-hover-bg-color);
         color: var(--nav-hover-color);
@@ -65,9 +68,10 @@
       &,
       &:hover,
       &:active,
+      &:focus,
       &:focus-within {
         background-color: var(--nav-active-bg-color);
-        border-left: var(--spacer-3xs) solid var(--nav-active-border-color);
+        box-shadow: var(--spacer-3xs) 0 0 0 var(--nav-active-border-color) inset;
         color: var(--nav-active-color);
         font-weight: var(--font-weight-bold);
       }
@@ -77,6 +81,7 @@
       &,
       &:hover,
       &:active,
+      &:focus,
       &:focus-within {
         color: var(--nav-disabled-color);
         cursor: not-allowed;
@@ -86,7 +91,7 @@
     > a,
     > button {
       align-items: center;
-      background-color: var(--nav-bg-color);
+      background: transparent;
       border: none;
       color: inherit;
       display: flex;
