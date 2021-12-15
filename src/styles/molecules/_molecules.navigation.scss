@@ -23,7 +23,7 @@
  * -------------------------------------------------------------------
  */
 
-%m-nav-list {
+.m-nav-list {
   @extend %u-list-reset;
 
   > li {
@@ -48,7 +48,7 @@
       transition: opacity var(--animation-normal);
     }
 
-    &:not(.is-disabled) {
+    &:not(.is-active):not(.is-disabled) {
       &:hover,
       &:active,
       &:focus,
@@ -94,6 +94,7 @@
       background: transparent;
       border: none;
       color: inherit;
+      cursor: pointer;
       display: flex;
       flex-grow: 1;
       padding: var(--spacer-3xs) var(--spacer-s);
@@ -108,16 +109,7 @@
         margin-left: var(--spacer-xxs);
       }
     }
-
-    > button {
-      cursor: pointer;
-      width: 100%;
-    }
   }
-}
-
-.m-nav-list {
-  @extend %m-nav-list;
 }
 
 /**
@@ -126,54 +118,73 @@
  */
 
 .m-nav-tabs {
-  @extend %m-nav-list;
+  @extend %u-list-reset;
 
-  @include at($screen-sm) {
-    border-top: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  > li {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    min-height: var(--spacer-xl);
+    transition-duration: var(--animation-duration);
+    transition-property: background-color, box-shadow;
+    transition-timing-function: var(--animation-easing);
 
-    > li {
-      > a,
-      > button {
-        border-bottom: calc(var(--border-width) * 3) solid transparent;
-        display: inline-flex;
-        text-decoration: none;
-        transition-property: border, color;
+    &:not(.is-active):not(.is-disabled) {
+      &:hover,
+      &:active,
+      &:focus,
+      &:focus-within {
+        background-color: var(--nav-hover-bg-color);
+        color: var(--nav-hover-color);
+        font-weight: var(--font-weight-bold);
+      }
+    }
 
-        &:hover,
-        &:active,
-        &:active {
-          background-color: transparent;
-          border-color: var(--nav-active-color);
-          color: var(--nav-color);
-          text-decoration: none;
-        }
+    &.is-active {
+      &,
+      &:hover,
+      &:active,
+      &:focus,
+      &:focus-within {
+        background-color: var(--nav-active-bg-color);
+        box-shadow: 0 calc(var(--spacer-3xs) * -1) 0 0 var(--nav-active-border-color) inset;
+        color: var(--nav-active-color);
+        font-weight: var(--font-weight-bold);
+      }
+    }
 
-        &.is-active {
-          &,
-          &:hover,
-          &:active,
-          &:active {
-            background-color: var(--nav-active-bg-color);
-            border-color: var(--nav-active-color);
-            color: var(--nav-active-color);
-            text-decoration: none;
-          }
-        }
+    &.is-disabled {
+      &,
+      &:hover,
+      &:active,
+      &:focus,
+      &:focus-within {
+        color: var(--nav-disabled-color);
+        cursor: not-allowed;
+      }
+    }
 
-        &.is-disabled {
-          &,
-          &:hover,
-          &:active,
-          &:active {
-            background-color: var(--nav-bg-color);
-            border-color: transparent;
-            color: var(--nav-disabled-color);
-            cursor: not-allowed;
-          }
-        }
+    > a,
+    > button {
+      align-items: center;
+      background: transparent;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      display: flex;
+      flex-grow: 1;
+      padding: var(--spacer-3xs) var(--spacer-s);
+      text-decoration: none;
+
+      > .ai {
+        display: inline-block;
+        margin-right: var(--spacer-xxs);
+      }
+
+      > .a-badge {
+        margin-left: var(--spacer-xxs);
       }
     }
   }
