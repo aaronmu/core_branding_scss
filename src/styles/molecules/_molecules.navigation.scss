@@ -24,89 +24,92 @@
  */
 
 .m-nav-list {
-  @extend %u-list-reset;
+  ol,
+  ul {
+    @extend %u-list-reset;
 
-  > li {
-    display: flex;
-    flex-direction: column;
-    min-height: var(--spacer-xl);
-    position: relative;
-    transition-duration: var(--animation-duration);
-    transition-property: background-color, box-shadow;
-    transition-timing-function: var(--animation-easing);
+    > li {
+      display: flex;
+      flex-direction: column;
+      min-height: var(--spacer-xl);
+      position: relative;
+      transition-duration: var(--animation-duration);
+      transition-property: background-color, box-shadow;
+      transition-timing-function: var(--animation-easing);
 
-    &:not(:first-child):after {
-      background-color: var(--nav-border-color);
-      content: '';
-      height: var(--border-width);
-      left: var(--spacer-s);
-      opacity: 1;
-      position: absolute;
-      right: 0;
-      top: 0;
-      transform: translateY(calc(var(--border-width) / -2));
-      transition: opacity var(--animation-normal);
-    }
+      &:not(:first-child):after {
+        background-color: var(--nav-border-color);
+        content: '';
+        height: var(--border-width);
+        left: var(--spacer-s);
+        opacity: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translateY(calc(var(--border-width) / -2));
+        transition: opacity var(--animation-normal);
+      }
 
-    &:not(.is-active):not(.is-disabled) {
-      &:hover,
-      &:active,
-      &:focus,
-      &:focus-within {
-        background-color: var(--nav-hover-bg-color);
-        color: var(--nav-hover-color);
-        font-weight: var(--font-weight-bold);
+      &:not(.is-active):not(.is-disabled) {
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+          background-color: var(--nav-hover-bg-color);
+          color: var(--nav-hover-color);
+          font-weight: var(--font-weight-bold);
 
-        &:after,
-        + li:after {
-          opacity: 0;
+          &:after,
+          + li:after {
+            opacity: 0;
+          }
         }
       }
-    }
 
-    &.is-active {
-      &,
-      &:hover,
-      &:active,
-      &:focus,
-      &:focus-within {
-        background-color: var(--nav-active-bg-color);
-        box-shadow: var(--spacer-3xs) 0 0 0 var(--nav-active-border-color) inset;
-        color: var(--nav-active-color);
-        font-weight: var(--font-weight-bold);
-      }
-    }
-
-    &.is-disabled {
-      &,
-      &:hover,
-      &:active,
-      &:focus,
-      &:focus-within {
-        color: var(--nav-disabled-color);
-        cursor: not-allowed;
-      }
-    }
-
-    > a,
-    > button {
-      align-items: center;
-      background: transparent;
-      border: none;
-      color: inherit;
-      cursor: pointer;
-      display: flex;
-      flex-grow: 1;
-      padding: var(--spacer-3xs) var(--spacer-s);
-      text-decoration: none;
-
-      > .ai {
-        display: inline-block;
-        margin-right: var(--spacer-xxs);
+      &.is-active {
+        &,
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+          background-color: var(--nav-active-bg-color);
+          box-shadow: var(--spacer-3xs) 0 0 0 var(--nav-active-border-color) inset;
+          color: var(--nav-active-color);
+          font-weight: var(--font-weight-bold);
+        }
       }
 
-      > .a-badge {
-        margin-left: var(--spacer-xxs);
+      &.is-disabled {
+        &,
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+          color: var(--nav-disabled-color);
+          cursor: not-allowed;
+        }
+      }
+
+      > a,
+      > button {
+        align-items: center;
+        background: transparent;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+        display: flex;
+        flex-grow: 1;
+        padding: var(--spacer-3xs) var(--spacer-s);
+        text-decoration: none;
+
+        > .ai {
+          display: inline-block;
+          margin-right: var(--spacer-xxs);
+        }
+
+        > .a-badge {
+          margin-left: var(--spacer-xxs);
+        }
       }
     }
   }
@@ -118,74 +121,107 @@
  */
 
 .m-nav-tabs {
-  @extend %u-list-reset;
+  position: relative;
 
-  display: flex;
-  flex-wrap: wrap;
+  ol,
+  ul {
+    @extend %u-list-reset;
 
-  > li {
+    -ms-overflow-style: scrollbar;
+    -webkit-overflow-scrolling: touch;
     display: flex;
-    flex-direction: column;
-    min-height: var(--spacer-xl);
-    transition-duration: var(--animation-duration);
-    transition-property: background-color, box-shadow;
-    transition-timing-function: var(--animation-easing);
+    overflow-x: auto;
 
-    &:not(.is-active):not(.is-disabled) {
-      &:hover,
-      &:active,
-      &:focus,
-      &:focus-within {
-        background-color: var(--nav-hover-bg-color);
-        color: var(--nav-hover-color);
-        font-weight: var(--font-weight-bold);
-      }
-    }
-
-    &.is-active {
-      &,
-      &:hover,
-      &:active,
-      &:focus,
-      &:focus-within {
-        background-color: var(--nav-active-bg-color);
-        box-shadow: 0 calc(var(--spacer-3xs) * -1) 0 0 var(--nav-active-border-color) inset;
-        color: var(--nav-active-color);
-        font-weight: var(--font-weight-bold);
-      }
-    }
-
-    &.is-disabled {
-      &,
-      &:hover,
-      &:active,
-      &:focus,
-      &:focus-within {
-        color: var(--nav-disabled-color);
-        cursor: not-allowed;
-      }
-    }
-
-    > a,
-    > button {
-      align-items: center;
-      background: transparent;
-      border: none;
-      color: inherit;
-      cursor: pointer;
+    > li {
       display: flex;
-      flex-grow: 1;
-      padding: var(--spacer-3xs) var(--spacer-s);
-      text-decoration: none;
+      flex-direction: column;
+      min-height: var(--spacer-xl);
+      transition-duration: var(--animation-duration);
+      transition-property: background-color, box-shadow;
+      transition-timing-function: var(--animation-easing);
 
-      > .ai {
-        display: inline-block;
-        margin-right: var(--spacer-xxs);
+      &:not(.is-active):not(.is-disabled) {
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+          background-color: var(--nav-hover-bg-color);
+          color: var(--nav-hover-color);
+          font-weight: var(--font-weight-bold);
+        }
       }
 
-      > .a-badge {
-        margin-left: var(--spacer-xxs);
+      &.is-active {
+        &,
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+          background-color: var(--nav-active-bg-color);
+          box-shadow: 0 calc(var(--spacer-3xs) * -1) 0 0 var(--nav-active-border-color) inset;
+          color: var(--nav-active-color);
+          font-weight: var(--font-weight-bold);
+        }
+      }
+
+      &.is-disabled {
+        &,
+        &:hover,
+        &:active,
+        &:focus,
+        &:focus-within {
+          color: var(--nav-disabled-color);
+          cursor: not-allowed;
+        }
+      }
+
+      > a,
+      > button {
+        align-items: center;
+        background: transparent;
+        border: none;
+        color: inherit;
+        cursor: pointer;
+        display: flex;
+        flex-grow: 1;
+        padding: var(--spacer-3xs) var(--spacer-s);
+        text-decoration: none;
+
+        > .ai {
+          display: inline-block;
+          margin-right: var(--spacer-xxs);
+        }
+
+        > .a-badge {
+          margin-left: var(--spacer-xxs);
+        }
       }
     }
+  }
+
+  &.has-border {
+    border-bottom: var(--border-width) solid var(--nav-border-color);
+  }
+
+  // Display a drop shadow on the left inner side of the navigation
+  &.has-shadow-left:before {
+    background-color: var(--box-shadow-color);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: var(--spacer-xs);
+  }
+
+  // Display a drop shadow on the right inner side of the navigation
+  &.has-shadow-right:after {
+    background-color: var(--box-shadow-color);
+    bottom: 0;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: var(--spacer-xs);
   }
 }

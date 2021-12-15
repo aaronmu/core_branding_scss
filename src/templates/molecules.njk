@@ -1819,13 +1819,15 @@
         <h4 class="u-margin-top-xl">List navigation</h4>
         <div class="d">
             <div>
-                <ul class="m-nav-list" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
-                    <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
-                    <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
-                </ul>
+                <nav class="m-nav-list">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
@@ -1845,13 +1847,15 @@
 
         <div class="d">
             <div>
-                <ul class="m-nav-list u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false">Overview</button></li>
-                    <li class="is-active"><button role="tab" aria-selected="true">Description</button></li>
-                    <li><button role="tab" aria-selected="false">Guests</button></li>
-                    <li><button role="tab" aria-selected="false">Location</button></li>
-                    <li class="is-disabled"><button role="tab" aria-disabled="true" aria-selected="false">Partners</button></li>
-                </ul>
+                <nav class="m-nav-list">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><button role="tab" aria-selected="false">Overview</button></li>
+                        <li class="is-active"><button role="tab" aria-selected="true">Description</button></li>
+                        <li><button role="tab" aria-selected="false">Guests</button></li>
+                        <li><button role="tab" aria-selected="false">Location</button></li>
+                        <li class="is-disabled"><button role="tab" aria-disabled="true" aria-selected="false">Partners</button></li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
@@ -1865,13 +1869,15 @@
         <h4 class="u-margin-top-xl">Tab navigation</h4>
         <div class="d">
             <div>
-                <ul class="m-nav-tabs u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
-                    <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
-                    <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
-                </ul>
+                <nav class="m-nav-tabs">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
@@ -1881,8 +1887,45 @@
 &lt;/ul&gt;</code></pre>
             </div>
         </div>
-        <div class="m-alert d-alert">
-            <p>Note that on mobile devices <code>.m-nav-tabs</code> has the exact same appearance as <code>.m-nav-list</code>.</p>
+        <div class="d">
+            <div>
+                <nav class="m-nav-tabs has-border u-margin-bottom-xl">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <nav class="m-nav-tabs has-border has-shadow-left has-shadow-right">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
+  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
         </div>
 
         <a name="molecules-overlay" aria-label="Overlay"></a>
