@@ -2506,117 +2506,6 @@
         <div class="d">
             <div>
                 <table class="a-table">
-                    <caption>Standard table with sortable columns</caption>
-                    <thead>
-                        <tr>
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button">
-                                    Snack {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button">
-                                    Description {{ icon.render('keyboard-arrow-down') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button a-table__sort-button--align-right">
-                                    Stock {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button a-table__sort-button--align-right">
-                                    Price {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="u-text-bold">Ice cream</td>
-                            <td class="small">Tasty, frozen treat for a hot day</td>
-                            <td class="u-text-right small">160</td>
-                            <td class="u-text-right">€2,49</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Chips</td>
-                            <td class="small">Salty, crunchy goodness</td>
-                            <td class="u-text-right small">48</td>
-                            <td class="u-text-right">€1,99</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Lollipop</td>
-                            <td class="small">Rainbow flavors with a bubblegum center</td>
-                            <td class="u-text-right small">480</td>
-                            <td class="u-text-right">€0,99</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Candy bar</td>
-                            <td class="small">Chewy and quite nutty</td>
-                            <td class="u-text-right small">240</td>
-                            <td class="u-text-right">€1,49</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
-                <div class="u-screen-reader-only" aria-live="polite">Description column sorted down</div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
-  &lt;caption&gt;Standard table with sortable columns&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button"&gt;
-          Snack {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button"&gt;
-          Description {{ icon.code('keyboard-arrow-down') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
-          Stock {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
-          Price {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted down&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-
-        <div class="d">
-            <div>
-                <table class="a-table">
                     <caption>Standard table with checkboxes</caption>
                     <thead>
                         <tr>
@@ -2874,6 +2763,192 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-xl">Sortable tables</h4>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one unsorted column</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="none">
+                                <button class="a-table__sort-button is-unsorted">Description</button>
+                            </th>
+                            <th>Stock</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one column sorted ascending</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="ascending">
+                                <button class="a-table__sort-button is-sorted-asc">Description</button>
+                            </th>
+                            <th>Stock</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
+                <div class="u-screen-reader-only" aria-live="polite">Description column sorted ascending</div>
+            </div>
+            <div></div>
+        </div>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one column sorted descending</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="descending">
+                                <button class="a-table__sort-button is-sorted-desc">Description</button>
+                            </th>
+                            <th>Stock</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
+                <div class="u-screen-reader-only" aria-live="polite">Description column sorted descending</div>
+            </div>
+            <div>
+                <!-- <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Standard table with sortable columns&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button"&gt;
+          Snack {{ icon.code('move-expand-vertical') }}
+        &lt;/button&gt;
+      &lt;/th&gt;
+
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button"&gt;
+          Description {{ icon.code('keyboard-arrow-down') }}
+        &lt;/button&gt;
+      &lt;/th&gt;
+
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
+          Stock {{ icon.code('move-expand-vertical') }}
+        &lt;/button&gt;
+      &lt;/th&gt;
+
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
+          Price {{ icon.code('move-expand-vertical') }}
+        &lt;/button&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;...&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted down&lt;/div&gt;</code></pre> -->
             </div>
         </div>
 
