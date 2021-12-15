@@ -1830,11 +1830,15 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
         <div class="d">
@@ -1858,18 +1862,22 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Overview&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;button role="tab" aria-selected="true"&gt;Description&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Guests&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Location&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;button role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
 
         <h4 class="u-margin-top-xl">Tab navigation</h4>
         <div class="d">
             <div>
-                <nav class="m-nav-tabs">
+                <nav class="m-nav-tabs u-margin-bottom-xl">
                     <ul role="tablist" aria-label="My tablist">
                         <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
                         <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
@@ -1880,36 +1888,44 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
                 <nav class="m-nav-tabs has-border u-margin-bottom-xl">
                     <ul role="tablist" aria-label="My tablist">
-                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
-                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
-                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
-                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
-                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                        <li><button role="tab" aria-selected="false">Overview</button></li>
+                        <li class="is-active"><button role="tab" aria-selected="true">Description</button></li>
+                        <li><button role="tab" aria-selected="false">Guests</button></li>
+                        <li><button role="tab" aria-selected="false">Location</button></li>
+                        <li class="is-disabled"><button role="tab" aria-disabled="true" aria-selected="false">Partners</button></li>
                     </ul>
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Overview&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;button role="tab" aria-selected="true"&gt;Description&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Guests&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Location&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <nav class="m-nav-tabs has-border has-shadow-left has-shadow-right">
+                <nav class="m-nav-tabs has-border has-shadow-left has-shadow-right u-margin-bottom-xl">
                     <ul role="tablist" aria-label="My tablist">
                         <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
                         <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
@@ -1920,11 +1936,15 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border has-shadow-left has-shadow-right"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
 
