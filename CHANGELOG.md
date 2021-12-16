@@ -198,6 +198,16 @@
   - Changed `.a-spinner--small` to `.a-spinner--s`
   - Changed `.a-spinner--large` to `.a-spinner--l`
 
+#### Step indicator
+
+##### Added
+- Added step indicator with clickable steps
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] An incompleted step should have `.is-incompleted` as classname
+
 #### Switch
 
 ##### Added
