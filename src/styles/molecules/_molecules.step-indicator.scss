@@ -9,7 +9,7 @@
   --step-indicator-square-color:                          var(--text-color-light);
   --step-indicator-square-bg-color:                       var(--bg-color-light);
   --step-indicator-square-hover-bg-color:                 var(--theme1-050);
-  --step-indicator-square-border-color:                   var(--border-color-dark);
+  --step-indicator-square-border-color:                   #{$gray-400};
 
   --step-indicator-square-active-color:                   var(--theme1-400);
   --step-indicator-square-active-bg-color:                #{$white};
@@ -21,8 +21,8 @@
   --step-indicator-square-completed-border-color:         var(--theme1-400);
   --step-indicator-square-completed-hover-border-color:   var(--theme1-500);
 
-  --step-indicator-line-color:                            var(--border-color-dark);
-  --step-indicator-line-active-color:                     var(--border-color-dark);
+  --step-indicator-line-color:                            #{$gray-400};
+  --step-indicator-line-active-color:                     #{$gray-400};
   --step-indicator-line-completed-color:                  var(--theme1-400);
 
   --step-indicator-label-color:                           var(--text-color-light);
