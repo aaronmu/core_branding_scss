@@ -839,7 +839,12 @@
             <div>
                 <div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false">
                     <div class="m-datepicker__nav">
-                        <button type="button" class="m-datepicker__nav-title">May 2021 {{ icon.render('arrow-up-1') }}</button>
+                        <button type="button" class="m-datepicker__nav-title">2021 {{ icon.render('arrow-up-1') }}</button>
+
+                        <div class="m-datepicker__nav-pagination">
+                            <button type="button" aria-label="Go to previous year, 2020" class="a-button a-button--text a-button--primary has-icon">{{ icon.render('arrow-left-1') }}</button>
+                            <button type="button" aria-label="Go to next year, 2022" class="a-button a-button--text a-button--primary has-icon">{{ icon.render('arrow-right-1') }}</button>
+                        </div>
                     </div>
                     <div class="m-datepicker__list">
                         <table>
@@ -876,7 +881,12 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false"&gt;
   &lt;div class="m-datepicker__nav"&gt;
-    &lt;button type="button" class="m-datepicker__nav-title"&gt;May 2021 {{ icon.code('arrow-up-1') }}&lt;/button&gt;
+    &lt;button type="button" class="m-datepicker__nav-title"&gt;2021 {{ icon.code('arrow-up-1') }}&lt;/button&gt;
+
+    &lt;div class="m-datepicker__nav-pagination"&gt;
+      &lt;button type="button" aria-label="Go to previous year, 2020" class="a-button a-button--text a-button--primary has-icon"&gt;{{ icon.render('arrow-left-1') }}&lt;/button&gt;
+      &lt;button type="button" aria-label="Go to next year, 2022" class="a-button a-button--text a-button--primary has-icon"&gt;{{ icon.render('arrow-right-1') }}&lt;/button&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="m-datepicker__list"&gt;
     &lt;table&gt;
@@ -902,86 +912,28 @@
             <div>
                 <div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false">
                     <div class="m-datepicker__nav">
-                        <button type="button" class="m-datepicker__nav-title">May 2021 {{ icon.render('arrow-up-1') }}</button>
+                        <button type="button" class="m-datepicker__nav-title">2014 - 2031 {{ icon.render('arrow-up-1') }}</button>
+
+                        <div class="m-datepicker__nav-pagination">
+                            <button type="button" aria-label="Go to previous years, 1996 - 2013" class="a-button a-button--text a-button--primary has-icon">{{ icon.render('arrow-left-1') }}</button>
+                            <button type="button" aria-label="Go to next years, 2032 - 2049" class="a-button a-button--text a-button--primary has-icon">{{ icon.render('arrow-right-1') }}</button>
+                        </div>
                     </div>
                     <div class="m-datepicker__list">
                         <table>
                             <tbody class="m-datepicker__list-body">
                                 <tr>
-                                    <td><button type="button">1971</button></td>
-                                    <td><button type="button">1972</button></td>
-                                    <td><button type="button">1973</button></td>
-                                    <td><button type="button">1974</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">1975</button></td>
-                                    <td><button type="button">1976</button></td>
-                                    <td><button type="button">1977</button></td>
-                                    <td><button type="button">1978</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">1979</button></td>
-                                    <td><button type="button">1980</button></td>
-                                    <td><button type="button">1981</button></td>
-                                    <td><button type="button">1982</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">1983</button></td>
-                                    <td><button type="button">1984</button></td>
-                                    <td><button type="button">1985</button></td>
-                                    <td><button type="button">1986</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">1987</button></td>
-                                    <td><button type="button">1988</button></td>
-                                    <td><button type="button">1989</button></td>
-                                    <td><button type="button">1990</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">1991</button></td>
-                                    <td><button type="button">1992</button></td>
-                                    <td><button type="button">1993</button></td>
-                                    <td><button type="button">1994</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">1995</button></td>
-                                    <td><button type="button">1996</button></td>
-                                    <td><button type="button">1997</button></td>
-                                    <td><button type="button">1998</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">1999</button></td>
-                                    <td><button type="button">2000</button></td>
-                                    <td><button type="button">2001</button></td>
-                                    <td><button type="button">2002</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">2003</button></td>
-                                    <td><button type="button">2004</button></td>
-                                    <td><button type="button">2005</button></td>
-                                    <td><button type="button">2006</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">2007</button></td>
-                                    <td><button type="button">2008</button></td>
-                                    <td><button type="button">2009</button></td>
-                                    <td><button type="button">2010</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">2011</button></td>
-                                    <td><button type="button">2012</button></td>
-                                    <td><button type="button">2013</button></td>
                                     <td><button type="button">2014</button></td>
+                                    <td><button type="button">2015</button></td>
+                                    <td><button type="button">2016</button></td>
                                 </tr>
                                 <tr>
-                                    <td><button type="button">2015</button></td>
-                                    <td><button type="button" class="is-selected">2016</button></td>
                                     <td><button type="button">2017</button></td>
                                     <td><button type="button">2018</button></td>
+                                    <td><button type="button">2019</button></td>
                                 </tr>
                                 <tr>
-                                    <td><button type="button">2019</button></td>
-                                    <td><button type="button">2020</button></td>
+                                    <td><button type="button" class="is-selected">2020</button></td>
                                     <td><button type="button" class="is-current">2021</button></td>
                                     <td><button type="button">2022</button></td>
                                 </tr>
@@ -989,43 +941,16 @@
                                     <td><button type="button">2023</button></td>
                                     <td><button type="button">2024</button></td>
                                     <td><button type="button">2025</button></td>
-                                    <td><button type="button">2026</button></td>
                                 </tr>
                                 <tr>
+                                    <td><button type="button">2026</button></td>
                                     <td><button type="button">2027</button></td>
                                     <td><button type="button">2028</button></td>
+                                </tr>
+                                <tr>
                                     <td><button type="button">2029</button></td>
                                     <td><button type="button">2030</button></td>
-                                </tr>
-                                <tr>
                                     <td><button type="button">2031</button></td>
-                                    <td><button type="button">2032</button></td>
-                                    <td><button type="button">2033</button></td>
-                                    <td><button type="button">2034</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">2035</button></td>
-                                    <td><button type="button">2036</button></td>
-                                    <td><button type="button">2037</button></td>
-                                    <td><button type="button">2038</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">2039</button></td>
-                                    <td><button type="button">2040</button></td>
-                                    <td><button type="button">2041</button></td>
-                                    <td><button type="button">2042</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">2043</button></td>
-                                    <td><button type="button">2044</button></td>
-                                    <td><button type="button">2045</button></td>
-                                    <td><button type="button">2046</button></td>
-                                </tr>
-                                <tr>
-                                    <td><button type="button">2047</button></td>
-                                    <td><button type="button">2048</button></td>
-                                    <td><button type="button">2049</button></td>
-                                    <td><button type="button">2050</button></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -1035,21 +960,19 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="application" aria-label="Datepicker years" class="m-datepicker is-open" aria-hidden="false"&gt;
   &lt;div class="m-datepicker__nav"&gt;
-    &lt;button type="button" class="m-datepicker__nav-title"&gt;May 2021 {{ icon.code('arrow-up-1') }}&lt;/button&gt;
+    &lt;button type="button" class="m-datepicker__nav-title"&gt;2014 - 2031 {{ icon.code('arrow-up-1') }}&lt;/button&gt;
+
+    &lt;div class="m-datepicker__nav-pagination"&gt;
+      &lt;button type="button" aria-label="Go to previous years, 1996 - 2013" class="a-button a-button--text a-button--primary has-icon"&gt;{{ icon.render('arrow-left-1') }}&lt;/button&gt;
+      &lt;button type="button" aria-label="Go to next years, 2032 - 2049" class="a-button a-button--text a-button--primary has-icon"&gt;{{ icon.render('arrow-right-1') }}&lt;/button&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
   &lt;div class="m-datepicker__list"&gt;
     &lt;table&gt;
       &lt;tbody class="m-datepicker__list-body"&gt;
         &lt;tr&gt;...&lt;/tr&gt;
         &lt;tr&gt;
-          &lt;td&gt;&lt;button type="button"&gt;2015&lt;/button&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;button type="button" class="is-selected"&gt;2016&lt;/button&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;button type="button"&gt;2017&lt;/button&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;button type="button"&gt;2018&lt;/button&gt;&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;&lt;button type="button"&gt;2019&lt;/button&gt;&lt;/td&gt;
-          &lt;td&gt;&lt;button type="button"&gt;2020&lt;/button&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;button type="button" class="is-selected"&gt;2020&lt;/button&gt;&lt;/td&gt;
           &lt;td&gt;&lt;button type="button" class="is-current"&gt;2021&lt;/button&gt;&lt;/td&gt;
           &lt;td&gt;&lt;button type="button"&gt;2022&lt;/button&gt;&lt;/td&gt;
         &lt;/tr&gt;
@@ -2334,70 +2257,89 @@
         <div class="d">
             <div>
                 <div class="m-tag">
-                    <span class="m-tag__label">My fancy tag</span>
+                    <div class="m-tag__label">Default tag</div>
                 </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;span class="m-tag__label"&gt;My fancy tag&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
                 <div class="m-tag">
-                    <label for="new-tag" class="u-screen-reader-only">Insert new tag</label>
-                    <input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" />
-                </div>
-                <div class="m-alert d-alert m-alert--wcag">
-                    <p><span class="u-screen-reader-only">Accessibility note. </span>Note that you can't solely rely on a placeholder for creating new tags.</p>
+                    <div class="m-tag__icon">{{ icon.render('tags') }}</div>
+                    <div class="m-tag__label">Default tag with icon</div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;label for="new-tag" class="u-screen-reader-only"&gt;Insert new tag&lt;/label&gt;
-  &lt;input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" /&gt;
+  &lt;span class="m-tag__label"&gt;Default tag&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="m-tag"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Default tag with icon&lt;/span&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div class="m-tag">
-                    <span class="m-tag__label">My tag with delete button</span>
-                    <button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete">{{ icon.render('remove') }}</button>
+                <div class="m-tag is-clickable">
+                    <div class="m-tag__label">Removable tag</div>
+                    <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
+                </div>
+                <div class="m-tag is-clickable">
+                    <div class="m-tag__icon">{{ icon.render('tags') }}</div>
+                    <div class="m-tag__label">Removable tag with icon</div>
+                    <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;span class="m-tag__label"&gt;My tag with delete button&lt;/span&gt;
-  &lt;button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag is-clickable"&gt;
+  &lt;span class="m-tag__label"&gt;Removable tag&lt;/span&gt;
+  &lt;button class="m-tag__button a-button a-button--text a-button--s has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="m-tag is-clickable"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Removable tag with icon&lt;/span&gt;
+  &lt;button class="m-tag__button a-button a-button--text a-button--s has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div>
-                    <div class="m-tag u-margin-bottom-xs">
-                        <button class="a-button a-button--neutral a-button--s has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
-                        <span class="m-tag__label">My tag with icon</span>
-                    </div>
-                </div>
-                <div>
-                    <div class="m-tag">
-                        <button class="a-button a-button--s a-button--success has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
-                        <span class="m-tag__label">My other tag with icon</span>
-                    </div>
-                </div>
+                <button class="m-tag" aria-checked="false">
+                    <span class="m-tag__label">Togglable tag</span>
+                </button>
+                <button class="m-tag" aria-checked="false">
+                    <span class="m-tag__icon">{{ icon.render('tags') }}</span>
+                    <span class="m-tag__label">Togglable tag with icon</span>
+                </button>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;button class="a-button a-button--neutral a-button--s has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
-  &lt;span class="m-tag__label"&gt;My tag with icon&lt;/span&gt;
- &lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;button class="a-button a-button--s a-button--success has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
-  &lt;span class="m-tag__label"&gt;My other tag with icon&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="m-tag" aria-checked="false"&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class="m-tag" aria-checked="false"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag with icon&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <button class="m-tag" aria-checked="true">
+                    <span class="m-tag__label">Toggled tag</span>
+                </button>
+                <button class="m-tag" aria-checked="true">
+                    <span class="m-tag__icon">{{ icon.render('tags') }}</span>
+                    <span class="m-tag__label">Toggled tag with icon</span>
+                </button>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="m-tag" aria-checked="true"&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class="m-tag" aria-checked="true"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag with icon&lt;/span&gt;
+&lt;/button&gt;</code></pre>
             </div>
         </div>
 

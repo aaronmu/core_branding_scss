@@ -824,13 +824,13 @@
             <div>
                 <div class="a-copyright">
                     <span class="a-copyright__sign">©</span>
-                    <span class="a-copyright__label">Jasper Van Proeyen</span>
+                    <span class="a-copyright__label">Anne martens</span>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-copyright"&gt;
   &lt;span class="a-copyright__sign"&gt;&copy;&lt;/span&gt;
-  &lt;span class="a-copyright__label"&gt;Jasper Van Proeyen&lt;/span&gt;
+  &lt;span class="a-copyright__label"&gt;Anne martens&lt;/span&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -1185,6 +1185,63 @@
       &lt;option value="3"&gt;Option 3&lt;/option&gt;
       &lt;option value="4" disabled&gt;Option 4 disabled&lt;/option&gt;
       &lt;option value="5"&gt;Option 5&lt;/option&gt;
+    &lt;/select&gt;
+    {{ icon.code('arrow-down-1') }}
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input">
+                    <label class="a-input__label" for="time-field">Time</label>
+                    <div class="a-input__wrapper">
+                        <input type="time" name="time-field" id="time-field" />
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
+  &lt;label class="a-input__label" for="time-field"&gt;Time&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;input type="time" name="time-field" id="time-field" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-input has-icon-right">
+                    <label class="a-input__label" for="select-time">Time</label>
+                    <div class="a-input__wrapper">
+                        <select name="select-time" id="select-time">
+                            <option value="" disabled selected>Select...</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:15">09:15</option>
+                            <option value="09:30">09:30</option>
+                            <option value="09:45">09:45</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:15">10:15</option>
+                            <option value="10:30">10:30</option>
+                            <option value="10:45">10:45</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:15">11:15</option>
+                            <option value="11:30">11:30</option>
+                            <option value="11:45">11:45</option>
+                            <option value="12:00">12:00</option>
+                        </select>
+                        {{ icon.render('arrow-down-1') }}
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input has-icon-right"&gt;
+  &lt;label class="a-input__label" for="select-time"&gt;Time&lt;/label&gt;
+  &lt;div class="a-input__wrapper"&gt;
+    &lt;select name="select-time" id="select-time"&gt;
+      &lt;option value="" disabled selected&gt;Select...&lt;/option&gt;
+      &lt;option value="09:00"&gt;09:00&lt;/option&gt;
+      &lt;option&gt;...&lt;/option&gt;
     &lt;/select&gt;
     {{ icon.code('arrow-down-1') }}
   &lt;/div&gt;
@@ -1897,17 +1954,51 @@
             <div>
                 <div class="a-range-slider">
                     <div class="a-range-slider__labels">
+                        <div class="a-range-slider__label">Volume</div>
+                        <div class="a-range-slider__label">2</div>
+                    </div>
+                    <div class="a-range-slider__inner">
+                        <div class="a-range-slider__bar" style="width: 20%"></div>
+                        <div class="a-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="2" aria-valuemin="0" aria-valuemax="10" tabindex="0"></div>
+                    </div>
+                    <div class="a-range-slider__descriptions">
+                        <div class="a-range-slider__description small">{{ icon.render('volume-control-off') }}</div>
+                        <div class="a-range-slider__description small">{{ icon.render('volume-control-full') }}</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-range-slider"&gt;
+  &lt;div class="a-range-slider__labels"&gt;
+    &lt;div class="a-range-slider__label"&gt;Opacity&lt;/div&gt;
+    &lt;div class="a-range-slider__label"&gt;20%&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="a-range-slider__inner"&gt;
+    &lt;div class="a-range-slider__bar" style="width: 20%"&gt;&lt;/div&gt;
+    &lt;div class="a-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="a-range-slider__descriptions"&gt;
+    &lt;div class="a-range-slider__description small"&gt;{{ icon.code('volume-control-off') }}&lt;/div&gt;
+    &lt;div class="a-range-slider__description small"&gt;{{ icon.code('volume-control-full') }}&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-range-slider">
+                    <div class="a-range-slider__labels">
                         <div class="a-range-slider__label">Opacity</div>
                         <div class="a-range-slider__label">20%</div>
                     </div>
                     <div class="a-range-slider__inner">
                         <div class="a-range-slider__tickmarks">
-                            <div class="a-range-slider__tickmark" style="left: 0%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 20%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 40%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 60%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 80%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 100%;"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
                         </div>
                         <div class="a-range-slider__bar" style="width: 20%"></div>
                         <div class="a-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0"></div>
@@ -1922,12 +2013,12 @@
   &lt;/div&gt;
   &lt;div class="a-range-slider__inner"&gt;
     &lt;div class="a-range-slider__tickmarks"&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 00%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 20%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 40%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 60%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 80%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 100%;"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="a-range-slider__bar" style="width: 20%"&gt;&lt;/div&gt;
     &lt;div class="a-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;&lt;/div&gt;
@@ -1944,12 +2035,12 @@
                     </div>
                     <div class="a-range-slider__inner">
                         <div class="a-range-slider__tickmarks">
-                            <div class="a-range-slider__tickmark" style="left: 0%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 20%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 40%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 60%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 80%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 100%;"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
                         </div>
                         <div class="a-range-slider__bar" style="width: 20%"></div>
                         <div class="a-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0"></div>
@@ -1968,12 +2059,12 @@
   &lt;/div&gt;
   &lt;div class="a-range-slider__inner"&gt;
     &lt;div class="a-range-slider__tickmarks"&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 0%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 20%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 40%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 60%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 80%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 100%;"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="a-range-slider__bar" style="width: 20%"&gt;&lt;/div&gt;
     &lt;div class="a-range-slider__handle" style="left: 20%;" role="slider" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;&lt;/div&gt;
@@ -2058,17 +2149,17 @@
                     </div>
                     <div class="a-range-slider__inner">
                         <div class="a-range-slider__tickmarks">
-                            <div class="a-range-slider__tickmark" style="left: 0%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 10%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 20%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 30%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 40%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 50%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 60%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 70%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 80%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 90%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 100%;"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
                         </div>
                         <div class="a-range-slider__bar" style="left: 10%; width: 40%"></div>
                         <div class="a-range-slider__handle" style="left: 10%;" role="slider" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" tabindex="0"></div>
@@ -2084,17 +2175,17 @@
   &lt;/div&gt;
   &lt;div class="a-range-slider__inner"&gt;
     &lt;div class="a-range-slider__tickmarks"&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 0%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 10%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 20%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 30%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 40%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 50%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 60%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 70%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 80%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 90%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 100%;"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="a-range-slider__bar" style="left: 10%; width: 40%"&gt;&lt;/div&gt;
     &lt;div class="a-range-slider__handle" style="left: 10%;" role="slider" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;&lt;/div&gt;
@@ -2112,17 +2203,17 @@
                     </div>
                     <div class="a-range-slider__inner">
                         <div class="a-range-slider__tickmarks">
-                            <div class="a-range-slider__tickmark" style="left: 0%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 10%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 20%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 30%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 40%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 50%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 60%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 70%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 80%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 90%;"></div>
-                            <div class="a-range-slider__tickmark" style="left: 100%;"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
+                            <div class="a-range-slider__tickmark"></div>
                         </div>
                         <div class="a-range-slider__bar" style="left: 10%; width: 40%"></div>
                         <div class="a-range-slider__handle" style="left: 10%;" role="slider" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" tabindex="0"></div>
@@ -2142,17 +2233,17 @@
   &lt;/div&gt;
   &lt;div class="a-range-slider__inner"&gt;
     &lt;div class="a-range-slider__tickmarks"&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 0%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 10%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 20%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 30%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 40%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 50%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 60%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 70%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 80%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 90%;"&gt;&lt;/div&gt;
-      &lt;div class="a-range-slider__tickmark" style="left: 100%;"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
+      &lt;div class="a-range-slider__tickmark"&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="a-range-slider__bar" style="left: 10%; width: 40%"&gt;&lt;/div&gt;
     &lt;div class="a-range-slider__handle" style="left: 10%;" role="slider" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" tabindex="0"&gt;&lt;/div&gt;
@@ -2469,117 +2560,6 @@
         <div class="d">
             <div>
                 <table class="a-table">
-                    <caption>Standard table with sortable columns</caption>
-                    <thead>
-                        <tr>
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button">
-                                    Snack {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button">
-                                    Description {{ icon.render('keyboard-arrow-down') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button a-table__sort-button--align-right">
-                                    Stock {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button a-table__sort-button--align-right">
-                                    Price {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="u-text-bold">Ice cream</td>
-                            <td class="small">Tasty, frozen treat for a hot day</td>
-                            <td class="u-text-right small">160</td>
-                            <td class="u-text-right">€2,49</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Chips</td>
-                            <td class="small">Salty, crunchy goodness</td>
-                            <td class="u-text-right small">48</td>
-                            <td class="u-text-right">€1,99</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Lollipop</td>
-                            <td class="small">Rainbow flavors with a bubblegum center</td>
-                            <td class="u-text-right small">480</td>
-                            <td class="u-text-right">€0,99</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Candy bar</td>
-                            <td class="small">Chewy and quite nutty</td>
-                            <td class="u-text-right small">240</td>
-                            <td class="u-text-right">€1,49</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
-                <div class="u-screen-reader-only" aria-live="polite">Description column sorted down</div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
-  &lt;caption&gt;Standard table with sortable columns&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button"&gt;
-          Snack {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button"&gt;
-          Description {{ icon.code('keyboard-arrow-down') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
-          Stock {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
-          Price {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted down&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-
-        <div class="d">
-            <div>
-                <table class="a-table">
                     <caption>Standard table with checkboxes</caption>
                     <thead>
                         <tr>
@@ -2837,6 +2817,199 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-xl">Sortable tables</h4>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one unsorted column</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="none">
+                                <button class="a-table__sort-button a-table__sort-button--unsorted">Description</button>
+                            </th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one unsorted column&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--unsorted"&gt;Description&lt;/button&gt;
+      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one column sorted ascending</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="ascending">
+                                <button class="a-table__sort-button a-table__sort-button--sorted-asc">Description</button>
+                            </th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
+                <div class="u-screen-reader-only" aria-live="polite">Description column sorted ascending</div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one column sorted ascending&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="ascending"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--sorted-asc"&gt;Description&lt;/button&gt;
+      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted ascending&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one column sorted descending</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="descending">
+                                <button class="a-table__sort-button a-table__sort-button--sorted-desc">Description</button>
+                            </th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
+                <div class="u-screen-reader-only" aria-live="polite">Description column sorted descending</div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one column sorted descending&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="descending"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--sorted-desc"&gt;Description&lt;/button&gt;
+      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted descending&lt;/div&gt;</code></pre>
             </div>
         </div>
 
