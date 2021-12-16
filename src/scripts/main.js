@@ -39,4 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    const tags = document.querySelectorAll("button.m-tag");
+
+    for (let index = 0; index < tags.length; index++) {
+        const tagEl = tags[index];
+
+        tagEl.onclick = () => {
+            if (tagEl.getAttribute("aria-checked") == "true") {
+                tagEl.setAttribute("aria-checked", "false");
+            } else {
+                tagEl.setAttribute("aria-checked", "true");
+            }
+        }
+    }
 }, false);

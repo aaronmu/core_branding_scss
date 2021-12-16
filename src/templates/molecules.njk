@@ -2235,70 +2235,89 @@
         <div class="d">
             <div>
                 <div class="m-tag">
-                    <span class="m-tag__label">My fancy tag</span>
+                    <div class="m-tag__label">Default tag</div>
                 </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;span class="m-tag__label"&gt;My fancy tag&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
                 <div class="m-tag">
-                    <label for="new-tag" class="u-screen-reader-only">Insert new tag</label>
-                    <input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" />
-                </div>
-                <div class="m-alert d-alert m-alert--wcag">
-                    <p><span class="u-screen-reader-only">Accessibility note. </span>Note that you can't solely rely on a placeholder for creating new tags.</p>
+                    <div class="m-tag__icon">{{ icon.render('tags') }}</div>
+                    <div class="m-tag__label">Default tag with icon</div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;label for="new-tag" class="u-screen-reader-only"&gt;Insert new tag&lt;/label&gt;
-  &lt;input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" /&gt;
+  &lt;span class="m-tag__label"&gt;Default tag&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="m-tag"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Default tag with icon&lt;/span&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div class="m-tag">
-                    <span class="m-tag__label">My tag with delete button</span>
-                    <button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete">{{ icon.render('remove') }}</button>
+                <div class="m-tag is-clickable">
+                    <div class="m-tag__label">Removable tag</div>
+                    <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
+                </div>
+                <div class="m-tag is-clickable">
+                    <div class="m-tag__icon">{{ icon.render('tags') }}</div>
+                    <div class="m-tag__label">Removable tag with icon</div>
+                    <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;span class="m-tag__label"&gt;My tag with delete button&lt;/span&gt;
-  &lt;button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag is-clickable"&gt;
+  &lt;span class="m-tag__label"&gt;Removable tag&lt;/span&gt;
+  &lt;button class="m-tag__button a-button a-button--text a-button--s has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="m-tag is-clickable"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Removable tag with icon&lt;/span&gt;
+  &lt;button class="m-tag__button a-button a-button--text a-button--s has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div>
-                    <div class="m-tag u-margin-bottom-xs">
-                        <button class="a-button a-button--neutral a-button--s has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
-                        <span class="m-tag__label">My tag with icon</span>
-                    </div>
-                </div>
-                <div>
-                    <div class="m-tag">
-                        <button class="a-button a-button--s a-button--success has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
-                        <span class="m-tag__label">My other tag with icon</span>
-                    </div>
-                </div>
+                <button class="m-tag" aria-checked="false">
+                    <span class="m-tag__label">Togglable tag</span>
+                </button>
+                <button class="m-tag" aria-checked="false">
+                    <span class="m-tag__icon">{{ icon.render('tags') }}</span>
+                    <span class="m-tag__label">Togglable tag with icon</span>
+                </button>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;button class="a-button a-button--neutral a-button--s has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
-  &lt;span class="m-tag__label"&gt;My tag with icon&lt;/span&gt;
- &lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;button class="a-button a-button--s a-button--success has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
-  &lt;span class="m-tag__label"&gt;My other tag with icon&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="m-tag" aria-checked="false"&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class="m-tag" aria-checked="false"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag with icon&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <button class="m-tag" aria-checked="true">
+                    <span class="m-tag__label">Toggled tag</span>
+                </button>
+                <button class="m-tag" aria-checked="true">
+                    <span class="m-tag__icon">{{ icon.render('tags') }}</span>
+                    <span class="m-tag__label">Toggled tag with icon</span>
+                </button>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="m-tag" aria-checked="true"&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class="m-tag" aria-checked="true"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag with icon&lt;/span&gt;
+&lt;/button&gt;</code></pre>
             </div>
         </div>
 
