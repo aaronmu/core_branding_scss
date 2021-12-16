@@ -159,6 +159,20 @@
 ##### Changed
 - [BREAKING] Changed `.m-modal--large` to `.m-modal--l`
 
+#### Navigation
+
+##### Added
+- Added horizontal scrollable variant of tab navigation
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.m-nav-list--left`
+  - Removed `.m-nav-tabs--left`
+  - Removed `.m-nav-tabs--right`
+- [BREAKING] `<ul>` element must be wrapped with an `<nav>` element
+
 #### Pagination
 
 ##### Changed

@@ -1348,6 +1348,40 @@
         <div class="d">
             <div>
                 <div class="m-flyout m-flyout--scrollable is-open d-flyout--s">
+                    <button class="a-button" aria-expanded="true">Flyout with a navigation list</button>
+                    <div class="m-flyout__content">
+                        <nav class="m-nav-list">
+                            <ul role="tablist" aria-label="My tablist">
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                                <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                                <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--scrollable is-open"&gt;
+  &lt;button class="a-button" aria-expanded="true"&gt;Flyout with a navigation list&lt;/button&gt;
+  &lt;div class="m-flyout__content"&gt;
+    &lt;nav class="m-nav-list"&gt;
+      &lt;ul role="tablist" aria-label="My tablist"&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-flyout m-flyout--scrollable is-open d-flyout--s">
                     <div class="a-input">
                         <label class="a-input__label" for="input-autocomplete">Flyout as an autocomplete</label>
                         <input type="text" name="input-autocomplete" id="input-autocomplete" aria-expanded="true" />
@@ -1742,29 +1776,26 @@
         <h4 class="u-margin-top-xl">List navigation</h4>
         <div class="d">
             <div>
-                <ul class="m-nav-list u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein <span class="a-badge a-badge--primary">5</span></a></li>
-                </ul>
-
-                <ul class="m-nav-list m-nav-list--left">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein <span class="a-badge a-badge--primary">5</span></a></li>
-                </ul>
+                <nav class="m-nav-list">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list m-nav-list--left"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
         <div class="d">
@@ -1777,87 +1808,101 @@
 
         <div class="d">
             <div>
-                <ul class="m-nav-list u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</button></li>
-                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></button></li>
-                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein <span class="a-badge a-badge--primary">5</span></button></li>
-                </ul>
-
-                <ul class="m-nav-list m-nav-list--left u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</button></li>
-                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></button></li>
-                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein <span class="a-badge a-badge--primary">5</span></button></li>
-                </ul>
+                <nav class="m-nav-list">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><button role="tab" aria-selected="false">Overview</button></li>
+                        <li class="is-active"><button role="tab" aria-selected="true">Description</button></li>
+                        <li><button role="tab" aria-selected="false">Guests</button></li>
+                        <li><button role="tab" aria-selected="false">Location</button></li>
+                        <li class="is-disabled"><button role="tab" aria-disabled="true" aria-selected="false">Partners</button></li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list m-nav-list--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Overview&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;button role="tab" aria-selected="true"&gt;Description&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Guests&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Location&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;button role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
 
         <h4 class="u-margin-top-xl">Tab navigation</h4>
         <div class="d">
             <div>
-                <ul class="m-nav-tabs u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
-                </ul>
-
-
-                <ul class="m-nav-tabs m-nav-tabs--left u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
-                </ul>
-
-
-                <ul class="m-nav-tabs m-nav-tabs--right u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
-                </ul>
-
-
-                <ul class="m-nav-tabs m-nav-tabs--left u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</button></li>
-                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></button></li>
-                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</button></li>
-                </ul>
+                <nav class="m-nav-tabs u-margin-bottom-xl">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--right" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
-        <div class="m-alert d-alert">
-            <p>Note that on mobile devices <code>.m-nav-tabs</code> has the exact same appearance as <code>.m-nav-list</code>.</p>
+        <div class="d">
+            <div>
+                <nav class="m-nav-tabs has-border u-margin-bottom-xl">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><button role="tab" aria-selected="false">Overview</button></li>
+                        <li class="is-active"><button role="tab" aria-selected="true">Description</button></li>
+                        <li><button role="tab" aria-selected="false">Guests</button></li>
+                        <li><button role="tab" aria-selected="false">Location</button></li>
+                        <li class="is-disabled"><button role="tab" aria-disabled="true" aria-selected="false">Partners</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Overview&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;button role="tab" aria-selected="true"&gt;Description&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Guests&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Location&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <nav class="m-nav-tabs has-border has-shadow-left has-shadow-right u-margin-bottom-xl">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border has-shadow-left has-shadow-right"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </div>
         </div>
 
         <a name="molecules-overlay" aria-label="Overlay"></a>
