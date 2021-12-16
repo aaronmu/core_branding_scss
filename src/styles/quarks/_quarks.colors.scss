@@ -138,16 +138,23 @@ $white:                      #fff !default;
  * Collection of social branding colors
  */
 
-$twitter:                      rgb(0, 172, 237) !default;
-$linkedin:                     rgb(0, 119, 181) !default;
-$facebook:                     rgb(24, 119, 242) !default;
-$snapchat:                     rgb(255, 252, 0) !default;
+$twitter:                    #00aced !default;
+$twitter-hover:              #007fad !default;
 
-$instagram-yellow-light:       rgb(255, 225, 125);
-$instagram-yellow-dark:        rgb(255, 205, 105);
-$instagram-orange:             rgb(250, 145, 55);
-$instagram-red:                rgb(235, 65, 65);
-$instagram-blue:               rgb(35, 75, 215);
-$instagram-purple:             rgb(195, 60, 190);
+$linkedin:                   #0077b5 !default;
+$linkedin-hover:             #00517d !default;
 
-$instagram:                    radial-gradient(circle farthest-corner at 32% 106%, $instagram-yellow-light 0%, $instagram-yellow-dark 10%, $instagram-orange 28%, $instagram-red 42%, transparent 82%), linear-gradient(135deg, $instagram-blue 12%, $instagram-purple 58%) !default;
+$facebook:                   #1877f2 !default;
+$facebook-hover:             #0a52b0 !default;
+
+$snapchat:                   #fffc00 !default;
+$snapchat-hover:             #c4c100 !default;
+
+$instagram-yellow-light:     #ffe17d !default;
+$instagram-yellow-dark:      #ffcd69 !default;
+$instagram-orange:           #fa9137 !default;
+$instagram-red:              #eb4141 !default;
+$instagram-blue:             #234bd7 !default;
+$instagram-purple:           #c33cbe !default;
+
+$instagram:                  radial-gradient(circle farthest-corner at 32% 106%, $instagram-yellow-light 0%, $instagram-yellow-dark 10%, $instagram-orange 28%, $instagram-red 42%, transparent 82%), linear-gradient(135deg, $instagram-blue 12%, $instagram-purple 58%) !default;
