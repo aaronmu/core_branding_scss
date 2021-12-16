@@ -201,7 +201,12 @@
 #### Switch
 
 ##### Added
-- Added outlined and small variant
+- Added variant with I/O labels
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes.
 
 ##### Changed
 - Implemented new design changes
