@@ -50,7 +50,6 @@
         &:focus-within {
           background-color: var(--nav-hover-bg-color);
           color: var(--nav-hover-color);
-          font-weight: var(--font-weight-bold);
 
           > a,
           > button {
@@ -106,7 +105,9 @@
         margin-left: var(--spacer-s);
         padding: var(--spacer-3xs) var(--spacer-s) var(--spacer-3xs) 0;
         text-decoration: none;
-        transition: border-top-color var(--animation-normal);
+        transition-duration: var(--animation-duration);
+        transition-property: border-top-color, color;
+        transition-timing-function: var(--animation-easing);
 
         > .ai {
           display: inline-block;
@@ -153,7 +154,6 @@
         &:focus-within {
           background-color: var(--nav-hover-bg-color);
           color: var(--nav-hover-color);
-          font-weight: var(--font-weight-bold);
         }
       }
 
@@ -196,6 +196,7 @@
         flex-grow: 1;
         padding: var(--spacer-3xs) var(--spacer-s);
         text-decoration: none;
+        transition: color var(--animation-normal);
 
         > .ai {
           display: inline-block;
