@@ -3,19 +3,25 @@
  * -------------------------------------------------------------------
  */
 
-$step-indicator-color:                  $text-color !default;
-$step-indicator-bg:                     $background-color !default;
-$step-indicator-border:                 $border-color-light !default;
-$step-indicator-label-color:            $step-indicator-color !default;
-$step-indicator-color-active:           $text-color !default;
-$step-indicator-bg-active:              $white !default;
-$step-indicator-border-active:          $step-indicator-border !default;
-$step-indicator-label-color-active:     $step-indicator-color-active !default;
-$step-indicator-color-success:          $white !default;
-$step-indicator-bg-success:             $state-success !default;
-$step-indicator-border-success:         $step-indicator-bg-success !default;
-$step-indicator-label-color-success:    $step-indicator-bg-success !default;
-$step-indicator-square-size:            var(--spacer-l) !default;
+.m-step-indicator {
+  --step-indicator-square-size: var(--spacer-l);
+
+  --step-indicator-color: var(--text-color);
+  --step-indicator-bg-color: var(--bg-color);
+  --step-indicator-border-color: var(--border-color);
+
+  --step-indicator-active-color: var(--text-color);
+  --step-indicator-active-bg-color: #{$white};
+  --step-indicator-active-border-color: var(--step-indicator-border-color);
+
+  --step-indicator-completed-color: #{$white};
+  --step-indicator-completed-bg-color: var(--state-success);
+  --step-indicator-completed-border-color: var(--step-indicator-completed-bg-color);
+
+  --step-indicator-label-color: var(--step-indicator-color);
+  --step-indicator-label-active-color: var(--step-indicator-active-color);
+  --step-indicator-label-completed-color: var(--step-indicator-completed-bg-color);
+}
 
 /**
  * STEP INDICATOR
@@ -29,7 +35,7 @@ $step-indicator-square-size:            var(--spacer-l) !default;
   flex-wrap: wrap;
 
   li {
-    color: $step-indicator-label-color;
+    color: var(--step-indicator-label-color);
     counter-increment: steps;
     flex: 0 1 25%;
     position: relative;
@@ -50,18 +56,18 @@ $step-indicator-square-size:            var(--spacer-l) !default;
 
     // The square
     &:before {
-      background-color: $step-indicator-bg;
-      border: var(--border-width) solid $step-indicator-border;
-      color: $step-indicator-color;
+      background-color: var(--step-indicator-bg-color);
+      border: var(--border-width) solid var(--step-indicator-border-color);
+      color: var(--step-indicator-color);
       content: counter(steps);
       display: block;
       font-size: $font-size-h6;
       font-weight: var(--font-weight-bold);
-      height: $step-indicator-square-size;
+      height: var(--step-indicator-square-size);
       margin: 0 auto var(--spacer);
       padding: var(--spacer-xxs) 0;
       text-align: center;
-      width: $step-indicator-square-size;
+      width: var(--step-indicator-square-size);
 
       @include at($screen-sm) {
         margin: 0 auto var(--spacer-xs);
@@ -70,59 +76,58 @@ $step-indicator-square-size:            var(--spacer-l) !default;
 
     // The connection line
     &:after {
-      background-color: $step-indicator-border;
-      content: '';
+      background-color: var(--step-indicator-border-color);
+      content: "";
       height: var(--border-width);
       position: absolute;
-      right: calc(50% + #{$step-indicator-square-size} / 4 * 3);
-      top: calc(#{$step-indicator-square-size} / 2 - #{var(--border-width) / 2});
-      width: calc(100% - #{$step-indicator-square-size} * 3 / 2);
+      right: calc(50% + var(--step-indicator-square-size) / 4 * 3);
+      top: calc(var(--step-indicator-square-size) / 2 - var(--border-width) / 2);
+      width: calc(100% - var(--step-indicator-square-size) * 3 / 2);
     }
 
     &.is-active {
-      color: $step-indicator-label-color-active;
+      color: var(--step-indicator-label-active-color);
       font-weight: var(--font-weight-bold);
 
       &:before {
-        background-color: $step-indicator-bg-active;
-        border-color: $step-indicator-border-active;
-        color: $step-indicator-color-active;
+        background-color: var(--step-indicator-active-bg-color);
+        border-color: var(--step-indicator-active-border-color);
+        color: var(--step-indicator-active-color);
       }
     }
 
     &.is-completed {
-      color: $step-indicator-label-color-success;
+      color: var(--step-indicator-label-completed-color);
       font-weight: var(--font-weight-bold);
 
       &:before {
-        background: $step-indicator-bg-success url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 15 15%22><path fill=%22none%22 stroke=%22%23ffffff%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 stroke-width=%226.25%%22 d=%22M14.5.5l-10 14-4-4%22/></svg>') center center no-repeat;
+        background: var(--step-indicator-completed-bg-color) url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 15 15%22><path fill=%22none%22 stroke=%22%23ffffff%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 stroke-width=%226.25%%22 d=%22M14.5.5l-10 14-4-4%22/></svg>") center center no-repeat;
         background-size: 50% 50%;
-        border-color: $step-indicator-border-success;
-        content: '';
+        border-color: var(--step-indicator-completed-border-color);
+        content: "";
       }
 
       &:after {
-        background-color: $step-indicator-border-success;
+        background-color: var(--step-indicator-completed-border-color);
         height: calc(var(--border-width) + var(--border-width));
-        top: calc(#{$step-indicator-square-size} / 2 - #{var(--border-width)});
+        top: calc(var(--step-indicator-square-size) / 2 - var(--border-width));
       }
     }
 
     // On smaller devices …
     @include to($screen-sm) {
-
       // … hide the text label
       .m-step-indicator__label {
         display: none;
       }
 
       // … hide the connection line on every (4th+1) step (e.g.: step 1, 5, 9, 13, …)
-      &:nth-child(4n+1):after {
+      &:nth-child(4n + 1):after {
         content: none;
       }
 
       // … reset the margin for the last row of steps
-      &:nth-last-child(-n+4):before {
+      &:nth-last-child(-n + 4):before {
         margin-bottom: 0;
       }
     }
