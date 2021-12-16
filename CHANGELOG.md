@@ -37,7 +37,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 
 #### Avatar
 
@@ -46,7 +46,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Changed `.a-avatar--small` to `.a-avatar--s`
   - Changed `.a-avatar--medium` to `.a-avatar--l`
@@ -59,7 +59,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Removed `.has-margins`
 
@@ -70,7 +70,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Removed `.a-badge--success`, a-badge--warning` and `a-badge--danger`
 
 #### Button
@@ -93,7 +93,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes
 
 #### Flyout
@@ -102,7 +102,7 @@
 - Added classes to position flyout above button/input field
 
 ##### Changed
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Removed `.m-flyout--lg`
   - Removed `.m-flyout--md`
@@ -122,7 +122,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Changed `.a-input--small` to `.a-input--s`
   - Changed `.a-input--large` to `.a-input--l`
@@ -134,7 +134,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Removed `.a-label--secondary`
 
@@ -145,7 +145,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Changed `.a-list--reset` to `.u-list-reset`
   - Changed `.a-list--unstyled` to `.u-list-unstyled`
@@ -175,7 +175,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Removed progress variant with tooltip
 
 #### Range slider
@@ -205,7 +205,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] An incompleted step should have `.is-incompleted` as classname
 
 #### Switch
@@ -215,7 +215,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 
 #### Table
 
@@ -225,7 +225,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Changed `.a-table--small` to `.a-table--s`
   - Changed `.a-table__wrapper-responsive` to `.a-table-scrollable-wrapper`
@@ -251,7 +251,7 @@
 
 ##### Changed
 - Implemented new design changes
-- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Removed `.a-tooltip--primary`
   - Removed `.a-tooltip--secondary`
