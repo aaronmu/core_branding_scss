@@ -4,26 +4,31 @@
  */
 
 .m-step-indicator {
-  --step-indicator-square-size:                     var(--spacer);
-  --step-indicator-square-color:                    var(--text-color-light);
-  --step-indicator-square-bg-color:                 var(--bg-color-light);
-  --step-indicator-square-border-color:             var(--border-color-dark);
+  --step-indicator-square-size:                           var(--spacer);
 
-  --step-indicator-square-active-color:             var(--theme1-400);
-  --step-indicator-square-active-bg-color:          #{$white};
-  --step-indicator-square-active-border-color:      var(--theme1-400);
+  --step-indicator-square-color:                          var(--text-color-light);
+  --step-indicator-square-bg-color:                       var(--bg-color-light);
+  --step-indicator-square-hover-bg-color:                 var(--theme1-050);
+  --step-indicator-square-border-color:                   var(--border-color-dark);
 
-  --step-indicator-square-completed-color:          #{$white};
-  --step-indicator-square-completed-bg-color:       var(--theme1-400);
-  --step-indicator-square-completed-border-color:   var(--theme1-400);
+  --step-indicator-square-active-color:                   var(--theme1-400);
+  --step-indicator-square-active-bg-color:                #{$white};
+  --step-indicator-square-active-border-color:            var(--theme1-400);
 
-  --step-indicator-line-color:                      var(--border-color-dark);
-  --step-indicator-line-active-color:               var(--border-color-dark);
-  --step-indicator-line-completed-color:            var(--theme1-400);
+  --step-indicator-square-completed-color:                #{$white};
+  --step-indicator-square-completed-bg-color:             var(--theme1-400);
+  --step-indicator-square-completed-hover-bg-color:       var(--theme1-500);
+  --step-indicator-square-completed-border-color:         var(--theme1-400);
+  --step-indicator-square-completed-hover-border-color:   var(--theme1-500);
 
-  --step-indicator-label-color:                     var(--text-color-light);
-  --step-indicator-label-active-color:              var(--text-color);
-  --step-indicator-label-completed-color:           var(--text-color);
+  --step-indicator-line-color:                            var(--border-color-dark);
+  --step-indicator-line-active-color:                     var(--border-color-dark);
+  --step-indicator-line-completed-color:                  var(--theme1-400);
+
+  --step-indicator-label-color:                           var(--text-color-light);
+  --step-indicator-label-active-color:                    var(--text-color);
+  --step-indicator-label-completed-color:                 var(--text-color);
+  --step-indicator-label-highlight-color:                 var(--theme1-400);
 }
 
 /**
@@ -58,6 +63,19 @@
       }
     }
 
+    &.is-incompleted a {
+      --step-indicator-square-color: var(--step-indicator-square-active-color);
+      --step-indicator-square-bg-color: var(--step-indicator-square-active-bg-color);
+      --step-indicator-square-border-color: var(--step-indicator-square-active-border-color);
+      --step-indicator-line-color: var(--step-indicator-line-active-color);
+
+      &:hover,
+      &:active,
+      &:focus {
+        --step-indicator-square-bg-color: var(--step-indicator-square-hover-bg-color);
+      }
+    }
+
     &.is-active {
       --step-indicator-square-color: var(--step-indicator-square-active-color);
       --step-indicator-square-bg-color: var(--step-indicator-square-active-bg-color);
@@ -74,29 +92,11 @@
         font-size: 1rem;
         font-weight: var(--font-weight-bold);
       }
-    }
 
-    &:not(.is-active):not(.is-completed) {
-      a {
-        --step-indicator-square-color: var(--step-indicator-square-active-color);
-        --step-indicator-square-bg-color: var(--step-indicator-square-active-bg-color);
-        --step-indicator-square-border-color: var(--step-indicator-square-active-border-color);
-        --step-indicator-line-color: var(--step-indicator-line-active-color);
-        --step-indicator-label-color: var(--theme1-400);
-
-        &:hover,
-        &:active,
-        &:focus {
-          .m-step-indicator__number:before {
-            background-color: var(--theme1-050);
-          }
+      a .m-step-indicator__label {
+        @include to($screen-sm) {
+          pointer-events: none;
         }
-      }
-    }
-
-    &.is-active a .m-step-indicator__label {
-      @include to($screen-sm) {
-        pointer-events: none;
       }
     }
 
@@ -111,14 +111,8 @@
         &:hover,
         &:active,
         &:focus {
-          .m-step-indicator__number:before {
-            background-color: var(--theme1-500);
-            border-color: var(--theme1-500);
-          }
-        }
-
-        .m-step-indicator__label {
-          color: var(--theme1-400);
+          --step-indicator-square-bg-color: var(--step-indicator-square-completed-hover-bg-color);
+          --step-indicator-square-border-color: var(--step-indicator-square-completed-hover-border-color);
         }
       }
 
@@ -127,13 +121,18 @@
       }
     }
 
-    &:not(.is-active) a {
-      &:hover,
-      &:active,
-      &:focus {
-        .m-step-indicator__label {
-          @include at($screen-sm) {
-            text-decoration: underline;
+    &.is-incompleted,
+    &.is-completed {
+      a {
+        --step-indicator-label-color: var(--step-indicator-label-highlight-color);
+
+        &:hover,
+        &:active,
+        &:focus {
+          .m-step-indicator__label {
+            @include at($screen-sm) {
+              text-decoration: underline;
+            }
           }
         }
       }
