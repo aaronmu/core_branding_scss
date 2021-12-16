@@ -221,6 +221,18 @@
   - Changed `.a-table__wrapper-responsive` to `.a-table-scrollable-wrapper`
   - Changed `.has-no-padding` to `.is-collapsed`
 
+#### Tag
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes.
+
+#### Tag list
+
+##### Changed
+- [BREAKING] `m-tag` should be wrapper in `o-tag-list__item`.
+
 #### Timepicker
 
 ##### Changed

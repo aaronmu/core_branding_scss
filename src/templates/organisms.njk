@@ -639,63 +639,39 @@
         <div class="d">
             <div>
                 <ul class="o-tag-list">
-                    <li class="m-tag">
-                        <span class="m-tag__label">Thomas Edison</span>
+                    <li class="o-tag-list__item">
+                        <div class="m-tag">
+                            <div class="m-tag__label">Thomas Edison</div>
+                        </div>
                     </li>
-                    <li class="m-tag">
-                        <span class="m-tag__label">Leonardo da Vinci</span>
+                    <li class="o-tag-list__item">
+                        <div class="m-tag">
+                            <div class="m-tag__label">Leonardo da Vinci</div>
+                        </div>
                     </li>
-                    <li class="m-tag">
-                        <span class="m-tag__label">Albert Einstein</span>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
-  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ul class="o-tag-list"&gt;
-  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;&lt;/li&gt;
-  &lt;li class="m-tag"&gt;&lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <ul class="o-tag-list">
-                    <li class="m-tag">
-                        <span class="m-tag__label">Thomas Edison</span>
-                        <button class="a-button a-button--text a-button--s a-button--danger has-icon"
-                                aria-label="Delete">{{ icon.render('remove') }}</button>
-                    </li>
-                    <li class="m-tag">
-                        <span class="m-tag__label">Leonardo da Vinci</span>
-                        <button class="a-button a-button--text a-button--s a-button--danger has-icon"
-                                aria-label="Delete">{{ icon.render('remove') }}</button>
-                    </li>
-                    <li class="m-tag">
-                        <span class="m-tag__label">Albert Einstein</span>
-                        <button class="a-button a-button--text a-button--s a-button--danger has-icon"
-                                aria-label="Delete">{{ icon.render('remove') }}</button>
+                    <li class="o-tag-list__item">
+                        <div class="m-tag">
+                            <div class="m-tag__label">Albert Einstein</div>
+                        </div>
                     </li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
-  &lt;li class="m-tag"&gt;
-    &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
-    &lt;button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;div class="m-tag"&gt;
+      &lt;div class="m-tag__label"&gt;Thomas Edison&lt;/div&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li class="m-tag"&gt;
-    &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
-    &lt;button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;div class="m-tag"&gt;
+      &lt;div class="m-tag__label"&gt;Leonardo da Vinci&lt;/div&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li class="m-tag"&gt;
-    &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
-    &lt;button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;div class="m-tag"&gt;
+      &lt;div class="m-tag__label"&gt;Albert Einstein&lt;/div&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
@@ -703,33 +679,85 @@
         <div class="d">
             <div>
                 <ul class="o-tag-list">
-                    <li class="m-tag">
-                        <button class="a-button a-button--neutral a-button--s has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
-                        <span class="m-tag__label">Thomas Edison</span>
+                    <li class="o-tag-list__item">
+                        <div class="m-tag is-clickable">
+                            <div class="m-tag__label">Thomas Edison</div>
+                            <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
+                        </div>
                     </li>
-                    <li class="m-tag">
-                        <button class="a-button a-button--success a-button--s has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
-                        <span class="m-tag__label">Leonardo da Vinci</span>
+                    <li class="o-tag-list__item">
+                        <div class="m-tag is-clickable">
+                            <div class="m-tag__label">Leonardo da Vinci</div>
+                            <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
+                        </div>
                     </li>
-                    <li class="m-tag">
-                        <button class="a-button a-button a-button--s has-icon" aria-label="Drag">{{ icon.render('direction-button-arrows') }}</button>
-                        <span class="m-tag__label">Albert Einstein</span>
+                    <li class="o-tag-list__item">
+                        <div class="m-tag is-clickable">
+                            <div class="m-tag__label">Albert Einstein</div>
+                            <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
+                        </div>
                     </li>
                 </ul>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
-  &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button--neutral a-button--s has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
-    &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;div class="m-tag is-clickable"&gt;
+      &lt;div class="m-tag__label"&gt;Thomas Edison&lt;/div&gt;
+      &lt;button class="m-tag__button" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button--success a-button--s has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
-    &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;div class="m-tag is-clickable"&gt;
+      &lt;div class="m-tag__label"&gt;Leonardo da Vinci&lt;/div&gt;
+      &lt;button class="m-tag__button" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+    &lt;/div&gt;
   &lt;/li&gt;
-  &lt;li class="m-tag"&gt;
-    &lt;button class="a-button a-button a-button--s has-icon" aria-label="Drag"&gt;{{ icon.code('direction-button-arrows') }}&lt;/button&gt;
-    &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;div class="m-tag is-clickable"&gt;
+      &lt;div class="m-tag__label"&gt;Albert Einstein&lt;/div&gt;
+      &lt;button class="m-tag__button" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="o-tag-list">
+                    <li class="o-tag-list__item">
+                        <button class="m-tag" aria-checked="false">
+                            <span class="m-tag__label">Thomas Edison</span>
+                        </button>
+                    </li>
+                    <li class="o-tag-list__item">
+                        <button class="m-tag" aria-checked="false">
+                            <span class="m-tag__label">Leonardo da Vinci</span>
+                        </button>
+                    </li>
+                    <li class="o-tag-list__item">
+                        <button class="m-tag" aria-checked="false">
+                            <span class="m-tag__label">Albert Einstein</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="o-tag-list"&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;button class="m-tag" aria-checked="false"&gt;
+      &lt;span class="m-tag__label"&gt;Thomas Edison&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;button class="m-tag" aria-checked="false"&gt;
+      &lt;span class="m-tag__label"&gt;Leonardo da Vinci&lt;/span&gt;
+    &lt;/button&gt;
+  &lt;/li&gt;
+  &lt;li class="o-tag-list__item"&gt;
+    &lt;button class="m-tag" aria-checked="false"&gt;
+      &lt;span class="m-tag__label"&gt;Albert Einstein&lt;/span&gt;
+    &lt;/button&gt;
   &lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
