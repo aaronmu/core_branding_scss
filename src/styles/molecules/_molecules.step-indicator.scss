@@ -76,12 +76,71 @@
       }
     }
 
+    &:not(.is-active):not(.is-completed) {
+      a {
+        --step-indicator-square-color: var(--step-indicator-square-active-color);
+        --step-indicator-square-bg-color: var(--step-indicator-square-active-bg-color);
+        --step-indicator-square-border-color: var(--step-indicator-square-active-border-color);
+        --step-indicator-line-color: var(--step-indicator-line-active-color);
+        --step-indicator-label-color: var(--theme1-400);
+
+        &:hover,
+        &:active,
+        &:focus {
+          .m-step-indicator__number:before {
+            background-color: var(--theme1-050);
+          }
+        }
+      }
+    }
+
+    &.is-active a .m-step-indicator__label {
+      @include to($screen-sm) {
+        pointer-events: none;
+      }
+    }
+
     &.is-completed {
       --step-indicator-square-color: var(--step-indicator-square-completed-color);
       --step-indicator-square-bg-color: var(--step-indicator-square-completed-bg-color);
       --step-indicator-square-border-color: var(--step-indicator-square-completed-border-color);
       --step-indicator-line-color: var(--step-indicator-line-completed-color);
       --step-indicator-label-color: var(--step-indicator-label-completed-color);
+
+      a {
+        &:hover,
+        &:active,
+        &:focus {
+          .m-step-indicator__number:before {
+            background-color: var(--theme1-500);
+            border-color: var(--theme1-500);
+          }
+        }
+
+        .m-step-indicator__label {
+          color: var(--theme1-400);
+        }
+      }
+
+      .m-step-indicator__number {
+        font-weight: var(--font-weight-bold);
+      }
+    }
+
+    &:not(.is-active) a {
+      &:hover,
+      &:active,
+      &:focus {
+        .m-step-indicator__label {
+          @include at($screen-sm) {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
 
       .m-step-indicator__number {
         font-weight: var(--font-weight-bold);
@@ -110,6 +169,7 @@
     height: var(--step-indicator-square-size);
     justify-content: center;
     position: relative;
+    transition: background-color var(--animation-normal);
     width: var(--step-indicator-square-size);
   }
 
