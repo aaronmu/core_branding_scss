@@ -35,41 +35,27 @@
   @extend %u-list-reset;
 
   display: flex;
-  flex-wrap: wrap;
+
+  @include to($screen-sm) {
+    padding-bottom: var(--spacer);
+    position: relative;
+  }
 
   li {
     counter-increment: steps;
-    flex: 1 1 0;
-    position: relative;
 
-    &:last-child:after {
+    @include at($screen-sm) {
+      flex: 1 1 0;
+    }
+
+    &:last-child .m-step-indicator__number:after {
       content: none;
     }
 
-    // The square
-    &:before {
-      align-items: center;
-      background-color: var(--step-indicator-square-bg-color);
-      border: var(--border-width) solid var(--step-indicator-square-border-color);
-      color: var(--step-indicator-square-color);
-      content: counter(steps);
-      display: flex;
-      font-size: 1rem;
-      height: var(--step-indicator-square-size);
-      justify-content: center;
-      margin-bottom: var(--spacer-xxs);
-      width: var(--step-indicator-square-size);
-    }
-
-    // The connection line
-    &:after {
-      background-color: var(--step-indicator-line-color);
-      content: "";
-      height: var(--border-width);
-      left: var(--step-indicator-square-size);
-      position: absolute;
-      top: calc(var(--step-indicator-square-size) / 2 - var(--border-width) / 2);
-      width: calc(100% - var(--step-indicator-square-size));
+    &:not(:last-child) {
+      @include to($screen-sm) {
+        flex-grow: 1;
+      }
     }
 
     &.is-active {
@@ -79,7 +65,7 @@
       --step-indicator-line-color: var(--step-indicator-line-active-color);
       --step-indicator-label-color: var(--step-indicator-label-active-color);
 
-      &:before {
+      .m-step-indicator__number {
         font-weight: var(--font-weight-bold);
       }
 
@@ -97,15 +83,9 @@
       --step-indicator-line-color: var(--step-indicator-line-completed-color);
       --step-indicator-label-color: var(--step-indicator-label-completed-color);
 
-      &:before {
+      .m-step-indicator__number {
         font-weight: var(--font-weight-bold);
       }
-
-      // @include at($screen-sm) {
-      //   .m-step-indicator__label {
-      //     display: block;
-      //   }
-      // }
     }
   }
 }
@@ -115,12 +95,49 @@
  * -------------------------------------------------------------------
  */
 
+.m-step-indicator__number {
+  display: block;
+  position: relative;
+
+  &:before {
+    align-items: center;
+    background-color: var(--step-indicator-square-bg-color);
+    border: var(--border-width) solid var(--step-indicator-square-border-color);
+    color: var(--step-indicator-square-color);
+    content: counter(steps);
+    display: flex;
+    font-size: 1rem;
+    height: var(--step-indicator-square-size);
+    justify-content: center;
+    position: relative;
+    width: var(--step-indicator-square-size);
+  }
+
+  &:after {
+    background-color: var(--step-indicator-line-color);
+    content: "";
+    height: var(--border-width);
+    left: var(--step-indicator-square-size);
+    position: absolute;
+    top: calc(var(--step-indicator-square-size) / 2 - var(--border-width) / 2);
+    width: calc(100% - var(--step-indicator-square-size));
+  }
+}
+
 .m-step-indicator__label {
   color: var(--step-indicator-label-color);
-  display: none;
+  display: block;
   font-size: .875rem;
 
+  @include to($screen-sm) {
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+  }
+
   @include at($screen-sm) {
-    display: block;
+    margin-top: var(--spacer-xxs);
+    padding-right: var(--spacer-xxs);
   }
 }
