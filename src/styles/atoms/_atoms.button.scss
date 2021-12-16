@@ -34,7 +34,7 @@
 
   --btn-success-color:                          #{$white};
   --btn-success-bg-color:                       var(--success-600);
-  --btn-success-hover-bg-color:                 var(--success-500); // TODO: Implement correct hover color
+  --btn-success-hover-bg-color:                 #{$mantis-700};
   --btn-success-border-color:                   var(--btn-success-bg-color);
   --btn-success-hover-border-color:             var(--btn-success-hover-bg-color);
 
