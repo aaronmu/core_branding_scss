@@ -92,12 +92,6 @@
         font-size: 1rem;
         font-weight: var(--font-weight-bold);
       }
-
-      a .m-step-indicator__label {
-        @include to($screen-sm) {
-          pointer-events: none;
-        }
-      }
     }
 
     &.is-completed {
