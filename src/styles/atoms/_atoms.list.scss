@@ -150,6 +150,11 @@
   margin: 0;
   padding: 0;
 
+  &:not(.a-avatar-list--flushed) {
+    border-bottom: var(--border-width) solid var(--list-item-border-color);
+    border-top: var(--border-width) solid var(--list-item-border-color);
+  }
+
   .ai {
     color: var(--text-color-light);
     transition: color var(--animation-normal);
@@ -157,8 +162,8 @@
 }
 
 .a-avatar-list__item {
-  &:last-of-type .a-avatar-list__content {
-    border-bottom: var(--border-width) solid var(--list-item-border-color);
+  &:first-of-type .a-avatar-list__content {
+    border-top: none;
   }
 
   &.is-active .a-avatar-list__item-container {
@@ -169,38 +174,40 @@
       font-weight: var(--font-weight-bold);
     }
   }
-}
 
-.a-avatar-list__item-container {
-  display: flex;
-  flex-grow: 1;
-  min-height: var(--spacer-xl);
-  padding-left: var(--spacer-s);
-}
+  &:not(.is-active) a.a-avatar-list__item-container {
+    color: var(--list-item-color);
+    transition: background-color var(--animation-normal);
 
-a.a-avatar-list__item-container {
-  color: var(--list-item-color);
-  text-decoration: none;
-  transition: background-color var(--animation-normal);
-
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: var(--list-item-hover-bg-color);
-    color: var(--list-item-hover-color);
-
-    .avatar-list__name {
-      font-weight: var(--font-weight-bold);
-    }
-
-    .ai {
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--list-item-hover-bg-color);
       color: var(--list-item-hover-color);
+
+      .avatar-list__name {
+        font-weight: var(--font-weight-bold);
+      }
+
+      .ai {
+        color: var(--list-item-hover-color);
+      }
     }
   }
 }
 
+a.a-avatar-list__item-container {
+  text-decoration: none;
+}
+
+.a-avatar-list__item-container {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  padding-left: var(--spacer-s);
+}
+
 .a-avatar-list__avatar {
-  margin-top: var(--spacer-xs);
   margin-right: var(--spacer-s);
 }
 
@@ -208,6 +215,7 @@ a.a-avatar-list__item-container {
   border-top: var(--border-width) solid var(--list-item-border-color);
   display: flex;
   flex-grow: 1;
+  min-height: var(--spacer-xl);
   padding: var(--spacer-xs) var(--spacer-s) var(--spacer-xs) 0;
 }
 
