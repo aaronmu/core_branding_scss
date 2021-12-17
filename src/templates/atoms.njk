@@ -1555,13 +1555,11 @@
             </div>
         </div>
 
-
-
         <a name="atoms-list" aria-label="List"></a>
         <h3 class="u-margin-top-xl">List</h3>
         <span class="d-file">atoms/atoms.list</span>
 
-        <h4 class="u-margin-top-xl">Standard lists</h4>
+        <h4 class="u-margin-top-xl">Textual list</h4>
         <div class="d">
             <div>
                 <ul class="a-list">
@@ -1873,6 +1871,142 @@
     &lt;dd&gt;[Private]&lt;/dd&gt;
 &lt;/dl&gt;</code></pre>
             </div>
+        </div>
+
+        <h4 class="u-margin-top-xl">Avatar list</h4>
+        <div class="d">
+            <div>
+                <ul class="a-avatar-list">
+                    <li class="a-avatar-list__item">
+                        <div class="a-avatar-list__item-container">
+                            <div class="a-avatar a-avatar--s a-avatar--rounded a-avatar-list__avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar image." />
+                            </div>
+
+                            <div class="a-avatar-list__content">
+                                <span class="a-avatar-list__text">
+                                    <span class="avatar-list__name paragraph">Anne Martens</span>
+                                    <span class="small">anne.martens@antwerpen.be</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="a-avatar-list__item is-active">
+                        <div class="a-avatar-list__item-container">
+                            <div class="a-avatar a-avatar--s a-avatar--rounded a-avatar--primary a-avatar-list__avatar">
+                                <span class="a-avatar__letter">JJ</span>
+                            </div>
+
+                            <div class="a-avatar-list__content">
+                                <span class="a-avatar-list__text">
+                                    <span class="avatar-list__name paragraph">Jan Janssens</span>
+                                    <span class="small">jan.janssens@antwerpen.be</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="a-avatar-list__item">
+                        <div class="a-avatar-list__item-container">
+                            <div class="a-avatar a-avatar--s a-avatar--rounded a-avatar--primary a-avatar-list__avatar">
+                                <span class="a-avatar__letter">EP</span>
+                            </div>
+
+                            <div class="a-avatar-list__content">
+                                <span class="a-avatar-list__text">
+                                    <span class="avatar-list__name paragraph">Elke Peters</span>
+                                    <span class="small">elke.peters@antwerpen.be</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="a-avatar-list__item">
+                        <div class="a-avatar-list__item-container">
+                            <div class="a-avatar a-avatar--s a-avatar--rounded a-avatar--primary a-avatar-list__avatar">
+                                <span class="a-avatar__letter">FM</span>
+                            </div>
+
+                            <div class="a-avatar-list__content">
+                                <span class="a-avatar-list__text">
+                                    <span class="avatar-list__name paragraph">Finn Maes</span>
+                                    <span class="small">finn.maes@antwerpen.be</span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+        <div class="d">
+            <div>
+                <ul class="a-avatar-list">
+                    <li class="a-avatar-list__item">
+                        <a href="javascript:void(0);" class="a-avatar-list__item-container">
+                            <div class="a-avatar a-avatar--s a-avatar--rounded a-avatar-list__avatar">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Avatar image." />
+                            </div>
+
+                            <div class="a-avatar-list__content">
+                                <span class="a-avatar-list__text">
+                                    <span class="avatar-list__name paragraph">Anne Martens</span>
+                                    <span class="small">anne.martens@antwerpen.be</span>
+                                </span>
+
+                                {{ icon.render('navigation-menu-horizontal') }}
+                            </div>
+                        </a>
+                    </li>
+                    <li class="a-avatar-list__item is-active">
+                        <a href="javascript:void(0);" class="a-avatar-list__item-container">
+                            <div class="a-avatar a-avatar--s a-avatar--rounded a-avatar--primary a-avatar-list__avatar">
+                                <span class="a-avatar__letter">JJ</span>
+                            </div>
+
+                            <div class="a-avatar-list__content">
+                                <span class="a-avatar-list__text">
+                                    <span class="avatar-list__name paragraph">Jan Janssens</span>
+                                    <span class="small">jan.janssens@antwerpen.be</span>
+                                </span>
+
+                                {{ icon.render('navigation-menu-horizontal') }}
+                            </div>
+                        </a>
+                    </li>
+                    <li class="a-avatar-list__item">
+                        <a href="javascript:void(0);" class="a-avatar-list__item-container">
+                            <div class="a-avatar a-avatar--s a-avatar--rounded a-avatar--primary a-avatar-list__avatar">
+                                <span class="a-avatar__letter">EP</span>
+                            </div>
+
+                            <div class="a-avatar-list__content">
+                                <span class="a-avatar-list__text">
+                                    <span class="avatar-list__name paragraph">Elke Peters</span>
+                                    <span class="small">elke.peters@antwerpen.be</span>
+                                </span>
+
+                                {{ icon.render('navigation-menu-horizontal') }}
+                            </div>
+                        </a>
+                    </li>
+                    <li class="a-avatar-list__item">
+                        <a href="javascript:void(0);" class="a-avatar-list__item-container">
+                            <div class="a-avatar a-avatar--s a-avatar--rounded a-avatar--primary a-avatar-list__avatar">
+                                <span class="a-avatar__letter">FM</span>
+                            </div>
+
+                            <div class="a-avatar-list__content">
+                                <span class="a-avatar-list__text">
+                                    <span class="avatar-list__name paragraph">Finn Maes</span>
+                                    <span class="small">finn.maes@antwerpen.be</span>
+                                </span>
+
+                                {{ icon.render('navigation-menu-horizontal') }}
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div></div>
         </div>
 
         <a name="atoms-radiobutton-checkbox" aria-label="Radio button / checkbox"></a>
