@@ -166,6 +166,10 @@
     border-top: none;
   }
 
+  &:not(:last-child) .a-avatar-list__item-container {
+    margin-bottom: calc(var(--border-width) * -1);
+  }
+
   &.is-active .a-avatar-list__item-container {
     background-color: var(--list-item-active-bg-color);
     color: var(--list-item-active-color);
