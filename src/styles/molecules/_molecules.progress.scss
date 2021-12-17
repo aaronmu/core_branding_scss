@@ -24,8 +24,7 @@
 .m-progress__label {
   display: block;
   font-size: var(--progress-label-size);
-  margin-bottom: var(--spacer-xxs);
-  text-align: left;
+  margin-bottom: var(--spacer-3xs);
 }
 
 .m-progress__inner {
@@ -39,14 +38,6 @@
 .m-progress__bar {
   background-color: var(--progress-bar-bg-color);
   height: 100%;
-
-  + .m-progress__bar {
-    margin-left: var(--spacer-3xs);
-  }
-
-  &.is-complete {
-    --progress-bar-bg-color: var(--theme1-400);
-  }
 }
 
 /**
@@ -54,42 +45,8 @@
  * -------------------------------------------------------------------
  */
 
-.m-progress {
-  &.m-progress--s {
-    --progress-height: var(--spacer-3xs);
-    --progress-label-size: .875rem;
-    --progress-label-spacing: var(--spacer-xxs);
-  }
-
-  &.m-progress--l {
-    --progress-height: 1.25rem;
-    --progress-label-size: 1rem;
-    --progress-label-spacing: var(--spacer-xs);
-  }
-
-  &.m-progress--inline {
-    align-items: center;
-    display: flex;
-
-    .m-progress__label {
-      margin-bottom: 0;
-      margin-right: var(--progress-label-spacing);
-      text-align: right;
-    }
-
-    .m-progress__inner + .m-progress__label {
-      margin-left: var(--progress-label-spacing);
-      margin-right: 0;
-      text-align: left;
-    }
-  }
-
-  &.has-steps {
-    --progress-bg-color: transparent;
-    --progress-bar-bg-color: var(--theme1-050);
-
-    .m-progress__bar {
-      flex-grow: 1;
-    }
-  }
+.m-progress.m-progress--l {
+  --progress-height: 1.25rem;
+  --progress-label-size: 1rem;
+  --progress-label-spacing: var(--spacer-xs);
 }
