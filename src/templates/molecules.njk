@@ -253,25 +253,30 @@
         <h4 class="u-margin-top-xl">Inline alert</h4>
         <div class="d">
             <div>
-                <div role="alertdialog" aria-labelledby="alert" class="m-alert m-alert--inline u-margin-bottom">
+                <div role="alertdialog" aria-labelledby="alert-inline" class="m-alert m-alert--inline u-margin-bottom">
+                    <h5 id="alert-inline" class="paragraph has-base-font">Optional emphasised message</h5>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa <a href="javascript:void(0);">justo sit amet risus</a>. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 </div>
-                <div role="alertdialog" aria-labelledby="alert" class="m-alert m-alert--inline m-alert--success u-margin-bottom">
+                <div role="alertdialog" aria-labelledby="alert-inline-success" class="m-alert m-alert--inline m-alert--success u-margin-bottom">
                     <span class="m-alert__icon">{{ icon.render('check-1') }}</span>
+                    <h5 id="alert-inline-success" class="paragraph has-base-font">Optional emphasised message</h5>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa <a href="javascript:void(0);">justo sit amet risus</a>. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 </div>
-                <div role="alertdialog" aria-labelledby="alert" class="m-alert m-alert--inline m-alert--warning u-margin-bottom">
+                <div role="alertdialog" aria-labelledby="alert-inline-warning" class="m-alert m-alert--inline m-alert--warning u-margin-bottom">
                     <span class="m-alert__icon">{{ icon.render('alert-circle') }}</span>
+                    <h5 id="alert-inline-warning" class="paragraph has-base-font">Optional emphasised message</h5>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa <a href="javascript:void(0);">justo sit amet risus</a>. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 </div>
-                <div role="alertdialog" aria-labelledby="alert" class="m-alert m-alert--inline m-alert--danger">
+                <div role="alertdialog" aria-labelledby="alert-inline-danger" class="m-alert m-alert--inline m-alert--danger">
                     <span class="m-alert__icon">{{ icon.render('alert-triangle') }}</span>
+                    <h5 id="alert-inline-danger" class="paragraph has-base-font">Optional emphasised message</h5>
                     <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa <a href="javascript:void(0);">justo sit amet risus</a>. Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla.</p>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert" class="m-alert m-alert--inline"&gt;
-  ...
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div role="alertdialog" aria-labelledby="alert-inline" class="m-alert m-alert--inline"&gt;
+  &lt;h5 id="alert-inline" class="paragraph has-base-font"&gt;Optional emphasised message&lt;/h5&gt;
+  &lt;p class="u-margin-bottom"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa &lt;a href="#"&gt;justo sit amet risus&lt;/a&gt;. Sed posuere consectetur est at lobortis.&lt;/p&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -290,19 +295,9 @@
                 </div>
                 <div>
                     <div class="m-button-group u-margin-bottom">
-                        <button class="a-button a-button--text">Primary</button>
-                        <button class="a-button a-button--text">Button</button>
-                        <button class="a-button a-button--text">Group</button>
-                    </div>
-                </div>
-                <div>
-                    <div class="m-button-group u-margin-bottom">
                         <button class="a-button a-button--outlined">Primary</button>
                         <button class="a-button a-button--outlined">Button</button>
                         <button class="a-button a-button--outlined">Group</button>
-                    </div>
-                    <div class="m-alert d-alert">
-                        <p>Note that all button variations are possible in button groups. Go to the <a href="#atoms-button">buttons</a> section to check out all possibilities.</p>
                     </div>
                 </div>
             </div>
@@ -311,11 +306,6 @@
   &lt;button class="a-button"&gt;Primary&lt;/button&gt;
   &lt;button class="a-button"&gt;Button&lt;/button&gt;
   &lt;button class="a-button"&gt;Group&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group"&gt;
-  &lt;button class="a-button a-button--text"&gt;Primary&lt;/button&gt;
-  &lt;button class="a-button a-button--text"&gt;Button&lt;/button&gt;
-  &lt;button class="a-button a-button--text"&gt;Group&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group"&gt;
   &lt;button class="a-button a-button--outlined"&gt;Primary&lt;/button&gt;
@@ -335,13 +325,6 @@
                 </div>
                 <div>
                     <div class="m-button-group m-button-group--vertical u-margin-bottom">
-                        <button class="a-button a-button--text">Primary</button>
-                        <button class="a-button a-button--text">Button</button>
-                        <button class="a-button a-button--text">Group</button>
-                    </div>
-                </div>
-                <div>
-                    <div class="m-button-group m-button-group--vertical u-margin-bottom">
                         <button class="a-button a-button--outlined">Primary</button>
                         <button class="a-button a-button--outlined">Button</button>
                         <button class="a-button a-button--outlined">Group</button>
@@ -353,11 +336,6 @@
   &lt;button class="a-button"&gt;Primary&lt;/button&gt;
   &lt;button class="a-button"&gt;Button&lt;/button&gt;
   &lt;button class="a-button"&gt;Group&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group m-button-group--vertical"&gt;
-  &lt;button class="a-button a-button--text"&gt;Primary&lt;/button&gt;
-  &lt;button class="a-button a-button--text"&gt;Button&lt;/button&gt;
-  &lt;button class="a-button a-button--text"&gt;Group&lt;/button&gt;
 &lt;/div&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-button-group m-button-group--vertical"&gt;
   &lt;button class="a-button a-button--outlined"&gt;Primary&lt;/button&gt;
@@ -1348,6 +1326,40 @@
         <div class="d">
             <div>
                 <div class="m-flyout m-flyout--scrollable is-open d-flyout--s">
+                    <button class="a-button" aria-expanded="true">Flyout with a navigation list</button>
+                    <div class="m-flyout__content">
+                        <nav class="m-nav-list">
+                            <ul role="tablist" aria-label="My tablist">
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                                <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                                <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                                <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--scrollable is-open"&gt;
+  &lt;button class="a-button" aria-expanded="true"&gt;Flyout with a navigation list&lt;/button&gt;
+  &lt;div class="m-flyout__content"&gt;
+    &lt;nav class="m-nav-list"&gt;
+      &lt;ul role="tablist" aria-label="My tablist"&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="m-flyout m-flyout--scrollable is-open d-flyout--s">
                     <div class="a-input">
                         <label class="a-input__label" for="input-autocomplete">Flyout as an autocomplete</label>
                         <input type="text" name="input-autocomplete" id="input-autocomplete" aria-expanded="true" />
@@ -1742,29 +1754,26 @@
         <h4 class="u-margin-top-xl">List navigation</h4>
         <div class="d">
             <div>
-                <ul class="m-nav-list u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein <span class="a-badge a-badge--primary">5</span></a></li>
-                </ul>
-
-                <ul class="m-nav-list m-nav-list--left">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein <span class="a-badge a-badge--primary">5</span></a></li>
-                </ul>
+                <nav class="m-nav-list">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list m-nav-list--left"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
         <div class="d">
@@ -1777,87 +1786,101 @@
 
         <div class="d">
             <div>
-                <ul class="m-nav-list u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</button></li>
-                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></button></li>
-                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein <span class="a-badge a-badge--primary">5</span></button></li>
-                </ul>
-
-                <ul class="m-nav-list m-nav-list--left u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</button></li>
-                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></button></li>
-                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein <span class="a-badge a-badge--primary">5</span></button></li>
-                </ul>
+                <nav class="m-nav-list">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><button role="tab" aria-selected="false">Overview</button></li>
+                        <li class="is-active"><button role="tab" aria-selected="true">Description</button></li>
+                        <li><button role="tab" aria-selected="false">Guests</button></li>
+                        <li><button role="tab" aria-selected="false">Location</button></li>
+                        <li class="is-disabled"><button role="tab" aria-disabled="true" aria-selected="false">Partners</button></li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-list m-nav-list--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein &lt;span class="a-badge a-badge--primary"&gt;5&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Overview&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;button role="tab" aria-selected="true"&gt;Description&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Guests&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Location&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;button role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
 
         <h4 class="u-margin-top-xl">Tab navigation</h4>
         <div class="d">
             <div>
-                <ul class="m-nav-tabs u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
-                </ul>
-
-
-                <ul class="m-nav-tabs m-nav-tabs--left u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
-                </ul>
-
-
-                <ul class="m-nav-tabs m-nav-tabs--right u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><a href="javascript:void(0);" role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></a></li>
-                    <li><a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</a></li>
-                </ul>
-
-
-                <ul class="m-nav-tabs m-nav-tabs--left u-margin-bottom-xl" role="tablist" aria-label="My tablist">
-                    <li><button role="tab" aria-selected="false">{{ icon.render('light-bulb-shine') }}Thomas Edison</button></li>
-                    <li><button class="is-active" role="tab" aria-selected="true">Leonardo da Vinci <span class="a-badge a-badge--primary">67</span></button></li>
-                    <li><button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false">Albert Einstein</button></li>
-                </ul>
+                <nav class="m-nav-tabs u-margin-bottom-xl">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--right" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-nav-tabs m-nav-tabs--left" role="tablist" aria-label="My tablist"&gt;
-  &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;{{ icon.code('light-bulb-shine') }}Thomas Edison&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-active" role="tab" aria-selected="true"&gt;Leonardo da Vinci &lt;span class="a-badge a-badge--primary"&gt;67&lt;/span&gt;&lt;/button&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;button class="is-disabled" role="tab" aria-disabled="true" aria-selected="false"&gt;Albert Einstein&lt;/button&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
             </div>
         </div>
-        <div class="m-alert d-alert">
-            <p>Note that on mobile devices <code>.m-nav-tabs</code> has the exact same appearance as <code>.m-nav-list</code>.</p>
+        <div class="d">
+            <div>
+                <nav class="m-nav-tabs has-border u-margin-bottom-xl">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><button role="tab" aria-selected="false">Overview</button></li>
+                        <li class="is-active"><button role="tab" aria-selected="true">Description</button></li>
+                        <li><button role="tab" aria-selected="false">Guests</button></li>
+                        <li><button role="tab" aria-selected="false">Location</button></li>
+                        <li class="is-disabled"><button role="tab" aria-disabled="true" aria-selected="false">Partners</button></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Overview&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;button role="tab" aria-selected="true"&gt;Description&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Guests&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button role="tab" aria-selected="false"&gt;Location&lt;/button&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/button&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <nav class="m-nav-tabs has-border has-shadow-left has-shadow-right u-margin-bottom-xl">
+                    <ul role="tablist" aria-label="My tablist">
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Overview</a></li>
+                        <li class="is-active"><a href="javascript:void(0);" role="tab" aria-selected="true">Description</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Guests</a></li>
+                        <li><a href="javascript:void(0);" role="tab" aria-selected="false">Location</a></li>
+                        <li class="is-disabled"><a role="tab" aria-disabled="true" aria-selected="false">Partners</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border has-shadow-left has-shadow-right"&gt;
+  &lt;ul role="tablist" aria-label="My tablist"&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Overview&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-active"&gt;&lt;a href="#" role="tab" aria-selected="true"&gt;Description&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Guests&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#" role="tab" aria-selected="false"&gt;Location&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="is-disabled"&gt;&lt;a role="tab" aria-disabled="true" aria-selected="false"&gt;Partners&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </div>
         </div>
 
         <a name="molecules-overlay" aria-label="Overlay"></a>
@@ -2073,7 +2096,7 @@
         <div class="d">
             <div>
                 <div class="m-progress">
-                    <div class="m-progress__label">20%</div>
+                    <div class="m-progress__label">Please wait...</div>
                     <div class="m-progress__inner">
                         <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
                     </div>
@@ -2081,73 +2104,9 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress"&gt;
-  &lt;div class="m-progress__label"&gt;20%&lt;/div&gt;
+  &lt;div class="m-progress__label"&gt;Please wait...&lt;/div&gt;
   &lt;div class="m-progress__inner"&gt;
     &lt;div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <div class="m-progress m-progress--inline">
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-                    </div>
-                    <div class="m-progress__label">20%</div>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress m-progress--inline"&gt;
-  &lt;div class="m-progress__inner"&gt;
-    &lt;div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class="m-progress__label"&gt;20%&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <div class="m-progress m-progress--inline">
-                    <div class="m-progress__label">20%</div>
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress m-progress--inline"&gt;
-  &lt;div class="m-progress__label"&gt;20%&lt;/div&gt;
-  &lt;div class="m-progress__inner"&gt;
-    &lt;div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-
-        <h4 class="u-margin-top-xl">Progress with steps</h4>
-        <div class="d">
-            <div>
-                <div class="m-progress has-steps">
-                    <div class="m-progress__label">Step 2 of 5</div>
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar is-complete"></div>
-                        <div class="m-progress__bar is-complete"></div>
-                        <div class="m-progress__bar"></div>
-                        <div class="m-progress__bar"></div>
-                        <div class="m-progress__bar"></div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress has-steps"&gt;
-  &lt;div class="m-progress__label"&gt;Step 2 of 5&lt;/div&gt;
-  &lt;div class="m-progress__inner"&gt;
-    &lt;div class="m-progress__bar is-complete"&gt;&lt;/div&gt;
-    &lt;div class="m-progress__bar is-complete"&gt;&lt;/div&gt;
-    &lt;div class="m-progress__bar"&gt;&lt;/div&gt;
-    &lt;div class="m-progress__bar"&gt;&lt;/div&gt;
-    &lt;div class="m-progress__bar"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -2163,69 +2122,14 @@
                 </div>
 
                 <div class="m-progress m-progress--inline m-progress--l u-margin-bottom-l">
+                    <div class="m-progress__label">Downloading 24/128 messages...</div>
                     <div class="m-progress__inner">
                         <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-                    </div>
-                    <div class="m-progress__label">20%</div>
-                </div>
-
-                <div class="m-progress m-progress--inline m-progress--l u-margin-bottom-l">
-                    <div class="m-progress__label">20%</div>
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-                    </div>
-                </div>
-
-                <div class="m-progress has-steps m-progress--l u-margin-bottom-l">
-                    <div class="m-progress__label">Step 2 of 5</div>
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar is-complete"></div>
-                        <div class="m-progress__bar is-complete"></div>
-                        <div class="m-progress__bar"></div>
-                        <div class="m-progress__bar"></div>
-                        <div class="m-progress__bar"></div>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress m-progress--l"&gt;...&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
-                <div class="m-progress m-progress--s u-margin-bottom-l">
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-                    </div>
-                </div>
-
-                <div class="m-progress m-progress--inline m-progress--s u-margin-bottom-l">
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-                    </div>
-                    <div class="m-progress__label">20%</div>
-                </div>
-
-                <div class="m-progress m-progress--inline m-progress--s u-margin-bottom-l">
-                    <div class="m-progress__label">20%</div>
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
-                    </div>
-                </div>
-
-                <div class="m-progress has-steps m-progress--s">
-                    <div class="m-progress__label">Step 2 of 5</div>
-                    <div class="m-progress__inner">
-                        <div class="m-progress__bar is-complete"></div>
-                        <div class="m-progress__bar is-complete"></div>
-                        <div class="m-progress__bar"></div>
-                        <div class="m-progress__bar"></div>
-                        <div class="m-progress__bar"></div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-progress m-progress--s"&gt;...&lt;/div&gt;</code></pre>
             </div>
         </div>
 
@@ -2367,70 +2271,89 @@
         <div class="d">
             <div>
                 <div class="m-tag">
-                    <span class="m-tag__label">My fancy tag</span>
+                    <div class="m-tag__label">Default tag</div>
                 </div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;span class="m-tag__label"&gt;My fancy tag&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-        </div>
-        <div class="d">
-            <div>
                 <div class="m-tag">
-                    <label for="new-tag" class="u-screen-reader-only">Insert new tag</label>
-                    <input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" />
-                </div>
-                <div class="m-alert d-alert m-alert--wcag">
-                    <p><span class="u-screen-reader-only">Accessibility note. </span>Note that you can't solely rely on a placeholder for creating new tags.</p>
+                    <div class="m-tag__icon">{{ icon.render('tags') }}</div>
+                    <div class="m-tag__label">Default tag with icon</div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;label for="new-tag" class="u-screen-reader-only"&gt;Insert new tag&lt;/label&gt;
-  &lt;input id="new-tag" class="m-tag__input" type="text" placeholder="Insert new tag" /&gt;
+  &lt;span class="m-tag__label"&gt;Default tag&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class="m-tag"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Default tag with icon&lt;/span&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div class="m-tag">
-                    <span class="m-tag__label">My tag with delete button</span>
-                    <button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete">{{ icon.render('remove') }}</button>
+                <div class="m-tag is-clickable">
+                    <div class="m-tag__label">Removable tag</div>
+                    <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
+                </div>
+                <div class="m-tag is-clickable">
+                    <div class="m-tag__icon">{{ icon.render('tags') }}</div>
+                    <div class="m-tag__label">Removable tag with icon</div>
+                    <button class="m-tag__button" aria-label="Delete">{{ icon.render('remove') }}</button>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;span class="m-tag__label"&gt;My tag with delete button&lt;/span&gt;
-  &lt;button class="a-button a-button--text a-button--s a-button--danger has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag is-clickable"&gt;
+  &lt;span class="m-tag__label"&gt;Removable tag&lt;/span&gt;
+  &lt;button class="m-tag__button a-button a-button--text a-button--s has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="m-tag is-clickable"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Removable tag with icon&lt;/span&gt;
+  &lt;button class="m-tag__button a-button a-button--text a-button--s has-icon" aria-label="Delete"&gt;{{ icon.code('remove') }}&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div>
-                    <div class="m-tag u-margin-bottom-xs">
-                        <button class="a-button a-button--neutral a-button--s has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
-                        <span class="m-tag__label">My tag with icon</span>
-                    </div>
-                </div>
-                <div>
-                    <div class="m-tag">
-                        <button class="a-button a-button--s a-button--success has-icon" aria-label="Accept">{{ icon.render('check-1') }}</button>
-                        <span class="m-tag__label">My other tag with icon</span>
-                    </div>
-                </div>
+                <button class="m-tag" aria-checked="false">
+                    <span class="m-tag__label">Togglable tag</span>
+                </button>
+                <button class="m-tag" aria-checked="false">
+                    <span class="m-tag__icon">{{ icon.render('tags') }}</span>
+                    <span class="m-tag__label">Togglable tag with icon</span>
+                </button>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;button class="a-button a-button--neutral a-button--s has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
-  &lt;span class="m-tag__label"&gt;My tag with icon&lt;/span&gt;
- &lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-tag"&gt;
-  &lt;button class="a-button a-button--s a-button--success has-icon" aria-label="Accept"&gt;{{ icon.code('check-1') }}&lt;/button&gt;
-  &lt;span class="m-tag__label"&gt;My other tag with icon&lt;/span&gt;
-&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="m-tag" aria-checked="false"&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class="m-tag" aria-checked="false"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag with icon&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <button class="m-tag" aria-checked="true">
+                    <span class="m-tag__label">Toggled tag</span>
+                </button>
+                <button class="m-tag" aria-checked="true">
+                    <span class="m-tag__icon">{{ icon.render('tags') }}</span>
+                    <span class="m-tag__label">Toggled tag with icon</span>
+                </button>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="m-tag" aria-checked="true"&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;button class="m-tag" aria-checked="true"&gt;
+  &lt;span class="m-tag__icon"&gt;{{ icon.code('tags') }}&lt;/span&gt;
+  &lt;span class="m-tag__label"&gt;Togglable tag with icon&lt;/span&gt;
+&lt;/button&gt;</code></pre>
             </div>
         </div>
 

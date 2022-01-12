@@ -159,6 +159,20 @@
 ##### Changed
 - [BREAKING] Changed `.m-modal--large` to `.m-modal--l`
 
+#### Navigation
+
+##### Added
+- Added horizontal scrollable variant of tab navigation
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.m-nav-list--left`
+  - Removed `.m-nav-tabs--left`
+  - Removed `.m-nav-tabs--right`
+- [BREAKING] `<ul>` element must be wrapped with an `<nav>` element
+
 #### Pagination
 
 ##### Changed
@@ -211,7 +225,12 @@
 #### Switch
 
 ##### Added
-- Added outlined and small variant
+- Added variant with I/O labels
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes.
 
 ##### Changed
 - Implemented new design changes
@@ -230,6 +249,18 @@
   - Changed `.a-table--small` to `.a-table--s`
   - Changed `.a-table__wrapper-responsive` to `.a-table-scrollable-wrapper`
   - Changed `.has-no-padding` to `.is-collapsed`
+
+#### Tag
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes.
+
+#### Tag list
+
+##### Changed
+- [BREAKING] `m-tag` should be wrapper in `o-tag-list__item`.
 
 #### Timepicker
 

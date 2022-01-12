@@ -824,13 +824,13 @@
             <div>
                 <div class="a-copyright">
                     <span class="a-copyright__sign">©</span>
-                    <span class="a-copyright__label">Jasper Van Proeyen</span>
+                    <span class="a-copyright__label">Anne martens</span>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-copyright"&gt;
   &lt;span class="a-copyright__sign"&gt;&copy;&lt;/span&gt;
-  &lt;span class="a-copyright__label"&gt;Jasper Van Proeyen&lt;/span&gt;
+  &lt;span class="a-copyright__label"&gt;Anne martens&lt;/span&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -2356,136 +2356,95 @@
         <div class="d">
             <div>
                 <div class="d-tooltip">
-                    <div class="a-switch">
-                        <button class="a-switch__button" role="switch" aria-checked="false">
-                            <span class="a-switch__off">Off</span>
-                            <span class="a-switch__on">On</span>
-                        </button>
-                    </div>
+                    <button class="a-switch" role="switch" aria-checked="true">
+                        <div class="a-switch__toggle" aria-hidden="true"></div>
+                        <div class="a-switch__label a-switch__label--on" aria-hidden="true">Aan</div>
+                        <div class="a-switch__label a-switch__label--off" aria-hidden="true">Uit</div>
+                    </button>
                 </div>
 
                 <div class="d-tooltip">
-                    <div class="a-switch">
-                        <button class="a-switch__button" role="switch" aria-checked="true">
-                            <span class="a-switch__off">Off</span>
-                            <span class="a-switch__on">On</span>
-                        </button>
-                    </div>
+                    <button class="a-switch" role="switch" aria-checked="false">
+                        <div class="a-switch__toggle" aria-hidden="true"></div>
+                        <div class="a-switch__label a-switch__label--on" aria-hidden="true">Aan</div>
+                        <div class="a-switch__label a-switch__label--off" aria-hidden="true">Uit</div>
+                    </button>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch"&gt;
-  &lt;button class="a-switch__button" role="switch" aria-checked="false"&gt;
-    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch"&gt;
-  &lt;button class="a-switch__button" role="switch" aria-checked="true"&gt;
-    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-switch" role="switch" aria-checked="true"&gt;
+  &lt;div class="a-switch__toggle" aria-hidden="true"&gt;&lt;/div&gt;
+  &lt;div class="a-switch__label a-switch__label--on" aria-hidden="true"&gt;Aan&lt;/div&gt;
+  &lt;div class="a-switch__label a-switch__label--off" aria-hidden="true"&gt;Uit&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-switch" role="switch" aria-checked="false"&gt;
+  &lt;div class="a-switch__toggle" aria-hidden="true"&gt;&lt;/div&gt;
+  &lt;div class="a-switch__label a-switch__label--on" aria-hidden="true"&gt;Aan&lt;/div&gt;
+  &lt;div class="a-switch__label a-switch__label--off" aria-hidden="true"&gt;Uit&lt;/div&gt;
+&lt;/button&gt;</code></pre>
             </div>
         </div>
-
-        <h4 class="u-margin-top-xl">Outlined switch</h4>
         <div class="d">
             <div>
                 <div class="d-tooltip">
-                    <div class="a-switch a-switch--outlined">
-                        <button class="a-switch__button" role="switch" aria-checked="false">
-                            <span class="a-switch__off">Off</span>
-                            <span class="a-switch__on">On</span>
-                        </button>
-                    </div>
+                    <button class="a-switch" role="switch" aria-checked="true">
+                        <div class="a-switch__label a-switch__label--on" aria-hidden="true">Ja</div>
+                        <div class="a-switch__label a-switch__label--off" aria-hidden="true">Nee</div>
+                        <div class="a-switch__toggle" aria-hidden="true"></div>
+                    </button>
                 </div>
+
                 <div class="d-tooltip">
-                    <div class="a-switch a-switch--outlined">
-                        <button class="a-switch__button" role="switch" aria-checked="true">
-                            <span class="a-switch__off">Off</span>
-                            <span class="a-switch__on">On</span>
-                        </button>
-                    </div>
+                    <button class="a-switch" role="switch" aria-checked="false">
+                        <div class="a-switch__label a-switch__label--on" aria-hidden="true">Ja</div>
+                        <div class="a-switch__label a-switch__label--off" aria-hidden="true">Nee</div>
+                        <div class="a-switch__toggle" aria-hidden="true"></div>
+                    </button>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch a-switch--outlined"&gt;
-  &lt;button class="a-switch__button" role="switch" aria-checked="false"&gt;
-    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch a-switch--outlined"&gt;
-  &lt;button class="a-switch__button" role="switch" aria-checked="true"&gt;
-    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-switch" role="switch" aria-checked="true"&gt;
+  &lt;div class="a-switch__label a-switch__label--on" aria-hidden="true"&gt;Ja&lt;/div&gt;
+  &lt;div class="a-switch__label a-switch__label--off" aria-hidden="true"&gt;Nee&lt;/div&gt;
+  &lt;div class="a-switch__toggle" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-switch" role="switch" aria-checked="false"&gt;
+  &lt;div class="a-switch__label a-switch__label--on" aria-hidden="true"&gt;Ja&lt;/div&gt;
+  &lt;div class="a-switch__label a-switch__label--off" aria-hidden="true"&gt;Nee&lt;/div&gt;
+  &lt;div class="a-switch__toggle" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
             </div>
         </div>
 
-        <h4 class="u-margin-top-xl">Disabled switch</h4>
         <div class="d">
             <div>
                 <div class="d-tooltip">
-                    <div class="a-switch">
-                        <button class="a-switch__button" role="switch" aria-checked="false" disabled>
-                            <span class="a-switch__off">Off</span>
-                            <span class="a-switch__on">On</span>
-                        </button>
-                    </div>
+                    <button class="a-switch" role="switch" aria-checked="true" disabled>
+                        <div class="a-switch__label a-switch__label--on" aria-hidden="true">Ja</div>
+                        <div class="a-switch__label a-switch__label--off" aria-hidden="true">Nee</div>
+                        <div class="a-switch__toggle" aria-hidden="true"></div>
+                    </button>
                 </div>
+
                 <div class="d-tooltip">
-                    <div class="a-switch">
-                        <button class="a-switch__button" role="switch" aria-checked="true" disabled>
-                            <span class="a-switch__off">Off</span>
-                            <span class="a-switch__on">On</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="d-tooltip">
-                    <div class="a-switch a-switch--outlined">
-                        <button class="a-switch__button" role="switch" aria-checked="false" disabled>
-                            <span class="a-switch__off">Off</span>
-                            <span class="a-switch__on">On</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="d-tooltip">
-                    <div class="a-switch a-switch--outlined">
-                        <button class="a-switch__button" role="switch" aria-checked="true" disabled>
-                            <span class="a-switch__off">Off</span>
-                            <span class="a-switch__on">On</span>
-                        </button>
-                    </div>
+                    <button class="a-switch" role="switch" aria-checked="false" disabled>
+                        <div class="a-switch__label a-switch__label--on" aria-hidden="true">Ja</div>
+                        <div class="a-switch__label a-switch__label--off" aria-hidden="true">Nee</div>
+                        <div class="a-switch__toggle" aria-hidden="true"></div>
+                    </button>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch"&gt;
-  &lt;button class="a-switch__button" role="switch" aria-checked="false" disabled&gt;
-    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch"&gt;
-  &lt;button class="a-switch__button" role="switch" aria-checked="true" disabled&gt;
-    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch a-switch--outlined"&gt;
-  &lt;button class="a-switch__button" role="switch" aria-checked="false" disabled&gt;
-    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-switch a-switch--outlined"&gt;
-  &lt;button class="a-switch__button" role="switch" aria-checked="true" disabled&gt;
-    &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-    &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/div&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-switch" role="switch" aria-checked="true" disabled&gt;
+  &lt;div class="a-switch__label a-switch__label--on" aria-hidden="true"&gt;Ja&lt;/div&gt;
+  &lt;div class="a-switch__label a-switch__label--off" aria-hidden="true"&gt;Nee&lt;/div&gt;
+  &lt;div class="a-switch__toggle" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-switch" role="switch" aria-checked="false" disabled&gt;
+  &lt;div class="a-switch__label a-switch__label--on" aria-hidden="true"&gt;Ja&lt;/div&gt;
+  &lt;div class="a-switch__label a-switch__label--off" aria-hidden="true"&gt;Nee&lt;/div&gt;
+  &lt;div class="a-switch__toggle" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;/button&gt;</code></pre>
             </div>
         </div>
 
@@ -2495,24 +2454,28 @@
                 <div class="d-tooltip">
                     <div class="a-input">
                         <label class="a-input__label" for="switch-button">Switch label</label>
-                        <div class="a-switch">
-                            <button class="a-switch__button" id="switch-button" role="switch" aria-checked="false">
-                                <span class="a-switch__off">Off</span>
-                                <span class="a-switch__on">On</span>
-                            </button>
-                        </div>
+                        <button class="a-switch" role="switch" aria-checked="true">
+                            <div class="a-switch__toggle" aria-hidden="true">
+                                <span class="a-switch__toggle-label a-switch__toggle-label--on" aria-hidden="true">i</span>
+                                <span class="a-switch__toggle-label a-switch__toggle-label--off" aria-hidden="true">o</span>
+                            </div>
+                            <div class="a-switch__label a-switch__label--on" aria-hidden="true">Aan</div>
+                            <div class="a-switch__label a-switch__label--off" aria-hidden="true">Uit</div>
+                        </button>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
   &lt;label class="a-input__label" for="switch-button"&gt;Switch label&lt;/label&gt;
-  &lt;div class="a-switch"&gt;
-    &lt;button class="a-switch__button" id="switch-button" role="switch" aria-checked="false"&gt;
-      &lt;span class="a-switch__off"&gt;Off&lt;/span&gt;
-      &lt;span class="a-switch__on"&gt;On&lt;/span&gt;
-    &lt;/button&gt;
-  &lt;/div&gt;
+  &lt;button class="a-switch" role="switch" aria-checked="true"&gt;
+    &lt;div class="a-switch__toggle" aria-hidden="true"&gt;
+      &lt;div class="a-switch__toggle-label a-switch__toggle-label--on" aria-hidden="true"&gt;i&lt;/div&gt;
+      &lt;div class="a-switch__toggle-label a-switch__toggle-label--off" aria-hidden="true"&gt;o&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="a-switch__label a-switch__label--on" aria-hidden="true"&gt;Aan&lt;/div&gt;
+    &lt;div class="a-switch__label a-switch__label--off" aria-hidden="true"&gt;Uit&lt;/div&gt;
+  &lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -2591,117 +2554,6 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
-            </div>
-        </div>
-
-        <div class="d">
-            <div>
-                <table class="a-table">
-                    <caption>Standard table with sortable columns</caption>
-                    <thead>
-                        <tr>
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button">
-                                    Snack {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button">
-                                    Description {{ icon.render('keyboard-arrow-down') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button a-table__sort-button--align-right">
-                                    Stock {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-
-                            <th class="is-collapsed" aria-sort="none">
-                                <button class="a-table__sort-button a-table__sort-button--align-right">
-                                    Price {{ icon.render('move-expand-vertical') }}
-                                </button>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="u-text-bold">Ice cream</td>
-                            <td class="small">Tasty, frozen treat for a hot day</td>
-                            <td class="u-text-right small">160</td>
-                            <td class="u-text-right">€2,49</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Chips</td>
-                            <td class="small">Salty, crunchy goodness</td>
-                            <td class="u-text-right small">48</td>
-                            <td class="u-text-right">€1,99</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Lollipop</td>
-                            <td class="small">Rainbow flavors with a bubblegum center</td>
-                            <td class="u-text-right small">480</td>
-                            <td class="u-text-right">€0,99</td>
-                        </tr>
-                        <tr>
-                            <td class="u-text-bold">Candy bar</td>
-                            <td class="small">Chewy and quite nutty</td>
-                            <td class="u-text-right small">240</td>
-                            <td class="u-text-right">€1,49</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
-                <div class="u-screen-reader-only" aria-live="polite">Description column sorted down</div>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
-  &lt;caption&gt;Standard table with sortable columns&lt;/caption&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button"&gt;
-          Snack {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button"&gt;
-          Description {{ icon.code('keyboard-arrow-down') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
-          Stock {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-
-      &lt;th class="is-collapsed" aria-sort="none"&gt;
-        &lt;button class="a-table__sort-button a-table__sort-button--align-right"&gt;
-          Price {{ icon.code('move-expand-vertical') }}
-        &lt;/button&gt;
-      &lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;...&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted down&lt;/div&gt;</code></pre>
             </div>
         </div>
 
@@ -2965,6 +2817,199 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-xl">Sortable tables</h4>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one unsorted column</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="none">
+                                <button class="a-table__sort-button a-table__sort-button--unsorted">Description</button>
+                            </th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one unsorted column&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="none"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--unsorted"&gt;Description&lt;/button&gt;
+      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one column sorted ascending</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="ascending">
+                                <button class="a-table__sort-button a-table__sort-button--sorted-asc">Description</button>
+                            </th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
+                <div class="u-screen-reader-only" aria-live="polite">Description column sorted ascending</div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one column sorted ascending&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="ascending"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--sorted-asc"&gt;Description&lt;/button&gt;
+      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted ascending&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <table class="a-table">
+                    <caption>Sortable table with one column sorted descending</caption>
+                    <thead>
+                        <tr>
+                            <th>Snack</th>
+                            <th class="is-collapsed" aria-sort="descending">
+                                <button class="a-table__sort-button a-table__sort-button--sorted-desc">Description</button>
+                            </th>
+                            <th class="u-text-right">Stock</th>
+                            <th class="u-text-right">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="u-text-bold">Ice cream</td>
+                            <td class="small">Tasty, frozen treat for a hot day</td>
+                            <td class="u-text-right small">160</td>
+                            <td class="u-text-right">€2,49</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Chips</td>
+                            <td class="small">Salty, crunchy goodness</td>
+                            <td class="u-text-right small">48</td>
+                            <td class="u-text-right">€1,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Lollipop</td>
+                            <td class="small">Rainbow flavors with a bubblegum center</td>
+                            <td class="u-text-right small">480</td>
+                            <td class="u-text-right">€0,99</td>
+                        </tr>
+                        <tr>
+                            <td class="u-text-bold">Candy bar</td>
+                            <td class="small">Chewy and quite nutty</td>
+                            <td class="u-text-right small">240</td>
+                            <td class="u-text-right">€1,49</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- https://adrianroselli.com/2021/04/sortable-table-columns.html -->
+                <div class="u-screen-reader-only" aria-live="polite">Description column sorted descending</div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;table class="a-table"&gt;
+  &lt;caption&gt;Sortable table with one column sorted descending&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Snack&lt;/th&gt;
+      &lt;th class="is-collapsed" aria-sort="descending"&gt;
+        &lt;button class="a-table__sort-button a-table__sort-button--sorted-desc"&gt;Description&lt;/button&gt;
+      &lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Stock&lt;/th&gt;
+      &lt;th class="u-text-right"&gt;Price&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;...&lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class="u-screen-reader-only" aria-live="polite"&gt;Description column sorted descending&lt;/div&gt;</code></pre>
             </div>
         </div>
 
