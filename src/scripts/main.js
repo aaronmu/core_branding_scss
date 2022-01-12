@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const switches = document.querySelectorAll(".a-switch__button");
+    const switches = document.querySelectorAll(".a-switch");
 
     for (let index = 0; index < switches.length; index++) {
         const switchEl = switches[index];
