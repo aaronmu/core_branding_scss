@@ -6,16 +6,14 @@
 .a-switch {
   --switch-width:                                      2.75rem;
   --switch-height:                                     var(--spacer);
-  --switch-padding:                                    .1875rem;
+  --switch-inset:                                      .1875rem;
 
   --switch-handle-size:                                1.125rem;
 
-  --switch-label-width:                                var(--spacer-l);
   --switch-label-font-size:                            1rem;
   --switch-label-color:                                var(--text-color);
-  --switch-label-disabled-color:                       var(--text-color-light);
+  --switch-label-disabled-color:                       #{$gray-300};
 
-  // Contained switch
   --switch-bg-color:                                   #{$gray-300};
   --switch-border-color:                               var(--switch-bg-color);
   --switch-handle-bg-color:                            #{$white};
@@ -24,30 +22,9 @@
   --switch-active-border-color:                        var(--switch-active-bg-color);
   --switch-handle-active-bg-color:                     #{$white};
 
-  --switch-disabled-bg-color:                          #{$gray-300};
+  --switch-disabled-bg-color:                          #{$gray-200};
   --switch-disabled-border-color:                      var(--switch-disabled-bg-color);
-  --switch-handle-disabled-bg-color:                   #{$gray-100};
-
-  --switch-disabled-active-bg-color:                   var(--theme1-400);
-  --switch-disabled-active-border-color:               var(--switch-disabled-active-border-color);
-  --switch-handle-disabled-active-bg-color:            #{$gray-100};
-
-  // Outlined switch
-  --switch-outlined-bg-color:                          #{$white};
-  --switch-outlined-border-color:                      #{$gray-300};
-  --switch-outlined-handle-bg-color:                   #{$gray-300};
-
-  --switch-outlined-active-bg-color:                   #{$white};
-  --switch-outlined-active-border-color:               var(--theme1-400);
-  --switch-outlined-handle-active-bg-color:            var(--theme1-400);
-
-  --switch-outlined-disabled-bg-color:                 #{$gray-100};
-  --switch-outlined-disabled-border-color:             #{$gray-300};
-  --switch-outlined-handle-disabled-bg-color:          #{$gray-300};
-
-  --switch-outlined-disabled-active-bg-color:          #{$gray-100};
-  --switch-outlined-disabled-active-border-color:      var(--theme1-400);
-  --switch-outlined-handle-disabled-active-bg-color:   var(--theme1-400);
+  --switch-handle-disabled-bg-color:                   #{$white};
 }
 
 /**
@@ -56,126 +33,103 @@
  */
 
 .a-switch {
-  display: block;
-}
-
-.a-switch__button {
   align-items: center;
   background: transparent;
   border: none;
   cursor: pointer;
-  display: inline-flex;
-  height: var(--switch-height);
+  display: flex;
   padding: 0;
-  position: relative;
-
-  &:before {
-    background-color: var(--switch-bg-color);
-    border-radius: var(--switch-height);
-    border: var(--border-width) solid var(--switch-border-color);
-    content: '';
-    display: inline-block;
-    height: var(--switch-height);
-    left: var(--switch-label-width);
-    position: absolute;
-    top: 0;
-    transition: background, border;
-    width: var(--switch-width);
-  }
-
-  &:after {
-    background-color: var(--switch-handle-bg-color);
-    border-radius: var(--switch-handle-size);
-    content: '';
-    display: inline-block;
-    height: var(--switch-handle-size);
-    left: var(--switch-label-width);
-    position: absolute;
-    top: 50%;
-    transform: translate(var(--switch-padding), -50%);
-    transition: background, transform var(--animation-normal);
-    width: var(--switch-handle-size);
-  }
 
   &[aria-checked='true'] {
     --switch-bg-color: var(--switch-active-bg-color);
     --switch-border-color: var(--switch-active-border-color);
     --switch-handle-bg-color: var(--switch-handle-active-bg-color);
 
-    &:after {
-      transform: translate(calc(var(--switch-width) - var(--switch-handle-size) - var(--switch-padding)), -50%);
+    .a-switch__label--off {
+      display: none;
     }
 
-    &:disabled {
-      --switch-bg-color: var(--switch-disabled-active-bg-color);
-      --switch-border-color: var(--switch-disabled-active-border-color);
-      --switch-handle-bg-color: var(--switch-handle-disabled-active-bg-color);
+    .a-switch__toggle-label--off {
+      opacity: 0;
     }
 
-    .a-switch__on {
-      color: var(--switch-label-color);
+    .a-switch__toggle:after {
+      transform: translate(calc(var(--switch-width) - var(--switch-handle-size) - var(--switch-inset)), -50%);
     }
   }
 
-  &[aria-checked='false'] .a-switch__off {
-    color: var(--switch-label-color);
+  &[aria-checked='false'] {
+    .a-switch__label--on {
+      display: none;
+    }
+
+    .a-switch__toggle-label--on {
+      opacity: 0;
+    }
   }
 
   &:disabled {
     --switch-bg-color: var(--switch-disabled-bg-color);
     --switch-border-color: var(--switch-disabled-border-color);
-    --switch-label-color: var(--switch-label-disabled-color);
     --switch-handle-bg-color: var(--switch-handle-disabled-bg-color);
+    --switch-label-color: var(--switch-label-disabled-color);
 
     cursor: not-allowed;
   }
 }
 
-.a-switch__off,
-.a-switch__on {
-  color: var(--switch-label-disabled-color);
-  font-size: var(--switch-label-font-size);
-  transition: color var(--animation-normal);
-  width: var(--switch-label-width);
-}
-
-.a-switch__off {
-  margin-right: calc(var(--switch-width) / 2);
-  text-align: left;
-}
-
-.a-switch__on {
-  margin-left: calc(var(--switch-width) / 2);
-  text-align: right;
-}
-
 /**
- * OUTLINED SWITCH
+ * SWITCH ELEMENTS
  * -------------------------------------------------------------------
  */
 
-.a-switch.a-switch--outlined {
-  --switch-bg-color: var(--switch-outlined-bg-color);
-  --switch-border-color: var(--switch-outlined-border-color);
-  --switch-handle-bg-color: var(--switch-outlined-handle-bg-color);
+.a-switch__toggle {
+  align-items: center;
+  background-color: var(--switch-bg-color);
+  border-radius: var(--switch-height);
+  display: flex;
+  height: var(--switch-height);
+  justify-content: space-between;
+  padding: var(--switch-inset);
+  position: relative;
+  transition: background-color, border;
+  width: var(--switch-width);
 
-  .a-switch__button {
-    &[aria-checked='true'] {
-      --switch-bg-color: var(--switch-outlined-active-bg-color);
-      --switch-border-color: var(--switch-outlined-active-border-color);
-      --switch-handle-bg-color: var(--switch-outlined-handle-active-bg-color);
-
-      &:disabled {
-        --switch-bg-color: var(--switch-outlined-disabled-active-bg-color);
-        --switch-border-color: var(--switch-outlined-disabled-active-border-color);
-        --switch-handle-bg-color: var(--switch-outlined-handle-disabled-active-bg-color);
-      }
-    }
-
-    &:disabled {
-      --switch-bg-color: var(--switch-outlined-disabled-bg-color);
-      --switch-border-color: var(--switch-outlined-disabled-border-color);
-      --switch-handle-bg-color: var(--switch-outlined-handle-disabled-bg-color);
-    }
+  &:after {
+    background-color: var(--switch-handle-bg-color);
+    border-radius: var(--switch-handle-size);
+    content: '';
+    height: var(--switch-handle-size);
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(var(--switch-inset), -50%);
+    transition: background, transform var(--animation-normal);
+    width: var(--switch-handle-size);
   }
+}
+
+.a-switch__label {
+  color: var(--switch-label-color);
+  font-size: var(--switch-label-font-size);
+  min-width: 2rem;
+  transition: color var(--animation-normal);
+  text-align: right;
+}
+
+.a-switch__label + .a-switch__toggle,
+.a-switch__toggle + .a-switch__label {
+  margin-left: var(--spacer-xs);
+}
+
+.a-switch__toggle + .a-switch__label {
+  text-align: left;
+}
+
+.a-switch__toggle-label {
+  color: var(--switch-handle-bg-color);
+  font-size: .875rem;
+  text-transform: uppercase;
+  transition: opacity var(--animation-normal);
+  width: var(--switch-handle-size);
 }
