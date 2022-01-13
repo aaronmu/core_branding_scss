@@ -203,10 +203,10 @@
 .a-button-official {
   --btn-official-color:                          #{$white};
   --btn-official-hover-color:                    var(--btn-official-color);
-  --btn-official-bg-color:                       #{$monza-400};
-  --btn-official-hover-bg-color:                 #{mix($monza-400, $black, 90%)};
+  --btn-official-bg-color:                       #{$official-antwerp};
+  --btn-official-hover-bg-color:                 #{$official-antwerp-hover};
   --btn-official-border-color:                   #{$monza-400};
-  --btn-official-hover-border-color:             #{mix($monza-400, $black, 90%)};
+  --btn-official-hover-border-color:             #{$official-antwerp-hover};
 }
 
 /**
