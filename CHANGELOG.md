@@ -191,11 +191,13 @@
 - Implemented new design changes
 - [BREAKING] Replaced SASS variables by CSS properties
 - [BREAKING] Removed progress variant with tooltip
+- [BREAKING] Changed from molecule to atom
 
 #### Range slider
 
 ##### Changed
 - [BREAKING] Removed range slider variant with tooltip
+- [BREAKING] Changed from molecule to atom
 
 #### Selectable list
 
