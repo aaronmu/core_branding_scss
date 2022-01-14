@@ -283,6 +283,8 @@
 
 ##### Changed
 - Updated visual appearance when focused
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Remove progress bar
 
 
 ## [5.0.1] - 2021-06-14
