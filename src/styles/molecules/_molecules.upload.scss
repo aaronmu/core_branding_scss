@@ -4,9 +4,6 @@
  */
 
 .m-upload {
-  --upload-height:                  calc(var(--spacer) * 5);
-  --upload-padding:                 var(--spacer-l) var(--spacer);
-
   --upload-color:                   var(--text-color);
   --upload-bg-color:                #{$white};
   --upload-hover-bg-color:          var(--theme1-050);
@@ -66,8 +63,8 @@
   cursor: pointer;
   display: flex;
   justify-content: center;
-  min-height: var(--upload-height);
-  padding: var(--upload-padding);
+  min-height: calc(var(--spacer) * 5);
+  padding: var(--spacer-l) var(--spacer);
   position: relative;
   text-align: center;
   transition: background var(--animation-normal);
