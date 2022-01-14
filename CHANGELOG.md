@@ -142,6 +142,8 @@
 
 ##### Added
 - Added flushed list variant with no top and bottom border
+- Added checkbox list
+- Added avatar list
 
 ##### Changed
 - Implemented new design changes
@@ -157,6 +159,7 @@
 #### Modal
 
 ##### Changed
+- [BREAKING] Replaced SASS variables by CSS properties
 - [BREAKING] Changed `.m-modal--large` to `.m-modal--l`
 
 #### Navigation
