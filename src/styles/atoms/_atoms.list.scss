@@ -169,11 +169,18 @@
       .a-input__checkbox,
       .a-input__radio {
         label {
-          display: flex;
+          align-items: center;
+          display: inline-flex;
           min-height: var(--spacer-xl);
           padding-bottom: var(--spacer-3xs);
           padding-right: var(--spacer-s);
           padding-top: var(--spacer-3xs);
+
+          &:before,
+          &:after {
+            top: 50%;
+            transform: translateY(-50%);
+          }
         }
       }
     }

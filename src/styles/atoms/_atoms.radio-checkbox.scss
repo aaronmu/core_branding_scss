@@ -86,9 +86,8 @@
   }
 
   label {
-    align-items: center;
     cursor: pointer;
-    display: inline-flex;
+    display: inline-block;
     line-height: var(--spacer);
     max-width: 100%;
     min-height: var(--spacer);
@@ -105,8 +104,6 @@
       left: 0;
       margin-left: calc(var(--spacer) * -1);
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
       transition-duration: var(--animation-duration);
       transition-property: background, box-shadow;
       transition-timing-function: var(--animation-easing);
@@ -123,8 +120,7 @@
       margin-left: calc(var(--spacer) * -1);
       position: absolute;
       text-align: center;
-      top: 50%;
-      transform: translateY(-50%);
+      top: 0;
       transition-duration: var(--animation-duration);
       transition-property: background-size;
       transition-timing-function: var(--animation-easing);
