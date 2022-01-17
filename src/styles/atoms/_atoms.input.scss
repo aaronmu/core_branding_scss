@@ -336,7 +336,7 @@ textarea {
 
     select {
       @-moz-document url-prefix() { // sass-lint:disable-line no-vendor-prefixes
-        line-height: 2.1; // Fixes Firefox line-height bug
+        line-height: 2.1; // Fixes Firefox line-height bug (https://stackoverflow.com/a/5440037)
       }
     }
   }
