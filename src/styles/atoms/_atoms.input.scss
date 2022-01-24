@@ -265,7 +265,8 @@ textarea {
     }
 
     &:focus-within .a-input__wrapper {
-      @include focus;
+      outline: 5px auto Highlight;
+      outline: 2px auto -webkit-focus-ring-color; // Decrease focus outline on Safari to make it connect to input field border
     }
   }
 
