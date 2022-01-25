@@ -518,22 +518,44 @@
             <div>
                 <div>
                     <button class="a-button d-button a-button--l has-icon-right">
-                        {{ icon.render('synchronize-arrows-1', true, 'ai ai--spin') }}
+                        <span class="a-spinner a-spinner--s" role="alert">
+                            <span class="a-spinner__circle">
+                                <span class="u-screen-reader-only">Fetching data...</span>
+                            </span>
+                        </span>
+
                         Loading
                     </button>
+
                     <button class="a-button d-button has-icon-right">
-                        {{ icon.render('synchronize-arrows-1', true, 'ai ai--spin') }}
+                        <span class="a-spinner a-spinner--s" role="alert">
+                            <span class="a-spinner__circle">
+                                <span class="u-screen-reader-only">Fetching data...</span>
+                            </span>
+                        </span>
+
                         Loading
                     </button>
+
                     <button class="a-button d-button a-button--s has-icon-right">
-                        {{ icon.render('synchronize-arrows-1', true, 'ai ai--spin') }}
+                        <span class="a-spinner a-spinner--xs" role="alert">
+                            <span class="a-spinner__circle">
+                                <span class="u-screen-reader-only">Fetching data...</span>
+                            </span>
+                        </span>
+
                         Loading
                     </button>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;button class="a-button has-icon-right"&gt;
-  {{ icon.code('synchronize-arrows-1', true, 'ai ai--spin') }}
+  &lt;span class="a-spinner a-spinner--xs" role="alert"&gt;
+    &lt;span class="a-spinner__circle"&gt;
+      &lt;span class="u-screen-reader-only"&gt;Fetching data...&lt;/span&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+
   Loading
 &lt;/button&gt;</code></pre>
             </div>
