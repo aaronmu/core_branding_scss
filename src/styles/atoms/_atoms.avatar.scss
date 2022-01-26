@@ -45,7 +45,7 @@
   img {
     display: block;
     max-width: 100%;
-    transition: transform var(--animation-normal);
+    transition: filter var(--animation-normal);
   }
 
   &__icon .ai,
@@ -63,7 +63,7 @@ a,
   &:active,
   &:focus {
     .a-avatar img {
-      transform: scale(1.25);
+      filter: brightness(90%);
     }
   }
 }
