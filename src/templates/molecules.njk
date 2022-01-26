@@ -1695,7 +1695,6 @@
         <a name="molecules-pagination" aria-label="Pagination"></a>
         <h3 class="u-margin-top-xl">Pagination</h3>
         <span class="d-file">molecules/molecules.pagination</span>
-        <h4 class="u-margin-top-xl">Regular pagination</h4>
         <div class="d">
             <div>
                 <ul class="m-pagination u-margin-bottom">
@@ -1728,49 +1727,6 @@
   &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;...&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-            </div>
-        </div>
-        <h4 class="u-margin-top-xl">Outline pagination</h4>
-        <div class="d">
-            <div>
-                <ul class="m-pagination m-pagination--outlined u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
-                </ul>
-                <ul class="m-pagination m-pagination--outlined u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
-                    <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
-                </ul>
-                <ul class="m-pagination m-pagination--outlined u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
-                    <li>...</li>
-                    <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
-                    <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
-                    <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
-                </ul>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outlined"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outlined"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outlined"&gt;
   &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;...&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
@@ -1785,24 +1741,15 @@
         <div class="d">
             <div>
                 <ul class="m-pagination m-pagination--s u-margin-bottom">
+                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
+                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
+                </ul>
+                <ul class="m-pagination m-pagination--s u-margin-bottom">
                     <li class="m-pagination__prev"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the previous page (disabled)">{{ icon.render('arrow-left-1') }}</a></li>
                     <li class="m-pagination__label"><span class="u-screen-reader-only">Page </span>1 of 6</li>
                     <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
                 </ul>
-                <ul class="m-pagination m-pagination--l u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
-                    <li>...</li>
-                    <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
-                    <li><a href="javascript:void(0);" aria-label="Go to page 4">4</a></li>
-                    <li><a href="javascript:void(0);" aria-label="Go to page 5">5</a></li>
-                    <li><a class="is-active" href="javascript:void(0);" aria-label="Go to page 6 (current page)">6</a></li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" class="is-disabled" aria-label="Go to the next page (disabled)">{{ icon.render('arrow-right-1') }}</a></li>
-                </ul>
-                <ul class="m-pagination m-pagination--outlined m-pagination--l u-margin-bottom">
-                    <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
-                    <li class="m-pagination__next"><a href="javascript:void(0);" aria-label="Go to the next page">{{ icon.render('arrow-right-1') }}</a></li>
-                </ul>
-                <ul class="m-pagination m-pagination--outlined m-pagination--s u-margin-bottom">
+                <ul class="m-pagination m-pagination--s u-margin-bottom">
                     <li class="m-pagination__prev"><a href="javascript:void(0);" aria-label="Go to the previous page">{{ icon.render('arrow-left-1') }}</a></li>
                     <li>...</li>
                     <li><a href="javascript:void(0);" aria-label="Go to page 3">3</a></li>
@@ -1814,24 +1761,15 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--s"&gt;
+  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--s"&gt;
   &lt;li class="m-pagination__prev"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the previous page (disabled)"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li class="m-pagination__label"&gt;&lt;span class="u-screen-reader-only"&gt;Page &lt;/span&gt;1 of 6&lt;/li&gt;
   &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--l"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;...&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" aria-label="Go to page 4"&gt;4&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="#" aria-label="Go to page 5"&gt;5&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a class="is-active" href="#" aria-label="Go to page 6 (current page)"&gt;6&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" class="is-disabled" aria-label="Go to the next page (disabled)"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outlined m-pagination--l"&gt;
-  &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
-  &lt;li class="m-pagination__next"&gt;&lt;a href="#" aria-label="Go to the next page"&gt;{{ icon.code('arrow-right-1') }}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--outlined m-pagination--s"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;ul class="m-pagination m-pagination--s"&gt;
   &lt;li class="m-pagination__prev"&gt;&lt;a href="#" aria-label="Go to the previous page"&gt;{{ icon.code('arrow-left-1') }}&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;...&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" aria-label="Go to page 3"&gt;3&lt;/a&gt;&lt;/li&gt;
