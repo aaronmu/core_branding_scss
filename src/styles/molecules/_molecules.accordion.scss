@@ -24,7 +24,7 @@
  */
 
 .m-accordion:not(.m-accordion--open) {
-  .m-accordion__tab.is-open .m-accordion__header {
+  .m-accordion__tab[aria-expanded='true'] .m-accordion__header {
     --accordion-header-bg-color: #{$gray-100};
 
     &:hover,
@@ -54,7 +54,7 @@
     margin-top: calc(var(--border-width) * -1);
   }
 
-  &.is-open {
+  &[aria-expanded='true'] {
     .m-accordion__header {
       font-weight: var(--font-weight-bold);
 
