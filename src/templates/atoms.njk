@@ -1926,7 +1926,7 @@
                     <li class="a-checkbox-list__item">
                         <div class="a-input a-checkbox-list__checkbox">
                             <div class="a-input__checkbox">
-                                <input type="checkbox" id="list-checkbox1" name="list-checkbox">
+                                <input type="checkbox" id="list-checkbox1" name="list-checkbox" checked>
                                 <label for="list-checkbox1">First item</label>
                             </div>
                         </div>
@@ -1934,7 +1934,7 @@
                     <li class="a-checkbox-list__item">
                         <div class="a-input a-checkbox-list__checkbox">
                             <div class="a-input__checkbox">
-                                <input type="checkbox" id="list-checkbox2" name="list-checkbox" checked>
+                                <input type="checkbox" id="list-checkbox2" name="list-checkbox">
                                 <label for="list-checkbox2">Second item</label>
                             </div>
                         </div>
@@ -1985,7 +1985,7 @@
                     <li class="a-checkbox-list__item">
                         <div class="a-input a-checkbox-list__checkbox">
                             <div class="a-input__checkbox">
-                                <input type="checkbox" id="flushed-list-checkbox1" name="flushed-list-checkbox">
+                                <input type="checkbox" id="flushed-list-checkbox1" name="flushed-list-checkbox" checked>
                                 <label for="flushed-list-checkbox1">First item</label>
                             </div>
                         </div>
@@ -1993,7 +1993,7 @@
                     <li class="a-checkbox-list__item">
                         <div class="a-input a-checkbox-list__checkbox">
                             <div class="a-input__checkbox">
-                                <input type="checkbox" id="flushed-list-checkbox2" name="flushed-list-checkbox" checked>
+                                <input type="checkbox" id="flushed-list-checkbox2" name="flushed-list-checkbox">
                                 <label for="flushed-list-checkbox2">Second item</label>
                             </div>
                         </div>
@@ -2430,9 +2430,99 @@
             </div>
         </div>
 
+        <a name="atoms-page-indicator" aria-label="Page indicator"></a>
+        <h3 class="u-margin-top-xl">Page indicator</h3>
+        <span class="d-file">atoms/atoms.page-indicator</span>
+        <div class="d">
+            <div>
+                <div class="a-page-indicator">
+                    <div class="a-page-indicator__item"></div>
+                    <div class="a-page-indicator__item is-active"></div>
+                    <div class="a-page-indicator__item"></div>
+                    <div class="a-page-indicator__item"></div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator"&gt;
+  &lt;div class="a-page-indicator__item"&gt;&lt;/div&gt;
+  &lt;div class="a-page-indicator__item is-active"&gt;&lt;/div&gt;
+  &lt;div class="a-page-indicator__item"&gt;&lt;/div&gt;
+  &lt;div class="a-page-indicator__item"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-page-indicator">
+                    <button class="a-page-indicator__item" aria-label="Go to page 1"></button>
+                    <button class="a-page-indicator__item is-active" aria-label="Go to page 2"></button>
+                    <button class="a-page-indicator__item" aria-label="Go to page 3"></button>
+                    <button class="a-page-indicator__item" aria-label="Go to page 4"></button>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator"&gt;
+  &lt;button class="a-page-indicator__item" aria-label="Go to page 1"&gt;&lt;/button&gt;
+  &lt;button class="a-page-indicator__item is-active" aria-label="Go to page 2"&gt;&lt;/button&gt;
+  &lt;button class="a-page-indicator__item" aria-label="Go to page 3"&gt;&lt;/button&gt;
+  &lt;button class="a-page-indicator__item" aria-label="Go to page 4"&gt;&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-page-indicator">
+                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 1"></a>
+                    <a href="javascript:void(0);" class="a-page-indicator__item is-active" aria-label="Go to page 2"></a>
+                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 3"></a>
+                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 4"></a>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator"&gt;
+  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 1"&gt;&lt;/a&gt;
+  &lt;a href="#" class="a-page-indicator__item is-active" aria-label="Go to page 2"&gt;&lt;/a&gt;
+  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 3"&gt;&lt;/a&gt;
+  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 4"&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
+        <h4 class="u-margin-top-xl">Page indicator sizes</h4>
+        <div class="d">
+            <div>
+                <div class="a-page-indicator a-page-indicator--s">
+                    <div class="a-page-indicator__item"></div>
+                    <div class="a-page-indicator__item is-active"></div>
+                    <div class="a-page-indicator__item"></div>
+                    <div class="a-page-indicator__item"></div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator a-page-indicator--s"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+        <div class="d">
+            <div>
+                <div class="a-page-indicator a-page-indicator--l">
+                    <div class="a-page-indicator__item"></div>
+                    <div class="a-page-indicator__item is-active"></div>
+                    <div class="a-page-indicator__item"></div>
+                    <div class="a-page-indicator__item"></div>
+                </div>
+            </div>
+            <div>
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator a-page-indicator--l"&gt;
+  ...
+&lt;/div&gt;</code></pre>
+            </div>
+        </div>
+
         <a name="atoms-progress" aria-label="Progress"></a>
         <h3 class="u-margin-top-xl">Progress</h3>
-        <span class="d-file">molecules/molecules.progress</span>
+        <span class="d-file">atoms/atoms.progress</span>
         <div class="d">
             <div>
                 <div class="a-progress">
