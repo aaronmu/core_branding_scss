@@ -3173,8 +3173,8 @@
             <div>
                 <div class="d-tooltip">
                     <div class="a-input">
-                        <label class="a-input__label" for="switch-button">Switch label</label>
-                        <button class="a-switch" role="switch" aria-checked="true">
+                        <div class="a-input__label" id="switch-label" for="switch-button">Switch label</div>
+                        <button class="a-switch" role="switch" aria-checked="true" aria-labelledby="switch-label">
                             <div class="a-switch__toggle" aria-hidden="true">
                                 <span class="a-switch__toggle-label a-switch__toggle-label--on" aria-hidden="true">i</span>
                                 <span class="a-switch__toggle-label a-switch__toggle-label--off" aria-hidden="true">o</span>
@@ -3187,8 +3187,8 @@
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-input"&gt;
-  &lt;label class="a-input__label" for="switch-button"&gt;Switch label&lt;/label&gt;
-  &lt;button class="a-switch" role="switch" aria-checked="true"&gt;
+  &lt;div class="a-input__label" id="switch-label" for="switch-button"&gt;Switch label&lt;/div&gt;
+  &lt;button class="a-switch" role="switch" aria-checked="true" aria-labelledby="switch-label"&gt;
     &lt;div class="a-switch__toggle" aria-hidden="true"&gt;
       &lt;div class="a-switch__toggle-label a-switch__toggle-label--on" aria-hidden="true"&gt;i&lt;/div&gt;
       &lt;div class="a-switch__toggle-label a-switch__toggle-label--off" aria-hidden="true"&gt;o&lt;/div&gt;
