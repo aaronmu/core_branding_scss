@@ -97,6 +97,14 @@
     margin: var(--article-p-margin);
   }
 
+  ul,
+  ol {
+    ul,
+    ol {
+      padding-left: var(--spacer);
+    }
+  }
+
   ul {
     font-size: var(--article-ul-font-size);
     margin: var(--article-ul-margin);
