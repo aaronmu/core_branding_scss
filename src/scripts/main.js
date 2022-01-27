@@ -46,10 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const tagEl = tags[index];
 
         tagEl.onclick = () => {
-            if (tagEl.getAttribute("aria-checked") == "true") {
-                tagEl.setAttribute("aria-checked", "false");
+            if (tagEl.getAttribute("aria-pressed") == "true") {
+                tagEl.setAttribute("aria-pressed", "false");
             } else {
-                tagEl.setAttribute("aria-checked", "true");
+                tagEl.setAttribute("aria-pressed", "true");
             }
         }
     }

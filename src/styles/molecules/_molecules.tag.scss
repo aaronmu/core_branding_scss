@@ -44,7 +44,7 @@ button.m-tag {
     --tag-bg-color: var(--theme1-050);
   }
 
-  &[aria-checked='true'] {
+  &[aria-pressed='true'] {
     --tag-color: #{$white};
     --tag-bg-color: var(--theme1-400);
     --tag-border-color: var(--theme1-400);
