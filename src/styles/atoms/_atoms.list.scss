@@ -199,7 +199,7 @@
       }
 
       .a-checkbox-list__checkbox {
-        padding-left: calc(var(--spacer-s) * 2);
+        padding-left: calc(var(--spacer) + var(--spacer-s));
       }
     }
   }
