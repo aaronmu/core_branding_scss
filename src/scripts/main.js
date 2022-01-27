@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Set indeterminate state of some checkboxes
-    const checkboxes = document.querySelectorAll("#checkbox-indeterminate");
+    const checkboxes = document.querySelectorAll("#checkbox-indeterminate, #table-checkbox1");
 
     for (let index = 0; index < checkboxes.length; index++) {
         checkboxes[index].indeterminate = true;

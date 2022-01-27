@@ -11,7 +11,7 @@
   --avatar-primary-color:            var(--theme1-400);
   --avatar-primary-hover-color:      var(--theme1-500);
   --avatar-primary-bg-color:         var(--theme1-050);
-  --avatar-primary-hover-bg-color:   var(--theme1-100);
+  --avatar-primary-hover-bg-color:   var(--theme1-075);
 
   --avatar-size-s:                   var(--shared-avatar-size-s); // 36px
   --avatar-icon-size-s:              1rem;
@@ -45,7 +45,7 @@
   img {
     display: block;
     max-width: 100%;
-    transition: transform var(--animation-normal);
+    transition: filter var(--animation-normal);
   }
 
   &__icon .ai,
@@ -63,7 +63,7 @@ a,
   &:active,
   &:focus {
     .a-avatar img {
-      transform: scale(1.25);
+      filter: brightness(80%);
     }
   }
 }

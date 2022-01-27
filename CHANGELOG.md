@@ -62,6 +62,7 @@
 - [BREAKING] Replaced SASS variables with CSS properties
 - [BREAKING] Changed various CSS classes:
   - Removed `.has-margins`
+- [BREAKING] `.is-open` class to open/close accordion is replaced by `aria-expanded` attribute
 
 #### Badge
 
@@ -79,6 +80,7 @@
 - Added button with avatar
 
 ##### Changed
+- [BREAKING] Removed official button
 - [BREAKING] Changed various CSS classes:
   - Removed `.a-button--transparent`
   - Removed `.a-button--tiny`
@@ -88,6 +90,16 @@
   - Changed `.a-button--default` to `.a-button--neutral`
   - Changed `.a-button--small` to `.a-button--s`
   - Changed `.a-button--large` to `.a-button--l`
+
+#### Card
+
+##### Changed
+- [BREAKING] Removed contact molecule from card header
+
+#### Contact
+
+##### Changed
+- [BREAKING] Removed molecule
 
 #### Datepicker
 
@@ -109,6 +121,11 @@
   - Removed `.m-flyout.opens-above`
   - Changed `.m-flyout--sm` to `.m-flyout--s`
   - Replaced `.m-flyout--right` to `.m-flyout--bottom-right`
+
+#### Gallery
+
+##### Changed
+- [BREAKING] Removed molecule
 
 #### Header
 
@@ -179,10 +196,11 @@
 #### Pagination
 
 ##### Changed
+- Set outlined variant as default
 - [BREAKING] Changed various CSS classes:
-  - Changed `.m-pagination--outline` to `.m-pagination--outlined`
+  - Removed `.m-pagination--outline`
+  - Removed `.m-pagination--large`
   - Changed `.m-pagination--small` to `.m-pagination--s`
-  - Changed `.m-pagination--large` to `.m-pagination--l`
 
 #### Progress
 
