@@ -170,7 +170,7 @@
       .a-input__radio {
         label {
           align-items: center;
-          display: inline-flex;
+          display: flex;
           min-height: var(--spacer-xl);
           padding-bottom: var(--spacer-3xs);
           padding-right: var(--spacer-s);
