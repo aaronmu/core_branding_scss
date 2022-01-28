@@ -2834,7 +2834,7 @@ a:not([class^=a-button]).has-icon-right .ai {
 .a-checkbox-list .a-checkbox-list__item .a-checkbox-list__checkbox .a-input__checkbox label,
 .a-checkbox-list .a-checkbox-list__item .a-checkbox-list__checkbox .a-input__radio label {
   align-items: center;
-  display: inline-flex;
+  display: flex;
   min-height: var(--spacer-xl);
   padding-bottom: var(--spacer-3xs);
   padding-right: var(--spacer-s);
@@ -3006,6 +3006,11 @@ a.a-page-indicator__item:focus {
   --page-indicator-width: auto;
   --page-indicator-height: var(--spacer-xxs);
   --page-indicator-spacing: var(--spacer-3xs);
+}
+
+.a-page-indicator.a-page-indicator--negative {
+  --page-indicator-bg-color: rgba(255, 255, 255, 0.25);
+  --page-indicator-active-bg-color: #fff;
 }
 
 /**

@@ -636,7 +636,8 @@
   }
 }
 
-.d-negative-social-buttons {
+.d-negative-social-buttons,
+.d-negative-page-indicator {
   padding: var(--spacer-xs);
 }
 
