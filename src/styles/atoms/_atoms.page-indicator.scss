@@ -81,3 +81,8 @@ a {
     --page-indicator-spacing: var(--spacer-3xs);
   }
 }
+
+.a-page-indicator.a-page-indicator--negative {
+  --page-indicator-bg-color: #{rgba($white, .25)};
+  --page-indicator-active-bg-color: #{$white};
+}
