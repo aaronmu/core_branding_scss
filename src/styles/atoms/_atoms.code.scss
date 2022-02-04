@@ -85,6 +85,6 @@ kbd {
  * Scrollable code block
  */
 .a-pre--scrollable {
-  overflow-y: scroll;
+  overflow: auto;
   white-space: pre;
 }
