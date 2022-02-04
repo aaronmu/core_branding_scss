@@ -1,3 +1,3 @@
 {% macro render(name, hidden=true, class='ai', attr='') %}<span class="{{ class | safe }}"{% if hidden %} aria-hidden="true"{% endif %}{{ attr | safe }}><svg><use href="./images/ai.svg#ai-{{ name }}" /></svg></span>{% endmacro %}
 
-{% macro code(name, hidden=true, class='ai', attr='') %}&lt;span class="{{ class | safe }}"{% if hidden %} aria-hidden="true"{% endif %}{{ attr | safe }}&gt;&lt;svg&gt;&lt;use href="https://cdn.antwerpen.be/core_branding_scss/{{ VERSION_INFO.version }}/images/ai.svg#ai-{{ name }}" /&gt;&lt;/svg&gt;&lt;/span&gt;{% endmacro %}
+{% macro code(name, hidden=true, class='ai', attr='') %}&lt;span class="{{ class | safe }}"{% if hidden %} aria-hidden="true"{% endif %}{{ attr | safe }}&gt;&lt;svg&gt;&lt;use href="https://cdn.antwerpen.be/core_branding_scss/{{ VERSION_INFO.version }}/assets/images/ai.svg#ai-{{ name }}" /&gt;&lt;/svg&gt;&lt;/span&gt;{% endmacro %}

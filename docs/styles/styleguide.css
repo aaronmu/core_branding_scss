@@ -789,53 +789,36 @@
 
 .d-icons {
   display: grid;
+  grid-gap: 0.75rem 1.5rem;
 }
 @media screen and (min-width: 45rem) {
   .d-icons {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 62rem) {
   .d-icons {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+@media screen and (min-width: 75rem) {
+  .d-icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .d-icons__row {
   display: grid;
-  grid-template-columns: 3rem auto;
-  margin-bottom: 0.375rem;
-}
-@media screen and (min-width: 45rem) {
-  .d-icons__row:nth-child(even) {
-    margin-left: 0.75rem;
-  }
-  .d-icons__row:nth-child(odd) {
-    margin-right: 0.75rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .d-icons__row:nth-child(even) {
-    margin-left: 0;
-  }
-  .d-icons__row:nth-child(odd) {
-    margin-right: 0;
-  }
-  .d-icons__row:nth-child(3n+1) {
-    margin-right: 0.75rem;
-  }
-  .d-icons__row:nth-child(3n+2) {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-  }
-  .d-icons__row:nth-child(3n) {
-    margin-left: 0.75rem;
-  }
+  grid-template-columns: 3.75rem auto;
 }
 .d-icons__icon {
-  font-size: 2.25em;
+  font-size: 3em;
 }
 .d-icons__code {
   min-width: 0;
+}
+.d-icons__code > .small {
+  display: inline-block;
+  margin-bottom: 0.375rem;
 }
 
 .hljs {

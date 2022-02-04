@@ -350,63 +350,37 @@
 
 .d-icons {
   display: grid;
-  // IE11 doesn't support grid-gap, so we fall back to margins. See [*GG].
-  // grid-gap: $spacer-xs / 2 $spacer;
+  grid-gap: $spacer-xs $spacer;
 
   @include at($screen-sm) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @include at($screen-lg) {
+  @include at($screen-md) {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include at($screen-lg) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   &__row {
     display: grid;
-    grid-template-columns: $spacer-lg auto;
-    margin-bottom: $spacer-xs / 2; // [*GG]
-
-    @include at($screen-sm) {
-      &:nth-child(even) {
-        margin-left: $spacer-xs;
-      }
-
-      &:nth-child(odd) {
-        margin-right: $spacer-xs;
-      }
-    }
-
-    @include at($screen-lg) {
-      &:nth-child(even) {
-        margin-left: 0;
-      }
-
-      &:nth-child(odd) {
-        margin-right: 0;
-      }
-
-      &:nth-child(3n+1) {
-        margin-right: $spacer-xs;
-      }
-
-      &:nth-child(3n+2) {
-        margin-left: $spacer-xs;
-        margin-right: $spacer-xs;
-      }
-
-      &:nth-child(3n) {
-        margin-left: $spacer-xs;
-      }
-    }
+    grid-template-columns: $spacer-lg * 1.25 auto;
   }
 
   &__icon {
-    font-size: 2.25em;
+    font-size: 3em;
   }
 
   &__code {
     // Prevent from breaking out the container
     min-width: 0;
+
+    > .small {
+      display: inline-block;
+      margin-bottom: $spacer-xs / 2;
+    }
   }
 }
 
