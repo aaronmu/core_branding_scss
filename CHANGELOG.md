@@ -1,6 +1,7 @@
 # Changelog
 
-## [6.0.0] - xxxx-xx-xx
+
+## [6.0.0] - 2022-09-01
 
 ### General
 
@@ -316,6 +317,15 @@
 - Updated visual appearance when focused
 - [BREAKING] Replaced SASS variables by CSS properties
 - [BREAKING] Remove progress bar
+
+
+## [5.0.2] - 2022-02-04
+
+### Changed
+- Improved scrolling in a code block
+
+### Fixed
+- Fixed a wrong icon path in the documentation
 
 
 ## [5.0.1] - 2021-06-14
@@ -638,6 +648,8 @@
 - Initial release.
 
 
+[6.0.0]: https://github.com/a-ui/core_branding_scss/tree/v6.0.0
+[5.0.2]: https://github.com/a-ui/core_branding_scss/tree/v5.0.2
 [5.0.1]: https://github.com/a-ui/core_branding_scss/tree/v5.0.1
 [5.0.0]: https://github.com/a-ui/core_branding_scss/tree/v5.0.0
 [4.3.1]: https://github.com/a-ui/core_branding_scss/tree/v4.3.1

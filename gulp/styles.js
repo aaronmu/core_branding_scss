@@ -25,7 +25,7 @@ var sass = require('gulp-sass'),
     stylelint = require('gulp-stylelint'),
     browserSync = require('browser-sync');
 
-sass.compiler = require('dart-sass');
+sass.compiler = require('sass');
 
 var cssNano = [
     cssnano({
