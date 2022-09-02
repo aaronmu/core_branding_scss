@@ -2,6 +2,7 @@
  * CORE BRANDING API
  * -------------------------------------------------------------------
  */
+/* stylelint-disable-next-line no-invalid-position-at-import-rule */
 /**
  * QUARKS
  * -------------------------------------------------------------------
@@ -435,7 +436,9 @@
 
 .a-list__toc {
   margin: 0;
+  list-style-type: none;
   padding-bottom: var(--spacer);
+  padding-left: 0;
 }
 .a-list__toc li {
   padding-bottom: 0;
@@ -690,53 +693,36 @@
 
 .d-icons {
   display: grid;
+  grid-gap: var(--spacer-xs) var(--spacer);
 }
 @media screen and (min-width: 45rem) {
   .d-icons {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 62rem) {
   .d-icons {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+@media screen and (min-width: 75rem) {
+  .d-icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 .d-icons__row {
   display: grid;
-  grid-template-columns: var(--spacer-xl) auto;
-  margin-bottom: var(--spacer-3xs);
-}
-@media screen and (min-width: 45rem) {
-  .d-icons__row:nth-child(even) {
-    margin-left: var(--spacer-xs);
-  }
-  .d-icons__row:nth-child(odd) {
-    margin-right: var(--spacer-xs);
-  }
-}
-@media screen and (min-width: 75rem) {
-  .d-icons__row:nth-child(even) {
-    margin-left: 0;
-  }
-  .d-icons__row:nth-child(odd) {
-    margin-right: 0;
-  }
-  .d-icons__row:nth-child(3n+1) {
-    margin-right: var(--spacer-xs);
-  }
-  .d-icons__row:nth-child(3n+2) {
-    margin-left: var(--spacer-xs);
-    margin-right: var(--spacer-xs);
-  }
-  .d-icons__row:nth-child(3n) {
-    margin-left: var(--spacer-xs);
-  }
+  grid-template-columns: calc(var(--spacer-xl) * 1.25) auto;
 }
 .d-icons__icon {
-  font-size: 2.25em;
+  font-size: 3em;
 }
 .d-icons__code {
   min-width: 0;
+}
+.d-icons__code > .small {
+  display: inline-block;
+  margin-bottom: calc(var(--spacer-xs) / 2);
 }
 
 .hljs {

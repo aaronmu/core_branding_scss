@@ -1709,7 +1709,6 @@ a:hover .a-avatar.a-avatar--primary, a:active .a-avatar.a-avatar--primary, a:foc
   transition-timing-function: var(--animation-easing);
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 100%;
 }
@@ -2506,7 +2505,6 @@ textarea {
   transform: translateY(-50%);
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .a-input.has-icon-left .a-input__wrapper > .ai.is-clickable, .a-input.has-icon-right .a-input__wrapper > .ai.is-clickable {
@@ -3608,7 +3606,6 @@ a.a-page-indicator__item:focus {
   transition: background-color var(--animation-normal);
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 100%;
 }
@@ -3704,6 +3701,7 @@ a.a-page-indicator__item:focus {
   background-color: var(--table-bg-color);
   box-shadow: inset calc(var(--border-width) * -1) 0 0 0 var(--table-border-color);
   left: 0;
+  position: -webkit-sticky;
   position: sticky;
 }
 .a-table-responsive-wrapper.has-first-column-fixed.has-shadow-left table tr th:first-child:after,
@@ -3727,6 +3725,7 @@ a.a-page-indicator__item:focus {
 .a-table-responsive-wrapper.has-last-column-fixed table tr td:last-child {
   background-color: var(--table-bg-color);
   box-shadow: inset var(--border-width) 0 0 0 var(--table-border-color);
+  position: -webkit-sticky;
   position: sticky;
   right: 0;
 }
@@ -3934,7 +3933,6 @@ a.a-page-indicator__item:focus {
   transition-timing-function: var(--animation-easing);
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: 100%;
 }
@@ -4302,7 +4300,6 @@ a.a-page-indicator__item:focus {
   transition: background-color var(--animation-normal);
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .m-datepicker__nav-title .ai {
@@ -6620,10 +6617,10 @@ button.m-tag[aria-pressed=true]:hover, button.m-tag[aria-pressed=true]:active, b
 .a-range-slider__steps .a-range-slider__step {
   background-color: #949494;
   border-radius: 50%;
-  height: calc(var(--range-slider-inner-height) - (2 * var(--range-slider-padding)));
+  height: calc(var(--range-slider-inner-height) - 2 * var(--range-slider-padding));
   margin: var(--range-slider-padding);
   text-align: center;
-  width: calc(var(--range-slider-inner-height) - (2 * var(--range-slider-padding)));
+  width: calc(var(--range-slider-inner-height) - 2 * var(--range-slider-padding));
 }
 .a-range-slider .a-range-slider__step-labels {
   display: flex;
@@ -6662,7 +6659,6 @@ button.m-tag[aria-pressed=true]:hover, button.m-tag[aria-pressed=true]:active, b
   text-align: center;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   width: var(--spacer-xl);
 }
