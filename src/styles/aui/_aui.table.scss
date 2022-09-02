@@ -5,7 +5,6 @@
  * - Table bar
  */
 
-
 /**
  * COLUMN SELECTOR
  * -------------------------------------------------------------------
@@ -19,7 +18,7 @@
   &__actions {
     display: flex;
     flex-direction: column;
-    margin-left: $spacer / 4;
+    margin-left: var(--spacer-3xs);
     margin-right: 0;
   }
 
@@ -38,19 +37,14 @@
     }
 
     &.show {
-      animation: fadeIn $animation-duration $animation-easing;
+      animation: fadeIn var(--animation-normal);
     }
 
     &.active {
-      background-color: $grey-lighter;
-    }
-
-    .a-button-transparent.has-icon:disabled {
-      box-shadow: none;
+      background-color: $gray-100;
     }
   }
 }
-
 
 /**
  * TABLE BAR
@@ -58,18 +52,18 @@
  */
 
 .a-table-bar {
-  background-color: $grey-light;
+  background-color: $gray-200;
   display: flex;
-  padding: $spacer / 2;
+  padding: var(--spacer-xs);
 
   &__filters {
     flex: 1;
-    margin-right: $spacer;
-    min-height: $spacer-xl;
+    margin-right: var(--spacer);
+    min-height: var(--spacer-xxl);
     overflow: hidden;
 
     &-show-more {
-      margin: $spacer / 4;
+      margin: var(--spacer-3xs);
     }
 
     &--open {
@@ -79,12 +73,12 @@
 
   &__item {
     display: inline-block;
-    margin: $spacer / 4;
+    margin: var(--spacer-3xs);
   }
 
   &__search {
     background: $white;
     height: 100%;
-    margin: $spacer / 4;
+    margin: var(--spacer-3xs);
   }
 }

@@ -16,18 +16,6 @@
  * -------------------------------------------------------------------
  */
 /**
- * BUTTON MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * BUTTON OUTLINE MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * INPUT MIXIN
- * -------------------------------------------------------------------
- */
-/**
  * INPUT PLACEHOLDER MIXIN
  * -------------------------------------------------------------------
  * Change base styling for placeholder text on input fields
@@ -38,22 +26,6 @@
  * - http://davidwalsh.name/html5-placeholder
  * - http://davidwalsh.name/placeholder-overflow
  * - http://jamesallardice.github.io/Placeholders.js
- */
-/**
- * ALERT MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * BADGE MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * LABEL MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * TOOLTIP MIXIN
- * -------------------------------------------------------------------
  */
 /**
  * FOCUS
@@ -100,12 +72,7 @@
  * http://chir.ag/projects/name-that-color
  */
 /**
- * GRAY COLOR PALETTE
- * -------------------------------------------------------------------
- * Collection of warm gray colors
- */
-/**
- * WEB GRAYSCALE COLOR PALETTE
+ * GRAYSCALE COLOR PALETTE
  * -------------------------------------------------------------------
  * Collection of grayscale colors
  */
@@ -131,12 +98,7 @@
  * http://chir.ag/projects/name-that-color
  */
 /**
- * GRAY COLOR PALETTE
- * -------------------------------------------------------------------
- * Collection of warm gray colors
- */
-/**
- * WEB GRAYSCALE COLOR PALETTE
+ * GRAYSCALE COLOR PALETTE
  * -------------------------------------------------------------------
  * Collection of grayscale colors
  */
@@ -176,18 +138,6 @@
  * -------------------------------------------------------------------
  */
 /**
- * BUTTON MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * BUTTON OUTLINE MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * INPUT MIXIN
- * -------------------------------------------------------------------
- */
-/**
  * INPUT PLACEHOLDER MIXIN
  * -------------------------------------------------------------------
  * Change base styling for placeholder text on input fields
@@ -198,22 +148,6 @@
  * - http://davidwalsh.name/html5-placeholder
  * - http://davidwalsh.name/placeholder-overflow
  * - http://jamesallardice.github.io/Placeholders.js
- */
-/**
- * ALERT MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * BADGE MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * LABEL MIXIN
- * -------------------------------------------------------------------
- */
-/**
- * TOOLTIP MIXIN
- * -------------------------------------------------------------------
  */
 /**
  * FOCUS
@@ -228,7 +162,15 @@
  * -------------------------------------------------------------------
  */
 /**
- * SPECIFIC COLOR PALETTE
+ * THEME COLORS
+ * -------------------------------------------------------------------
+ */
+/**
+ * DEPRECATED THEME COLORS
+ * -------------------------------------------------------------------
+ */
+/**
+ * OTHER THEME COLORS
  * -------------------------------------------------------------------
  */
 /**
@@ -246,10 +188,6 @@
  *    + space between logo and u-container * 2
  */
 /**
- * FONT FAMILIES
- * -------------------------------------------------------------------
- */
-/**
  * FONT SIZES
  * -------------------------------------------------------------------
  */
@@ -258,15 +196,7 @@
  * -------------------------------------------------------------------
  */
 /**
- * FONT WEIGHTS
- * -------------------------------------------------------------------
- */
-/**
  * OTHER TYPOGRAPHY
- * -------------------------------------------------------------------
- */
-/**
- * ANIMATIONS
  * -------------------------------------------------------------------
  */
 /**
@@ -292,192 +222,160 @@
  * ICON SIZES
  * -------------------------------------------------------------------
  */
-/**
- * BOX SHADOWS
- * -------------------------------------------------------------------
- */
-/**
- * LINKS
- * -------------------------------------------------------------------
- * Define text and hover color for each hyperlink
- */
-/**
- * LISTS
- * -------------------------------------------------------------------
- * Define default paddings for lists
- */
-/**
- * PRE
- * -------------------------------------------------------------------
- * Define text and background color for each code element
- */
-/**
- * CODE
- * -------------------------------------------------------------------
- * Define text and background color for each code element
- */
-/**
- * MARK
- * -------------------------------------------------------------------
- * Define text and background color for each mark element
- */
-/**
- * CITE
- * -------------------------------------------------------------------
- */
-/**
- * FIGCAPTION
- * -------------------------------------------------------------------
- */
-/**
- * TABLES
- * -------------------------------------------------------------------
- * Define background and border color for each table
- */
-/**
- * BUTTONS
- * -------------------------------------------------------------------
- * Define text, background and border color for each button
- */
-/**
- * FORMS
- * -------------------------------------------------------------------
- * Define text, background, border and placeholder color for each input
- */
-/**
- * RADIO BUTTONS & CHECKBOXES
- * -------------------------------------------------------------------
- */
-/**
- * SWITCHES
- * -------------------------------------------------------------------
- * WATCH OUT
- * $progress-height and $range-slider-height are equal to $switch-height
- * In this way, changing the height of the switch will also affect the height of the progress bar and range slider
- */
-/**
- * FIELDSET
- * -------------------------------------------------------------------
- */
-/**
- * TOOLTIP
- * -------------------------------------------------------------------
- */
-/**
- * PROGRESS
- * -------------------------------------------------------------------
- * WATCH OUT
- * $range-slider-offset is equal to $tooltip-offset
- * In this way, changing the offset of the progress bar will also affect the offset of the range slider
- */
-/**
- * RANGE SLIDER
- * -------------------------------------------------------------------
- */
-/**
- * LINK LIST
- * -------------------------------------------------------------------
- */
-/**
- * DATEPICKER
- * -------------------------------------------------------------------
- */
-/**
- * ACCORDION
- * -------------------------------------------------------------------
- */
-/**
- * ALERTS
- * -------------------------------------------------------------------
- */
-/**
- * AVATARS
- * -------------------------------------------------------------------
- */
-/**
- * BADGES
- * -------------------------------------------------------------------
- */
-/**
- * BREADCRUMBS
- * -------------------------------------------------------------------
- */
-/**
- * CARDS
- * -------------------------------------------------------------------
- */
-/**
- * COPYRIGHT
- * -------------------------------------------------------------------
- */
-/**
- * LABELS
- * -------------------------------------------------------------------
- */
-/**
- * TAGS
- * -------------------------------------------------------------------
- */
-/**
- * FLYOUT
- * -------------------------------------------------------------------
- */
-/**
- * FOOTER
- * -------------------------------------------------------------------
- */
-/**
- * HEADER
- * -------------------------------------------------------------------
- */
-/**
- * SPINNER
- * -------------------------------------------------------------------
- */
-/**
- * ICON LIST
- * -------------------------------------------------------------------
- */
-/**
- * OVERLAY
- * -------------------------------------------------------------------
- */
-/**
- * MODAL
- * -------------------------------------------------------------------
- */
-/**
- * NAVIGATION
- * -------------------------------------------------------------------
- */
-/**
- * PAGINATION
- * -------------------------------------------------------------------
- */
-/**
- * STEP INDICATOR
- * -------------------------------------------------------------------
- */
-/**
- * UPLOAD
- * -------------------------------------------------------------------
- */
-/**
- * GALLERY
- * -------------------------------------------------------------------
- */
-/**
- * SLIDESHOW
- * -------------------------------------------------------------------
- */
-/**
- * NAVIGATION MENU
- * -------------------------------------------------------------------
- */
-/**
- * ARTICLE
- * -------------------------------------------------------------------
- */
+:root {
+  /**
+   * GLOBAL CSS PROPERTIES
+   * -------------------------------------------------------------------
+   */
+  /**
+   * THEME COLORS
+   * -------------------------------------------------------------------
+   */
+  --theme1-600: #002855;
+  --theme1-500: #003865;
+  --theme1-400: #0057b7;
+  --theme1-300: #009cde;
+  --theme1-200: #41b6e6;
+  --theme1-100: #99d6ea;
+  --theme1-075: #96b5e4;
+  --theme1-050: #e0ebf6;
+  --theme2-600: #7c2629;
+  --theme2-500: #862633;
+  --theme2-400: #cf0039;
+  --theme2-300: #df4661;
+  --theme2-200: #ffb1bb;
+  --theme2-100: #f5dadf;
+  --success-700: #004721;
+  --success-600: #006e33;
+  --success-500: #4c8d2b;
+  --success-400: #6cc24a;
+  --success-300: #97d700;
+  --success-200: #bce194;
+  --success-100: #d0debb;
+  --success-050: #edf8e9;
+  --warning-500: #8f3400;
+  --warning-400: #ce4c00;
+  --warning-050: #ffe4d6;
+  --danger-600: #7c2629;
+  --danger-500: #af272f;
+  --danger-400: #e03c31;
+  --danger-300: #e56a54;
+  --danger-200: #e6baa8;
+  --danger-100: #f3cfb3;
+  --danger-050: #fbe8e6;
+  /**
+   * UI COLORS
+   * -------------------------------------------------------------------
+   */
+  --text-color: #000;
+  --text-color-light: #6f6f6f;
+  --text-color-xlight: #fff;
+  --bg-color: #d8d8d8;
+  --bg-color-light: #f3f3f3;
+  --border-color: #949494;
+  --overlay-color: rgba(0, 0, 0, 0.75);
+  --box-shadow-color: rgba(20, 20, 20, 0.12);
+  --state-info: var(--theme1-400);
+  --state-success: var(--success-600);
+  --state-warning: var(--warning-400);
+  --state-danger: var(--danger-500);
+  --state-danger-light: var(--danger-400);
+  --state-disabled: #6f6f6f;
+  /**
+   * SPACERS
+   * -------------------------------------------------------------------
+   */
+  --spacer: 1.5rem;
+  --spacer-3xl: calc(var(--spacer) * 4);
+  --spacer-xxl: calc(var(--spacer) * 2.5);
+  --spacer-xl: calc(var(--spacer) * 2);
+  --spacer-l: calc(var(--spacer) * 1.5);
+  --spacer-s: calc(var(--spacer) / 1.5);
+  --spacer-xs: calc(var(--spacer) / 2);
+  --spacer-xxs: calc(var(--spacer) / 3);
+  --spacer-3xs: calc(var(--spacer) / 6);
+  /**
+   * BREAKPOINTS
+   * -------------------------------------------------------------------
+   */
+  --screen-xs: 30rem;
+  --screen-s: 45rem;
+  --screen-l: 62rem;
+  --screen-xl: 75rem;
+  /**
+   * --screen-xxl =
+   *    max-width of u-container
+   *    + width of official logo * 2
+   *    + space between logo and u-container * 2
+   */
+  --screen-xxl: calc(var(--screen-xl) + calc(var(--spacer-3xl) * 2) + calc(var(--spacer) * 2));
+  --screen-xs-max: 44.9375rem;
+  --screen-s-max: 61.9375rem;
+  --screen-l-max: 74.9375rem;
+  --screen-xl-max: 89.9375rem;
+  /**
+   * FONT FAMILIES
+   * -------------------------------------------------------------------
+   */
+  --font-family-base: "Sun Antwerpen", sans-serif;
+  --font-family-headings: "Antwerpen Regular", sans-serif;
+  --font-family-monospace: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+  /**
+   * FONT WEIGHTS
+   * -------------------------------------------------------------------
+   */
+  --font-weight-light: 300;
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-h1: var(--font-weight-normal);
+  --font-weight-h2: var(--font-weight-normal);
+  --font-weight-h3: var(--font-weight-normal);
+  --font-weight-h4: var(--font-weight-normal);
+  --font-weight-h5: var(--font-weight-normal);
+  --font-weight-h6: var(--font-weight-normal);
+  /**
+   * LINKS
+   * -------------------------------------------------------------------
+   * Define text and hover color for each hyperlink
+   */
+  --link-color: var(--theme1-400);
+  --link-hover-color: var(--theme1-500);
+  /**
+   * BORDERS
+   * -------------------------------------------------------------------
+   */
+  --border-radius: 0;
+  --border-width: 1px;
+  /**
+   * ANIMATIONS
+   * -------------------------------------------------------------------
+   */
+  --animation-duration: 200ms;
+  --animation-easing: ease-in-out;
+  --animation-normal: var(--animation-duration) var(--animation-easing);
+  /**
+   * BOX SHADOWS
+   * -------------------------------------------------------------------
+   */
+  --box-shadow-bottom-left: calc(var(--spacer) / -2) calc(var(--spacer) / 2) 0 var(--box-shadow-color);
+  --box-shadow-bottom-right: calc(var(--spacer) / 2) calc(var(--spacer) / 2) 0 var(--box-shadow-color);
+  --box-shadow-upper-left: calc(var(--spacer) / -2) calc(var(--spacer) / -2) 0 var(--box-shadow-color);
+  --box-shadow-upper-right: calc(var(--spacer) / 2) calc(var(--spacer) / -2) 0 var(--box-shadow-color);
+  --box-shadow: var(--box-shadow-bottom-right);
+  /**
+   * SHARED CSS PROPERTIES
+   * -------------------------------------------------------------------
+   */
+  --shared-avatar-size-s: var(--spacer-l);
+  --shared-avatar-size: var(--spacer-xl);
+  --shared-avatar-size-l: var(--spacer-xxl);
+  --shared-copyright-color: #fff;
+  --shared-copyright-height: var(--spacer-l);
+  --shared-header-height: var(--spacer-xl);
+  --shared-slideshow-footer-color-light: #fff;
+}
+
 /**
  * CUSTOM STYLING FOR STYLEGUIDE
  * -------------------------------------------------------------------
@@ -486,13 +384,13 @@
   margin: 0;
 }
 .a-pre + .a-pre {
-  margin-top: 0.375rem;
+  margin-top: var(--spacer-3xs);
 }
 
 .d {
   display: flex;
   flex-direction: column;
-  margin: 1.5rem -0.75rem;
+  margin: var(--spacer) calc(var(--spacer-xs) * -1);
 }
 @media screen and (min-width: 45rem) {
   .d {
@@ -501,7 +399,7 @@
 }
 .d > div {
   flex: 1 1 auto;
-  padding: 0.375rem 0.75rem 0;
+  padding: var(--spacer-3xs) var(--spacer-xs) 0;
 }
 @media screen and (min-width: 45rem) {
   .d > div {
@@ -514,7 +412,7 @@
 }
 
 .u-margin-bottom-top-xxs {
-  margin: 0.375rem 0;
+  margin: var(--spacer-3xs) 0;
 }
 
 .d-toc {
@@ -537,51 +435,51 @@
 
 .a-list__toc {
   margin: 0;
-  padding-bottom: 1.5rem;
+  padding-bottom: var(--spacer);
 }
 .a-list__toc li {
   padding-bottom: 0;
 }
 
 .line {
-  border-top: 1px solid #949494;
+  border-top: var(--border-width) solid var(--border-color);
 }
 
 .d-h1 {
-  padding-bottom: 1.5rem;
-  padding-top: 5.25rem;
+  padding-bottom: var(--spacer);
+  padding-top: calc(var(--spacer) * 3.5);
 }
 .d-h1 small {
   display: inline-block;
-  padding: 0.1875rem 0.25rem 0.25rem;
+  padding: calc(var(--spacer-xs) / 4) calc(var(--spacer-xs) / 3) calc(var(--spacer-xs) / 3);
   position: relative;
-  transform: translateY(-0.75rem);
+  transform: translateY(calc(var(--spacer-xs) * -1));
 }
 @media screen and (min-width: 30rem) {
   .d-h1 {
-    padding-bottom: 2.25rem;
-    padding-top: 2.25rem;
+    padding-bottom: var(--spacer-l);
+    padding-top: var(--spacer-l);
   }
 }
 
 .d-h2 {
-  padding-top: 1.5rem;
+  padding-top: var(--spacer);
 }
 
 .d-file {
   color: #6f6f6f;
   display: inline-block;
   font-weight: bold;
-  margin-top: 0.125rem;
+  margin-top: calc(var(--spacer-xs) / 6);
 }
 
 .d-alert {
-  margin-top: 0.75rem;
-  padding: 0.75rem;
+  margin-top: var(--spacer-xs);
+  padding: var(--spacer-xs);
 }
 
 .m-alert--wcag {
-  padding-left: 3rem;
+  padding-left: var(--spacer-xl);
   position: relative;
 }
 .m-alert--wcag:before {
@@ -589,22 +487,22 @@
   background-repeat: no-repeat;
   content: "";
   height: 1.25rem;
-  left: 0.75rem;
+  left: var(--spacer-xs);
   -webkit-mask: url("data:image/svg+xml;utf8,<svg viewBox=%220 0 24 24%22 xmlns=%22http://www.w3.org/2000/svg%22><g stroke-linecap=%22round%22 stroke=%22%23000%22 fill=%22none%22 stroke-linejoin=%22round%22 stroke-width=%226.25%%22><path class=%22cls-1%22 d=%22M9.6 5a2.12 2.12 0 102.12-2.12A2.12 2.12 0 009.6 5zM19.14 7.5l-7.27 1.34-7-1.36a1 1 0 100 2l4.33 1.27v4.51l-2.28 4.4A1 1 0 007.4 21a1.12 1.12 0 001.44-.46l2.61-5.15 2.61 5.15a1.1 1.1 0 001.44.46 1 1 0 00.53-.58.94.94 0 00-.06-.77c-.27-.52-1.21-2.44-2.19-4.4v-4.61l5.36-1.13a1 1 0 100-2z%22/><circle class=%22cls-1%22 cx=%2212%22 cy=%2212%22 r=%2211.5%22/></g></svg>") no-repeat center center;
           mask: url("data:image/svg+xml;utf8,<svg viewBox=%220 0 24 24%22 xmlns=%22http://www.w3.org/2000/svg%22><g stroke-linecap=%22round%22 stroke=%22%23000%22 fill=%22none%22 stroke-linejoin=%22round%22 stroke-width=%226.25%%22><path class=%22cls-1%22 d=%22M9.6 5a2.12 2.12 0 102.12-2.12A2.12 2.12 0 009.6 5zM19.14 7.5l-7.27 1.34-7-1.36a1 1 0 100 2l4.33 1.27v4.51l-2.28 4.4A1 1 0 007.4 21a1.12 1.12 0 001.44-.46l2.61-5.15 2.61 5.15a1.1 1.1 0 001.44.46 1 1 0 00.53-.58.94.94 0 00-.06-.77c-.27-.52-1.21-2.44-2.19-4.4v-4.61l5.36-1.13a1 1 0 100-2z%22/><circle class=%22cls-1%22 cx=%2212%22 cy=%2212%22 r=%2211.5%22/></g></svg>") no-repeat center center;
   position: absolute;
-  top: 0.75rem;
+  top: var(--spacer-xs);
   width: 1.25rem;
 }
 
 .d-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -0.75rem;
-  margin-right: -0.75rem;
+  margin-left: calc(var(--spacer-xs) * -1);
+  margin-right: calc(var(--spacer-xs) * -1);
 }
 .d-list > li {
-  padding: 0 0.75rem;
+  padding: 0 var(--spacer-xs);
   width: 100%;
 }
 @media screen and (min-width: 45rem) {
@@ -613,33 +511,33 @@
   }
 }
 .d-list__colors > li {
-  margin-top: 0.375rem;
-  padding: 0.75rem 0.75rem 0.75rem 7.5rem;
+  margin-top: var(--spacer-3xs);
+  padding: var(--spacer-xs) var(--spacer-xs) var(--spacer-xs) calc(var(--spacer) * 5);
   position: relative;
 }
 .d-list__colors > li:nth-child(6n+7) {
-  margin-top: 1.5rem;
+  margin-top: var(--spacer);
 }
 @media screen and (min-width: 45rem) {
   .d-list__colors > li:nth-child(6n+8) {
-    margin-top: 1.5rem;
+    margin-top: var(--spacer);
   }
 }
 @media screen and (min-width: 75rem) {
   .d-list__colors > li:nth-child(6n+9) {
-    margin-top: 1.5rem;
+    margin-top: var(--spacer);
   }
 }
 .d-list__colors > li.d-white .d-color {
-  box-shadow: 0 0 0 1px #d8d8d8 inset;
+  box-shadow: 0 0 0 var(--border-width) #d8d8d8 inset;
 }
 .d-list__colors > li .d-color {
   bottom: 0;
   display: block;
-  left: 0.75rem;
+  left: var(--spacer-xs);
   position: absolute;
   top: 0;
-  width: 6rem;
+  width: var(--spacer-3xl);
 }
 @media screen and (min-width: 75rem) {
   .d-list__colors > li {
@@ -647,7 +545,7 @@
   }
 }
 .d-list__variables > li {
-  margin-top: 0.375rem;
+  margin-top: var(--spacer-3xs);
 }
 @media screen and (min-width: 75rem) {
   .d-list__variables > li {
@@ -663,17 +561,17 @@
 }
 
 .d-bgutility {
-  padding: 1.5rem;
+  padding: var(--spacer);
 }
 .d-bgutility.d-u-bg-white {
-  box-shadow: 0 0 0 1px #d8d8d8 inset;
+  box-shadow: 0 0 0 var(--border-width) #d8d8d8 inset;
 }
 
 .d-spacing-utility {
   background: repeating-linear-gradient(45deg, #fff, #fff 10px, #f3f3f3 10px, #f3f3f3 20px);
-  box-shadow: 0 0 0 1px #d8d8d8 inset;
+  box-shadow: 0 0 0 var(--border-width) #d8d8d8 inset;
   display: inline-block;
-  padding: 0.25rem;
+  padding: var(--spacer-3xs);
 }
 .d-spacing-utility strong {
   background-color: rgba(0, 0, 0, 0.6);
@@ -681,18 +579,21 @@
   padding: 0.0625rem 0.25rem 0.125rem;
 }
 
-.d-u-text-xlight,
-.d-u-text-warning {
+.d-u-text-xlight {
   background-color: #141414;
-  padding: 0.375rem;
+  padding: var(--spacer-3xs);
+}
+
+.d-avatars {
+  display: flex;
 }
 
 .d-button {
-  margin-bottom: 0.25rem;
+  margin-bottom: var(--spacer-3xs);
 }
 
 .d-tooltip {
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--spacer-xs);
 }
 
 .d-datepicker {
@@ -702,46 +603,46 @@
 .d-flyout {
   margin-bottom: 12rem;
 }
-.d-flyout--sm {
+.d-flyout--s {
   margin-bottom: 14rem;
 }
-.d-flyout--md {
+.d-flyout--l {
   margin-bottom: 14rem;
 }
 @media screen and (min-width: 45rem) {
-  .d-flyout--md {
+  .d-flyout--l {
     margin-bottom: 9rem;
   }
 }
-.d-flyout--lg {
+.d-flyout--xl {
   margin-bottom: 14rem;
 }
 @media screen and (min-width: 45rem) {
-  .d-flyout--lg {
+  .d-flyout--xl {
     margin-bottom: 9rem;
   }
 }
 @media screen and (min-width: 62rem) {
-  .d-flyout--lg {
+  .d-flyout--xl {
     margin-bottom: 8rem;
   }
 }
-.d-flyout--full {
-  margin-bottom: 7rem;
-}
-.d-flyout--no-padding {
-  margin-bottom: 3rem;
-}
 .d-flyout--opens-above {
-  margin-bottom: 6rem;
+  margin-top: 14rem;
+}
+@media screen and (min-width: 45rem) {
+  .d-flyout--opens-above {
+    margin-top: 8rem;
+  }
 }
 
-.d-icon-list {
-  padding: 1.5rem;
+.d-negative-social-buttons,
+.d-negative-page-indicator {
+  padding: var(--spacer-xs);
 }
 
 .d-avatar {
-  margin-top: 0.1875rem;
+  margin-top: calc(var(--spacer-xs) / 4);
 }
 
 .d-overlay input:checked ~ .m-overlay {
@@ -752,7 +653,7 @@
 .d-overlay input:checked ~ .m-overlay label {
   box-shadow: none;
   height: auto;
-  margin-bottom: 0.75rem;
+  margin-bottom: var(--spacer-xs);
   position: static;
   width: auto;
 }
@@ -767,19 +668,19 @@
 .d-overlay input:checked ~ .m-overlay .m-modal__footer {
   justify-content: flex-end;
 }
-.d-overlay input:checked ~ .m-overlay .m-modal__footer [class*=a-button] {
+.d-overlay input:checked ~ .m-overlay .m-modal__footer .a-button {
   margin-bottom: 0;
 }
 
 .d--with-overlay {
-  padding-top: 3rem;
+  padding-top: var(--spacer-xl);
 }
 .d--with-overlay .o-menu {
-  margin-bottom: -6rem;
+  margin-bottom: calc(var(--spacer-3xl) * -1);
 }
 @media screen and (min-width: 45rem) {
   .d--with-overlay {
-    padding-bottom: 3.75rem;
+    padding-bottom: var(--spacer-xxl);
     padding-top: 0;
   }
   .d--with-overlay .o-menu {
@@ -789,36 +690,53 @@
 
 .d-icons {
   display: grid;
-  grid-gap: 0.75rem 1.5rem;
 }
 @media screen and (min-width: 45rem) {
   .d-icons {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 75rem) {
   .d-icons {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media screen and (min-width: 75rem) {
-  .d-icons {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
 .d-icons__row {
   display: grid;
-  grid-template-columns: 3.75rem auto;
+  grid-template-columns: var(--spacer-xl) auto;
+  margin-bottom: var(--spacer-3xs);
+}
+@media screen and (min-width: 45rem) {
+  .d-icons__row:nth-child(even) {
+    margin-left: var(--spacer-xs);
+  }
+  .d-icons__row:nth-child(odd) {
+    margin-right: var(--spacer-xs);
+  }
+}
+@media screen and (min-width: 75rem) {
+  .d-icons__row:nth-child(even) {
+    margin-left: 0;
+  }
+  .d-icons__row:nth-child(odd) {
+    margin-right: 0;
+  }
+  .d-icons__row:nth-child(3n+1) {
+    margin-right: var(--spacer-xs);
+  }
+  .d-icons__row:nth-child(3n+2) {
+    margin-left: var(--spacer-xs);
+    margin-right: var(--spacer-xs);
+  }
+  .d-icons__row:nth-child(3n) {
+    margin-left: var(--spacer-xs);
+  }
 }
 .d-icons__icon {
-  font-size: 3em;
+  font-size: 2.25em;
 }
 .d-icons__code {
   min-width: 0;
-}
-.d-icons__code > .small {
-  display: inline-block;
-  margin-bottom: 0.375rem;
 }
 
 .hljs {

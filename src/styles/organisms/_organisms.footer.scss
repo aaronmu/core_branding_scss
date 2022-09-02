@@ -1,14 +1,24 @@
 /**
+ * FOOTER VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.o-footer {
+  --footer-bg:      #{$black};
+  --footer-color:   #{$white};
+}
+
+/**
  * FOOTER
  * -------------------------------------------------------------------
  */
 
 .o-footer {
   align-items: center;
-  background-color: $footer-bg;
+  background-color: var(--footer-bg);
   display: flex;
   flex: 0 0 auto;
-  height: $footer-height;
+  height: var(--spacer-xl);
   justify-content: center;
   position: relative;
   text-align: center;
@@ -22,19 +32,23 @@
   }
 }
 
+/**
+ * FOOTER ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
 .o-footer__label {
-  color: $footer-color;
-  font-size: rem($footer-font-size-sm);
-  line-height: $footer-line-height;
-  padding: 0 $spacer-xs;
+  color: var(--footer-color);
+  font-size: rem($font-size-sm);
+  line-height: $line-height-paragraph;
+  padding: 0 var(--spacer-xs);
 
   @include to($screen-sm) {
     flex: 1 1 auto;
   }
 
   @include at($screen-sm) {
-    font-size: rem($footer-font-size-lg);
-    padding: 0 $spacer-xl;
+    padding: 0 var(--spacer-xxl);
   }
 
   a {

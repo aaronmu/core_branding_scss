@@ -1,17 +1,35 @@
 /**
+ * BADGE VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-badge {
+  --badge-font-size:         #{$font-size-sm};
+  --badge-font-weight:       var(--font-weight-bold);
+  --badge-size:              var(--spacer);
+  --badge-padding:           0 var(--spacer-3xs);
+
+  --badge-color:             #{$white};
+  --badge-bg-color:          #{$gray-400};
+  --badge-border-color:      #{$gray-400};
+}
+
+/**
  * BADGES
  * -------------------------------------------------------------------
  */
 
 .a-badge {
-  display: inline-block;
-  font-size: $badge-font-size;
-  font-weight: $badge-font-weight;
-  line-height: $badge-line-height;
-  min-height: $badge-height;
-  padding: $badge-padding;
+  align-items: center;
+  border-radius: var(--badge-size);
+  display: inline-flex;
+  font-size: var(--badge-font-size);
+  font-weight: var(--badge-font-weight);
+  justify-content: center;
+  min-height: var(--badge-size);
+  min-width: var(--badge-size);
+  padding: var(--badge-padding);
 }
-
 
 /**
  * BADGES COLORS
@@ -19,29 +37,40 @@
  */
 
 .a-badge {
-  @include a-badge;
+  background-color: var(--badge-bg-color);
+  border: var(--border-width) solid var(--badge-border-color);
+  color: var(--badge-color);
+
+  &.a-badge--outlined {
+    --badge-color:            #{$gray-400};
+    --badge-bg-color:         transparent;
+    --badge-border-color:     #{$gray-300};
+  }
+
+  &.a-badge--transparent {
+    --badge-color:            #{$gray-400};
+    --badge-bg-color:         #{$gray-100};
+    --badge-border-color:     #{$gray-100};
+  }
 
   &.a-badge--primary {
-    @include a-badge($badge-primary-color, $badge-primary-bg);
-  }
+    --badge-color:            #{$white};
+    --badge-bg-color:         var(--theme1-400);
+    --badge-border-color:     var(--theme1-400);
 
-  &.a-badge--secondary {
-    @include a-badge($badge-secondary-color, $badge-secondary-bg);
-  }
+    &.a-badge--outlined {
+      --badge-color:          var(--theme1-400);
+      --badge-bg-color:       transparent;
+      --badge-border-color:   var(--theme1-400);
+    }
 
-  &.a-badge--success {
-    @include a-badge($badge-success-color, $badge-success-bg);
-  }
-
-  &.a-badge--warning {
-    @include a-badge($badge-warning-color, $badge-warning-bg);
-  }
-
-  &.a-badge--danger {
-    @include a-badge($badge-danger-color, $badge-danger-bg);
+    &.a-badge--transparent {
+      --badge-color:          var(--theme1-400);
+      --badge-bg-color:       var(--theme1-050);
+      --badge-border-color:   var(--theme1-050);
+    }
   }
 }
-
 
 /**
  * BADGES DISABLED COLORS
@@ -51,17 +80,17 @@
 .is-disabled {
   .a-badge {
     &,
-    &.a-badge--primary,
-    &.a-badge--secondary,
-    &.a-badge--success,
-    &.a-badge--warning,
-    &.a-badge--danger {
-      @include a-badge($badge-disabled-color, $badge-disabled-bg);
+    &.a-badge--primary {
+      --badge-color:             #{$white};
+      --badge-bg-color:          #{$gray-400};
+      --badge-border-color:      #{$gray-400};
+
+      &.a-badge--outlined,
+      &.a-badge--transparent {
+        --badge-color:            #{$gray-400};
+        --badge-bg-color:         transparent;
+        --badge-border-color:     #{$gray-300};
+      }
     }
   }
 }
-
-
-
-
-

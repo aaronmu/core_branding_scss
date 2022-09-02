@@ -11,7 +11,6 @@
   }
 }
 
-
 /**
  * TOGGLE ELEMENTS
  * -------------------------------------------------------------------
@@ -22,7 +21,7 @@
   border: none;
   display: flex;
   flex-direction: column;
-  height: $spacer-lg;
+  height: var(--spacer-xl);
   overflow: hidden;
   padding: 0;
 
@@ -48,29 +47,21 @@
   order: 2;
 }
 
-
 /**
  * TOGGLE MODIFIERS
  * -------------------------------------------------------------------
  */
 
 .a-toggle {
-  &.a-toggle--tiny {
+  &.a-toggle--s {
     .a-toggle__button {
-      height: $spacer;
+      height: var(--spacer-l);
     }
   }
 
-  &.a-toggle--small {
+  &.a-toggle--l {
     .a-toggle__button {
-      height: $spacer-md;
-    }
-  }
-
-  &.a-toggle--large {
-    .a-toggle__button {
-      height: $spacer-xl;
+      height: var(--spacer-xxl);
     }
   }
 }
-

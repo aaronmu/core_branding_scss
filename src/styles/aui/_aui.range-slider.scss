@@ -3,7 +3,7 @@
  * -------------------------------------------------------------------
  */
 
-.m-range-slider {
+.a-range-slider {
   &__handle {
     z-index: layer('top');
   }
@@ -16,31 +16,31 @@
     display: flex;
     justify-content: space-between;
     left: 0;
-    padding: $spacer / 6;
+    padding: var(--spacer-3xs);
     position: absolute;
     right: 0;
     top: 0;
     width: 100%;
     z-index: layer('base');
 
-    .m-range-slider__step {
-      background-color: $grey;
+    .a-range-slider__step {
+      background-color: $gray-300;
       border-radius: 50%;
-      height: ($range-slider-inner-height - (2 * $range-slider-padding));
-      margin: $range-slider-padding;
+      height: calc(var(--range-slider-inner-height) - (2 * var(--range-slider-padding)));
+      margin: var(--range-slider-padding);
       text-align: center;
-      width: ($range-slider-inner-height - (2 * $range-slider-padding));
+      width: calc(var(--range-slider-inner-height) - (2 * var(--range-slider-padding)));
     }
   }
 
-  .m-range-slider__step-labels {
+  .a-range-slider__step-labels {
     display: flex;
     font-size: $font-size-sm;
     justify-content: space-between;
-    margin-top: $spacer-sm;
+    margin-top: var(--spacer-s);
 
-    .m-range-slider__step {
-      width: $spacer;
+    .a-range-slider__step {
+      width: var(--spacer);
     }
   }
 }

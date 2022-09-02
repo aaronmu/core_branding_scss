@@ -3,15 +3,14 @@
  * -------------------------------------------------------------------
  */
 
-
 /**
  * BASE
  * -------------------------------------------------------------------
  */
 
 body {
-  color: $text-color;
-  font-family: $font-family-base;
+  color: var(--text-color);
+  font-family: var(--font-family-base);
   font-size: rem($font-size-base);
   line-height: $line-height-base;
 }
@@ -19,7 +18,6 @@ body {
 ::selection {
   background-color: $selection-color;
 }
-
 
 /**
  * HEADERS
@@ -38,12 +36,12 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: $font-family-headings;
+  font-family: var(--font-family-headings);
   line-height: $line-height-headings;
   margin: 0;
 
   &.has-base-font {
-    font-family: $font-family-base;
+    font-family: var(--font-family-base);
   }
 }
 
@@ -77,18 +75,17 @@ h6,
   font-size: rem($font-size-h6);
 }
 
-
 /**
  * PARAGRAPHS
  * -------------------------------------------------------------------
  */
 
-p {
+p,
+.paragraph {
   font-size: rem($font-size-base);
   line-height: $line-height-paragraph;
   margin: 0;
 }
-
 
 /**
  * BLOCKQUOTES
@@ -96,17 +93,17 @@ p {
  */
 
 blockquote {
-  border-left: 1px solid $border-color-light;
+  border-left: var(--border-width) solid var(--border-color);
   margin: 0;
-  padding: $spacer-xs 0 $spacer-xs $spacer;
+  padding: var(--spacer-xs) 0 var(--spacer-xs) var(--spacer);
 
   p {
     display: inline;
-    font-family: $font-family-headings;
+    font-family: var(--font-family-headings);
   }
 
   cite {
-    color: $cite-color;
+    color: var(--theme2-400);
     display: inline-block;
     font-style: normal;
     line-height: $line-height-headings;
@@ -117,7 +114,6 @@ blockquote {
   }
 }
 
-
 /**
  * SMALL
  * -------------------------------------------------------------------
@@ -125,10 +121,9 @@ blockquote {
 
 small,
 .small {
-  color: $text-color-light;
+  color: var(--text-color-light);
   font-size: rem($font-size-sm);
 }
-
 
 /**
  * MARK
@@ -136,11 +131,10 @@ small,
  */
 
 mark {
-  background-color: $mark-bg;
-  color: $mark-color;
+  background-color: var(--theme1-400);
+  color: $white;
   padding: 0 .125rem;
 }
-
 
 /**
  * HORIZONTAL RULES
@@ -149,11 +143,10 @@ mark {
 
 hr {
   border: none;
-  border-top: 1px solid $border-color-light;
-  height: 1px;
-  margin: $spacer 0;
+  border-top: var(--border-width) solid var(--border-color);
+  height: var(--border-width);
+  margin: var(--spacer) 0;
 }
-
 
 /**
  * LINKS
@@ -161,14 +154,14 @@ hr {
  */
 
 a {
-  color: $link-color;
-  text-decoration-skip-ink: auto; // sass-lint:disable-line no-misspelled-properties
-  transition: color $animation-duration $animation-easing;
+  color: var(--link-color);
+  text-decoration-skip-ink: auto;
+  transition: color var(--animation-normal);
 
   &:hover,
   &:active,
   &:focus {
-    color: $link-hover-color;
+    color: var(--link-hover-color);
     text-decoration: none;
   }
 }

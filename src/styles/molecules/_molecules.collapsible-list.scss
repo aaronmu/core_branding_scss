@@ -4,24 +4,18 @@
  */
 
 .m-collapsible-list {
-  @extend %a-list;
-  @extend %a-list--unstyled;
+  @extend %u-list-unstyled;
 
   ul {
-    @extend %a-list;
-
-    margin-bottom: -$list-item-padding-top;
-    margin-top: $list-item-padding-top;
+    margin-bottom: calc(var(--spacer-xxs) * -1);
+    margin-top: var(--spacer-xxs);
+    padding-left: var(--spacer);
   }
 }
 
-
-/**
- * COLLAPSIBLE LIST ITEMS
- * -------------------------------------------------------------------
- */
-
 .m-collapsible-list__item {
+  padding: var(--spacer-xxs) 0;
+
   &:not(.is-active) {
     > a {
       text-decoration: none;
@@ -29,13 +23,13 @@
 
       &:link,
       &:visited {
-        color: $text-color;
+        color: var(--text-color);
       }
 
       &:hover,
       &:active,
       &:focus {
-        color: $link-hover-color;
+        color: var(--link-hover-color);
         text-decoration: underline;
       }
     }
@@ -43,20 +37,19 @@
 
   .ai {
     font-size: .875em;
-    padding: 0 ($spacer-xs / 2) 0 0;
+    padding: 0 var(--spacer-xxs) 0 0;
   }
 }
 
-
 /**
- * MODIFIERS
+ * COLLAPSIBLE LIST MODIFIERS
  * -------------------------------------------------------------------
  */
 
 .m-collapsible-list__item {
   &.is-active {
     > a {
-      font-weight: $bold;
+      font-weight: var(--font-weight-bold);
     }
   }
 

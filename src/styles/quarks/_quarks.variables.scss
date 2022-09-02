@@ -8,32 +8,68 @@
 @import 'quarks.mixins';
 
 /**
- * SPECIFIC COLOR PALETTE
+ * THEME COLORS
  * -------------------------------------------------------------------
  */
 
-$brand-primary:           $endeavour !default;
-$brand-secondary:         $monza !default;
+$theme1-600:              $endeavour-600 !default;
+$theme1-500:              $endeavour-500 !default;
+$theme1-400:              $endeavour-400 !default;
+$theme1-300:              $endeavour-300 !default;
+$theme1-200:              $endeavour-200 !default;
+$theme1-100:              $endeavour-100 !default;
 
-$state-success:           $mantis-darker !default;
-$state-info:              $endeavour !default;
-$state-warning:           $supernova-dark !default;
-$state-danger:            $cinnabar-dark !default;
-$state-disabled:          $grey-dark !default;
+$success-600:             $mantis-600 !default;
+$success-500:             $mantis-500 !default;
+$success-400:             $mantis-400 !default;
+$success-300:             $mantis-300 !default;
+$success-200:             $mantis-200 !default;
+$success-100:             $mantis-100 !default;
 
-$text-color:              $black !default;
-$text-color-light:        $grey-dark !default;
+$warning-600:             $supernova-600 !default;
+$warning-500:             $supernova-500 !default;
+$warning-400:             $supernova-400 !default;
+$warning-300:             $supernova-300 !default;
+$warning-200:             $supernova-200 !default;
+$warning-100:             $supernova-100 !default;
+
+$danger-600:              $cinnabar-600 !default;
+$danger-500:              $cinnabar-500 !default;
+$danger-400:              $cinnabar-400 !default;
+$danger-300:              $cinnabar-300 !default;
+$danger-200:              $cinnabar-200 !default;
+$danger-100:              $cinnabar-100 !default;
+
+$state-info:              $theme1-400 !default;
+$state-success:           $success-600 !default;
+$state-warning:           $warning-500 !default;
+$state-danger:            $danger-500 !default;
+$state-disabled:          $gray-400 !default;
+
+/**
+ * DEPRECATED THEME COLORS
+ * -------------------------------------------------------------------
+ */
+
+$brand-primary:           $theme1-400 !default;
+$brand-secondary:         $monza-400 !default;
+
+/**
+ * OTHER THEME COLORS
+ * -------------------------------------------------------------------
+ */
+
+$text-color:              $gray-600 !default;
+$text-color-light:        $gray-400 !default;
 $text-color-xlight:       $white !default;
 
-$background-color:        $grey-light !default;
-$background-color-light:  $grey-lighter !default;
+$background-color:        $gray-200 !default;
+$background-color-light:  $gray-100 !default;
 
-$border-color:            $grey-dark !default;
-$border-color-light:      $grey !default;
+$border-color:            $gray-400 !default;
+$border-color-light:      $gray-300 !default;
 
-$overlay-color:           rgba($rich-black, .75) !default;
 $selection-color:         mix($brand-primary, $white, 20%) !default;
-
 
 /**
  * SPACERS
@@ -49,7 +85,6 @@ $spacer-md:               $spacer * 1.5 !default; // 36px
 $spacer-sm:               $spacer * .75 !default; // 18px
 $spacer-xs:               $spacer * .5 !default; // 12px
 
-
 /**
  * BREAKPOINTS
  * -------------------------------------------------------------------
@@ -59,6 +94,7 @@ $screen-xs:               30rem !default; // 480px
 $screen-sm:               45rem !default; // 720px
 $screen-md:               62rem !default; // 992px
 $screen-lg:               75rem !default; // 1200px
+
 /**
  * $screen-xl =
  *    max-width of u-container
@@ -71,17 +107,6 @@ $screen-xs-max:           44.9375rem !default; // 719px ($screen-sm - 1px)
 $screen-sm-max:           61.9375rem !default; // 991px ($screen-md - 1px)
 $screen-md-max:           74.9375rem !default; // 1199px ($screen-lg - 1px)
 $screen-lg-max:           89.9375rem !default; // 1439px ($screen-xl - 1px)
-
-
-/**
- * FONT FAMILIES
- * -------------------------------------------------------------------
- */
-
-$font-family-base:        'Sun Antwerpen', sans-serif !default;
-$font-family-headings:    'Antwerpen Regular', sans-serif !default;
-$font-family-monospace:   Menlo, Monaco, Consolas, 'Courier New', monospace !default;
-
 
 /**
  * FONT SIZES
@@ -101,7 +126,6 @@ $font-size-h4:            $font-size-base * power($font-size-ratio, 3) !default;
 $font-size-h5:            $font-size-base * power($font-size-ratio, 2) !default; // ±23px
 $font-size-h6:            $font-size-base * power($font-size-ratio, 1) !default; // ±19px
 
-
 /**
  * LINE HEIGHTS
  * -------------------------------------------------------------------
@@ -111,43 +135,12 @@ $line-height-base:        1 !default;
 $line-height-paragraph:   1.3 !default;
 $line-height-headings:    1.1 !default;
 
-
-/**
- * FONT WEIGHTS
- * -------------------------------------------------------------------
- */
-
-$light:                   300 !default;
-$normal:                  500 !default;
-$bold:                    700 !default;
-$extra-bold:              800 !default;
-
-$font-weight-h1:          $normal !default;
-$font-weight-h2:          $normal !default;
-$font-weight-h3:          $normal !default;
-$font-weight-h4:          $normal !default;
-$font-weight-h5:          $normal !default;
-$font-weight-h6:          $normal !default;
-
-
 /**
  * OTHER TYPOGRAPHY
  * -------------------------------------------------------------------
  */
 
 $readable-content-width:  45rem !default;
-
-
-/**
- * ANIMATIONS
- * -------------------------------------------------------------------
- */
-
-$animation-duration:      200ms !default;
-$animation-easing:        ease-in-out !default;
-
-$animation-normal:        $animation-duration $animation-easing !default;
-
 
 /**
  * Z-INDEXES
@@ -184,7 +177,6 @@ $z-indexes: (
   'cellar':         -1
 );
 
-
 /**
  * ICON SIZES
  * -------------------------------------------------------------------
@@ -194,768 +186,3 @@ $icon-size-ti:            12px !default;
 $icon-size-sm:            16px !default;
 $icon-size-base:          22px !default;
 $icon-size-lg:            28px !default;
-
-
-/**
- * BOX SHADOWS
- * -------------------------------------------------------------------
- */
-
-$box-shadow:              $spacer / 2 $spacer / 2 0 rgba($rich-black, .1) !default;
-$box-shadow-reverse:      $spacer / 2 $spacer / -2 0 rgba($rich-black, .1) !default;
-$box-shadow-top:          0 $spacer / -2 0 rgba($rich-black, .1) !default;
-$box-shadow-bottom:       0 $spacer / 2 0 rgba($rich-black, .1) !default;
-
-
-/**
- * LINKS
- * -------------------------------------------------------------------
- * Define text and hover color for each hyperlink
- */
-
-$link-color:              $brand-primary !default;
-$link-background-color:   mix($brand-primary, $white, 10%) !default;
-$link-hover-color:        mix($link-color, $rich-black, 85%) !default;
-
-
-/**
- * LISTS
- * -------------------------------------------------------------------
- * Define default paddings for lists
- */
-
-$list-padding-left:          $spacer !default;
-$list-item-padding-top:      $spacer / 3 !default;
-$list-item-padding-bottom:   $spacer / 3 !default;
-
-
-/**
- * PRE
- * -------------------------------------------------------------------
- * Define text and background color for each code element
- */
-
-$pre-color:               $text-color !default;
-$pre-bg:                  $background-color-light !default;
-$pre-font-size:           1rem !default;
-$pre-padding:             $spacer-xs !default;
-
-
-/**
- * CODE
- * -------------------------------------------------------------------
- * Define text and background color for each code element
- */
-
-$code-color:              $pre-color !default;
-$code-bg:                 $pre-bg !default;
-$code-font-size:          .875rem !default;
-$code-padding:            $spacer-xs / 6 $spacer-xs / 2 !default;
-
-$kbd-color:               $white !default;
-$kbd-bg:                  $grey-dark !default;
-$kbd-font-size:          .875rem !default;
-$kbd-padding:             $code-padding !default;
-
-
-/**
- * MARK
- * -------------------------------------------------------------------
- * Define text and background color for each mark element
- */
-
-$mark-color:              $white !default;
-$mark-bg:                 $brand-primary !default;
-
-
-/**
- * CITE
- * -------------------------------------------------------------------
- */
-
-$cite-color:              $brand-secondary !default;
-
-
-/**
- * FIGCAPTION
- * -------------------------------------------------------------------
- */
-
-$figcaption-padding:      $spacer-xs !default;
-
-
-/**
- * TABLES
- * -------------------------------------------------------------------
- * Define background and border color for each table
- */
-
-$table-bg:                $white !default;
-$table-border:            $border-color-light !default;
-
-$table-head-bg:           $background-color-light !default;
-
-$table-primary-head-color:    $white !default;
-$table-primary-head-bg:       $brand-primary !default;
-
-$table-secondary-head-color:  $white !default;
-$table-secondary-head-bg:     $brand-secondary !default;
-
-$table-striped-bg:        $background-color-light !default;
-
-$table-padding:           $spacer-xs !default;
-
-
-/**
- * BUTTONS
- * -------------------------------------------------------------------
- * Define text, background and border color for each button
- */
-
-$btn-font-weight:              $bold !default;
-
-$btn-font-size-ti:             $font-size-sm !default;
-$btn-font-size-sm:             $font-size-sm !default;
-$btn-font-size:                $font-size-base !default;
-$btn-font-size-lg:             $font-size-lg !default;
-
-$btn-padding:                  ($spacer * 7 / 12) $spacer !default;
-
-$btn-icon-size-ti:             $icon-size-ti !default;
-$btn-icon-size-sm:             $icon-size-sm !default;
-$btn-icon-size:                $icon-size-base !default;
-$btn-icon-size-lg:             $icon-size-lg !default;
-
-$btn-default-color:            $white !default;
-$btn-default-bg:               $grey-dark !default;
-$btn-default-outline-color:    $btn-default-bg !default;
-$btn-default-outline-border:   $btn-default-bg !default;
-
-$btn-primary-color:            $btn-default-color !default;
-$btn-primary-bg:               $brand-primary !default;
-$btn-primary-negative-color:   $btn-primary-bg !default;
-$btn-primary-negative-bg:      $btn-primary-color !default;
-$btn-primary-outline-color:    $btn-primary-bg !default;
-$btn-primary-outline-border:   $btn-primary-bg !default;
-
-$btn-secondary-color:          $btn-default-color !default;
-$btn-secondary-bg:             $brand-secondary !default;
-$btn-secondary-negative-color: $btn-secondary-bg !default;
-$btn-secondary-negative-bg:    $btn-secondary-color !default;
-$btn-secondary-outline-color:  $btn-secondary-bg !default;
-$btn-secondary-outline-border: $btn-secondary-bg !default;
-
-$btn-success-color:            $btn-default-color !default;
-$btn-success-bg:               $state-success !default;
-$btn-success-outline-color:    $btn-success-bg !default;
-$btn-success-outline-border:   $btn-success-bg !default;
-
-$btn-warning-color:            $text-color !default;
-$btn-warning-bg:               $state-warning !default;
-$btn-warning-outline-color:    $text-color !default;
-$btn-warning-outline-border:   $btn-warning-bg !default;
-
-$btn-danger-color:             $btn-default-color !default;
-$btn-danger-bg:                $state-danger !default;
-$btn-danger-outline-color:     $btn-danger-bg !default;
-$btn-danger-outline-border:    $btn-danger-bg !default;
-
-$btn-disabled-color:           $state-disabled !default;
-$btn-disabled-bg:              $grey-lighter !default;
-
-$btn-transparent-color:        $brand-primary !default;
-$btn-transparent-bg:           transparent !default;
-
-$btn-official-color:           $btn-default-color !default;
-$btn-official-bg:              $monza !default;
-
-
-/**
- * FORMS
- * -------------------------------------------------------------------
- * Define text, background, border and placeholder color for each input
- */
-
-$input-color:             $text-color !default;
-$input-bg:                $white !default;
-$input-border:            $border-color !default;
-$input-border-focus:      rgb(192, 223, 254) !default; // Remove this in a later version
-$input-disabled:          $state-disabled !default;
-$input-disabled-border:   $grey-light !default;
-$input-disabled-bg:       $grey-lighter !default;
-$input-readonly:          $text-color !default;
-$input-readonly-border:   $grey !default;
-$input-readonly-bg:       $white !default;
-$input-placeholder:       $grey-dark !default;
-$input-icon:              $grey-dark !default;
-$input-icon-hover:        $black !default;
-$input-required:          $state-danger !default;
-
-$input-success-border:            mix($rich-black, $state-success, 40%) !default;
-$input-success-border-focus:      mix($state-success, $white, 25%) !default; // Remove this in a later version
-$input-success-icon:              $state-success !default;
-
-$input-warning-border:            mix($rich-black, $state-warning, 40%) !default;
-$input-warning-border-focus:      mix($state-warning, $white, 25%) !default; // Remove this in a later version
-$input-warning-icon:              $state-warning !default;
-
-$input-danger-border:             mix($rich-black, $state-danger, 40%) !default;
-$input-danger-border-focus:       mix($state-danger, $white, 25%) !default; // Remove this in a later version
-$input-danger-icon:               $state-danger !default;
-
-$input-height:                    $spacer-lg !default;
-$input-padding:                   0 $spacer !default;
-$select-height:                   $input-height !default;
-$select-padding:                  $spacer-xs $spacer !default;
-$textarea-height:                 12rem !default;
-$textarea-padding:                $spacer-sm $spacer !default;
-
-$input-height-sm:                 $spacer-md !default;
-$input-padding-sm:                0 $spacer-xs !default;
-$select-height-sm:                $input-height-sm !default;
-$select-padding-sm:               0 $spacer-xs !default;
-$textarea-height-sm:              8rem !default;
-$textarea-padding-sm:             $spacer-xs / 3 * 2 $spacer-xs !default;
-
-$input-height-lg:                 $spacer-xl !default;
-$input-padding-lg:                0 $spacer !default;
-$select-height-lg:                $input-height-lg !default;
-$select-padding-lg:               $spacer-sm $spacer !default;
-$textarea-height-lg:              16rem !default;
-$textarea-padding-lg:             $spacer / 6 * 5 $spacer !default;
-
-
-
-/**
- * RADIO BUTTONS & CHECKBOXES
- * -------------------------------------------------------------------
- */
-
-$radio-checkbox-color:    $white !default;
-$radio-checkbox-bg:       $brand-primary !default;
-
-
-/**
- * SWITCHES
- * -------------------------------------------------------------------
- * WATCH OUT
- * $progress-height and $range-slider-height are equal to $switch-height
- * In this way, changing the height of the switch will also affect the height of the progress bar and range slider
- */
-
-$switch-width:            $spacer-lg !default;
-$switch-height:           $switch-width / 2 + .25rem !default;
-$switch-label:            $text-color !default;
-
-$switch-bg:               $input-bg !default;
-$switch-border:           $input-border !default;
-
-$switch-disabled:         $grey-lighter !default;
-$switch-disabled-label:   $state-disabled !default;
-$switch-disabled-border:  $grey-light !default;
-$switch-disabled-bg:      $switch-disabled-label !default;
-
-$switch-handle-width:     ($switch-width - .5rem) / 2 !default;
-
-$switch-handle-bg:        $grey-dark !default;
-$switch-handle-bg-active: $brand-primary !default;
-
-
-/**
- * FIELDSET
- * -------------------------------------------------------------------
- */
-
-$fieldset-padding:    $spacer-lg 0 !default;
-$legend-color:        $grey-dark !default;
-$legend-padding:      0 $spacer / 3 0 0 !default;
-$legend-size:         $font-size-lg !default;
-
-
-/**
- * TOOLTIP
- * -------------------------------------------------------------------
- */
-
-$tooltip-max-width:         $spacer * 12 !default;
-$tooltip-min-height:        $spacer-md !default;
-
-$tooltip-default-color:     $text-color !default;
-$tooltip-default-bg:        $background-color !default;
-
-$tooltip-primary-color:     $white !default;
-$tooltip-primary-bg:        $brand-primary !default;
-
-$tooltip-secondary-color:   $tooltip-primary-color !default;
-$tooltip-secondary-bg:      $brand-secondary !default;
-
-$tooltip-padding:           $spacer / 3 $spacer-xs !default;
-$tooltip-arrow-height:      $spacer / 4 !default;
-
-
-/**
- * PROGRESS
- * -------------------------------------------------------------------
- * WATCH OUT
- * $range-slider-offset is equal to $tooltip-offset
- * In this way, changing the offset of the progress bar will also affect the offset of the range slider
- */
-
-$progress-height:             $switch-height !default;
-$progress-bar-padding:        $spacer / 6 !default;
-$progress-tooltip-offset:     .625rem !default;
-
-$progress-bg:                 $input-bg !default;
-$progress-border:             $input-border !default;
-
-$progress-bar-bg:             $brand-primary !default;
-
-
-/**
- * RANGE SLIDER
- * -------------------------------------------------------------------
- */
-
-$range-slider-height:             $switch-height !default;
-$range-slider-padding:            $spacer / 6 !default;
-$range-slider-offset:             $progress-tooltip-offset !default;
-
-$range-slider-bg:                 $input-bg !default;
-$range-slider-border:             $input-border !default;
-
-$range-slider-bar-bg:             $background-color !default;
-$range-slider-handle-bg:          $brand-primary !default;
-
-
-/**
- * LINK LIST
- * -------------------------------------------------------------------
- */
-
-$link-list-item-padding:    $spacer / 3 * 2 $spacer !default;
-$link-list-hover:           $grey-lighter !default;
-
-
-/**
- * DATEPICKER
- * -------------------------------------------------------------------
- */
-
-$datepicker-border:       $border-color !default;
-$datepicker-bg:           $white !default;
-$datepicker-bg-hover:      mix($brand-primary, $white, 15%) !default;
-
-$datepicker-today-color:          $brand-primary !default;
-$datepicker-today-bg:             mix($datepicker-today-color, $white, 15%) !default;
-$datepicker-today-border:         $datepicker-today-color !default;
-$datepicker-today-font-weight:    $extra-bold !default;
-
-$datepicker-selected-color:          $white !default;
-$datepicker-selected-bg:             $datepicker-today-color !default;
-$datepicker-selected-font-weight:    $datepicker-today-font-weight !default;
-
-$datepicker-faded-color:          $grey-dark !default;
-$datepicker-faded-bg:             $background-color-light !default;
-$datepicker-faded-bg-hover:       $background-color !default;
-
-$datepicker-unavailable-color:     $state-disabled !default;
-$datepicker-unavailable-bg:        $datepicker-bg !default;
-
-
-/**
- * ACCORDION
- * -------------------------------------------------------------------
- */
-
-$accordion-border:            $border-color-light !default;
-$accordion-header-bg:         $white !default;
-$accordion-header-bg-hover:   $background-color-light !default;
-$accordion-content-bg:        $accordion-header-bg !default;
-$accordion-icon-color:        $brand-primary !default;
-$accordion-icon-size:         $icon-size-sm !default;
-$accordion-header-padding:    $spacer-xs $spacer-lg $spacer-xs $spacer-xs !default;
-$accordion-content-padding:   $spacer !default;
-
-
-/**
- * ALERTS
- * -------------------------------------------------------------------
- */
-
-$alert-default:           $brand-primary !default;
-$alert-success:           $state-success !default;
-$alert-warning:           $state-warning !default;
-$alert-danger:            $state-danger !default;
-$alert-padding:           $spacer !default;
-
-
-/**
- * AVATARS
- * -------------------------------------------------------------------
- */
-
-$avatar-bg:               $grey-dark !default;
-$avatar-color:            $white !default;
-
-$avatar-sm:               $spacer * 1.5 !default; // 36px
-$avatar:                  $spacer * 2 !default; // 48px
-$avatar-md:               $spacer * 3 !default; // 72px
-$avatar-lg:               $spacer * 4 !default; // 96px
-
-
-/**
- * BADGES
- * -------------------------------------------------------------------
- */
-
-$badge-font-size:                $font-size-sm !default;
-$badge-font-weight:              $bold !default;
-$badge-height:                   $spacer-sm !default;
-$badge-line-height:              $badge-height !default;
-$badge-padding:                  0 $spacer / 4 !default;
-
-$badge-default-color:            $text-color !default;
-$badge-default-bg:               $grey !default;
-
-$badge-primary-color:            $badge-default-color !default;
-$badge-primary-bg:               $brand-primary !default;
-
-$badge-secondary-color:          $badge-default-color !default;
-$badge-secondary-bg:             $brand-secondary !default;
-
-$badge-success-color:            $badge-default-color !default;
-$badge-success-bg:               $state-success !default;
-
-$badge-warning-color:            $badge-default-color !default;
-$badge-warning-bg:               $state-warning !default;
-
-$badge-danger-color:             $badge-default-color !default;
-$badge-danger-bg:                $state-danger !default;
-
-$badge-disabled-color:           $grey-dark !default;
-$badge-disabled-bg:              $grey-light !default;
-
-
-/**
- * BREADCRUMBS
- * -------------------------------------------------------------------
- */
-
-$breadcrumb-arrow-color:  $grey !default;
-
-
-/**
- * CARDS
- * -------------------------------------------------------------------
- */
-
-$card-header-padding:    $spacer-xs !default;
-$card-content-padding:   $spacer !default;
-
-
-/**
- * COPYRIGHT
- * -------------------------------------------------------------------
- */
-
-$copyright-color:         $white !default;
-$copyright-bg:            $overlay-color !default;
-$copyright-height:        $spacer-md !default;
-$copyright-font-size:     $font-size-sm !default;
-
-
-/**
- * LABELS
- * -------------------------------------------------------------------
- */
-
-$label-font-size:         $font-size-sm !default;
-$label-font-weight:       $bold !default;
-$label-height:            $spacer-sm !default;
-$label-line-height:       $label-height !default;
-
-$label-default-color:     $text-color !default;
-$label-default-border:    $grey !default;
-
-$label-primary-color:     $label-default-color !default;
-$label-primary-border:    $brand-primary !default;
-
-$label-secondary-color:   $label-default-color !default;
-$label-secondary-border:  $brand-secondary !default;
-
-$label-success-color:     $label-default-color !default;
-$label-success-border:    $state-success !default;
-
-$label-warning-color:     $label-default-color !default;
-$label-warning-border:    $state-warning !default;
-
-$label-danger-color:      $label-default-color !default;
-$label-danger-border:     $state-danger !default;
-
-$label-padding:           0 $spacer / 4 !default;
-
-
-/**
- * TAGS
- * -------------------------------------------------------------------
- */
-
-$tag-color:               $text-color !default;
-$tag-bg:                  $background-color-light !default;
-$tag-border:              $border-color-light !default;
-$tag-border-focus:        $input-border-focus !default; // Remove this in a later version
-$tag-placeholder:         $input-placeholder !default;
-$tag-height:              $spacer-md !default;
-
-
-/**
- * FLYOUT
- * -------------------------------------------------------------------
- */
-
-$flyout-bg:               $white !default;
-$flyout-border:           $border-color-light !default;
-$flyout-max-width-sm:     $spacer * 10 !default;
-$flyout-max-width-md:     $spacer * 20 !default;
-$flyout-max-width-lg:     $spacer * 30 !default;
-$flyout-max-height:       $spacer * 9 !default;
-
-
-/**
- * FOOTER
- * -------------------------------------------------------------------
- */
-
-$footer-bg:               $rich-black !default;
-$footer-color:            $white !default;
-
-$footer-height:           $spacer-lg !default;
-
-$footer-font-size-sm:     $font-size-sm !default;
-$footer-font-size-lg:     $font-size-sm !default;
-$footer-line-height:      $line-height-paragraph !default;
-
-
-/**
- * HEADER
- * -------------------------------------------------------------------
- */
-
-$header-height:           $spacer-lg !default;
-
-$header-bg:               $white !default;
-$header-border:           $border-color-light !default;
-$header-btn-bg:           $white !default;
-$header-btn-color:        $grey-dark !default;
-
-
-/**
- * SPINNER
- * -------------------------------------------------------------------
- */
-
-$spinner-color:           $grey !default;
-$spinner-size:            $icon-size-lg !default;
-$spinner-size-sm:         $icon-size-base !default;
-$spinner-size-lg:         $spinner-size * 2 !default;
-
-$spinner-animation-name:      spin reverse !default;
-$spinner-animation-speed:     1600ms !default;
-$spinner-animation-timing:    linear !default;
-
-
-/**
- * ICON LIST
- * -------------------------------------------------------------------
- */
-
-$icon-list-color:             $black !default;
-$icon-list-negative-color:    $white !default;
-$icon-list-hover-color:       $brand-secondary !default;
-
-$icon-list-icon-size:         $icon-size-base !default;
-
-
-/**
- * OVERLAY
- * -------------------------------------------------------------------
- */
-
-$overlay-bg:              $overlay-color !default;
-
-$overlay-button-size:             $icon-size-lg !default;
-$overlay-button-color:            $white !default;
-$overlay-button-color-hover:      $grey-light !default;
-
-
-/**
- * MODAL
- * -------------------------------------------------------------------
- */
-
-$modal-bg:                $white !default;
-$modal-border:            $border-color-light !default;
-
-$modal-width:             $spacer * 17 !default;
-$modal-width-large:       $spacer * 25 !default;
-
-$modal-padding:           $spacer !default;
-
-
-/**
- * NAVIGATION
- * -------------------------------------------------------------------
- */
-
-$nav-font-weight:             $bold !default;
-$nav-icon-size:               1.25rem !default;
-$nav-border:                  $border-color-light !default;
-$nav-border-hover:            $brand-primary !default;
-$nav-color:                   $text-color !default;
-$nav-color-hover:             $brand-primary !default;
-$nav-color-active:            $nav-color-hover !default;
-$nav-bg:                      transparent !default;
-$nav-bg-hover:                $grey-lighter !default;
-$nav-bg-active:               $nav-bg !default;
-$nav-padding:                 rem(13px) $spacer !default;
-$nav-bg-disabled:             $grey-lighter !default;
-$nav-color-disabled:          $state-disabled !default;
-$nav-tab-color-disabled:      $nav-color-disabled !default;
-
-
-/**
- * PAGINATION
- * -------------------------------------------------------------------
- */
-
-$pagination-font-size:    $btn-font-size !default;
-$pagination-size:         $spacer-lg !default;
-
-$pagination-color:          $btn-primary-color !default;
-$pagination-color-disabled: $btn-disabled-color !default;
-$pagination-bg:             $btn-primary-bg !default;
-$pagination-bg-disabled:    $btn-disabled-bg !default;
-$pagination-bg-hover:       mix($pagination-bg, $rich-black, 85%) !default;
-
-$pagination-outline-color:            $pagination-bg !default;
-$pagination-outline-bg:               $btn-transparent-bg !default;
-$pagination-outline-bg-hover:         mix($pagination-outline-color, $white, 15%) !default;
-$pagination-outline-border:           $pagination-outline-color !default;
-$pagination-outline-border-hover:     mix($pagination-outline-border, $rich-black, 85%) !default;
-
-$pagination-size-sm: $spacer-md !default;
-$pagination-size-lg: $spacer-xl !default;
-
-
-/**
- * STEP INDICATOR
- * -------------------------------------------------------------------
- */
-
-$step-indicator-color:                  $text-color !default;
-$step-indicator-bg:                     $background-color !default;
-$step-indicator-border:                 $border-color-light !default;
-$step-indicator-label-color:            $step-indicator-color !default;
-$step-indicator-color-active:           $text-color !default;
-$step-indicator-bg-active:              $white !default;
-$step-indicator-border-active:          $step-indicator-border !default;
-$step-indicator-label-color-active:     $step-indicator-color-active !default;
-$step-indicator-color-success:          $white !default;
-$step-indicator-bg-success:             $state-success !default;
-$step-indicator-border-success:         $step-indicator-bg-success !default;
-$step-indicator-label-color-success:    $step-indicator-bg-success !default;
-$step-indicator-square-size:            $spacer-md !default;
-
-
-/**
- * UPLOAD
- * -------------------------------------------------------------------
- */
-
-$upload-height:           $spacer * 5 !default;
-$upload-padding:          $spacer-md $spacer !default;
-
-$upload-color:            $text-color !default;
-$upload-bg:               $white !default;
-$upload-bg-hover:         mix($brand-primary, $white, 20%) !default;
-$upload-border:           $brand-primary !default;
-$upload-disabled-color:   $state-disabled !default;
-$upload-disabled-bg:      $grey-lighter !default;
-$upload-disabled-border:  $upload-disabled-color !default;
-
-$upload-file-color:           $text-color !default;
-$upload-file-bg:              $background-color-light !default;
-$upload-file-bg-danger:       mix($state-danger, $white, 10%) !default;
-$upload-file-color-danger:    mix($rich-black, $state-danger, 40%) !default;
-
-
-/**
- * GALLERY
- * -------------------------------------------------------------------
- */
-
-$gallery-gutter-col:          $spacer !default;
-$gallery-gutter-row:          $gallery-gutter-col !default;
-
-$gallery-item-size:           100% / 3 !default;
-
-
-/**
- * SLIDESHOW
- * -------------------------------------------------------------------
- */
-
-$slideshow-max-height:            37.5rem !default;
-$slideshow-bg:                    $black !default;
-$slideshow-footer-color:          $text-color !default;
-$slideshow-footer-color-light:    $white !default;
-
-
-/**
- * NAVIGATION MENU
- * -------------------------------------------------------------------
- */
-$navigation-menu-border:          $border-color-light !default;
-$navigation-menu-mobile-height:   $spacer-xl !default;
-$navigation-menu-pane-width:      20rem !default;
-$navigation-menu-undocked-width:  15rem !default;
-$navigation-menu-docked-width:    $header-height !default;
-$navigation-menu-submenu-inset:   $spacer-xs !default;
-$navigation-menu-submenu-height:  $navigation-menu-undocked-width * 2 !default;
-$navigation-menu-animation-speed: $animation-duration !default;
-
-
-/**
- * ARTICLE
- * -------------------------------------------------------------------
- */
-$article-h1-font-family: $font-family-headings !default;
-$article-h1-font-size: $font-size-h2 !default;
-$article-h1-font-weight: normal !default;
-$article-h1-margin: $spacer-lg 0 $spacer !default;
-$article-h2-font-family: $font-family-headings !default;
-$article-h2-font-size: $font-size-h3 !default;
-$article-h2-font-weight: normal !default;
-$article-h2-margin: $spacer-lg 0 $spacer !default;
-$article-h3-font-family: $font-family-base !default;
-$article-h3-font-size: $font-size-h5 !default;
-$article-h3-font-weight: $bold !default;
-$article-h3-margin: $spacer 0  $spacer-xs !default;
-$article-h4-font-family: $font-family-base !default;
-$article-h4-font-size: $font-size-h6 !default;
-$article-h4-font-weight: $bold !default;
-$article-h4-margin: $spacer 0  $spacer-xs !default;
-$article-h5-font-family: $font-family-base !default;
-$article-h5-font-size: $font-size-base !default;
-$article-h5-font-weight: $bold !default;
-$article-h5-margin: $spacer-xs 0 $spacer-xs / 2 !default;
-$article-h6-font-family: $font-family-base !default;
-$article-h6-font-size: $font-size-base !default;
-$article-h6-font-weight: $bold !default;
-$article-h6-margin: $spacer-xs 0 $spacer-xs / 2 !default;
-$article-p-font-size: $font-size-base !default;
-$article-p-margin: 0 0 $spacer-xs / 2 !default;
-$article-ul-font-size: $font-size-base !default;
-$article-ul-margin: 0 0 $spacer-xs / 2 !default;
-$article-ol-font-size: $font-size-base !default;
-$article-ol-margin: 0 0 $spacer-xs / 2 !default;

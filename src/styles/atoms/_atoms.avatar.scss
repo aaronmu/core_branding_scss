@@ -1,61 +1,80 @@
 /**
+ * AVATAR VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-avatar {
+  --avatar-color:                    #{$gray-400};
+  --avatar-bg-color:                 #{$white};
+  --avatar-hover-bg-color:           #{$gray-100};
+
+  --avatar-primary-color:            var(--theme1-400);
+  --avatar-primary-hover-color:      var(--theme1-500);
+  --avatar-primary-bg-color:         var(--theme1-050);
+  --avatar-primary-hover-bg-color:   var(--theme1-075);
+
+  --avatar-size-s:                   var(--shared-avatar-size-s); // 36px
+  --avatar-icon-size-s:              1rem;
+
+  --avatar-size:                     var(--shared-avatar-size); // 48px
+  --avatar-icon-size:                1.25rem;
+
+  --avatar-size-l:                   var(--shared-avatar-size-l); // 60px
+  --avatar-icon-size-l:              1.5rem;
+}
+
+/**
  * AVATARS
  * -------------------------------------------------------------------
  */
 
 .a-avatar {
-  align-items: center;
-  background-color: $avatar-bg;
-  color: $avatar-color;
-  display: inline-flex;
-  font-size: $avatar / 2;
-  height: $avatar;
-  justify-content: center;
+  background-color: var(--avatar-bg-color);
+  color: var(--avatar-color);
+  display: inline-block;
+  font-family: var(--font-family-headings);
+  font-size: var(--avatar-icon-size);
+  height: var(--avatar-size);
   overflow: hidden;
   position: relative;
   text-align: center;
-  width: $avatar;
+  text-decoration: none;
+  transition: background-color var(--animation-normal);
+  width: var(--avatar-size);
 
   img {
     display: block;
     max-width: 100%;
+    transition: filter var(--animation-normal);
   }
 
-  &__icon {
-    height: $avatar / 2;
+  &__icon .ai,
+  &__letter {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 
-    .ai {
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
+a,
+.a-button {
+  &:hover,
+  &:active,
+  &:focus {
+    .a-avatar img {
+      filter: brightness(80%);
     }
   }
 }
 
-a .a-avatar {
+/**
+ * AVATAR ELEMENTS
+ * -------------------------------------------------------------------
+ */
 
-  &:before {
-    background-color: $rich-black;
-    content: '';
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    transition: opacity $animation-duration $animation-easing;
-    width: 100%;
-  }
-
-  &:hover,
-  &:active {
-    color: $avatar-color;
-
-    &:before {
-      opacity: .15;
-    }
-  }
+.a-avatar__letter {
+  text-transform: uppercase;
 }
 
 /**
@@ -63,35 +82,56 @@ a .a-avatar {
  * -------------------------------------------------------------------
  */
 
-.a-avatar--small {
-  font-size: $avatar-sm / 2;
-  height: $avatar-sm;
-  line-height: $avatar-sm;
-  width: $avatar-sm;
+.a-avatar--s {
+  font-size: var(--avatar-icon-size-s);
+  height: var(--avatar-size-s);
+  width: var(--avatar-size-s);
+}
 
-  .a-avatar__icon {
-    height: $avatar-sm;
+.a-avatar--l {
+  font-size: var(--avatar-icon-size-l);
+  height: var(--avatar-size-l);
+  width: var(--avatar-size-l);
+}
+
+/**
+ * AVATAR COLORS
+ * -------------------------------------------------------------------
+ */
+
+.a-avatar {
+  background-color: var(--avatar-bg-color);
+  color: var(--avatar-color);
+
+  &.a-avatar--primary {
+    background-color: var(--avatar-primary-bg-color);
+    color: var(--avatar-primary-color);
   }
 }
 
-.a-avatar--medium {
-  font-size: $avatar-md / 2;
-  height: $avatar-md;
-  line-height: $avatar-md;
-  width: $avatar-md;
+a,
+.a-button {
+  &:hover,
+  &:active,
+  &:focus {
+    .a-avatar {
+      background-color: var(--avatar-hover-bg-color);
 
-  .a-avatar__icon {
-    height: $avatar-md;
+      &.a-avatar--primary {
+        color: var(--avatar-primary-hover-color);
+        background-color: var(--avatar-primary-hover-bg-color);
+      }
+    }
   }
 }
 
-.a-avatar--large {
-  font-size: $avatar-lg / 2;
-  height: $avatar-lg;
-  line-height: $avatar-lg;
-  width: $avatar-lg;
+/**
+ * AVATAR SHAPES
+ * -------------------------------------------------------------------
+ */
 
-  .a-avatar__icon {
-    height: $avatar-lg;
-  }
+.a-avatar--rounded {
+  // Fix image from breaking out of rounded parent element when hovering avatar on Safari
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  border-radius: 50%;
 }

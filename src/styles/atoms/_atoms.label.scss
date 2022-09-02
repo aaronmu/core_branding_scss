@@ -1,19 +1,53 @@
 /**
+ * LABEL VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-label {
+  --label-height:                   1.125rem;
+  --label-padding:                  0 var(--spacer-xxs);
+  --label-font-size:                .875rem;
+  --label-line-height:              var(--label-height);
+  --label-font-weight:              var(--font-weight-bold);
+
+  --label-color:                    var(--text-color);
+  --label-bg-color:                 transparent;
+  --label-border-color:             #{$gray-400};
+
+  --label-primary-color:            var(--theme1-400);
+  --label-primary-bg-color:         var(--label-bg-color);
+  --label-primary-border-color:     var(--label-primary-color);
+
+  --label-success-color:            var(--success-600);
+  --label-success-bg-color:         var(--label-bg-color);
+  --label-success-border-color:     var(--label-success-color);
+
+  --label-warning-color:            #{$burnt-orange-400};
+  --label-warning-bg-color:         var(--label-bg-color);
+  --label-warning-border-color:     var(--label-warning-color);
+
+  --label-danger-color:            var(--danger-500);
+  --label-danger-bg-color:         var(--label-bg-color);
+  --label-danger-border-color:     var(--label-danger-color);
+}
+
+/**
  * LABELS
  * -------------------------------------------------------------------
  */
 
 .a-label {
+  background-color: var(--label-bg-color);
+  border: var(--border-width) solid var(--label-border-color);
+  color: var(--label-color);
   display: inline-block;
-  font-size: rem($label-font-size);
-  font-weight: $label-font-weight;
+  font-size: var(--label-font-size);
+  font-weight: var(--label-font-weight);
   letter-spacing: .24px;
-  line-height: $label-line-height;
-  min-height: $label-height;
-  padding: $label-padding;
-  text-transform: uppercase;
+  line-height: var(--label-line-height);
+  min-height: var(--label-height);
+  padding: var(--label-padding);
 }
-
 
 /**
  * LABELS COLORS
@@ -21,26 +55,27 @@
  */
 
 .a-label {
-  @include a-label;
-
   &.a-label--primary {
-    @include a-label($label-primary-color, $label-primary-border);
-  }
-
-  &.a-label--secondary {
-    @include a-label($label-secondary-color, $label-secondary-border);
+    --label-color: var(--label-primary-color);
+    --label-bg-color: var(--label-primary-bg-color);
+    --label-border-color: var(--label-primary-border-color);
   }
 
   &.a-label--success {
-    @include a-label($label-success-color, $label-success-border);
+    --label-color: var(--label-success-color);
+    --label-bg-color: var(--label-success-bg-color);
+    --label-border-color: var(--label-success-border-color);
   }
 
   &.a-label--warning {
-    @include a-label($label-warning-color, $label-warning-border);
+    --label-color: var(--label-warning-color);
+    --label-bg-color: var(--label-warning-bg-color);
+    --label-border-color: var(--label-warning-border-color);
   }
 
   &.a-label--danger {
-    @include a-label($label-danger-color, $label-danger-border);
+    --label-color: var(--label-danger-color);
+    --label-bg-color: var(--label-danger-bg-color);
+    --label-border-color: var(--label-danger-border-color);
   }
 }
-

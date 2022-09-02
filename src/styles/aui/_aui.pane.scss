@@ -3,12 +3,10 @@
  * -------------------------------------------------------------------
  */
 
-$pane-width: 20rem !default;
-
 .m-pane {
   background-color: $white;
   height: 100%;
-  width: $pane-width;
+  width: 20rem;
   z-index: layer('pane');
 
   &__content {
@@ -19,7 +17,7 @@ $pane-width: 20rem !default;
   &--left,
   &--right {
     position: absolute;
-    transition: transform $animation-duration $animation-easing;
+    transition: transform var(--animation-normal);
 
     &.m-pane--open {
       transform: translate(0);

@@ -1,10 +1,23 @@
 /**
+ * OVERLAY VARIABLES
+ * -------------------------------------------------------------------
+ * This component has shared variables with _organisms.slideshow.scss. You can find them in _quarks.css-properties.scss.
+ */
+
+.m-overlay {
+  --overlay-bg-color:             var(--overlay-color);
+  --overlay-button-font-size:     #{rem($icon-size-lg)};
+  --overlay-button-color:         #{$white};
+  --overlay-button-hover-color:   #{$gray-200};
+}
+
+/**
  * OVERLAY
  * -------------------------------------------------------------------
  */
 
 .m-overlay {
-  background-color: $overlay-color;
+  background-color: var(--overlay-bg-color);
   bottom: 0;
   display: none;
   left: 0;
@@ -22,7 +35,6 @@
   }
 }
 
-
 /**
  * OVERLAY ELEMENTS
  * -------------------------------------------------------------------
@@ -31,22 +43,24 @@
 .m-overlay__button {
   background: none;
   border: none;
-  color: $overlay-button-color;
+  color: var(--overlay-button-color);
   cursor: pointer;
-  font-size: rem($overlay-button-size);
-  padding: $spacer-xs;
+  font-size: var(--overlay-button-font-size);
+  padding: var(--spacer-xs);
   position: absolute;
-  right: $spacer-xs;
-  top: $spacer-xs;
-  transition: color $animation-normal;
+  right: var(--spacer-xs);
+  top: var(--spacer-xs);
+  transition: color var(--animation-normal);
 
-  &:hover {
-    color: $overlay-button-color-hover;
+  &:active,
+  &:hover,
+  &:focus {
+    color: var(--overlay-button-hover-color);
   }
 }
 
 .m-overlay__inner {
-  -ms-overflow-style: none; // sass-lint:disable-line no-vendor-prefixes
+  -ms-overflow-style: none;
   max-height: calc(100vh - 8.75rem);
   overflow: auto;
   overflow-y: scroll;
@@ -58,7 +72,7 @@
   width: 100%;
 
   .o-slideshow__footer {
-    color: $slideshow-footer-color-light;
+    color: var(--shared-slideshow-footer-color-light);
   }
 }
 

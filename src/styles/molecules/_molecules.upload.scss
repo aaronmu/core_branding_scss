@@ -1,29 +1,47 @@
 /**
- * UPLOAD
+ * UPLOAD VARIABLES
  * -------------------------------------------------------------------
  */
 
 .m-upload {
-  &.is-disabled {
-    .m-upload__dropzone {
-      border-color: $upload-disabled-border;
-      cursor: not-allowed;
+  --upload-color:                   var(--text-color);
+  --upload-bg-color:                #{$white};
+  --upload-hover-bg-color:          var(--theme1-050);
+  --upload-border-color:            var(--theme1-400);
+  --upload-disabled-color:          var(--state-disabled);
+  --upload-disabled-bg-color:       #{$gray-100};
+  --upload-disabled-border-color:   var(--upload-disabled-color);
+  --upload-focus-border-color:      var(--theme1-050);
 
-      &,
-      &:active,
-      &:hover,
-      &:focus {
-        background-color: $upload-disabled-bg;
-      }
-    }
+  --upload-file-color:              var(--text-color);
+  --upload-file-bg-color:           var(--bg-color-light);
+  --upload-file-danger-color:       var(--state-danger);
+}
 
-    .m-upload__input {
-      cursor: not-allowed;
-    }
+/**
+ * UPLOAD
+ * -------------------------------------------------------------------
+ */
 
-    .m-upload__content {
-      color: $upload-disabled-color;
+.m-upload.is-disabled {
+  .m-upload__dropzone {
+    border-color: var(--upload-disabled-border-color);
+    cursor: not-allowed;
+
+    &,
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: var(--upload-disabled-bg-color);
     }
+  }
+
+  .m-upload__input {
+    cursor: not-allowed;
+  }
+
+  .m-upload__content {
+    color: var(--upload-disabled-color);
   }
 }
 
@@ -39,23 +57,23 @@
 
 .m-upload__dropzone {
   align-items: center;
-  background-color: $upload-bg;
-  border: 2px dashed $upload-border;
-  color: $upload-color;
+  background-color: var(--upload-bg-color);
+  border: calc(var(--border-width) * 2) dashed var(--upload-border-color);
+  color: var(--upload-color);
   cursor: pointer;
   display: flex;
   justify-content: center;
-  min-height: $upload-height;
-  padding: $upload-padding;
+  min-height: calc(var(--spacer) * 5);
+  padding: var(--spacer-l) var(--spacer);
   position: relative;
   text-align: center;
-  transition: background $animation-normal;
+  transition: background var(--animation-normal);
   width: 100%;
 
   &:active,
   &:hover,
   &:focus {
-    background-color: $upload-bg-hover;
+    background-color: var(--upload-hover-bg-color);
   }
 }
 
@@ -70,58 +88,54 @@
   top: 0;
   width: 100%;
 
-  &:focus {
-    + .m-upload__content:before {
-      content: '';
-    }
+  &:focus + .m-upload__content:before {
+    content: '';
   }
 }
 
 .m-upload__content {
-  max-width: $spacer * 15;
+  max-width: calc(var(--spacer) * 15);
   width: 100%;
 
   &:before {
-    bottom: -2px;
-    box-shadow: 0 0 0 3px $input-border-focus;
+    @include focus;
+
+    bottom: rem(-3px);
     cursor: pointer;
-    left: -2px;
+    left: rem(-3px);
     position: absolute;
-    right: -2px;
-    top: -2px;
+    right: rem(-3px);
+    top: rem(-3px);
     z-index: layer('cellar');
   }
 }
 
-.m-upload__progress {
-  pointer-events: none;
-}
-
 .m-upload__description {
   display: block;
-  margin-top: $spacer-xs;
+  margin-top: var(--spacer-xs);
 }
 
 .m-upload__files {
-  @extend %a-list--reset;
-  margin-top: $spacer;
+  @extend %u-list-reset;
+
+  margin-top: var(--spacer);
 
   > li {
-    background-color: $upload-file-bg;
-    color: $upload-file-color;
+    background-color: var(--upload-file-bg-color);
+    color: var(--upload-file-color);
     line-height: $line-height-paragraph;
-    min-height: $spacer-md;
-    padding: $spacer / 3 $spacer-lg $spacer / 3 $spacer-lg;
+    min-height: var(--spacer-l);
+    padding: var(--spacer-xxs) var(--spacer-xl) var(--spacer-xxs) var(--spacer-xl);
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: $spacer-xs;
+      margin-bottom: var(--spacer-xs);
     }
 
     > .ai {
-      left: $spacer-sm;
+      left: var(--spacer-s);
       position: absolute;
-      top: $spacer / 4 * 3;
+      top: calc(var(--spacer) / 4 * 3);
       transform: translateY(-50%);
     }
   }
@@ -139,5 +153,5 @@
 }
 
 .m-upload__error {
-  color: $upload-file-color-danger;
+  color: var(--upload-file-danger-color);
 }

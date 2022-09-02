@@ -3,14 +3,13 @@
  * -------------------------------------------------------------------
  */
 
-
 /**
  * TEXT STYLE CLASSES
  * -------------------------------------------------------------------
  */
 
 .u-text-bold {
-  font-weight: $bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .u-text-italic {
@@ -20,7 +19,6 @@
 .u-text-underline {
   text-decoration: underline;
 }
-
 
 /**
  * TEXT ALIGNMENT CLASSES
@@ -43,7 +41,6 @@
   text-align: justify;
 }
 
-
 /**
  * TEXT TRANSFORMATION CLASSES
  * -------------------------------------------------------------------
@@ -61,40 +58,38 @@
   text-transform: capitalize;
 }
 
-
 /**
  * TEXT COLOR CLASSES
  * -------------------------------------------------------------------
  */
 
 .u-text-primary {
-  color: $brand-primary;
+  color: var(--theme1-400);
 }
 
 .u-text-secondary {
-  color: $brand-secondary;
+  color: var(--theme2-400);
 }
 
 .u-text-success {
-  color: $state-success;
+  color: var(--state-success);
 }
 
 .u-text-warning {
-  color: $state-warning;
+  color: var(--state-warning);
 }
 
 .u-text-danger {
-  color: $state-danger;
+  color: var(--state-danger);
 }
 
 .u-text-light {
-  color: $text-color-light;
+  color: var(--text-color-light);
 }
 
 .u-text-xlight {
-  color: $text-color-xlight;
+  color: var(--text-color-xlight);
 }
-
 
 /**
  * TEXT OVERFLOW CLASSES
@@ -110,7 +105,6 @@
 .u-text-truncate {
   @extend %u-text-truncate;
 }
-
 
 /**
  * TEXT ACCESSIBILITY CLASSES

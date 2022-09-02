@@ -1,83 +1,100 @@
+/**
+ * NAVIGATION MENU VARIABLES
+ * -------------------------------------------------------------------
+ * This component has shared variables with _organisms.header.scss. You can find them in _quarks.css-properties.scss.
+ */
+
+.o-menu {
+  --navigation-menu-border-color:      var(--border-color);
+  --navigation-menu-mobile-height:     var(--spacer-xxl);
+  --navigation-menu-pane-width:        20rem;
+  --navigation-menu-undocked-width:    15rem;
+  --navigation-menu-docked-width:      var(--shared-header-height);
+  --navigation-menu-submenu-inset:     var(--spacer-xs);
+  --navigation-menu-submenu-height:    calc(var(--navigation-menu-undocked-width) * 2);
+  --navigation-menu-animation-speed:   var(--animation-duration);
+}
+
+/**
+ * NAVIGATION MENU
+ * -------------------------------------------------------------------
+ */
+
 .o-menu {
   background: $white;
   width: 100%;
   z-index: layer('pane');
 
   @include at($screen-sm) {
-    border-right: 1px solid $border-color-light;
-    min-width: $navigation-menu-undocked-width;
+    border-right: var(--border-width) solid var(--navigation-menu-border-color);
+    min-width: var(--navigation-menu-undocked-width);
     overflow-x: hidden; // By default, don't show overflowing content
     overflow-y: auto;
     position: initial;
     top: 0;
-    transition: width min-width ease-in-out $navigation-menu-animation-speed;
-    width: $navigation-menu-undocked-width;
+    transition: width min-width var(--animation-easing) var(--navigation-menu-animation-speed);
+    width: var(--navigation-menu-undocked-width);
 
     a {
       border: none;
     }
 
-
     &.is-docked {
-      min-width: $navigation-menu-docked-width;
+      min-width: var(--navigation-menu-docked-width);
       overflow: visible; // Since when docked the submenu's will appear to the right, show the overflowing content
-      width: $navigation-menu-docked-width;
+      width: var(--navigation-menu-docked-width);
 
       .o-menu__tabs-wrapper {
         box-shadow: none;
       }
 
       .o-menu__tab {
-        width: calc(#{$navigation-menu-docked-width} - 1px); // 1 px make up for border
+        width: calc(var(--navigation-menu-docked-width) - var(--border-width)); // 1 px make up for border
 
-        .o-menu__tab-wrapper {
-          &:not(.is-active) {
-            overflow: hidden;
-          }
+        .o-menu__tab-wrapper:not(.is-active) {
+          overflow: hidden;
         }
       }
 
       .o-menu__submenu {
-        left: $navigation-menu-docked-width;
+        left: var(--navigation-menu-docked-width);
         position: absolute;
-        top: -1px; // Make up for border
+        top: calc(var(--border-width) * -1); // Make up for border
 
         .o-menu__submenu {
           left: 100%;
         }
 
         .o-menu__submenu-content-wrapper {
-          box-shadow: $box-shadow;
+          box-shadow: var(--box-shadow);
           max-height: inherit;
-          transition: width ease-in-out;
+          transition: width var(--animation-easing);
           width: 0;
 
-          .m-nav-list {
-            border: 1px solid $border-color-light;
+          .o-menu__submenu-list {
+            border: var(--border-width) solid var(--navigation-menu-border-color);
             border-bottom: none;
             border-left: none;
 
-
-            .m-nav-list {
-              border-left: 1px solid $border-color-light;
+            .o-menu__submenu-list {
+              border-left: var(--border-width) solid var(--navigation-menu-border-color);
             }
 
             li {
-
               .o-menu__icon {
                 transform: rotate(-90deg);
               }
 
               a {
-                border-bottom: 1px solid $border-color-light;
-                padding-left: $spacer-xs;
+                border-bottom: var(--border-width) solid var(--navigation-menu-border-color);
+                padding-left: var(--spacer-xs);
               }
             }
           }
         }
 
         .o-menu__submenu-content-wrapper {
-          width: $navigation-menu-undocked-width;
+          width: var(--navigation-menu-undocked-width);
         }
       }
     }
@@ -85,14 +102,14 @@
 }
 
 .o-menu .o-menu__link,
-.o-menu .m-nav-list a {
+.o-menu .o-menu__submenu-list a {
   white-space: nowrap;
 
   &,
   &:active,
   &:link,
   &:hover {
-    color: $text-color-light;
+    color: var(--text-color-light);
     text-decoration: none;
   }
 }
@@ -101,7 +118,7 @@
   align-content: space-between;
   align-items: center;
   background: $white;
-  border-top: 1px solid $border-color-light;
+  border-top: var(--border-width) solid var(--navigation-menu-border-color);
   display: flex;
   position: relative;
   width: 100%;
@@ -136,7 +153,7 @@
 }
 
 .o-menu .o-menu__tab {
-  border-right: 1px solid $border-color-light;
+  border-right: var(--border-width) solid var(--navigation-menu-border-color);
   cursor: pointer;
   flex-basis: 33%;
   flex-grow: 1;
@@ -157,15 +174,15 @@
       transform: rotate(180deg);
     }
 
-    & > .o-menu__tab-wrapper> .o-menu__submenu > .o-menu__submenu-content-wrapper:first-of-type {
+    & > .o-menu__tab-wrapper > .o-menu__submenu > .o-menu__submenu-content-wrapper:first-of-type {
       display: block;
-      max-height: $navigation-menu-submenu-height;
+      max-height: var(--navigation-menu-submenu-height);
       overflow: visible;
     }
   }
 
   @include at($screen-sm) {
-    border-bottom: 1px solid $border-color-light;
+    border-bottom: var(--border-width) solid var(--navigation-menu-border-color);
     border-right: none;
     width: 100%;
   }
@@ -173,32 +190,29 @@
   & > .o-menu__tab-wrapper {
     overflow: hidden;
 
-    &:focus-within {
-      @include a-button-outline;
-    }
-
     & > .o-menu__tab-header {
-      @include a-button-outline($btn-primary-outline-color, $btn-primary-outline-border, true);
       align-items: center;
-      color: $text-color-light;
+      color: var(--text-color-light);
       display: flex;
       flex-direction: column;
       font-weight: bold;
-      height: $navigation-menu-mobile-height;
+      height: var(--navigation-menu-mobile-height);
       justify-content: center;
       text-decoration: none;
-      transition-duration: $animation-duration;
+      transition-duration: var(--animation-duration);
       transition-property: background, color;
-      transition-timing-function: $animation-easing;
+      transition-timing-function: var(--animation-easing);
 
       // Support for a margin for iPhone X
       @supports (margin-bottom: env(safe-area-inset-bottom)) {
         margin-bottom: env(safe-area-inset-bottom);
       }
 
+      &:hover,
+      &:active,
       &:hover {
-        background-color: $background-color-light;
-        color: $text-color-light;
+        background-color: var(--bg-color-light);
+        color: var(--text-color-light);
       }
 
       .o-menu__tab-title {
@@ -210,7 +224,7 @@
 
       .o-menu__icon {
         font-size: rem($icon-size-base);
-        margin-bottom: $spacer-xs / 2;
+        margin-bottom: var(--spacer-xxs);
 
         &.o-menu__tab-icon {
           width: rem($icon-size-lg);
@@ -219,7 +233,7 @@
         &.o-menu__submenu-icon {
           display: none;
           font-size: rem($font-size-base);
-          transition: transform $navigation-menu-animation-speed ease;
+          transition: transform var(--navigation-menu-animation-speed) ease;
 
           @include at($screen-sm) {
             display: inline;
@@ -234,13 +248,13 @@
       @include at($screen-sm) {
         align-items: center;
         flex-direction: row;
-        height: $header-height;
+        height: var(--shared-header-height);
         justify-content: space-between;
         padding: .625rem;
         position: relative;
 
         .o-menu__link {
-          margin-left: $spacer-sm;
+          margin-left: var(--spacer-s);
         }
 
         .o-menu__tab-title {
@@ -265,9 +279,9 @@
     display: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height ease-in-out $navigation-menu-animation-speed;
+    transition: max-height var(--animation-easing) var(--navigation-menu-animation-speed);
 
-    .m-nav-list {
+    .o-menu__submenu-list {
       border: none;
 
       li {
@@ -276,18 +290,16 @@
 
       li > a {
         border: none;
-        color: $text-color-light;
+        color: var(--text-color-light);
         display: flex;
         justify-content: space-between;
         overflow: hidden;
-        padding-bottom: .875rem;
-        padding-top: .875rem;
         white-space: nowrap;
 
         @include at($screen-sm) {
           // Padding is parent padding + icon size + header padding to the left to align the link to the header text
-          padding-left: calc(#{$navigation-menu-docked-width} + #{$navigation-menu-submenu-inset});
-          padding-right: $spacer-xs / 2;
+          padding-left: calc(var(--navigation-menu-docked-width) + var(--navigation-menu-submenu-inset));
+          padding-right: var(--spacer-3xs);
 
           a {
             border: none;
@@ -302,15 +314,15 @@
 
     @include at($screen-sm) {
       li > a > .o-menu__icon {
-        margin-right: $spacer-xs /2;
+        margin-right: var(--spacer-3xs);
         transform: rotate(0deg);
-        transition: transform $navigation-menu-animation-speed ease-in-out;
+        transition: transform var(--navigation-menu-animation-speed) var(--animation-easing);
       }
 
       li.is-active {
         & > .o-menu__submenu > .o-menu__submenu-content-wrapper {
           display: block;
-          max-height: $navigation-menu-submenu-height;
+          max-height: var(--navigation-menu-submenu-height);
           overflow: visible;
         }
 
@@ -322,12 +334,55 @@
   }
 
   // First sub-layer of menus will get larger padding
-  & .m-nav-list li .o-menu__submenu li > a {
-    padding-left: calc(#{$navigation-menu-docked-width} + #{$navigation-menu-submenu-inset * 2});
+  & .o-menu__submenu-list li .o-menu__submenu li > a {
+    padding-left: calc(var(--navigation-menu-docked-width) + var(--navigation-menu-submenu-inset) * 2);
   }
 
   @include at($screen-sm) {
     display: block;
+  }
+}
+
+.o-menu__submenu-list {
+  @extend %u-list-reset;
+
+  border-top: var(--border-width) solid var(--navigation-menu-border-color);
+
+  > li {
+    font-weight: var(--font-weight-bold);
+    line-height: $line-height-paragraph;
+    text-align: center;
+
+    > a,
+    > button {
+      align-items: center;
+      background: $white;
+      border: none;
+      border-bottom: var(--border-width) solid var(--navigation-menu-border-color);
+      color: inherit;
+      display: flex;
+      flex: 1 1 auto;
+      min-height: calc(var(--spacer-xl) + var(--border-width));
+      text-decoration: none;
+      transition-duration: var(--animation-duration);
+      transition-property: background, color;
+      transition-timing-function: var(--animation-easing);
+
+      &:hover,
+      &:active {
+        background-color: $gray-100;
+      }
+
+      > .ai {
+        display: inline-block;
+        margin-right: var(--spacer-xs);
+      }
+    }
+
+    > button {
+      cursor: pointer;
+      width: 100%;
+    }
   }
 }
 
@@ -336,7 +391,7 @@
 
   @include at($screen-sm) {
     display: block;
-    padding: 1rem $spacer-xs;
+    padding: 1rem var(--spacer-xs);
     text-align: right;
 
     > a {
@@ -347,29 +402,29 @@
 
 .o-menu > .o-menu__navigation-pane {
   background: $white;
-  max-height: calc(100vh - #{$navigation-menu-mobile-height});
+  max-height: calc(100vh - var(--navigation-menu-mobile-height));
   position: absolute;
   top: 0;
-  transition: transform $navigation-menu-animation-speed ease;
+  transition: transform var(--navigation-menu-animation-speed) ease;
   width: 100%;
   z-index: layer('header') - 1;
 
   .o-navigation-pane__overlay {
-    background: $overlay-color;
+    background: var(--overlay-color);
     bottom: 100%;
     height: 0;
     opacity: 0;
     position: absolute;
-    transition: opacity $navigation-menu-animation-speed*2 ease;
+    transition: opacity calc(#{var(--navigation-menu-animation-speed)} * 2) ease;
     width: 100vh;
   }
 
   .o-navigation-pane__wrapper {
     background: $white;
-    box-shadow: 0 -.75rem 0 rgba($rich-black, .1);
-    margin-bottom: -1px;
-    max-height: calc(100vh - #{$header-height} - #{$navigation-menu-mobile-height});
-    min-height: $spacer; // make up for the box shadow to be visible, even when hidden
+    box-shadow: 0 -.75rem 0 var(--box-shadow-color);
+    margin-bottom: calc(var(--border-width) * -1);
+    max-height: calc(100vh - var(--shared-header-height) - var(--navigation-menu-mobile-height));
+    min-height: var(--spacer); // make up for the box shadow to be visible, even when hidden
     overflow-y: scroll;
     position: relative;
   }
@@ -377,7 +432,7 @@
   .o-menu__main-submenu,
   .o-menu__slide-in-submenu {
     .o-menu__back-link {
-      color: $text-color-light;
+      color: var(--text-color-light);
       font-weight: normal;
     }
 
@@ -395,7 +450,7 @@
     overflow: hidden;
     position: absolute;
     transform: translateX(100%);
-    transition: transform $navigation-menu-animation-speed ease;
+    transition: transform var(--navigation-menu-animation-speed) ease;
     width: 100%;
 
     &.is-visible {

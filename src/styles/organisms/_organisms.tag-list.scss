@@ -4,16 +4,22 @@
  */
 
 .o-tag-list {
-  @extend %a-list--reset;
+  @extend %u-list-reset;
+
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -$spacer-xs;
+  margin-bottom: calc(var(--spacer-xxs) * -1);
+}
 
-  .m-tag {
-    margin-bottom: $spacer-xs;
+/**
+ * TAG LIST ELEMENTS
+ * -------------------------------------------------------------------
+ */
 
-    &:not(:last-child) {
-      margin-right: $spacer-xs;
-    }
+.o-tag-list__item {
+  margin-bottom: var(--spacer-xxs);
+
+  &:not(:last-child) {
+    margin-right: var(--spacer-xxs);
   }
 }

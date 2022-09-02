@@ -1,13 +1,25 @@
 /**
+ * HEADER VARIABLES
+ * -------------------------------------------------------------------
+ * This component has shared variables with _organisms.navigation-menu.scss. You can find them in _quarks.css-properties.scss.
+ */
+
+.o-header {
+  --header-height:     var(--shared-header-height);
+  --header-bg-color:   #{$white};
+  --header-border:     var(--border-color);
+}
+
+/**
  * HEADER
  * -------------------------------------------------------------------
  */
 
 .o-header {
-  background-color: $header-bg;
-  border-bottom: 1px solid $header-border;
+  background-color: var(--header-bg-color);
+  border-bottom: var(--border-width) solid var(--header-border);
   box-sizing: content-box;
-  height: $header-height;
+  height: var(--header-height);
   position: relative;
 
   *,
@@ -16,7 +28,6 @@
     box-sizing: border-box;
   }
 }
-
 
 /**
  * HEADER LAYOUT
@@ -40,23 +51,20 @@
   justify-content: flex-end;
 }
 
-
 /**
  * HEADER ELEMENTS
  * -------------------------------------------------------------------
  */
 
 .o-header__button {
-  @include a-button($header-btn-color, $header-btn-bg);
-  border-left: 1px solid $header-border;
+  border-left: var(--border-width) solid var(--header-border);
 }
 
 .o-header__button-skip {
-  border-left: none;
   cursor: default;
   opacity: 0;
   position: absolute;
-  transform: translateY(-$header-height);
+  transform: translateY(calc(var(--header-height) * -1));
   z-index: layer('header');
 
   &:focus {
@@ -67,11 +75,11 @@
 }
 
 .o-header__logo {
-  margin-top: 1px;
+  margin-top: var(--border-width);
   position: absolute;
-  top: $header-height;
+  top: var(--header-height);
 
   img {
-    height: $spacer * 3;
+    height: calc(var(--spacer) * 3);
   }
 }

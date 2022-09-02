@@ -4,136 +4,148 @@
  * Helper classes for adding or removing space between elements
  */
 
-
 /**
  * MARGIN
  * -------------------------------------------------------------------
  */
 
-.u-margin-xx {
-  margin: $spacer-xx !important;
+.u-margin-3xl {
+  margin: var(--spacer-3xl) !important;
 }
 
-.u-margin-lg {
-  margin: $spacer-lg !important;
+.u-margin-xl {
+  margin: var(--spacer-xl) !important;
 }
 
-.u-margin-md {
-  margin: $spacer-md !important;
+.u-margin-l {
+  margin: var(--spacer-l) !important;
 }
 
 .u-margin {
-  margin: $spacer !important;
+  margin: var(--spacer) !important;
 }
 
-.u-margin-sm {
-  margin: $spacer-sm !important;
+.u-margin-s {
+  margin: var(--spacer-s) !important;
 }
 
 .u-margin-xs {
-  margin: $spacer-xs !important;
+  margin: var(--spacer-xs) !important;
+}
+
+.u-margin-xxs {
+  margin: var(--spacer-xxs) !important;
 }
 
 .u-no-margin {
   margin: 0 !important;
 }
 
-
 /**
  * MARGIN TOP
  * -------------------------------------------------------------------
  */
 
-.u-margin-top-xx {
-  margin-top: $spacer-xx !important;
+.u-margin-top-3xl {
+  margin-top: var(--spacer-3xl) !important;
 }
 
-.u-margin-top-lg {
-  margin-top: $spacer-lg !important;
+.u-margin-top-xl {
+  margin-top: var(--spacer-xl) !important;
 }
 
-.u-margin-top-md {
-  margin-top: $spacer-md !important;
+.u-margin-top-l {
+  margin-top: var(--spacer-l) !important;
 }
 
 .u-margin-top {
-  margin-top: $spacer !important;
+  margin-top: var(--spacer) !important;
 }
 
-.u-margin-top-sm {
-  margin-top: $spacer-sm !important;
+.u-margin-top-s {
+  margin-top: var(--spacer-s) !important;
 }
 
 .u-margin-top-xs {
-  margin-top: $spacer-xs !important;
+  margin-top: var(--spacer-xs) !important;
+}
+
+.u-margin-top-xxs {
+  margin-top: var(--spacer-xxs) !important;
 }
 
 .u-no-margin-top {
   margin-top: 0 !important;
 }
 
-
 /**
  * MARGIN RIGHT
  * -------------------------------------------------------------------
  */
 
-.u-margin-right-xx {
-  margin-right: $spacer-xx !important;
+.u-margin-right-3xl {
+  margin-right: var(--spacer-3xl) !important;
 }
 
-.u-margin-right-lg {
-  margin-right: $spacer-lg !important;
+.u-margin-right-xl {
+  margin-right: var(--spacer-xl) !important;
 }
 
-.u-margin-right-md {
-  margin-right: $spacer-md !important;
+.u-margin-right-l {
+  margin-right: var(--spacer-l) !important;
 }
 
 .u-margin-right {
-  margin-right: $spacer !important;
+  margin-right: var(--spacer) !important;
 }
 
-.u-margin-right-sm {
-  margin-right: $spacer-sm !important;
+.u-margin-right-s {
+  margin-right: var(--spacer-s) !important;
 }
 
 .u-margin-right-xs {
-  margin-right: $spacer-xs !important;
+  margin-right: var(--spacer-xs) !important;
+}
+
+.u-margin-right-xxs {
+  margin-right: var(--spacer-xxs) !important;
 }
 
 .u-no-margin-right {
   margin-right: 0 !important;
 }
 
-
 /**
  * MARGIN BOTTOM
  * -------------------------------------------------------------------
  */
 
-.u-margin-bottom-xx {
-  margin-bottom: $spacer-xx !important;
+.u-margin-bottom-3xl {
+  margin-bottom: var(--spacer-3xl) !important;
 }
 
-.u-margin-bottom-lg {
-  margin-bottom: $spacer-lg !important;
+.u-margin-bottom-xl {
+  margin-bottom: var(--spacer-xl) !important;
 }
 
-.u-margin-bottom-md {
-  margin-bottom: $spacer-md !important;
+.u-margin-bottom-l {
+  margin-bottom: var(--spacer-l) !important;
 }
 
 .u-margin-bottom {
-  margin-bottom: $spacer !important;
+  margin-bottom: var(--spacer) !important;
 }
 
-.u-margin-bottom-sm {
-  margin-bottom: $spacer-sm !important;
+.u-margin-bottom-s {
+  margin-bottom: var(--spacer-s) !important;
 }
 
 .u-margin-bottom-xs {
-  margin-bottom: $spacer-xs !important;
+  margin-bottom: var(--spacer-xs) !important;
+}
+
+.u-margin-bottom-xxs {
+  margin-bottom: var(--spacer-xxs) !important;
 }
 
 .u-no-margin-bottom {
@@ -145,28 +157,32 @@
  * -------------------------------------------------------------------
  */
 
-.u-margin-left-xx {
-  margin-left: $spacer-xx !important;
+.u-margin-left-3xl {
+  margin-left: var(--spacer-3xl) !important;
 }
 
-.u-margin-left-lg {
-  margin-left: $spacer-lg !important;
+.u-margin-left-xl {
+  margin-left: var(--spacer-xl) !important;
 }
 
-.u-margin-left-md {
-  margin-left: $spacer-md !important;
+.u-margin-left-l {
+  margin-left: var(--spacer-l) !important;
 }
 
 .u-margin-left {
-  margin-left: $spacer !important;
+  margin-left: var(--spacer) !important;
 }
 
-.u-margin-left-sm {
-  margin-left: $spacer-sm !important;
+.u-margin-left-s {
+  margin-left: var(--spacer-s) !important;
 }
 
 .u-margin-left-xs {
-  margin-left: $spacer-xs !important;
+  margin-left: var(--spacer-xs) !important;
+}
+
+.u-margin-left-xxs {
+  margin-left: var(--spacer-xxs) !important;
 }
 
 .u-no-margin-left {

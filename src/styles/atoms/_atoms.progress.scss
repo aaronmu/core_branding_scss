@@ -1,0 +1,52 @@
+/**
+ * PROGRESS VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-progress {
+  --progress-height:          var(--spacer-3xs);
+  --progress-label-size:      .875rem;
+  --progress-label-spacing:   var(--spacer-xxs);
+  --progress-bg-color:        var(--theme1-050);
+  --progress-bar-bg-color:    var(--theme1-400);
+}
+
+/**
+ * PROGRESS
+ * -------------------------------------------------------------------
+ */
+
+/**
+ * PROGRESS ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.a-progress__label {
+  display: block;
+  font-size: var(--progress-label-size);
+  margin-bottom: var(--spacer-xxs);
+}
+
+.a-progress__inner {
+  background-color: var(--progress-bg-color);
+  display: flex;
+  height: var(--progress-height);
+  position: relative;
+  width: 100%;
+}
+
+.a-progress__bar {
+  background-color: var(--progress-bar-bg-color);
+  height: 100%;
+}
+
+/**
+ * PROGRESS MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-progress.a-progress--l {
+  --progress-height: 1.25rem;
+  --progress-label-size: 1rem;
+  --progress-label-spacing: var(--spacer-xs);
+}

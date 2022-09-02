@@ -4,9 +4,8 @@
  */
 
 .a-form .a-input:not(:last-child) {
-  margin-bottom: $spacer;
+  margin-bottom: var(--spacer);
 }
-
 
 /**
  * FIELDSET
@@ -15,21 +14,21 @@
 
 fieldset {
   border: none;
-  border-bottom: 1px solid $border-color-light;
-  border-top: 1px solid $border-color-light;
+  border-bottom: var(--border-width) solid var(--border-color);
+  border-top: var(--border-width) solid var(--border-color);
   margin: 0;
   min-width: 0;
-  padding: $fieldset-padding;
+  padding: var(--spacer-xl) 0;
   position: relative;
 
   + fieldset {
-    margin-top: -1px;
+    margin-top: calc(var(--border-width) * -1);
   }
 }
 
 legend {
-  color: $legend-color;
-  font-size: $legend-size;
-  font-weight: $bold;
-  padding: $legend-padding;
+  color: #{$gray-400};
+  font-size: #{rem($font-size-lg)};
+  font-weight: var(--font-weight-bold);
+  padding: 0 var(--spacer-xxs) 0 0;
 }

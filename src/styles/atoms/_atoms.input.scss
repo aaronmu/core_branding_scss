@@ -4,6 +4,39 @@
  * Input fields are normalized in _base.normalize.scss
  */
 
+/**
+ * INPUTS VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-input {
+  --input-color:                   var(--text-color);
+  --input-bg-color:                #{$white};
+  --input-border-color:            var(--border-color);
+  --input-placeholder-color:       #{$gray-400};
+
+  --input-disabled-color:          var(--state-disabled);
+  --input-disabled-bg-color:       #{$gray-100};
+  --input-disabled-border-color:   #{$gray-200};
+
+  --input-readonly-color:          var(--text-color);
+  --input-readonly-bg-color:       #{$white};
+  --input-readonly-border-color:   var(--border-color);
+
+  --input-icon-color:              #{$gray-400};
+  --input-icon-hover-color:        #{$gray-600};
+  --input-icon-size:               1.25rem;
+
+  --input-danger-border-color:     var(--state-danger);
+
+  --input-height:                  var(--spacer-xl);
+  --input-padding-vertical:        0;
+  --input-padding-horizontal:      var(--spacer-s);
+
+  --select-padding-vertical:       var(--spacer-xs);
+
+  --textarea-height:               12rem;
+}
 
 /**
  * INPUT FONT-FAMILY
@@ -20,66 +53,67 @@ textarea {
   margin: 0;
 }
 
-
-
-/**
- * INPUT PLACEHOLDER
- * -------------------------------------------------------------------
- */
-
-%a-input {
-  position: relative;
-
-  small {
-    display: block;
-    margin: $spacer-sm / 2 0;
-    text-align: left;
-  }
-
-  input,
-  select,
-  textarea {
-    border-radius: 0;
-    line-height: normal;
-    resize: vertical;
-    transition: border-color $animation-normal;
-    width: 100%;
-  }
-
-  input {
-    min-height: $input-height;
-    padding: $input-padding;
-  }
-
-  select {
-    min-height: $select-height;
-    padding: $select-padding;
-  }
-
-  textarea {
-    min-height: $textarea-height;
-    padding: $textarea-padding;
-  }
-}
-
-.a-input {
-  @extend %a-input;
-}
-
-
 /**
  * INPUT
  * -------------------------------------------------------------------
  */
 
 .a-input {
-  @include a-input;
+  position: relative;
+
+  input,
+  select,
+  textarea {
+    @include input-placeholder {
+      color: var(--input-placeholder-color);
+    }
+
+    background-color: var(--input-bg-color);
+    border: var(--border-width) solid var(--input-border-color);
+    color: var(--input-color);
+    border-radius: var(--border-radius);
+    line-height: normal;
+    resize: vertical;
+    transition: border-color var(--animation-normal);
+    width: 100%;
+
+    &:disabled {
+      --input-color: var(--input-disabled-color);
+      --input-bg-color: var(--input-disabled-bg-color);
+      --input-border-color: var(--input-disabled-border-color);
+
+      cursor: not-allowed;
+    }
+
+    &[readonly] {
+      --input-color: var(--input-readonly-color);
+      --input-bg-color: var(--input-readonly-bg-color);
+      --input-border-color: var(--input-readonly-border-color);
+    }
+  }
+
+  input,
+  select {
+    min-height: var(--input-height);
+  }
+
+  input {
+    padding: var(--input-padding-vertical) var(--input-padding-horizontal);
+  }
+
+  select {
+    padding: var(--select-padding-vertical) var(--input-padding-horizontal);
+  }
+
+  textarea {
+    min-height: var(--textarea-height);
+    padding: var(--input-padding-horizontal);
+  }
 
   &.w-textarea-padding {
-    padding: $textarea-padding;
+    padding: var(--input-padding-horizontal);
   }
 }
-
 
 /**
  * INPUT WRAPPER
@@ -97,16 +131,46 @@ textarea {
 
 .a-input__label {
   display: inline-block;
-  margin-bottom: $spacer-sm / 2;
+  margin-bottom: var(--spacer-xxs);
   text-align: left;
 
   + .a-switch,
   + .a-input__checkbox,
   + .a-input__radio {
-    margin-top: $spacer-sm / 2;
+    margin-top: var(--spacer-xxs);
+  }
+
+  + .a-input__description {
+    margin-top: 0;
   }
 }
 
+/**
+ * INPUT INFO
+ * -------------------------------------------------------------------
+ */
+
+.a-input__description {
+  display: block;
+  margin: var(--spacer-xxs) 0;
+
+  &.is-error,
+  &.is-success {
+    display: flex;
+
+    .ai {
+      margin-right: var(--spacer-xxs);
+    }
+  }
+
+  &.is-success {
+    color: var(--state-success);
+  }
+
+  &.is-error {
+    color: var(--state-danger-light);
+  }
+}
 
 /**
  * INPUT LABEL MODIFIERS
@@ -114,102 +178,18 @@ textarea {
  */
 
 .a-input__label--inline {
-  margin-right: $spacer-xs;
-  margin-top: calc(#{$line-height-base * $font-size-base} - 1px);
+  margin-right: var(--spacer-xs);
+  margin-top: calc(#{$line-height-base * $font-size-base} - #{var(--border-width)});
 }
-
 
 /**
  * INPUT STATES
  * -------------------------------------------------------------------
  */
 
-.a-input {
-
-  &.has-success {
-    @include a-input($input-color, $input-bg, $input-success-border);
-
-    .a-input__wrapper:before {
-      background: $state-success;
-      mask: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 15 15%22><path fill=%22none%22 stroke=%22%23ffffff%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22 stroke-width=%226.25%%22 d=%22M14.5.5l-10 14-4-4%22/></svg>') no-repeat center center;
-    }
-  }
-
-  &.has-warning {
-    @include a-input($input-color, $input-bg, $input-warning-border);
-
-    .a-input__wrapper:before {
-      background: $text-color;
-      mask: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><defs><style>.a{fill:none;stroke:%23ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:6.25%}</style></defs><path class=%22a%22 d=%22M23 11.811A11.162 11.162 0 0112 23 10.837 10.837 0 011 12.192 11.162 11.162 0 0112 1a10.838 10.838 0 0111 10.811zM12 14.005v-7%22/><path class=%22a%22 d=%22M11.991 16.005a.245.245 0 00-.241.255.254.254 0 00.253.245.246.246 0 00.241-.255.253.253 0 00-.244-.245h-.005%22/></svg>') no-repeat center center;
-    }
-  }
-
-  &.has-error {
-    @include a-input($input-color, $input-bg, $input-danger-border);
-
-    .a-input__wrapper:before {
-      background: $state-danger;
-      mask: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><defs><style>.a{fill:none;stroke:%23ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:6.25%}</style></defs><path class=%22a%22 d=%22M22.553 22.581a.569.569 0 01-.553.894H2a.569.569 0 01-.553-.894L11.553 2.37c.246-.492.648-.492.894 0zM12 16.979v-7%22/><path class=%22a%22 d=%22M11.991 18.979a.246.246 0 00-.241.255.255.255 0 00.254.245h.005a.246.246 0 00.241-.255.255.255 0 00-.25-.245h-.005%22/></svg>') no-repeat center center;
-    }
-  }
-
-  &.has-success,
-  &.has-warning,
-  &.has-error {
-
-    .a-input__wrapper:before {
-      content: '';
-      height: $spacer;
-      mask-size: contain;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: $spacer-lg;
-    }
-
-    &.has-icon-right {
-      .a-input__wrapper:before {
-        right: $spacer-md;
-      }
-
-      .a-input__wrapper {
-        input {
-          padding-right: $spacer-lg + $spacer-md;
-        }
-      }
-    }
-
-    input {
-      padding-right: $spacer-lg;
-    }
-  }
-
-  &.is-required .a-input__label:after {
-    color: $input-required;
-    content: ' *';
-  }
+.a-input.has-error {
+  --input-border-color: var(--input-danger-border-color);
 }
-
-
-/**
- * INPUT WITH ICON LEFT OR RIGHT
- * -------------------------------------------------------------------
- */
-
-.a-input__checkbox,
-.a-input__radio {
-  input {
-    min-height: 0;
-    opacity: 0;
-    width: auto;
-
-    &:focus + label:after {
-      @include focus;
-    }
-  }
-}
-
 
 /**
  * INPUT WITH ICON LEFT OR RIGHT
@@ -217,18 +197,16 @@ textarea {
  */
 
 .a-input {
-
   &.has-icon-left .a-input__wrapper > .ai,
   &.has-icon-right .a-input__wrapper > .ai {
-    color: $input-icon;
-    font-size: rem($icon-size-base);
+    color: var(--input-icon-color);
+    font-size: var(--input-icon-size);
     pointer-events: none;
     position: absolute;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
     user-select: none;
-    width: $spacer-lg;
 
     &.is-clickable {
       align-items: center;
@@ -236,10 +214,10 @@ textarea {
       display: flex;
       height: 100%;
       pointer-events: auto;
-      transition: color $animation-normal;
+      transition: color var(--animation-normal);
 
       &:hover {
-        color: $input-icon-hover;
+        color: var(--input-icon-hover-color);
       }
     }
   }
@@ -247,26 +225,83 @@ textarea {
   &.has-icon-left .a-input__wrapper {
     input,
     select {
-      padding-left: $spacer-lg;
+      padding-left: calc(var(--input-padding-horizontal) * 2 + var(--input-icon-size));
     }
 
     > .ai {
-      left: 0;
+      left: var(--input-padding-horizontal);
     }
   }
 
   &.has-icon-right .a-input__wrapper {
     input,
     select {
-      padding-right: $spacer-lg;
+      padding-right: calc(var(--input-padding-horizontal) * 2 + var(--input-icon-size));
     }
 
     > .ai {
-      right: 0;
+      right: var(--input-padding-horizontal);
     }
   }
 }
 
+/**
+ * INPUT WITH ADDON LEFT OR RIGHT
+ * -------------------------------------------------------------------
+ */
+
+.a-input {
+  &.has-addon-left,
+  &.has-addon-right {
+    input,
+    select {
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .a-input__wrapper {
+      display: flex;
+    }
+
+    &:focus-within .a-input__wrapper {
+      outline: 5px auto Highlight;
+      outline: 2px auto -webkit-focus-ring-color; // Decrease focus outline on Safari to make it connect to input field border
+    }
+  }
+
+  &.has-addon-left {
+    input,
+    select {
+      border-left: none;
+    }
+
+    .a-input__addon {
+      border-left: var(--border-width) solid var(--input-border-color);
+      padding-left: var(--input-padding-horizontal);
+    }
+  }
+
+  &.has-addon-right {
+    input {
+      border-right: none;
+    }
+
+    .a-input__addon {
+      border-right: var(--border-width) solid var(--input-border-color);
+      padding-right: var(--input-padding-horizontal);
+    }
+  }
+}
+
+.a-input__addon {
+  border-bottom: var(--border-width) solid var(--input-border-color);
+  border-top: var(--border-width) solid var(--input-border-color);
+  color: var(--input-icon-color);
+  line-height: var(--input-height);
+  text-align: center;
+  white-space: nowrap;
+}
 
 /**
  * INLINE INPUT
@@ -287,47 +322,30 @@ textarea {
   display: inline-block;
 }
 
-
 /**
  * INPUT SIZES
  * -------------------------------------------------------------------
  */
 
 .a-input {
-  &.a-input--small {
-    input {
-      min-height: $input-height-sm;
-      padding: $input-padding-sm;
-    }
+  &.a-input--s {
+    --input-height: var(--spacer-l);
+    --input-icon-size: 1rem;
+    --input-padding-horizontal: var(--spacer-xs);
+    --select-padding-vertical: 0;
+    --textarea-height: 8rem;
 
     select {
-      @-moz-document url-prefix() { // sass-lint:disable-line no-vendor-prefixes
-        line-height: 2.1; // Fixes Firefox line-height bug
+      @-moz-document url-prefix() {
+        line-height: 2.1; // Fixes Firefox line-height bug (https://stackoverflow.com/a/5440037)
       }
-      min-height: $select-height-sm;
-      padding: $select-padding-sm;
-    }
-
-    textarea {
-      min-height: $textarea-height-sm;
-      padding: $textarea-padding-sm;
     }
   }
 
-  &.a-input--large {
-    input {
-      min-height: $input-height-lg;
-      padding: $input-padding-lg;
-    }
-
-    select {
-      min-height: $select-height-lg;
-      padding: $select-padding-lg;
-    }
-
-    textarea {
-      min-height: $textarea-height-lg;
-      padding: $textarea-padding-lg;
-    }
+  &.a-input--l {
+    --input-height: var(--spacer-xxl);
+    --input-padding-horizontal: var(--spacer);
+    --select-padding-vertical: 1.125rem;
+    --textarea-height: 16rem;
   }
 }

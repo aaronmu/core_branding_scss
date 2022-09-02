@@ -1,10 +1,38 @@
 /**
+ * ALERT VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.m-alert {
+  --alert-color:                  var(--theme1-400);
+  --alert-bg-color:               #{$white};
+  --alert-border-color:           var(--alert-color);
+
+  --alert-success-color:          var(--success-600);
+  --alert-success-bg-color:       var(--alert-bg-color);
+  --alert-success-border-color:   var(--alert-success-color);
+
+  --alert-warning-color:          #{$burnt-orange-400};
+  --alert-warning-bg-color:       var(--alert-bg-color);
+  --alert-warning-border-color:   var(--alert-warning-color);
+
+  --alert-danger-color:           var(--danger-500);
+  --alert-danger-bg-color:        var(--alert-bg-color);
+  --alert-danger-border-color:    var(--alert-danger-color);
+
+  --alert-padding:                var(--spacer);
+}
+
+/**
  * ALERTS
  * -------------------------------------------------------------------
  */
 
 .m-alert {
-  padding: $alert-padding;
+  background-color: var(--alert-bg-color);
+  border: var(--border-width) solid var(--alert-border-color);
+  color: var(--alert-color);
+  padding: var(--alert-padding);
   position: relative;
 
   .m-alert__close {
@@ -13,51 +41,78 @@
     top: 0;
 
     + * {
-      margin-right: $spacer-md;
+      margin-right: var(--spacer-l);
     }
   }
 }
 
+/**
+ * ALERTS ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.m-alert__icon {
+  position: absolute;
+  left: var(--alert-padding);
+  top: var(--alert-padding);
+
+  .ai {
+    font-size: 1.5rem;
+  }
+}
+
 .m-alert__actions {
-  margin-bottom: -$spacer-xs;
+  margin-bottom: calc(var(--spacer-xs) * -1);
 
   @include at($screen-xs) {
     display: flex;
-    justify-content: flex-end;
     margin-bottom: 0;
   }
 
-  [class*='a-button'] {
-    margin-bottom: $spacer-xs;
+  .a-button {
+    margin-bottom: var(--spacer-xs);
 
     @include at($screen-xs) {
       margin-bottom: 0;
 
       &:not(:first-child) {
-        margin-left: $spacer-xs;
+        margin-left: var(--spacer-xs);
       }
     }
   }
 }
 
-
 /**
- * ALERTS COLORS
+ * ALERTS MODIFIERS
  * -------------------------------------------------------------------
  */
 
 .m-alert {
-  @include m-alert;
-
   &.m-alert--success {
-    @include m-alert($alert-success);
+    --alert-color: var(--alert-success-color);
+    --alert-bg-color: var(--alert-success-bg-color);
+    --alert-border-color: var(--alert-success-border-color);
   }
 
   &.m-alert--warning {
-    @include m-alert($alert-warning);
+    --alert-color: var(--alert-warning-color);
+    --alert-bg-color: var(--alert-warning-bg-color);
+    --alert-border-color: var(--alert-warning-border-color);
   }
 
   &.m-alert--danger {
-    @include m-alert($alert-danger);
+    --alert-color: var(--alert-danger-color);
+    --alert-bg-color: var(--alert-danger-bg-color);
+    --alert-border-color: var(--alert-danger-border-color);
   }
+
+  &.m-alert--success,
+  &.m-alert--warning,
+  &.m-alert--danger {
+    padding-left: calc(var(--alert-padding) + var(--spacer-l));
+  }
+}
+
+.m-alert.m-alert--inline {
+  --alert-padding: var(--spacer-xs);
 }

@@ -3,7 +3,6 @@
  * -------------------------------------------------------------------
  */
 
-
 /**
  * BASE STYLING
  * -------------------------------------------------------------------
@@ -20,9 +19,9 @@ figure {
 figcaption {
   font-size: rem($font-size-base);
   line-height: $line-height-paragraph;
-  padding: $figcaption-padding;
+  padding: var(--spacer-xs);
 
   @include at($screen-sm) {
-    padding: $figcaption-padding / 3 * 4 $figcaption-padding;
+    padding: var(--spacer-s) var(--spacer-xs);
   }
 }

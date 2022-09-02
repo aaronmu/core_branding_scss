@@ -1,4 +1,17 @@
 /**
+ * FLYOUT VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.m-flyout {
+  --flyout-bg-color:         #{$white};
+  --flyout-border-color:     var(--border-color);
+  --flyout-max-width:        24rem;
+  --flyout-max-width-s:      16rem;
+  --flyout-max-height:       calc(var(--spacer) * 9);
+}
+
+/**
  * FLYOUT
  * -------------------------------------------------------------------
  */
@@ -9,105 +22,95 @@
   position: relative;
 }
 
-
 /**
  * FLYOUT ELEMENTS
  * -------------------------------------------------------------------
  */
 
 .m-flyout__content {
-  background-color: $flyout-bg;
-  border: 1px solid $flyout-border;
-  box-shadow: $box-shadow;
+  @include at($screen-sm) {
+    width: var(--flyout-max-width);
+  }
+
+  background-color: var(--flyout-bg-color);
+  border: var(--border-width) solid var(--flyout-border-color);
+  box-shadow: var(--box-shadow);
   opacity: 0;
   position: absolute;
-  transform: translateY(-$spacer-lg);
-  transition: visibility 0s $animation-duration $animation-easing, opacity $animation-normal, transform $animation-normal;
+  transform: translateY(calc(var(--spacer-xl) * -1));
+  transition: visibility 0s var(--animation-normal), opacity var(--animation-normal), transform var(--animation-normal);
   visibility: hidden;
+  width: var(--flyout-max-width-s);
   z-index: layer('flyout');
 }
-
-
-/**
- * FLYOUT MODIFIERS
- * -------------------------------------------------------------------
- */
-
-.m-flyout.opens-above {
-  .m-flyout__content {
-    box-shadow: $box-shadow-reverse;
-  }
-}
-
 
 /**
  * FLYOUT POSITIONING
  * -------------------------------------------------------------------
  */
 
-.m-flyout--right .m-flyout__content {
+.m-flyout--bottom-right .m-flyout__content,
+.m-flyout--upper-right .m-flyout__content {
   right: 0;
 }
 
+.m-flyout--upper-left .m-flyout__content,
+.m-flyout--upper-right .m-flyout__content {
+  transform: translateY(-100%);
+}
+
+.m-flyout--bottom-right .m-flyout__content {
+  box-shadow: var(--box-shadow-bottom-left);
+}
+
+.m-flyout--upper-left .m-flyout__content {
+  box-shadow: var(--box-shadow-upper-right);
+}
+
+.m-flyout--upper-right .m-flyout__content {
+  box-shadow: var(--box-shadow-upper-left);
+}
 
 /**
  * FLYOUT SIZES
  * -------------------------------------------------------------------
  */
 
-.m-flyout--full .m-flyout__content,
-.m-flyout--lg .m-flyout__content,
-.m-flyout--md .m-flyout__content,
-.m-flyout--sm .m-flyout__content {
-  min-width: 100%;
-}
-
-.m-flyout--lg .m-flyout__content {
-  @include at($screen-md) {
-    width: $flyout-max-width-lg;
-  }
-
+.m-flyout--s .m-flyout__content {
   @include at($screen-sm) {
-    width: $flyout-max-width-md;
+    width: var(--flyout-max-width-s);
   }
-
-  width: $flyout-max-width-sm;
-}
-
-.m-flyout--md .m-flyout__content {
-  @include at($screen-sm) {
-    width: $flyout-max-width-md;
-  }
-
-  width: $flyout-max-width-sm;
-}
-
-.m-flyout--sm .m-flyout__content {
-  width: $flyout-max-width-sm;
 }
 
 .m-flyout--scrollable .m-flyout__content {
-  max-height: $flyout-max-height;
+  max-height: var(--flyout-max-height);
   overflow-y: scroll;
 }
-
 
 /**
  * FLYOUT VISIBILITY
  * -------------------------------------------------------------------
  */
 
-.m-flyout.is-open > .m-flyout__content {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: 0s;
-  visibility: visible;
+.m-flyout.is-open {
+  .m-flyout__content {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s;
+    visibility: visible;
+  }
+
+  &.m-flyout--upper-left,
+  &.m-flyout--upper-right {
+    .m-flyout__content {
+      transform: translateY(calc(-100% - var(--spacer-xl)));
+    }
+  }
 }
 
 .m-flyout__content.has-padding {
-  padding: $spacer / 3 * 2 $spacer;
+  padding: var(--spacer-s);
 }
-
 
 /**
  * FLYOUT FIX AFTER FORM ELEMENT
@@ -115,9 +118,10 @@
  */
 
 .a-input + .m-flyout__content {
-  margin-top: -1px;
+  min-width: 100%;
+  margin-top: calc(var(--border-width) * -1);
+  width: auto;
 }
-
 
 /**
  * DATEPICKER IN FLYOUT BORDER FIX
@@ -127,7 +131,6 @@
 .m-flyout__content.m-datepicker {
   border: none;
 }
-
 
 /**
  * FLYOUT FOCUS OUTLINE FIX

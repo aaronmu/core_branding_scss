@@ -1,37 +1,34 @@
 /**
- * TOOLTIP
+ * TOOLTIP VARIABLES
  * -------------------------------------------------------------------
  */
+
+.a-tooltip {
+  --tooltip-max-width:           13rem;
+
+  --tooltip-color:               #{$white};
+  --tooltip-bg-color:            #{$gray-500};
+
+  --tooltip-inverted-color:      #{$gray-600};
+  --tooltip-inverted-bg-color:   #{$gray-200};
+}
 
 /**
  * TOOLTIP PLACEHOLDER
  * -------------------------------------------------------------------
  */
 
-%a-tooltip {
+.a-tooltip {
   display: inline-block;
-  max-width: $tooltip-max-width;
-  min-height: $tooltip-min-height;
-  padding: $tooltip-padding;
+  font-size: .875rem;
+  max-width: var(--tooltip-max-width);
+  padding: var(--spacer-3xs) var(--spacer-xxs);
   position: relative;
 
   a {
     color: inherit;
   }
-
-  &:before {
-    content: '';
-    display: block;
-    height: $tooltip-arrow-height * 2;
-    position: absolute;
-    width: $tooltip-arrow-height * 2;
-  }
 }
-
-.a-tooltip {
-  @extend %a-tooltip;
-}
-
 
 /**
  * TOOLTIP COLORS
@@ -39,118 +36,11 @@
  */
 
 .a-tooltip {
-  @include a-tooltip;
+  background-color: var(--tooltip-bg-color);
+  color: var(--tooltip-color);
 
-  &.a-tooltip--primary {
-    @include a-tooltip($tooltip-primary-color, $tooltip-primary-bg);
-  }
-
-  &.a-tooltip--secondary {
-    @include a-tooltip($tooltip-secondary-color, $tooltip-secondary-bg);
-  }
-}
-
-
-/**
- * TOOLTIP POSITIONS
- * -------------------------------------------------------------------
- */
-
-.a-tooltip {
-
-  /**
-   * TOP
-   */
-  &.a-tooltip--top:before,
-  &.a-tooltip--top-right:before,
-  &.a-tooltip--top-left:before {
-    bottom: 0;
-  }
-
-  &.a-tooltip--top:before {
-    left: 50%;
-    transform: translate(-50%, 50%) rotate(45deg);
-  }
-
-  &.a-tooltip--top-right:before {
-    left: $spacer-xs;
-    transform: translate(0, 50%) rotate(45deg);
-  }
-
-  &.a-tooltip--top-left:before {
-    right: $spacer-xs;
-    transform: translate(0, 50%) rotate(45deg);
-  }
-
-  /**
-   * BOTTOM
-   */
-  &.a-tooltip--bottom:before,
-  &.a-tooltip--bottom-right:before,
-  &.a-tooltip--bottom-left:before {
-    top: 0;
-  }
-
-  &.a-tooltip--bottom:before {
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  &.a-tooltip--bottom-right:before {
-    left: $spacer-xs;
-    transform: translate(0, -50%) rotate(45deg);
-  }
-
-  &.a-tooltip--bottom-left:before {
-    right: $spacer-xs;
-    transform: translate(0, -50%) rotate(45deg);
-  }
-
-  /**
-   * LEFT
-   */
-  &.a-tooltip--left:before,
-  &.a-tooltip--left-top:before,
-  &.a-tooltip--left-bottom:before {
-    right: 0;
-  }
-
-  &.a-tooltip--left:before {
-    top: 50%;
-    transform: translate(50%, -50%) rotate(45deg);
-  }
-
-  &.a-tooltip--left-top:before {
-    bottom: $spacer-xs;
-    transform: translate(50%, 0) rotate(45deg);
-  }
-
-  &.a-tooltip--left-bottom:before {
-    top: $spacer-xs;
-    transform: translate(50%, 0) rotate(45deg);
-  }
-
-  /**
-   * RIGHT
-   */
-  &.a-tooltip--right:before,
-  &.a-tooltip--right-top:before,
-  &.a-tooltip--right-bottom:before {
-    left: 0;
-  }
-
-  &.a-tooltip--right:before {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  &.a-tooltip--right-top:before {
-    bottom: $spacer-xs;
-    transform: translate(-50%, 0) rotate(45deg);
-  }
-
-  &.a-tooltip--right-bottom:before {
-    top: $spacer-xs;
-    transform: translate(-50%, 0) rotate(45deg);
+  &.a-tooltip--inverted {
+    --tooltip-color: var(--tooltip-inverted-color);
+    --tooltip-bg-color: var(--tooltip-inverted-bg-color);
   }
 }

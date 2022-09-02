@@ -1,6 +1,324 @@
 # Changelog
 
 
+## [6.0.0] - 2022-09-01
+
+### General
+
+#### Added
+- Added CSS properties for color palette, grayscale colors, spacers, components, etc. to allow customization and theming
+
+#### Changed
+- [BREAKING] Updated and renamed color palette SASS variables
+- [BREAKING] Removed SASS variables of warm gray colors
+- [BREAKING] Updated and renamed SASS variables of grayscale colors
+- [BREAKING] Moved various SASS variables from global variables stylesheet to corresponding component stylesheets
+- [BREAKING] Replaced all component-related SASS variables to CSS properties.
+
+### Tooling
+
+#### Changed
+- Replaced sass-lint by stylelint
+
+### Helpers
+
+#### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.u-margin-*-xx` to `.u-margin-*-3xl`
+  - Changed `.u-margin-*-lg` to `.u-margin-*-xl`
+  - Changed `.u-margin-*-md` to `.u-margin-*-l`
+  - Changed `.u-margin-*-sm` to `.u-margin-*-s`
+
+### Components
+
+#### Alert
+
+##### Added
+- Added inline variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+
+#### Avatar
+
+##### Added
+- Added round variant for every avatar
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-avatar--small` to `.a-avatar--s`
+  - Changed `.a-avatar--medium` to `.a-avatar--l`
+  - Changed `.a-avatar--large` to `.a-avatar--xl`
+
+#### Accordion
+
+##### Added
+- Added round variant for every avatar
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.has-margins`
+- [BREAKING] `.is-open` class to open/close accordion is replaced by `aria-expanded` attribute
+
+#### Badge
+
+##### Added
+- Added outlined and transparent variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Removed `.a-badge--success`, a-badge--warning` and `a-badge--danger`
+
+#### Button
+
+##### Added
+- Added button with avatar
+
+##### Changed
+- [BREAKING] Removed official button
+- [BREAKING] Changed various CSS classes:
+  - Removed `.a-button--transparent`
+  - Removed `.a-button--tiny`
+  - Removed `.a-button-transparent`
+  - Changed `.a-button-outline` to `.a-button.a-button--outlined`
+  - Changed `.a-button-negative` to `.a-button.a-button--text`
+  - Changed `.a-button--default` to `.a-button--neutral`
+  - Changed `.a-button--small` to `.a-button--s`
+  - Changed `.a-button--large` to `.a-button--l`
+
+#### Card
+
+##### Changed
+- [BREAKING] Removed contact molecule from card header
+
+#### Contact
+
+##### Changed
+- [BREAKING] Removed molecule
+
+#### Datepicker
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes
+
+#### Flyout
+
+##### Added
+- Added classes to position flyout above button/input field
+
+##### Changed
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.m-flyout--lg`
+  - Removed `.m-flyout--md`
+  - Removed `.m-flyout.opens-above`
+  - Changed `.m-flyout--sm` to `.m-flyout--s`
+  - Replaced `.m-flyout--right` to `.m-flyout--bottom-right`
+
+#### Gallery
+
+##### Changed
+- [BREAKING] Removed molecule
+
+#### Header
+
+##### Changed
+- [BREAKING] `.o-header__button` requires additional classes: `a-button--text a-button--neutral`
+
+#### Input
+
+##### Added
+- Extended input field with character counter
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-input--small` to `.a-input--s`
+  - Changed `.a-input--large` to `.a-input--l`
+  - Changed `.has-addon` to `.has-addon-left` and `.has-addon-right`
+- [BREAKING] Changed the way of adding a description, success and error message to an input field
+- [BREAKING] Removed warning messages
+
+#### Label
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.a-label--secondary`
+
+#### List
+
+##### Added
+- Added flushed list variant with no top and bottom border
+- Added checkbox list
+- Added avatar list
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-list--reset` to `.u-list-reset`
+  - Changed `.a-list--unstyled` to `.u-list-unstyled`
+  - Removed `.a-list--primary`
+  - Removed `.a-list--flattened`
+  - Removed `.has-icon-left` and `.has-icon-right`
+- [BREAKING] Provide list styles through class selectors instead of element selectors
+
+#### Modal
+
+##### Changed
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed `.m-modal--large` to `.m-modal--l`
+
+#### Navigation
+
+##### Added
+- Added horizontal scrollable variant of tab navigation
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.m-nav-list--left`
+  - Removed `.m-nav-tabs--left`
+  - Removed `.m-nav-tabs--right`
+- [BREAKING] `<ul>` element must be wrapped with an `<nav>` element
+
+#### Pagination
+
+##### Changed
+- Set outlined variant as default
+- [BREAKING] Changed various CSS classes:
+  - Removed `.m-pagination--outline`
+  - Removed `.m-pagination--large`
+  - Changed `.m-pagination--small` to `.m-pagination--s`
+
+#### Progress
+
+##### Added
+- Added small and large variant
+- Added progress variant with steps
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Removed progress variant with tooltip
+- [BREAKING] Changed from molecule to atom
+
+#### Range slider
+
+##### Changed
+- [BREAKING] Removed range slider variant with tooltip
+- [BREAKING] Changed from molecule to atom
+
+#### Selectable list
+
+##### Changed
+- [BREAKING] Selectable list styling got removed
+
+#### Spinner
+
+##### Added
+- Extended spinner with loading message
+
+##### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-spinner--small` to `.a-spinner--s`
+  - Changed `.a-spinner--large` to `.a-spinner--l`
+
+#### Step indicator
+
+##### Added
+- Added step indicator with clickable steps
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] An incompleted step should have `.is-incompleted` as classname
+
+#### Switch
+
+##### Added
+- Added variant with I/O labels
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes.
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+
+#### Table
+
+##### Added
+- Added helper classes to set fixed columns and drop shadows
+- Added `.is-condensed` to decrease padding in table cell
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-table--small` to `.a-table--s`
+  - Changed `.a-table__wrapper-responsive` to `.a-table-scrollable-wrapper`
+  - Changed `.has-no-padding` to `.is-collapsed`
+
+#### Tag
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Changed various CSS classes.
+
+#### Tag list
+
+##### Changed
+- [BREAKING] `m-tag` should be wrapper in `o-tag-list__item`.
+
+#### Timepicker
+
+##### Changed
+- [BREAKING] Timepicker styling got removed
+
+#### Toggle
+
+##### Changed
+- [BREAKING] Changed various CSS classes:
+  - Changed `.a-toggle--tiny` to `.a-toggle--xs`
+  - Changed `.a-toggle--small` to `.a-toggle--s`
+  - Changed `.a-toggle--large` to `.a-toggle--l`
+
+#### Toggle
+
+##### Added
+- Added inverted variant
+
+##### Changed
+- Implemented new design changes
+- [BREAKING] Replaced SASS variables with CSS properties
+- [BREAKING] Changed various CSS classes:
+  - Removed `.a-tooltip--primary`
+  - Removed `.a-tooltip--secondary`
+
+#### Upload
+
+##### Changed
+- Updated visual appearance when focused
+- [BREAKING] Replaced SASS variables by CSS properties
+- [BREAKING] Remove progress bar
+
+
 ## [5.0.2] - 2022-02-04
 
 ### Changed
@@ -330,6 +648,7 @@
 - Initial release.
 
 
+[6.0.0]: https://github.com/a-ui/core_branding_scss/tree/v6.0.0
 [5.0.2]: https://github.com/a-ui/core_branding_scss/tree/v5.0.2
 [5.0.1]: https://github.com/a-ui/core_branding_scss/tree/v5.0.1
 [5.0.0]: https://github.com/a-ui/core_branding_scss/tree/v5.0.0

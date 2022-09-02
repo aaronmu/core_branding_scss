@@ -1,12 +1,24 @@
 /**
+ * SLIDESHOW VARIABLES
+ * -------------------------------------------------------------------
+ * This component has shared variables with _molecules.overlay.scss. You can find them in _quarks.css-properties.scss.
+ */
+
+.o-slideshow {
+  --slideshow-max-height:           37.5rem;
+  --slideshow-bg-color:             #{$gray-600};
+  --slideshow-footer-color:         var(--text-color);
+  --slideshow-footer-color-light:   var(--shared-slideshow-footer-color-light);
+}
+
+/**
  * SLIDESHOW
  * -------------------------------------------------------------------
  */
 
 .o-slideshow {
-  max-height: $slideshow-max-height;
+  max-height: var(--slideshow-max-height);
 }
-
 
 /**
  * SLIDESHOW ELEMENTS
@@ -33,7 +45,7 @@
 
 .o-slideshow__image {
   align-items: center;
-  background-color: $slideshow-bg;
+  background-color: var(--slideshow-bg-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,9 +62,6 @@
   }
 }
 
-
-
-
 .o-slideshow__prev,
 .o-slideshow__next {
   top: 50%;
@@ -60,18 +69,18 @@
   z-index: 1;
 
   @include at($screen-sm) {
-    font-size: $spacer;
+    font-size: var(--spacer);
   }
 
   @include at($screen-lg) {
-    font-size: $spacer-md;
+    font-size: var(--spacer-l);
   }
 
   &.has-icon {
     position: absolute;
 
     svg {
-      filter: drop-shadow(0 0 2px $overlay-color);
+      filter: drop-shadow(0 0 2px var(--overlay-color));
     }
   }
 
@@ -80,6 +89,7 @@
   &:active,
   &:focus {
     background: transparent;
+    box-shadow: none;
   }
 
   .ai {
@@ -93,11 +103,11 @@
   &.o-slideshow__prev--outside {
 
     @include at($screen-md) {
-      left: -$spacer-lg;
+      left: calc(var(--spacer-xl) * -1);
     }
 
     @include at($screen-lg) {
-      left: -$spacer-lg / 3 * 4;
+      left: calc(var(--spacer-xl) / -3 * 4);
     }
   }
 }
@@ -108,24 +118,23 @@
   &.o-slideshow__next--outside {
 
     @include at($screen-md) {
-      right: -$spacer-lg;
+      right: calc(var(--spacer-xl) * -1);
     }
 
     @include at($screen-lg) {
-      right: -$spacer-lg / 3 * 4;
+      right: calc(var(--spacer-xl) / -3 * 4);
     }
   }
 }
 
 .o-slideshow__footer {
-  color: $slideshow-footer-color;
+  color: var(--slideshow-footer-color);
 }
 
 .o-slideshow__counter {
-  font-weight: $bold;
-  margin-right: $spacer-xs;
+  font-weight: var(--font-weight-bold);
+  margin-right: var(--spacer-xs);
 }
-
 
 /**
  * SLIDESHOW MODIFIERS

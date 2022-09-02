@@ -1,0 +1,189 @@
+:root {
+  /**
+   * GLOBAL CSS PROPERTIES
+   * -------------------------------------------------------------------
+   */
+
+  /**
+   * THEME COLORS
+   * -------------------------------------------------------------------
+   */
+
+  --theme1-600:              #{$endeavour-600};
+  --theme1-500:              #{$endeavour-500};
+  --theme1-400:              #{$endeavour-400};
+  --theme1-300:              #{$endeavour-300};
+  --theme1-200:              #{$endeavour-200};
+  --theme1-100:              #{$endeavour-100};
+  --theme1-075:              #{$endeavour-075};
+  --theme1-050:              #{$endeavour-050};
+
+  --theme2-600:              #{$monza-600};
+  --theme2-500:              #{$monza-500};
+  --theme2-400:              #{$monza-400};
+  --theme2-300:              #{$monza-300};
+  --theme2-200:              #{$monza-200};
+  --theme2-100:              #{$monza-100};
+
+  --success-700:             #{$mantis-700};
+  --success-600:             #{$mantis-600};
+  --success-500:             #{$mantis-500};
+  --success-400:             #{$mantis-400};
+  --success-300:             #{$mantis-300};
+  --success-200:             #{$mantis-200};
+  --success-100:             #{$mantis-100};
+  --success-050:             #{$mantis-050};
+
+  --warning-500:             #{$burnt-orange-500};
+  --warning-400:             #{$burnt-orange-400};
+  --warning-050:             #{$burnt-orange-050};
+
+  --danger-600:              #{$cinnabar-600};
+  --danger-500:              #{$cinnabar-500};
+  --danger-400:              #{$cinnabar-400};
+  --danger-300:              #{$cinnabar-300};
+  --danger-200:              #{$cinnabar-200};
+  --danger-100:              #{$cinnabar-100};
+  --danger-050:              #{$cinnabar-050};
+
+  /**
+   * UI COLORS
+   * -------------------------------------------------------------------
+   */
+
+  --text-color:              #{$black};
+  --text-color-light:        #{$gray-400};
+  --text-color-xlight:       #{$white};
+  --bg-color:                #{$gray-200};
+  --bg-color-light:          #{$gray-100};
+  --border-color:            #{$gray-300};
+  --overlay-color:           #{rgba($black, .75)};
+  --box-shadow-color:        #{rgba($gray-600, .12)};
+
+  --state-info:              var(--theme1-400);
+  --state-success:           var(--success-600);
+  --state-warning:           var(--warning-400);
+  --state-danger:            var(--danger-500);
+  --state-danger-light:      var(--danger-400); // TODO: Give --state-danger-light a better name
+  --state-disabled:          #{$gray-400};
+
+  /**
+   * SPACERS
+   * -------------------------------------------------------------------
+   */
+
+  --spacer:                  1.5rem; // 24px
+  --spacer-3xl:              calc(var(--spacer) * 4); // 96px
+  --spacer-xxl:              calc(var(--spacer) * 2.5); // 60px
+  --spacer-xl:               calc(var(--spacer) * 2); // 48px
+  --spacer-l:                calc(var(--spacer) * 1.5); // 36px
+  --spacer-s:                calc(var(--spacer) / 1.5); // 16px
+  --spacer-xs:               calc(var(--spacer) / 2); // 12px
+  --spacer-xxs:              calc(var(--spacer) / 3); // 8px
+  --spacer-3xs:              calc(var(--spacer) / 6); // 4px
+
+  /**
+   * BREAKPOINTS
+   * -------------------------------------------------------------------
+   */
+
+  --screen-xs:               30rem; // 480px
+  --screen-s:                45rem; // 720px
+  --screen-l:                62rem; // 992px
+  --screen-xl:               75rem; // 1200px
+
+  /**
+   * --screen-xxl =
+   *    max-width of u-container
+   *    + width of official logo * 2
+   *    + space between logo and u-container * 2
+   */
+  --screen-xxl:              calc(var(--screen-xl) + calc(var(--spacer-3xl) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
+  --screen-xs-max:           44.9375rem; // 719px (--screen-s - 1px)
+  --screen-s-max:            61.9375rem; // 991px (--screen-l - 1px)
+  --screen-l-max:            74.9375rem; // 1199px (--screen-xl - 1px)
+  --screen-xl-max:           89.9375rem; // 1439px (--screen-xxl - 1px)
+
+  /**
+   * FONT FAMILIES
+   * -------------------------------------------------------------------
+   */
+
+  --font-family-base:        'Sun Antwerpen', sans-serif;
+  --font-family-headings:    'Antwerpen Regular', sans-serif;
+  --font-family-monospace:   'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+
+  /**
+   * FONT WEIGHTS
+   * -------------------------------------------------------------------
+   */
+
+  --font-weight-light:        300;
+  --font-weight-normal:       500;
+  --font-weight-bold:         700;
+  --font-weight-extra-bold:   800;
+
+  --font-weight-h1:           var(--font-weight-normal);
+  --font-weight-h2:           var(--font-weight-normal);
+  --font-weight-h3:           var(--font-weight-normal);
+  --font-weight-h4:           var(--font-weight-normal);
+  --font-weight-h5:           var(--font-weight-normal);
+  --font-weight-h6:           var(--font-weight-normal);
+
+  /**
+   * LINKS
+   * -------------------------------------------------------------------
+   * Define text and hover color for each hyperlink
+   */
+
+  --link-color:              var(--theme1-400);
+  --link-hover-color:        var(--theme1-500);
+
+  /**
+   * BORDERS
+   * -------------------------------------------------------------------
+   */
+
+  --border-radius:           0;
+  --border-width:            1px;
+
+  /**
+   * ANIMATIONS
+   * -------------------------------------------------------------------
+   */
+
+  --animation-duration:      200ms;
+  --animation-easing:        ease-in-out;
+  --animation-normal:        var(--animation-duration) var(--animation-easing);
+
+  /**
+   * BOX SHADOWS
+   * -------------------------------------------------------------------
+   */
+
+  --box-shadow-bottom-left:      calc(var(--spacer) / -2) calc(var(--spacer) / 2) 0 var(--box-shadow-color);
+  --box-shadow-bottom-right:     calc(var(--spacer) / 2) calc(var(--spacer) / 2) 0 var(--box-shadow-color);
+  --box-shadow-upper-left:       calc(var(--spacer) / -2) calc(var(--spacer) / -2) 0 var(--box-shadow-color);
+  --box-shadow-upper-right:      calc(var(--spacer) / 2) calc(var(--spacer) / -2) 0 var(--box-shadow-color);
+  --box-shadow:                  var(--box-shadow-bottom-right);
+
+  /**
+   * SHARED CSS PROPERTIES
+   * -------------------------------------------------------------------
+   */
+
+  // Avatar
+  --shared-avatar-size-s:                  var(--spacer-l); // 36px
+  --shared-avatar-size:                    var(--spacer-xl); // 48px
+  --shared-avatar-size-l:                  var(--spacer-xxl); // 60px
+
+  // Copyright
+  --shared-copyright-color:                #{$white};
+  --shared-copyright-height:               var(--spacer-l);
+
+  // Header
+  --shared-header-height:                  var(--spacer-xl);
+
+  // Slideshow
+  --shared-slideshow-footer-color-light:   #{$white};
+}

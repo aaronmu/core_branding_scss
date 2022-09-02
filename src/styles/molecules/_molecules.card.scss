@@ -5,18 +5,13 @@
 
 .m-card {
   background-color: $white;
-  border: 1px solid $border-color-light;
+  border: var(--border-width) solid var(--border-color);
 }
-
 
 /**
  * CARD ELEMENTS
  * -------------------------------------------------------------------
  */
-
-.m-card__header {
-  padding: $card-header-padding;
-}
 
 .m-card__image img {
   display: block;
@@ -24,5 +19,5 @@
 }
 
 .m-card__body {
-  padding: $card-content-padding;
+  padding: var(--spacer);
 }

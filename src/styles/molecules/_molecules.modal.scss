@@ -1,15 +1,28 @@
 /**
+ * MODAL VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.m-modal {
+  --modal-bg-color:       #{$white};
+  --modal-border-color:   var(--border-color);
+
+  --modal-width:          calc(var(--spacer) * 17);
+  --modal-width-l:        calc(var(--spacer) * 25);
+}
+
+/**
  * MODAL
  * -------------------------------------------------------------------
  */
 
 .m-modal {
-  background-color: $modal-bg;
-  border: 1px solid $modal-border;
+  background-color: var(--modal-bg-color);
+  border: var(--border-width) solid var(--modal-border-color);
   width: 100%;
 
   @include at($screen-xs) {
-    max-width: $modal-width;
+    max-width: var(--modal-width);
   }
 
   .m-modal__close {
@@ -18,11 +31,10 @@
     top: 0;
 
     + * {
-      margin-right: $spacer-md;
+      margin-right: var(--spacer-l);
     }
   }
 }
-
 
 /**
  * MODAL ELEMENTS
@@ -30,40 +42,39 @@
  */
 
 .m-modal__content {
-  padding: $modal-padding;
+  padding: var(--spacer);
   position: relative;
 }
 
 .m-modal__footer {
-  margin-bottom: -$spacer-xs;
+  margin-bottom: calc(var(--spacer-xs) * -1);
 
   @include at($screen-xs) {
     display: flex;
     margin-bottom: 0;
   }
 
-  [class*='a-button'] {
-    margin-bottom: $spacer-xs;
+  .a-button {
+    margin-bottom: var(--spacer-xs);
 
     @include at($screen-xs) {
       margin-bottom: 0;
 
       &:not(:first-child) {
-        margin-left: $spacer-xs;
+        margin-left: var(--spacer-xs);
       }
     }
   }
 }
-
 
 /**
  * MODAL MODIFIERS
  * -------------------------------------------------------------------
  */
 
-.m-modal--large {
+.m-modal--l {
 
   @include at($screen-xs) {
-    max-width: $modal-width-large;
+    --modal-width: var(--modal-width-l);
   }
 }

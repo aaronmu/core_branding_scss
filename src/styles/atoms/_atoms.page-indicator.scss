@@ -1,0 +1,88 @@
+/**
+ * PAGE INDICATOR VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.a-page-indicator {
+  --page-indicator-width:             auto;
+  --page-indicator-height:            var(--spacer-3xs);
+  --page-indicator-spacing:           .125rem;
+
+  --page-indicator-bg-color:          var(--theme1-050);
+  --page-indicator-active-bg-color:   var(--theme1-400);
+}
+
+/**
+ * PAGE INDICATOR
+ * -------------------------------------------------------------------
+ */
+
+.a-page-indicator {
+  display: flex;
+}
+
+/**
+ * PAGE INDICATOR ELEMENTS
+ * -------------------------------------------------------------------
+ */
+
+.a-page-indicator__item {
+  background-color: var(--page-indicator-bg-color);
+  flex-grow: 1;
+  height: var(--page-indicator-height);
+  transition: background-color var(--animation-normal);
+  width: var(--page-indicator-width);
+
+  &:not(:last-child) {
+    margin-right: var(--page-indicator-spacing);
+  }
+
+  &.is-active {
+    --page-indicator-bg-color: var(--page-indicator-active-bg-color);
+  }
+}
+
+button,
+a {
+  &.a-page-indicator__item {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+      --page-indicator-bg-color: var(--page-indicator-active-bg-color);
+    }
+  }
+}
+
+/**
+ * PAGE INDICATOR MODIFIERS
+ * -------------------------------------------------------------------
+ */
+
+.a-page-indicator {
+  &.a-page-indicator--s {
+    --page-indicator-width: .375rem;
+    --page-indicator-height: .375rem;
+    --page-indicator-spacing: .375rem;
+
+    display: inline-flex;
+
+    .a-page-indicator__item {
+      flex-grow: 0;
+    }
+  }
+
+  &.a-page-indicator--l {
+    --page-indicator-width: auto;
+    --page-indicator-height: var(--spacer-xxs);
+    --page-indicator-spacing: var(--spacer-3xs);
+  }
+}
+
+.a-page-indicator.a-page-indicator--negative {
+  --page-indicator-bg-color: #{rgba($white, .25)};
+  --page-indicator-active-bg-color: #{$white};
+}

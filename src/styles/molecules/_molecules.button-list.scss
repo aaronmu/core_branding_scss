@@ -4,10 +4,10 @@
  */
 
 .m-button-list {
-  @extend %a-list--reset;
+  @extend %u-list-reset;
 
   li:not(:last-child) {
-    margin-bottom: $spacer-xs;
+    margin-bottom: var(--spacer-xs);
   }
 }
 
@@ -19,13 +19,13 @@
 .m-button-list--horizontal {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -$spacer-xs;
+  margin-bottom: calc(var(--spacer-xs) * -1);
 
   li {
-    margin-bottom: $spacer-xs;
+    margin-bottom: var(--spacer-xs);
 
     &:not(:last-child) {
-      margin-right: $spacer-xs;
+      margin-right: var(--spacer-xs);
     }
   }
 }

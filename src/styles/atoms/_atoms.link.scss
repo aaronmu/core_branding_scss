@@ -3,7 +3,6 @@
  * -------------------------------------------------------------------
  */
 
-
 /**
  * LINK WITH ICON LEFT OR RIGHT
  * -------------------------------------------------------------------
@@ -17,10 +16,10 @@ a:not([class^='a-button']) {
   }
 
   &.has-icon-left .ai {
-    padding-right: $spacer / 3;
+    padding-right: var(--spacer-xxs);
   }
 
   &.has-icon-right .ai {
-    padding-left: $spacer / 3;
+    padding-left: var(--spacer-xxs);
   }
 }

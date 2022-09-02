@@ -1,146 +1,103 @@
 /**
+ * PAGINATION VARIABLES
+ * -------------------------------------------------------------------
+ */
+
+.m-pagination {
+  --pagination-font-size:                 #{rem($font-size-base)};
+  --pagination-size:                      var(--spacer-xl);
+  --pagination-padding:                   0 var(--spacer);
+
+  --pagination-color:                     var(--theme1-400);
+  --pagination-hover-color:               var(--theme1-400);
+  --pagination-active-color:              #{$white};
+  --pagination-bg-color:                  transparent;
+  --pagination-hover-bg-color:            var(--theme1-050);
+  --pagination-active-bg-color:           var(--theme1-400);
+  --pagination-border-color:              var(--theme1-400);
+  --pagination-hover-border:              var(--theme1-500);
+  --pagination-active-border:             var(--theme1-500);
+
+  --pagination-disabled-color:            #{$gray-400};
+  --pagination-disabled-bg-color:         #{$gray-100};
+  --pagination-disabled-border-color:     #{$gray-100};
+}
+
+/**
  * PAGINATION
  * -------------------------------------------------------------------
  */
 
 .m-pagination {
-  @extend %a-list--reset;
+  @extend %u-list-reset;
+
   display: flex;
 
   > li {
-    background-color: $pagination-bg;
-    color: $pagination-color;
-    font-size: rem($pagination-font-size);
-    height: $pagination-size;
-    line-height: $pagination-size;
+    background-color: var(--pagination-bg-color);
+    box-shadow: 0 0 0 var(--border-width) var(--pagination-border-color) inset;
+    color: var(--pagination-color);
+    font-size: var(--pagination-font-size);
+    height: var(--pagination-size);
+    line-height: var(--pagination-size);
     position: relative;
     text-align: center;
-    width: $pagination-size;
+    width: var(--pagination-size);
     z-index: layer('base');
 
     > a {
-      color: $pagination-color;
+      color: var(--pagination-color);
       display: block;
       text-decoration: none;
-      transition-duration: $animation-duration;
-      transition-property: color, background;
-      transition-timing-function: $animation-easing;
+      transition-duration: var(--animation-duration);
+      transition-property: color, background-color, box-shadow;
+      transition-timing-function: var(--animation-easing);
 
       &:hover,
       &:active,
-      &:focus {
-        background-color: $pagination-bg-hover;
+      &:focus,
+      &.is-active {
+        background-color: var(--pagination-hover-bg-color);
+        box-shadow: 0 0 0 var(--border-width) var(--pagination-hover-border) inset;
+        color: var(--pagination-hover-color);
       }
 
       &.is-active {
-        background-color: $pagination-bg-hover;
-        font-weight: $bold;
+        background-color: var(--pagination-active-bg-color);
+        box-shadow: 0 0 0 var(--border-width) var(--pagination-active-border) inset;
+        color: var(--pagination-active-color);
+        font-weight: var(--font-weight-bold);
       }
 
       &.is-disabled {
-        background-color: $pagination-bg-disabled;
-        color: $pagination-color-disabled;
+        background-color: var(--pagination-disabled-bg-color);
+        box-shadow: 0 0 0 var(--border-width) var(--pagination-disabled-border) inset;
+        color: var(--pagination-disabled-color);
         cursor: not-allowed;
       }
+    }
+
+    + li {
+      margin-left: calc(var(--border-width) * -1);
     }
   }
 
   .m-pagination__label {
-    padding: 0 $spacer;
+    padding: var(--pagination-padding);
     width: auto;
   }
 
-  .m-pagination__prev {
-    border-right: 1px solid $pagination-bg-hover;
-
-    + .m-pagination__next {
-      border-left: none;
-    }
-  }
-
   .m-pagination__next {
-    border-left: 1px solid $pagination-bg-hover;
     z-index: layer('auto');
   }
 }
-
-.m-pagination--outline {
-
-  > li {
-    background-color: $pagination-outline-bg;
-    box-shadow: 0 0 0 1px $pagination-outline-border inset;
-    color: $pagination-outline-color;
-
-    > a,
-    > a:hover,
-    > a:active,
-    > a:focus {
-      background-color: inherit;
-      box-shadow: inherit;
-      color: inherit;
-
-      &.is-active {
-        background-color: $pagination-bg;
-        color: $pagination-color;
-      }
-
-      &.is-disabled {
-        background-color: $pagination-bg-disabled;
-        box-shadow: none;
-        color: $pagination-color-disabled;
-      }
-    }
-
-    > a:hover,
-    > a:active,
-    > a:focus {
-      background-color: $pagination-outline-bg-hover;
-      box-shadow: 0 0 0 1px $pagination-outline-border-hover inset;
-    }
-
-    + li {
-      margin-left: -1px;
-    }
-  }
-
-  .m-pagination__prev,
-  .m-pagination__next {
-    border: none;
-  }
-}
-
 
 /**
  * PAGINATION SIZES
  * -------------------------------------------------------------------
  */
 
-.m-pagination {
-  &.m-pagination--small {
-    > li {
-      height: $pagination-size-sm;
-      line-height: $pagination-size-sm;
-      width: $pagination-size-sm;
-    }
-
-    .m-pagination__label {
-      padding: 0 $spacer-xs;
-      width: auto;
-    }
-  }
-}
-
-.m-pagination {
-  &.m-pagination--large {
-    > li {
-      height: $pagination-size-lg;
-      line-height: $pagination-size-lg;
-      width: $pagination-size-lg;
-    }
-
-    .m-pagination__label {
-      padding: 0 $spacer-md;
-      width: auto;
-    }
-  }
+.m-pagination.m-pagination--s {
+  --pagination-size: var(--spacer-l);
+  --pagination-padding: 0 var(--spacer-xs);
 }
