@@ -48,6 +48,30 @@
   }
 }
 
+.d-margin-intro-3xl {
+  margin-bottom: var(--spacer-l);
+
+  @include at($screen-xs) {
+    margin: var(--spacer) var(--spacer) var(--spacer-l);
+  }
+
+  @include at($screen-sm) {
+    margin: var(--spacer-l) var(--spacer-l) var(--spacer-xl);
+  }
+
+  @include at($screen-md) {
+    margin: var(--spacer-xl) var(--spacer-xl) var(--spacer-xxl);
+  }
+
+  @include at($screen-lg) {
+    margin: var(--spacer-xxl) var(--spacer-xxl) var(--spacer-3xl);
+  }
+
+  @include at($screen-xl) {
+    margin: var(--spacer-3xl);
+  }
+}
+
 .u-margin-bottom-top-xxs {
   margin: var(--spacer-3xs) 0;
 }
@@ -86,18 +110,18 @@
 
 .d-h1 {
   padding-bottom: var(--spacer);
-  padding-top: calc(var(--spacer) * 3.5);
+  padding-top: var(--spacer-3xl);
+
+  @include at(1344px) {
+    padding-bottom: var(--spacer-xl);
+    padding-top: var(--spacer-xl);
+  }
 
   small {
     display: inline-block;
     padding: calc(var(--spacer-xs) / 4) calc(var(--spacer-xs) / 3) calc(var(--spacer-xs) / 3);
     position: relative;
-    transform: translateY(calc(var(--spacer-xs) * -1));
-  }
-
-  @include at($screen-xs) {
-    padding-bottom: var(--spacer-l);
-    padding-top: var(--spacer-l);
+    transform: translateY(calc(var(--spacer-3xs) * -1.5));
   }
 }
 
