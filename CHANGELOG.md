@@ -1,6 +1,20 @@
 # Changelog
 
 
+## Unreleased
+
+### Added
+- Added custom properties for headings
+- Added .o-article list margin custom property
+
+### Changed
+- Changed all heading sizes
+- Changed font families for h4, h5 and h6
+- Changed .u-container margin
+- Removed .has-base-font as it isn't relevant anymore
+
+
+
 ## [6.0.0] - 2022-09-01
 
 ### General

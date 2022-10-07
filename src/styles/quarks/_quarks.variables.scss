@@ -119,12 +119,12 @@ $font-size-lg:            18px !default;
 
 $font-size-ratio:         1.2 !default;
 
-$font-size-h1:            $font-size-base * power($font-size-ratio, 6) !default; // ±48px
-$font-size-h2:            $font-size-base * power($font-size-ratio, 5) !default; // ±40px
-$font-size-h3:            $font-size-base * power($font-size-ratio, 4) !default; // ±33px
-$font-size-h4:            $font-size-base * power($font-size-ratio, 3) !default; // ±28px
-$font-size-h5:            $font-size-base * power($font-size-ratio, 2) !default; // ±23px
-$font-size-h6:            $font-size-base * power($font-size-ratio, 1) !default; // ±19px
+$font-size-h1:            36px !default;
+$font-size-h2:            28px !default;
+$font-size-h3:            23px !default;
+$font-size-h4:            21px !default;
+$font-size-h5:            19px !default;
+$font-size-h6:            17px !default;
 
 /**
  * LINE HEIGHTS
