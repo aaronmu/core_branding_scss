@@ -13,6 +13,9 @@
 - Changed .u-container margin
 - Removed .has-base-font as it isn't relevant anymore
 
+### Fixed
+- Fixed the aria-expanded documentation for accordions
+
 
 
 ## [6.0.0] - 2022-09-01
