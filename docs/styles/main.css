@@ -662,53 +662,44 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: var(--font-family-headings);
   line-height: 1.1;
   margin: 0;
-}
-h1.has-base-font,
-h2.has-base-font,
-h3.has-base-font,
-h4.has-base-font,
-h5.has-base-font,
-h6.has-base-font,
-.h1.has-base-font,
-.h2.has-base-font,
-.h3.has-base-font,
-.h4.has-base-font,
-.h5.has-base-font,
-.h6.has-base-font {
-  font-family: var(--font-family-base);
 }
 
 h1,
 .h1 {
-  font-size: 2.985984rem;
+  font-family: var(--font-family-headings);
+  font-size: 2.25rem;
 }
 
 h2,
 .h2 {
-  font-size: 2.48832rem;
+  font-family: var(--font-family-headings);
+  font-size: 1.75rem;
 }
 
 h3,
 .h3 {
-  font-size: 2.0736rem;
+  font-family: var(--font-family-headings);
+  font-size: 1.4375rem;
 }
 
 h4,
 .h4 {
-  font-size: 1.728rem;
+  font-family: var(--font-family-base);
+  font-size: 1.3125rem;
 }
 
 h5,
 .h5 {
-  font-size: 1.44rem;
+  font-family: var(--font-family-base);
+  font-size: 1.1875rem;
 }
 
 h6,
 .h6 {
-  font-size: 1.2rem;
+  font-family: var(--font-family-base);
+  font-size: 1.0625rem;
 }
 
 /**
@@ -717,6 +708,18 @@ h6,
  */
 p,
 .paragraph {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+/**
+ * PARAGRAPHS
+ * -------------------------------------------------------------------
+ */
+ul,
+ol,
+dl {
   font-size: 1rem;
   line-height: 1.3;
   margin: 0;
@@ -843,22 +846,10 @@ a:hover, a:active, a:focus {
  * LAYOUT CONTAINERS
  * -------------------------------------------------------------------
  */
-@media screen and (min-width: 30rem) {
-  .u-wrapper {
-    padding-left: calc(var(--spacer) * 3);
-  }
-}
-@media screen and (min-width: 90rem) {
-  .u-wrapper {
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
 .u-container {
   margin: 0 auto;
   max-width: 75rem;
-  padding: 0 var(--spacer-xs);
+  padding: 0 var(--spacer);
   width: 100%;
 }
 
@@ -5566,94 +5557,64 @@ button.m-tag[aria-pressed=true]:hover, button.m-tag[aria-pressed=true]:active, b
  * -------------------------------------------------------------------
  */
 .o-article {
-  --article-h1-font-family: var(--font-family-headings);
-  --article-h1-font-size: 39.81312px;
-  --article-h1-font-weight: normal;
-  --article-h1-margin: var(--spacer-xl) 0 var(--spacer);
-  --article-h2-font-family: var(--font-family-headings);
-  --article-h2-font-size: 33.1776px;
-  --article-h2-font-weight: normal;
-  --article-h2-margin: var(--spacer-xl) 0 var(--spacer);
-  --article-h3-font-family: var(--font-family-base);
-  --article-h3-font-size: 23.04px;
-  --article-h3-font-weight: var(--font-weight-bold);
-  --article-h3-margin: var(--spacer) 0 var(--spacer-xs);
-  --article-h4-font-family: var(--font-family-base);
-  --article-h4-font-size: 19.2px;
-  --article-h4-font-weight: var(--font-weight-bold);
+  --article-h1-margin: var(--spacer-xxl) 0 var(--spacer);
+  --article-h2-margin: var(--spacer-xl) 0 var(--spacer-s);
+  --article-h3-margin: var(--spacer-l) 0 var(--spacer-s);
   --article-h4-margin: var(--spacer) 0 var(--spacer-xs);
-  --article-h5-font-family: var(--font-family-base);
-  --article-h5-font-size: 16px;
-  --article-h5-font-weight: var(--font-weight-bold);
-  --article-h5-margin: var(--spacer-xs) 0 var(--spacer-3xs);
-  --article-h6-font-family: var(--font-family-base);
-  --article-h6-font-size: 16px;
-  --article-h6-font-weight: var(--font-weight-bold);
-  --article-h6-margin: var(--spacer-xs) 0 var(--spacer-3xs);
-  --article-p-font-size: 16px;
-  --article-p-margin: 0 0 var(--spacer-3xs);
-  --article-ul-font-size: 16px;
-  --article-ul-margin: 0 0 var(--spacer-3xs);
-  --article-ol-font-size: 16px;
+  --article-h5-margin: var(--spacer) 0 var(--spacer-xs);
+  --article-h6-margin: var(--spacer) 0 var(--spacer-xs);
+  --article-p-margin: 0 0 var(--spacer-xs);
+  --article-ul-margin: 0 0 var(--spacer-s);
   --article-ol-margin: 0 0 var(--spacer-3xs);
+  --article-li-margin: 0 0 var(--spacer-3xs);
 }
 
 /**
  * ARTICLE
  * -------------------------------------------------------------------
  */
+.o-article h1,
+.o-article h2,
+.o-article h3 {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
 .o-article h1 {
-  font-family: var(--article-h1-font-family);
-  font-size: var(--article-h1-font-size);
-  font-weight: var(--article-h1-font-weight);
   margin: var(--article-h1-margin);
 }
 .o-article h2 {
-  font-family: var(--article-h2-font-family);
-  font-size: var(--article-h2-font-size);
-  font-weight: var(--article-h2-font-weight);
   margin: var(--article-h2-margin);
 }
 .o-article h3 {
-  font-family: var(--article-h3-font-family);
-  font-size: var(--article-h3-font-size);
-  font-weight: var(--article-h3-font-weight);
   margin: var(--article-h3-margin);
 }
 .o-article h4 {
-  font-family: var(--article-h4-font-family);
-  font-size: var(--article-h4-font-size);
-  font-weight: var(--article-h4-font-weight);
   margin: var(--article-h4-margin);
 }
 .o-article h5 {
-  font-family: var(--article-h5-font-family);
-  font-size: var(--article-h5-font-size);
-  font-weight: var(--article-h5-font-weight);
   margin: var(--article-h5-margin);
 }
 .o-article h6 {
-  font-family: var(--article-h6-font-family);
-  font-size: var(--article-h6-font-size);
-  font-weight: var(--article-h6-font-weight);
   margin: var(--article-h6-margin);
 }
 .o-article p {
-  font-size: var(--article-p-font-size);
   margin: var(--article-p-margin);
+}
+.o-article ul li,
+.o-article ol li {
+  margin: var(--article-li-margin);
 }
 .o-article ul ul,
 .o-article ul ol,
 .o-article ol ul,
 .o-article ol ol {
+  margin: 0;
   padding-left: var(--spacer);
 }
 .o-article ul {
-  font-size: var(--article-ul-font-size);
   margin: var(--article-ul-margin);
 }
 .o-article ol {
-  font-size: var(--article-ol-font-size);
   margin: var(--article-ol-margin);
 }
 .o-article > :first-child {
