@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## [6.1.0] - 2022-10-10
+
 ### Added
 - Added custom properties for headings
 - Added .o-article list margin custom property
@@ -666,6 +669,7 @@
 - Initial release.
 
 
+[6.1.0]: https://github.com/a-ui/core_branding_scss/tree/v6.1.0
 [6.0.0]: https://github.com/a-ui/core_branding_scss/tree/v6.0.0
 [5.0.2]: https://github.com/a-ui/core_branding_scss/tree/v5.0.2
 [5.0.1]: https://github.com/a-ui/core_branding_scss/tree/v5.0.1
