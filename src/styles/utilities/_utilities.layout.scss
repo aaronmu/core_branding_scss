@@ -8,21 +8,10 @@
  * -------------------------------------------------------------------
  */
 
-.u-wrapper {
-  @include at($screen-xs) {
-    padding-left: calc(var(--spacer) * 3);
-  }
-
-  @include at($screen-xl) {
-    margin: 0 auto;
-    padding: 0;
-  }
-}
-
 .u-container {
   margin: 0 auto;
   max-width: $screen-lg;
-  padding: 0 var(--spacer-xs);
+  padding: 0 var(--spacer);
   width: 100%;
 }
 

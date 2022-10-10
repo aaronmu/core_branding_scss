@@ -14,7 +14,7 @@
 var gulp = require('gulp'),
     fs = require('fs');
 
-var sass = require('gulp-sass'),
+var sass = require('gulp-sass')(require('sass')),
     sourcemaps = require('gulp-sourcemaps'),
     postcss = require("gulp-postcss"),
     autoprefixer = require("autoprefixer"),
@@ -24,8 +24,6 @@ var sass = require('gulp-sass'),
     license = require('gulp-header-license'),
     stylelint = require('gulp-stylelint'),
     browserSync = require('browser-sync');
-
-sass.compiler = require('sass');
 
 var cssNano = [
     cssnano({
