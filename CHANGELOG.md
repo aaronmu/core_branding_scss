@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+### Changed
+- Tweaked the design of the definition list
+
 
 ## [6.1.0] - 2022-10-10
 
