@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## [6.1.1] - 2022-12-09
+
 ### Fixed
 - Fixed an issue where the left icon of small and large buttons wasn't positioned correctly
 
@@ -672,6 +675,7 @@
 - Initial release.
 
 
+[6.1.1]: https://github.com/a-ui/core_branding_scss/tree/v6.1.1
 [6.1.0]: https://github.com/a-ui/core_branding_scss/tree/v6.1.0
 [6.0.0]: https://github.com/a-ui/core_branding_scss/tree/v6.0.0
 [5.0.2]: https://github.com/a-ui/core_branding_scss/tree/v5.0.2
