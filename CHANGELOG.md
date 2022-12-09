@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+### Fixed
+- Fixed an issue where the left icon of small and large buttons wasn't positioned correctly
+
 
 ## [6.1.0] - 2022-10-10
 
