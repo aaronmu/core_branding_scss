@@ -2008,7 +2008,7 @@ a:hover .a-avatar.a-avatar--primary, a:active .a-avatar.a-avatar--primary, a:foc
   right: 0;
 }
 
-.a-button--s.has-icon-left .a, .a-button--s.has-icon-left .a-spinner, .a-button--s.has-icon-right .ai, .a-button--s.has-icon-right .a-spinner {
+.a-button--s.has-icon-left .ai, .a-button--s.has-icon-left .a-spinner, .a-button--s.has-icon-right .ai, .a-button--s.has-icon-right .a-spinner {
   width: var(--spacer-l);
 }
 .a-button--s.has-icon-left {
@@ -2018,7 +2018,7 @@ a:hover .a-avatar.a-avatar--primary, a:active .a-avatar.a-avatar--primary, a:foc
   padding-right: var(--spacer-l);
 }
 
-.a-button--l.has-icon-left .a, .a-button--l.has-icon-left .a-spinner, .a-button--l.has-icon-right .ai, .a-button--l.has-icon-right .a-spinner {
+.a-button--l.has-icon-left .ai, .a-button--l.has-icon-left .a-spinner, .a-button--l.has-icon-right .ai, .a-button--l.has-icon-right .a-spinner {
   width: var(--spacer-xxl);
 }
 .a-button--l.has-icon-left {
