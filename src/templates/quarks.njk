@@ -68,16 +68,6 @@
                 <p>More functions are available, but the following are the more important ones.</p>
             </div>
         </div>
-        <!--<div class="d">
-            <div>
-                <p>Strip unit from value</p>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  margin: strip-unit(32px) / 16 * 1rem // margin: 2rem;
-}</code></pre>
-            </div>
-        </div>-->
         <div class="d">
             <div>
                 <p>Convert pixels to rem</p>
@@ -88,16 +78,6 @@
 }</code></pre>
             </div>
         </div>
-        <!--<div class="d">
-            <div>
-                <p>Raise number to certain power</p>
-            </div>
-            <div>
-                <pre class="a-pre a-pre--scrollable"><code class="scss">.css {
-  font-size: power($font-size-ratio, 6) // font-size: 48px;
-}</code></pre>
-            </div>
-        </div>-->
         <div class="d">
             <div>
                 <p>Correctly handle z-indexes</p>
@@ -124,13 +104,9 @@
                     {% for color in COLORS %}
                         <li class="d-{{ color.name | escape | replace('$', '') }}">
                             <span class="d-color" style="background: {{ color.value }}" aria-hidden="true"></span>
-                            <code>{{ color.name }}</code><br /><span>{{ color.value }}</span></small>
+                            <code>{{ color.name }}</code> <strong>{{ color.value }}</strong></small>
                         </li>
                     {% endfor %}
-                    <li class="d-instagram">
-                        <span class="d-color" style="background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%)" aria-hidden="true"></span>
-                            <code>$instagram</code><br /><span class="u-text-light">inspect me</span></small>
-                    </li>
                 </ul>
             </div>
         </div>

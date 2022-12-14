@@ -3,8 +3,12 @@
 
 ## Unreleased
 
+### Added
+- Added new color for TikTok
+
 ### Changed
 - Tweaked the design of the definition list
+- Changed the Instagram button design
 
 
 ## [6.1.1] - 2022-12-09
