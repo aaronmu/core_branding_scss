@@ -183,7 +183,7 @@
     row-gap: var(--spacer);
 
     > li {
-      border: 1px solid var(--border-color);
+      border: 1px solid var(--bg-color);
       min-height: 4rem;
       padding-bottom: var(--spacer-xs);
       padding-left: var(--spacer-xl);
@@ -193,7 +193,7 @@
 
       .d-color {
         bottom: 0;
-        box-shadow: 0 0 0 var(--border-width) $gray-300;
+        box-shadow: 0 0 0 var(--border-width) var(--bg-color);
         display: block;
         left: 0;
         position: absolute;

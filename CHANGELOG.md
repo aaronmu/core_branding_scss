@@ -4,10 +4,12 @@
 ## Unreleased
 
 ### Added
+- Added TikTok icon
 - Added new color for TikTok
 
 ### Changed
 - Tweaked the design of the definition list
+- Tweaked the design of the avatar list
 - Changed the Instagram button design
 
 
