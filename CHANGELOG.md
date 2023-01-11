@@ -14,6 +14,7 @@
 
 ### Fixed
 - Fixed an issue where table cells were sometimes 1px too high
+- Fixed the indeterminate styling of radio buttons
 
 
 ## [6.1.1] - 2022-12-09
