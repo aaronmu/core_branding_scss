@@ -316,3 +316,18 @@
     }
   }
 }
+
+/**
+ * TABLE CELL 1PX HEIGHT FIX FOR CHECKBOXES AND BUTTONS
+ * -------------------------------------------------------------------
+ */
+
+.a-table {
+  &__sort-button {
+    min-height: calc(var(--spacer-xl) - 1px);
+  }
+
+  .a-input__checkbox {
+    margin: -.5px 0;
+  }
+}

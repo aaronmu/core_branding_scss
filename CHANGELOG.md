@@ -12,6 +12,9 @@
 - Tweaked the design of the avatar list
 - Changed the Instagram button design
 
+### Fixed
+- Fixed an issue where table cells were sometimes 1px too high
+
 
 ## [6.1.1] - 2022-12-09
 
