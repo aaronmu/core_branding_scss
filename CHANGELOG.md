@@ -4,13 +4,13 @@
 ## Unreleased
 
 ### Added
-- Added TikTok icon
-- Added new color for TikTok
+- Added new Instagram color
+- Added new TikTok icon with accompanying color
 
 ### Changed
 - Tweaked the design of the definition list
-- Tweaked the design of the datepicker
 - Changed the Instagram button design
+- Tweaked the design of the datepicker
 
 ### Fixed
 - Fixed an issue where icon buttons weren't vertically aligned correctly
