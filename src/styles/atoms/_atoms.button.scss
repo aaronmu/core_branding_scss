@@ -230,6 +230,7 @@
   transition-property: color, background, box-shadow;
   transition-timing-function: var(--animation-easing);
   user-select: none;
+  vertical-align: middle;
   width: 100%;
 
   @include at($screen-xs) {

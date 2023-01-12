@@ -9,10 +9,11 @@
 
 ### Changed
 - Tweaked the design of the definition list
-- Tweaked the design of the avatar list
+- Tweaked the design of the datepicker
 - Changed the Instagram button design
 
 ### Fixed
+- Fixed an issue where icon buttons weren't vertically aligned correctly
 - Fixed an issue where table cells were sometimes 1px too high
 - Fixed the indeterminate styling of radio buttons
 

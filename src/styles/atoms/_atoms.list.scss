@@ -276,7 +276,7 @@ a.a-avatar-list__item-container {
 }
 
 .a-avatar-list__item-container {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex-grow: 1;
   padding-left: var(--spacer-s);
@@ -284,11 +284,9 @@ a.a-avatar-list__item-container {
 
 .a-avatar-list__avatar {
   margin-right: var(--spacer-s);
-  margin-top: var(--spacer-s);
 }
 
 .a-avatar-list__content {
-  align-items: flex-start;
   border-top: var(--border-width) solid var(--list-item-border-color);
   display: flex;
   flex-grow: 1;
