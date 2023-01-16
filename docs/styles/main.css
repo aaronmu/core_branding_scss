@@ -1650,18 +1650,24 @@ a:hover .a-avatar.a-avatar--primary, a:active .a-avatar.a-avatar--primary, a:foc
   --btn-facebook-hover-bg-color: #0a52b0;
   --btn-facebook-border-color: #1877f2;
   --btn-facebook-hover-border-color: #0a52b0;
+  --btn-instagram-color: #fff;
+  --btn-instagram-hover-color: var(--btn-instagram-color);
+  --btn-instagram-bg-color: #ff0069;
+  --btn-instagram-hover-bg-color: #b8004d;
+  --btn-instagram-border-color: #ff0069;
+  --btn-instagram-hover-border-color: #b8004d;
   --btn-snapchat-color: #000;
   --btn-snapchat-hover-color: var(--btn-snapchat-color);
   --btn-snapchat-bg-color: #fffc00;
   --btn-snapchat-hover-bg-color: #c4c100;
   --btn-snapchat-border-color: #fffc00;
   --btn-snapchat-hover-border-color: #c4c100;
-  --btn-instagram-color: #fff;
-  --btn-instagram-hover-color: var(--btn-instagram-color);
-  --btn-instagram-bg-color: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
-  --btn-instagram-hover-bg-color: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
-  --btn-instagram-border-color: transparent;
-  --btn-instagram-hover-border-color: transparent;
+  --btn-tiktok-color: #000;
+  --btn-tiktok-hover-color: var(--btn-tiktok-color);
+  --btn-tiktok-bg-color: #25f4ee;
+  --btn-tiktok-hover-bg-color: #08bbb5;
+  --btn-tiktok-border-color: #25f4ee;
+  --btn-tiktok-hover-border-color: #08bbb5;
   --btn-social-color: #000;
   --btn-social-hover-color: var(--theme1-400);
   --btn-social-bg-color: transparent;
@@ -1701,6 +1707,7 @@ a:hover .a-avatar.a-avatar--primary, a:active .a-avatar.a-avatar--primary, a:foc
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  vertical-align: middle;
   width: 100%;
 }
 @media screen and (min-width: 30rem) {
@@ -1808,6 +1815,14 @@ a:hover .a-avatar.a-avatar--primary, a:active .a-avatar.a-avatar--primary, a:foc
   --btn-border-color: var(--btn-facebook-border-color);
   --btn-hover-border-color: var(--btn-facebook-hover-border-color);
 }
+.a-button.has-icon.a-button--instagram {
+  --btn-color: var(--btn-instagram-color);
+  --btn-hover-color: var(--btn-instagram-hover-color);
+  --btn-bg-color: var(--btn-instagram-bg-color);
+  --btn-hover-bg-color: var(--btn-instagram-hover-bg-color);
+  --btn-border-color: var(--btn-instagram-border-color);
+  --btn-hover-border-color: var(--btn-instagram-hover-border-color);
+}
 .a-button.has-icon.a-button--snapchat {
   --btn-color: var(--btn-snapchat-color);
   --btn-hover-color: var(--btn-snapchat-hover-color);
@@ -1816,29 +1831,13 @@ a:hover .a-avatar.a-avatar--primary, a:active .a-avatar.a-avatar--primary, a:foc
   --btn-border-color: var(--btn-snapchat-border-color);
   --btn-hover-border-color: var(--btn-snapchat-hover-border-color);
 }
-.a-button.has-icon.a-button--instagram {
-  --btn-color: var(--btn-instagram-color);
-  --btn-hover-color: var(--btn-instagram-hover-color);
-  --btn-bg-color: var(--btn-instagram-bg-color);
-  --btn-hover-bg-color: var(--btn-instagram-hover-bg-color);
-  --btn-border-color: var(--btn-instagram-border-color);
-  --btn-hover-border-color: var(--btn-instagram-hover-border-color);
-  position: relative;
-}
-.a-button.has-icon.a-button--instagram:before {
-  background-color: #000;
-  content: "";
-  height: 100%;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  transition: opacity var(--animation-normal);
-  width: 100%;
-}
-.a-button.has-icon.a-button--instagram:hover:before, .a-button.has-icon.a-button--instagram:active:before, .a-button.has-icon.a-button--instagram:focus:before {
-  opacity: 0.2;
+.a-button.has-icon.a-button--tiktok {
+  --btn-color: var(--btn-tiktok-color);
+  --btn-hover-color: var(--btn-tiktok-hover-color);
+  --btn-bg-color: var(--btn-tiktok-bg-color);
+  --btn-hover-bg-color: var(--btn-tiktok-hover-bg-color);
+  --btn-border-color: var(--btn-tiktok-border-color);
+  --btn-hover-border-color: var(--btn-tiktok-hover-border-color);
 }
 .a-button.has-icon.a-button--social {
   --btn-color: var(--btn-social-color);
@@ -2792,10 +2791,10 @@ a:not([class^=a-button]).has-icon-right .ai {
   margin: 0;
 }
 .a-definition-list dt {
-  font-weight: var(--font-weight-bold);
   padding-top: var(--spacer-3xs);
 }
 .a-definition-list dd {
+  font-weight: var(--font-weight-bold);
   margin-left: 0;
   padding-bottom: var(--spacer-3xs);
 }
@@ -3106,9 +3105,8 @@ a.a-page-indicator__item:focus {
   width: auto;
   z-index: 1;
 }
-.a-input__checkbox input:checked + label:before, .a-input__checkbox input:indeterminate + label:before,
-.a-input__radio input:checked + label:before,
-.a-input__radio input:indeterminate + label:before {
+.a-input__checkbox input:checked + label:before,
+.a-input__radio input:checked + label:before {
   background-color: var(--radio-checkbox-bg-color);
   box-shadow: 0 0 0 var(--border-width) var(--radio-checkbox-bg-color) inset;
 }
@@ -3192,6 +3190,10 @@ a.a-page-indicator__item:focus {
 }
 .a-input__checkbox input[type=checkbox]:checked:disabled + label:after {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22><path fill=%22%236f6f6f%22 d=%22M7.2,17c-0.2,0-0.3-0.1-0.4-0.2l-3.7-3.7C3,13,3,12.6,3.1,12.5s0.5-0.2,0.7,0l3.2,3.2l9-12.5c0.2-0.3,0.4-0.3,0.7-0.1c0.3,0.2,0.3,0.4,0.1,0.7l-9.4,13C7.4,16.9,7.3,17,7.2,17L7.2,17z%22/></svg>");
+}
+.a-input__checkbox input[type=checkbox]:indeterminate + label:before {
+  background-color: var(--radio-checkbox-bg-color);
+  box-shadow: 0 0 0 var(--border-width) var(--radio-checkbox-bg-color) inset;
 }
 .a-input__checkbox input[type=checkbox]:indeterminate + label:after {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22><path fill=%22%23ffffff%22 d=%22M16.5,10.5h-13C3.2,10.5,3,10.3,3,10s0.2-0.5,0.4-0.5h13.1c0.3,0,0.4,0.2,0.4,0.5S16.7,10.5,16.5,10.5z%22/></svg>");
@@ -3755,6 +3757,17 @@ a.a-page-indicator__item:focus {
 }
 
 /**
+ * TABLE CELL 1PX HEIGHT FIX FOR CHECKBOXES AND BUTTONS
+ * -------------------------------------------------------------------
+ */
+.a-table__sort-button {
+  min-height: calc(var(--spacer-xl) - 1px);
+}
+.a-table .a-input__checkbox {
+  margin: -0.5px 0;
+}
+
+/**
  * TOGGLE
  * -------------------------------------------------------------------
  */
@@ -4288,7 +4301,7 @@ a.a-page-indicator__item:focus {
   font-weight: var(--font-weight-bold);
   margin: 0;
   padding: 0 1rem;
-  transition: background-color var(--animation-normal);
+  transition: background-color var(--animation-normal), color var(--animation-normal);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -4299,7 +4312,13 @@ a.a-page-indicator__item:focus {
   margin-left: var(--spacer-xxs);
 }
 .m-datepicker__nav-title:hover, .m-datepicker__nav-title:active, .m-datepicker__nav-title:focus {
-  background-color: var(--datepicker-bg-color-dark);
+  background-color: var(--datepicker-highlight-color);
+}
+.m-datepicker__nav-title:hover,
+.m-datepicker__nav-title:hover .ai, .m-datepicker__nav-title:active,
+.m-datepicker__nav-title:active .ai, .m-datepicker__nav-title:focus,
+.m-datepicker__nav-title:focus .ai {
+  color: var(--datepicker-active-color);
 }
 
 .m-datepicker__nav-pagination {
