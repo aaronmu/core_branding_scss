@@ -3,6 +3,20 @@
 
 ## Unreleased
 
+### Added
+- Added new Instagram color
+- Added new TikTok icon with accompanying color
+
+### Changed
+- Tweaked the design of the definition list
+- Changed the Instagram button design
+- Tweaked the design of the datepicker
+
+### Fixed
+- Fixed an issue where icon buttons weren't vertically aligned correctly
+- Fixed an issue where table cells were sometimes 1px too high
+- Fixed the indeterminate styling of radio buttons
+
 
 ## [6.1.1] - 2022-12-09
 

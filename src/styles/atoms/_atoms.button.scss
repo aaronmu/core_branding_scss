@@ -170,6 +170,13 @@
   --btn-facebook-border-color:                  #{$facebook};
   --btn-facebook-hover-border-color:            #{$facebook-hover};
 
+  --btn-instagram-color:                        #{$white};
+  --btn-instagram-hover-color:                  var(--btn-instagram-color);
+  --btn-instagram-bg-color:                     #{$instagram};
+  --btn-instagram-hover-bg-color:               #{$instagram-hover};
+  --btn-instagram-border-color:                 #{$instagram};
+  --btn-instagram-hover-border-color:           #{$instagram-hover};
+
   --btn-snapchat-color:                         #{$black};
   --btn-snapchat-hover-color:                   var(--btn-snapchat-color);
   --btn-snapchat-bg-color:                      #{$snapchat};
@@ -177,12 +184,12 @@
   --btn-snapchat-border-color:                  #{$snapchat};
   --btn-snapchat-hover-border-color:            #{$snapchat-hover};
 
-  --btn-instagram-color:                        #{$white};
-  --btn-instagram-hover-color:                  var(--btn-instagram-color);
-  --btn-instagram-bg-color:                     #{$instagram};
-  --btn-instagram-hover-bg-color:               #{$instagram};
-  --btn-instagram-border-color:                 transparent;
-  --btn-instagram-hover-border-color:           transparent;
+  --btn-tiktok-color:                         #{$black};
+  --btn-tiktok-hover-color:                   var(--btn-tiktok-color);
+  --btn-tiktok-bg-color:                      #{$tiktok};
+  --btn-tiktok-hover-bg-color:                #{$tiktok-hover};
+  --btn-tiktok-border-color:                  #{$tiktok};
+  --btn-tiktok-hover-border-color:            #{$tiktok-hover};
 
   --btn-social-color:                           #{$black};
   --btn-social-hover-color:                     var(--theme1-400);
@@ -223,6 +230,7 @@
   transition-property: color, background, box-shadow;
   transition-timing-function: var(--animation-easing);
   user-select: none;
+  vertical-align: middle;
   width: 100%;
 
   @include at($screen-xs) {
@@ -350,6 +358,15 @@
     --btn-hover-border-color: var(--btn-facebook-hover-border-color);
   }
 
+  &.a-button--instagram {
+    --btn-color: var(--btn-instagram-color);
+    --btn-hover-color: var(--btn-instagram-hover-color);
+    --btn-bg-color: var(--btn-instagram-bg-color);
+    --btn-hover-bg-color: var(--btn-instagram-hover-bg-color);
+    --btn-border-color: var(--btn-instagram-border-color);
+    --btn-hover-border-color: var(--btn-instagram-hover-border-color);
+  }
+
   &.a-button--snapchat {
     --btn-color: var(--btn-snapchat-color);
     --btn-hover-color: var(--btn-snapchat-hover-color);
@@ -359,36 +376,13 @@
     --btn-hover-border-color: var(--btn-snapchat-hover-border-color);
   }
 
-  &.a-button--instagram {
-    --btn-color: var(--btn-instagram-color);
-    --btn-hover-color: var(--btn-instagram-hover-color);
-    --btn-bg-color: var(--btn-instagram-bg-color);
-    --btn-hover-bg-color: var(--btn-instagram-hover-bg-color);
-    --btn-border-color: var(--btn-instagram-border-color);
-    --btn-hover-border-color: var(--btn-instagram-hover-border-color);
-
-    position: relative;
-
-    &:before {
-      background-color: $black;
-      content: '';
-      height: 100%;
-      left: 0;
-      opacity: 0;
-      pointer-events: none;
-      position: absolute;
-      top: 0;
-      transition: opacity var(--animation-normal);
-      width: 100%;
-    }
-
-    &:hover,
-    &:active,
-    &:focus {
-      &:before {
-        opacity: .2;
-      }
-    }
+  &.a-button--tiktok {
+    --btn-color: var(--btn-tiktok-color);
+    --btn-hover-color: var(--btn-tiktok-hover-color);
+    --btn-bg-color: var(--btn-tiktok-bg-color);
+    --btn-hover-bg-color: var(--btn-tiktok-hover-bg-color);
+    --btn-border-color: var(--btn-tiktok-border-color);
+    --btn-hover-border-color: var(--btn-tiktok-hover-border-color);
   }
 
   &.a-button--social {

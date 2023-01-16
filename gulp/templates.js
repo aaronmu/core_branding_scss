@@ -28,8 +28,8 @@ function getTemplateData(){
     };
 
     data.VERSION_INFO = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-    data.COLORS = stripDefaults(exporter({inputFiles: ['src/styles/quarks/_quarks.colors.scss'],includePaths: ['src/styles/quarks/']}).getArray());
-    data.VARIABLES = stripDefaults(exporter({inputFiles: ['src/styles/quarks/_quarks.variables.scss'],includePaths: ['src/styles/quarks/']}).getArray());
+    data.COLORS = exporter({inputFiles: ['src/styles/quarks/_quarks.colors.scss'],includePaths: ['src/styles/quarks/']}).getArray();
+    data.VARIABLES = exporter({inputFiles: ['src/styles/quarks/_quarks.variables.scss'],includePaths: ['src/styles/quarks/']}).getArray();
 
     var icons = glob.sync("src/icons/*.svg");
 	for(var i in icons) {
@@ -70,9 +70,4 @@ function getTemplateData(){
     );
 
     return data;
-}
-
-function stripDefaults(values) {
-    // Return all values but these of Instagram (since they are not part of the branding)
-    return values.filter(val => val.name.indexOf("instagram") === -1);
 }
