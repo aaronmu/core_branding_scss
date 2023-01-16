@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## [6.2.0] - 2023-01-16
+
 ### Added
 - Added new Instagram color
 - Added new TikTok icon with accompanying color
@@ -689,6 +692,7 @@
 - Initial release.
 
 
+[6.2.0]: https://github.com/a-ui/core_branding_scss/tree/v6.2.0
 [6.1.1]: https://github.com/a-ui/core_branding_scss/tree/v6.1.1
 [6.1.0]: https://github.com/a-ui/core_branding_scss/tree/v6.1.0
 [6.0.0]: https://github.com/a-ui/core_branding_scss/tree/v6.0.0
