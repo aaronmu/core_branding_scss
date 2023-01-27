@@ -235,6 +235,11 @@
         box-shadow: inset calc(var(--border-width) * -1) 0 0 0 var(--table-border-color);
         left: 0;
         position: sticky;
+        z-index: layer('base');
+
+        &.is-collapsed {
+          padding-right: 1px;
+        }
       }
     }
 
@@ -268,6 +273,10 @@
         box-shadow: inset var(--border-width) 0 0 0 var(--table-border-color);
         position: sticky;
         right: 0;
+
+        &.is-collapsed {
+          padding-left: 1px;
+        }
       }
     }
 
