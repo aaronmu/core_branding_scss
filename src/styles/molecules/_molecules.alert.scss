@@ -39,10 +39,6 @@
     position: absolute;
     right: 0;
     top: 0;
-
-    + * {
-      margin-right: var(--spacer-l);
-    }
   }
 }
 
@@ -52,9 +48,8 @@
  */
 
 .m-alert__icon {
-  position: absolute;
-  left: var(--alert-padding);
-  top: var(--alert-padding);
+  float: left;
+  margin: calc(var(--spacer-xs) / -3) $spacer-xs 0 0;
 
   .ai {
     font-size: 1.5rem;
@@ -104,12 +99,6 @@
     --alert-color: var(--alert-danger-color);
     --alert-bg-color: var(--alert-danger-bg-color);
     --alert-border-color: var(--alert-danger-border-color);
-  }
-
-  &.m-alert--success,
-  &.m-alert--warning,
-  &.m-alert--danger {
-    padding-left: calc(var(--alert-padding) + var(--spacer-l));
   }
 }
 

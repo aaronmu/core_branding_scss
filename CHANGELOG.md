@@ -4,6 +4,9 @@
 ## Unreleased
 
 
+### Changed
+- Tweaked the design of the alert
+
 ### Fixed
 - Fixed disappearing borders of fixed sortable table columns
 - Fixed an icon overlay issue in scrollable tables
