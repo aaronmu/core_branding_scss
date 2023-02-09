@@ -90,6 +90,10 @@
   .m-pagination__next {
     z-index: layer('auto');
   }
+
+  .m-pagination__prev + .m-pagination__next {
+    z-index: layer('base');
+  }
 }
 
 /**

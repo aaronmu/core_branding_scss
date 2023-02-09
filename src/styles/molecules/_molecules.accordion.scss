@@ -54,7 +54,6 @@
     margin-top: calc(var(--border-width) * -1);
   }
 
-  
   .m-accordion__header {
     &[aria-expanded='true'] {
       font-weight: var(--font-weight-bold);
