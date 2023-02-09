@@ -1,19 +1,19 @@
-# Antwerp Branding Core
+# Antwerp Core Branding
 
-This project contains Antwerp's new digital styling and styling guidelines. It is the starting point to style your app or website for the city of Antwerp.
+This project contains Antwerp's digital styling and styling guidelines. It is the starting point to style your app or website for the city of Antwerp.
 
 ## Getting started
 
 In its simplest form you can just include the following line in the `<head>` section of your app.
 
 ```
-<link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/6.0.0-beta.1/main.min.css">
+<link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/6.2.0/main.min.css">
 ```
 
 You can even import it directly in your (S)CSS:
 
 ```
-@import url("https://cdn.antwerpen.be/core_branding_scss/6.0.0-beta.1/main.min.css");
+@import url("https://cdn.antwerpen.be/core_branding_scss/6.2.0/main.min.css");
 ```
 
 > We adopt semantic versioning. If you want to use another version of the Core Branding you can do so by adjusting the version in the URL address. See the changelog for all available versions.
@@ -41,7 +41,7 @@ npm install
 Run the following command in your command line:
 
 ```
-gulp server
+npm start
 ```
 
 ### Building
@@ -49,18 +49,16 @@ gulp server
 Run the following command in your command line:
 
 ```
-gulp build
+npm run build
 ```
 
 ### Creating your own customized build
 
-To apply your own style to the kit, import it into your project and use the accompanied `.scss` files. You will be able to overwrite our variables (for colors, spacing, etc.) with your own.
-
-> Look for the `_quarks.colors.scss` and `_quarks.variables.scss` files to see all variables you can overwrite.
+Since this styling kit is built upon CSS custom properties, you can simply override the defaults by specifying your own properties. No need to rebuild any code!
 
 ## Contributing
 
-For now, contact us via [branding@stad.antwerpen.be](mailto:branding@stad.antwerpen.be).
+Contact us via [branding@stad.antwerpen.be](mailto:branding@stad.antwerpen.be).
 
 ## Versioning
 
