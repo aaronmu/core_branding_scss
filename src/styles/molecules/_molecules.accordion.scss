@@ -54,8 +54,8 @@
     margin-top: calc(var(--border-width) * -1);
   }
 
-  &[aria-expanded='true'] {
-    .m-accordion__header {
+  .m-accordion__header {
+    &[aria-expanded='true'] {
       font-weight: var(--font-weight-bold);
 
       &:after {
@@ -68,10 +68,11 @@
         --accordion-header-color: var(--accordion-header-hover-color);
         --accordion-icon-color: var(--accordion-icon-hover-color);
       }
-    }
 
-    .m-accordion__content {
-      max-height: rem(500px);
+      + .m-accordion__content {
+        display: block;
+        max-height: none;
+      }
     }
   }
 }
@@ -121,7 +122,7 @@
   background-color: var(--accordion-content-bg-color);
   border: var(--border-width) solid var(--accordion-content-border-color);
   border-top: none;
-  display: block;
+  display: none;
   margin-top: calc(var(--border-width) * -1);
   max-height: 0;
   overflow: auto;

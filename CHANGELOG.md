@@ -6,10 +6,14 @@
 
 ### Changed
 - Tweaked the design of the alert
+- Tweaked the accordion design
+- Optimized the accessibility of the pagination
 
 ### Fixed
 - Fixed disappearing borders of fixed sortable table columns
 - Fixed an icon overlay issue in scrollable tables
+- Fixed the accordion not working properly
+- Fixed a design issue where the pagination's back button would not overlap correctly
 
 
 ## [6.2.0] - 2023-01-16
