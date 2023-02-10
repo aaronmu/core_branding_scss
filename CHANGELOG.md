@@ -7,6 +7,7 @@
 ### Changed
 - Tweaked the design of the alert
 - Tweaked the accordion design
+- Optimized the accessibility of the pagination
 
 ### Fixed
 - Fixed disappearing borders of fixed sortable table columns
