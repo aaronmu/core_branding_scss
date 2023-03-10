@@ -5,7 +5,7 @@
 
 
 ### Fixed
-- Fixed the strange focus ring when using step indicator with buttons
+- Fixed strange focus ring when using step indicator with buttons
 
 
 ## [6.2.1] - 2023-02-10
