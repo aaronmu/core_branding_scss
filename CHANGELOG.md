@@ -8,6 +8,7 @@
 - Fixed strange focus ring when using step indicator with buttons
 - Fixed input error text contrast
 - Fixed switch syntax to fix accessibility
+- Removed the accordion's overflow in order to be completely accessible
 
 
 ## [6.2.1] - 2023-02-10
