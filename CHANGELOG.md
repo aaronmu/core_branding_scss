@@ -26,6 +26,7 @@
 - Fixed a design issue where the pagination's back button would not overlap correctly
 - Fixed the accessibility of the avatar
 - Fixed the accessibility of the page indicator
+- Fixed the accessibility of the progress bar
 
 
 ## [6.2.0] - 2023-01-16
