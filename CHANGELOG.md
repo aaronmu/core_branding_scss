@@ -24,6 +24,7 @@
 - Fixed an icon overlay issue in scrollable tables
 - Fixed the accordion not working properly
 - Fixed a design issue where the pagination's back button would not overlap correctly
+- Fixed the accessibility of the avatar
 
 
 ## [6.2.0] - 2023-01-16
