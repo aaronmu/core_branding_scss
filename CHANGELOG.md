@@ -6,6 +6,7 @@
 
 ### Fixed
 - Fixed strange focus ring when using step indicator with buttons
+- Fixed input error text contrast
 
 
 ## [6.2.1] - 2023-02-10
