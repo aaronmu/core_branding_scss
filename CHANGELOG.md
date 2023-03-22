@@ -18,6 +18,7 @@
 - Tweaked the design of the alert
 - Tweaked the accordion design
 - Optimized the accessibility of the pagination
+- Optimized the accessibility of the navigation
 
 ### Fixed
 - Fixed disappearing borders of fixed sortable table columns
