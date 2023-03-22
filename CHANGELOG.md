@@ -10,6 +10,11 @@
 - Fixed switch syntax to fix accessibility
 - Removed the accordion's overflow in order to be completely accessible
 - Removed the aria-expanded attribute on copyright anchor elements
+- Added the img role to the avatar with icon to fix accessibility
+- Made the page indicator higher to fix accessibility
+- Added label to the progress bar to fix accessibility
+- Fixed navigation syntax to fix accessibility
+- Fixed a contrast issue with small text in a highlighted table row
 
 
 ## [6.2.1] - 2023-02-10
@@ -18,16 +23,12 @@
 - Tweaked the design of the alert
 - Tweaked the accordion design
 - Optimized the accessibility of the pagination
-- Optimized the accessibility of the navigation
 
 ### Fixed
 - Fixed disappearing borders of fixed sortable table columns
 - Fixed an icon overlay issue in scrollable tables
 - Fixed the accordion not working properly
 - Fixed a design issue where the pagination's back button would not overlap correctly
-- Fixed the accessibility of the avatar
-- Fixed the accessibility of the page indicator
-- Fixed the accessibility of the progress bar
 
 
 ## [6.2.0] - 2023-01-16
