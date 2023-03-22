@@ -31,13 +31,11 @@
   flex-grow: 1;
   height: var(--spacer-xl);
   position: relative;
-  // transform: translateY(calc(-1 * ((var(--spacer-xl) - var(--page-indicator-height)) / 2)));
   width: var(--page-indicator-width);
 
   &:before {
     background-color: var(--page-indicator-bg-color);
     content: '';
-    display: block;
     height: var(--page-indicator-height);
     left: 0;
     position: absolute;
