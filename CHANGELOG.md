@@ -9,6 +9,7 @@
 - Fixed input error text contrast
 - Fixed switch syntax to fix accessibility
 - Removed the accordion's overflow in order to be completely accessible
+- Removed the aria-expanded attribute on copyright anchor elements
 
 
 ## [6.2.1] - 2023-02-10
