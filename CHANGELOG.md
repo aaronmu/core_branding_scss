@@ -15,6 +15,7 @@
 - Added label to the progress bar to fix accessibility
 - Fixed navigation syntax to fix accessibility
 - Fixed a contrast issue with small text in a highlighted table row
+- Fixed a layout issue with disabled indeterminate checboxes
 
 
 ## [6.2.1] - 2023-02-10
