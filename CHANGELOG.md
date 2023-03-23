@@ -6,6 +6,15 @@
 
 ### Fixed
 - Fixed strange focus ring when using step indicator with buttons
+- Fixed input error text contrast
+- Fixed switch syntax to fix accessibility
+- Removed the accordion's overflow in order to be completely accessible
+- Removed the aria-expanded attribute on copyright anchor elements
+- Added the img role to the avatar with icon to fix accessibility
+- Made the page indicator higher to fix accessibility
+- Added label to the progress bar to fix accessibility
+- Fixed navigation syntax to fix accessibility
+- Fixed a contrast issue with small text in a highlighted table row
 
 
 ## [6.2.1] - 2023-02-10

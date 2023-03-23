@@ -125,7 +125,6 @@
   display: none;
   margin-top: calc(var(--border-width) * -1);
   max-height: 0;
-  overflow: auto;
   padding: 0;
   transition: max-height .5s ease-out;
 }
