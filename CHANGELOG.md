@@ -4,6 +4,8 @@
 ## Unreleased
 
 
+## [6.2.2] - 2023-03-24
+
 ### Fixed
 - Fixed strange focus ring when using step indicator with buttons
 - Fixed input error text contrast
@@ -721,6 +723,7 @@
 - Initial release.
 
 
+[6.2.2]: https://github.com/a-ui/core_branding_scss/tree/v6.2.2
 [6.2.1]: https://github.com/a-ui/core_branding_scss/tree/v6.2.1
 [6.2.0]: https://github.com/a-ui/core_branding_scss/tree/v6.2.0
 [6.1.1]: https://github.com/a-ui/core_branding_scss/tree/v6.1.1

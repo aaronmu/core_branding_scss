@@ -281,7 +281,6 @@
   --state-success: var(--success-600);
   --state-warning: var(--warning-400);
   --state-danger: var(--danger-500);
-  --state-danger-light: var(--danger-400);
   --state-disabled: #6f6f6f;
   /**
    * SPACERS
@@ -2461,7 +2460,7 @@ textarea {
   color: var(--state-success);
 }
 .a-input__description.is-error {
-  color: var(--state-danger-light);
+  color: var(--state-danger);
 }
 
 /**
@@ -2951,16 +2950,27 @@ a.a-avatar-list__item-container {
  * -------------------------------------------------------------------
  */
 .a-page-indicator__item {
-  background-color: var(--page-indicator-bg-color);
+  background-color: transparent;
   flex-grow: 1;
-  height: var(--page-indicator-height);
-  transition: background-color var(--animation-normal);
+  height: var(--spacer-xl);
+  position: relative;
   width: var(--page-indicator-width);
+}
+.a-page-indicator__item:before {
+  background-color: var(--page-indicator-bg-color);
+  content: "";
+  height: var(--page-indicator-height);
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color var(--animation-normal);
+  width: 100%;
 }
 .a-page-indicator__item:not(:last-child) {
   margin-right: var(--page-indicator-spacing);
 }
-.a-page-indicator__item.is-active {
+.a-page-indicator__item.is-active:before {
   --page-indicator-bg-color: var(--page-indicator-active-bg-color);
 }
 
@@ -2970,10 +2980,10 @@ a.a-page-indicator__item {
   cursor: pointer;
   padding: 0;
 }
-button.a-page-indicator__item:hover, button.a-page-indicator__item:active, button.a-page-indicator__item:focus,
-a.a-page-indicator__item:hover,
-a.a-page-indicator__item:active,
-a.a-page-indicator__item:focus {
+button.a-page-indicator__item:hover:before, button.a-page-indicator__item:active:before, button.a-page-indicator__item:focus:before,
+a.a-page-indicator__item:hover:before,
+a.a-page-indicator__item:active:before,
+a.a-page-indicator__item:focus:before {
   --page-indicator-bg-color: var(--page-indicator-active-bg-color);
 }
 
@@ -3199,7 +3209,9 @@ a.a-page-indicator__item:focus {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22><path fill=%22%23ffffff%22 d=%22M16.5,10.5h-13C3.2,10.5,3,10.3,3,10s0.2-0.5,0.4-0.5h13.1c0.3,0,0.4,0.2,0.4,0.5S16.7,10.5,16.5,10.5z%22/></svg>");
 }
 .a-input__checkbox input[type=checkbox]:indeterminate:disabled + label:after {
+  background-color: var(--radio-checkbox-disabled-bg-color);
   background-image: url("data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 20 20%22><path fill=%22%236f6f6f%22 d=%22M16.5,10.5h-13C3.2,10.5,3,10.3,3,10s0.2-0.5,0.4-0.5h13.1c0.3,0,0.4,0.2,0.4,0.5S16.7,10.5,16.5,10.5z%22/></svg>");
+  box-shadow: 0 0 0 var(--border-width) var(--radio-checkbox-disabled-border-color) inset;
 }
 
 .a-input__radio input[type=radio] + label:before,
@@ -3548,6 +3560,9 @@ a.a-page-indicator__item:focus {
 .a-table tbody tr.is-selected, .a-table tbody tr.is-clickable:active, .a-table tbody tr.is-clickable:hover, .a-table tbody tr.is-clickable:focus {
   background-color: var(--table-highlight-bg-color);
   cursor: pointer;
+}
+.a-table tbody tr.is-selected .small, .a-table tbody tr.is-clickable:active .small, .a-table tbody tr.is-clickable:hover .small, .a-table tbody tr.is-clickable:focus .small {
+  color: #424242;
 }
 .a-table tbody tr.is-selected td {
   border-top: var(--border-width) solid var(--table-highlight-border-color);
@@ -3978,7 +3993,6 @@ a.a-page-indicator__item:focus {
   display: none;
   margin-top: calc(var(--border-width) * -1);
   max-height: 0;
-  overflow: auto;
   padding: 0;
   transition: max-height 0.5s ease-out;
 }
@@ -5280,6 +5294,13 @@ a.a-page-indicator__item:focus {
 .m-step-indicator li a .m-step-indicator__number {
   font-weight: var(--font-weight-bold);
 }
+.m-step-indicator li a:focus {
+  outline: none;
+}
+.m-step-indicator li a:focus .m-step-indicator__number:before {
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 
 /**
  * STEP INDICATOR ELEMENTS
@@ -5369,6 +5390,7 @@ button.m-tag {
   --tag-border-color: var(--theme1-400);
   cursor: pointer;
   margin: 0;
+  padding: 0 0 0 var(--spacer-xs);
 }
 button.m-tag:hover, button.m-tag:active, button.m-tag:focus {
   --tag-bg-color: var(--theme1-050);

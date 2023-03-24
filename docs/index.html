@@ -94,8 +94,8 @@
             <div class="u-wrapper d-h2">
     <div class="u-container">
         <div class="d-margin-intro-3xl">
-            <div class="m-alert">
-                <h4 id="alert" class="h5 u-margin-bottom-xs">We've moved!</h4>
+            <div class="m-alert" role="alertdialog" aria-labelledby="moved-alert">
+                <h4 id="moved-alert" class="h5 u-margin-bottom-xs">We've moved!</h4>
                 <p>This page only contains code examples. For a complete overview of components, UX patterns and accessibility guidelines, please visit our <a href="https://digitalehuisstijl.antwerpen.be/" title="Antwerp digital branding guidelines" class="has-icon-right" target="_blank">digital branding guidelines portal<span class="ai" aria-hidden="true"><svg><use href="./images/ai.svg#ai-navigation-next" /></svg></span><span class="u-screen-reader-only"> (external)</span></a>.
                 </p>
             </div>
@@ -5005,7 +5005,7 @@
                 <div class="u-margin-right-xs">
                     <a href="javascript:void(0);">
                         <div class="a-avatar a-avatar--s">
-                            <span class="a-avatar__icon" aria-label="avatarTitle">
+                            <span class="a-avatar__icon" aria-label="avatarTitle" role="img">
                                 <span class="ai" aria-hidden="true"><svg><use href="./images/ai.svg#ai-single-neutral" /></svg></span>
                             </span>
                         </div>
@@ -5015,7 +5015,7 @@
                 <div class="u-margin-right-xs">
                     <a href="javascript:void(0);">
                         <div class="a-avatar">
-                            <span class="a-avatar__icon" aria-label="avatarTitle">
+                            <span class="a-avatar__icon" aria-label="avatarTitle" role="img">
                                 <span class="ai" aria-hidden="true"><svg><use href="./images/ai.svg#ai-single-neutral" /></svg></span>
                             </span>
                         </div>
@@ -5024,7 +5024,7 @@
 
                 <a href="javascript:void(0);">
                     <div class="a-avatar a-avatar--l">
-                        <span class="a-avatar__icon" aria-label="avatarTitle">
+                        <span class="a-avatar__icon" aria-label="avatarTitle" role="img">
                             <span class="ai" aria-hidden="true"><svg><use href="./images/ai.svg#ai-single-neutral" /></svg></span>
                         </span>
                     </div>
@@ -5034,7 +5034,7 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;a href="#"&gt;
   &lt;div class="a-avatar"&gt;
-    &lt;span class="a-avatar__icon" aria-label="avatarTitle"&gt;
+    &lt;span class="a-avatar__icon" aria-label="avatarTitle" role="img"&gt;
       &lt;span class="ai" aria-hidden="true"&gt;&lt;svg&gt;&lt;use href="https://cdn.antwerpen.be/core_branding_scss/6.2.1/assets/images/ai.svg#ai-single-neutral" /&gt;&lt;/svg&gt;&lt;/span&gt;
     &lt;/span&gt;
   &lt;/div&gt;
@@ -5115,7 +5115,7 @@
                 <div class="u-margin-right-xs">
                     <a href="javascript:void(0);">
                         <div class="a-avatar a-avatar--rounded">
-                            <span class="a-avatar__icon" aria-label="avatarTitle">
+                            <span class="a-avatar__icon" aria-label="avatarTitle" role="img">
                                 <span class="ai" aria-hidden="true"><svg><use href="./images/ai.svg#ai-single-neutral" /></svg></span>
                             </span>
                         </div>
@@ -7448,37 +7448,37 @@
         </div>
         <div class="d">
             <div>
-                <div class="a-page-indicator">
-                    <button class="a-page-indicator__item" aria-label="Go to page 1"></button>
-                    <button class="a-page-indicator__item is-active" aria-label="Go to page 2"></button>
-                    <button class="a-page-indicator__item" aria-label="Go to page 3"></button>
-                    <button class="a-page-indicator__item" aria-label="Go to page 4"></button>
+                <div class="a-page-indicator" role="tablist">
+                    <button class="a-page-indicator__item" aria-label="Go to page 1" role="tab"></button>
+                    <button class="a-page-indicator__item is-active" aria-label="Go to page 2" role="tab"></button>
+                    <button class="a-page-indicator__item" aria-label="Go to page 3" role="tab"></button>
+                    <button class="a-page-indicator__item" aria-label="Go to page 4" role="tab"></button>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator"&gt;
-  &lt;button class="a-page-indicator__item" aria-label="Go to page 1"&gt;&lt;/button&gt;
-  &lt;button class="a-page-indicator__item is-active" aria-label="Go to page 2"&gt;&lt;/button&gt;
-  &lt;button class="a-page-indicator__item" aria-label="Go to page 3"&gt;&lt;/button&gt;
-  &lt;button class="a-page-indicator__item" aria-label="Go to page 4"&gt;&lt;/button&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator" role="tablist"&gt;
+  &lt;button class="a-page-indicator__item" aria-label="Go to page 1" role="tab"&gt;&lt;/button&gt;
+  &lt;button class="a-page-indicator__item is-active" aria-label="Go to page 2" role="tab"&gt;&lt;/button&gt;
+  &lt;button class="a-page-indicator__item" aria-label="Go to page 3" role="tab"&gt;&lt;/button&gt;
+  &lt;button class="a-page-indicator__item" aria-label="Go to page 4" role="tab"&gt;&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
         <div class="d">
             <div>
-                <div class="a-page-indicator">
-                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 1"></a>
-                    <a href="javascript:void(0);" class="a-page-indicator__item is-active" aria-label="Go to page 2"></a>
-                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 3"></a>
-                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 4"></a>
+                <div class="a-page-indicator" role="tablist">
+                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 1" role="tab"></a>
+                    <a href="javascript:void(0);" class="a-page-indicator__item is-active" aria-label="Go to page 2" role="tab"></a>
+                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 3" role="tab"></a>
+                    <a href="javascript:void(0);" class="a-page-indicator__item" aria-label="Go to page 4" role="tab"></a>
                 </div>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator"&gt;
-  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 1"&gt;&lt;/a&gt;
-  &lt;a href="#" class="a-page-indicator__item is-active" aria-label="Go to page 2"&gt;&lt;/a&gt;
-  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 3"&gt;&lt;/a&gt;
-  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 4"&gt;&lt;/a&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-page-indicator" role="tablist"&gt;
+  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 1" role="tab"&gt;&lt;/a&gt;
+  &lt;a href="#" class="a-page-indicator__item is-active" aria-label="Go to page 2" role="tab"&gt;&lt;/a&gt;
+  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 3" role="tab"&gt;&lt;/a&gt;
+  &lt;a href="#" class="a-page-indicator__item" aria-label="Go to page 4" role="tab"&gt;&lt;/a&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -7555,14 +7555,14 @@
             <div>
                 <div class="a-progress">
                     <div class="a-progress__inner">
-                        <div class="a-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                        <div class="a-progress__bar" aria-label="Progress" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-progress"&gt;
   &lt;div class="a-progress__inner"&gt;
-    &lt;div class="a-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
+    &lt;div class="a-progress__bar" role="progressbar" aria-label="Progress" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -7570,17 +7570,17 @@
         <div class="d">
             <div>
                 <div class="a-progress">
-                    <div class="a-progress__label">Please wait...</div>
+                    <div class="a-progress__label" id="progress-label">Please wait...</div>
                     <div class="a-progress__inner">
-                        <div class="a-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                        <div class="a-progress__bar" role="progressbar" aria-labelledby="progress-label" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
                     </div>
                 </div>
             </div>
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="a-progress"&gt;
-  &lt;div class="a-progress__label"&gt;Please wait...&lt;/div&gt;
+  &lt;div class="a-progress__label" id="progress-label-1"&gt;Please wait...&lt;/div&gt;
   &lt;div class="a-progress__inner"&gt;
-    &lt;div class="a-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
+    &lt;div class="a-progress__bar" role="progressbar" aria-labelledby="progress-label-1" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -7591,14 +7591,14 @@
             <div>
                 <div class="a-progress a-progress--l u-margin-bottom-l">
                     <div class="a-progress__inner">
-                        <div class="a-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                        <div class="a-progress__bar" role="progressbar" aria-label="Large progress" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
                     </div>
                 </div>
 
                 <div class="a-progress a-progress--inline a-progress--l u-margin-bottom-l">
-                    <div class="a-progress__label">Downloading 24/128 messages...</div>
+                    <div class="a-progress__label" id="large-progress-label">Downloading 24/128 messages...</div>
                     <div class="a-progress__inner">
-                        <div class="a-progress__bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                        <div class="a-progress__bar" role="progressbar" aria-labelledby="large-progress-label" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
                     </div>
                 </div>
             </div>
@@ -8204,8 +8204,8 @@
                         <div class="a-input__label" id="switch-label" for="switch-button">Switch label</div>
                         <button class="a-switch" role="switch" aria-checked="true" aria-labelledby="switch-label">
                             <div class="a-switch__toggle" aria-hidden="true">
-                                <span class="a-switch__toggle-label a-switch__toggle-label--on" aria-hidden="true">i</span>
-                                <span class="a-switch__toggle-label a-switch__toggle-label--off" aria-hidden="true">o</span>
+                                <span class="a-switch__toggle-label a-switch__toggle-label--on" aria-hidden="true" role="presentation">i</span>
+                                <span class="a-switch__toggle-label a-switch__toggle-label--off" aria-hidden="true" role="presentation">o</span>
                             </div>
                             <div class="a-switch__label a-switch__label--on" aria-hidden="true">Aan</div>
                             <div class="a-switch__label a-switch__label--off" aria-hidden="true">Uit</div>
@@ -8218,8 +8218,8 @@
   &lt;div class="a-input__label" id="switch-label" for="switch-button"&gt;Switch label&lt;/div&gt;
   &lt;button class="a-switch" role="switch" aria-checked="true" aria-labelledby="switch-label"&gt;
     &lt;div class="a-switch__toggle" aria-hidden="true"&gt;
-      &lt;div class="a-switch__toggle-label a-switch__toggle-label--on" aria-hidden="true"&gt;i&lt;/div&gt;
-      &lt;div class="a-switch__toggle-label a-switch__toggle-label--off" aria-hidden="true"&gt;o&lt;/div&gt;
+      &lt;div class="a-switch__toggle-label a-switch__toggle-label--on" aria-hidden="true" role="presentation"&gt;i&lt;/div&gt;
+      &lt;div class="a-switch__toggle-label a-switch__toggle-label--off" aria-hidden="true" role="presentation"&gt;o&lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="a-switch__label a-switch__label--on" aria-hidden="true"&gt;Aan&lt;/div&gt;
     &lt;div class="a-switch__label a-switch__label--off" aria-hidden="true"&gt;Uit&lt;/div&gt;
@@ -10615,8 +10615,8 @@
                 <div class="m-flyout m-flyout--scrollable is-open d-flyout--s">
                     <button class="a-button" aria-expanded="true">Flyout with a navigation list</button>
                     <div class="m-flyout__content">
-                        <nav class="m-nav-list">
-                            <ul aria-label="My tablist">
+                        <nav class="m-nav-list" aria-label="Flyout with a navigation list">
+                            <ul>
                                 <li><a href="javascript:void(0);">Overview</a></li>
                                 <li class="is-active"><a href="javascript:void(0);">Description</a></li>
                                 <li><a href="javascript:void(0);">Guests</a></li>
@@ -10631,8 +10631,8 @@
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;div class="m-flyout m-flyout--scrollable is-open"&gt;
   &lt;button class="a-button" aria-expanded="true"&gt;Flyout with a navigation list&lt;/button&gt;
   &lt;div class="m-flyout__content"&gt;
-    &lt;nav class="m-nav-list"&gt;
-      &lt;ul aria-label="My tablist"&gt;
+    &lt;nav class="m-nav-list" aria-label="Flyout with a navigation list"&gt;
+      &lt;ul&gt;
         &lt;li&gt;&lt;a href="#"&gt;Overview&lt;/a&gt;&lt;/li&gt;
         &lt;li class="is-active"&gt;&lt;a href="#"&gt;Description&lt;/a&gt;&lt;/li&gt;
         &lt;li&gt;&lt;a href="#"&gt;Guests&lt;/a&gt;&lt;/li&gt;
@@ -10726,7 +10726,7 @@
             <div>
                 <figure class="m-image">
                     <img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Figure image.">
-                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="false">
+                    <a href="javascript:void(0);" class="m-image__copyright a-copyright">
                         <span class="a-copyright__sign">©</span>
                         <span class="a-copyright__label">Unsplash</span>
                     </a>
@@ -10735,7 +10735,7 @@
             <div>
                 <pre class="a-pre a-pre--scrollable"><code class="html">&lt;figure class="m-image"&gt;
   &lt;img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Figure image."&gt;
-  &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="false"&gt;
+  &lt;a href="#" class="m-image__copyright a-copyright"&gt;
     &lt;span class="a-copyright__sign"&gt;&copy;&lt;/span&gt;
     &lt;span class="a-copyright__label"&gt;Unsplash&lt;/span&gt;
   &lt;/a&gt;
@@ -10836,8 +10836,8 @@
         <h4 class="u-margin-top-xl">List navigation</h4>
         <div class="d">
             <div>
-                <nav class="m-nav-list">
-                    <ul aria-label="My tablist">
+                <nav class="m-nav-list" aria-label="My first navigation list">
+                    <ul>
                         <li><a href="javascript:void(0);">Overview</a></li>
                         <li class="is-active"><a href="javascript:void(0);">Description</a></li>
                         <li><a href="javascript:void(0);">Guests</a></li>
@@ -10847,8 +10847,8 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list"&gt;
-  &lt;ul aria-label="My tablist"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list" aria-label="My first navigation list"&gt;
+  &lt;ul&gt;
     &lt;li&gt;&lt;a href="#"&gt;Overview&lt;/a&gt;&lt;/li&gt;
     &lt;li class="is-active"&gt;&lt;a href="#"&gt;Description&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Guests&lt;/a&gt;&lt;/li&gt;
@@ -10868,8 +10868,8 @@
 
         <div class="d">
             <div>
-                <nav class="m-nav-list">
-                    <ul aria-label="My tablist">
+                <nav class="m-nav-list" aria-label="My second navigation list">
+                    <ul>
                         <li><button>Overview</button></li>
                         <li class="is-active"><button>Description</button></li>
                         <li><button>Guests</button></li>
@@ -10879,8 +10879,8 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list"&gt;
-  &lt;ul aria-label="My tablist"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-list" aria-label="My second navigation list"&gt;
+  &lt;ul&gt;
     &lt;li&gt;&lt;button&gt;Overview&lt;/button&gt;&lt;/li&gt;
     &lt;li class="is-active"&gt;&lt;button&gt;Description&lt;/button&gt;&lt;/li&gt;
     &lt;li&gt;&lt;button&gt;Guests&lt;/button&gt;&lt;/li&gt;
@@ -10894,8 +10894,8 @@
         <h4 class="u-margin-top-xl">Tab navigation</h4>
         <div class="d">
             <div>
-                <nav class="m-nav-tabs u-margin-bottom-xl">
-                    <ul aria-label="My tablist">
+                <nav class="m-nav-tabs u-margin-bottom-xl" aria-label="My third navigation list">
+                    <ul>
                         <li><a href="javascript:void(0);">Overview</a></li>
                         <li class="is-active"><a href="javascript:void(0);">Description</a></li>
                         <li><a href="javascript:void(0);">Guests</a></li>
@@ -10905,8 +10905,8 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs"&gt;
-  &lt;ul aria-label="My tablist"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs" aria-label="My third navigation list"&gt;
+  &lt;ul&gt;
     &lt;li&gt;&lt;a href="#"&gt;Overview&lt;/a&gt;&lt;/li&gt;
     &lt;li class="is-active"&gt;&lt;a href="#"&gt;Description&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Guests&lt;/a&gt;&lt;/li&gt;
@@ -10918,8 +10918,8 @@
         </div>
         <div class="d">
             <div>
-                <nav class="m-nav-tabs has-border u-margin-bottom-xl">
-                    <ul aria-label="My tablist">
+                <nav class="m-nav-tabs has-border u-margin-bottom-xl" aria-label="My fourth navigation list">
+                    <ul>
                         <li><button>Overview</button></li>
                         <li class="is-active"><button>Description</button></li>
                         <li><button>Guests</button></li>
@@ -10929,8 +10929,8 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border"&gt;
-  &lt;ul aria-label="My tablist"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border" aria-label="My fourth navigation list"&gt;
+  &lt;ul&gt;
     &lt;li&gt;&lt;button&gt;Overview&lt;/button&gt;&lt;/li&gt;
     &lt;li class="is-active"&gt;&lt;button&gt;Description&lt;/button&gt;&lt;/li&gt;
     &lt;li&gt;&lt;button&gt;Guests&lt;/button&gt;&lt;/li&gt;
@@ -10942,8 +10942,8 @@
         </div>
         <div class="d">
             <div>
-                <nav class="m-nav-tabs has-border has-shadow-left has-shadow-right u-margin-bottom-xl">
-                    <ul aria-label="My tablist">
+                <nav class="m-nav-tabs has-border has-shadow-left has-shadow-right u-margin-bottom-xl" aria-label="My fifth navigation list">
+                    <ul>
                         <li><a href="javascript:void(0);">Overview</a></li>
                         <li class="is-active"><a href="javascript:void(0);">Description</a></li>
                         <li><a href="javascript:void(0);">Guests</a></li>
@@ -10953,8 +10953,8 @@
                 </nav>
             </div>
             <div>
-                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border has-shadow-left has-shadow-right"&gt;
-  &lt;ul aria-label="My tablist"&gt;
+                <pre class="a-pre a-pre--scrollable"><code class="html">&lt;nav class="m-nav-tabs has-border has-shadow-left has-shadow-right" aria-label="My fifth navigation list"&gt;
+  &lt;ul&gt;
     &lt;li&gt;&lt;a href="#"&gt;Overview&lt;/a&gt;&lt;/li&gt;
     &lt;li class="is-active"&gt;&lt;a href="#"&gt;Description&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href="#"&gt;Guests&lt;/a&gt;&lt;/li&gt;
@@ -11903,7 +11903,7 @@
                                 <div class="o-slideshow__image">
                                     <div class="m-image">
                                         <img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 1.">
-                                        <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="false">
+                                        <a href="javascript:void(0);" class="m-image__copyright a-copyright">
                                             <div class="a-copyright__sign">©</div>
                                             <span class="a-copyright__label">Unsplash</span>
                                         </a>
@@ -11914,7 +11914,7 @@
                                 <div class="o-slideshow__image">
                                     <div class="m-image">
                                         <img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 2.">
-                                        <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="false">
+                                        <a href="javascript:void(0);" class="m-image__copyright a-copyright">
                                             <div class="a-copyright__sign">©</div>
                                             <span class="a-copyright__label">Unsplash</span>
                                         </a>
@@ -11925,7 +11925,7 @@
                                 <div class="o-slideshow__image">
                                     <div class="m-image">
                                         <img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 3.">
-                                        <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="false">
+                                        <a href="javascript:void(0);" class="m-image__copyright a-copyright">
                                             <div class="a-copyright__sign">©</div>
                                             <span class="a-copyright__label">Unsplash</span>
                                         </a>
@@ -11956,7 +11956,7 @@
         &lt;div class="o-slideshow__image"&gt;
           &lt;div class="m-image"&gt;
             &lt;img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 1."&gt;
-            &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="false"&gt;
+            &lt;a href="#" class="m-image__copyright a-copyright"&gt;
               &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Unsplash&lt;/span&gt;
             &lt;/a&gt;
@@ -11967,7 +11967,7 @@
         &lt;div class="o-slideshow__image"&gt;
           &lt;div class="m-image"&gt;
             &lt;img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 2."&gt;
-            &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="false"&gt;
+            &lt;a href="#" class="m-image__copyright a-copyright"&gt;
               &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Unsplash&lt;/span&gt;
             &lt;/a&gt;
@@ -11978,7 +11978,7 @@
         &lt;div class="o-slideshow__image"&gt;
           &lt;div class="m-image"&gt;
             &lt;img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 3."&gt;
-            &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="false"&gt;
+            &lt;a href="#" class="m-image__copyright a-copyright"&gt;
               &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
               &lt;span class="a-copyright__label"&gt;Unsplash&lt;/span&gt;
             &lt;/a&gt;
@@ -12019,7 +12019,7 @@
                                             <div class="o-slideshow__image">
                                                 <div class="m-image">
                                                     <img src="https://source.unsplash.com/collection/54002680/1900x950" alt="Slideshow image 1.">
-                                                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="false">
+                                                    <a href="javascript:void(0);" class="m-image__copyright a-copyright">
                                                         <span class="a-copyright__sign">©</span>
                                                         <span class="a-copyright__label">Unsplash</span>
                                                     </a>
@@ -12030,7 +12030,7 @@
                                             <div class="o-slideshow__image">
                                                 <div class="m-image">
                                                     <img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 2.">
-                                                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="false">
+                                                    <a href="javascript:void(0);" class="m-image__copyright a-copyright">
                                                         <span class="a-copyright__sign">©</span>
                                                         <span class="a-copyright__label">Unsplash</span>
                                                     </a>
@@ -12042,7 +12042,7 @@
                                                 <div class="m-image">
                                                     <img src="https://source.unsplash.com/collection/54002680/1000x500"
                                                             alt="Slideshow image 3.">
-                                                    <a href="javascript:void(0);" class="m-image__copyright a-copyright" aria-expanded="false">
+                                                    <a href="javascript:void(0);" class="m-image__copyright a-copyright">
                                                         <span class="a-copyright__sign">©</span>
                                                         <span class="a-copyright__label">Unsplash</span>
                                                     </a>
@@ -12078,7 +12078,7 @@
           &lt;div class="o-slideshow__image"&gt;
             &lt;div class="m-image"&gt;
               &lt;img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 1."&gt;
-              &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="false"&gt;
+              &lt;a href="#" class="m-image__copyright a-copyright"&gt;
                 &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Unsplash&lt;/span&gt;
               &lt;/a&gt;
@@ -12089,7 +12089,7 @@
           &lt;div class="o-slideshow__image"&gt;
             &lt;div class="m-image"&gt;
               &lt;img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 2."&gt;
-              &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="false"&gt;
+              &lt;a href="#" class="m-image__copyright a-copyright"&gt;
                 &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Unsplash&lt;/span&gt;
               &lt;/a&gt;
@@ -12100,7 +12100,7 @@
           &lt;div class="o-slideshow__image"&gt;
             &lt;div class="m-image"&gt;
               &lt;img src="https://source.unsplash.com/collection/54002680/1000x500" alt="Slideshow image 3."&gt;
-              &lt;a href="#" class="m-image__copyright a-copyright" aria-expanded="false"&gt;
+              &lt;a href="#" class="m-image__copyright a-copyright"&gt;
                 &lt;div class="a-copyright__sign"&gt;©&lt;/div&gt;
                 &lt;span class="a-copyright__label"&gt;Unsplash&lt;/span&gt;
               &lt;/a&gt;
