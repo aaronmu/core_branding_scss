@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## [6.2.3] - 2023-03-30
+
 ### Fixed
 - Fixed a border layout issue for the accordion
 
@@ -726,6 +729,7 @@
 - Initial release.
 
 
+[6.2.3]: https://github.com/a-ui/core_branding_scss/tree/v6.2.3
 [6.2.2]: https://github.com/a-ui/core_branding_scss/tree/v6.2.2
 [6.2.1]: https://github.com/a-ui/core_branding_scss/tree/v6.2.1
 [6.2.0]: https://github.com/a-ui/core_branding_scss/tree/v6.2.0
