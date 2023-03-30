@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+### Fixed
+- Fixed a border layout issue for the accordion
+
 
 ## [6.2.2] - 2023-03-24
 
