@@ -3942,7 +3942,7 @@ a.a-page-indicator__item:focus:before {
   --accordion-icon-color: var(--accordion-icon-hover-color);
 }
 .m-accordion__tab .m-accordion__header[aria-expanded=true] + .m-accordion__content {
-  display: block;
+  display: flex;
   max-height: none;
 }
 
