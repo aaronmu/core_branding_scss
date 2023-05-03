@@ -4,6 +4,10 @@
 ## Unreleased
 
 
+### Added
+- Added style variant for fieldset and legend
+
+
 ## [6.2.3] - 2023-03-30
 
 ### Fixed
