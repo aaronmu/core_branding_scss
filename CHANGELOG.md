@@ -4,6 +4,8 @@
 ## Unreleased
 
 
+## [6.3.0] - 2023-05-08
+
 ### Added
 - Added style variant for fieldset and legend
 
@@ -737,6 +739,7 @@
 - Initial release.
 
 
+[6.3.0]: https://github.com/a-ui/core_branding_scss/tree/v6.3.0
 [6.2.3]: https://github.com/a-ui/core_branding_scss/tree/v6.2.3
 [6.2.2]: https://github.com/a-ui/core_branding_scss/tree/v6.2.2
 [6.2.1]: https://github.com/a-ui/core_branding_scss/tree/v6.2.1
