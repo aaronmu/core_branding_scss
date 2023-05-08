@@ -7,6 +7,10 @@
 ### Added
 - Added style variant for fieldset and legend
 
+### Fixed
+- Fixed the datepicker not having a background color
+- Fixed the click size of the button to open the datepicker
+
 
 ## [6.2.3] - 2023-03-30
 
