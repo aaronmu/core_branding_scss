@@ -18,7 +18,7 @@
   background-color: var(--footer-bg);
   display: flex;
   flex: 0 0 auto;
-  height: var(--spacer-xl);
+  height: var(--SPACER-XL);
   justify-content: center;
   position: relative;
   text-align: center;
@@ -41,14 +41,14 @@
   color: var(--footer-color);
   font-size: rem($font-size-sm);
   line-height: $line-height-paragraph;
-  padding: 0 var(--spacer-xs);
+  padding: 0 var(--SPACER-XS);
 
   @include to($screen-sm) {
     flex: 1 1 auto;
   }
 
   @include at($screen-sm) {
-    padding: 0 var(--spacer-xxl);
+    padding: 0 var(--SPACER-XXL);
   }
 
   a {

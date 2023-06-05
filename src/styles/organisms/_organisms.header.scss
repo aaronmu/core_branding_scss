@@ -7,7 +7,7 @@
 .o-header {
   --header-height:     var(--shared-header-height);
   --header-bg-color:   #{$white};
-  --header-border:     var(--border-color);
+  --header-border:     var(--BORDER-COLOR);
 }
 
 /**
@@ -17,7 +17,7 @@
 
 .o-header {
   background-color: var(--header-bg-color);
-  border-bottom: var(--border-width) solid var(--header-border);
+  border-bottom: var(--BORDER-WIDTH) solid var(--header-border);
   box-sizing: content-box;
   height: var(--header-height);
   position: relative;
@@ -57,7 +57,7 @@
  */
 
 .o-header__button {
-  border-left: var(--border-width) solid var(--header-border);
+  border-left: var(--BORDER-WIDTH) solid var(--header-border);
 }
 
 .o-header__button-skip {
@@ -75,11 +75,11 @@
 }
 
 .o-header__logo {
-  margin-top: var(--border-width);
+  margin-top: var(--BORDER-WIDTH);
   position: absolute;
   top: var(--header-height);
 
   img {
-    height: calc(var(--spacer) * 3);
+    height: calc(var(--SPACER) * 3);
   }
 }

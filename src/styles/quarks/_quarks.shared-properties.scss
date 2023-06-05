@@ -1,0 +1,21 @@
+:root {
+  /**
+   * SHARED CSS PROPERTIES
+   * -------------------------------------------------------------------
+   */
+
+  // Avatar
+  --shared-avatar-size-s:                  var(--SPACER-L); // 36px
+  --shared-avatar-size:                    var(--SPACER-XL); // 48px
+  --shared-avatar-size-l:                  var(--SPACER-XXL); // 60px
+
+  // Copyright
+  --shared-copyright-color:                #{$white};
+  --shared-copyright-height:               var(--SPACER-L);
+
+  // Header
+  --shared-header-height:                  var(--SPACER-XL);
+
+  // Slideshow
+  --shared-slideshow-footer-color-light:   #{$white};
+}

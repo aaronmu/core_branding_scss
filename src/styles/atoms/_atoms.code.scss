@@ -6,15 +6,15 @@
 pre,
 code,
 kbd {
-  --pre-color:               var(--text-color);
+  --pre-color:               var(--TEXT-COLOR);
   --pre-bg:                  #{$gray-100};
   --pre-font-size:           1rem;
-  --pre-padding:             var(--spacer-xs);
+  --pre-padding:             var(--SPACER-XS);
 
   --code-color:              var(--pre-color);
   --code-bg:                 var(--pre-bg);
   --code-font-size:          .875rem;
-  --code-padding:            calc(var(--spacer) / 12) var(--spacer-3xs);
+  --code-padding:            calc(var(--SPACER) / 12) var(--SPACER-3XS);
 
   --kbd-color:               #{$white};
   --kbd-bg:                  #{$gray-400};
@@ -36,7 +36,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: var(--font-family-monospace);
+  font-family: var(--FONT-FAMILY-MONOSPACE);
 }
 
 /**

@@ -7,14 +7,14 @@
   @extend %u-list-unstyled;
 
   ul {
-    margin-bottom: calc(var(--spacer-xxs) * -1);
-    margin-top: var(--spacer-xxs);
-    padding-left: var(--spacer);
+    margin-bottom: calc(var(--SPACER-XXS) * -1);
+    margin-top: var(--SPACER-XXS);
+    padding-left: var(--SPACER);
   }
 }
 
 .m-collapsible-list__item {
-  padding: var(--spacer-xxs) 0;
+  padding: var(--SPACER-XXS) 0;
 
   &:not(.is-active) {
     > a {
@@ -23,13 +23,13 @@
 
       &:link,
       &:visited {
-        color: var(--text-color);
+        color: var(--TEXT-COLOR);
       }
 
       &:hover,
       &:active,
       &:focus {
-        color: var(--link-hover-color);
+        color: var(--LINK-HOVER-COLOR);
         text-decoration: underline;
       }
     }
@@ -37,7 +37,7 @@
 
   .ai {
     font-size: .875em;
-    padding: 0 var(--spacer-xxs) 0 0;
+    padding: 0 var(--SPACER-XXS) 0 0;
   }
 }
 
@@ -49,7 +49,7 @@
 .m-collapsible-list__item {
   &.is-active {
     > a {
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--FONT-WEIGHT-BOLD);
     }
   }
 

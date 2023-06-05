@@ -4,7 +4,7 @@
  */
 
 .m-tag {
-  --tag-height:         var(--spacer-l);
+  --tag-height:         var(--SPACER-L);
   --tag-color:          #{$gray-500};
   --tag-bg-color:       #{$white};
   --tag-border-color:   #{$gray-400};
@@ -19,42 +19,42 @@
   align-items: center;
   background-color: var(--tag-bg-color);
   border-radius: var(--tag-height);
-  border: var(--border-width) solid var(--tag-border-color);
+  border: var(--BORDER-WIDTH) solid var(--tag-border-color);
   display: inline-flex;
   height: var(--tag-height);
   justify-content: center;
   overflow: hidden;
-  padding-left: var(--spacer-xs);
-  transition-duration: var(--animation-duration);
+  padding-left: var(--SPACER-XS);
+  transition-duration: var(--ANIMATION-DURATION);
   transition-property: background, border-color;
-  transition-timing-function: var(--animation-easing);
+  transition-timing-function: var(--ANIMATION-EASING);
 }
 
 button.m-tag {
-  --tag-color: var(--theme1-400);
+  --tag-color: var(--THEME1-600);
   --tag-bg-color: #{$white};
-  --tag-border-color: var(--theme1-400);
+  --tag-border-color: var(--THEME1-600);
 
   cursor: pointer;
   margin: 0;
-  padding: 0 0 0 var(--spacer-xs);
+  padding: 0 0 0 var(--SPACER-XS);
 
   &:hover,
   &:active,
   &:focus {
-    --tag-bg-color: var(--theme1-050);
+    --tag-bg-color: var(--THEME1-100);
   }
 
   &[aria-pressed='true'] {
     --tag-color: #{$white};
-    --tag-bg-color: var(--theme1-400);
-    --tag-border-color: var(--theme1-400);
+    --tag-bg-color: var(--THEME1-600);
+    --tag-border-color: var(--THEME1-600);
 
     &:hover,
     &:active,
     &:focus {
-      --tag-bg-color: var(--theme1-500);
-      --tag-border-color: var(--theme1-500);
+      --tag-bg-color: var(--THEME1-700);
+      --tag-border-color: var(--THEME1-700);
     }
   }
 }
@@ -67,7 +67,7 @@ button.m-tag {
 .m-tag__icon,
 .m-tag__button {
   color: var(--tag-color);
-  transition: color var(--animation-normal);
+  transition: color var(--ANIMATION-NORMAL);
 
   .ai {
     font-size: .75rem;
@@ -79,11 +79,11 @@ button.m-tag {
 
   color: var(--tag-color);
   font-size: .875rem;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--FONT-WEIGHT-BOLD);
   line-height: normal;
-  margin: 0 var(--spacer-s) 0 var(--spacer-3xs);
-  max-width: calc(var(--spacer) * 10);
-  transition: color var(--animation-normal);
+  margin: 0 var(--SPACER-S) 0 var(--SPACER-3XS);
+  max-width: calc(var(--SPACER) * 10);
+  transition: color var(--ANIMATION-NORMAL);
 }
 
 .m-tag__button {
@@ -98,11 +98,11 @@ button.m-tag {
 }
 
 .m-tag__icon + .m-tag__label {
-  margin-left: var(--spacer-xxs);
+  margin-left: var(--SPACER-XXS);
 }
 
 .m-tag__label + .m-tag__button {
-  margin-left: calc(var(--spacer-s) * -1);
+  margin-left: calc(var(--SPACER-S) * -1);
 }
 
 /**
@@ -116,7 +116,7 @@ button.m-tag {
   &:hover,
   &:active,
   &:focus {
-    --tag-color: var(--text-color);
+    --tag-color: var(--TEXT-COLOR);
     --tag-bg-color: #{$gray-100};
   }
 }

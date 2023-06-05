@@ -9,125 +9,133 @@
    * -------------------------------------------------------------------
    */
 
-  --theme1-600:              #{$endeavour-600};
-  --theme1-500:              #{$endeavour-500};
-  --theme1-400:              #{$endeavour-400};
-  --theme1-300:              #{$endeavour-300};
-  --theme1-200:              #{$endeavour-200};
-  --theme1-100:              #{$endeavour-100};
-  --theme1-075:              #{$endeavour-075};
-  --theme1-050:              #{$endeavour-050};
+  --THEME1-800:              var(--theme1-800, #{$endeavour-600});
+  --THEME1-700:              var(--theme1-700, #{$endeavour-500});
+  --THEME1-600:              var(--theme1-600, #{$endeavour-400});
+  --THEME1-500:              var(--theme1-500, #{$endeavour-300});
+  --THEME1-400:              var(--theme1-400, #{$endeavour-200});
+  --THEME1-300:              var(--theme1-300, #{$endeavour-100});
+  --THEME1-200:              var(--theme1-200, #{$endeavour-075});
+  --THEME1-100:              var(--theme1-100, #{$endeavour-050});
 
-  --theme2-600:              #{$monza-600};
-  --theme2-500:              #{$monza-500};
-  --theme2-400:              #{$monza-400};
-  --theme2-300:              #{$monza-300};
-  --theme2-200:              #{$monza-200};
-  --theme2-100:              #{$monza-100};
+  --THEME2-800:              var(--theme2-800,);
+  --THEME2-700:              var(--theme2-700,);
+  --THEME2-600:              var(--theme2-600, #{$monza-600});
+  --THEME2-500:              var(--theme2-500, #{$monza-500});
+  --THEME2-400:              var(--theme2-400, #{$monza-400});
+  --THEME2-300:              var(--theme2-300, #{$monza-300});
+  --THEME2-200:              var(--theme2-200, #{$monza-200});
+  --THEME2-100:              var(--theme2-100, #{$monza-100});
 
-  --success-700:             #{$mantis-700};
-  --success-600:             #{$mantis-600};
-  --success-500:             #{$mantis-500};
-  --success-400:             #{$mantis-400};
-  --success-300:             #{$mantis-300};
-  --success-200:             #{$mantis-200};
-  --success-100:             #{$mantis-100};
-  --success-050:             #{$mantis-050};
+  --SUCCESS-800:             var(--success-800, #{$mantis-700});
+  --SUCCESS-700:             var(--success-700, #{$mantis-600});
+  --SUCCESS-600:             var(--success-600, #{$mantis-500});
+  --SUCCESS-500:             var(--success-500, #{$mantis-400});
+  --SUCCESS-400:             var(--success-400, #{$mantis-300});
+  --SUCCESS-300:             var(--success-300, #{$mantis-200});
+  --SUCCESS-200:             var(--success-200, #{$mantis-100});
+  --SUCCESS-100:             var(--success-100, #{$mantis-050});
 
-  --warning-500:             #{$burnt-orange-500};
-  --warning-400:             #{$burnt-orange-400};
-  --warning-050:             #{$burnt-orange-050};
+  --WARNING-800:             var(--warning-800,);
+  --WARNING-700:             var(--warning-700,);
+  --WARNING-600:             var(--warning-600,);
+  --WARNING-500:             var(--warning-500, #{$burnt-orange-500});
+  --WARNING-400:             var(--warning-400, #{$burnt-orange-400});
+  --WARNING-300:             var(--warning-300,);
+  --WARNING-200:             var(--warning-200,);
+  --WARNING-100:             var(--warning-100, #{$burnt-orange-050});
 
-  --danger-600:              #{$cinnabar-600};
-  --danger-500:              #{$cinnabar-500};
-  --danger-400:              #{$cinnabar-400};
-  --danger-300:              #{$cinnabar-300};
-  --danger-200:              #{$cinnabar-200};
-  --danger-100:              #{$cinnabar-100};
-  --danger-050:              #{$cinnabar-050};
+  --DANGER-800:              var(--danger-800,);
+  --DANGER-700:              var(--danger-700, #{$cinnabar-600});
+  --DANGER-600:              var(--danger-600, #{$cinnabar-500});
+  --DANGER-500:              var(--danger-500, #{$cinnabar-400});
+  --DANGER-400:              var(--danger-400, #{$cinnabar-300});
+  --DANGER-300:              var(--danger-300, #{$cinnabar-200});
+  --DANGER-200:              var(--danger-200, #{$cinnabar-100});
+  --DANGER-100:              var(--danger-100, #{$cinnabar-050});
 
   /**
    * UI COLORS
    * -------------------------------------------------------------------
    */
 
-  --text-color:              #{$black};
-  --text-color-light:        #{$gray-400};
-  --text-color-xlight:       #{$white};
-  --bg-color:                #{$gray-200};
-  --bg-color-light:          #{$gray-100};
-  --border-color:            #{$gray-300};
-  --overlay-color:           #{rgba($black, .75)};
-  --box-shadow-color:        #{rgba($gray-600, .12)};
+  --TEXT-COLOR:              var(--text-color, #{$black});
+  --TEXT-COLOR-LIGHT:        var(--text-color-light, #{$gray-400});
+  --TEXT-COLOR-XLIGHT:       var(--text-color-xlight, #{$white});
+  --BG-COLOR:                var(--bg-color, #{$gray-200});
+  --BG-COLOR-LIGHT:          var(--bg-color-light, #{$gray-100});
+  --BORDER-COLOR:            var(--border-color, #{$gray-300});
+  --OVERLAY-COLOR:           var(--overlay-color, #{rgba($black, .75)});
+  --BOX-SHADOW-COLOR:        var(--box-shadow-color, #{rgba($gray-600, .12)});
 
-  --state-info:              var(--theme1-400);
-  --state-success:           var(--success-600);
-  --state-warning:           var(--warning-400);
-  --state-danger:            var(--danger-500);
-  --state-disabled:          #{$gray-400};
+  --STATE-INFO:              var(--state-info, var(--THEME1-600));
+  --STATE-SUCCESS:           var(--state-success, var(--SUCCESS-700));
+  --STATE-WARNING:           var(--state-warning, var(--WARNING-400));
+  --STATE-DANGER:            var(--state-danger, var(--DANGER-600));
+  --STATE-DISABLED:          var(--state-disabled, #{$gray-400});
 
   /**
    * SPACERS
    * -------------------------------------------------------------------
    */
 
-  --spacer:                  1.5rem; // 24px
-  --spacer-3xl:              calc(var(--spacer) * 4); // 96px
-  --spacer-xxl:              calc(var(--spacer) * 2.5); // 60px
-  --spacer-xl:               calc(var(--spacer) * 2); // 48px
-  --spacer-l:                calc(var(--spacer) * 1.5); // 36px
-  --spacer-s:                calc(var(--spacer) / 1.5); // 16px
-  --spacer-xs:               calc(var(--spacer) / 2); // 12px
-  --spacer-xxs:              calc(var(--spacer) / 3); // 8px
-  --spacer-3xs:              calc(var(--spacer) / 6); // 4px
+  --SPACER:                  var(--spacer, 1.5rem); // 24px;
+  --SPACER-3XL:              var(--spacer-3xl, calc(var(--SPACER) * 4)); // 96px
+  --SPACER-XXL:              var(--spacer-xxl, calc(var(--SPACER) * 2.5)); // 60px
+  --SPACER-XL:               var(--spacer-xl, calc(var(--SPACER) * 2)); // 48px
+  --SPACER-L:                var(--spacer-l, calc(var(--SPACER) * 1.5)); // 36px
+  --SPACER-S:                var(--spacer-s, calc(var(--SPACER) / 1.5)); // 16px
+  --SPACER-XS:               var(--spacer-xs, calc(var(--SPACER) / 2)); // 12px
+  --SPACER-XXS:              var(--spacer-xxs, calc(var(--SPACER) / 3)); // 8px
+  --SPACER-3XS:              var(--spacer-3xs, calc(var(--SPACER) / 6)); // 4px
 
   /**
    * BREAKPOINTS
    * -------------------------------------------------------------------
    */
 
-  --screen-xs:               30rem; // 480px
-  --screen-s:                45rem; // 720px
-  --screen-l:                62rem; // 992px
-  --screen-xl:               75rem; // 1200px
+  --SCREEN-XS:               var(--screen-xs, 30rem); // 480px
+  --SCREEN-S:                var(--screen-s, 45rem); // 720px
+  --SCREEN-L:                var(--screen-l, 62rem); // 992px
+  --SCREEN-XL:               var(--screen-xl, 75rem); // 1200px
 
   /**
-   * --screen-xxl =
+   * --SCREEN-XXL =
    *    max-width of u-container
    *    + width of official logo * 2
    *    + space between logo and u-container * 2
    */
-  --screen-xxl:              calc(var(--screen-xl) + calc(var(--spacer-3xl) * 2) + calc(var(--spacer) * 2)); // 90rem - 1440px
-  --screen-xs-max:           44.9375rem; // 719px (--screen-s - 1px)
-  --screen-s-max:            61.9375rem; // 991px (--screen-l - 1px)
-  --screen-l-max:            74.9375rem; // 1199px (--screen-xl - 1px)
-  --screen-xl-max:           89.9375rem; // 1439px (--screen-xxl - 1px)
+  --SCREEN-XS-MAX:           var(--screen-xs-max, 44.9375rem); // 719px (--SCREEN-S - 1px)
+  --SCREEN-S-MAX:            var(--screen-s-max, 61.9375rem); // 991px (--SCREEN-L - 1px)
+  --SCREEN-L-MAX:            var(--screen-l-max, 74.9375rem); // 1199px (--SCREEN-XL - 1px)
+  --SCREEN-XL-MAX:           var(--screen-xl-max, 89.9375rem); // 1439px (--SCREEN-XXL - 1px)
+  --SCREEN-XXL:              var(--screen-xxl, calc(var(--SCREEN-XL) + calc(var(--SPACER-3XL) * 2) + calc(var(--SPACER) * 2))); // 90rem - 1440px
 
   /**
    * FONT FAMILIES
    * -------------------------------------------------------------------
    */
 
-  --font-family-base:        'Sun Antwerpen', sans-serif;
-  --font-family-headings:    'Antwerpen Regular', sans-serif;
-  --font-family-monospace:   'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+  --FONT-FAMILY-BASE:        var(--font-family-base, 'Sun Antwerpen', sans-serif);
+  --FONT-FAMILY-HEADINGS:    var(--font-family-headings, 'Antwerpen Regular', sans-serif);
+  --FONT-FAMILY-MONOSPACE:   var(--font-family-monospace, 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace);
 
   /**
    * FONT WEIGHTS
    * -------------------------------------------------------------------
    */
 
-  --font-weight-light:        300;
-  --font-weight-normal:       500;
-  --font-weight-bold:         700;
-  --font-weight-extra-bold:   800;
+  --FONT-WEIGHT-LIGHT:        var(--font-weight-light, 300);
+  --FONT-WEIGHT-NORMAL:       var(--font-weight-normal, 500);
+  --FONT-WEIGHT-BOLD:         var(--font-weight-bold, 700);
+  --FONT-WEIGHT-EXTRA-BOLD:   var(--font-weight-extra-bold, 800);
 
-  --font-weight-h1:           var(--font-weight-normal);
-  --font-weight-h2:           var(--font-weight-normal);
-  --font-weight-h3:           var(--font-weight-normal);
-  --font-weight-h4:           var(--font-weight-normal);
-  --font-weight-h5:           var(--font-weight-normal);
-  --font-weight-h6:           var(--font-weight-normal);
+  --FONT-WEIGHT-H1:           var(--font-weight-h1, var(--FONT-WEIGHT-NORMAL));
+  --FONT-WEIGHT-H2:           var(--font-weight-h2, var(--FONT-WEIGHT-NORMAL));
+  --FONT-WEIGHT-H3:           var(--font-weight-h3, var(--FONT-WEIGHT-NORMAL));
+  --FONT-WEIGHT-H4:           var(--font-weight-h4, var(--FONT-WEIGHT-NORMAL));
+  --FONT-WEIGHT-H5:           var(--font-weight-h5, var(--FONT-WEIGHT-NORMAL));
+  --FONT-WEIGHT-H6:           var(--font-weight-h6, var(--FONT-WEIGHT-NORMAL));
 
   /**
    * LINKS
@@ -135,54 +143,34 @@
    * Define text and hover color for each hyperlink
    */
 
-  --link-color:              var(--theme1-400);
-  --link-hover-color:        var(--theme1-500);
+  --LINK-COLOR:              var(--link-color, var(--THEME1-600));
+  --LINK-HOVER-COLOR:        var(--link-hover-color, var(--THEME1-700));
 
   /**
    * BORDERS
    * -------------------------------------------------------------------
    */
 
-  --border-radius:           0;
-  --border-width:            1px;
+  --BORDER-RADIUS:           var(--border-radius, 0);
+  --BORDER-WIDTH:            var(--border-width, 1px);
 
   /**
    * ANIMATIONS
    * -------------------------------------------------------------------
    */
 
-  --animation-duration:      200ms;
-  --animation-easing:        ease-in-out;
-  --animation-normal:        var(--animation-duration) var(--animation-easing);
+  --ANIMATION-DURATION:      var(--animation-duration, 200ms);
+  --ANIMATION-EASING:        var(--animation-easing, ease-in-out);
+  --ANIMATION-NORMAL:        var(--animation-normal, var(--ANIMATION-DURATION) var(--ANIMATION-EASING));
 
   /**
    * BOX SHADOWS
    * -------------------------------------------------------------------
    */
 
-  --box-shadow-bottom-left:      calc(var(--spacer) / -2) calc(var(--spacer) / 2) 0 var(--box-shadow-color);
-  --box-shadow-bottom-right:     calc(var(--spacer) / 2) calc(var(--spacer) / 2) 0 var(--box-shadow-color);
-  --box-shadow-upper-left:       calc(var(--spacer) / -2) calc(var(--spacer) / -2) 0 var(--box-shadow-color);
-  --box-shadow-upper-right:      calc(var(--spacer) / 2) calc(var(--spacer) / -2) 0 var(--box-shadow-color);
-  --box-shadow:                  var(--box-shadow-bottom-right);
-
-  /**
-   * SHARED CSS PROPERTIES
-   * -------------------------------------------------------------------
-   */
-
-  // Avatar
-  --shared-avatar-size-s:                  var(--spacer-l); // 36px
-  --shared-avatar-size:                    var(--spacer-xl); // 48px
-  --shared-avatar-size-l:                  var(--spacer-xxl); // 60px
-
-  // Copyright
-  --shared-copyright-color:                #{$white};
-  --shared-copyright-height:               var(--spacer-l);
-
-  // Header
-  --shared-header-height:                  var(--spacer-xl);
-
-  // Slideshow
-  --shared-slideshow-footer-color-light:   #{$white};
+  --BOX-SHADOW-BOTTOM-LEFT:  var(--box-shadow-bottom-left, calc(var(--SPACER) / -2) calc(var(--SPACER) / 2) 0 var(--BOX-SHADOW-COLOR));
+  --BOX-SHADOW-BOTTOM-RIGHT: var(--box-shadow-bottom-right, calc(var(--SPACER) / 2) calc(var(--SPACER) / 2) 0 var(--BOX-SHADOW-COLOR));
+  --BOX-SHADOW-TOP-LEFT:     var(--box-shadow-top-left, calc(var(--SPACER) / -2) calc(var(--SPACER) / -2) 0 var(--BOX-SHADOW-COLOR));
+  --BOX-SHADOW-TOP-RIGHT:    var(--box-shadow-top-right, calc(var(--SPACER) / 2) calc(var(--SPACER) / -2) 0 var(--BOX-SHADOW-COLOR));
+  --BOX-SHADOW:              var(--box-shadow, var(--BOX-SHADOW-BOTTOM-RIGHT));
 }

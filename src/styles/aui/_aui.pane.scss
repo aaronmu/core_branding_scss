@@ -17,7 +17,7 @@
   &--left,
   &--right {
     position: absolute;
-    transition: transform var(--animation-normal);
+    transition: transform var(--ANIMATION-NORMAL);
 
     &.m-pane--open {
       transform: translate(0);

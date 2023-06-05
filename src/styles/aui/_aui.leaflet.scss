@@ -4,7 +4,7 @@
  */
 
 .o-leaflet {
-  border: var(--border-width) solid $gray-300;
+  border: var(--BORDER-WIDTH) solid $gray-300;
   display: flex;
   height: rem(1px);
   min-height: rem(600px);
@@ -31,8 +31,8 @@
     width: 0;
 
     &.has-content {
-      border-right: solid var(--border-width) $gray-300;
-      padding: var(--spacer-s);
+      border-right: solid var(--BORDER-WIDTH) $gray-300;
+      padding: var(--SPACER-S);
       width: rem(300px);
     }
   }
@@ -42,43 +42,43 @@
     z-index: layer('top');
 
     &--bottom-left {
-      bottom: var(--spacer-s);
-      left: var(--spacer-s);
+      bottom: var(--SPACER-S);
+      left: var(--SPACER-S);
     }
 
     &--bottom-right {
-      bottom: var(--spacer-s);
-      right: var(--spacer-s);
+      bottom: var(--SPACER-S);
+      right: var(--SPACER-S);
     }
 
     &--top-left {
-      left: var(--spacer-s);
-      top: var(--spacer-s);
+      left: var(--SPACER-S);
+      top: var(--SPACER-S);
     }
 
     &--top-right {
-      right: var(--spacer-s);
-      top: var(--spacer-s);
+      right: var(--SPACER-S);
+      top: var(--SPACER-S);
     }
 
     &--top-left .o-leaflet__control,
     &--top-right .o-leaflet__control {
-      margin-bottom: var(--spacer-3xs);
+      margin-bottom: var(--SPACER-3XS);
     }
 
     &--bottom-left .o-leaflet__control,
     &--bottom-right .o-leaflet__control {
-      margin-top: var(--spacer-3xs);
+      margin-top: var(--SPACER-3XS);
     }
 
     &--bottom-left .o-leaflet__control,
     &--top-left .o-leaflet__control {
-      margin-right: var(--spacer-3xs);
+      margin-right: var(--SPACER-3XS);
     }
 
     &--bottom-right .o-leaflet__control,
     &--top-right .o-leaflet__control {
-      margin-left: var(--spacer-3xs);
+      margin-left: var(--SPACER-3XS);
     }
   }
 
@@ -106,18 +106,18 @@
     z-index: layer('overlay');
 
     .o-leaflet__content {
-      border: var(--border-width) solid $gray-300;
-      box-shadow: .75rem .75rem 0 var(--box-shadow-color);
-      left: var(--spacer-s);
+      border: var(--BORDER-WIDTH) solid $gray-300;
+      box-shadow: .75rem .75rem 0 var(--BOX-SHADOW-COLOR);
+      left: var(--SPACER-S);
       max-height: calc(100% - #{rem(160px)});
       position: absolute;
-      top: var(--spacer-s);
+      top: var(--SPACER-S);
       width: rem(350px);
       z-index: layer('top');
     }
 
     .o-leaflet__controls--top-left {
-      left: calc(#{rem(350px)} + 2 * var(--spacer-xs));
+      left: calc(#{rem(350px)} + 2 * var(--SPACER-XS));
     }
   }
 }
@@ -127,9 +127,9 @@
  */
 
 .leaflet-popup-content-wrapper {
-  border: var(--border-width) solid $gray-100 !important;
+  border: var(--BORDER-WIDTH) solid $gray-100 !important;
   border-radius: 0 !important;
-  box-shadow: var(--spacer-xs) var(--spacer-xs) 0 var(--box-shadow-color) !important;
+  box-shadow: var(--SPACER-XS) var(--SPACER-XS) 0 var(--BOX-SHADOW-COLOR) !important;
   position: relative;
 
   &:after {
@@ -140,13 +140,13 @@
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: var(--spacer);
+    width: var(--SPACER);
   }
 }
 
 .leaflet-popup-content {
   font-size: $font-size-sm;
-  margin: var(--spacer-xs) !important;
+  margin: var(--SPACER-XS) !important;
 }
 
 .leaflet-container {
@@ -154,7 +154,7 @@
 }
 
 .leaflet-popup-close-button {
-  right: var(--spacer-3xs) !important;
-  top: var(--spacer-3xs) !important;
+  right: var(--SPACER-3XS) !important;
+  top: var(--SPACER-3XS) !important;
   z-index: layer('base');
 }

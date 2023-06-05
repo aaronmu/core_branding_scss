@@ -6,33 +6,33 @@
 .m-search-filter {
   &__label {
     background: $white;
-    border: var(--border-width) solid var(--border-color);
+    border: var(--BORDER-WIDTH) solid var(--BORDER-COLOR);
     cursor: pointer;
     display: flex;
-    height: var(--spacer-xl);
+    height: var(--SPACER-XL);
     justify-content: center;
-    line-height: var(--spacer-xl);
-    margin: 0 var(--spacer-xs) 0 0;
-    padding-left: var(--spacer);
+    line-height: var(--SPACER-XL);
+    margin: 0 var(--SPACER-XS) 0 0;
+    padding-left: var(--SPACER);
 
     > span:not(.ai) {
-      margin-left: var(--spacer-3xs);
+      margin-left: var(--SPACER-3XS);
     }
 
     > .ai {
       color: #{$gray-400};
       font-size: 1.25rem;
-      height: var(--spacer-xl);
-      line-height: var(--spacer-xl);
+      height: var(--SPACER-XL);
+      line-height: var(--SPACER-XL);
       pointer-events: none;
       text-align: center;
       user-select: none;
-      width: var(--spacer-xl);
+      width: var(--SPACER-XL);
     }
 
     &.m-search-filter__label--active {
-      background-color: var(--text-color);
-      border-color: var(--text-color);
+      background-color: var(--TEXT-COLOR);
+      border-color: var(--TEXT-COLOR);
       color: $white;
 
       > .ai {
@@ -41,8 +41,8 @@
     }
 
     &.m-search-filter__label--error {
-      background-color: var(--text-color);
-      border-color: var(--text-color);
+      background-color: var(--TEXT-COLOR);
+      border-color: var(--TEXT-COLOR);
       color: $white;
 
       > .ai {
@@ -53,7 +53,7 @@
 
   &__input {
     margin-bottom: 0;
-    padding: var(--spacer-xs);
+    padding: var(--SPACER-XS);
 
     .a-input__wrapper {
       margin-right: 0;
@@ -62,7 +62,7 @@
 
   &__clear {
     margin: 0;
-    padding: 0 var(--spacer-s) var(--spacer-s);
+    padding: 0 var(--SPACER-S) var(--SPACER-S);
     text-align: center;
   }
 
@@ -82,7 +82,7 @@
 
   &__results-title {
     font-size: $font-size-base;
-    margin: 0 var(--spacer-xs);
+    margin: 0 var(--SPACER-XS);
   }
 
   &__results-item {
@@ -90,15 +90,15 @@
 
     .a-input__checkbox {
       display: flex;
-      padding-left: calc(var(--spacer) * 1.5);
+      padding-left: calc(var(--SPACER) * 1.5);
 
       input[type='checkbox']:checked + label:after {
-        top: var(--spacer-xs);
+        top: var(--SPACER-XS);
       }
 
       label {
         flex: 1;
-        padding: var(--spacer-xs);
+        padding: var(--SPACER-XS);
       }
     }
 

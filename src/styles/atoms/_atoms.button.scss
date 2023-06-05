@@ -4,9 +4,9 @@
  */
 
 .a-button {
-  --btn-height:                                 var(--spacer-xl);
-  --btn-padding:                                0 var(--spacer);
-  --btn-font-weight:                            var(--font-weight-bold);
+  --btn-height:                                 var(--SPACER-XL);
+  --btn-padding:                                0 var(--SPACER);
+  --btn-font-weight:                            var(--FONT-WEIGHT-BOLD);
   --btn-font-size:                              1rem;
   --btn-icon-size:                              1.25rem;
 }
@@ -15,8 +15,8 @@
   // Contained button
   --btn-color:                                  #{$white};
   --btn-hover-color:                            var(--btn-color);
-  --btn-bg-color:                               var(--theme1-400);
-  --btn-hover-bg-color:                         var(--theme1-500);
+  --btn-bg-color:                               var(--THEME1-600);
+  --btn-hover-bg-color:                         var(--THEME1-700);
   --btn-border-color:                           var(--btn-bg-color);
   --btn-hover-border-color:                     var(--btn-hover-bg-color);
 
@@ -29,29 +29,29 @@
 
   --btn-secondary-color:                        #{$white};
   --btn-secondary-hover-color:                  var(--btn-secondary-color);
-  --btn-secondary-bg-color:                     var(--theme2-400);
-  --btn-secondary-hover-bg-color:               var(--theme2-500);
+  --btn-secondary-bg-color:                     var(--THEME2-400);
+  --btn-secondary-hover-bg-color:               var(--THEME2-500);
   --btn-secondary-border-color:                 var(--btn-secondary-bg-color);
   --btn-secondary-hover-border-color:           var(--btn-secondary-hover-bg-color);
 
   --btn-success-color:                          #{$white};
   --btn-success-hover-color:                    var(--btn-success-color);
-  --btn-success-bg-color:                       var(--success-600);
-  --btn-success-hover-bg-color:                 var(--success-700);
+  --btn-success-bg-color:                       var(--SUCCESS-700);
+  --btn-success-hover-bg-color:                 var(--SUCCESS-800);
   --btn-success-border-color:                   var(--btn-success-bg-color);
   --btn-success-hover-border-color:             var(--btn-success-hover-bg-color);
 
   --btn-warning-color:                          #{$white};
   --btn-warning-hover-color:                    var(--btn-warning-color);
-  --btn-warning-bg-color:                       var(--warning-400);
-  --btn-warning-hover-bg-color:                 var(--warning-500);
+  --btn-warning-bg-color:                       var(--WARNING-400);
+  --btn-warning-hover-bg-color:                 var(--WARNING-500);
   --btn-warning-border-color:                   var(--btn-warning-bg-color);
   --btn-warning-hover-border-color:             var(--btn-warning-hover-bg-color);
 
   --btn-danger-color:                           #{$white};
   --btn-danger-hover-color:                     var(--btn-danger-color);
-  --btn-danger-bg-color:                        var(--danger-500);
-  --btn-danger-hover-bg-color:                  var(--danger-600);
+  --btn-danger-bg-color:                        var(--DANGER-600);
+  --btn-danger-hover-bg-color:                  var(--DANGER-700);
   --btn-danger-border-color:                    var(--btn-danger-bg-color);
   --btn-danger-hover-border-color:              var(--btn-danger-hover-bg-color);
 
@@ -63,10 +63,10 @@
   --btn-disabled-hover-border-color:            var(--btn-disabled-bg-color);
 
   // Outlined button
-  --btn-outlined-color:                         var(--theme1-400);
+  --btn-outlined-color:                         var(--THEME1-600);
   --btn-outlined-hover-color:                   var(--btn-outlined-color);
   --btn-outlined-bg-color:                      transparent;
-  --btn-outlined-hover-bg-color:                var(--theme1-050);
+  --btn-outlined-hover-bg-color:                var(--THEME1-100);
   --btn-outlined-border-color:                  var(--btn-outlined-color);
   --btn-outlined-hover-border-color:            var(--btn-outlined-color);
 
@@ -77,24 +77,24 @@
   --btn-outlined-neutral-border-color:          var(--btn-outlined-neutral-color);
   --btn-outlined-neutral-hover-border-color:    var(--btn-outlined-neutral-color);
 
-  --btn-outlined-success-color:                 var(--success-600);
+  --btn-outlined-success-color:                 var(--SUCCESS-700);
   --btn-outlined-success-hover-color:           var(--btn-outlined-success-color);
   --btn-outlined-success-bg-color:              transparent;
-  --btn-outlined-success-hover-bg-color:        var(--success-050);
+  --btn-outlined-success-hover-bg-color:        var(--SUCCESS-100);
   --btn-outlined-success-border-color:          var(--btn-outlined-success-color);
   --btn-outlined-success-hover-border-color:    var(--btn-outlined-success-color);
 
-  --btn-outlined-warning-color:                 var(--warning-400);
+  --btn-outlined-warning-color:                 var(--WARNING-400);
   --btn-outlined-warning-hover-color:           var(--btn-outlined-warning-color);
   --btn-outlined-warning-bg-color:              transparent;
-  --btn-outlined-warning-hover-bg-color:        var(--warning-050);
+  --btn-outlined-warning-hover-bg-color:        var(--WARNING-100);
   --btn-outlined-warning-border-color:          var(--btn-outlined-warning-color);
   --btn-outlined-warning-hover-border-color:    var(--btn-outlined-warning-border-color);
 
-  --btn-outlined-danger-color:                  var(--danger-500);
+  --btn-outlined-danger-color:                  var(--DANGER-600);
   --btn-outlined-danger-hover-color:            var(--btn-outlined-danger-color);
   --btn-outlined-danger-bg-color:               transparent;
-  --btn-outlined-danger-hover-bg-color:         var(--danger-050);
+  --btn-outlined-danger-hover-bg-color:         var(--DANGER-100);
   --btn-outlined-danger-border-color:           var(--btn-outlined-danger-color);
   --btn-outlined-danger-hover-border-color:     var(--btn-outlined-danger-color);
 
@@ -106,10 +106,10 @@
   --btn-outlined-disabled-hover-border-color:   var(--btn-outlined-disabled-border-color);
 
   // Text buttons
-  --btn-text-color:                             var(--theme1-400);
+  --btn-text-color:                             var(--THEME1-600);
   --btn-text-hover-color:                       var(--btn-text-color);
   --btn-text-bg-color:                          transparent;
-  --btn-text-hover-bg-color:                    var(--theme1-050);
+  --btn-text-hover-bg-color:                    var(--THEME1-100);
   --btn-text-border-color:                      transparent;
   --btn-text-hover-border-color:                transparent;
 
@@ -120,24 +120,24 @@
   --btn-text-neutral-border-color:              transparent;
   --btn-text-neutral-hover-border-color:        transparent;
 
-  --btn-text-success-color:                     var(--success-600);
+  --btn-text-success-color:                     var(--SUCCESS-700);
   --btn-text-success-hover-color:               var(--btn-text-success-color);
   --btn-text-success-bg-color:                  transparent;
-  --btn-text-success-hover-bg-color:            var(--success-050);
+  --btn-text-success-hover-bg-color:            var(--SUCCESS-100);
   --btn-text-success-border-color:              transparent;
   --btn-text-success-hover-border-color:        transparent;
 
-  --btn-text-warning-color:                     var(--warning-400);
+  --btn-text-warning-color:                     var(--WARNING-400);
   --btn-text-warning-hover-color:               var(--btn-text-warning-color);
   --btn-text-warning-bg-color:                  transparent;
-  --btn-text-warning-hover-bg-color:            var(--warning-050);
+  --btn-text-warning-hover-bg-color:            var(--WARNING-100);
   --btn-text-warning-border-color:              transparent;
   --btn-text-warning-hover-border-color:        transparent;
 
-  --btn-text-danger-color:                      var(--danger-500);
+  --btn-text-danger-color:                      var(--DANGER-600);
   --btn-text-danger-hover-color:                var(--btn-text-danger-color);
   --btn-text-danger-bg-color:                   transparent;
-  --btn-text-danger-hover-bg-color:             var(--danger-050);
+  --btn-text-danger-hover-bg-color:             var(--DANGER-100);
   --btn-text-danger-border-color:               transparent;
   --btn-text-danger-hover-border-color:         transparent;
 
@@ -192,14 +192,14 @@
   --btn-tiktok-hover-border-color:            #{$tiktok-hover};
 
   --btn-social-color:                           #{$black};
-  --btn-social-hover-color:                     var(--theme1-400);
+  --btn-social-hover-color:                     var(--THEME1-600);
   --btn-social-bg-color:                        transparent;
   --btn-social-hover-bg-color:                  transparent;
   --btn-social-border-color:                    transparent;
   --btn-social-hover-border-color:              transparent;
 
   --btn-social-negative-color:                  #{$white};
-  --btn-social-negative-hover-color:            var(--theme1-050);
+  --btn-social-negative-hover-color:            var(--THEME1-100);
   --btn-social-negative-bg-color:               transparent;
   --btn-social-negative-hover-bg-color:         transparent;
   --btn-social-negative-border-color:           transparent;
@@ -214,7 +214,7 @@
 %a-button {
   align-items: center;
   border: none;
-  border-radius: var(--border-radius);
+  border-radius: var(--BORDER-RADIUS);
   cursor: pointer;
   display: flex;
   font-size: var(--btn-font-size);
@@ -226,9 +226,9 @@
   padding: var(--btn-padding);
   text-align: center;
   text-decoration: none;
-  transition-duration: var(--animation-duration);
+  transition-duration: var(--ANIMATION-DURATION);
   transition-property: color, background, box-shadow;
-  transition-timing-function: var(--animation-easing);
+  transition-timing-function: var(--ANIMATION-EASING);
   user-select: none;
   vertical-align: middle;
   width: 100%;
@@ -257,13 +257,13 @@
 .a-button {
   background: var(--btn-bg-color);
   color: var(--btn-color);
-  box-shadow: 0 0 0 var(--border-width) var(--btn-border-color) inset;
+  box-shadow: 0 0 0 var(--BORDER-WIDTH) var(--btn-border-color) inset;
 
   &:hover,
   &:active,
   &:focus {
     background: var(--btn-hover-bg-color);
-    box-shadow: 0 0 0 var(--border-width) var(--btn-hover-border-color) inset;
+    box-shadow: 0 0 0 var(--BORDER-WIDTH) var(--btn-hover-border-color) inset;
     color: var(--btn-hover-color);
     text-decoration: none;
   }
@@ -529,13 +529,13 @@
 
 .a-button {
   &.a-button--s {
-    --btn-height: var(--spacer-l);
-    --btn-padding: 0 var(--spacer-s);
+    --btn-height: var(--SPACER-L);
+    --btn-padding: 0 var(--SPACER-S);
     --btn-icon-size: 1rem;
   }
 
   &.a-button--l {
-    --btn-height: var(--spacer-xxl);
+    --btn-height: var(--SPACER-XXL);
     --btn-font-size: 1.125rem;
     --btn-icon-size: 1.5rem;
   }
@@ -556,12 +556,12 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: var(--spacer-xl);
+      width: var(--SPACER-XL);
     }
   }
 
   &.has-icon-left {
-    padding-left: var(--spacer-xl);
+    padding-left: var(--SPACER-XL);
 
     .ai,
     .a-spinner {
@@ -570,7 +570,7 @@
   }
 
   &.has-icon-right {
-    padding-right: var(--spacer-xl);
+    padding-right: var(--SPACER-XL);
 
     .ai,
     .a-spinner {
@@ -584,15 +584,15 @@
   &.has-icon-left .a-spinner,
   &.has-icon-right .ai,
   &.has-icon-right .a-spinner {
-    width: var(--spacer-l);
+    width: var(--SPACER-L);
   }
 
   &.has-icon-left {
-    padding-left: var(--spacer-l);
+    padding-left: var(--SPACER-L);
   }
 
   &.has-icon-right {
-    padding-right: var(--spacer-l);
+    padding-right: var(--SPACER-L);
   }
 }
 
@@ -601,15 +601,15 @@
   &.has-icon-left .a-spinner,
   &.has-icon-right .ai,
   &.has-icon-right .a-spinner {
-    width: var(--spacer-xxl);
+    width: var(--SPACER-XXL);
   }
 
   &.has-icon-left {
-    padding-left: var(--spacer-xxl);
+    padding-left: var(--SPACER-XXL);
   }
 
   &.has-icon-right {
-    padding-right: var(--spacer-xxl);
+    padding-right: var(--SPACER-XXL);
   }
 }
 
@@ -623,7 +623,7 @@
   padding: 0;
   position: relative;
   vertical-align: middle;
-  width: var(--spacer-xl);
+  width: var(--SPACER-XL);
 
   .ai,
   .a-spinner {
@@ -631,25 +631,25 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: var(--spacer-xl);
+    width: var(--SPACER-XL);
   }
 }
 
 .a-button--s.has-icon {
-  width: var(--spacer-l);
+  width: var(--SPACER-L);
 
   .ai,
   .a-spinner {
-    width: var(--spacer-l);
+    width: var(--SPACER-L);
   }
 }
 
 .a-button--l.has-icon {
-  width: var(--spacer-xxl);
+  width: var(--SPACER-XXL);
 
   .ai,
   .a-spinner {
-    width: var(--spacer-xxl);
+    width: var(--SPACER-XXL);
   }
 }
 
@@ -688,7 +688,7 @@
   }
 
   &.has-avatar-with-inset {
-    padding-left: calc(var(--shared-avatar-size) + var(--spacer));
+    padding-left: calc(var(--shared-avatar-size) + var(--SPACER));
   }
 }
 
@@ -698,7 +698,7 @@
   }
 
   &.has-avatar-with-inset {
-    padding-left: calc(var(--shared-avatar-size-s) + var(--spacer-s));
+    padding-left: calc(var(--shared-avatar-size-s) + var(--SPACER-S));
   }
 }
 
@@ -708,7 +708,7 @@
   }
 
   &.has-avatar-with-inset {
-    padding-left: calc(var(--shared-avatar-size-l) + var(--spacer));
+    padding-left: calc(var(--shared-avatar-size-l) + var(--SPACER));
   }
 }
 

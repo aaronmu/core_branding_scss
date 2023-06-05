@@ -16,10 +16,10 @@ a:not([class^='a-button']) {
   }
 
   &.has-icon-left .ai {
-    padding-right: var(--spacer-xxs);
+    padding-right: var(--SPACER-XXS);
   }
 
   &.has-icon-right .ai {
-    padding-left: var(--spacer-xxs);
+    padding-left: var(--SPACER-XXS);
   }
 }

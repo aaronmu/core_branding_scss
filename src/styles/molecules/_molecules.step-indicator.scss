@@ -4,31 +4,31 @@
  */
 
 .m-step-indicator {
-  --step-indicator-square-size:                           var(--spacer);
+  --step-indicator-square-size:                           var(--SPACER);
 
-  --step-indicator-square-color:                          var(--text-color-light);
-  --step-indicator-square-bg-color:                       var(--bg-color-light);
-  --step-indicator-square-hover-bg-color:                 var(--theme1-050);
+  --step-indicator-square-color:                          var(--TEXT-COLOR-LIGHT);
+  --step-indicator-square-bg-color:                       var(--BG-COLOR-LIGHT);
+  --step-indicator-square-hover-bg-color:                 var(--THEME1-100);
   --step-indicator-square-border-color:                   #{$gray-400};
 
-  --step-indicator-square-active-color:                   var(--theme1-400);
+  --step-indicator-square-active-color:                   var(--THEME1-600);
   --step-indicator-square-active-bg-color:                #{$white};
-  --step-indicator-square-active-border-color:            var(--theme1-400);
+  --step-indicator-square-active-border-color:            var(--THEME1-600);
 
   --step-indicator-square-completed-color:                #{$white};
-  --step-indicator-square-completed-bg-color:             var(--theme1-400);
-  --step-indicator-square-completed-hover-bg-color:       var(--theme1-500);
-  --step-indicator-square-completed-border-color:         var(--theme1-400);
-  --step-indicator-square-completed-hover-border-color:   var(--theme1-500);
+  --step-indicator-square-completed-bg-color:             var(--THEME1-600);
+  --step-indicator-square-completed-hover-bg-color:       var(--THEME1-700);
+  --step-indicator-square-completed-border-color:         var(--THEME1-600);
+  --step-indicator-square-completed-hover-border-color:   var(--THEME1-700);
 
   --step-indicator-line-color:                            #{$gray-400};
   --step-indicator-line-active-color:                     #{$gray-400};
-  --step-indicator-line-completed-color:                  var(--theme1-400);
+  --step-indicator-line-completed-color:                  var(--THEME1-600);
 
-  --step-indicator-label-color:                           var(--text-color-light);
-  --step-indicator-label-active-color:                    var(--text-color);
-  --step-indicator-label-completed-color:                 var(--text-color);
-  --step-indicator-label-highlight-color:                 var(--theme1-400);
+  --step-indicator-label-color:                           var(--TEXT-COLOR-LIGHT);
+  --step-indicator-label-active-color:                    var(--TEXT-COLOR);
+  --step-indicator-label-completed-color:                 var(--TEXT-COLOR);
+  --step-indicator-label-highlight-color:                 var(--THEME1-600);
 }
 
 /**
@@ -42,7 +42,7 @@
   display: flex;
 
   @include to($screen-sm) {
-    padding-bottom: var(--spacer);
+    padding-bottom: var(--SPACER);
     position: relative;
   }
 
@@ -84,13 +84,13 @@
       --step-indicator-label-color: var(--step-indicator-label-active-color);
 
       .m-step-indicator__number {
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--FONT-WEIGHT-BOLD);
       }
 
       .m-step-indicator__label {
         display: block;
         font-size: 1rem;
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--FONT-WEIGHT-BOLD);
       }
     }
 
@@ -111,7 +111,7 @@
       }
 
       .m-step-indicator__number {
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--FONT-WEIGHT-BOLD);
       }
     }
 
@@ -136,7 +136,7 @@
       text-decoration: none;
 
       .m-step-indicator__number {
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--FONT-WEIGHT-BOLD);
       }
 
       &:focus {
@@ -162,7 +162,7 @@
   &:before {
     align-items: center;
     background-color: var(--step-indicator-square-bg-color);
-    border: var(--border-width) solid var(--step-indicator-square-border-color);
+    border: var(--BORDER-WIDTH) solid var(--step-indicator-square-border-color);
     color: var(--step-indicator-square-color);
     content: counter(steps);
     display: flex;
@@ -170,17 +170,17 @@
     height: var(--step-indicator-square-size);
     justify-content: center;
     position: relative;
-    transition: background-color var(--animation-normal);
+    transition: background-color var(--ANIMATION-NORMAL);
     width: var(--step-indicator-square-size);
   }
 
   &:after {
     background-color: var(--step-indicator-line-color);
     content: "";
-    height: var(--border-width);
+    height: var(--BORDER-WIDTH);
     left: var(--step-indicator-square-size);
     position: absolute;
-    top: calc(var(--step-indicator-square-size) / 2 - var(--border-width) / 2);
+    top: calc(var(--step-indicator-square-size) / 2 - var(--BORDER-WIDTH) / 2);
     width: calc(100% - var(--step-indicator-square-size));
   }
 }
@@ -198,7 +198,7 @@
   }
 
   @include at($screen-sm) {
-    margin-top: var(--spacer-xxs);
-    padding-right: var(--spacer-xxs);
+    margin-top: var(--SPACER-XXS);
+    padding-right: var(--SPACER-XXS);
   }
 }

@@ -4,11 +4,11 @@
  */
 
 .a-progress {
-  --progress-height:          var(--spacer-3xs);
+  --progress-height:          var(--SPACER-3XS);
   --progress-label-size:      .875rem;
-  --progress-label-spacing:   var(--spacer-xxs);
-  --progress-bg-color:        var(--theme1-050);
-  --progress-bar-bg-color:    var(--theme1-400);
+  --progress-label-spacing:   var(--SPACER-XXS);
+  --progress-bg-color:        var(--THEME1-100);
+  --progress-bar-bg-color:    var(--THEME1-600);
 }
 
 /**
@@ -24,7 +24,7 @@
 .a-progress__label {
   display: block;
   font-size: var(--progress-label-size);
-  margin-bottom: var(--spacer-xxs);
+  margin-bottom: var(--SPACER-XXS);
 }
 
 .a-progress__inner {
@@ -48,5 +48,5 @@
 .a-progress.a-progress--l {
   --progress-height: 1.25rem;
   --progress-label-size: 1rem;
-  --progress-label-spacing: var(--spacer-xs);
+  --progress-label-spacing: var(--SPACER-XS);
 }

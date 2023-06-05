@@ -4,17 +4,17 @@
  */
 
 .m-accordion {
-  --accordion-header-color:                var(--text-color);
-  --accordion-header-hover-color:          var(--theme1-400);
+  --accordion-header-color:                var(--TEXT-COLOR);
+  --accordion-header-hover-color:          var(--THEME1-600);
   --accordion-header-bg-color:             #{$white};
-  --accordion-header-hover-bg-color:       var(--theme1-050);
-  --accordion-header-border-color:         var(--border-color);
-  --accordion-header-hover-border-color:   var(--theme1-400);
+  --accordion-header-hover-bg-color:       var(--THEME1-100);
+  --accordion-header-border-color:         var(--BORDER-COLOR);
+  --accordion-header-hover-border-color:   var(--THEME1-600);
 
   --accordion-content-bg-color:            var(--accordion-header-bg-color);
   --accordion-content-border-color:        var(--accordion-header-border-color);
 
-  --accordion-icon-color:                  var(--text-color-light);
+  --accordion-icon-color:                  var(--TEXT-COLOR-LIGHT);
   --accordion-icon-hover-color:            var(--accordion-header-hover-color);
 }
 
@@ -51,12 +51,12 @@
 
 .m-accordion__tab {
   &:not(:first-child) {
-    margin-top: calc(var(--border-width) * -1);
+    margin-top: calc(var(--BORDER-WIDTH) * -1);
   }
 
   .m-accordion__header {
     &[aria-expanded='true'] {
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--FONT-WEIGHT-BOLD);
 
       &:after {
         mask: url('data:image/svg+xml;utf8,<svg id=%22arrow-up-1%22 viewBox=%22-1 -1 17 17%22 xml:space=%22preserve%22 xmlns=%22http://www.w3.org/2000/svg%22><style>.bgst0{fill:none;stroke:%23ffffff;stroke-width:6.25%;stroke-linecap:round;stroke-linejoin:round}</style><path class=%22bgst0%22 d=%22M14.5 11.4L7.7 3.7c-.1-.1-.3-.1-.4 0L.5 11.4%22/></svg>') no-repeat center center;
@@ -80,17 +80,17 @@
 .m-accordion__header {
   align-items: center;
   background-color: var(--accordion-header-bg-color);
-  border: var(--border-width) solid var(--accordion-header-border-color);
+  border: var(--BORDER-WIDTH) solid var(--accordion-header-border-color);
   color: var(--accordion-header-color);
   cursor: pointer;
   display: flex;
-  min-height: var(--spacer-xl);
-  padding: var(--spacer-xs) var(--spacer-xl) var(--spacer-xs) var(--spacer-xs);
+  min-height: var(--SPACER-XL);
+  padding: var(--SPACER-XS) var(--SPACER-XL) var(--SPACER-XS) var(--SPACER-XS);
   position: relative;
   text-align: left;
-  transition-duration: var(--animation-duration);
+  transition-duration: var(--ANIMATION-DURATION);
   transition-property: color, background, border;
-  transition-timing-function: var(--animation-easing);
+  transition-timing-function: var(--ANIMATION-EASING);
   user-select: none;
   width: 100%;
 
@@ -114,16 +114,16 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: var(--spacer-xl);
+    width: var(--SPACER-XL);
   }
 }
 
 .m-accordion__content {
   background-color: var(--accordion-content-bg-color);
-  border: var(--border-width) solid var(--accordion-content-border-color);
+  border: var(--BORDER-WIDTH) solid var(--accordion-content-border-color);
   border-top: none;
   display: none;
-  margin-top: calc(var(--border-width) * -1);
+  margin-top: calc(var(--BORDER-WIDTH) * -1);
   max-height: 0;
   padding: 0;
   transition: max-height .5s ease-out;

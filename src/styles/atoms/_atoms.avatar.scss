@@ -8,10 +8,10 @@
   --avatar-bg-color:                 #{$white};
   --avatar-hover-bg-color:           #{$gray-100};
 
-  --avatar-primary-color:            var(--theme1-400);
-  --avatar-primary-hover-color:      var(--theme1-500);
-  --avatar-primary-bg-color:         var(--theme1-050);
-  --avatar-primary-hover-bg-color:   var(--theme1-075);
+  --avatar-primary-color:            var(--THEME1-600);
+  --avatar-primary-hover-color:      var(--THEME1-700);
+  --avatar-primary-bg-color:         var(--THEME1-100);
+  --avatar-primary-hover-bg-color:   var(--THEME1-200);
 
   --avatar-size-s:                   var(--shared-avatar-size-s); // 36px
   --avatar-icon-size-s:              1rem;
@@ -32,20 +32,20 @@
   background-color: var(--avatar-bg-color);
   color: var(--avatar-color);
   display: inline-block;
-  font-family: var(--font-family-headings);
+  font-family: var(--FONT-FAMILY-HEADINGS);
   font-size: var(--avatar-icon-size);
   height: var(--avatar-size);
   overflow: hidden;
   position: relative;
   text-align: center;
   text-decoration: none;
-  transition: background-color var(--animation-normal);
+  transition: background-color var(--ANIMATION-NORMAL);
   width: var(--avatar-size);
 
   img {
     display: block;
     max-width: 100%;
-    transition: filter var(--animation-normal);
+    transition: filter var(--ANIMATION-NORMAL);
   }
 
   &__icon .ai,

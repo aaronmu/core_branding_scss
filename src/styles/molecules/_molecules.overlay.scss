@@ -5,7 +5,7 @@
  */
 
 .m-overlay {
-  --overlay-bg-color:             var(--overlay-color);
+  --overlay-bg-color:             var(--OVERLAY-COLOR);
   --overlay-button-font-size:     #{rem($icon-size-lg)};
   --overlay-button-color:         #{$white};
   --overlay-button-hover-color:   #{$gray-200};
@@ -46,11 +46,11 @@
   color: var(--overlay-button-color);
   cursor: pointer;
   font-size: var(--overlay-button-font-size);
-  padding: var(--spacer-xs);
+  padding: var(--SPACER-XS);
   position: absolute;
-  right: var(--spacer-xs);
-  top: var(--spacer-xs);
-  transition: color var(--animation-normal);
+  right: var(--SPACER-XS);
+  top: var(--SPACER-XS);
+  transition: color var(--ANIMATION-NORMAL);
 
   &:active,
   &:hover,

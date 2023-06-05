@@ -7,7 +7,7 @@
 .a-copyright {
   --copyright-height:        var(--shared-copyright-height);
   --copyright-color:         var(--shared-copyright-color);
-  --copyright-bg-color:      var(--overlay-color);
+  --copyright-bg-color:      var(--OVERLAY-COLOR);
 }
 
 /**
@@ -21,7 +21,7 @@
   display: inline-block;
   font-size: 1rem;
   height: var(--copyright-height);
-  transition: transform var(--animation-normal);
+  transition: transform var(--ANIMATION-NORMAL);
 }
 
 /**
@@ -44,7 +44,7 @@
 }
 
 .a-copyright__label {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--FONT-WEIGHT-BOLD);
   line-height: var(--copyright-height);
-  margin-right: var(--spacer-xs);
+  margin-right: var(--SPACER-XS);
 }

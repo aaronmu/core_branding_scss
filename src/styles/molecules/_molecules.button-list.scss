@@ -7,7 +7,7 @@
   @extend %u-list-reset;
 
   li:not(:last-child) {
-    margin-bottom: var(--spacer-xs);
+    margin-bottom: var(--SPACER-XS);
   }
 }
 
@@ -19,13 +19,13 @@
 .m-button-list--horizontal {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: calc(var(--spacer-xs) * -1);
+  margin-bottom: calc(var(--SPACER-XS) * -1);
 
   li {
-    margin-bottom: var(--spacer-xs);
+    margin-bottom: var(--SPACER-XS);
 
     &:not(:last-child) {
-      margin-right: var(--spacer-xs);
+      margin-right: var(--SPACER-XS);
     }
   }
 }

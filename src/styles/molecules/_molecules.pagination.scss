@@ -5,18 +5,18 @@
 
 .m-pagination {
   --pagination-font-size:                 #{rem($font-size-base)};
-  --pagination-size:                      var(--spacer-xl);
-  --pagination-padding:                   0 var(--spacer);
+  --pagination-size:                      var(--SPACER-XL);
+  --pagination-padding:                   0 var(--SPACER);
 
-  --pagination-color:                     var(--theme1-400);
-  --pagination-hover-color:               var(--theme1-400);
+  --pagination-color:                     var(--THEME1-600);
+  --pagination-hover-color:               var(--THEME1-600);
   --pagination-active-color:              #{$white};
   --pagination-bg-color:                  transparent;
-  --pagination-hover-bg-color:            var(--theme1-050);
-  --pagination-active-bg-color:           var(--theme1-400);
-  --pagination-border-color:              var(--theme1-400);
-  --pagination-hover-border:              var(--theme1-500);
-  --pagination-active-border:             var(--theme1-500);
+  --pagination-hover-bg-color:            var(--THEME1-100);
+  --pagination-active-bg-color:           var(--THEME1-600);
+  --pagination-border-color:              var(--THEME1-600);
+  --pagination-hover-border:              var(--THEME1-700);
+  --pagination-active-border:             var(--THEME1-700);
 
   --pagination-disabled-color:            #{$gray-400};
   --pagination-disabled-bg-color:         #{$gray-100};
@@ -35,7 +35,7 @@
 
   > li {
     background-color: var(--pagination-bg-color);
-    box-shadow: 0 0 0 var(--border-width) var(--pagination-border-color) inset;
+    box-shadow: 0 0 0 var(--BORDER-WIDTH) var(--pagination-border-color) inset;
     color: var(--pagination-color);
     font-size: var(--pagination-font-size);
     height: var(--pagination-size);
@@ -49,36 +49,36 @@
       color: var(--pagination-color);
       display: block;
       text-decoration: none;
-      transition-duration: var(--animation-duration);
+      transition-duration: var(--ANIMATION-DURATION);
       transition-property: color, background-color, box-shadow;
-      transition-timing-function: var(--animation-easing);
+      transition-timing-function: var(--ANIMATION-EASING);
 
       &:hover,
       &:active,
       &:focus,
       &.is-active {
         background-color: var(--pagination-hover-bg-color);
-        box-shadow: 0 0 0 var(--border-width) var(--pagination-hover-border) inset;
+        box-shadow: 0 0 0 var(--BORDER-WIDTH) var(--pagination-hover-border) inset;
         color: var(--pagination-hover-color);
       }
 
       &.is-active {
         background-color: var(--pagination-active-bg-color);
-        box-shadow: 0 0 0 var(--border-width) var(--pagination-active-border) inset;
+        box-shadow: 0 0 0 var(--BORDER-WIDTH) var(--pagination-active-border) inset;
         color: var(--pagination-active-color);
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--FONT-WEIGHT-BOLD);
       }
 
       &.is-disabled {
         background-color: var(--pagination-disabled-bg-color);
-        box-shadow: 0 0 0 var(--border-width) var(--pagination-disabled-border) inset;
+        box-shadow: 0 0 0 var(--BORDER-WIDTH) var(--pagination-disabled-border) inset;
         color: var(--pagination-disabled-color);
         cursor: not-allowed;
       }
     }
 
     + li {
-      margin-left: calc(var(--border-width) * -1);
+      margin-left: calc(var(--BORDER-WIDTH) * -1);
     }
   }
 
@@ -102,6 +102,6 @@
  */
 
 .m-pagination.m-pagination--s {
-  --pagination-size: var(--spacer-l);
-  --pagination-padding: 0 var(--spacer-xs);
+  --pagination-size: var(--SPACER-L);
+  --pagination-padding: 0 var(--SPACER-XS);
 }

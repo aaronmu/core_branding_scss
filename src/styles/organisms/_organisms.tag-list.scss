@@ -8,7 +8,7 @@
 
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: calc(var(--spacer-xxs) * -1);
+  margin-bottom: calc(var(--SPACER-XXS) * -1);
 }
 
 /**
@@ -17,9 +17,9 @@
  */
 
 .o-tag-list__item {
-  margin-bottom: var(--spacer-xxs);
+  margin-bottom: var(--SPACER-XXS);
 
   &:not(:last-child) {
-    margin-right: var(--spacer-xxs);
+    margin-right: var(--SPACER-XXS);
   }
 }
