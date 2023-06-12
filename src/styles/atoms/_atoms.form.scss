@@ -4,7 +4,7 @@
  */
 
 .a-form .a-input:not(:last-child) {
-  margin-bottom: var(--spacer);
+  margin-bottom: var(--SPACER);
 }
 
 /**
@@ -14,15 +14,15 @@
 
 fieldset {
   border: none;
-  border-bottom: var(--border-width) solid var(--border-color);
-  border-top: var(--border-width) solid var(--border-color);
+  border-bottom: var(--BORDER-WIDTH) solid var(--BORDER-COLOR);
+  border-top: var(--BORDER-WIDTH) solid var(--BORDER-COLOR);
   margin: 0;
   min-width: 0;
-  padding: var(--spacer-xl) 0;
+  padding: var(--SPACER-XL) 0;
   position: relative;
 
   + fieldset {
-    margin-top: calc(var(--border-width) * -1);
+    margin-top: calc(var(--BORDER-WIDTH) * -1);
   }
 
   &.a-input {
@@ -35,7 +35,7 @@ legend {
   &:not(.a-input__label) {
     color: #{$gray-400};
     font-size: #{rem($font-size-lg)};
-    font-weight: var(--font-weight-bold);
-    padding: 0 var(--spacer-xxs) 0 0;
+    font-weight: var(--FONT-WEIGHT-BOLD);
+    padding: 0 var(--SPACER-XXS) 0 0;
   }
 }

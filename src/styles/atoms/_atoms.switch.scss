@@ -5,20 +5,20 @@
 
 .a-switch {
   --switch-width:                                      2.75rem;
-  --switch-height:                                     var(--spacer);
+  --switch-height:                                     var(--SPACER);
   --switch-inset:                                      .1875rem;
 
   --switch-handle-size:                                1.125rem;
 
   --switch-label-font-size:                            1rem;
-  --switch-label-color:                                var(--text-color);
+  --switch-label-color:                                var(--TEXT-COLOR);
   --switch-label-disabled-color:                       #{$gray-300};
 
   --switch-bg-color:                                   #{$gray-300};
   --switch-border-color:                               var(--switch-bg-color);
   --switch-handle-bg-color:                            #{$white};
 
-  --switch-active-bg-color:                            var(--theme1-400);
+  --switch-active-bg-color:                            var(--THEME1-600);
   --switch-active-border-color:                        var(--switch-active-bg-color);
   --switch-handle-active-bg-color:                     #{$white};
 
@@ -104,7 +104,7 @@
     position: absolute;
     top: 50%;
     transform: translate(var(--switch-inset), -50%);
-    transition: background, transform var(--animation-normal);
+    transition: background, transform var(--ANIMATION-NORMAL);
     width: var(--switch-handle-size);
   }
 }
@@ -113,13 +113,13 @@
   color: var(--switch-label-color);
   font-size: var(--switch-label-font-size);
   min-width: 2rem;
-  transition: color var(--animation-normal);
+  transition: color var(--ANIMATION-NORMAL);
   text-align: right;
 }
 
 .a-switch__label + .a-switch__toggle,
 .a-switch__toggle + .a-switch__label {
-  margin-left: var(--spacer-xs);
+  margin-left: var(--SPACER-XS);
 }
 
 .a-switch__toggle + .a-switch__label {
@@ -130,6 +130,6 @@
   color: var(--switch-handle-bg-color);
   font-size: .875rem;
   text-transform: uppercase;
-  transition: opacity var(--animation-normal);
+  transition: opacity var(--ANIMATION-NORMAL);
   width: var(--switch-handle-size);
 }

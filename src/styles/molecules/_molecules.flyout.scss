@@ -5,10 +5,10 @@
 
 .m-flyout {
   --flyout-bg-color:         #{$white};
-  --flyout-border-color:     var(--border-color);
+  --flyout-border-color:     var(--BORDER-COLOR);
   --flyout-max-width:        24rem;
   --flyout-max-width-s:      16rem;
-  --flyout-max-height:       calc(var(--spacer) * 9);
+  --flyout-max-height:       calc(var(--SPACER) * 9);
 }
 
 /**
@@ -33,12 +33,12 @@
   }
 
   background-color: var(--flyout-bg-color);
-  border: var(--border-width) solid var(--flyout-border-color);
-  box-shadow: var(--box-shadow);
+  border: var(--BORDER-WIDTH) solid var(--flyout-border-color);
+  box-shadow: var(--BOX-SHADOW);
   opacity: 0;
   position: absolute;
-  transform: translateY(calc(var(--spacer-xl) * -1));
-  transition: visibility 0s var(--animation-normal), opacity var(--animation-normal), transform var(--animation-normal);
+  transform: translateY(calc(var(--SPACER-XL) * -1));
+  transition: visibility 0s var(--ANIMATION-NORMAL), opacity var(--ANIMATION-NORMAL), transform var(--ANIMATION-NORMAL);
   visibility: hidden;
   width: var(--flyout-max-width-s);
   z-index: layer('flyout');
@@ -60,15 +60,15 @@
 }
 
 .m-flyout--bottom-right .m-flyout__content {
-  box-shadow: var(--box-shadow-bottom-left);
+  box-shadow: var(--BOX-SHADOW-BOTTOM-LEFT);
 }
 
 .m-flyout--upper-left .m-flyout__content {
-  box-shadow: var(--box-shadow-upper-right);
+  box-shadow: var(--BOX-SHADOW-TOP-RIGHT);
 }
 
 .m-flyout--upper-right .m-flyout__content {
-  box-shadow: var(--box-shadow-upper-left);
+  box-shadow: var(--BOX-SHADOW-TOP-LEFT);
 }
 
 /**
@@ -103,13 +103,13 @@
   &.m-flyout--upper-left,
   &.m-flyout--upper-right {
     .m-flyout__content {
-      transform: translateY(calc(-100% - var(--spacer-xl)));
+      transform: translateY(calc(-100% - var(--SPACER-XL)));
     }
   }
 }
 
 .m-flyout__content.has-padding {
-  padding: var(--spacer-s);
+  padding: var(--SPACER-S);
 }
 
 /**
@@ -119,7 +119,7 @@
 
 .a-input + .m-flyout__content {
   min-width: 100%;
-  margin-top: calc(var(--border-width) * -1);
+  margin-top: calc(var(--BORDER-WIDTH) * -1);
   width: auto;
 }
 

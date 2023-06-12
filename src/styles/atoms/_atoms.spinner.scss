@@ -7,7 +7,7 @@
   --spinner-color:              #{$gray-300};
   --spinner-size:               2rem;
   --spinner-thickness:          .1875rem;
-  --spinner-text-color:         var(--text-color-light);
+  --spinner-text-color:         var(--TEXT-COLOR-LIGHT);
 
   --spinner-animation-name:     spin;
   --spinner-animation-speed:    1600ms;
@@ -62,7 +62,7 @@
 .a-spinner__text {
   color: var(--spinner-text-color);
   font-size: .875rem;
-  margin-left: var(--spacer-s);
+  margin-left: var(--SPACER-S);
 }
 
 /**
@@ -72,18 +72,18 @@
 
 .a-spinner {
   &.a-spinner--xs {
-    --spinner-size: var(--spacer-s);
+    --spinner-size: var(--SPACER-S);
     --spinner-thickness: .0625rem;
   }
 
   &.a-spinner--s {
-    --spinner-size: var(--spacer);
+    --spinner-size: var(--SPACER);
     --spinner-thickness: .125rem;
   }
 
   &.a-spinner--l {
     --spinner-size: 4rem;
-    --spinner-thickness: var(--spacer-3xs);
+    --spinner-thickness: var(--SPACER-3XS);
   }
 
   &.a-spinner--vertical {
@@ -91,12 +91,12 @@
 
     .a-spinner__text {
       margin-left: 0;
-      margin-top: var(--spacer-xxs);
+      margin-top: var(--SPACER-XXS);
       text-align: center;
     }
 
     &.a-spinner--l .a-spinner__text {
-      margin-top: var(--spacer-xs);
+      margin-top: var(--SPACER-XS);
     }
   }
 }

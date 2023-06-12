@@ -4,18 +4,18 @@
  */
 
 .m-upload {
-  --upload-color:                   var(--text-color);
+  --upload-color:                   var(--TEXT-COLOR);
   --upload-bg-color:                #{$white};
-  --upload-hover-bg-color:          var(--theme1-050);
-  --upload-border-color:            var(--theme1-400);
-  --upload-disabled-color:          var(--state-disabled);
+  --upload-hover-bg-color:          var(--THEME1-100);
+  --upload-border-color:            var(--THEME1-600);
+  --upload-disabled-color:          var(--STATE-DISABLED);
   --upload-disabled-bg-color:       #{$gray-100};
   --upload-disabled-border-color:   var(--upload-disabled-color);
-  --upload-focus-border-color:      var(--theme1-050);
+  --upload-focus-border-color:      var(--THEME1-100);
 
-  --upload-file-color:              var(--text-color);
-  --upload-file-bg-color:           var(--bg-color-light);
-  --upload-file-danger-color:       var(--state-danger);
+  --upload-file-color:              var(--TEXT-COLOR);
+  --upload-file-bg-color:           var(--BG-COLOR-LIGHT);
+  --upload-file-danger-color:       var(--STATE-DANGER);
 }
 
 /**
@@ -58,16 +58,16 @@
 .m-upload__dropzone {
   align-items: center;
   background-color: var(--upload-bg-color);
-  border: calc(var(--border-width) * 2) dashed var(--upload-border-color);
+  border: calc(var(--BORDER-WIDTH) * 2) dashed var(--upload-border-color);
   color: var(--upload-color);
   cursor: pointer;
   display: flex;
   justify-content: center;
-  min-height: calc(var(--spacer) * 5);
-  padding: var(--spacer-l) var(--spacer);
+  min-height: calc(var(--SPACER) * 5);
+  padding: var(--SPACER-L) var(--SPACER);
   position: relative;
   text-align: center;
-  transition: background var(--animation-normal);
+  transition: background var(--ANIMATION-NORMAL);
   width: 100%;
 
   &:active,
@@ -94,7 +94,7 @@
 }
 
 .m-upload__content {
-  max-width: calc(var(--spacer) * 15);
+  max-width: calc(var(--SPACER) * 15);
   width: 100%;
 
   &:before {
@@ -112,30 +112,30 @@
 
 .m-upload__description {
   display: block;
-  margin-top: var(--spacer-xs);
+  margin-top: var(--SPACER-XS);
 }
 
 .m-upload__files {
   @extend %u-list-reset;
 
-  margin-top: var(--spacer);
+  margin-top: var(--SPACER);
 
   > li {
     background-color: var(--upload-file-bg-color);
     color: var(--upload-file-color);
     line-height: $line-height-paragraph;
-    min-height: var(--spacer-l);
-    padding: var(--spacer-xxs) var(--spacer-xl) var(--spacer-xxs) var(--spacer-xl);
+    min-height: var(--SPACER-L);
+    padding: var(--SPACER-XXS) var(--SPACER-XL) var(--SPACER-XXS) var(--SPACER-XL);
     position: relative;
 
     &:not(:last-child) {
-      margin-bottom: var(--spacer-xs);
+      margin-bottom: var(--SPACER-XS);
     }
 
     > .ai {
-      left: var(--spacer-s);
+      left: var(--SPACER-S);
       position: absolute;
-      top: calc(var(--spacer) / 4 * 3);
+      top: calc(var(--SPACER) / 4 * 3);
       transform: translateY(-50%);
     }
   }

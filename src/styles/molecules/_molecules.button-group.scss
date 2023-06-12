@@ -6,7 +6,7 @@
 .m-button-group {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: var(--border-width);
+  padding-bottom: var(--BORDER-WIDTH);
   vertical-align: middle;
 
   > .a-button {
@@ -26,8 +26,8 @@
   }
 
   > .a-button:not(.a-button--outlined) {
-    border-right: var(--border-width) solid var(--btn-hover-border-color);
-    margin-bottom: calc(var(--border-width) * -1);
+    border-right: var(--BORDER-WIDTH) solid var(--btn-hover-border-color);
+    margin-bottom: calc(var(--BORDER-WIDTH) * -1);
 
     &:last-child {
       border-right: none;
@@ -51,8 +51,8 @@
   }
 
   > .a-button--outlined {
-    margin-bottom: calc(var(--border-width) * -1);
-    margin-right: calc(var(--border-width) * -1);
+    margin-bottom: calc(var(--BORDER-WIDTH) * -1);
+    margin-right: calc(var(--BORDER-WIDTH) * -1);
 
     &:last-child {
       margin-right: 0;
@@ -73,7 +73,7 @@
     border-right: none;
 
     &:not(:first-child) {
-      border-top: var(--border-width) solid var(--btn-hover-border-color);
+      border-top: var(--BORDER-WIDTH) solid var(--btn-hover-border-color);
     }
   }
 

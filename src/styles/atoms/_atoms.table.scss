@@ -6,18 +6,18 @@
 .a-table,
 .a-table-scrollable-wrapper {
   --table-bg-color:                     #{$white};
-  --table-border-color:                 var(--border-color);
+  --table-border-color:                 var(--BORDER-COLOR);
   --table-border-color-light:           #{$gray-200};
-  --table-highlight-bg-color:           var(--theme1-050);
-  --table-highlight-border-color:       var(--theme1-400);
-  --table-striped-bg-color:             var(--bg-color-light);
+  --table-highlight-bg-color:           var(--THEME1-100);
+  --table-highlight-border-color:       var(--THEME1-600);
+  --table-striped-bg-color:             var(--BG-COLOR-LIGHT);
 
-  --table-sort-btn-color:               var(--text-color);
-  --table-sort-btn-active-color:        var(--theme1-400);
+  --table-sort-btn-color:               var(--TEXT-COLOR);
+  --table-sort-btn-active-color:        var(--THEME1-600);
   --table-sort-btn-bg-color:            #{$white};
-  --table-sort-btn-hover-bg-color:      var(--theme1-050);
+  --table-sort-btn-hover-bg-color:      var(--THEME1-100);
   --table-sort-btn-icon-color:          #{$gray-300};
-  --table-sort-btn-icon-active-color:   var(--theme1-400);
+  --table-sort-btn-icon-active-color:   var(--THEME1-600);
 }
 
 /**
@@ -27,24 +27,24 @@
 
 .a-table {
   background-color: var(--table-bg-color);
-  border: var(--border-width) solid var(--table-border-color);
+  border: var(--BORDER-WIDTH) solid var(--table-border-color);
   border-collapse: collapse;
   width: 100%;
 
   caption {
-    margin-bottom: var(--spacer-xxs);
+    margin-bottom: var(--SPACER-XXS);
     text-align: left;
   }
 
   thead tr {
-    border-bottom: var(--border-width) solid var(--table-border-color);
+    border-bottom: var(--BORDER-WIDTH) solid var(--table-border-color);
   }
 
   tbody tr {
-    transition: background-color var(--animation-normal);
+    transition: background-color var(--ANIMATION-NORMAL);
 
     &:not(:last-child) {
-      border-bottom: var(--border-width) solid var(--table-border-color-light);
+      border-bottom: var(--BORDER-WIDTH) solid var(--table-border-color-light);
     }
 
     &.is-selected,
@@ -60,21 +60,21 @@
     }
 
     &.is-selected td {
-      border-top: var(--border-width) solid var(--table-highlight-border-color);
-      border-bottom: var(--border-width) solid var(--table-highlight-border-color);
+      border-top: var(--BORDER-WIDTH) solid var(--table-highlight-border-color);
+      border-bottom: var(--BORDER-WIDTH) solid var(--table-highlight-border-color);
 
       &:first-child {
-        border-left: var(--border-width) solid var(--table-highlight-border-color);
+        border-left: var(--BORDER-WIDTH) solid var(--table-highlight-border-color);
       }
 
       &:last-child {
-        border-right: var(--border-width) solid var(--table-highlight-border-color);
+        border-right: var(--BORDER-WIDTH) solid var(--table-highlight-border-color);
       }
     }
   }
 
   tr {
-    height: var(--spacer-xl);
+    height: var(--SPACER-XL);
   }
 
   th,
@@ -82,14 +82,14 @@
     // https://stackoverflow.com/a/41883019
     // Fix incorrect border of td/th with "position: sticky" on Firefox
     background-clip: padding-box;
-    padding: var(--spacer-xs);
+    padding: var(--SPACER-XS);
 
     &:not(.u-text-center):not(.u-text-right):not(.u-text-justify) {
       text-align: left;
     }
 
     &.is-condensed {
-      padding: var(--spacer-3xs) var(--spacer-xs);
+      padding: var(--SPACER-3XS) var(--SPACER-XS);
     }
 
     &.is-collapsed {
@@ -110,12 +110,12 @@
   color: var(--table-sort-btn-color);
   cursor: pointer;
   display: flex;
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--FONT-WEIGHT-BOLD);
   justify-content: flex-start;
   margin: 0;
-  min-height: var(--spacer-xl);
-  padding: 0 var(--spacer-xs);
-  transition: background-color var(--animation-normal);
+  min-height: var(--SPACER-XL);
+  padding: 0 var(--SPACER-XS);
+  transition: background-color var(--ANIMATION-NORMAL);
   user-select: none;
   width: 100%;
 
@@ -138,7 +138,7 @@
       background: var(--table-sort-btn-icon-color);
       content: '';
       height: 1rem;
-      margin-left: var(--spacer-3xs);
+      margin-left: var(--SPACER-3XS);
       mask-size: contain;
       width: 1rem;
     }
@@ -207,26 +207,26 @@
   &:not(.has-first-column-fixed) {
     // Display a drop shadow on the left inner side of the table
     &.has-shadow-left:before {
-      background-color: var(--box-shadow-color);
+      background-color: var(--BOX-SHADOW-COLOR);
       bottom: 0;
       content: '';
       left: 0;
       position: absolute;
       top: 0;
-      width: var(--spacer-xs);
+      width: var(--SPACER-XS);
     }
   }
 
   &:not(.has-last-column-fixed) {
     // Display a drop shadow on the right inner side of the table
     &.has-shadow-right:after {
-      background-color: var(--box-shadow-color);
+      background-color: var(--BOX-SHADOW-COLOR);
       bottom: 0;
       content: '';
       position: absolute;
       right: 0;
       top: 0;
-      width: var(--spacer-xs);
+      width: var(--SPACER-XS);
     }
   }
 
@@ -236,7 +236,7 @@
       tr th:first-child,
       tr td:first-child {
         background-color: var(--table-bg-color);
-        box-shadow: inset calc(var(--border-width) * -1) 0 0 0 var(--table-border-color);
+        box-shadow: inset calc(var(--BORDER-WIDTH) * -1) 0 0 0 var(--table-border-color);
         left: 0;
         position: sticky;
         z-index: layer('base');
@@ -255,14 +255,14 @@
       tr th:first-child,
       tr td:first-child {
         &:after {
-          background-color: var(--box-shadow-color);
+          background-color: var(--BOX-SHADOW-COLOR);
           bottom: 0;
           content: '';
           position: absolute;
           right: 0;
           top: 0;
           transform: translateX(100%);
-          width: var(--spacer-xs);
+          width: var(--SPACER-XS);
         }
       }
     }
@@ -274,7 +274,7 @@
       tr th:last-child,
       tr td:last-child {
         background-color: var(--table-bg-color);
-        box-shadow: inset var(--border-width) 0 0 0 var(--table-border-color);
+        box-shadow: inset var(--BORDER-WIDTH) 0 0 0 var(--table-border-color);
         position: sticky;
         right: 0;
 
@@ -292,14 +292,14 @@
       tr th:last-child,
       tr td:last-child {
         &:after {
-          background-color: var(--box-shadow-color);
+          background-color: var(--BOX-SHADOW-COLOR);
           bottom: 0;
           content: '';
           left: 0;
           position: absolute;
           top: 0;
           transform: translateX(-100%);
-          width: var(--spacer-xs);
+          width: var(--SPACER-XS);
         }
       }
     }
@@ -309,7 +309,7 @@
 .a-table-scrollable-wrapper {
   -ms-overflow-style: scrollbar;
   -webkit-overflow-scrolling: touch;
-  border: var(--border-width) solid var(--table-border-color);
+  border: var(--BORDER-WIDTH) solid var(--table-border-color);
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
@@ -317,7 +317,7 @@
   table {
     background-color: transparent;
     border: none;
-    margin-bottom: calc(var(--border-width) * -1);
+    margin-bottom: calc(var(--BORDER-WIDTH) * -1);
 
     > thead > tr,
     > tbody > tr,
@@ -337,7 +337,7 @@
 
 .a-table {
   &__sort-button {
-    min-height: calc(var(--spacer-xl) - 1px);
+    min-height: calc(var(--SPACER-XL) - 1px);
   }
 
   .a-input__checkbox {

@@ -4,11 +4,11 @@
  */
 
 .m-alert {
-  --alert-color:                  var(--theme1-400);
+  --alert-color:                  var(--THEME1-600);
   --alert-bg-color:               #{$white};
   --alert-border-color:           var(--alert-color);
 
-  --alert-success-color:          var(--success-600);
+  --alert-success-color:          var(--SUCCESS-700);
   --alert-success-bg-color:       var(--alert-bg-color);
   --alert-success-border-color:   var(--alert-success-color);
 
@@ -16,11 +16,11 @@
   --alert-warning-bg-color:       var(--alert-bg-color);
   --alert-warning-border-color:   var(--alert-warning-color);
 
-  --alert-danger-color:           var(--danger-500);
+  --alert-danger-color:           var(--DANGER-600);
   --alert-danger-bg-color:        var(--alert-bg-color);
   --alert-danger-border-color:    var(--alert-danger-color);
 
-  --alert-padding:                var(--spacer);
+  --alert-padding:                var(--SPACER);
 }
 
 /**
@@ -30,7 +30,7 @@
 
 .m-alert {
   background-color: var(--alert-bg-color);
-  border: var(--border-width) solid var(--alert-border-color);
+  border: var(--BORDER-WIDTH) solid var(--alert-border-color);
   color: var(--alert-color);
   padding: var(--alert-padding);
   position: relative;
@@ -49,7 +49,7 @@
 
 .m-alert__icon {
   float: left;
-  margin: calc(var(--spacer-xs) / -3) $spacer-xs 0 0;
+  margin: calc(var(--SPACER-XS) / -3) $spacer-xs 0 0;
 
   .ai {
     font-size: 1.5rem;
@@ -57,7 +57,7 @@
 }
 
 .m-alert__actions {
-  margin-bottom: calc(var(--spacer-xs) * -1);
+  margin-bottom: calc(var(--SPACER-XS) * -1);
 
   @include at($screen-xs) {
     display: flex;
@@ -65,13 +65,13 @@
   }
 
   .a-button {
-    margin-bottom: var(--spacer-xs);
+    margin-bottom: var(--SPACER-XS);
 
     @include at($screen-xs) {
       margin-bottom: 0;
 
       &:not(:first-child) {
-        margin-left: var(--spacer-xs);
+        margin-left: var(--SPACER-XS);
       }
     }
   }
@@ -103,5 +103,5 @@
 }
 
 .m-alert.m-alert--inline {
-  --alert-padding: var(--spacer-xs);
+  --alert-padding: var(--SPACER-XS);
 }

@@ -4,16 +4,16 @@
  */
 
 .o-article {
-  --article-h1-margin:         var(--spacer-xxl) 0 var(--spacer);
-  --article-h2-margin:         var(--spacer-xl) 0 var(--spacer-s);
-  --article-h3-margin:         var(--spacer-l) 0 var(--spacer-s);
-  --article-h4-margin:         var(--spacer) 0 var(--spacer-xs);
-  --article-h5-margin:         var(--spacer) 0 var(--spacer-xs);
-  --article-h6-margin:         var(--spacer) 0 var(--spacer-xs);
-  --article-p-margin:          0 0 var(--spacer-xs);
-  --article-ul-margin:         0 0 var(--spacer-s);
-  --article-ol-margin:         0 0 var(--spacer-3xs);
-  --article-li-margin:         0 0 var(--spacer-3xs);
+  --article-h1-margin:         var(--SPACER-XXL) 0 var(--SPACER);
+  --article-h2-margin:         var(--SPACER-XL) 0 var(--SPACER-S);
+  --article-h3-margin:         var(--SPACER-L) 0 var(--SPACER-S);
+  --article-h4-margin:         var(--SPACER) 0 var(--SPACER-XS);
+  --article-h5-margin:         var(--SPACER) 0 var(--SPACER-XS);
+  --article-h6-margin:         var(--SPACER) 0 var(--SPACER-XS);
+  --article-p-margin:          0 0 var(--SPACER-XS);
+  --article-ul-margin:         0 0 var(--SPACER-S);
+  --article-ol-margin:         0 0 var(--SPACER-3XS);
+  --article-li-margin:         0 0 var(--SPACER-3XS);
 }
 
 /**
@@ -65,7 +65,7 @@
     ul,
     ol {
       margin: 0;
-      padding-left: var(--spacer);
+      padding-left: var(--SPACER);
     }
   }
 

@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+### Changed
+- Improved the ability to overwrite CSS custom properties
+
 
 ## [6.3.0] - 2023-05-08
 

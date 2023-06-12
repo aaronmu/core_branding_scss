@@ -19,9 +19,9 @@ figure {
 figcaption {
   font-size: rem($font-size-base);
   line-height: $line-height-paragraph;
-  padding: var(--spacer-xs);
+  padding: var(--SPACER-XS);
 
   @include at($screen-sm) {
-    padding: var(--spacer-s) var(--spacer-xs);
+    padding: var(--SPACER-S) var(--SPACER-XS);
   }
 }

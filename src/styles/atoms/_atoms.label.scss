@@ -5,20 +5,20 @@
 
 .a-label {
   --label-height:                   1.125rem;
-  --label-padding:                  0 var(--spacer-xxs);
+  --label-padding:                  0 var(--SPACER-XXS);
   --label-font-size:                .875rem;
   --label-line-height:              var(--label-height);
-  --label-font-weight:              var(--font-weight-bold);
+  --label-font-weight:              var(--FONT-WEIGHT-BOLD);
 
-  --label-color:                    var(--text-color);
+  --label-color:                    var(--TEXT-COLOR);
   --label-bg-color:                 transparent;
   --label-border-color:             #{$gray-400};
 
-  --label-primary-color:            var(--theme1-400);
+  --label-primary-color:            var(--THEME1-600);
   --label-primary-bg-color:         var(--label-bg-color);
   --label-primary-border-color:     var(--label-primary-color);
 
-  --label-success-color:            var(--success-600);
+  --label-success-color:            var(--SUCCESS-700);
   --label-success-bg-color:         var(--label-bg-color);
   --label-success-border-color:     var(--label-success-color);
 
@@ -26,7 +26,7 @@
   --label-warning-bg-color:         var(--label-bg-color);
   --label-warning-border-color:     var(--label-warning-color);
 
-  --label-danger-color:            var(--danger-500);
+  --label-danger-color:            var(--DANGER-600);
   --label-danger-bg-color:         var(--label-bg-color);
   --label-danger-border-color:     var(--label-danger-color);
 }
@@ -38,7 +38,7 @@
 
 .a-label {
   background-color: var(--label-bg-color);
-  border: var(--border-width) solid var(--label-border-color);
+  border: var(--BORDER-WIDTH) solid var(--label-border-color);
   color: var(--label-color);
   display: inline-block;
   font-size: var(--label-font-size);

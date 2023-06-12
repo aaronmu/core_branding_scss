@@ -9,8 +9,8 @@
  */
 
 body {
-  color: var(--text-color);
-  font-family: var(--font-family-base);
+  color: var(--TEXT-COLOR);
+  font-family: var(--FONT-FAMILY-BASE);
   font-size: rem($font-size-base);
   line-height: $line-height-base;
 }
@@ -42,37 +42,37 @@ h6,
 
 h1,
 .h1 {
-  font-family: var(--font-family-headings);
+  font-family: var(--FONT-FAMILY-HEADINGS);
   font-size: rem($font-size-h1);
 }
 
 h2,
 .h2 {
-  font-family: var(--font-family-headings);
+  font-family: var(--FONT-FAMILY-HEADINGS);
   font-size: rem($font-size-h2);
 }
 
 h3,
 .h3 {
-  font-family: var(--font-family-headings);
+  font-family: var(--FONT-FAMILY-HEADINGS);
   font-size: rem($font-size-h3);
 }
 
 h4,
 .h4 {
-  font-family: var(--font-family-base);
+  font-family: var(--FONT-FAMILY-BASE);
   font-size: rem($font-size-h4);
 }
 
 h5,
 .h5 {
-  font-family: var(--font-family-base);
+  font-family: var(--FONT-FAMILY-BASE);
   font-size: rem($font-size-h5);
 }
 
 h6,
 .h6 {
-  font-family: var(--font-family-base);
+  font-family: var(--FONT-FAMILY-BASE);
   font-size: rem($font-size-h6);
 }
 
@@ -107,17 +107,17 @@ dl {
  */
 
 blockquote {
-  border-left: var(--border-width) solid var(--border-color);
+  border-left: var(--BORDER-WIDTH) solid var(--BORDER-COLOR);
   margin: 0;
-  padding: var(--spacer-xs) 0 var(--spacer-xs) var(--spacer);
+  padding: var(--SPACER-XS) 0 var(--SPACER-XS) var(--SPACER);
 
   p {
     display: inline;
-    font-family: var(--font-family-headings);
+    font-family: var(--FONT-FAMILY-HEADINGS);
   }
 
   cite {
-    color: var(--theme2-400);
+    color: var(--THEME2-400);
     display: inline-block;
     font-style: normal;
     line-height: $line-height-headings;
@@ -135,7 +135,7 @@ blockquote {
 
 small,
 .small {
-  color: var(--text-color-light);
+  color: var(--TEXT-COLOR-LIGHT);
   font-size: rem($font-size-sm);
 }
 
@@ -145,7 +145,7 @@ small,
  */
 
 mark {
-  background-color: var(--theme1-400);
+  background-color: var(--THEME1-600);
   color: $white;
   padding: 0 .125rem;
 }
@@ -157,9 +157,9 @@ mark {
 
 hr {
   border: none;
-  border-top: var(--border-width) solid var(--border-color);
-  height: var(--border-width);
-  margin: var(--spacer) 0;
+  border-top: var(--BORDER-WIDTH) solid var(--BORDER-COLOR);
+  height: var(--BORDER-WIDTH);
+  margin: var(--SPACER) 0;
 }
 
 /**
@@ -168,14 +168,14 @@ hr {
  */
 
 a {
-  color: var(--link-color);
+  color: var(--LINK-COLOR);
   text-decoration-skip-ink: auto;
-  transition: color var(--animation-normal);
+  transition: color var(--ANIMATION-NORMAL);
 
   &:hover,
   &:active,
   &:focus {
-    color: var(--link-hover-color);
+    color: var(--LINK-HOVER-COLOR);
     text-decoration: none;
   }
 }

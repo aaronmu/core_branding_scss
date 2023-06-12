@@ -18,7 +18,7 @@
   &__actions {
     display: flex;
     flex-direction: column;
-    margin-left: var(--spacer-3xs);
+    margin-left: var(--SPACER-3XS);
     margin-right: 0;
   }
 
@@ -37,7 +37,7 @@
     }
 
     &.show {
-      animation: fadeIn var(--animation-normal);
+      animation: fadeIn var(--ANIMATION-NORMAL);
     }
 
     &.active {
@@ -54,16 +54,16 @@
 .a-table-bar {
   background-color: $gray-200;
   display: flex;
-  padding: var(--spacer-xs);
+  padding: var(--SPACER-XS);
 
   &__filters {
     flex: 1;
-    margin-right: var(--spacer);
-    min-height: var(--spacer-xxl);
+    margin-right: var(--SPACER);
+    min-height: var(--SPACER-XXL);
     overflow: hidden;
 
     &-show-more {
-      margin: var(--spacer-3xs);
+      margin: var(--SPACER-3XS);
     }
 
     &--open {
@@ -73,12 +73,12 @@
 
   &__item {
     display: inline-block;
-    margin: var(--spacer-3xs);
+    margin: var(--SPACER-3XS);
   }
 
   &__search {
     background: $white;
     height: 100%;
-    margin: var(--spacer-3xs);
+    margin: var(--SPACER-3XS);
   }
 }

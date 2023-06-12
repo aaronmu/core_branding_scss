@@ -9,7 +9,7 @@
  */
 
 .u-text-bold {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--FONT-WEIGHT-BOLD);
 }
 
 .u-text-italic {
@@ -64,31 +64,31 @@
  */
 
 .u-text-primary {
-  color: var(--theme1-400);
+  color: var(--THEME1-600);
 }
 
 .u-text-secondary {
-  color: var(--theme2-400);
+  color: var(--THEME2-400);
 }
 
 .u-text-success {
-  color: var(--state-success);
+  color: var(--STATE-SUCCESS);
 }
 
 .u-text-warning {
-  color: var(--state-warning);
+  color: var(--STATE-WARNING);
 }
 
 .u-text-danger {
-  color: var(--state-danger);
+  color: var(--STATE-DANGER);
 }
 
 .u-text-light {
-  color: var(--text-color-light);
+  color: var(--TEXT-COLOR-LIGHT);
 }
 
 .u-text-xlight {
-  color: var(--text-color-xlight);
+  color: var(--TEXT-COLOR-XLIGHT);
 }
 
 /**

@@ -16,7 +16,7 @@
   background-color: $white;
   height: 100%;
   overflow: hidden;
-  transition: width var(--animation-normal);
+  transition: width var(--ANIMATION-NORMAL);
   width: 0;
 
   &__content {
@@ -26,7 +26,7 @@
     width: var(--sidebar-width);
 
     &--padding {
-      padding: var(--spacer-xl);
+      padding: var(--SPACER-XL);
     }
   }
 

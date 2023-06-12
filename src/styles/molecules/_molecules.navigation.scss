@@ -5,17 +5,17 @@
 
 .m-nav-list,
 .m-nav-tabs {
-  --nav-color:                 var(--text-color);
+  --nav-color:                 var(--TEXT-COLOR);
   --nav-bg-color:              transparent;
   --nav-border-color:          #{$gray-200};
 
-  --nav-hover-color:           var(--theme1-400);
-  --nav-hover-bg-color:        var(--theme1-050);
+  --nav-hover-color:           var(--THEME1-600);
+  --nav-hover-bg-color:        var(--THEME1-100);
 
-  --nav-active-color:          var(--theme1-400);
-  --nav-active-border-color:   var(--theme1-400);
+  --nav-active-color:          var(--THEME1-600);
+  --nav-active-border-color:   var(--THEME1-600);
 
-  --nav-disabled-color:       var(--state-disabled);
+  --nav-disabled-color:       var(--STATE-DISABLED);
 }
 
 /**
@@ -31,15 +31,15 @@
     > li {
       display: flex;
       flex-direction: column;
-      min-height: var(--spacer-xl);
-      transition-duration: var(--animation-duration);
+      min-height: var(--SPACER-XL);
+      transition-duration: var(--ANIMATION-DURATION);
       transition-property: background-color, box-shadow;
-      transition-timing-function: var(--animation-easing);
+      transition-timing-function: var(--ANIMATION-EASING);
 
       &:not(:first-child) {
         > a,
         > button {
-          border-top: var(--border-width) solid var(--nav-border-color);
+          border-top: var(--BORDER-WIDTH) solid var(--nav-border-color);
         }
       }
 
@@ -72,9 +72,9 @@
         &:focus,
         &:focus-within {
           background-color: var(--nav-active-bg-color);
-          box-shadow: var(--spacer-3xs) 0 0 0 var(--nav-active-border-color) inset;
+          box-shadow: var(--SPACER-3XS) 0 0 0 var(--nav-active-border-color) inset;
           color: var(--nav-active-color);
-          font-weight: var(--font-weight-bold);
+          font-weight: var(--FONT-WEIGHT-BOLD);
         }
       }
 
@@ -102,20 +102,20 @@
         cursor: pointer;
         display: flex;
         flex-grow: 1;
-        margin-left: var(--spacer-s);
-        padding: var(--spacer-3xs) var(--spacer-s) var(--spacer-3xs) 0;
+        margin-left: var(--SPACER-S);
+        padding: var(--SPACER-3XS) var(--SPACER-S) var(--SPACER-3XS) 0;
         text-decoration: none;
-        transition-duration: var(--animation-duration);
+        transition-duration: var(--ANIMATION-DURATION);
         transition-property: border-top-color, color;
-        transition-timing-function: var(--animation-easing);
+        transition-timing-function: var(--ANIMATION-EASING);
 
         > .ai {
           display: inline-block;
-          margin-right: var(--spacer-xxs);
+          margin-right: var(--SPACER-XXS);
         }
 
         > .a-badge {
-          margin-left: var(--spacer-xxs);
+          margin-left: var(--SPACER-XXS);
         }
       }
     }
@@ -142,10 +142,10 @@
     > li {
       display: flex;
       flex-direction: column;
-      min-height: var(--spacer-xl);
-      transition-duration: var(--animation-duration);
+      min-height: var(--SPACER-XL);
+      transition-duration: var(--ANIMATION-DURATION);
       transition-property: background-color, box-shadow;
-      transition-timing-function: var(--animation-easing);
+      transition-timing-function: var(--ANIMATION-EASING);
 
       &:not(.is-active):not(.is-disabled) {
         &:hover,
@@ -164,9 +164,9 @@
         &:focus,
         &:focus-within {
           background-color: var(--nav-active-bg-color);
-          box-shadow: 0 calc(var(--spacer-3xs) * -1) 0 0 var(--nav-active-border-color) inset;
+          box-shadow: 0 calc(var(--SPACER-3XS) * -1) 0 0 var(--nav-active-border-color) inset;
           color: var(--nav-active-color);
-          font-weight: var(--font-weight-bold);
+          font-weight: var(--FONT-WEIGHT-BOLD);
         }
       }
 
@@ -194,45 +194,45 @@
         cursor: pointer;
         display: flex;
         flex-grow: 1;
-        padding: var(--spacer-3xs) var(--spacer-s);
+        padding: var(--SPACER-3XS) var(--SPACER-S);
         text-decoration: none;
-        transition: color var(--animation-normal);
+        transition: color var(--ANIMATION-NORMAL);
 
         > .ai {
           display: inline-block;
-          margin-right: var(--spacer-xxs);
+          margin-right: var(--SPACER-XXS);
         }
 
         > .a-badge {
-          margin-left: var(--spacer-xxs);
+          margin-left: var(--SPACER-XXS);
         }
       }
     }
   }
 
   &.has-border {
-    border-bottom: var(--border-width) solid var(--nav-border-color);
+    border-bottom: var(--BORDER-WIDTH) solid var(--nav-border-color);
   }
 
   // Display a drop shadow on the left inner side of the navigation
   &.has-shadow-left:before {
-    background-color: var(--box-shadow-color);
+    background-color: var(--BOX-SHADOW-COLOR);
     bottom: 0;
     content: '';
     left: 0;
     position: absolute;
     top: 0;
-    width: var(--spacer-xs);
+    width: var(--SPACER-XS);
   }
 
   // Display a drop shadow on the right inner side of the navigation
   &.has-shadow-right:after {
-    background-color: var(--box-shadow-color);
+    background-color: var(--BOX-SHADOW-COLOR);
     bottom: 0;
     content: '';
     position: absolute;
     right: 0;
     top: 0;
-    width: var(--spacer-xs);
+    width: var(--SPACER-XS);
   }
 }
