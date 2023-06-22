@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## [6.4.0] - 2023-06-22
+
 ### Changed
 - Improved the ability to overwrite CSS custom properties
 
@@ -745,6 +748,7 @@
 - Initial release.
 
 
+[6.4.0]: https://github.com/a-ui/core_branding_scss/tree/v6.4.0
 [6.3.0]: https://github.com/a-ui/core_branding_scss/tree/v6.3.0
 [6.2.3]: https://github.com/a-ui/core_branding_scss/tree/v6.2.3
 [6.2.2]: https://github.com/a-ui/core_branding_scss/tree/v6.2.2
