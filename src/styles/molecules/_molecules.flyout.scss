@@ -93,7 +93,7 @@
  */
 
 .m-flyout.is-open {
-  .m-flyout__content {
+  > .m-flyout__content {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0s;

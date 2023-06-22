@@ -6,6 +6,9 @@
 ### Changed
 - Improved the ability to overwrite CSS custom properties
 
+### Fixed
+- Fixed flyout rendering when nested in another flyout
+
 
 ## [6.3.0] - 2023-05-08
 
