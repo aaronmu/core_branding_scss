@@ -4,6 +4,10 @@
 ## Unreleased
 
 
+### Fixed
+- Fixed switch margin in case its right label would be longer
+
+
 ## [6.4.0] - 2023-06-22
 
 ### Changed
